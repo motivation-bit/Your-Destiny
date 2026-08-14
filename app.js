@@ -181,18 +181,22 @@ function initIntro() {
   const app = document.getElementById('app-container');
   const nav = document.getElementById('bottom-nav');
   intro.style.display = 'flex';
+  intro.style.opacity = '1';
   app.classList.remove('active');
   nav.style.display = 'none';
+
+  // Set transition first, then change opacity after delay
+  intro.style.transition = 'opacity 0.6s ease-in-out';
+
   setTimeout(() => {
     intro.style.opacity = '0';
-    intro.style.transition = 'opacity 0.8s ease';
     setTimeout(() => {
       intro.style.display = 'none';
       app.classList.add('active');
       nav.style.display = 'flex';
       initMusic();
-    }, 800);
-  }, 2200);
+    }, 600);
+  }, 2400);
 }
 
 function initMusic() {
