@@ -3,11 +3,26 @@
 // ============================================================
 
 let tg = null;
-let currentLang = localStorage.getItem('lang') || 'ru';
+let currentLang = 'en';
+function detectLanguage() {
+  if (tg && tg.initDataUnsafe && tg.initDataUnsafe.user && tg.initDataUnsafe.user.language_code) {
+    const code = tg.initDataUnsafe.user.language_code.toLowerCase();
+    if (code === 'ru' || code === 'uk' || code === 'be' || code === 'kk') return 'ru';
+    if (code === 'es' || code === 'pt' || code === 'it' || code === 'fr') return 'es';
+    return 'en';
+  }
+  const saved = localStorage.getItem('lang');
+  if (saved) return saved;
+  const browserLang = (navigator.language || navigator.userLanguage || 'en').toLowerCase();
+  if (browserLang.startsWith('ru') || browserLang.startsWith('uk') || browserLang.startsWith('be') || browserLang.startsWith('kk')) return 'ru';
+  if (browserLang.startsWith('es') || browserLang.startsWith('pt') || browserLang.startsWith('it') || browserLang.startsWith('fr')) return 'es';
+  return 'en';
+}
+currentLang = detectLanguage();
 let isMusicPlaying = false;
 let bgMusic = null;
 let visualEffectsEnabled = true;
-let currentTheme = 'crimson';
+let currentTheme = 'purple';
 const WALLET = 'TD95kxxcBBRvdoj1nmELQtZ6X1Ux4n52Jf';
 
 const T = {
@@ -20,12 +35,12 @@ const T = {
     storySchedule: 'Расписание Историй', supportAuthor: 'Поддержать Автора', becomeAuthor: 'Стать Автором', wisdom: 'Мудрость Судьбы',
     chronicles: 'Хроники Судьбы', labyrinth: 'Лабиринт Загадок', trueDestiny: 'Какая твоя Истинная Судьба?', about: 'Об игре',
     terms: 'Условия использования', privacy: 'Политика конфиденциальности', community: 'Канал сообщества', resetProgress: 'Сбросить прогресс',
-    back: 'Назад', close: 'Закрыть', continue: 'Продолжить',
+    resetConfirm: 'Вы уверены? Весь прогресс будет удален безвозвратно.', back: 'Назад', close: 'Закрыть', continue: 'Продолжить',
     restart: 'Начать заново', exit: 'Выйти в меню', pause: 'Пауза', lockTitle: 'Дальше — только по промокоду',
     lockText: 'Вы прошли 2 бесплатные главы. Для доступа ко всем главам активируйте VIP-статус.',
     goToChannel: 'Перейти в канал', enterPromo: 'Ввести промокод', toMenu: 'В меню',
     introSubtitle: 'Интерактивная визуальная новелла', wallet: 'Кошелек для поддержки', copy: 'Скопировать', copied: 'Скопировано',
-    soon: 'Скоро', thanks: 'Спасибо', wisdomClose: 'Закрыть', wisdomNext: 'Далее', destinyStart: 'Начать предсказание', destinyRestart: 'Пройти заново',
+    soon: 'Скоро', thanks: 'Спасибо', wisdomClose: 'Закрыть', destinyStart: 'Начать предсказание', destinyRestart: 'Пройти заново',
     riddleEnter: 'Войти в Лабиринт', riddleReady: 'Готов начать? Лабиринт ждет.', riddleRules1: 'Один за другим: новая загадка откроется только после ответа на предыдущую.',
     riddleRules2: 'Не спеши: размышляй столько, сколько нужно.', riddleRules3: 'Помощь: три подсказки или открытый ответ.',
     lookAnswer: 'Посмотреть ответ', answerConfirm: 'Уверены, что хотите открыть ответ?', backToRiddle: 'Назад к загадке',
@@ -48,12 +63,12 @@ const T = {
     storySchedule: 'Story Schedule', supportAuthor: 'Support Author', becomeAuthor: 'Become an Author', wisdom: 'Wisdom of Fate',
     chronicles: 'Chronicles of Fate', labyrinth: 'Labyrinth of Riddles', trueDestiny: 'What is Your True Destiny?', about: 'About',
     terms: 'Terms of Use', privacy: 'Privacy Policy', community: 'Community Channel', resetProgress: 'Reset Progress',
-    back: 'Back', close: 'Close', continue: 'Continue',
+    resetConfirm: 'Are you sure? All progress will be permanently deleted.', back: 'Back', close: 'Close', continue: 'Continue',
     restart: 'Restart', exit: 'Exit to Menu', pause: 'Pause', lockTitle: 'VIP Required',
     lockText: 'You have completed 2 free chapters. Activate VIP to access all chapters.',
     goToChannel: 'Go to Channel', enterPromo: 'Enter Promo Code', toMenu: 'To Menu',
     introSubtitle: 'Interactive Visual Novel', wallet: 'Support Wallet', copy: 'Copy', copied: 'Copied',
-    soon: 'Soon', thanks: 'Thanks', wisdomClose: 'Close', wisdomNext: 'Next', destinyStart: 'Start Prediction', destinyRestart: 'Retake',
+    soon: 'Soon', thanks: 'Thanks', wisdomClose: 'Close', destinyStart: 'Start Prediction', destinyRestart: 'Retake',
     riddleEnter: 'Enter Labyrinth', riddleReady: 'Ready? The Labyrinth awaits.', riddleRules1: 'One by one: each riddle unlocks only after the previous answer.',
     riddleRules2: 'Take your time: think as long as you need.', riddleRules3: 'Help: three hints or reveal the answer.',
     lookAnswer: 'Reveal Answer', answerConfirm: 'Are you sure you want to reveal the answer?', backToRiddle: 'Back to Riddle',
@@ -76,12 +91,12 @@ const T = {
     storySchedule: 'Calendario de Historias', supportAuthor: 'Apoyar al Autor', becomeAuthor: 'Ser Autor', wisdom: 'Sabiduría del Destino',
     chronicles: 'Crónicas del Destino', labyrinth: 'Laberinto de Acertijos', trueDestiny: 'Cual es tu Verdadero Destino?', about: 'Acerca de',
     terms: 'Términos de Uso', privacy: 'Política de Privacidad', community: 'Canal de la Comunidad', resetProgress: 'Reiniciar Progreso',
-    back: 'Atrás', close: 'Cerrar', continue: 'Continuar',
+    resetConfirm: 'Estas seguro? Todo el progreso se eliminará permanentemente.', back: 'Atrás', close: 'Cerrar', continue: 'Continuar',
     restart: 'Reiniciar', exit: 'Salir al Menú', pause: 'Pausa', lockTitle: 'Se Requiere VIP',
     lockText: 'Has completado 2 capítulos gratuitos. Activa VIP para acceder a todos.',
     goToChannel: 'Ir al Canal', enterPromo: 'Introducir Código', toMenu: 'Al Menú',
     introSubtitle: 'Novela Visual Interactiva', wallet: 'Billetera de Apoyo', copy: 'Copiar', copied: 'Copiado',
-    soon: 'Pronto', thanks: 'Gracias', wisdomClose: 'Cerrar', wisdomNext: 'Siguiente', destinyStart: 'Iniciar Predicción', destinyRestart: 'Repetir',
+    soon: 'Pronto', thanks: 'Gracias', wisdomClose: 'Cerrar', destinyStart: 'Iniciar Predicción', destinyRestart: 'Repetir',
     riddleEnter: 'Entrar al Laberinto', riddleReady: 'Listo? El Laberinto te espera.', riddleRules1: 'Uno por uno: cada acertijo se desbloquea tras resolver el anterior.',
     riddleRules2: 'Tómate tu tiempo: piensa todo lo que necesites.', riddleRules3: 'Ayuda: tres pistas o revelar la respuesta.',
     lookAnswer: 'Revelar Respuesta', answerConfirm: 'Seguro que quieres revelar la respuesta?', backToRiddle: 'Volver al Acertijo',
@@ -104,8 +119,8 @@ const THEMES = [
   { id: 'sapphire', name: { ru: 'Полночный Сапфир', en: 'Midnight Sapphire', es: 'Zafiro de Medianoche' }, grad: 'linear-gradient(135deg,#264e8b,#1a2f4a)' },
   { id: 'crimson', name: { ru: 'Багровый Занавес', en: 'Crimson Curtain', es: 'Telón Carmesí' }, grad: 'linear-gradient(135deg,#8b2635,#4a1515)' },
   { id: 'emerald', name: { ru: 'Изумрудный Лес', en: 'Emerald Forest', es: 'Bosque Esmeralda' }, grad: 'linear-gradient(135deg,#2d6a27,#1a3a1a)' },
-  { id: 'amber', name: { ru: 'Янтарные Сумерки', en: 'Amber Twilight', es: 'Crepúsculo Ámbar' }, grad: 'linear-gradient(135deg,#b8860b,#8b6914)' },
-  { id: 'kaleidoscope', name: { ru: 'Калейдоскоп', en: 'Kaleidoscope', es: 'Caleidoscopio' }, grad: 'linear-gradient(135deg,#d4af37,#8b7508)' }
+  { id: 'amber', name: { ru: 'Янтарные Сумерки', en: 'Amber Twilight', es: 'Crepúsculo Ámbар' }, grad: 'linear-gradient(135deg,#b8860b,#8b6914)' },
+  { id: 'kaleidoscope', name: { ru: 'Калейдоскоп', en: 'Kaleidoscope', es: 'Caleidoscopio' }, grad: 'linear-gradient(135deg,#ff6b6b,#4ecdc4,#45b7d1,#96e6a1,#feca57,#ff9ff3)' }
 ];
 
 // ---------- Инициализация ----------
@@ -115,14 +130,42 @@ document.addEventListener('DOMContentLoaded', () => {
   initNavigation();
   initIntro();
   initMusic();
-  // Store first visit date
-  if (!localStorage.getItem('first_visit')) {
-    localStorage.setItem('first_visit', new Date().toISOString());
-  }
   loadSettings();
   renderThemeColors();
   updateLanguageUI();
 });
+
+function showTimeCapsule() {
+  let firstVisit = localStorage.getItem('first_visit');
+  if (!firstVisit) {
+    firstVisit = new Date().toISOString();
+    localStorage.setItem('first_visit', firstVisit);
+  }
+  const date = new Date(firstVisit);
+  const day = date.getDate().toString().padStart(2, '0');
+  const month = (date.getMonth() + 1).toString().padStart(2, '0');
+  const year = date.getFullYear();
+  const formatted = day + '.' + month + '.' + year;
+  const overlay = document.createElement('div');
+  overlay.className = 'fate-overlay';
+  overlay.innerHTML = '<button class="overlay-close-x" onclick="this.closest('.fate-overlay').classList.remove('active');setTimeout(()=>this.closest('.fate-overlay').remove(),400)">&times;</button><div class="fate-container" style="max-width:380px;"><div class="fate-final-title" style="font-size:1.3rem;">' + t('timeCapsule') + '</div><div style="font-size:1.1rem;color:var(--text-primary);margin:24px 0;font-family:'Cinzel',serif;letter-spacing:0.05em;">' + formatted + '</div><div style="font-size:0.85rem;color:var(--text-secondary);line-height:1.6;margin-bottom:20px;">' + (currentLang === 'ru' ? 'Этот день навсегда запечатлен в твоей судьбе. С того момента ты стал частью этого мира.' : currentLang === 'en' ? 'This day is forever sealed in your fate. From that moment, you became part of this world.' : 'Este día está sellado para siempre en tu destino. Desde ese momento, te convertiste en parte de este mundo.') + '</div><button class="fate-next" onclick="this.closest('.fate-overlay').classList.remove('active');setTimeout(()=>this.closest('.fate-overlay').remove(),400)">' + t('close') + '</button></div>';
+  document.body.appendChild(overlay);
+  setTimeout(() => overlay.classList.add('active'), 10);
+}
+
+function updateTimeCapsuleDisplay() {
+  let firstVisit = localStorage.getItem('first_visit');
+  if (!firstVisit) {
+    firstVisit = new Date().toISOString();
+    localStorage.setItem('first_visit', firstVisit);
+  }
+  const date = new Date(firstVisit);
+  const day = date.getDate().toString().padStart(2, '0');
+  const month = (date.getMonth() + 1).toString().padStart(2, '0');
+  const year = date.getFullYear();
+  const el = document.getElementById('time-capsule-date');
+  if (el) el.textContent = day + '.' + month + '.' + year;
+}
 
 function initTelegram() {
   if (window.Telegram && window.Telegram.WebApp) {
@@ -130,18 +173,6 @@ function initTelegram() {
     tg.ready(); tg.expand();
     tg.setHeaderColor('#0a0618');
     tg.setBackgroundColor('#0a0618');
-    // Auto-detect language from Telegram
-    if (tg.initDataUnsafe && tg.initDataUnsafe.user && tg.initDataUnsafe.user.language_code) {
-      const langCode = tg.initDataUnsafe.user.language_code;
-      if (langCode === 'ru') {
-        currentLang = 'ru';
-      } else if (langCode === 'es') {
-        currentLang = 'es';
-      } else {
-        currentLang = 'en';
-      }
-      localStorage.setItem('lang', currentLang);
-    }
   }
 }
 
@@ -236,6 +267,7 @@ function switchScreen(screen) {
 }
 
 function loadSettings() {
+  updateTimeCapsuleDisplay();
   const savedTheme = localStorage.getItem('theme') || 'purple';
   setTheme(savedTheme);
   const effects = localStorage.getItem('effects_enabled');
@@ -285,10 +317,6 @@ function updateLanguageUI() {
   document.querySelectorAll('.nav-label').forEach((el, i) => { el.textContent = t(keys[i]); });
   const th = THEMES.find(x => x.id === currentTheme);
   if (th) document.getElementById('theme-name').textContent = th.name[currentLang];
-  // Update language button active states
-  document.querySelectorAll('.lang-btn').forEach(btn => btn.classList.remove('active'));
-  const activeBtn = document.getElementById('lang-' + currentLang);
-  if (activeBtn) activeBtn.classList.add('active');
 }
 
 function isVip() {
@@ -355,148 +383,33 @@ function showToast(message) {
   setTimeout(() => { toast.style.opacity = '0'; toast.style.transition = 'opacity 0.5s'; setTimeout(() => toast.remove(), 500); }, 2500);
 }
 
+function resetProgress() {
+  if (confirm(t('resetConfirm'))) {
+    Object.keys(localStorage).forEach(key => {
+      if (key.startsWith('progress_') || ['fate_dilemmas','labyrinth','true_destiny','wisdom_index','intro_shown'].includes(key)) localStorage.removeItem(key);
+    });
+    showToast(currentLang === 'ru' ? 'Прогресс сброшен' : currentLang === 'en' ? 'Progress reset' : 'Progreso reiniciado');
+  }
+}
 
+function showSupportAuthor() {
+  const overlay = document.createElement('div');
+  overlay.className = 'fate-overlay';
+  overlay.innerHTML = '<button class="overlay-close-x" onclick="this.closest('.fate-overlay').classList.remove('active');setTimeout(()=>this.closest('.fate-overlay').remove(),400)">&times;</button><div class="fate-container" style="max-width:380px;"><div class="fate-final-title" style="font-size:1.2rem;margin-bottom:8px;">' + t('supportAuthor') + '</div><div style="font-size:0.85rem;color:var(--text-secondary);line-height:1.6;margin-bottom:20px;">' + (currentLang === 'ru' ? 'Ваша поддержка помогает создавать новые истории и развивать этот мир. Любая сумма — это вклад в судьбу.' : currentLang === 'en' ? 'Your support helps create new stories and develop this world. Any amount is a contribution to fate.' : 'Tu apoyo ayuda a crear nuevas historias y desarrollar este mundo. Cualquier cantidad es una contribución al destino.') + '</div><div style="background:rgba(212,175,55,0.08);border:1px solid rgba(212,175,55,0.2);border-radius:14px;padding:16px;margin-bottom:20px;"><div style="font-size:0.75rem;color:var(--text-muted);margin-bottom:8px;letter-spacing:0.1em;">TRC20 (TRON)</div><div style="font-size:0.9rem;color:var(--text-primary);font-family:'Cinzel',serif;letter-spacing:0.03em;word-break:break-all;margin-bottom:12px;">' + WALLET + '</div><button onclick="copyWallet()" style="width:100%;padding:12px;background:linear-gradient(135deg,var(--gold-dark),var(--gold));border:none;border-radius:12px;color:#1a0a00;font-family:'Cinzel',serif;font-weight:700;font-size:0.85rem;cursor:pointer;">' + t('copy') + '</button></div><button class="fate-next" onclick="this.closest('.fate-overlay').classList.remove('active');setTimeout(()=>this.closest('.fate-overlay').remove(),400)">' + t('close') + '</button></div>';
+  document.body.appendChild(overlay);
+  setTimeout(() => overlay.classList.add('active'), 10);
+}
+
+function showBecomeAuthor() {
+  const overlay = document.createElement('div');
+  overlay.className = 'fate-overlay';
+  overlay.innerHTML = '<button class="overlay-close-x" onclick="this.closest('.fate-overlay').classList.remove('active');setTimeout(()=>this.closest('.fate-overlay').remove(),400)">&times;</button><div class="fate-container" style="max-width:380px;"><div class="fate-final-title" style="font-size:1.2rem;margin-bottom:8px;">' + t('becomeAuthor') + '</div><div style="font-size:0.85rem;color:var(--text-secondary);line-height:1.6;margin-bottom:20px;">' + (currentLang === 'ru' ? 'Если у вас есть история, достойная быть рассказанной — мы готовы воплотить её в интерактивную новеллу. Пришлите ваш сценарий или идею.' : currentLang === 'en' ? 'If you have a story worth telling — we are ready to turn it into an interactive novel. Send us your script or idea.' : 'Si tienes una historia que vale la pena contar — estamos listos para convertirla en una novela interactiva. Envíanos tu guion o idea.') + '</div><div style="background:rgba(212,175,55,0.08);border:1px solid rgba(212,175,55,0.2);border-radius:14px;padding:16px;margin-bottom:20px;"><div style="font-size:0.75rem;color:var(--text-muted);margin-bottom:8px;letter-spacing:0.1em;">Telegram</div><div style="font-size:0.9rem;color:var(--text-primary);font-family:'Cinzel',serif;letter-spacing:0.03em;margin-bottom:12px;">@YourDestiny_Author</div><a href="https://t.me/YourDestiny_Author" target="_blank" style="display:block;width:100%;padding:12px;background:linear-gradient(135deg,var(--gold-dark),var(--gold));border:none;border-radius:12px;color:#1a0a00;font-family:'Cinzel',serif;font-weight:700;font-size:0.85rem;cursor:pointer;text-decoration:none;text-align:center;">Telegram</a></div><button class="fate-next" onclick="this.closest('.fate-overlay').classList.remove('active');setTimeout(()=>this.closest('.fate-overlay').remove(),400)">' + t('close') + '</button></div>';
+  document.body.appendChild(overlay);
+  setTimeout(() => overlay.classList.add('active'), 10);
+}
 
 function copyWallet() {
   navigator.clipboard.writeText(WALLET).then(() => showToast(t('copied')));
-}
-
-
-// ============================================================
-// КАПСУЛА ВРЕМЕНИ
-// ============================================================
-function showTimeCapsule() {
-  let firstVisit = localStorage.getItem('first_visit');
-  if (!firstVisit) {
-    firstVisit = new Date().toISOString();
-    localStorage.setItem('first_visit', firstVisit);
-  }
-  const date = new Date(firstVisit);
-  const months = {
-    ru: ['января','февраля','марта','апреля','мая','июня','июля','августа','сентября','октября','ноября','декабря'],
-    en: ['January','February','March','April','May','June','July','August','September','October','November','December'],
-    es: ['enero','febrero','marzo','abril','mayo','junio','julio','agosto','septiembre','octubre','noviembre','diciembre']
-  };
-  const day = date.getDate();
-  const month = months[currentLang][date.getMonth()];
-  const year = date.getFullYear();
-  const dateStr = currentLang === 'ru' ? `${day} ${month} ${year}` : `${month} ${day}, ${year}`;
-
-  const titles = { ru: 'Капсула Времени', en: 'Time Capsule', es: 'Cápsula del Tiempo' };
-  const labels = { ru: 'Ты впервые открыл эту дверь', en: 'You first opened this door', es: 'Primero abriste esta puerta' };
-
-  const overlay = document.createElement('div');
-  overlay.className = 'timecapsule-overlay';
-  overlay.innerHTML = `
-    <div class="timecapsule-container">
-      <div class="timecapsule-icon">⏳</div>
-      <div class="timecapsule-title">${titles[currentLang]}</div>
-      <div class="timecapsule-date">${dateStr}</div>
-      <div class="timecapsule-label">${labels[currentLang]}</div>
-      <button class="timecapsule-close" onclick="closeTimeCapsule()">${t('close')}</button>
-    </div>
-  `;
-  document.body.appendChild(overlay);
-  setTimeout(() => overlay.classList.add('active'), 10);
-}
-
-function closeTimeCapsule() {
-  const overlay = document.querySelector('.timecapsule-overlay');
-  if (overlay) { overlay.classList.remove('active'); setTimeout(() => overlay.remove(), 400); }
-}
-
-// ============================================================
-// ПОДДЕРЖАТЬ АВТОРА
-// ============================================================
-function showSupportAuthor() {
-  const titles = { ru: 'Поддержать Автора', en: 'Support Author', es: 'Apoyar al Autor' };
-  const subtitles = {
-    ru: 'Ваша поддержка помогает создавать новые истории и развивать проект. Любая сумма — это вклад в мир Your Destiny.',
-    en: 'Your support helps create new stories and develop the project. Any amount is a contribution to the world of Your Destiny.',
-    es: 'Tu apoyo ayuda a crear nuevas historias y desarrollar el proyecto. Cualquier cantidad es una contribución al mundo de Your Destiny.'
-  };
-  const walletLabels = { ru: 'Кошелек TRC20', en: 'TRC20 Wallet', es: 'Billetera TRC20' };
-  const copyTexts = { ru: 'Скопировать', en: 'Copy', es: 'Copiar' };
-
-  const overlay = document.createElement('div');
-  overlay.className = 'support-overlay';
-  overlay.innerHTML = `
-    <button class="overlay-close-x" onclick="closeSupportAuthor()">&times;</button>
-    <div class="support-container">
-      <div class="support-title">${titles[currentLang]}</div>
-      <div class="support-subtitle">${subtitles[currentLang]}</div>
-      <div class="support-wallet-box">
-        <div class="support-wallet-label">${walletLabels[currentLang]}</div>
-        <div class="support-wallet-address">${WALLET}</div>
-        <button class="support-copy-btn" onclick="copyWallet()">${copyTexts[currentLang]}</button>
-      </div>
-      <button class="support-close-btn" onclick="closeSupportAuthor()">${t('close')}</button>
-    </div>
-  `;
-  document.body.appendChild(overlay);
-  setTimeout(() => overlay.classList.add('active'), 10);
-}
-
-function closeSupportAuthor() {
-  const overlay = document.querySelector('.support-overlay');
-  if (overlay) { overlay.classList.remove('active'); setTimeout(() => overlay.remove(), 400); }
-}
-
-// ============================================================
-// СТАТЬ АВТОРОМ
-// ============================================================
-function showBecomeAuthor() {
-  const titles = { ru: 'Стать Автором', en: 'Become an Author', es: 'Ser Autor' };
-  const subtitles = {
-    ru: 'У вас есть история, которую мир должен услышать? Присоединяйтесь к команде Your Destiny.',
-    en: 'Do you have a story the world needs to hear? Join the Your Destiny team.',
-    es: '¿Tienes una historia que el mundo necesita escuchar? Únete al equipo de Your Destiny.'
-  };
-  const stepTexts = {
-    ru: [
-      'Напишите свою историю в формате интерактивной новеллы',
-      'Отправьте её нам через Telegram-канал',
-      'Мы рассмотрим и свяжемся с вами'
-    ],
-    en: [
-      'Write your story in the format of an interactive novel',
-      'Send it to us via the Telegram channel',
-      'We will review it and contact you'
-    ],
-    es: [
-      'Escribe tu historia en formato de novela interactiva',
-      'Envíanosla a través del canal de Telegram',
-      'La revisaremos y nos pondremos en contacto contigo'
-    ]
-  };
-  const tgTexts = { ru: 'Написать в Telegram', en: 'Write on Telegram', es: 'Escribir en Telegram' };
-
-  const overlay = document.createElement('div');
-  overlay.className = 'become-overlay';
-  overlay.innerHTML = `
-    <button class="overlay-close-x" onclick="closeBecomeAuthor()">&times;</button>
-    <div class="become-container">
-      <div class="become-title">${titles[currentLang]}</div>
-      <div class="become-subtitle">${subtitles[currentLang]}</div>
-      <div class="become-steps">
-        ${stepTexts[currentLang].map((text, i) => `
-          <div class="become-step">
-            <div class="become-step-num">${i + 1}</div>
-            <div class="become-step-text">${text}</div>
-          </div>
-        `).join('')}
-      </div>
-      <a href="https://t.me/YourDestiny_Official" target="_blank" class="become-tg-btn">${tgTexts[currentLang]}</a>
-      <button class="become-close-btn" onclick="closeBecomeAuthor()">${t('close')}</button>
-    </div>
-  `;
-  document.body.appendChild(overlay);
-  setTimeout(() => overlay.classList.add('active'), 10);
-}
-
-function closeBecomeAuthor() {
-  const overlay = document.querySelector('.become-overlay');
-  if (overlay) { overlay.classList.remove('active'); setTimeout(() => overlay.remove(), 400); }
 }
 
 // ============================================================
@@ -1100,14 +1013,7 @@ function showDestinyResult(scores) {
   const title = DESTINY_TITLES[winner];
   const overlay = document.createElement('div');
   overlay.className = 'destiny-overlay active';
-  overlay.innerHTML = `
-    <button class="overlay-close-x" onclick="closeDestiny()">&times;</button>
-    <div class="destiny-container destiny-result">
-      <div class="destiny-result-title">${title.name[currentLang]}</div>
-      <div class="destiny-result-desc">${title.description[currentLang]}</div>
-      <button class="destiny-restart" onclick="closeDestiny()">${t('close')}</button>
-    </div>
-  `;
+  overlay.innerHTML = '<button class="overlay-close-x" onclick="closeDestiny()">&times;</button><div class="destiny-container destiny-result"><div class="destiny-result-title">' + title.name[currentLang] + '</div><div class="destiny-result-desc">' + title.description[currentLang] + '</div><button class="destiny-restart" onclick="closeDestiny()" style="margin-top:30px;">' + t('close') + '</button></div>';
   document.body.appendChild(overlay);
 }
 
@@ -1243,16 +1149,7 @@ function showWisdom() {
   localStorage.setItem('wisdom_index', (index + 1).toString());
   const overlay = document.createElement('div');
   overlay.className = 'wisdom-overlay';
-  const titles = { ru: 'Мудрость Судьбы', en: 'Wisdom of Fate', es: 'Sabiduría del Destino' };
-  overlay.innerHTML = `
-    <div class="wisdom-container">
-      <button class="wisdom-close-x" onclick="closeWisdom()">&times;</button>
-      <div class="wisdom-icon">✦</div>
-      <div class="wisdom-title">${titles[currentLang]}</div>
-      <div class="wisdom-quote">${quote[currentLang]}</div>
-      <button class="wisdom-next-btn" onclick="closeWisdom()">${t('wisdomNext')}</button>
-    </div>
-  `;
+  overlay.innerHTML = '<button class="overlay-close-x" onclick="closeWisdom()" style="top:24px;right:24px;">&times;</button><div class="wisdom-container"><div style="font-size:2.5rem;color:var(--gold);opacity:0.3;margin-bottom:12px;font-family:'Cinzel',serif;">❝</div><div class="wisdom-quote">' + quote[currentLang] + '</div><div style="font-size:2.5rem;color:var(--gold);opacity:0.3;margin-top:12px;font-family:'Cinzel',serif;transform:rotate(180deg);">❝</div><div style="width:40px;height:1px;background:linear-gradient(90deg,transparent,var(--gold),transparent);margin:20px auto;"></div><div style="font-size:0.75rem;color:var(--text-muted);letter-spacing:0.15em;font-family:'Cinzel',serif;margin-bottom:20px;">' + (currentLang === 'ru' ? 'МУДРОСТЬ СУДЬБЫ' : currentLang === 'en' ? 'WISDOM OF FATE' : 'SABIDURÍA DEL DESTINO') + '</div><button class="wisdom-close-btn" onclick="closeWisdom()">' + t('next') + '</button></div>';
   document.body.appendChild(overlay);
   setTimeout(() => overlay.classList.add('active'), 10);
 }
@@ -1290,55 +1187,7 @@ function showAbout() {
 function showTerms() {
   const overlay = document.createElement('div');
   overlay.className = 'fate-overlay';
-  const termsTexts = {
-    ru: [
-      '<b>1. Общие положения.</b> Настоящие Условия использования (далее — «Условия») регулируют отношения между пользователем (далее — «Пользователь») и разработчиком интерактивного приложения «Your Destiny» (далее — «Приложение»). Устанавливая, загружая, устанавливая, активируя, регистрируясь в или иным образом используя Приложение, Пользователь подтверждает свое полное и безоговорочное согласие с настоящими Условиями. Если Пользователь не согласен с каким-либо из положений настоящих Условий, он обязан немедленно прекратить использование Приложения.',
-      '<b>2. Права интеллектуальной собственности.</b> Все материалы, содержимое, графика, дизайн, тексты, изображения, аудио, видео, программный код, базы данных и любые другие объекты, размещенные в Приложении, являются объектами авторского права и/или смежных прав, принадлежащих разработчику или лицензиарам. Любое воспроизведение, распространение, модификация, публичный показ, перевод, адаптация, декомпиляция, дизассемблирование, обратное проектирование или иное использование материалов Приложения без предварительного письменного согласия правообладателя строго запрещено и может повлечь гражданскую, административную и уголовную ответственность в соответствии с действующим законодательством.',
-      '<b>3. Лицензия на использование.</b> Разработчик предоставляет Пользователю ограниченную, неисключительную, непередаваемую, отзывную лицензию на использование Приложения исключительно для личных, некоммерческих целей в соответствии с настоящими Условиями. Пользователь не вправе сдавать в аренду, продавать, сублицензировать, распространять или иным образом передавать права на использование Приложения третьим лицам.',
-      '<b>4. VIP-статус и платные услуги.</b> Приложение может содержать платный контент, доступ к которому предоставляется посредством активации VIP-статуса через ввод промокода или иным способом, предусмотренным разработчиком. VIP-статус предоставляет доступ к дополнительным главам, историям, функциям и контенту, не доступным в бесплатной версии. Стоимость, срок действия и условия предоставления VIP-статуса определяются разработчиком и могут быть изменены в одностороннем порядке. Активация промокода осуществляется в соответствии с правилами, установленными разработчиком.',
-      '<b>5. Ограничение ответственности.</b> Приложение предоставляется на условиях «как есть» (as is). Разработчик не гарантирует бесперебойную, безошибочную и безопасную работу Приложения. Разработчик не несет ответственности за любые прямые, косвенные, случайные, особые или последующие убытки, включая, но не ограничиваясь, утратой данных, прибыли, деловой репутации или иных нематериальных потерь, возникших в результате использования или невозможности использования Приложения. Пользователь самостоятельно несет ответственность за сохранность своих данных, включая прогресс в играх, настройки и предпочтения.',
-      '<b>6. Пользовательский контент.</b> Пользователь гарантирует, что любой контент, который он создает, загружает, передает или публикует в рамках Приложения, не нарушает права третьих лиц, не является незаконным, оскорбительным, клеветническим, дискриминационным, порнографическим, пропагандирующим насилие, ненависть или экстремизм. Разработчик вправе в любое время без предварительного уведомления удалить любой пользовательский контент, нарушающий настоящие Условия или действующее законодательство.',
-      '<b>7. Конфиденциальность и обработка данных.</b> Использование Приложения регулируется Политикой конфиденциальности, которая является неотъемлемой частью настоящих Условий. Пользователь соглашается с обработкой его персональных данных в соответствии с Политикой конфиденциальности.',
-      '<b>8. Модификация Условий.</b> Разработчик оставляет за собой право в любое время в одностороннем порядке изменять, дополнять или отменять настоящие Условия. Изменения вступают в силу с момента их публикации в Приложении. Продолжение использования Приложения после внесения изменений означает согласие Пользователя с измененными Условиями.',
-      '<b>9. Прекращение действия.</b> Разработчик вправе в любое время без предварительного уведомления приостановить или прекратить доступ Пользователя к Приложению в случае нарушения настоящих Условий, а также по техническим, организационным или иным причинам.',
-      '<b>10. Применимое право и разрешение споров.</b> Настоящие Условия регулируются и толкуются в соответствии с законодательством страны регистрации разработчика. Все споры, возникающие из настоящих Условий или в связи с их исполнением, подлежат разрешению путем переговоров. В случае невозможности достижения соглашения спор передается на рассмотрение в компетентный суд по месту нахождения разработчика.'
-    ],
-    en: [
-      '<b>1. General Provisions.</b> These Terms of Use (hereinafter referred to as the «Terms») govern the relationship between the user (hereinafter referred to as the «User») and the developer of the interactive application «Your Destiny» (hereinafter referred to as the «Application»). By installing, downloading, setting up, activating, registering in, or otherwise using the Application, the User confirms their full and unconditional agreement with these Terms. If the User does not agree with any of the provisions of these Terms, they must immediately cease using the Application.',
-      '<b>2. Intellectual Property Rights.</b> All materials, content, graphics, design, texts, images, audio, video, software code, databases, and any other objects posted in the Application are objects of copyright and/or related rights belonging to the developer or licensors. Any reproduction, distribution, modification, public display, translation, adaptation, decompilation, disassembly, reverse engineering, or other use of the Application materials without the prior written consent of the rights holder is strictly prohibited and may result in civil, administrative, and criminal liability under applicable law.',
-      '<b>3. License to Use.</b> The developer grants the User a limited, non-exclusive, non-transferable, revocable license to use the Application solely for personal, non-commercial purposes in accordance with these Terms. The User is not entitled to rent, sell, sublicense, distribute, or otherwise transfer the rights to use the Application to third parties.',
-      '<b>4. VIP Status and Paid Services.</b> The Application may contain paid content, access to which is provided by activating VIP status through entering a promo code or in another manner provided by the developer. VIP status provides access to additional chapters, stories, features, and content not available in the free version. The cost, duration, and conditions of providing VIP status are determined by the developer and may be changed unilaterally. Promo code activation is carried out in accordance with the rules established by the developer.',
-      '<b>5. Limitation of Liability.</b> The Application is provided on an «as is» basis. The developer does not guarantee uninterrupted, error-free, and secure operation of the Application. The developer is not liable for any direct, indirect, incidental, special, or consequential damages, including but not limited to loss of data, profits, business reputation, or other intangible losses arising from the use or inability to use the Application. The User is solely responsible for the safety of their data, including game progress, settings, and preferences.',
-      '<b>6. User Content.</b> The User guarantees that any content they create, upload, transmit, or publish within the Application does not infringe the rights of third parties, is not illegal, offensive, defamatory, discriminatory, pornographic, or promoting violence, hatred, or extremism. The developer has the right at any time without prior notice to remove any user content that violates these Terms or applicable law.',
-      '<b>7. Privacy and Data Processing.</b> The use of the Application is governed by the Privacy Policy, which is an integral part of these Terms. The User agrees to the processing of their personal data in accordance with the Privacy Policy.',
-      '<b>8. Modification of Terms.</b> The developer reserves the right at any time to unilaterally modify, supplement, or cancel these Terms. Changes take effect from the moment of their publication in the Application. Continued use of the Application after changes are made means the User agrees with the modified Terms.',
-      '<b>9. Termination.</b> The developer has the right at any time without prior notice to suspend or terminate the User's access to the Application in case of violation of these Terms, as well as for technical, organizational, or other reasons.',
-      '<b>10. Governing Law and Dispute Resolution.</b> These Terms are governed by and construed in accordance with the laws of the developer's country of registration. All disputes arising from these Terms or in connection with their performance shall be resolved through negotiations. In case of inability to reach an agreement, the dispute shall be referred to the competent court at the location of the developer.'
-    ],
-    es: [
-      '<b>1. Disposiciones Generales.</b> Estos Términos de Uso (en adelante, los «Términos») regulan la relación entre el usuario (en adelante, el «Usuario») y el desarrollador de la aplicación interactiva «Your Destiny» (en adelante, la «Aplicación»). Al instalar, descargar, configurar, activar, registrarse o utilizar de cualquier otra forma la Aplicación, el Usuario confirma su total e incondicional acuerdo con estos Términos. Si el Usuario no está de acuerdo con alguna de las disposiciones de estos Términos, debe cesar inmediatamente en el uso de la Aplicación.',
-      '<b>2. Derechos de Propiedad Intelectual.</b> Todos los materiales, contenidos, gráficos, diseños, textos, imágenes, audio, video, código de software, bases de datos y cualquier otro objeto publicado en la Aplicación son objetos de derechos de autor y/o derechos conexos pertenecientes al desarrollador o licenciantes. Cualquier reproducción, distribución, modificación, exhibición pública, traducción, adaptación, decompilación, desensamblaje, ingeniería inversa u otro uso de los materiales de la Aplicación sin el consentimiento previo por escrito del titular de los derechos está estrictamente prohibido y puede resultar en responsabilidad civil, administrativa y penal conforme a la ley aplicable.',
-      '<b>3. Licencia de Uso.</b> El desarrollador concede al Usuario una licencia limitada, no exclusiva, no transferible y revocable para utilizar la Aplicación únicamente para fines personales y no comerciales de conformidad con estos Términos. El Usuario no tiene derecho a alquilar, vender, sublicenciar, distribuir o transferir de cualquier otra forma los derechos de uso de la Aplicación a terceros.',
-      '<b>4. Estado VIP y Servicios de Pago.</b> La Aplicación puede contener contenido de pago, al que se accede mediante la activación del estado VIP mediante la introducción de un código promocional o de cualquier otra forma prevista por el desarrollador. El estado VIP proporciona acceso a capítulos adicionales, historias, funciones y contenido no disponible en la versión gratuita. El costo, la duración y las condiciones de provisión del estado VIP son determinados por el desarrollador y pueden ser modificados unilateralmente.',
-      '<b>5. Limitación de Responsabilidad.</b> La Aplicación se proporciona tal cual («as is»). El desarrollador no garantiza el funcionamiento ininterrumpido, libre de errores y seguro de la Aplicación. El desarrollador no será responsable de ningún daño directo, indirecto, incidental, especial o consecuente, incluyendo pero no limitado a la pérdida de datos, ganancias, reputación comercial u otras pérdidas intangibles derivadas del uso o la imposibilidad de usar la Aplicación.',
-      '<b>6. Contenido del Usuario.</b> El Usuario garantiza que cualquier contenido que cree, cargue, transmita o publique dentro de la Aplicación no infringe los derechos de terceros, no es ilegal, ofensivo, difamatorio, discriminatorio, pornográfico, ni promueve la violencia, el odio o el extremismo. El desarrollador tiene derecho a eliminar en cualquier momento y sin previo aviso cualquier contenido del usuario que viole estos Términos o la legislación aplicable.',
-      '<b>7. Privacidad y Procesamiento de Datos.</b> El uso de la Aplicación se rige por la Política de Privacidad, que forma parte integral de estos Términos. El Usuario acepta el procesamiento de sus datos personales de conformidad con la Política de Privacidad.',
-      '<b>8. Modificación de los Términos.</b> El desarrollador se reserva el derecho de modificar, complementar o cancelar estos Términos en cualquier momento de forma unilateral. Los cambios entran en vigor desde el momento de su publicación en la Aplicación. El uso continuado de la Aplicación después de realizar cambios significa que el Usuario acepta los Términos modificados.',
-      '<b>9. Terminación.</b> El desarrollador tiene derecho a suspender o terminar el acceso del Usuario a la Aplicación en cualquier momento y sin previo aviso en caso de violación de estos Términos, así como por razones técnicas, organizativas u otras.',
-      '<b>10. Ley Aplicable y Resolución de Disputas.</b> Estos Términos se rigen e interpretan de conformidad con la legislación del país de registro del desarrollador. Todas las disputas que surjan de estos Términos o en conexión con su cumplimiento se resolverán mediante negociaciones. En caso de imposibilidad de llegar a un acuerdo, la disputa se someterá al tribunal competente en la ubicación del desarrollador.'
-    ]
-  };
-  const texts = termsTexts[currentLang] || termsTexts['en'];
-  overlay.innerHTML = `
-    <button class="overlay-close-x" onclick="this.closest('.fate-overlay').classList.remove('active');setTimeout(()=>this.closest('.fate-overlay').remove(),400)">&times;</button>
-    <div class="fate-container" style="max-width:380px;">
-      <div class="fate-final-title" style="font-size:1.2rem;">${t('termsTitle')}</div>
-      <div style="font-size:0.78rem;color:var(--text-secondary);line-height:1.65;text-align:left;margin-bottom:20px;max-height:60vh;overflow-y:auto;padding-right:8px;">
-        ${texts.map(t => '<p style="margin-bottom:14px;">' + t + '</p>').join('')}
-      </div>
-      <button class="fate-next" onclick="this.closest('.fate-overlay').classList.remove('active');setTimeout(()=>this.closest('.fate-overlay').remove(),400)">${t('close')}</button>
-    </div>
-  `;
+  overlay.innerHTML = '<button class="overlay-close-x" onclick="this.closest('.fate-overlay').classList.remove('active');setTimeout(()=>this.closest('.fate-overlay').remove(),400)">&times;</button><div class="fate-container" style="max-width:400px;"><div class="fate-final-title" style="font-size:1.15rem;margin-bottom:16px;">' + t('termsTitle') + '</div><div style="font-size:0.78rem;color:var(--text-secondary);line-height:1.7;text-align:left;margin-bottom:20px;max-height:55vh;overflow-y:auto;padding-right:10px;"><p style="margin-bottom:12px;"><b>1. Общие положения / General Provisions</b><br>' + (currentLang === 'ru' ? 'Настоящие Условия использования регулируют отношения между Пользователем и Администрацией приложения Your Destiny. Используя приложение, вы подтверждаете свое согласие с данными условиями в полном объеме. Если вы не согласны с каким-либо положением, вы обязаны немедленно прекратить использование приложения.' : currentLang === 'en' ? 'These Terms of Use govern the relationship between the User and the Administration of the Your Destiny application. By using the application, you confirm your full agreement with these terms. If you do not agree with any provision, you are obliged to immediately stop using the application.' : 'Estos Términos de Uso rigen la relación entre el Usuario y la Administración de la aplicación Your Destiny. Al usar la aplicación, confirmas tu total acuerdo con estos términos. Si no estás de acuerdo con alguna disposición, estás obligado a dejar de usar la aplicación inmediatamente.') + '</p><p style="margin-bottom:12px;"><b>2. Права интеллектуальной собственности / Intellectual Property Rights</b><br>' + (currentLang === 'ru' ? 'Все материалы, представленные в приложении, включая, но не ограничиваясь, текстовый контент, графические элементы, аудиоматериалы, программный код, дизайн и структуру, являются интеллектуальной собственностью Администрации или правообладателей и защищены законодательством об авторских правах и смежных правах. Любое использование материалов без письменного разрешения правообладателя строго запрещено.' : currentLang === 'en' ? 'All materials presented in the application, including but not limited to text content, graphic elements, audio materials, software code, design and structure, are the intellectual property of the Administration or copyright holders and are protected by copyright and related rights legislation. Any use of materials without the written permission of the copyright holder is strictly prohibited.' : 'Todos los materiales presentados en la aplicación, incluidos pero no limitados a contenido de texto, elementos gráficos, materiales de audio, código de software, diseño y estructura, son propiedad intelectual de la Administración o de los titulares de derechos de autor y están protegidos por la legislación sobre derechos de autor y derechos conexos. Cualquier uso de materiales sin el permiso escrito del titular de los derechos de autor está estrictamente prohibido.') + '</p><p style="margin-bottom:12px;"><b>3. VIP-статус и платные услуги / VIP Status and Paid Services</b><br>' + (currentLang === 'ru' ? 'VIP-статус предоставляет доступ к дополнительному контенту и расширенным функциям приложения. Активация VIP-статуса осуществляется путем ввода промокода или иного способа, предусмотренного Администрацией. Срок действия VIP-статуса составляет 30 календарных дней с момента активации, если иное не указано в условиях конкретного промокода. Администрация оставляет за собой право изменять условия предоставления VIP-статуса в одностороннем порядке.' : currentLang === 'en' ? 'VIP status provides access to additional content and extended application features. VIP status activation is carried out by entering a promo code or other method provided by the Administration. The VIP status validity period is 30 calendar days from the moment of activation, unless otherwise specified in the terms of a specific promo code. The Administration reserves the right to change the terms of providing VIP status unilaterally.' : 'El estado VIP proporciona acceso a contenido adicional y funciones extendidas de la aplicación. La activación del estado VIP se realiza ingresando un código promocional u otro método proporcionado por la Administración. El período de validez del estado VIP es de 30 días calendario desde el momento de la activación, a menos que se especifique lo contrario en los términos de un código promocional específico. La Administración se reserva el derecho de cambiar los términos de proporcionar el estado VIP unilateralmente.') + '</p><p style="margin-bottom:12px;"><b>4. Ответственность сторон / Liability of the Parties</b><br>' + (currentLang === 'ru' ? 'Администрация не несет ответственности за любые прямые или косвенные убытки, возникшие в результате использования или невозможности использования приложения, включая, но не ограничиваясь, потерю данных, прибыли или деловой репутации. Пользователь самостоятельно несет ответственность за сохранность данных, хранящихся в локальном хранилище устройства. Администрация не гарантирует бесперебойную работу приложения и не несет ответственности за технические сбои, вызванные действиями третьих лиц или форс-мажорными обстоятельствами.' : currentLang === 'en' ? 'The Administration is not liable for any direct or indirect damages arising from the use or inability to use the application, including but not limited to loss of data, profit or business reputation. The User is solely responsible for the safety of data stored in the local storage of the device. The Administration does not guarantee uninterrupted operation of the application and is not responsible for technical failures caused by the actions of third parties or force majeure circumstances.' : 'La Administración no es responsable de ningún daño directo o indirecto derivado del uso o la imposibilidad de usar la aplicación, incluidos pero no limitados a la pérdida de datos, ganancias o reputación comercial. El Usuario es el único responsable de la seguridad de los datos almacenados en el almacenamiento local del dispositivo. La Administración no garantiza el funcionamiento ininterrumpido de la aplicación y no es responsable de los fallos técnicos causados por las acciones de terceros o circunstancias de fuerza mayor.') + '</p><p style="margin-bottom:12px;"><b>5. Пользовательский контент / User Content</b><br>' + (currentLang === 'ru' ? 'Пользователь имеет право создавать и публикировать собственный контент в рамках функционала приложения, при условии соблюдения действующего законодательства и настоящих Условий. Администрация оставляет за собой право удалять любой контент, нарушающий данные Условия или права третьих лиц, без предварительного уведомления. Размещая контент, Пользователь предоставляет Администрации неисключительную лицензию на использование такого контента в целях функционирования приложения.' : currentLang === 'en' ? 'The User has the right to create and publish their own content within the functionality of the application, provided that applicable law and these Terms are observed. The Administration reserves the right to remove any content that violates these Terms or the rights of third parties without prior notice. By posting content, the User grants the Administration a non-exclusive license to use such content for the purpose of operating the application.' : 'El Usuario tiene derecho a crear y publicar su propio contenido dentro de la funcionalidad de la aplicación, siempre que se respete la legislación aplicable y estos Términos. La Administración se reserva el derecho de eliminar cualquier contenido que viole estos Términos o los derechos de terceros sin previo aviso. Al publicar contenido, el Usuario otorga a la Administración una licencia no exclusiva para usar dicho contenido con el fin de operar la aplicación.') + '</p><p style="margin-bottom:12px;"><b>6. Конфиденциальность и защита данных / Privacy and Data Protection</b><br>' + (currentLang === 'ru' ? 'Администрация обязуется принимать все разумные меры для защиты персональных данных Пользователя. Приложение не собирает персональные данные без согласия Пользователя. Все данные, необходимые для функционирования приложения, хранятся исключительно в локальном хранилище устройства Пользователя. Администрация не передает данные Пользователя третьим лицам, за исключением случаев, предусмотренных законодательством.' : currentLang === 'en' ? 'The Administration undertakes to take all reasonable measures to protect the User's personal data. The application does not collect personal data without the User's consent. All data necessary for the operation of the application is stored exclusively in the local storage of the User's device. The Administration does not transfer User data to third parties, except in cases provided by law.' : 'La Administración se compromete a tomar todas las medidas razonables para proteger los datos personales del Usuario. La aplicación no recopila datos personales sin el consentimiento del Usuario. Todos los datos necesarios para el funcionamiento de la aplicación se almacenan exclusivamente en el almacenamiento local del dispositivo del Usuario. La Administración no transfiere datos del Usuario a terceros, excepto en los casos previstos por la ley.') + '</p><p style="margin-bottom:12px;"><b>7. Изменение условий / Changes to Terms</b><br>' + (currentLang === 'ru' ? 'Администрация оставляет за собой право в любое время изменять, дополнять или обновлять настоящие Условия использования без предварительного уведомления Пользователя. Измененные Условия вступают в силу с момента их публикации в приложении. Продолжение использования приложения после внесения изменений означает принятие Пользователем новых Условий. Рекомендуется регулярно проверять актуальность настоящих Условий.' : currentLang === 'en' ? 'The Administration reserves the right to change, supplement or update these Terms of Use at any time without prior notice to the User. The modified Terms take effect from the moment of their publication in the application. Continued use of the application after changes have been made means that the User accepts the new Terms. It is recommended to regularly check the relevance of these Terms.' : 'La Administración se reserva el derecho de cambiar, complementar o actualizar estos Términos de Uso en cualquier momento sin previo aviso al Usuario. Los Términos modificados entran en vigor desde el momento de su publicación en la aplicación. El uso continuado de la aplicación después de que se hayan realizado cambios significa que el Usuario acepta los nuevos Términos. Se recomienda verificar regularmente la relevancia de estos Términos.') + '</p><p style="margin-bottom:12px;"><b>8. Прекращение действия / Termination</b><br>' + (currentLang === 'ru' ? 'Администрация вправе заблокировать или удалить учетную запись Пользователя, а также запретить доступ к приложению без объяснения причин, в случае нарушения настоящих Условий или действующего законодательства. В случае прекращения доступа все данные, хранящиеся в локальном хранилище, могут быть утрачены. Администрация не несет ответственности за такую утрату.' : currentLang === 'en' ? 'The Administration has the right to block or delete the User's account, as well as prohibit access to the application without explaining the reasons, in case of violation of these Terms or applicable law. In case of termination of access, all data stored in local storage may be lost. The Administration is not responsible for such loss.' : 'La Administración tiene derecho a bloquear o eliminar la cuenta del Usuario, así como prohibir el acceso a la aplicación sin explicar las razones, en caso de violación de estos Términos o la legislación aplicable. En caso de terminación del acceso, todos los datos almacenados en el almacenamiento local pueden perderse. La Administración no es responsable de dicha pérdida.') + '</p><p><b>9. Применимое право / Governing Law</b><br>' + (currentLang === 'ru' ? 'Настоящие Условия регулируются и толкуются в соответствии с законодательством Российской Федерации. Все споры, возникающие из настоящих Условий или в связи с их исполнением, подлежат рассмотрению в судебных органах по месту нахождения Администрации.' : currentLang === 'en' ? 'These Terms are governed by and construed in accordance with the laws of the Russian Federation. All disputes arising from these Terms or in connection with their performance shall be considered in the judicial authorities at the location of the Administration.' : 'Estos Términos se rigen e interpretan de conformidad con las leyes de la Federación Rusa. Todas las disputas que surjan de estos Términos o en conexión con su ejecución serán consideradas en las autoridades judiciales en la ubicación de la Administración.') + '</p></div><button class="fate-next" onclick="this.closest('.fate-overlay').classList.remove('active');setTimeout(()=>this.closest('.fate-overlay').remove(),400)">' + t('close') + '</button></div>';
   document.body.appendChild(overlay);
   setTimeout(() => overlay.classList.add('active'), 10);
 }
@@ -1346,55 +1195,7 @@ function showTerms() {
 function showPrivacy() {
   const overlay = document.createElement('div');
   overlay.className = 'fate-overlay';
-  const privacyTexts = {
-    ru: [
-      '<b>1. Общие положения.</b> Настоящая Политика конфиденциальности (далее — «Политика») определяет порядок обработки и защиты персональных данных Пользователей интерактивного приложения «Your Destiny» (далее — «Приложение»). Настоящая Политика разработана в соответствии с требованиями действующего законодательства в области защиты персональных данных. Используя Приложение, Пользователь выражает свое согласие с условиями настоящей Политики.',
-      '<b>2. Сбор и обработка данных.</b> Приложение не собирает, не хранит и не передает персональные данные Пользователя на серверы разработчика. Все данные, включая прогресс в играх, настройки, предпочтения, результаты тестов и иной пользовательский контент, сохраняются исключительно в локальном хранилище браузера (localStorage) на устройстве Пользователя. Разработчик не имеет доступа к данным, хранящимся в localStorage Пользователя.',
-      '<b>3. Данные Telegram.</b> При запуске Приложения через Telegram WebApp могут быть получены следующие данные из объекта initDataUnsafe: идентификатор пользователя (user.id), имя (user.first_name), фамилия (user.last_name), имя пользователя (user.username), языковой код (user.language_code). Эти данные используются исключительно для автоматического определения языка интерфейса и не сохраняются, не передаются третьим лицам и не используются для иных целей.',
-      '<b>4. Cookies и аналогичные технологии.</b> Приложение не использует файлы cookie, веб-маяки, пиксели отслеживания или иные аналогичные технологии для сбора информации о Пользователе. Приложение не осуществляет отслеживание действий Пользователя в сети Интернет.',
-      '<b>5. Передача данных третьим лицам.</b> Разработчик не передает персональные данные Пользователя третьим лицам, за исключением случаев, предусмотренных действующим законодательством. Приложение не интегрировано с сервисами аналитики, рекламными сетями или иными сервисами, способными собирать данные о Пользователе.',
-      '<b>6. Безопасность данных.</b> Разработчик принимает разумные технические и организационные меры для защиты данных, хранящихся в Приложении, от несанкционированного доступа, изменения, раскрытия или уничтожения. Однако Пользователь понимает и признает, что ни один метод передачи данных через Интернет или метод электронного хранения не является абсолютно безопасным.',
-      '<b>7. Хранение и удаление данных.</b> Данные Пользователя хранятся в localStorage до тех пор, пока Пользователь не удалит их самостоятельно путем очистки кэша браузера, удаления данных сайта или переустановки приложения. Разработчик не имеет технической возможности удалить данные из localStorage Пользователя удаленно.',
-      '<b>8. Права Пользователя.</b> Пользователь имеет право на доступ к своим данным, их исправление, удаление, ограничение обработки, а также право на переносимость данных в соответствии с действующим законодательством. Поскольку все данные хранятся локально, реализация этих прав осуществляется Пользователем самостоятельно через инструменты браузера.',
-      '<b>9. Изменения в Политике.</b> Разработчик оставляет за собой право вносить изменения в настоящую Политику. Новая редакция Политики вступает в силу с момента ее размещения в Приложении. Продолжение использования Приложения после внесения изменений означает согласие Пользователя с новой редакцией Политики.',
-      '<b>10. Контактная информация.</b> По всем вопросам, связанным с обработкой персональных данных, Пользователь может обратиться к разработчику через официальный Telegram-канал @YourDestiny_Official.'
-    ],
-    en: [
-      '<b>1. General Provisions.</b> This Privacy Policy (hereinafter referred to as the «Policy») defines the procedure for processing and protecting the personal data of Users of the interactive application «Your Destiny» (hereinafter referred to as the «Application»). This Policy has been developed in accordance with the requirements of applicable legislation in the field of personal data protection. By using the Application, the User expresses their consent to the terms of this Policy.',
-      '<b>2. Data Collection and Processing.</b> The Application does not collect, store, or transmit the User's personal data to the developer's servers. All data, including game progress, settings, preferences, test results, and other user content, is stored exclusively in the browser's local storage (localStorage) on the User's device. The developer does not have access to the data stored in the User's localStorage.',
-      '<b>3. Telegram Data.</b> When launching the Application via Telegram WebApp, the following data may be obtained from the initDataUnsafe object: user identifier (user.id), first name (user.first_name), last name (user.last_name), username (user.username), and language code (user.language_code). This data is used exclusively for automatic language detection of the interface and is not stored, not transferred to third parties, and not used for other purposes.',
-      '<b>4. Cookies and Similar Technologies.</b> The Application does not use cookies, web beacons, tracking pixels, or other similar technologies to collect information about the User. The Application does not track the User's actions on the Internet.',
-      '<b>5. Data Transfer to Third Parties.</b> The developer does not transfer the User's personal data to third parties, except as provided by applicable law. The Application is not integrated with analytics services, advertising networks, or other services capable of collecting data about the User.',
-      '<b>6. Data Security.</b> The developer takes reasonable technical and organizational measures to protect the data stored in the Application from unauthorized access, modification, disclosure, or destruction. However, the User understands and acknowledges that no method of data transmission over the Internet or method of electronic storage is absolutely secure.',
-      '<b>7. Data Storage and Deletion.</b> User data is stored in localStorage until the User deletes it independently by clearing the browser cache, deleting site data, or reinstalling the application. The developer does not have the technical ability to delete data from the User's localStorage remotely.',
-      '<b>8. User Rights.</b> The User has the right to access their data, correct it, delete it, restrict processing, as well as the right to data portability in accordance with applicable law. Since all data is stored locally, the exercise of these rights is carried out by the User independently through browser tools.',
-      '<b>9. Changes to the Policy.</b> The developer reserves the right to make changes to this Policy. The new version of the Policy takes effect from the moment of its publication in the Application. Continued use of the Application after changes are made means the User agrees with the new version of the Policy.',
-      '<b>10. Contact Information.</b> For all questions related to the processing of personal data, the User can contact the developer through the official Telegram channel @YourDestiny_Official.'
-    ],
-    es: [
-      '<b>1. Disposiciones Generales.</b> Esta Política de Privacidad (en adelante, la «Política») define el procedimiento para el procesamiento y la protección de los datos personales de los Usuarios de la aplicación interactiva «Your Destiny» (en adelante, la «Aplicación»). Esta Política ha sido desarrollada de conformidad con los requisitos de la legislación aplicable en materia de protección de datos personales. Al utilizar la Aplicación, el Usuario expresa su consentimiento con los términos de esta Política.',
-      '<b>2. Recopilación y Procesamiento de Datos.</b> La Aplicación no recopila, almacena ni transmite los datos personales del Usuario a los servidores del desarrollador. Todos los datos, incluido el progreso del juego, la configuración, las preferencias, los resultados de las pruebas y otro contenido del usuario, se almacenan exclusivamente en el almacenamiento local del navegador (localStorage) en el dispositivo del Usuario. El desarrollador no tiene acceso a los datos almacenados en el localStorage del Usuario.',
-      '<b>3. Datos de Telegram.</b> Al iniciar la Aplicación a través de Telegram WebApp, pueden obtenerse los siguientes datos del objeto initDataUnsafe: identificador de usuario (user.id), nombre (user.first_name), apellido (user.last_name), nombre de usuario (user.username) y código de idioma (user.language_code). Estos datos se utilizan exclusivamente para la detección automática del idioma de la interfaz y no se almacenan, no se transfieren a terceros ni se utilizan para otros fines.',
-      '<b>4. Cookies y Tecnologías Similares.</b> La Aplicación no utiliza cookies, balizas web, píxeles de seguimiento u otras tecnologías similares para recopilar información sobre el Usuario. La Aplicación no realiza un seguimiento de las acciones del Usuario en Internet.',
-      '<b>5. Transferencia de Datos a Terceros.</b> El desarrollador no transfiere los datos personales del Usuario a terceros, excepto en los casos previstos por la legislación aplicable. La Aplicación no está integrada con servicios de análisis, redes publicitarias u otros servicios capaces de recopilar datos sobre el Usuario.',
-      '<b>6. Seguridad de los Datos.</b> El desarrollador adopta medidas técnicas y organizativas razonables para proteger los datos almacenados en la Aplicación contra el acceso no autorizado, la modificación, la divulgación o la destrucción. Sin embargo, el Usuario entiende y reconoce que ningún método de transmisión de datos a través de Internet o método de almacenamiento electrónico es absolutamente seguro.',
-      '<b>7. Almacenamiento y Eliminación de Datos.</b> Los datos del Usuario se almacenan en localStorage hasta que el Usuario los elimine de forma independiente borrando la caché del navegador, eliminando los datos del sitio o reinstalando la aplicación. El desarrollador no tiene la capacidad técnica de eliminar datos del localStorage del Usuario de forma remota.',
-      '<b>8. Derechos del Usuario.</b> El Usuario tiene derecho a acceder a sus datos, corregirlos, eliminarlos, restringir su procesamiento, así como el derecho a la portabilidad de datos de conformidad con la legislación aplicable. Dado que todos los datos se almacenan localmente, el ejercicio de estos derechos lo realiza el Usuario de forma independiente a través de las herramientas del navegador.',
-      '<b>9. Cambios en la Política.</b> El desarrollador se reserva el derecho de realizar cambios en esta Política. La nueva versión de la Política entra en vigor desde el momento de su publicación en la Aplicación. El uso continuado de la Aplicación después de realizar cambios significa que el Usuario acepta la nueva versión de la Política.',
-      '<b>10. Información de Contacto.</b> Para todas las preguntas relacionadas con el procesamiento de datos personales, el Usuario puede contactar al desarrollador a través del canal oficial de Telegram @YourDestiny_Official.'
-    ]
-  };
-  const texts = privacyTexts[currentLang] || privacyTexts['en'];
-  overlay.innerHTML = `
-    <button class="overlay-close-x" onclick="this.closest('.fate-overlay').classList.remove('active');setTimeout(()=>this.closest('.fate-overlay').remove(),400)">&times;</button>
-    <div class="fate-container" style="max-width:380px;">
-      <div class="fate-final-title" style="font-size:1.2rem;">${t('privacyTitle')}</div>
-      <div style="font-size:0.78rem;color:var(--text-secondary);line-height:1.65;text-align:left;margin-bottom:20px;max-height:60vh;overflow-y:auto;padding-right:8px;">
-        ${texts.map(t => '<p style="margin-bottom:14px;">' + t + '</p>').join('')}
-      </div>
-      <button class="fate-next" onclick="this.closest('.fate-overlay').classList.remove('active');setTimeout(()=>this.closest('.fate-overlay').remove(),400)">${t('close')}</button>
-    </div>
-  `;
+  overlay.innerHTML = '<button class="overlay-close-x" onclick="this.closest('.fate-overlay').classList.remove('active');setTimeout(()=>this.closest('.fate-overlay').remove(),400)">&times;</button><div class="fate-container" style="max-width:400px;"><div class="fate-final-title" style="font-size:1.15rem;margin-bottom:16px;">' + t('privacyTitle') + '</div><div style="font-size:0.78rem;color:var(--text-secondary);line-height:1.7;text-align:left;margin-bottom:20px;max-height:55vh;overflow-y:auto;padding-right:10px;"><p style="margin-bottom:12px;"><b>1. Общие положения / General Provisions</b><br>' + (currentLang === 'ru' ? 'Настоящая Политика конфиденциальности определяет порядок обработки и защиты персональных данных Пользователей приложения Your Destiny. Используя приложение, Пользователь выражает свое безоговорочное согласие с настоящей Политикой и указанными в ней условиями обработки персональных данных. В случае несогласия с условиями Политики Пользователь должен немедленно прекратить использование приложения.' : currentLang === 'en' ? 'This Privacy Policy defines the procedure for processing and protecting the personal data of Users of the Your Destiny application. By using the application, the User expresses their unconditional consent to this Policy and the conditions for processing personal data specified therein. In case of disagreement with the terms of the Policy, the User must immediately stop using the application.' : 'Esta Política de Privacidad define el procedimiento para procesar y proteger los datos personales de los Usuarios de la aplicación Your Destiny. Al usar la aplicación, el Usuario expresa su consentimiento incondicional a esta Política y a las condiciones para procesar datos personales especificadas en ella. En caso de desacuerdo con los términos de la Política, el Usuario debe dejar de usar la aplicación inmediatamente.') + '</p><p style="margin-bottom:12px;"><b>2. Сбор и использование данных / Data Collection and Use</b><br>' + (currentLang === 'ru' ? 'Приложение Your Destiny не собирает, не хранит и не обрабатывает персональные данные Пользователя на серверах Администрации. Все данные, необходимые для функционирования приложения, включая настройки, прогресс, предпочтения и историю использования, сохраняются исключительно в локальном хранилище устройства Пользователя (localStorage, sessionStorage и аналогичные технологии). Администрация не имеет доступа к данным, хранящимся на устройстве Пользователя, и не может их просматривать, изменять или удалять удаленно.' : currentLang === 'en' ? 'The Your Destiny application does not collect, store or process the User's personal data on the Administration's servers. All data necessary for the operation of the application, including settings, progress, preferences and usage history, is stored exclusively in the local storage of the User's device (localStorage, sessionStorage and similar technologies). The Administration does not have access to data stored on the User's device and cannot view, modify or delete it remotely.' : 'La aplicación Your Destiny no recopila, almacena ni procesa datos personales del Usuario en los servidores de la Administración. Todos los datos necesarios para el funcionamiento de la aplicación, incluidos la configuración, el progreso, las preferencias y el historial de uso, se almacenan exclusivamente en el almacenamiento local del dispositivo del Usuario (localStorage, sessionStorage y tecnologías similares). La Administración no tiene acceso a los datos almacenados en el dispositivo del Usuario y no puede verlos, modificarlos ni eliminarlos de forma remota.') + '</p><p style="margin-bottom:12px;"><b>3. Данные Telegram / Telegram Data</b><br>' + (currentLang === 'ru' ? 'При использовании приложения через Telegram WebApp могут быть получены следующие данные из Telegram: идентификатор пользователя (User ID), имя пользователя (username), языковой код (language_code), а также инициалы (first_name, last_name). Указанные данные используются исключительно для настройки интерфейса приложения под предпочтения Пользователя и не сохраняются на серверах Администрации. Администрация не передает данные Telegram третьим лицам и не использует их для иных целей, кроме как для обеспечения функциональности приложения.' : currentLang === 'en' ? 'When using the application through Telegram WebApp, the following data from Telegram may be received: user identifier (User ID), username, language code, as well as initials (first_name, last_name). The specified data is used exclusively to configure the application interface according to the User's preferences and is not stored on the Administration's servers. The Administration does not transfer Telegram data to third parties and does not use it for purposes other than ensuring the functionality of the application.' : 'Al usar la aplicación a través de Telegram WebApp, pueden recibirse los siguientes datos de Telegram: identificador de usuario (User ID), nombre de usuario, código de idioma, así como iniciales (first_name, last_name). Los datos especificados se utilizan exclusivamente para configurar la interfaz de la aplicación de acuerdo con las preferencias del Usuario y no se almacenan en los servidores de la Administración. La Administración no transfiere datos de Telegram a terceros y no los utiliza para fines distintos a garantizar la funcionalidad de la aplicación.') + '</p><p style="margin-bottom:12px;"><b>4. Файлы cookie и локальное хранилище / Cookies and Local Storage</b><br>' + (currentLang === 'ru' ? 'Приложение использует технологию локального хранилища браузера (localStorage) для сохранения настроек Пользователя, прогресса в играх, предпочтений темы оформления, языка интерфейса и других параметров. Эти данные хранятся исключительно на устройстве Пользователя и не передаются третьим лицам. Пользователь вправе в любое время удалить данные из локального хранилища путем очистки кэша браузера или использования соответствующих функций устройства. Администрация предупреждает, что удаление данных из локального хранилища приведет к полной потере прогресса и настроек в приложении.' : currentLang === 'en' ? 'The application uses browser local storage technology (localStorage) to save the User's settings, game progress, theme preferences, interface language and other parameters. This data is stored exclusively on the User's device and is not transferred to third parties. The User has the right to delete data from local storage at any time by clearing the browser cache or using the corresponding device functions. The Administration warns that deleting data from local storage will result in complete loss of progress and settings in the application.' : 'La aplicación utiliza la tecnología de almacenamiento local del navegador (localStorage) para guardar la configuración del Usuario, el progreso del juego, las preferencias de tema, el idioma de la interfaz y otros parámetros. Estos datos se almacenan exclusivamente en el dispositivo del Usuario y no se transfieren a terceros. El Usuario tiene derecho a eliminar datos del almacenamiento local en cualquier momento borrando la caché del navegador o utilizando las funciones correspondientes del dispositivo. La Administración advierte que eliminar datos del almacenamiento local resultará en la pérdida completa del progreso y la configuración en la aplicación.') + '</p><p style="margin-bottom:12px;"><b>5. Защита данных / Data Protection</b><br>' + (currentLang === 'ru' ? 'Администрация принимает все разумные технические и организационные меры для защиты данных Пользователя от несанкционированного доступа, изменения, раскрытия или уничтожения. Однако, учитывая, что данные хранятся исключительно на устройстве Пользователя, ответственность за физическую и программную защиту устройства лежит на самом Пользователе. Администрация настоятельно рекомендует использовать современные средства защиты устройств, включая пароли, биометрическую аутентификацию и антивирусное программное обеспечение.' : currentLang === 'en' ? 'The Administration takes all reasonable technical and organizational measures to protect User data from unauthorized access, modification, disclosure or destruction. However, given that data is stored exclusively on the User's device, responsibility for the physical and software protection of the device lies with the User himself. The Administration strongly recommends using modern device protection tools, including passwords, biometric authentication and antivirus software.' : 'La Administración toma todas las medidas técnicas y organizativas razonables para proteger los datos del Usuario contra el acceso no autorizado, la modificación, la divulgación o la destrucción. Sin embargo, dado que los datos se almacenan exclusivamente en el dispositivo del Usuario, la responsabilidad de la protección física y del software del dispositivo recae en el propio Usuario. La Administración recomienda encarecidamente el uso de herramientas modernas de protección de dispositivos, incluidas contraseñas, autenticación biométrica y software antivirus.') + '</p><p style="margin-bottom:12px;"><b>6. Права Пользователя / User Rights</b><br>' + (currentLang === 'ru' ? 'Пользователь имеет право на доступ к своим данным, их исправление, удаление, ограничение обработки, а также право на возражение против обработки данных. Поскольку все данные хранятся локально, для реализации указанных прав Пользователю необходимо самостоятельно управлять данными в локальном хранилище своего устройства. Пользователь также имеет право подать жалобу в уполномоченный орган по защите прав субъектов персональных данных в случае нарушения его прав.' : currentLang === 'en' ? 'The User has the right to access their data, correct it, delete it, restrict processing, as well as the right to object to data processing. Since all data is stored locally, to exercise these rights, the User needs to independently manage data in the local storage of their device. The User also has the right to file a complaint with the authorized body for the protection of the rights of personal data subjects in case of violation of their rights.' : 'El Usuario tiene derecho a acceder a sus datos, corregirlos, eliminarlos, restringir su procesamiento, así como el derecho a oponerse al procesamiento de datos. Dado que todos los datos se almacenan localmente, para ejercer estos derechos, el Usuario necesita administrar independientemente los datos en el almacenamiento local de su dispositivo. El Usuario también tiene derecho a presentar una queja ante el organismo autorizado para la protección de los derechos de los sujetos de datos personales en caso de violación de sus derechos.') + '</p><p style="margin-bottom:12px;"><b>7. Изменение Политики / Policy Changes</b><br>' + (currentLang === 'ru' ? 'Администрация оставляет за собой право вносить изменения в настоящую Политику конфиденциальности в одностороннем порядке без предварительного уведомления Пользователя. Новая редакция Политики вступает в силу с момента ее размещения в приложении, если иное не предусмотрено новой редакцией. Продолжение использования приложения после внесения изменений означает принятие Пользователем новой редакции Политики. Рекомендуется регулярно проверять актуальность настоящей Политики.' : currentLang === 'en' ? 'The Administration reserves the right to make changes to this Privacy Policy unilaterally without prior notice to the User. The new version of the Policy takes effect from the moment of its placement in the application, unless otherwise provided by the new version. Continued use of the application after changes have been made means that the User accepts the new version of the Policy. It is recommended to regularly check the relevance of this Policy.' : 'La Administración se reserva el derecho de realizar cambios en esta Política de Privacidad unilateralmente sin previo aviso al Usuario. La nueva versión de la Política entra en vigor desde el momento de su colocación en la aplicación, a menos que la nueva versión disponga lo contrario. El uso continuado de la aplicación después de que se hayan realizado cambios significa que el Usuario acepta la nueva versión de la Política. Se recomienda verificar regularmente la relevancia de esta Política.') + '</p><p><b>8. Контактная информация / Contact Information</b><br>' + (currentLang === 'ru' ? 'По всем вопросам, связанным с настоящей Политикой конфиденциальности, обработкой и защитой персональных данных, Пользователь может обратиться к Администрации через официальный канал сообщества в Telegram: @YourDestiny_Official. Администрация обязуется рассмотреть обращение в разумный срок и предоставить ответ в установленном порядке.' : currentLang === 'en' ? 'For all questions related to this Privacy Policy, processing and protection of personal data, the User can contact the Administration through the official community channel on Telegram: @YourDestiny_Official. The Administration undertakes to consider the appeal within a reasonable time and provide a response in the prescribed manner.' : 'Para todas las preguntas relacionadas con esta Política de Privacidad, el procesamiento y la protección de datos personales, el Usuario puede contactar a la Administración a través del canal oficial de la comunidad en Telegram: @YourDestiny_Official. La Administración se compromete a considerar la apelación dentro de un plazo razonable y proporcionar una respuesta de la manera prescrita.') + '</p></div><button class="fate-next" onclick="this.closest('.fate-overlay').classList.remove('active');setTimeout(()=>this.closest('.fate-overlay').remove(),400)">' + t('close') + '</button></div>';
   document.body.appendChild(overlay);
   setTimeout(() => overlay.classList.add('active'), 10);
 }
