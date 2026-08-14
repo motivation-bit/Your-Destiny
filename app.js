@@ -185,14 +185,14 @@ function initIntro() {
   nav.style.display = 'none';
   setTimeout(() => {
     intro.style.opacity = '0';
-    intro.style.transition = 'opacity 1.2s ease';
+    intro.style.transition = 'opacity 0.8s ease';
     setTimeout(() => {
       intro.style.display = 'none';
       app.classList.add('active');
       nav.style.display = 'flex';
       initMusic();
-    }, 1200);
-  }, 3500);
+    }, 800);
+  }, 2200);
 }
 
 function initMusic() {
