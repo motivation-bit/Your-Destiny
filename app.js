@@ -250,12 +250,12 @@ function showTimeCapsule() {
   const datePart = d.toLocaleDateString(DATE_LOCALES[currentLang] || 'en-GB', { day:'2-digit', month:'long', year:'numeric' });
   const timePart = d.toLocaleTimeString(DATE_LOCALES[currentLang] || 'en-GB', { hour:'2-digit', minute:'2-digit', hour12:false });
   const texts = {
-    ru:`Ты впервые вошёл в Your Destiny ${datePart} в ${timePart}. С этого момента началась твоя история в этом мире.`,
-    en:`You first entered Your Destiny on ${datePart} at ${timePart}. From that moment, your story in this world began.`,
-    es:`Entraste por primera vez en Your Destiny el ${datePart} a las ${timePart}. Desde ese momento comenzó tu historia en este mundo.`,
-    pt:`Entraste pela primeira vez no Your Destiny em ${datePart}, às ${timePart}. A partir desse momento começou a tua história neste mundo.`,
-    de:`Du bist am ${datePart} um ${timePart} erstmals in Your Destiny eingetreten. Von diesem Moment an begann deine Geschichte in dieser Welt.`,
-    fr:`Tu es entré pour la première fois dans Your Destiny le ${datePart} à ${timePart}. À partir de cet instant, ton histoire dans cet univers a commencé.`
+    ru:`Ты впервые вошёл в Your Destiny. С этого момента началась твоя история в этом мире.`,
+    en:`You first entered Your Destiny. From that moment, your story in this world began.`,
+    es:`Entraste por primera vez en Your Destiny. Desde ese momento comenzó tu historia en este mundo.`,
+    pt:`Entraste pela primeira vez no Your Destiny. A partir desse momento começou a tua história neste mundo.`,
+    de:`Du bist erstmals in Your Destiny eingetreten. Von diesem Moment an begann deine Geschichte in dieser Welt.`,
+    fr:`Tu es entré pour la première fois dans Your Destiny. À partir de cet instant, ton histoire dans cet univers a commencé.`
   };
   const overlay = document.createElement('div');
   overlay.className = 'fate-overlay active';
@@ -416,10 +416,13 @@ function renderThemeColors() {
 }
 
 function toggleLanguagePicker() {
-  document.getElementById('language-picker-panel')?.classList.toggle('open');
+  const panel = document.getElementById('language-picker-panel');
+  if (!panel) return;
+  panel.classList.toggle('open');
 }
 function toggleThemePicker() {
-  document.getElementById('theme-picker-panel')?.classList.toggle('open');
+  // Theme choices are intentionally always visible; this function is kept for compatibility.
+  document.getElementById('theme-picker-panel')?.classList.add('open');
 }
 
 function setTheme(theme) {
@@ -535,14 +538,54 @@ function showToast(message) {
 
 
 function showRatingModal() {
-  const overlay=document.createElement('div'); overlay.className='fate-overlay active';
+  const overlay=document.createElement('div');
+  overlay.className='fate-overlay active';
   const texts=RATING_TEXTS[currentLang]||RATING_TEXTS.en;
-  overlay.innerHTML=`<button class="overlay-close-x" onclick="this.closest('.fate-overlay').remove()">&times;</button><div class="rating-card"><div class="rating-title">${texts.title}</div><div class="rating-stars" role="radiogroup" aria-label="${texts.title}">${[1,2,3,4,5].map(i=>`<button class="rating-star" data-rating="${i}" aria-label="${i}" onclick="selectRating(${i})">★</button>`).join('')}</div><div class="rating-thanks">${texts.thanks}</div><div class="rating-text" id="rating-text"></div><a class="author-channel-btn rating-channel-btn" href="${CHANNEL_URL}" target="_blank" rel="noopener">${texts.open}</a></div>`;
+  const saved=Number(localStorage.getItem('your_destiny_rating')||0);
+  overlay.innerHTML=`<button class="overlay-close-x" onclick="this.closest('.fate-overlay').remove()">&times;</button>
+    <div class="rating-card ${saved ? 'has-rating' : 'compact'}" id="rating-card">
+      <div class="rating-title">${texts.title}</div>
+      <div class="rating-stars" role="radiogroup" aria-label="${texts.title}">${[1,2,3,4,5].map(i=>`<button class="rating-star ${i<=saved?'selected':''}" data-rating="${i}" aria-label="${i}" onclick="selectRating(${i})">★</button>`).join('')}</div>
+      <div class="rating-feedback" id="rating-feedback" ${saved?'':'hidden'}>
+        <div class="rating-thanks">${texts.thanks}</div>
+        <div class="rating-text" id="rating-text">${saved ? (texts[saved]||texts[5]) : ''}</div>
+        <a class="rating-channel-btn" href="${CHANNEL_URL}" target="_blank" rel="noopener">${texts.open}</a>
+      </div>
+    </div>`;
   document.body.appendChild(overlay);
 }
 function selectRating(value){
-  const stars=document.querySelectorAll('.rating-star'); stars.forEach(star=>star.classList.toggle('selected',Number(star.dataset.rating)<=value));
-  const text=document.getElementById('rating-text'); const texts=RATING_TEXTS[currentLang]||RATING_TEXTS.en; if(text) text.textContent=texts[value]||texts[5];
+  localStorage.setItem('your_destiny_rating', String(value));
+  const card=document.getElementById('rating-card');
+  const stars=document.querySelectorAll('.rating-star');
+  stars.forEach(star=>star.classList.toggle('selected',Number(star.dataset.rating)<=value));
+  const feedback=document.getElementById('rating-feedback');
+  const text=document.getElementById('rating-text');
+  const texts=RATING_TEXTS[currentLang]||RATING_TEXTS.en;
+  if(card) { card.classList.remove('compact'); card.classList.add('has-rating'); }
+  if(feedback) feedback.hidden=false;
+  if(text) text.textContent=texts[value]||texts[5];
+  const thanks=document.querySelector('.rating-thanks');
+  if(thanks) thanks.textContent=texts.thanks;
+  const channel=document.querySelector('.rating-channel-btn');
+  if(channel) channel.textContent=texts.open;
+}
+
+function showStorySchedule() {
+  const overlay=document.createElement('div'); overlay.className='fate-overlay active';
+  const copy={
+    ru:{title:'Расписание Историй',lead:'Будущие миры, которые уже ждут своего часа.',text:'Здесь будут появляться даты новых глав, синопсисы и первые намёки на истории Your Destiny. Расписание будет обновляться по мере готовности каждой главы.',soon:'Скоро',note:'Следи за обновлениями — новые истории будут открываться постепенно.'},
+    en:{title:'Story Schedule',lead:'Future worlds waiting for their moment.',text:'Here you will find release dates, synopses and first hints about upcoming Your Destiny stories. The schedule will be updated as each chapter is prepared.',soon:'Coming soon',note:'Stay tuned — new stories will open gradually.'},
+    es:{title:'Calendario de Historias',lead:'Mundos futuros esperando su momento.',text:'Aquí aparecerán fechas de estreno, sinopsis y primeras pistas sobre las próximas historias de Your Destiny. El calendario se actualizará a medida que cada capítulo esté preparado.',soon:'Próximamente',note:'Sigue las novedades: las nuevas historias se abrirán poco a poco.'},
+    pt:{title:'Calendário de Histórias',lead:'Mundos futuros à espera do seu momento.',text:'Aqui aparecerão datas de lançamento, sinopses e primeiras pistas das próximas histórias de Your Destiny. O calendário será atualizado à medida que cada capítulo estiver pronto.',soon:'Em breve',note:'Acompanha as novidades — novas histórias serão abertas gradualmente.'},
+    de:{title:'Geschichtenplan',lead:'Zukünftige Welten, die auf ihren Moment warten.',text:'Hier erscheinen Veröffentlichungstermine, Kurzfassungen und erste Hinweise zu kommenden Your-Destiny-Geschichten. Der Plan wird aktualisiert, sobald neue Kapitel bereit sind.',soon:'Bald',note:'Bleib dabei — neue Geschichten werden nach und nach geöffnet.'},
+    fr:{title:'Calendrier des histoires',lead:'Des mondes futurs qui attendent leur heure.',text:'Vous trouverez ici les dates de sortie, les synopsis et les premiers indices des prochaines histoires de Your Destiny. Le calendrier sera mis à jour à mesure que chaque chapitre sera prêt.',soon:'Bientôt',note:'Restez à l’écoute — les nouvelles histoires seront dévoilées progressivement.'}
+  };
+  const c=copy[currentLang]||copy.en;
+  overlay.innerHTML=`<button class="overlay-close-x" onclick="this.closest('.fate-overlay').remove()">&times;</button>
+  <div class="schedule-card"><div class="schedule-title">${c.title}</div><div class="schedule-lead">${c.lead}</div><div class="schedule-divider"></div>
+  <div class="schedule-entry"><div class="schedule-icon">◷</div><div><strong>${c.soon}</strong><p>${c.text}</p></div></div><div class="schedule-note">${c.note}</div></div>`;
+  document.body.appendChild(overlay);
 }
 
 function showSupportAuthor() {
@@ -574,12 +617,12 @@ function showBecomeAuthor() {
   const overlay = document.createElement('div');
   overlay.className = 'fate-overlay active';
   const legal = {
-    ru:'Отправляя текст, сценарий, историю, загадку, изображение, концепцию или иной материал в Your Destiny, вы подтверждаете, что обладаете всеми необходимыми правами и разрешениями на его передачу и использование и что материал не нарушает права третьих лиц. Если материал принят к использованию, вы соглашаетесь предоставить Your Destiny максимально широкий объём прав, необходимый для его воспроизведения, редактирования, адаптации, перевода, публикации, распространения, монетизации и включения в состав проекта, без ограничения территории и на весь допустимый законом срок, если отдельным письменным соглашением не установлено иное. Вознаграждение, роялти, обязательная выплата или обязательное указание авторства не возникают автоматически из самого факта отправки. После принятия материала вы не вправе требовать его удаления, запрета использования или дополнительной оплаты, кроме случаев, прямо предусмотренных отдельным письменным соглашением или императивными нормами применимого права. Вы также подтверждаете, что самостоятельно урегулируете любые претензии третьих лиц, связанные с нарушением предоставленных вами гарантий. Не отправляйте материалы, права на которые вы не можете предоставить на этих условиях.',
-    en:'By submitting text, scripts, stories, riddles, images, concepts or other material to Your Destiny, you confirm that you hold all rights and permissions required for its submission and use and that the material does not infringe third-party rights. If the material is accepted for use, you agree to grant Your Destiny the broadest rights reasonably required to reproduce, edit, adapt, translate, publish, distribute, monetize and incorporate the material into the project, worldwide and for the maximum period permitted by law, unless a separate written agreement provides otherwise. Compensation, royalties, mandatory payment or mandatory attribution do not arise automatically from submission. After acceptance, you agree not to demand removal, prohibition of use or additional payment except where a separate written agreement or mandatory applicable law expressly provides otherwise. You also agree to handle third-party claims arising from a breach of your warranties. Do not submit material you cannot grant on these terms.',
-    es:'Al enviar textos, guiones, historias, acertijos, imágenes, conceptos u otros materiales a Your Destiny, confirmas que posees todos los derechos y permisos necesarios para su envío y uso y que el material no infringe derechos de terceros. Si el material es aceptado, aceptas conceder a Your Destiny los derechos más amplios razonablemente necesarios para reproducirlo, editarlo, adaptarlo, traducirlo, publicarlo, distribuirlo, monetizarlo e incorporarlo al proyecto, en todo el mundo y durante el máximo plazo permitido por la ley, salvo acuerdo escrito distinto. La remuneración, regalías, pago obligatorio o atribución obligatoria no nacen automáticamente del envío. Tras la aceptación, aceptas no exigir la retirada, prohibición de uso ni pagos adicionales salvo que lo establezca expresamente un acuerdo escrito o una norma legal imperativa. También asumes la gestión de reclamaciones de terceros derivadas del incumplimiento de tus garantías. No envíes materiales que no puedas conceder bajo estas condiciones.',
-    pt:'Ao enviar textos, guiões, histórias, enigmas, imagens, conceitos ou outros materiais para o Your Destiny, confirmas que tens todos os direitos e autorizações necessários para o envio e utilização e que o material não viola direitos de terceiros. Se o material for aceite, concordas em conceder ao Your Destiny os direitos mais amplos razoavelmente necessários para reproduzir, editar, adaptar, traduzir, publicar, distribuir, monetizar e integrar o material no projeto, em todo o mundo e pelo período máximo permitido por lei, salvo acordo escrito em contrário. Remuneração, royalties, pagamento obrigatório ou atribuição obrigatória não surgem automaticamente do envio. Após a aceitação, concordas em não exigir remoção, proibição de utilização ou pagamento adicional, salvo quando previsto expressamente por acordo escrito ou por norma legal imperativa. Assumes também a gestão de reclamações de terceiros resultantes da violação das tuas garantias. Não envies materiais que não possas disponibilizar nestas condições.',
-    de:'Mit der Einreichung von Texten, Skripten, Geschichten, Rätseln, Bildern, Konzepten oder anderen Materialien bei Your Destiny bestätigst du, dass du über alle erforderlichen Rechte und Genehmigungen verfügst und keine Rechte Dritter verletzt werden. Wird das Material angenommen, stimmst du zu, Your Destiny die weitestgehenden vernünftigerweise erforderlichen Rechte zur Vervielfältigung, Bearbeitung, Anpassung, Übersetzung, Veröffentlichung, Verbreitung, Monetarisierung und Einbindung in das Projekt weltweit und für die gesetzlich zulässige Höchstdauer einzuräumen, sofern keine schriftliche Vereinbarung etwas anderes bestimmt. Vergütung, Tantiemen, eine verpflichtende Zahlung oder verpflichtende Namensnennung entstehen nicht allein durch die Einreichung. Nach Annahme stimmst du zu, keine Entfernung, Nutzungsuntersagung oder zusätzliche Zahlung zu verlangen, außer soweit dies ausdrücklich schriftlich vereinbart oder gesetzlich zwingend vorgesehen ist. Für Ansprüche Dritter aufgrund einer Verletzung deiner Zusicherungen bist du selbst verantwortlich. Reiche kein Material ein, das du nicht unter diesen Bedingungen zur Verfügung stellen darfst.',
-    fr:'En envoyant des textes, scénarios, histoires, énigmes, images, concepts ou autres contenus à Your Destiny, vous confirmez disposer de tous les droits et autorisations nécessaires à leur transmission et à leur utilisation et ne pas porter atteinte aux droits de tiers. Si le contenu est accepté, vous acceptez d’accorder à Your Destiny les droits les plus larges raisonnablement nécessaires pour le reproduire, le modifier, l’adapter, le traduire, le publier, le distribuer, le monétiser et l’intégrer au projet, dans le monde entier et pour la durée maximale autorisée par la loi, sauf accord écrit contraire. Aucune rémunération, redevance, paiement obligatoire ou attribution obligatoire ne naît automatiquement de l’envoi. Après acceptation, vous acceptez de ne pas exiger le retrait, l’interdiction d’utilisation ou un paiement supplémentaire, sauf disposition expresse d’un accord écrit ou d’une règle impérative applicable. Vous assumez également les réclamations de tiers résultant d’une violation de vos garanties. N’envoyez pas de contenu que vous ne pouvez pas concéder dans ces conditions.'
+    ru:'Отправляя текст, сценарий, историю, загадку, изображение, концепцию или иной материал в Your Destiny, вы подтверждаете, что обладаете всеми необходимыми правами и разрешениями на его передачу и использование и что материал не нарушает права третьих лиц. Если материал принят к использованию, вы соглашаетесь предоставить Your Destiny максимально широкий объём прав, необходимый для его воспроизведения, редактирования, адаптации, перевода, публикации, распространения, монетизации и включения в состав проекта, без ограничения территории и на весь допустимый законом срок, если отдельным письменным соглашением не установлено иное. Вознаграждение, роялти, обязательная выплата или обязательное указание авторства не возникают автоматически из самого факта отправки. После принятия материала вы не вправе требовать его удаления, запрета использования или дополнительной оплаты, кроме случаев, прямо предусмотренных отдельным письменным соглашением или императивными нормами применимого права. Вы также подтверждаете, что самостоятельно урегулируете любые претензии третьих лиц, связанные с нарушением предоставленных вами гарантий. Вы соглашаетесь на отчуждение в пользу Your Destiny исключительных имущественных прав на принятый материал в максимально полном объёме, допускаемом применимым правом, включая право изменять, сокращать, дополнять, перерабатывать, объединять с другими материалами, переводить, публиковать, использовать под любым названием, распространять и монетизировать материал любым способом. Отдельная оплата, роялти, доля дохода или иное вознаграждение не причитаются, если иное прямо не согласовано письменно. Отправляя материал, вы подтверждаете согласие с этими условиями.',
+    en:'By submitting text, scripts, stories, riddles, images, concepts or other material to Your Destiny, you confirm that you hold all rights and permissions required for its submission and use and that the material does not infringe third-party rights. If the material is accepted for use, you agree to grant Your Destiny the broadest rights reasonably required to reproduce, edit, adapt, translate, publish, distribute, monetize and incorporate the material into the project, worldwide and for the maximum period permitted by law, unless a separate written agreement provides otherwise. Compensation, royalties, mandatory payment or mandatory attribution do not arise automatically from submission. After acceptance, you agree not to demand removal, prohibition of use or additional payment except where a separate written agreement or mandatory applicable law expressly provides otherwise. You also agree to handle third-party claims arising from a breach of your warranties. You agree to assign to Your Destiny the exclusive economic rights in accepted material to the fullest extent permitted by applicable law, including the right to edit, shorten, expand, adapt, combine, translate, publish, use under any title, distribute and monetize the material in any manner. No separate fee, royalty, revenue share or other compensation is owed unless expressly agreed in writing. By submitting the material, you confirm your acceptance of these terms.',
+    es:'Al enviar textos, guiones, historias, acertijos, imágenes, conceptos u otros materiales a Your Destiny, confirmas que posees todos los derechos y permisos necesarios para su envío y uso y que el material no infringe derechos de terceros. Si el material es aceptado, aceptas conceder a Your Destiny los derechos más amplios razonablemente necesarios para reproducirlo, editarlo, adaptarlo, traducirlo, publicarlo, distribuirlo, monetizarlo e incorporarlo al proyecto, en todo el mundo y durante el máximo plazo permitido por la ley, salvo acuerdo escrito distinto. La remuneración, regalías, pago obligatorio o atribución obligatoria no nacen automáticamente del envío. Tras la aceptación, aceptas no exigir la retirada, prohibición de uso ni pagos adicionales salvo que lo establezca expresamente un acuerdo escrito o una norma legal imperativa. También asumes la gestión de reclamaciones de terceros derivadas del incumplimiento de tus garantías. Aceptas ceder a Your Destiny los derechos patrimoniales exclusivos sobre el material aceptado en la máxima medida permitida por la ley aplicable, incluido el derecho a editarlo, reducirlo, ampliarlo, adaptarlo, combinarlo, traducirlo, publicarlo, utilizarlo bajo cualquier título, distribuirlo y monetizarlo de cualquier forma. No se adeuda ninguna tarifa, regalía, participación en ingresos u otra compensación salvo acuerdo escrito expreso. Al enviar el material confirmas tu aceptación de estas condiciones.',
+    pt:'Ao enviar textos, guiões, histórias, enigmas, imagens, conceitos ou outros materiais para o Your Destiny, confirmas que tens todos os direitos e autorizações necessários para o envio e utilização e que o material não viola direitos de terceiros. Se o material for aceite, concordas em conceder ao Your Destiny os direitos mais amplos razoavelmente necessários para reproduzir, editar, adaptar, traduzir, publicar, distribuir, monetizar e integrar o material no projeto, em todo o mundo e pelo período máximo permitido por lei, salvo acordo escrito em contrário. Remuneração, royalties, pagamento obrigatório ou atribuição obrigatória não surgem automaticamente do envio. Após a aceitação, concordas em não exigir remoção, proibição de utilização ou pagamento adicional, salvo quando previsto expressamente por acordo escrito ou por norma legal imperativa. Assumes também a gestão de reclamações de terceiros resultantes da violação das tuas garantias. Concordas em ceder ao Your Destiny os direitos patrimoniais exclusivos sobre o material aceite na máxima medida permitida pela lei aplicável, incluindo o direito de editar, reduzir, ampliar, adaptar, combinar, traduzir, publicar, utilizar sob qualquer título, distribuir e monetizar o material de qualquer forma. Não é devida qualquer remuneração, royalty, participação em receitas ou outra compensação, salvo acordo escrito expresso. Ao enviar o material, confirmas a aceitação destas condições.',
+    de:'Mit der Einreichung von Texten, Skripten, Geschichten, Rätseln, Bildern, Konzepten oder anderen Materialien bei Your Destiny bestätigst du, dass du über alle erforderlichen Rechte und Genehmigungen verfügst und keine Rechte Dritter verletzt werden. Wird das Material angenommen, stimmst du zu, Your Destiny die weitestgehenden vernünftigerweise erforderlichen Rechte zur Vervielfältigung, Bearbeitung, Anpassung, Übersetzung, Veröffentlichung, Verbreitung, Monetarisierung und Einbindung in das Projekt weltweit und für die gesetzlich zulässige Höchstdauer einzuräumen, sofern keine schriftliche Vereinbarung etwas anderes bestimmt. Vergütung, Tantiemen, eine verpflichtende Zahlung oder verpflichtende Namensnennung entstehen nicht allein durch die Einreichung. Nach Annahme stimmst du zu, keine Entfernung, Nutzungsuntersagung oder zusätzliche Zahlung zu verlangen, außer soweit dies ausdrücklich schriftlich vereinbart oder gesetzlich zwingend vorgesehen ist. Für Ansprüche Dritter aufgrund einer Verletzung deiner Zusicherungen bist du selbst verantwortlich. Du stimmst zu, Your Destiny die ausschließlichen vermögensrechtlichen Rechte an angenommenem Material im größtmöglichen gesetzlich zulässigen Umfang zu übertragen, einschließlich des Rechts, es zu bearbeiten, zu kürzen, zu erweitern, anzupassen, zu verbinden, zu übersetzen, zu veröffentlichen, unter jedem Titel zu verwenden, zu verbreiten und zu monetarisieren. Eine gesonderte Vergütung, Beteiligung oder sonstige Zahlung ist nicht geschuldet, sofern sie nicht ausdrücklich schriftlich vereinbart wurde. Mit der Einreichung bestätigst du die Annahme dieser Bedingungen.',
+    fr:'En envoyant des textes, scénarios, histoires, énigmes, images, concepts ou autres contenus à Your Destiny, vous confirmez disposer de tous les droits et autorisations nécessaires à leur transmission et à leur utilisation et ne pas porter atteinte aux droits de tiers. Si le contenu est accepté, vous acceptez d’accorder à Your Destiny les droits les plus larges raisonnablement nécessaires pour le reproduire, le modifier, l’adapter, le traduire, le publier, le distribuer, le monétiser et l’intégrer au projet, dans le monde entier et pour la durée maximale autorisée par la loi, sauf accord écrit contraire. Aucune rémunération, redevance, paiement obligatoire ou attribution obligatoire ne naît automatiquement de l’envoi. Après acceptation, vous acceptez de ne pas exiger le retrait, l’interdiction d’utilisation ou un paiement supplémentaire, sauf disposition expresse d’un accord écrit ou d’une règle impérative applicable. Vous assumez également les réclamations de tiers résultant d’une violation de vos garanties. Vous acceptez de céder à Your Destiny les droits patrimoniaux exclusifs sur tout contenu accepté, dans la mesure maximale autorisée par le droit applicable, notamment le droit de le modifier, le réduire, l’étendre, l’adapter, le combiner, le traduire, le publier, l’utiliser sous tout titre, le distribuer et le monétiser de quelque manière que ce soit. Aucune rémunération, redevance, participation aux revenus ou autre compensation n’est due sauf accord écrit exprès. En envoyant le contenu, vous confirmez votre acceptation de ces conditions.'
   };
 
   const generic = legal[currentLang] || legal.en;
@@ -4437,9 +4480,8 @@ function openFateDilemmas() {
 
 function renderFateQuestion(index) {
   const d = FATE_DILEMMAS[index];
-  const overlay = document.createElement('div');
-  overlay.id = 'fate-overlay';
-  overlay.className = 'fate-overlay';
+  let overlay = document.getElementById('fate-overlay');
+  if (!overlay) { overlay = document.createElement('div'); overlay.id = 'fate-overlay'; overlay.className = 'fate-overlay active'; document.body.appendChild(overlay); }
   overlay.innerHTML = `
     <button class="overlay-close-x" onclick="closeFateDilemmas()">&times;</button>
     <div class="fate-container">
@@ -4459,8 +4501,6 @@ function renderFateQuestion(index) {
       </div>
     </div>
   `;
-  document.body.appendChild(overlay);
-  setTimeout(() => overlay.classList.add('active'), 10);
 }
 
 function answerFate(index, choice) {
@@ -4491,8 +4531,13 @@ function createGoldExplosion() {
 
 function nextFateQuestion() {
   const overlay = document.getElementById('fate-overlay');
-  overlay.classList.remove('active');
-  setTimeout(() => { overlay.remove(); openFateDilemmas(); }, 400);
+  if (!overlay) return;
+  const state = JSON.parse(localStorage.getItem('fate_dilemmas') || '{"currentIndex":0,"answers":[]}');
+  if (state.currentIndex >= FATE_DILEMMAS.length) { showFateFinalInPlace(overlay); return; }
+  renderFateQuestion(state.currentIndex);
+}
+function showFateFinalInPlace(overlay) {
+  overlay.innerHTML = `<button class="overlay-close-x" onclick="closeFateDilemmas()">&times;</button><div class="fate-container fate-final"><div class="fate-final-title">${t('fateComplete')}</div><div class="fate-final-text">${t('fateCompleteText')}</div><div class="final-channel-note">${t('finalChannel')}</div><div class="final-actions"><button class="fate-next" onclick="restartFateDilemmas()">${t('restart')}</button><a class="fate-channel-btn" href="${CHANNEL_URL}" target="_blank" rel="noopener">${t('openTelegram')}</a></div></div>`;
 }
 
 function showFateFinal() {
@@ -4510,8 +4555,8 @@ function showFateFinal() {
 }
 function restartFateDilemmas() {
   localStorage.setItem('fate_dilemmas', JSON.stringify({currentIndex:0,answers:[]}));
-  const overlay=document.querySelector('.fate-overlay');
-  if(overlay){overlay.classList.remove('active');setTimeout(()=>{overlay.remove();openFateDilemmas();},250);}
+  const overlay=document.getElementById('fate-overlay');
+  if(overlay) renderFateQuestion(0);
 }
 
 function closeFateDilemmas() {
@@ -4815,16 +4860,15 @@ function showLabyrinthStart() {
 
 function enterLabyrinth() {
   const overlay = document.getElementById('labyrinth-overlay');
-  overlay.classList.remove('active');
-  setTimeout(() => { overlay.remove(); renderLabyrinthRiddle(); }, 400);
+  if (overlay) renderLabyrinthRiddle();
 }
 
 function renderLabyrinthRiddle() {
   const saved = localStorage.getItem('labyrinth');
   let state = saved ? JSON.parse(saved) : { currentRiddle: 0, hintsUsed: [] };
   const riddle = LABYRINTH_RIDDLES[state.currentRiddle];
-  const overlay = document.createElement('div');
-  overlay.id = 'labyrinth-overlay';
+  let overlay = document.getElementById('labyrinth-overlay');
+  if (!overlay) { overlay=document.createElement('div'); overlay.id='labyrinth-overlay'; overlay.className='labyrinth-overlay active'; document.body.appendChild(overlay); }
   overlay.className = 'labyrinth-overlay active';
   overlay.innerHTML = `
     <button class="overlay-close-x" onclick="closeLabyrinth()">&times;</button>
@@ -4842,7 +4886,6 @@ function renderLabyrinthRiddle() {
       </div>
     </div>
   `;
-  document.body.appendChild(overlay);
 }
 
 function showLabyrinthHint(hintIndex) {
@@ -4909,12 +4952,12 @@ function nextLabyrinthRiddle() {
   state.currentRiddle++; state.hintsUsed = [];
   localStorage.setItem('labyrinth', JSON.stringify(state));
   const overlay = document.getElementById('labyrinth-overlay');
-  overlay.classList.remove('active');
-  setTimeout(() => {
-    overlay.remove();
-    if (state.currentRiddle >= LABYRINTH_RIDDLES.length) showLabyrinthFinal();
-    else renderLabyrinthRiddle();
-  }, 400);
+  if (!overlay) return;
+  if (state.currentRiddle >= LABYRINTH_RIDDLES.length) showLabyrinthFinalInPlace(overlay);
+  else renderLabyrinthRiddle();
+}
+function showLabyrinthFinalInPlace(overlay) {
+  overlay.innerHTML=`<button class="overlay-close-x" onclick="closeLabyrinth()">&times;</button><div class="labyrinth-container labyrinth-final"><div class="labyrinth-final-title">${t('riddleComplete')}</div><div class="labyrinth-final-text">${t('riddleCompleteText')}</div><div class="final-channel-note">${t('finalChannel')}</div><div class="final-actions"><button class="labyrinth-next-btn" onclick="restartLabyrinth()">${t('restart')}</button><a class="fate-channel-btn" href="${CHANNEL_URL}" target="_blank" rel="noopener">${t('openTelegram')}</a></div></div>`;
 }
 
 function showLabyrinthFinal() {
@@ -4934,8 +4977,8 @@ function showLabyrinthFinal() {
 
 function restartLabyrinth() {
   localStorage.setItem('labyrinth', JSON.stringify({ currentRiddle: 0, hintsUsed: [] }));
-  const overlay = document.querySelector('.labyrinth-overlay');
-  if (overlay) { overlay.classList.remove('active'); setTimeout(() => { overlay.remove(); renderLabyrinthRiddle(); }, 400); }
+  const overlay = document.getElementById('labyrinth-overlay');
+  if (overlay) renderLabyrinthRiddle();
 }
 
 function closeLabyrinth() {
@@ -6005,9 +6048,9 @@ function startDestinyQuiz() {
 
 function renderDestinyQuestion(index) {
   const q = DESTINY_QUESTIONS[index];
-  const overlay = document.createElement('div');
-  overlay.id = 'destiny-overlay';
-  overlay.className = 'destiny-overlay active';
+  let overlay = document.getElementById('destiny-overlay');
+  if (!overlay) { overlay=document.createElement('div'); overlay.id='destiny-overlay'; overlay.className='destiny-overlay active'; document.body.appendChild(overlay); }
+  overlay.className='destiny-overlay active';
   overlay.innerHTML = `
     <button class="overlay-close-x" onclick="closeDestiny()">&times;</button>
     <div class="destiny-container">
@@ -6020,7 +6063,6 @@ function renderDestinyQuestion(index) {
       </div>
     </div>
   `;
-  document.body.appendChild(overlay);
 }
 
 function answerDestiny(qIndex, optIndex) {
@@ -6031,40 +6073,31 @@ function answerDestiny(qIndex, optIndex) {
   for (let key in scores) state.scores[key] += scores[key];
   localStorage.setItem('true_destiny', JSON.stringify(state));
   const overlay = document.getElementById('destiny-overlay');
-  overlay.classList.remove('active');
-  setTimeout(() => {
-    overlay.remove();
-    if (state.currentQuestion >= DESTINY_QUESTIONS.length) {
-      state.completed = true;
-      localStorage.setItem('true_destiny', JSON.stringify(state));
-      showDestinyResult(state.scores);
-    } else renderDestinyQuestion(state.currentQuestion);
-  }, 400);
+  if (!overlay) return;
+  if (state.currentQuestion >= DESTINY_QUESTIONS.length) {
+    state.completed = true;
+    localStorage.setItem('true_destiny', JSON.stringify(state));
+    showDestinyResultInPlace(overlay, state.scores);
+  } else renderDestinyQuestion(state.currentQuestion);
 }
 
 function showDestinyResult(scores) {
+  const overlay=document.getElementById('destiny-overlay') || (()=>{const x=document.createElement('div');x.id='destiny-overlay';x.className='destiny-overlay active';document.body.appendChild(x);return x;})();
+  showDestinyResultInPlace(overlay,scores);
+}
+function showDestinyResultInPlace(overlay,scores) {
   const sorted = Object.entries(scores).sort((a,b)=>b[1]-a[1]);
   const winner = sorted[0]?.[0] || 'realist';
   const title = DESTINY_TITLES[winner] || DESTINY_TITLES.realist;
-  const overlay = document.createElement('div');
-  overlay.className = 'destiny-overlay active';
-  overlay.innerHTML = `
-    <button class="overlay-close-x" onclick="closeDestiny()">&times;</button>
-    <div class="destiny-container destiny-result destiny-result-minimal destiny-result-rich">
-      <div class="destiny-result-symbol">✦</div>
-      <div class="destiny-result-kicker">${t('destinyResultTitle')}</div>
-      <div class="destiny-result-title">${loc(title.name)}</div>
-      <div class="destiny-result-desc">${loc(title.description)}</div>
-      <div class="final-channel-note">${t('finalChannel')}</div>
-      <div class="final-actions"><button class="destiny-restart" onclick="restartDestiny()">${t('destinyRestartBtn')}</button><a class="fate-channel-btn" href="${CHANNEL_URL}" target="_blank" rel="noopener">${t('openTelegram')}</a></div>
-    </div>`;
-  document.body.appendChild(overlay);
+  overlay.className='destiny-overlay active';
+  overlay.innerHTML = `<button class="overlay-close-x" onclick="closeDestiny()">&times;</button><div class="destiny-container destiny-result destiny-result-minimal destiny-result-rich"><div class="destiny-result-symbol">✦</div><div class="destiny-result-kicker">${t('destinyResultTitle')}</div><div class="destiny-result-title">${loc(title.name)}</div><div class="destiny-result-desc">${loc(title.description)}</div><div class="final-channel-note">${t('finalChannel')}</div><div class="final-actions"><button class="destiny-restart" onclick="restartDestiny()">${t('destinyRestartBtn')}</button><a class="fate-channel-btn" href="${CHANNEL_URL}" target="_blank" rel="noopener">${t('openTelegram')}</a></div></div>`;
 }
 
 function restartDestiny() {
   localStorage.removeItem('true_destiny');
-  const overlay = document.querySelector('.destiny-overlay');
-  if (overlay) { overlay.classList.remove('active'); setTimeout(() => { overlay.remove(); openTrueDestiny(); }, 400); }
+  const overlay = document.getElementById('destiny-overlay');
+  if (overlay) renderDestinyQuestion(0);
+  else openTrueDestiny();
 }
 
 function closeDestiny() {
