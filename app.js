@@ -170,14 +170,20 @@ T.fr = {
 };
 
 const EXTRA_I18N = {
-  ru:{vipActivated30:'VIP активирован на 30 дней',invalidPromo:'Неверный промокод',supportDesc:'Поддержка помогает сохранять развитие Your Destiny, создавать новые истории и поддерживать работу проекта.',authorDesc:'Раздел для авторов, которые хотят предложить проекту собственные истории, сценарии, загадки, визуальные идеи или другие оригинальные материалы.',authorStories:'Истории и сценарии',authorRiddles:'Загадки и логические задачи',authorIdeas:'Идеи и концепции новых разделов',authorLegal:'Отправляя материал, автор подтверждает, что обладает необходимыми правами на него. Передача материала не гарантирует публикацию или оплату. Условия использования, формат вознаграждения и права на опубликованный материал согласовываются отдельно до его принятия в проект.',writeDirect:'Написать в Direct',channelMore:'Больше историй, обновлений и материалов — в Telegram-канале.',openTelegram:'Telegram', capsule:'Точная дата и время первого входа', wisdomLabel:'ЗНАК СУДЬБЫ', wisdomFooter:'слово судьбы', hintConfirm:'Точно хочешь открыть подсказку? Она будет использована и не даст готового ответа.', hintYes:'Да, открыть', hintNo:'Назад', countOf:'из', destinyIntro:'10 вопросов помогут раскрыть твой архетип.', finalChannel:'В Telegram-канале есть ещё истории, новые испытания и обновления.', aboutLead:'Your Destiny — это интерактивное пространство, где выбор, логика, история и самоисследование соединяются в одном путешествии.', aboutBody:'Здесь можно проходить истории и дилеммы, проверять логику в Лабиринте, искать свой архетип, возвращаться к мыслям в Мудрости Судьбы и постепенно открывать новые грани проекта.'},
-  en:{vipActivated30:'VIP activated for 30 days',invalidPromo:'Invalid promo code',supportDesc:'Your support helps Your Destiny grow, create new stories and keep the project running.',authorDesc:'A space for creators who want to submit original stories, scripts, riddles, visual ideas or other materials for Your Destiny.',authorStories:'Stories and scripts',authorRiddles:'Riddles and logic',authorIdeas:'Ideas and new section concepts',authorLegal:'By submitting material, the author confirms that they hold the necessary rights to it. Submission does not guarantee publication or payment. Usage terms, compensation and rights for accepted material are agreed separately before publication.',writeDirect:'Write in Direct',channelMore:'More stories, updates and materials are available on the Telegram channel.',openTelegram:'Telegram',capsule:'Exact date and time of first entry',wisdomLabel:'SIGN OF FATE',wisdomFooter:'word of fate',hintConfirm:'Are you sure you want to open the hint? It will be used and will not reveal the answer.',hintYes:'Yes, open',hintNo:'Back',countOf:'of',destinyIntro:'10 questions will help reveal your archetype.',finalChannel:'There are more stories, new challenges and updates on the Telegram channel.',aboutLead:'Your Destiny is an interactive space where choice, logic, story and self-discovery meet in one journey.',aboutBody:'Explore stories and dilemmas, test your logic in the Labyrinth, discover your archetype, return to the Wisdom of Fate and gradually uncover new layers of the project.'},
-  es:{vipActivated30:'VIP activado durante 30 días',invalidPromo:'Código promocional no válido',supportDesc:'Tu apoyo ayuda a que Your Destiny crezca, cree nuevas historias y mantenga el proyecto.',authorDesc:'Un espacio para creadores que quieran proponer historias, guiones, acertijos, ideas visuales u otros materiales originales.',authorStories:'Historias y guiones',authorRiddles:'Acertijos y lógica',authorIdeas:'Ideas y conceptos de nuevas secciones',authorLegal:'Al enviar material, el autor confirma que posee los derechos necesarios. El envío no garantiza publicación ni pago. Las condiciones de uso, remuneración y derechos del material aceptado se acuerdan por separado antes de su publicación.',writeDirect:'Escribir por Direct',channelMore:'Más historias, novedades y materiales están en el canal de Telegram.',openTelegram:'Telegram',capsule:'Fecha y hora exactas de la primera entrada',wisdomLabel:'SEÑAL DEL DESTINO',wisdomFooter:'palabra del destino',hintConfirm:'¿Seguro que quieres abrir la pista? Se usará y no dará la respuesta.',hintYes:'Sí, abrir',hintNo:'Volver',countOf:'de',destinyIntro:'10 preguntas te ayudarán a descubrir tu arquetipo.',finalChannel:'En el canal de Telegram hay más historias, nuevos retos y novedades.',aboutLead:'Your Destiny es un espacio interactivo donde elección, lógica, historias y autoconocimiento se unen en un solo viaje.',aboutBody:'Explora historias y dilemas, prueba tu lógica en el Laberinto, descubre tu arquetipo, vuelve a la Sabiduría del Destino y descubre nuevas capas del proyecto.'},
-  pt:{vipActivated30:'VIP ativado por 30 dias',invalidPromo:'Código promocional inválido',supportDesc:'O teu apoio ajuda o Your Destiny a crescer, criar novas histórias e manter o projeto.',authorDesc:'Um espaço para criadores que querem enviar histórias, guiões, enigmas, ideias visuais ou outros materiais originais.',authorStories:'Histórias e guiões',authorRiddles:'Enigmas e lógica',authorIdeas:'Ideias e conceitos de novas secções',authorLegal:'Ao enviar material, o autor confirma que possui os direitos necessários. O envio não garante publicação nem pagamento. As condições de utilização, remuneração e direitos do material aceite são acordadas separadamente antes da publicação.',writeDirect:'Escrever por Direct',channelMore:'Mais histórias, novidades e materiais estão no canal do Telegram.',openTelegram:'Telegram',capsule:'Data e hora exatas da primeira entrada',wisdomLabel:'SINAL DO DESTINO',wisdomFooter:'palavra do destino',hintConfirm:'Tens a certeza de que queres abrir a pista? Ela será usada e não dará a resposta.',hintYes:'Sim, abrir',hintNo:'Voltar',countOf:'de',destinyIntro:'10 perguntas vão ajudar a revelar o teu arquétipo.',finalChannel:'No canal do Telegram há mais histórias, novos desafios e atualizações.',aboutLead:'Your Destiny é um espaço interativo onde escolha, lógica, histórias e autoconhecimento se encontram numa só viagem.',aboutBody:'Explora histórias e dilemas, testa a lógica no Labirinto, descobre o teu arquétipo, regressa à Sabedoria do Destino e descobre novas camadas do projeto.'},
-  de:{vipActivated30:'VIP für 30 Tage aktiviert',invalidPromo:'Ungültiger Promo-Code',supportDesc:'Deine Unterstützung hilft Your Destiny zu wachsen, neue Geschichten zu erstellen und das Projekt weiterzuführen.',authorDesc:'Ein Bereich für Kreative, die eigene Geschichten, Skripte, Rätsel, visuelle Ideen oder andere Originalmaterialien einreichen möchten.',authorStories:'Geschichten und Skripte',authorRiddles:'Rätsel und Logik',authorIdeas:'Ideen und Konzepte für neue Bereiche',authorLegal:'Mit der Einreichung bestätigt der Autor, dass er die erforderlichen Rechte besitzt. Eine Einreichung garantiert weder Veröffentlichung noch Vergütung. Nutzungsbedingungen, Vergütung und Rechte an angenommenem Material werden vor der Veröffentlichung gesondert vereinbart.',writeDirect:'Im Direct schreiben',channelMore:'Weitere Geschichten, Updates und Materialien findest du im Telegram-Kanal.',openTelegram:'Telegram',capsule:'Genaues Datum und Uhrzeit des ersten Zugangs',wisdomLabel:'ZEICHEN DES SCHICKSALS',wisdomFooter:'Wort des Schicksals',hintConfirm:'Möchtest du den Hinweis wirklich öffnen? Er wird verbraucht und verrät nicht die Antwort.',hintYes:'Ja, öffnen',hintNo:'Zurück',countOf:'von',destinyIntro:'10 Fragen helfen dir, deinen Archetyp zu entdecken.',finalChannel:'Im Telegram-Kanal gibt es weitere Geschichten, neue Herausforderungen und Updates.',aboutLead:'Your Destiny ist ein interaktiver Raum, in dem Entscheidungen, Logik, Geschichten und Selbsterkenntnis auf einer Reise zusammenkommen.',aboutBody:'Erlebe Geschichten und Dilemmata, teste deine Logik im Labyrinth, entdecke deinen Archetyp, kehre zur Weisheit des Schicksals zurück und entdecke neue Ebenen des Projekts.'},
-  fr:{vipActivated30:'VIP activé pour 30 jours',invalidPromo:'Code promo invalide',supportDesc:'Ton soutien aide Your Destiny à grandir, créer de nouvelles histoires et maintenir le projet.',authorDesc:'Un espace pour les créateurs qui souhaitent proposer des histoires, scénarios, énigmes, idées visuelles ou autres contenus originaux.',authorStories:'Histoires et scénarios',authorRiddles:'Énigmes et logique',authorIdeas:'Idées et concepts de nouvelles sections',authorLegal:'En envoyant un contenu, l’auteur confirme disposer des droits nécessaires. L’envoi ne garantit ni publication ni paiement. Les conditions d’utilisation, la rémunération et les droits liés à un contenu accepté sont convenus séparément avant publication.',writeDirect:'Écrire en Direct',channelMore:'Plus d’histoires, de nouveautés et de contenus sont disponibles sur le canal Telegram.',openTelegram:'Telegram',capsule:'Date et heure exactes de la première entrée',wisdomLabel:'SIGNE DU DESTIN',wisdomFooter:'parole du destin',hintConfirm:'Veux-tu vraiment ouvrir l’indice ? Il sera utilisé et ne donnera pas la réponse.',hintYes:'Oui, ouvrir',hintNo:'Retour',countOf:'sur',destinyIntro:'10 questions t’aideront à révéler ton archétype.',finalChannel:'Le canal Telegram contient encore des histoires, de nouveaux défis et des mises à jour.',aboutLead:'Your Destiny est un espace interactif où choix, logique, histoires et connaissance de soi se rencontrent au cours d’un même voyage.',aboutBody:'Découvre des histoires et des dilemmes, teste ta logique dans le Labyrinthe, révèle ton archétype, retrouve la Sagesse du Destin et découvre progressivement de nouvelles facettes du projet.'}
+  ru:{vipActivated30:'VIP активирован на 30 дней',invalidPromo:'Неверный промокод',supportDesc:'Поддержка помогает сохранять развитие Your Destiny, создавать новые истории и поддерживать работу проекта.',authorDesc:'Раздел для авторов, которые хотят предложить проекту собственные истории, сценарии, загадки, визуальные идеи или другие оригинальные материалы.',authorStories:'Истории и сценарии',authorRiddles:'Загадки и логические задачи',authorIdeas:'Идеи и концепции новых разделов',authorLegal:'Отправляя материал в Your Destiny, автор подтверждает, что является его автором либо располагает всеми необходимыми правами, разрешениями и согласиями на передачу и возможное использование материала. Автор гарантирует отсутствие нарушения прав третьих лиц и обязуется самостоятельно урегулировать любые претензии, связанные с предоставленным материалом. Сам факт отправки не означает автоматического принятия, публикации, эксклюзивности или гарантированной выплаты. До публикации стороны отдельно согласовывают формат использования, объём прав, указание авторства, возможное вознаграждение, срок и территорию использования. Если отдельное письменное соглашение не заключено, отправка материала не считается передачей исключительных прав.',writeDirect:'Написать в Direct',channelMore:'Больше историй, обновлений и материалов — в Telegram-канале.',openTelegram:'Telegram', capsule:'Точная дата и время первого входа', wisdomLabel:'ЗНАК СУДЬБЫ', wisdomFooter:'слово судьбы', hintConfirm:'Точно хочешь открыть подсказку? Она будет использована и не даст готового ответа.', hintYes:'Да, открыть', hintNo:'Назад', countOf:'из', destinyIntro:'10 вопросов помогут раскрыть твой архетип.', finalChannel:'В Telegram-канале есть ещё истории, новые испытания и обновления.', aboutLead:'Your Destiny — это место, где обычный выбор превращается в маленькое испытание. Здесь нет единственно правильного пути: ты читаешь, решаешь, рискуешь, ошибаешься, находишь ответы и постепенно узнаёшь собственный стиль мышления.', aboutBody:'Проходи Хроники Судьбы, где решения показывают твой взгляд на реальные ситуации; входи в Лабиринт Загадок и проверяй логику; ищи свой архетип в Истинной Судьбе; открывай новые мысли в Мудрости Судьбы. Your Destiny создана так, чтобы к ней хотелось возвращаться — не ради одного результата, а ради следующего вопроса.'},
+  en:{vipActivated30:'VIP activated for 30 days',invalidPromo:'Invalid promo code',supportDesc:'Your support helps Your Destiny grow, create new stories and keep the project running.',authorDesc:'A space for creators who want to submit original stories, scripts, riddles, visual ideas or other materials for Your Destiny.',authorStories:'Stories and scripts',authorRiddles:'Riddles and logic',authorIdeas:'Ideas and new section concepts',authorLegal:'By submitting material to Your Destiny, the author confirms that they created the material or hold all rights, permissions and consents required for its submission and potential use. The author warrants that the material does not infringe third-party rights and agrees to handle any related claims. Submission alone does not guarantee acceptance, publication, exclusivity or payment. Before publication, the parties may separately agree on permitted use, attribution, scope of rights, compensation, duration and territory. Unless a separate written agreement states otherwise, submission does not constitute a transfer of exclusive rights.',writeDirect:'Write in Direct',channelMore:'More stories, updates and materials are available on the Telegram channel.',openTelegram:'Telegram',capsule:'Exact date and time of first entry',wisdomLabel:'SIGN OF FATE',wisdomFooter:'word of fate',hintConfirm:'Are you sure you want to open the hint? It will be used and will not reveal the answer.',hintYes:'Yes, open',hintNo:'Back',countOf:'of',destinyIntro:'10 questions will help reveal your archetype.',finalChannel:'There are more stories, new challenges and updates on the Telegram channel.',aboutLead:'Your Destiny is a space where an ordinary choice becomes a small test. There is no single perfect path: you read, decide, take risks, make mistakes, find answers and gradually discover your own way of thinking.',aboutBody:'Explore the Chronicles of Fate, where decisions reflect how you approach real situations; enter the Labyrinth of Riddles; discover your archetype in True Destiny; and return to the Wisdom of Fate whenever you need a new thought. Your Destiny is built around one simple idea: there is always another question waiting.'},
+  es:{vipActivated30:'VIP activado durante 30 días',invalidPromo:'Código promocional no válido',supportDesc:'Tu apoyo ayuda a que Your Destiny crezca, cree nuevas historias y mantenga el proyecto.',authorDesc:'Un espacio para creadores que quieran proponer historias, guiones, acertijos, ideas visuales u otros materiales originales.',authorStories:'Historias y guiones',authorRiddles:'Acertijos y lógica',authorIdeas:'Ideas y conceptos de nuevas secciones',authorLegal:'Al enviar material a Your Destiny, el autor confirma que lo ha creado o que posee todos los derechos, permisos y autorizaciones necesarios para su envío y posible uso. Garantiza que el material no infringe derechos de terceros y asume la gestión de cualquier reclamación relacionada. El envío no garantiza aceptación, publicación, exclusividad ni pago. Antes de publicar, pueden acordarse por separado el uso permitido, la atribución, el alcance de los derechos, la remuneración, el plazo y el territorio. Salvo acuerdo escrito, el envío no implica cesión de derechos exclusivos.',writeDirect:'Escribir por Direct',channelMore:'Más historias, novedades y materiales están en el canal de Telegram.',openTelegram:'Telegram',capsule:'Fecha y hora exactas de la primera entrada',wisdomLabel:'SEÑAL DEL DESTINO',wisdomFooter:'palabra del destino',hintConfirm:'¿Seguro que quieres abrir la pista? Se usará y no dará la respuesta.',hintYes:'Sí, abrir',hintNo:'Volver',countOf:'de',destinyIntro:'10 preguntas te ayudarán a descubrir tu arquetipo.',finalChannel:'En el canal de Telegram hay más historias, nuevos retos y novedades.',aboutLead:'Your Destiny es un espacio donde una elección cotidiana puede convertirse en un pequeño desafío. No existe un único camino perfecto: lees, decides, arriesgas, te equivocas, encuentras respuestas y descubres poco a poco tu forma de pensar.',aboutBody:'Recorre las Crónicas del Destino, pon a prueba tu lógica en el Laberinto de Acertijos, descubre tu arquetipo en tu Verdadero Destino y vuelve a la Sabiduría del Destino cuando quieras una nueva idea. Aquí siempre queda una pregunta más por responder.'},
+  pt:{vipActivated30:'VIP ativado por 30 dias',invalidPromo:'Código promocional inválido',supportDesc:'O teu apoio ajuda o Your Destiny a crescer, criar novas histórias e manter o projeto.',authorDesc:'Um espaço para criadores que querem enviar histórias, guiões, enigmas, ideias visuais ou outros materiais originais.',authorStories:'Histórias e guiões',authorRiddles:'Enigmas e lógica',authorIdeas:'Ideias e conceitos de novas secções',authorLegal:'Ao enviar material para o Your Destiny, o autor confirma que o criou ou que possui todos os direitos, autorizações e consentimentos necessários para o envio e possível utilização. Garante que o material não viola direitos de terceiros e assume a gestão de eventuais reclamações. O envio não garante aceitação, publicação, exclusividade ou pagamento. Antes da publicação, podem ser acordados separadamente o uso permitido, atribuição, âmbito dos direitos, remuneração, duração e território. Salvo acordo escrito, o envio não constitui cessão de direitos exclusivos.',writeDirect:'Escrever por Direct',channelMore:'Mais histórias, novidades e materiais estão no canal do Telegram.',openTelegram:'Telegram',capsule:'Data e hora exatas da primeira entrada',wisdomLabel:'SINAL DO DESTINO',wisdomFooter:'palavra do destino',hintConfirm:'Tens a certeza de que queres abrir a pista? Ela será usada e não dará a resposta.',hintYes:'Sim, abrir',hintNo:'Voltar',countOf:'de',destinyIntro:'10 perguntas vão ajudar a revelar o teu arquétipo.',finalChannel:'No canal do Telegram há mais histórias, novos desafios e atualizações.',aboutLead:'Your Destiny é um espaço onde uma escolha comum se transforma num pequeno desafio. Não existe um único caminho perfeito: lês, decides, arriscas, erras, encontras respostas e descobres gradualmente a tua forma de pensar.',aboutBody:'Percorre as Crónicas do Destino, testa a lógica no Labirinto de Enigmas, descobre o teu arquétipo no Verdadeiro Destino e regressa à Sabedoria do Destino quando quiseres uma nova perspetiva. Há sempre uma pergunta à tua espera.'},
+  de:{vipActivated30:'VIP für 30 Tage aktiviert',invalidPromo:'Ungültiger Promo-Code',supportDesc:'Deine Unterstützung hilft Your Destiny zu wachsen, neue Geschichten zu erstellen und das Projekt weiterzuführen.',authorDesc:'Ein Bereich für Kreative, die eigene Geschichten, Skripte, Rätsel, visuelle Ideen oder andere Originalmaterialien einreichen möchten.',authorStories:'Geschichten und Skripte',authorRiddles:'Rätsel und Logik',authorIdeas:'Ideen und Konzepte für neue Bereiche',authorLegal:'Mit der Einreichung bei Your Destiny bestätigt der Autor, dass er das Material erstellt hat oder über alle erforderlichen Rechte, Genehmigungen und Zustimmungen für Einreichung und mögliche Nutzung verfügt. Er gewährleistet, dass keine Rechte Dritter verletzt werden, und übernimmt die Verantwortung für entsprechende Ansprüche. Die Einreichung garantiert weder Annahme, Veröffentlichung, Exklusivität noch Vergütung. Vor einer Veröffentlichung können Nutzung, Urheberkennzeichnung, Rechteumfang, Vergütung, Dauer und Gebiet gesondert vereinbart werden. Ohne gesonderte schriftliche Vereinbarung stellt die Einreichung keine Übertragung ausschließlicher Rechte dar.',writeDirect:'Im Direct schreiben',channelMore:'Weitere Geschichten, Updates und Materialien findest du im Telegram-Kanal.',openTelegram:'Telegram',capsule:'Genaues Datum und Uhrzeit des ersten Zugangs',wisdomLabel:'ZEICHEN DES SCHICKSALS',wisdomFooter:'Wort des Schicksals',hintConfirm:'Möchtest du den Hinweis wirklich öffnen? Er wird verbraucht und verrät nicht die Antwort.',hintYes:'Ja, öffnen',hintNo:'Zurück',countOf:'von',destinyIntro:'10 Fragen helfen dir, deinen Archetyp zu entdecken.',finalChannel:'Im Telegram-Kanal gibt es weitere Geschichten, neue Herausforderungen und Updates.',aboutLead:'Your Destiny ist ein Raum, in dem eine alltägliche Entscheidung zu einer kleinen Prüfung wird. Es gibt nicht nur einen perfekten Weg: Du liest, entscheidest, riskierst, irrst dich, findest Antworten und erkennst dabei deine eigene Denkweise.',aboutBody:'Durchlaufe die Chroniken des Schicksals, prüfe deine Logik im Rätsellabyrinth, entdecke deinen Archetyp im wahren Schicksal und kehre zur Weisheit des Schicksals zurück. Die Idee dahinter ist einfach: Nach jeder Antwort wartet eine neue Frage.'},
+  fr:{vipActivated30:'VIP activé pour 30 jours',invalidPromo:'Code promo invalide',supportDesc:'Ton soutien aide Your Destiny à grandir, créer de nouvelles histoires et maintenir le projet.',authorDesc:'Un espace pour les créateurs qui souhaitent proposer des histoires, scénarios, énigmes, idées visuelles ou autres contenus originaux.',authorStories:'Histoires et scénarios',authorRiddles:'Énigmes et logique',authorIdeas:'Idées et concepts de nouvelles sections',authorLegal:'En envoyant un contenu à Your Destiny, l’auteur confirme l’avoir créé ou disposer de tous les droits, autorisations et consentements nécessaires à son envoi et à son éventuelle utilisation. Il garantit que le contenu ne porte pas atteinte aux droits de tiers et assume la gestion des réclamations correspondantes. L’envoi ne garantit ni acceptation, ni publication, ni exclusivité, ni rémunération. Avant publication, l’usage autorisé, l’attribution, l’étendue des droits, la rémunération, la durée et le territoire peuvent être convenus séparément. Sauf accord écrit, l’envoi ne constitue pas une cession de droits exclusifs.',writeDirect:'Écrire en Direct',channelMore:'Plus d’histoires, de nouveautés et de contenus sont disponibles sur le canal Telegram.',openTelegram:'Telegram',capsule:'Date et heure exactes de la première entrée',wisdomLabel:'SIGNE DU DESTIN',wisdomFooter:'parole du destin',hintConfirm:'Veux-tu vraiment ouvrir l’indice ? Il sera utilisé et ne donnera pas la réponse.',hintYes:'Oui, ouvrir',hintNo:'Retour',countOf:'sur',destinyIntro:'10 questions t’aideront à révéler ton archétype.',finalChannel:'Le canal Telegram contient encore des histoires, de nouveaux défis et des mises à jour.',aboutLead:'Your Destiny est un espace où un choix ordinaire devient une petite épreuve. Il n’existe pas un seul chemin parfait : tu lis, décides, prends des risques, te trompes, trouves des réponses et découvres peu à peu ta façon de penser.',aboutBody:'Parcours les Chroniques du Destin, teste ta logique dans le Labyrinthe des énigmes, découvre ton archétype dans Ton véritable destin et retrouve la Sagesse du Destin lorsque tu veux une nouvelle perspective. Ici, une question en appelle toujours une autre.'}
 };
 for (const lang of Object.keys(EXTRA_I18N)) Object.assign(T[lang], EXTRA_I18N[lang]);
+const LANGUAGE_HINTS = {
+ ru:'Выберите язык интерфейса', en:'Choose your interface language', es:'Elige el idioma de la interfaz', pt:'Escolhe o idioma da interface', de:'Wähle die Sprache der Oberfläche', fr:"Choisis la langue de l’interface"
+};
+for (const [k,v] of Object.entries(LANGUAGE_HINTS)) T[k] = T[k] || {};
+for (const lang of Object.keys(LANGUAGE_HINTS)) T[lang].languageHint = LANGUAGE_HINTS[lang];
+
 
 function t(key) { return (T[currentLang] && T[currentLang][key]) || T.en[key] || key; }
 function loc(value) { return value && (value[currentLang] ?? value.en ?? value.ru ?? Object.values(value)[0]) || ''; }
@@ -186,12 +192,12 @@ const CHANNEL_URL = 'https://t.me/YourDestiny_Official';
 const DIRECT_URL = 'https://t.me/YourDestiny_Official?direct';
 
 const THEMES = [
-  { id: 'purple', name: { ru: 'Королевский Пурпур', en: 'Royal Purple', es: 'Púrpura Real', pt:'Púrpura Real', de:'Königliches Purpur', fr:'Pourpre Royal' }, grad: 'linear-gradient(135deg,#6f3aa8,#2e1a4a)' },
-  { id: 'sapphire', name: { ru: 'Полночный Сапфир', en: 'Midnight Sapphire', es: 'Zafiro de Medianoche', pt:'Safira da Meia-Noite', de:'Mitternachtssaphir', fr:'Saphir de Minuit' }, grad: 'linear-gradient(135deg,#264e8b,#101d3c)' },
-  { id: 'crimson', name: { ru: 'Багровый Занавес', en: 'Crimson Curtain', es: 'Telón Carmesí', pt:'Cortina Carmesim', de:'Karmesinroter Vorhang', fr:'Rideau Cramoisi' }, grad: 'linear-gradient(135deg,#9b2f43,#4a1515)' },
-  { id: 'emerald', name: { ru: 'Изумрудный Лес', en: 'Emerald Forest', es: 'Bosque Esmeralda', pt:'Floresta Esmeralda', de:'Smaragdwald', fr:'Forêt Émeraude' }, grad: 'linear-gradient(135deg,#2d7b45,#102f20)' },
-  { id: 'amber', name: { ru: 'Янтарные Сумерки', en: 'Amber Twilight', es: 'Crepúsculo Ámbar', pt:'Crepúsculo Âmbar', de:'Bernstein-Dämmerung', fr:'Crépuscule Ambré' }, grad: 'linear-gradient(135deg,#c18a19,#5a3609)' },
-  { id: 'kaleidoscope', name: { ru: 'Калейдоскоп', en: 'Kaleidoscope', es: 'Caleidoscopio', pt:'Calidoscópio', de:'Kaleidoskop', fr:'Kaléidoscope' }, grad: 'conic-gradient(from 0deg,#7b3fb3,#2d6a9b,#2d7b45,#c18a19,#9b2f43,#7b3fb3)' }
+  { id: 'purple', name: { ru: 'Королевский Пурпур', en: 'Royal Purple', es: 'Púrpura Real', pt:'Púrpura Real', de:'Königliches Purpur', fr:'Pourpre Royal' }, grad: 'linear-gradient(135deg,#6f3aa8,#2e1a4a)', swatch:'#7b3fb3' },
+  { id: 'sapphire', name: { ru: 'Полночный Сапфир', en: 'Midnight Sapphire', es: 'Zafiro de Medianoche', pt:'Safira da Meia-Noite', de:'Mitternachtssaphir', fr:'Saphir de Minuit' }, grad: 'linear-gradient(135deg,#264e8b,#101d3c)', swatch:'#315fa8' },
+  { id: 'crimson', name: { ru: 'Багровый Занавес', en: 'Crimson Curtain', es: 'Telón Carmesí', pt:'Cortina Carmesim', de:'Karmesinroter Vorhang', fr:'Rideau Cramoisi' }, grad: 'linear-gradient(135deg,#9b2f43,#4a1515)', swatch:'#a9324c' },
+  { id: 'emerald', name: { ru: 'Изумрудный Лес', en: 'Emerald Forest', es: 'Bosque Esmeralda', pt:'Floresta Esmeralda', de:'Smaragdwald', fr:'Forêt Émeraude' }, grad: 'linear-gradient(135deg,#2d7b45,#102f20)', swatch:'#2f8a55' },
+  { id: 'amber', name: { ru: 'Янтарные Сумерки', en: 'Amber Twilight', es: 'Crepúsculo Ámbar', pt:'Crepúsculo Âmbar', de:'Bernstein-Dämmerung', fr:'Crépuscule Ambré' }, grad: 'linear-gradient(135deg,#c18a19,#5a3609)', swatch:'#d29a24' },
+  { id: 'kaleidoscope', name: { ru: 'Калейдоскоп', en: 'Kaleidoscope', es: 'Caleidoscopio', pt:'Calidoscópio', de:'Kaleidoskop', fr:'Kaléidoscope' }, grad: 'linear-gradient(135deg,#7b3fb3,#2d6a9b,#9b2f43,#2d7b45,#c18a19)', swatch:'#7b3fb3' }
 ];
 
 
@@ -226,14 +232,26 @@ function showTimeCapsule() {
   const firstVisit = localStorage.getItem('first_visit_at');
   const formatted = formatFirstVisit(firstVisit, true);
   const texts = {
-    ru:`Ты впервые вошёл в Your Destiny: ${formatted}. Эта дата и точное время сохранены как начало твоего пути.`,
-    en:`You first entered Your Destiny on ${formatted}. This exact date and time mark the beginning of your journey.`,
-    es:`Entraste por primera vez en Your Destiny el ${formatted}. Esta fecha y hora exactas marcan el comienzo de tu camino.`,
-    pt:`Entraste pela primeira vez no Your Destiny em ${formatted}. Esta data e hora exatas marcam o início do teu caminho.`,
-    de:`Du hast Your Destiny erstmals am ${formatted} geöffnet. Dieses genaue Datum und diese Uhrzeit markieren den Beginn deiner Reise.`,
-    fr:`Tu as ouvert Your Destiny pour la première fois le ${formatted}. Cette date et cette heure précises marquent le début de ton parcours.`
+    ru:`Ты впервые открыл Your Destiny ${formatted}. С этого момента начинается твой личный путь в игре.`,
+    en:`You first opened Your Destiny on ${formatted}. This exact moment marks the beginning of your journey.`,
+    es:`Abriste Your Destiny por primera vez el ${formatted}. Este momento exacto marca el inicio de tu camino.`,
+    pt:`Abriste o Your Destiny pela primeira vez em ${formatted}. Este momento exato marca o início do teu caminho.`,
+    de:`Du hast Your Destiny erstmals am ${formatted} geöffnet. Dieser genaue Moment markiert den Beginn deiner Reise.`,
+    fr:`Tu as ouvert Your Destiny pour la première fois le ${formatted}. Ce moment précis marque le début de ton parcours.`
   };
-  showInfoOverlay(t('timeCapsule'), texts[currentLang] || texts.en);
+  const overlay = document.createElement('div');
+  overlay.className = 'fate-overlay active';
+  overlay.innerHTML = `<button class="overlay-close-x" onclick="this.closest('.fate-overlay').remove()">&times;</button>
+    <div class="time-capsule-card">
+      <div class="capsule-orbit"><span>✦</span></div>
+      <div class="capsule-kicker">${t('timeCapsule')}</div>
+      <div class="capsule-title">${t('capsule')}</div>
+      <div class="capsule-date">${formatted}</div>
+      <div class="capsule-divider"></div>
+      <div class="capsule-text">${texts[currentLang] || texts.en}</div>
+      <button class="fate-next" onclick="this.closest('.fate-overlay').remove()">${t('close')}</button>
+    </div>`;
+  document.body.appendChild(overlay);
 }
 
 function showInfoOverlay(title, text) {
@@ -246,7 +264,7 @@ function showInfoOverlay(title, text) {
 // ---------- Инициализация ----------
 document.addEventListener('DOMContentLoaded', () => {
   initTelegram();
-  currentLang = localStorage.getItem('lang') || detectLanguage();
+  currentLang = localStorage.getItem('lang_manual') === '1' ? (localStorage.getItem('lang') || detectLanguage()) : detectLanguage();
   localStorage.setItem('lang', currentLang);
   initParticles();
   initNavigation();
@@ -376,8 +394,8 @@ function loadSettings() {
 function renderThemeColors() {
   const container = document.querySelector('.theme-colors');
   if (!container) return;
-  container.innerHTML = THEMES.map(th => `
-    <div class="color-option ${th.id === currentTheme ? 'active' : ''}" data-theme="${th.id}" style="background:${th.grad}" onclick="setTheme('${th.id}')"></div>
+  container.innerHTML = THEMES.map((th, i) => `
+    <button class="color-option ${th.id === currentTheme ? 'active' : ''} theme-${th.id}" data-theme="${th.id}" aria-label="${loc(th.name)}" onclick="setTheme('${th.id}')" style="--swatch:${th.swatch}"><span></span><small>${i + 1}</small></button>
   `).join('');
 }
 
@@ -393,6 +411,7 @@ function setTheme(theme) {
 function setLanguage(lang) {
   currentLang = lang;
   localStorage.setItem('lang', lang);
+  localStorage.setItem('lang_manual', '1');
   updateLanguageUI();
   renderThemeColors();
   updateVipDisplay();
@@ -512,42 +531,3806 @@ function copyWallet() {
 // ============================================================
 const FATE_DILEMMAS = [
   {
-    question: { ru: "Перед тобой две двери. За одной — безопасная, но предсказуемая жизнь. За другой — неизвестность, полная чудес и опасностей. Что выберешь?", en: "Two doors stand before you. Behind one — a safe but predictable life. Behind the other — unknown wonders and dangers. Which do you choose?", es: "Dos puertas ante ti. Detrás de una — vida segura pero predecible. Detrás de la otra — maravillas y peligros desconocidos. Cuál eliges?" },
-    a: { ru: "Безопасность", en: "Safety", es: "Seguridad" },
-    b: { ru: "Неизвестность", en: "The Unknown", es: "Lo Desconocido" },
-    stats: { a: 41.3, b: 58.7 },
-    analysis: { ru: "Ты — искатель. Твое сердце тянется к горизонтам, которые еще не нарисованы.", en: "You are a seeker. Your heart is drawn to horizons not yet drawn.", es: "Eres un buscador. Tu corazón se siente atraído por horizontes aún no dibujados." }
+    "question": {
+      "ru": "Если у тебя неожиданно освободился вечер, как ты скорее всего его проведёшь? Ситуация: после тяжёлой недели.",
+      "en": "If an evening suddenly becomes free, how would you most likely spend it?",
+      "es": "Si de repente tienes una tarde libre, ¿cómo la pasarías?",
+      "pt": "Se de repente ficares com uma noite livre, como a passarias?",
+      "de": "Wenn plötzlich ein Abend frei wird, wie würdest du ihn verbringen?",
+      "fr": "Si une soirée se libère soudainement, comment la passerais-tu?"
+    },
+    "a": {
+      "ru": "Останусь дома и отдохну",
+      "en": "Stay home and rest",
+      "es": "Me quedaré en casa y descansaré",
+      "pt": "Ficarei em casa a descansar",
+      "de": "Ich bleibe zu Hause und ruhe mich aus",
+      "fr": "Je resterai chez moi pour me reposer"
+    },
+    "b": {
+      "ru": "Пойду куда-нибудь спонтанно",
+      "en": "Go somewhere spontaneously",
+      "es": "Iré a algún sitio espontáneamente",
+      "pt": "Irei a algum lugar de forma espontânea",
+      "de": "Ich gehe spontan irgendwohin",
+      "fr": "J’irai quelque part spontanément"
+    },
+    "stats": {
+      "a": 47,
+      "b": 53
+    },
+    "analysis": {
+      "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
+      "en": "Your choice shows how you tend to react in situations like this.",
+      "es": "Tu elección muestra cómo sueles reaccionar ante situaciones así.",
+      "pt": "A tua escolha mostra como costumas reagir em situações assim.",
+      "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
+      "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
+    }
   },
   {
-    question: { ru: "Волшебник предлагает один дар: читать мысли или стирать воспоминания. Что возьмешь?", en: "A wizard offers one gift: read minds or erase memories. What do you take?", es: "Un mago ofrece un don: leer mentes o borrar recuerdos. Qué tomas?" },
-    a: { ru: "Читать мысли", en: "Read minds", es: "Leer mentes" },
-    b: { ru: "Стирать воспоминания", en: "Erase memories", es: "Borrar recuerdos" },
-    stats: { a: 62.9, b: 37.1 },
-    analysis: { ru: "Желание видеть скрытое — величайшее проклятие. Ты готов к правде.", en: "The desire to see the hidden is the greatest curse. You are ready for truth.", es: "El deseo de ver lo oculto es la mayor maldición. Estás listo para la verdad." }
+    "question": {
+      "ru": "Если у тебя неожиданно освободился вечер, как ты скорее всего его проведёшь? Ситуация: перед важной встречей.",
+      "en": "If an evening suddenly becomes free, how would you most likely spend it?",
+      "es": "Si de repente tienes una tarde libre, ¿cómo la pasarías?",
+      "pt": "Se de repente ficares com uma noite livre, como a passarias?",
+      "de": "Wenn plötzlich ein Abend frei wird, wie würdest du ihn verbringen?",
+      "fr": "Si une soirée se libère soudainement, comment la passerais-tu?"
+    },
+    "a": {
+      "ru": "Останусь дома и отдохну",
+      "en": "Stay home and rest",
+      "es": "Me quedaré en casa y descansaré",
+      "pt": "Ficarei em casa a descansar",
+      "de": "Ich bleibe zu Hause und ruhe mich aus",
+      "fr": "Je resterai chez moi pour me reposer"
+    },
+    "b": {
+      "ru": "Пойду куда-нибудь спонтанно",
+      "en": "Go somewhere spontaneously",
+      "es": "Iré a algún sitio espontáneamente",
+      "pt": "Irei a algum lugar de forma espontânea",
+      "de": "Ich gehe spontan irgendwohin",
+      "fr": "J’irai quelque part spontanément"
+    },
+    "stats": {
+      "a": 49,
+      "b": 51
+    },
+    "analysis": {
+      "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
+      "en": "Your choice shows how you tend to react in situations like this.",
+      "es": "Tu elección muestra cómo sueles reaccionar ante situaciones así.",
+      "pt": "A tua escolha mostra como costumas reagir em situações assim.",
+      "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
+      "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
+    }
   },
   {
-    question: { ru: "Ты можешь спасти одного: незнакомого гения или свою мать. Кого спасешь?", en: "You can save one: a stranger genius or your mother. Who do you save?", es: "Puedes salvar a uno: un genio desconocido o tu madre. A quién salvas?" },
-    a: { ru: "Гения", en: "The genius", es: "Al genio" },
-    b: { ru: "Мать", en: "My mother", es: "A mi madre" },
-    stats: { a: 29.8, b: 70.2 },
-    analysis: { ru: "Сердце побеждает разум. Ты выбираешь любовь перед величием.", en: "Heart defeats mind. You choose love over greatness.", es: "El corazón vence a la mente. Elijes el amor sobre la grandeza." }
+    "question": {
+      "ru": "Если у тебя неожиданно освободился вечер, как ты скорее всего его проведёшь? Ситуация: когда ты устал.",
+      "en": "If an evening suddenly becomes free, how would you most likely spend it?",
+      "es": "Si de repente tienes una tarde libre, ¿cómo la pasarías?",
+      "pt": "Se de repente ficares com uma noite livre, como a passarias?",
+      "de": "Wenn plötzlich ein Abend frei wird, wie würdest du ihn verbringen?",
+      "fr": "Si une soirée se libère soudainement, comment la passerais-tu?"
+    },
+    "a": {
+      "ru": "Останусь дома и отдохну",
+      "en": "Stay home and rest",
+      "es": "Me quedaré en casa y descansaré",
+      "pt": "Ficarei em casa a descansar",
+      "de": "Ich bleibe zu Hause und ruhe mich aus",
+      "fr": "Je resterai chez moi pour me reposer"
+    },
+    "b": {
+      "ru": "Пойду куда-нибудь спонтанно",
+      "en": "Go somewhere spontaneously",
+      "es": "Iré a algún sitio espontáneamente",
+      "pt": "Irei a algum lugar de forma espontânea",
+      "de": "Ich gehe spontan irgendwohin",
+      "fr": "J’irai quelque part spontanément"
+    },
+    "stats": {
+      "a": 51,
+      "b": 49
+    },
+    "analysis": {
+      "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
+      "en": "Your choice shows how you tend to react in situations like this.",
+      "es": "Tu elección muestra cómo sueles reaccionar ante situaciones así.",
+      "pt": "A tua escolha mostra como costumas reagir em situações assim.",
+      "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
+      "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
+    }
   },
   {
-    question: { ru: "Тебе предложили вечную жизнь без смерти. Принимаешь?", en: "You are offered eternal life without death. Do you accept?", es: "Te ofrecen vida eterna sin muerte. Aceptas?" },
-    a: { ru: "Да", en: "Yes", es: "Sí" },
-    b: { ru: "Нет", en: "No", es: "No" },
-    stats: { a: 35.4, b: 64.6 },
-    analysis: { ru: "Ты ценишь конечность. Именно она делает каждый момент бесценным.", en: "You value finitude. It is what makes every moment priceless.", es: "Valoras la finitud. Es lo que hace que cada momento no tenga precio." }
+    "question": {
+      "ru": "Если у тебя неожиданно освободился вечер, как ты скорее всего его проведёшь? Ситуация: в незнакомой компании.",
+      "en": "If an evening suddenly becomes free, how would you most likely spend it?",
+      "es": "Si de repente tienes una tarde libre, ¿cómo la pasarías?",
+      "pt": "Se de repente ficares com uma noite livre, como a passarias?",
+      "de": "Wenn plötzlich ein Abend frei wird, wie würdest du ihn verbringen?",
+      "fr": "Si une soirée se libère soudainement, comment la passerais-tu?"
+    },
+    "a": {
+      "ru": "Останусь дома и отдохну",
+      "en": "Stay home and rest",
+      "es": "Me quedaré en casa y descansaré",
+      "pt": "Ficarei em casa a descansar",
+      "de": "Ich bleibe zu Hause und ruhe mich aus",
+      "fr": "Je resterai chez moi pour me reposer"
+    },
+    "b": {
+      "ru": "Пойду куда-нибудь спонтанно",
+      "en": "Go somewhere spontaneously",
+      "es": "Iré a algún sitio espontáneamente",
+      "pt": "Irei a algum lugar de forma espontânea",
+      "de": "Ich gehe spontan irgendwohin",
+      "fr": "J’irai quelque part spontanément"
+    },
+    "stats": {
+      "a": 53,
+      "b": 47
+    },
+    "analysis": {
+      "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
+      "en": "Your choice shows how you tend to react in situations like this.",
+      "es": "Tu elección muestra cómo sueles reaccionar ante situaciones así.",
+      "pt": "A tua escolha mostra como costumas reagir em situações assim.",
+      "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
+      "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
+    }
   },
   {
-    question: { ru: "Ты можешь вернуться в прошлое и изменить одно решение. Сделаешь это?", en: "You can go back and change one decision. Will you do it?", es: "Puedes volver atrás y cambiar una decisión. Lo harás?" },
-    a: { ru: "Да", en: "Yes", es: "Sí" },
-    b: { ru: "Нет", en: "No", es: "No" },
-    stats: { a: 54.6, b: 45.4 },
-    analysis: { ru: "Желание исправить прошлое естественно. Но ошибки сделали тебя тем, кто ты есть.", en: "The desire to fix the past is natural. But mistakes made you who you are.", es: "El deseo de arreglar el pasado es natural. Pero los errores te hicieron quien eres." }
+    "question": {
+      "ru": "Если у тебя неожиданно освободился вечер, как ты скорее всего его проведёшь? Ситуация: когда планы меняются в последний момент.",
+      "en": "If an evening suddenly becomes free, how would you most likely spend it?",
+      "es": "Si de repente tienes una tarde libre, ¿cómo la pasarías?",
+      "pt": "Se de repente ficares com uma noite livre, como a passarias?",
+      "de": "Wenn plötzlich ein Abend frei wird, wie würdest du ihn verbringen?",
+      "fr": "Si une soirée se libère soudainement, comment la passerais-tu?"
+    },
+    "a": {
+      "ru": "Останусь дома и отдохну",
+      "en": "Stay home and rest",
+      "es": "Me quedaré en casa y descansaré",
+      "pt": "Ficarei em casa a descansar",
+      "de": "Ich bleibe zu Hause und ruhe mich aus",
+      "fr": "Je resterai chez moi pour me reposer"
+    },
+    "b": {
+      "ru": "Пойду куда-нибудь спонтанно",
+      "en": "Go somewhere spontaneously",
+      "es": "Iré a algún sitio espontáneamente",
+      "pt": "Irei a algum lugar de forma espontânea",
+      "de": "Ich gehe spontan irgendwohin",
+      "fr": "J’irai quelque part spontanément"
+    },
+    "stats": {
+      "a": 47,
+      "b": 53
+    },
+    "analysis": {
+      "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
+      "en": "Your choice shows how you tend to react in situations like this.",
+      "es": "Tu elección muestra cómo sueles reaccionar ante situaciones así.",
+      "pt": "A tua escolha mostra como costumas reagir em situações assim.",
+      "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
+      "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
+    }
+  },
+  {
+    "question": {
+      "ru": "У тебя два дела на сегодня, но времени хватит только на одно. Что выберешь? Ситуация: после тяжёлой недели.",
+      "en": "You have two tasks today, but enough time for only one. Which do you choose? Situation: after a difficult week.",
+      "es": "Tienes dos tareas hoy, pero solo tiempo para una. ¿Cuál eliges? Situación: después de una semana difícil.",
+      "pt": "Tens duas tarefas hoje, mas tempo apenas para uma. Qual escolhes? Situação: depois de uma semana difícil.",
+      "de": "Du hast heute zwei Aufgaben, aber nur Zeit für eine. Welche wählst du? Situation: nach einer anstrengenden Woche.",
+      "fr": "Tu as deux tâches aujourd’hui, mais assez de temps pour une seule. Laquelle choisis-tu? Situation : après une semaine difficile."
+    },
+    "a": {
+      "ru": "Сделаю самое важное",
+      "en": "Do the most important one",
+      "es": "Haré lo más importante",
+      "pt": "Farei o mais importante",
+      "de": "Ich erledige das Wichtigste",
+      "fr": "Je ferai le plus important"
+    },
+    "b": {
+      "ru": "Сделаю то, что интереснее",
+      "en": "Do the more interesting one",
+      "es": "Haré lo más interesante",
+      "pt": "Farei o mais interessante",
+      "de": "Ich mache das Interessantere",
+      "fr": "Je ferai le plus intéressant"
+    },
+    "stats": {
+      "a": 47,
+      "b": 53
+    },
+    "analysis": {
+      "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
+      "en": "Your choice shows how you tend to react in situations like this.",
+      "es": "Tu elección muestra cómo sueles reaccionar ante situaciones así.",
+      "pt": "A tua escolha mostra como costumas reagir em situações assim.",
+      "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
+      "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
+    }
+  },
+  {
+    "question": {
+      "ru": "У тебя два дела на сегодня, но времени хватит только на одно. Что выберешь? Ситуация: срочную задачу.",
+      "en": "You have two tasks today, but enough time for only one. Which do you choose? Situation: an urgent task.",
+      "es": "Tienes dos tareas hoy, pero solo tiempo para una. ¿Cuál eliges? Situación: una tarea urgente.",
+      "pt": "Tens duas tarefas hoje, mas tempo apenas para uma. Qual escolhes? Situação: uma tarefa urgente.",
+      "de": "Du hast heute zwei Aufgaben, aber nur Zeit für eine. Welche wählst du? Situation: eine dringende Aufgabe.",
+      "fr": "Tu as deux tâches aujourd’hui, mais assez de temps pour une seule. Laquelle choisis-tu? Situation : une tâche urgente."
+    },
+    "a": {
+      "ru": "Сделаю самое важное",
+      "en": "Do the most important one",
+      "es": "Haré lo más importante",
+      "pt": "Farei o mais importante",
+      "de": "Ich erledige das Wichtigste",
+      "fr": "Je ferai le plus important"
+    },
+    "b": {
+      "ru": "Сделаю то, что интереснее",
+      "en": "Do the more interesting one",
+      "es": "Haré lo más interesante",
+      "pt": "Farei o mais interessante",
+      "de": "Ich mache das Interessantere",
+      "fr": "Je ferai le plus intéressant"
+    },
+    "stats": {
+      "a": 49,
+      "b": 51
+    },
+    "analysis": {
+      "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
+      "en": "Your choice shows how you tend to react in situations like this.",
+      "es": "Tu elección muestra cómo sueles reaccionar ante situaciones así.",
+      "pt": "A tua escolha mostra como costumas reagir em situações assim.",
+      "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
+      "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
+    }
+  },
+  {
+    "question": {
+      "ru": "У тебя два дела на сегодня, но времени хватит только на одно. Что выберешь? Ситуация: в метро.",
+      "en": "You have two tasks today, but enough time for only one. Which do you choose? Situation: on the subway.",
+      "es": "Tienes dos tareas hoy, pero solo tiempo para una. ¿Cuál eliges? Situación: en el metro.",
+      "pt": "Tens duas tarefas hoje, mas tempo apenas para uma. Qual escolhes? Situação: no metro.",
+      "de": "Du hast heute zwei Aufgaben, aber nur Zeit für eine. Welche wählst du? Situation: in der U-Bahn.",
+      "fr": "Tu as deux tâches aujourd’hui, mais assez de temps pour une seule. Laquelle choisis-tu? Situation : dans le métro."
+    },
+    "a": {
+      "ru": "Сделаю самое важное",
+      "en": "Do the most important one",
+      "es": "Haré lo más importante",
+      "pt": "Farei o mais importante",
+      "de": "Ich erledige das Wichtigste",
+      "fr": "Je ferai le plus important"
+    },
+    "b": {
+      "ru": "Сделаю то, что интереснее",
+      "en": "Do the more interesting one",
+      "es": "Haré lo más interesante",
+      "pt": "Farei o mais interessante",
+      "de": "Ich mache das Interessantere",
+      "fr": "Je ferai le plus intéressant"
+    },
+    "stats": {
+      "a": 51,
+      "b": 49
+    },
+    "analysis": {
+      "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
+      "en": "Your choice shows how you tend to react in situations like this.",
+      "es": "Tu elección muestra cómo sueles reaccionar ante situaciones así.",
+      "pt": "A tua escolha mostra como costumas reagir em situações assim.",
+      "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
+      "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
+    }
+  },
+  {
+    "question": {
+      "ru": "У тебя два дела на сегодня, но времени хватит только на одно. Что выберешь? Ситуация: важную новость друга.",
+      "en": "You have two tasks today, but enough time for only one. Which do you choose? Situation: an important friend’s news.",
+      "es": "Tienes dos tareas hoy, pero solo tiempo para una. ¿Cuál eliges? Situación: una noticia importante de un amigo.",
+      "pt": "Tens duas tarefas hoje, mas tempo apenas para uma. Qual escolhes? Situação: uma notícia importante de um amigo.",
+      "de": "Du hast heute zwei Aufgaben, aber nur Zeit für eine. Welche wählst du? Situation: eine wichtige Nachricht eines Freundes.",
+      "fr": "Tu as deux tâches aujourd’hui, mais assez de temps pour une seule. Laquelle choisis-tu? Situation : une nouvelle importante d’un ami."
+    },
+    "a": {
+      "ru": "Сделаю самое важное",
+      "en": "Do the most important one",
+      "es": "Haré lo más importante",
+      "pt": "Farei o mais importante",
+      "de": "Ich erledige das Wichtigste",
+      "fr": "Je ferai le plus important"
+    },
+    "b": {
+      "ru": "Сделаю то, что интереснее",
+      "en": "Do the more interesting one",
+      "es": "Haré lo más interesante",
+      "pt": "Farei o mais interessante",
+      "de": "Ich mache das Interessantere",
+      "fr": "Je ferai le plus intéressant"
+    },
+    "stats": {
+      "a": 53,
+      "b": 47
+    },
+    "analysis": {
+      "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
+      "en": "Your choice shows how you tend to react in situations like this.",
+      "es": "Tu elección muestra cómo sueles reaccionar ante situaciones así.",
+      "pt": "A tua escolha mostra como costumas reagir em situações assim.",
+      "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
+      "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
+    }
+  },
+  {
+    "question": {
+      "ru": "У тебя два дела на сегодня, но времени хватит только на одно. Что выберешь? Ситуация: первый день на новой работе.",
+      "en": "You have two tasks today, but enough time for only one. Which do you choose? Situation: your first day at a new job.",
+      "es": "Tienes dos tareas hoy, pero solo tiempo para una. ¿Cuál eliges? Situación: tu primer día en un nuevo trabajo.",
+      "pt": "Tens duas tarefas hoje, mas tempo apenas para uma. Qual escolhes? Situação: o teu primeiro dia num novo trabalho.",
+      "de": "Du hast heute zwei Aufgaben, aber nur Zeit für eine. Welche wählst du? Situation: dein erster Tag im neuen Job.",
+      "fr": "Tu as deux tâches aujourd’hui, mais assez de temps pour une seule. Laquelle choisis-tu? Situation : ton premier jour dans un nouveau travail."
+    },
+    "a": {
+      "ru": "Сделаю самое важное",
+      "en": "Do the most important one",
+      "es": "Haré lo más importante",
+      "pt": "Farei o mais importante",
+      "de": "Ich erledige das Wichtigste",
+      "fr": "Je ferai le plus important"
+    },
+    "b": {
+      "ru": "Сделаю то, что интереснее",
+      "en": "Do the more interesting one",
+      "es": "Haré lo más interesante",
+      "pt": "Farei o mais interessante",
+      "de": "Ich mache das Interessantere",
+      "fr": "Je ferai le plus intéressant"
+    },
+    "stats": {
+      "a": 47,
+      "b": 53
+    },
+    "analysis": {
+      "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
+      "en": "Your choice shows how you tend to react in situations like this.",
+      "es": "Tu elección muestra cómo sueles reaccionar ante situaciones así.",
+      "pt": "A tua escolha mostra como costumas reagir em situações assim.",
+      "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
+      "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
+    }
+  },
+  {
+    "question": {
+      "ru": "Ты находишь кошелёк без документов, но с деньгами. Что сделаешь? Ситуация: после тяжёлой недели.",
+      "en": "You find a wallet with money but no identification. What do you do?",
+      "es": "Encuentras una cartera con dinero pero sin identificación. ¿Qué haces?",
+      "pt": "Encontras uma carteira com dinheiro, mas sem identificação. O que fazes?",
+      "de": "Du findest ein Portemonnaie mit Geld, aber ohne Ausweis. Was tust du?",
+      "fr": "Tu trouves un portefeuille avec de l’argent, mais sans pièce d’identité. Que fais-tu?"
+    },
+    "a": {
+      "ru": "Попытаюсь найти владельца",
+      "en": "I will try to find the owner",
+      "es": "Intentaré encontrar al dueño",
+      "pt": "Tentarei encontrar o dono",
+      "de": "Ich versuche, den Besitzer zu finden",
+      "fr": "J’essaierai de retrouver le propriétaire"
+    },
+    "b": {
+      "ru": "Передам находку в официальное место",
+      "en": "I will hand it to an official place",
+      "es": "Entregaré el objeto a un lugar oficial",
+      "pt": "Entregarei o objeto num local oficial",
+      "de": "Ich gebe den Fund an eine offizielle Stelle",
+      "fr": "Je remettrai l’objet à un service officiel"
+    },
+    "stats": {
+      "a": 47,
+      "b": 53
+    },
+    "analysis": {
+      "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
+      "en": "Your choice shows how you tend to react in situations like this.",
+      "es": "Tu elección muestra cómo sueles reaccionar ante situaciones así.",
+      "pt": "A tua escolha mostra como costumas reagir em situações assim.",
+      "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
+      "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
+    }
+  },
+  {
+    "question": {
+      "ru": "Ты находишь кошелёк без документов, но с деньгами. Что сделаешь? Ситуация: перед важной встречей.",
+      "en": "You find a wallet with money but no identification. What do you do?",
+      "es": "Encuentras una cartera con dinero pero sin identificación. ¿Qué haces?",
+      "pt": "Encontras uma carteira com dinheiro, mas sem identificação. O que fazes?",
+      "de": "Du findest ein Portemonnaie mit Geld, aber ohne Ausweis. Was tust du?",
+      "fr": "Tu trouves un portefeuille avec de l’argent, mais sans pièce d’identité. Que fais-tu?"
+    },
+    "a": {
+      "ru": "Попытаюсь найти владельца",
+      "en": "I will try to find the owner",
+      "es": "Intentaré encontrar al dueño",
+      "pt": "Tentarei encontrar o dono",
+      "de": "Ich versuche, den Besitzer zu finden",
+      "fr": "J’essaierai de retrouver le propriétaire"
+    },
+    "b": {
+      "ru": "Передам находку в официальное место",
+      "en": "I will hand it to an official place",
+      "es": "Entregaré el objeto a un lugar oficial",
+      "pt": "Entregarei o objeto num local oficial",
+      "de": "Ich gebe den Fund an eine offizielle Stelle",
+      "fr": "Je remettrai l’objet à un service officiel"
+    },
+    "stats": {
+      "a": 49,
+      "b": 51
+    },
+    "analysis": {
+      "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
+      "en": "Your choice shows how you tend to react in situations like this.",
+      "es": "Tu elección muestra cómo sueles reaccionar ante situaciones así.",
+      "pt": "A tua escolha mostra como costumas reagir em situações assim.",
+      "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
+      "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
+    }
+  },
+  {
+    "question": {
+      "ru": "Ты находишь кошелёк без документов, но с деньгами. Что сделаешь? Ситуация: когда ты устал.",
+      "en": "You find a wallet with money but no identification. What do you do?",
+      "es": "Encuentras una cartera con dinero pero sin identificación. ¿Qué haces?",
+      "pt": "Encontras uma carteira com dinheiro, mas sem identificação. O que fazes?",
+      "de": "Du findest ein Portemonnaie mit Geld, aber ohne Ausweis. Was tust du?",
+      "fr": "Tu trouves un portefeuille avec de l’argent, mais sans pièce d’identité. Que fais-tu?"
+    },
+    "a": {
+      "ru": "Попытаюсь найти владельца",
+      "en": "I will try to find the owner",
+      "es": "Intentaré encontrar al dueño",
+      "pt": "Tentarei encontrar o dono",
+      "de": "Ich versuche, den Besitzer zu finden",
+      "fr": "J’essaierai de retrouver le propriétaire"
+    },
+    "b": {
+      "ru": "Передам находку в официальное место",
+      "en": "I will hand it to an official place",
+      "es": "Entregaré el objeto a un lugar oficial",
+      "pt": "Entregarei o objeto num local oficial",
+      "de": "Ich gebe den Fund an eine offizielle Stelle",
+      "fr": "Je remettrai l’objet à un service officiel"
+    },
+    "stats": {
+      "a": 51,
+      "b": 49
+    },
+    "analysis": {
+      "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
+      "en": "Your choice shows how you tend to react in situations like this.",
+      "es": "Tu elección muestra cómo sueles reaccionar ante situaciones así.",
+      "pt": "A tua escolha mostra como costumas reagir em situações assim.",
+      "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
+      "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
+    }
+  },
+  {
+    "question": {
+      "ru": "Ты находишь кошелёк без документов, но с деньгами. Что сделаешь? Ситуация: в незнакомой компании.",
+      "en": "You find a wallet with money but no identification. What do you do?",
+      "es": "Encuentras una cartera con dinero pero sin identificación. ¿Qué haces?",
+      "pt": "Encontras uma carteira com dinheiro, mas sem identificação. O que fazes?",
+      "de": "Du findest ein Portemonnaie mit Geld, aber ohne Ausweis. Was tust du?",
+      "fr": "Tu trouves un portefeuille avec de l’argent, mais sans pièce d’identité. Que fais-tu?"
+    },
+    "a": {
+      "ru": "Попытаюсь найти владельца",
+      "en": "I will try to find the owner",
+      "es": "Intentaré encontrar al dueño",
+      "pt": "Tentarei encontrar o dono",
+      "de": "Ich versuche, den Besitzer zu finden",
+      "fr": "J’essaierai de retrouver le propriétaire"
+    },
+    "b": {
+      "ru": "Передам находку в официальное место",
+      "en": "I will hand it to an official place",
+      "es": "Entregaré el objeto a un lugar oficial",
+      "pt": "Entregarei o objeto num local oficial",
+      "de": "Ich gebe den Fund an eine offizielle Stelle",
+      "fr": "Je remettrai l’objet à un service officiel"
+    },
+    "stats": {
+      "a": 53,
+      "b": 47
+    },
+    "analysis": {
+      "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
+      "en": "Your choice shows how you tend to react in situations like this.",
+      "es": "Tu elección muestra cómo sueles reaccionar ante situaciones así.",
+      "pt": "A tua escolha mostra como costumas reagir em situações assim.",
+      "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
+      "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
+    }
+  },
+  {
+    "question": {
+      "ru": "Ты находишь кошелёк без документов, но с деньгами. Что сделаешь? Ситуация: когда планы меняются в последний момент.",
+      "en": "You find a wallet with money but no identification. What do you do?",
+      "es": "Encuentras una cartera con dinero pero sin identificación. ¿Qué haces?",
+      "pt": "Encontras uma carteira com dinheiro, mas sem identificação. O que fazes?",
+      "de": "Du findest ein Portemonnaie mit Geld, aber ohne Ausweis. Was tust du?",
+      "fr": "Tu trouves un portefeuille avec de l’argent, mais sans pièce d’identité. Que fais-tu?"
+    },
+    "a": {
+      "ru": "Попытаюсь найти владельца",
+      "en": "I will try to find the owner",
+      "es": "Intentaré encontrar al dueño",
+      "pt": "Tentarei encontrar o dono",
+      "de": "Ich versuche, den Besitzer zu finden",
+      "fr": "J’essaierai de retrouver le propriétaire"
+    },
+    "b": {
+      "ru": "Передам находку в официальное место",
+      "en": "I will hand it to an official place",
+      "es": "Entregaré el objeto a un lugar oficial",
+      "pt": "Entregarei o objeto num local oficial",
+      "de": "Ich gebe den Fund an eine offizielle Stelle",
+      "fr": "Je remettrai l’objet à un service officiel"
+    },
+    "stats": {
+      "a": 47,
+      "b": 53
+    },
+    "analysis": {
+      "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
+      "en": "Your choice shows how you tend to react in situations like this.",
+      "es": "Tu elección muestra cómo sueles reaccionar ante situaciones así.",
+      "pt": "A tua escolha mostra como costumas reagir em situações assim.",
+      "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
+      "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
+    }
+  },
+  {
+    "question": {
+      "ru": "Друг просит не рассказывать о его личной проблеме. Что для тебя важнее? Ситуация: после тяжёлой недели.",
+      "en": "A friend asks you not to share a personal problem. What matters more to you? Situation: after a difficult week.",
+      "es": "Un amigo te pide que no cuentes su problema personal. ¿Qué valoras más? Situación: después de una semana difícil.",
+      "pt": "Um amigo pede para não contares um problema pessoal. O que valorizas mais? Situação: depois de uma semana difícil.",
+      "de": "Ein Freund bittet dich, ein persönliches Problem nicht zu erzählen. Was ist dir wichtiger? Situation: nach einer anstrengenden Woche.",
+      "fr": "Un ami te demande de ne pas parler de son problème personnel. Qu’est-ce qui compte le plus? Situation : après une semaine difficile."
+    },
+    "a": {
+      "ru": "Сохранить доверие",
+      "en": "Protect the trust",
+      "es": "Mantener la confianza",
+      "pt": "Preservar a confiança",
+      "de": "Das Vertrauen bewahren",
+      "fr": "Préserver la confiance"
+    },
+    "b": {
+      "ru": "Помочь, даже если придётся рассказать",
+      "en": "Help, even if I must tell someone",
+      "es": "Aydar, aunque tenga que contarlo",
+      "pt": "Ajudar, mesmo que tenha de contar",
+      "de": "Helfen, auch wenn ich es erzählen muss",
+      "fr": "Aider, même si je dois en parler"
+    },
+    "stats": {
+      "a": 47,
+      "b": 53
+    },
+    "analysis": {
+      "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
+      "en": "Your choice shows how you tend to react in situations like this.",
+      "es": "Tu elección muestra cómo sueles reaccionar ante situaciones así.",
+      "pt": "A tua escolha mostra como costumas reagir em situações assim.",
+      "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
+      "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
+    }
+  },
+  {
+    "question": {
+      "ru": "Друг просит не рассказывать о его личной проблеме. Что для тебя важнее? Ситуация: срочную задачу.",
+      "en": "A friend asks you not to share a personal problem. What matters more to you? Situation: an urgent task.",
+      "es": "Un amigo te pide que no cuentes su problema personal. ¿Qué valoras más? Situación: una tarea urgente.",
+      "pt": "Um amigo pede para não contares um problema pessoal. O que valorizas mais? Situação: uma tarefa urgente.",
+      "de": "Ein Freund bittet dich, ein persönliches Problem nicht zu erzählen. Was ist dir wichtiger? Situation: eine dringende Aufgabe.",
+      "fr": "Un ami te demande de ne pas parler de son problème personnel. Qu’est-ce qui compte le plus? Situation : une tâche urgente."
+    },
+    "a": {
+      "ru": "Сохранить доверие",
+      "en": "Protect the trust",
+      "es": "Mantener la confianza",
+      "pt": "Preservar a confiança",
+      "de": "Das Vertrauen bewahren",
+      "fr": "Préserver la confiance"
+    },
+    "b": {
+      "ru": "Помочь, даже если придётся рассказать",
+      "en": "Help, even if I must tell someone",
+      "es": "Aydar, aunque tenga que contarlo",
+      "pt": "Ajudar, mesmo que tenha de contar",
+      "de": "Helfen, auch wenn ich es erzählen muss",
+      "fr": "Aider, même si je dois en parler"
+    },
+    "stats": {
+      "a": 49,
+      "b": 51
+    },
+    "analysis": {
+      "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
+      "en": "Your choice shows how you tend to react in situations like this.",
+      "es": "Tu elección muestra cómo sueles reaccionar ante situaciones así.",
+      "pt": "A tua escolha mostra como costumas reagir em situações assim.",
+      "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
+      "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
+    }
+  },
+  {
+    "question": {
+      "ru": "Друг просит не рассказывать о его личной проблеме. Что для тебя важнее? Ситуация: в метро.",
+      "en": "A friend asks you not to share a personal problem. What matters more to you? Situation: on the subway.",
+      "es": "Un amigo te pide que no cuentes su problema personal. ¿Qué valoras más? Situación: en el metro.",
+      "pt": "Um amigo pede para não contares um problema pessoal. O que valorizas mais? Situação: no metro.",
+      "de": "Ein Freund bittet dich, ein persönliches Problem nicht zu erzählen. Was ist dir wichtiger? Situation: in der U-Bahn.",
+      "fr": "Un ami te demande de ne pas parler de son problème personnel. Qu’est-ce qui compte le plus? Situation : dans le métro."
+    },
+    "a": {
+      "ru": "Сохранить доверие",
+      "en": "Protect the trust",
+      "es": "Mantener la confianza",
+      "pt": "Preservar a confiança",
+      "de": "Das Vertrauen bewahren",
+      "fr": "Préserver la confiance"
+    },
+    "b": {
+      "ru": "Помочь, даже если придётся рассказать",
+      "en": "Help, even if I must tell someone",
+      "es": "Aydar, aunque tenga que contarlo",
+      "pt": "Ajudar, mesmo que tenha de contar",
+      "de": "Helfen, auch wenn ich es erzählen muss",
+      "fr": "Aider, même si je dois en parler"
+    },
+    "stats": {
+      "a": 51,
+      "b": 49
+    },
+    "analysis": {
+      "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
+      "en": "Your choice shows how you tend to react in situations like this.",
+      "es": "Tu elección muestra cómo sueles reaccionar ante situaciones así.",
+      "pt": "A tua escolha mostra como costumas reagir em situações assim.",
+      "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
+      "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
+    }
+  },
+  {
+    "question": {
+      "ru": "Друг просит не рассказывать о его личной проблеме. Что для тебя важнее? Ситуация: важную новость друга.",
+      "en": "A friend asks you not to share a personal problem. What matters more to you? Situation: an important friend’s news.",
+      "es": "Un amigo te pide que no cuentes su problema personal. ¿Qué valoras más? Situación: una noticia importante de un amigo.",
+      "pt": "Um amigo pede para não contares um problema pessoal. O que valorizas mais? Situação: uma notícia importante de um amigo.",
+      "de": "Ein Freund bittet dich, ein persönliches Problem nicht zu erzählen. Was ist dir wichtiger? Situation: eine wichtige Nachricht eines Freundes.",
+      "fr": "Un ami te demande de ne pas parler de son problème personnel. Qu’est-ce qui compte le plus? Situation : une nouvelle importante d’un ami."
+    },
+    "a": {
+      "ru": "Сохранить доверие",
+      "en": "Protect the trust",
+      "es": "Mantener la confianza",
+      "pt": "Preservar a confiança",
+      "de": "Das Vertrauen bewahren",
+      "fr": "Préserver la confiance"
+    },
+    "b": {
+      "ru": "Помочь, даже если придётся рассказать",
+      "en": "Help, even if I must tell someone",
+      "es": "Aydar, aunque tenga que contarlo",
+      "pt": "Ajudar, mesmo que tenha de contar",
+      "de": "Helfen, auch wenn ich es erzählen muss",
+      "fr": "Aider, même si je dois en parler"
+    },
+    "stats": {
+      "a": 53,
+      "b": 47
+    },
+    "analysis": {
+      "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
+      "en": "Your choice shows how you tend to react in situations like this.",
+      "es": "Tu elección muestra cómo sueles reaccionar ante situaciones así.",
+      "pt": "A tua escolha mostra como costumas reagir em situações assim.",
+      "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
+      "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
+    }
+  },
+  {
+    "question": {
+      "ru": "Друг просит не рассказывать о его личной проблеме. Что для тебя важнее? Ситуация: первый день на новой работе.",
+      "en": "A friend asks you not to share a personal problem. What matters more to you? Situation: your first day at a new job.",
+      "es": "Un amigo te pide que no cuentes su problema personal. ¿Qué valoras más? Situación: tu primer día en un nuevo trabajo.",
+      "pt": "Um amigo pede para não contares um problema pessoal. O que valorizas mais? Situação: o teu primeiro dia num novo trabalho.",
+      "de": "Ein Freund bittet dich, ein persönliches Problem nicht zu erzählen. Was ist dir wichtiger? Situation: dein erster Tag im neuen Job.",
+      "fr": "Un ami te demande de ne pas parler de son problème personnel. Qu’est-ce qui compte le plus? Situation : ton premier jour dans un nouveau travail."
+    },
+    "a": {
+      "ru": "Сохранить доверие",
+      "en": "Protect the trust",
+      "es": "Mantener la confianza",
+      "pt": "Preservar a confiança",
+      "de": "Das Vertrauen bewahren",
+      "fr": "Préserver la confiance"
+    },
+    "b": {
+      "ru": "Помочь, даже если придётся рассказать",
+      "en": "Help, even if I must tell someone",
+      "es": "Aydar, aunque tenga que contarlo",
+      "pt": "Ajudar, mesmo que tenha de contar",
+      "de": "Helfen, auch wenn ich es erzählen muss",
+      "fr": "Aider, même si je dois en parler"
+    },
+    "stats": {
+      "a": 47,
+      "b": 53
+    },
+    "analysis": {
+      "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
+      "en": "Your choice shows how you tend to react in situations like this.",
+      "es": "Tu elección muestra cómo sueles reaccionar ante situaciones así.",
+      "pt": "A tua escolha mostra como costumas reagir em situações assim.",
+      "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
+      "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
+    }
+  },
+  {
+    "question": {
+      "ru": "Тебе предлагают работу с хорошей оплатой, но ты почти ничего о ней не знаешь. Твой первый шаг? Ситуация: после тяжёлой недели.",
+      "en": "You are offered a well-paid job you know little about. What is your first step?",
+      "es": "Te ofrecen un trabajo bien pagado que apenas conoces. ¿Cuál es tu primer paso?",
+      "pt": "Oferecem-te um trabalho bem pago que conheces pouco. Qual é o teu primeiro passo?",
+      "de": "Dir wird ein gut bezahlter Job angeboten, über den du wenig weißt. Was tust du zuerst?",
+      "fr": "On te propose un travail bien payé que tu connais mal. Quelle est ta première étape?"
+    },
+    "a": {
+      "ru": "Сначала всё изучу",
+      "en": "Research everything first",
+      "es": "Investigaré primero",
+      "pt": "Vou estudar tudo primeiro",
+      "de": "Ich informiere mich zuerst",
+      "fr": "Je vais d’abord tout étudier"
+    },
+    "b": {
+      "ru": "Соглашусь и разберусь по ходу",
+      "en": "Accept and learn along the way",
+      "es": "Aceptar y aprender sobre la marcha",
+      "pt": "Aceitar e aprender pelo caminho",
+      "de": "Ich sage zu und lerne unterwegs",
+      "fr": "J’accepte et j’apprends en chemin"
+    },
+    "stats": {
+      "a": 47,
+      "b": 53
+    },
+    "analysis": {
+      "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
+      "en": "Your choice shows how you tend to react in situations like this.",
+      "es": "Tu elección muestra cómo sueles reaccionar ante situaciones así.",
+      "pt": "A tua escolha mostra como costumas reagir em situações assim.",
+      "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
+      "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
+    }
+  },
+  {
+    "question": {
+      "ru": "Тебе предлагают работу с хорошей оплатой, но ты почти ничего о ней не знаешь. Твой первый шаг? Ситуация: перед важной встречей.",
+      "en": "You are offered a well-paid job you know little about. What is your first step?",
+      "es": "Te ofrecen un trabajo bien pagado que apenas conoces. ¿Cuál es tu primer paso?",
+      "pt": "Oferecem-te um trabalho bem pago que conheces pouco. Qual é o teu primeiro passo?",
+      "de": "Dir wird ein gut bezahlter Job angeboten, über den du wenig weißt. Was tust du zuerst?",
+      "fr": "On te propose un travail bien payé que tu connais mal. Quelle est ta première étape?"
+    },
+    "a": {
+      "ru": "Сначала всё изучу",
+      "en": "Research everything first",
+      "es": "Investigaré primero",
+      "pt": "Vou estudar tudo primeiro",
+      "de": "Ich informiere mich zuerst",
+      "fr": "Je vais d’abord tout étudier"
+    },
+    "b": {
+      "ru": "Соглашусь и разберусь по ходу",
+      "en": "Accept and learn along the way",
+      "es": "Aceptar y aprender sobre la marcha",
+      "pt": "Aceitar e aprender pelo caminho",
+      "de": "Ich sage zu und lerne unterwegs",
+      "fr": "J’accepte et j’apprends en chemin"
+    },
+    "stats": {
+      "a": 49,
+      "b": 51
+    },
+    "analysis": {
+      "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
+      "en": "Your choice shows how you tend to react in situations like this.",
+      "es": "Tu elección muestra cómo sueles reaccionar ante situaciones así.",
+      "pt": "A tua escolha mostra como costumas reagir em situações assim.",
+      "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
+      "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
+    }
+  },
+  {
+    "question": {
+      "ru": "Тебе предлагают работу с хорошей оплатой, но ты почти ничего о ней не знаешь. Твой первый шаг? Ситуация: когда ты устал.",
+      "en": "You are offered a well-paid job you know little about. What is your first step?",
+      "es": "Te ofrecen un trabajo bien pagado que apenas conoces. ¿Cuál es tu primer paso?",
+      "pt": "Oferecem-te um trabalho bem pago que conheces pouco. Qual é o teu primeiro passo?",
+      "de": "Dir wird ein gut bezahlter Job angeboten, über den du wenig weißt. Was tust du zuerst?",
+      "fr": "On te propose un travail bien payé que tu connais mal. Quelle est ta première étape?"
+    },
+    "a": {
+      "ru": "Сначала всё изучу",
+      "en": "Research everything first",
+      "es": "Investigaré primero",
+      "pt": "Vou estudar tudo primeiro",
+      "de": "Ich informiere mich zuerst",
+      "fr": "Je vais d’abord tout étudier"
+    },
+    "b": {
+      "ru": "Соглашусь и разберусь по ходу",
+      "en": "Accept and learn along the way",
+      "es": "Aceptar y aprender sobre la marcha",
+      "pt": "Aceitar e aprender pelo caminho",
+      "de": "Ich sage zu und lerne unterwegs",
+      "fr": "J’accepte et j’apprends en chemin"
+    },
+    "stats": {
+      "a": 51,
+      "b": 49
+    },
+    "analysis": {
+      "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
+      "en": "Your choice shows how you tend to react in situations like this.",
+      "es": "Tu elección muestra cómo sueles reaccionar ante situaciones así.",
+      "pt": "A tua escolha mostra como costumas reagir em situações assim.",
+      "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
+      "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
+    }
+  },
+  {
+    "question": {
+      "ru": "Тебе предлагают работу с хорошей оплатой, но ты почти ничего о ней не знаешь. Твой первый шаг? Ситуация: в незнакомой компании.",
+      "en": "You are offered a well-paid job you know little about. What is your first step?",
+      "es": "Te ofrecen un trabajo bien pagado que apenas conoces. ¿Cuál es tu primer paso?",
+      "pt": "Oferecem-te um trabalho bem pago que conheces pouco. Qual é o teu primeiro passo?",
+      "de": "Dir wird ein gut bezahlter Job angeboten, über den du wenig weißt. Was tust du zuerst?",
+      "fr": "On te propose un travail bien payé que tu connais mal. Quelle est ta première étape?"
+    },
+    "a": {
+      "ru": "Сначала всё изучу",
+      "en": "Research everything first",
+      "es": "Investigaré primero",
+      "pt": "Vou estudar tudo primeiro",
+      "de": "Ich informiere mich zuerst",
+      "fr": "Je vais d’abord tout étudier"
+    },
+    "b": {
+      "ru": "Соглашусь и разберусь по ходу",
+      "en": "Accept and learn along the way",
+      "es": "Aceptar y aprender sobre la marcha",
+      "pt": "Aceitar e aprender pelo caminho",
+      "de": "Ich sage zu und lerne unterwegs",
+      "fr": "J’accepte et j’apprends en chemin"
+    },
+    "stats": {
+      "a": 53,
+      "b": 47
+    },
+    "analysis": {
+      "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
+      "en": "Your choice shows how you tend to react in situations like this.",
+      "es": "Tu elección muestra cómo sueles reaccionar ante situaciones así.",
+      "pt": "A tua escolha mostra como costumas reagir em situações assim.",
+      "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
+      "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
+    }
+  },
+  {
+    "question": {
+      "ru": "Тебе предлагают работу с хорошей оплатой, но ты почти ничего о ней не знаешь. Твой первый шаг? Ситуация: когда планы меняются в последний момент.",
+      "en": "You are offered a well-paid job you know little about. What is your first step?",
+      "es": "Te ofrecen un trabajo bien pagado que apenas conoces. ¿Cuál es tu primer paso?",
+      "pt": "Oferecem-te um trabalho bem pago que conheces pouco. Qual é o teu primeiro passo?",
+      "de": "Dir wird ein gut bezahlter Job angeboten, über den du wenig weißt. Was tust du zuerst?",
+      "fr": "On te propose un travail bien payé que tu connais mal. Quelle est ta première étape?"
+    },
+    "a": {
+      "ru": "Сначала всё изучу",
+      "en": "Research everything first",
+      "es": "Investigaré primero",
+      "pt": "Vou estudar tudo primeiro",
+      "de": "Ich informiere mich zuerst",
+      "fr": "Je vais d’abord tout étudier"
+    },
+    "b": {
+      "ru": "Соглашусь и разберусь по ходу",
+      "en": "Accept and learn along the way",
+      "es": "Aceptar y aprender sobre la marcha",
+      "pt": "Aceitar e aprender pelo caminho",
+      "de": "Ich sage zu und lerne unterwegs",
+      "fr": "J’accepte et j’apprends en chemin"
+    },
+    "stats": {
+      "a": 47,
+      "b": 53
+    },
+    "analysis": {
+      "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
+      "en": "Your choice shows how you tend to react in situations like this.",
+      "es": "Tu elección muestra cómo sueles reaccionar ante situaciones así.",
+      "pt": "A tua escolha mostra como costumas reagir em situações assim.",
+      "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
+      "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
+    }
+  },
+  {
+    "question": {
+      "ru": "Тебе неожиданно вернули небольшую сумму денег. На что потратишь? Ситуация: после тяжёлой недели.",
+      "en": "You unexpectedly receive a small amount of money. What would you spend it on? Situation: after a difficult week.",
+      "es": "Recibes inesperadamente una pequeña cantidad de dinero. ¿En qué la gastarías? Situación: después de una semana difícil.",
+      "pt": "Recebes inesperadamente uma pequena quantia de dinheiro. Em que a gastarias? Situação: depois de uma semana difícil.",
+      "de": "Du bekommst unerwartet etwas Geld zurück. Wofür würdest du es ausgeben? Situation: nach einer anstrengenden Woche.",
+      "fr": "Tu reçois une petite somme de façon inattendue. Dans quoi la dépenserais-tu? Situation : après une semaine difficile."
+    },
+    "a": {
+      "ru": "Отложу",
+      "en": "Save it",
+      "es": "Lo ahorraré",
+      "pt": "Vou guardar o dinheiro",
+      "de": "Ich spare es",
+      "fr": "Je l’épargne"
+    },
+    "b": {
+      "ru": "Порадую себя",
+      "en": "Treat myself",
+      "es": "Me daré un capricho",
+      "pt": "Vou oferecer-me algo",
+      "de": "Ich gönne mir etwas",
+      "fr": "Je me fais plaisir"
+    },
+    "stats": {
+      "a": 47,
+      "b": 53
+    },
+    "analysis": {
+      "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
+      "en": "Your choice shows how you tend to react in situations like this.",
+      "es": "Tu elección muestra cómo sueles reaccionar ante situaciones así.",
+      "pt": "A tua escolha mostra como costumas reagir em situações assim.",
+      "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
+      "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
+    }
+  },
+  {
+    "question": {
+      "ru": "Тебе неожиданно вернули небольшую сумму денег. На что потратишь? Ситуация: срочную задачу.",
+      "en": "You unexpectedly receive a small amount of money. What would you spend it on? Situation: an urgent task.",
+      "es": "Recibes inesperadamente una pequeña cantidad de dinero. ¿En qué la gastarías? Situación: una tarea urgente.",
+      "pt": "Recebes inesperadamente uma pequena quantia de dinheiro. Em que a gastarias? Situação: uma tarefa urgente.",
+      "de": "Du bekommst unerwartet etwas Geld zurück. Wofür würdest du es ausgeben? Situation: eine dringende Aufgabe.",
+      "fr": "Tu reçois une petite somme de façon inattendue. Dans quoi la dépenserais-tu? Situation : une tâche urgente."
+    },
+    "a": {
+      "ru": "Отложу",
+      "en": "Save it",
+      "es": "Lo ahorraré",
+      "pt": "Vou guardar o dinheiro",
+      "de": "Ich spare es",
+      "fr": "Je l’épargne"
+    },
+    "b": {
+      "ru": "Порадую себя",
+      "en": "Treat myself",
+      "es": "Me daré un capricho",
+      "pt": "Vou oferecer-me algo",
+      "de": "Ich gönne mir etwas",
+      "fr": "Je me fais plaisir"
+    },
+    "stats": {
+      "a": 49,
+      "b": 51
+    },
+    "analysis": {
+      "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
+      "en": "Your choice shows how you tend to react in situations like this.",
+      "es": "Tu elección muestra cómo sueles reaccionar ante situaciones así.",
+      "pt": "A tua escolha mostra como costumas reagir em situações assim.",
+      "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
+      "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
+    }
+  },
+  {
+    "question": {
+      "ru": "Тебе неожиданно вернули небольшую сумму денег. На что потратишь? Ситуация: в метро.",
+      "en": "You unexpectedly receive a small amount of money. What would you spend it on? Situation: on the subway.",
+      "es": "Recibes inesperadamente una pequeña cantidad de dinero. ¿En qué la gastarías? Situación: en el metro.",
+      "pt": "Recebes inesperadamente uma pequena quantia de dinheiro. Em que a gastarias? Situação: no metro.",
+      "de": "Du bekommst unerwartet etwas Geld zurück. Wofür würdest du es ausgeben? Situation: in der U-Bahn.",
+      "fr": "Tu reçois une petite somme de façon inattendue. Dans quoi la dépenserais-tu? Situation : dans le métro."
+    },
+    "a": {
+      "ru": "Отложу",
+      "en": "Save it",
+      "es": "Lo ahorraré",
+      "pt": "Vou guardar o dinheiro",
+      "de": "Ich spare es",
+      "fr": "Je l’épargne"
+    },
+    "b": {
+      "ru": "Порадую себя",
+      "en": "Treat myself",
+      "es": "Me daré un capricho",
+      "pt": "Vou oferecer-me algo",
+      "de": "Ich gönne mir etwas",
+      "fr": "Je me fais plaisir"
+    },
+    "stats": {
+      "a": 51,
+      "b": 49
+    },
+    "analysis": {
+      "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
+      "en": "Your choice shows how you tend to react in situations like this.",
+      "es": "Tu elección muestra cómo sueles reaccionar ante situaciones así.",
+      "pt": "A tua escolha mostra como costumas reagir em situações assim.",
+      "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
+      "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
+    }
+  },
+  {
+    "question": {
+      "ru": "Тебе неожиданно вернули небольшую сумму денег. На что потратишь? Ситуация: важную новость друга.",
+      "en": "You unexpectedly receive a small amount of money. What would you spend it on? Situation: an important friend’s news.",
+      "es": "Recibes inesperadamente una pequeña cantidad de dinero. ¿En qué la gastarías? Situación: una noticia importante de un amigo.",
+      "pt": "Recebes inesperadamente uma pequena quantia de dinheiro. Em que a gastarias? Situação: uma notícia importante de um amigo.",
+      "de": "Du bekommst unerwartet etwas Geld zurück. Wofür würdest du es ausgeben? Situation: eine wichtige Nachricht eines Freundes.",
+      "fr": "Tu reçois une petite somme de façon inattendue. Dans quoi la dépenserais-tu? Situation : une nouvelle importante d’un ami."
+    },
+    "a": {
+      "ru": "Отложу",
+      "en": "Save it",
+      "es": "Lo ahorraré",
+      "pt": "Vou guardar o dinheiro",
+      "de": "Ich spare es",
+      "fr": "Je l’épargne"
+    },
+    "b": {
+      "ru": "Порадую себя",
+      "en": "Treat myself",
+      "es": "Me daré un capricho",
+      "pt": "Vou oferecer-me algo",
+      "de": "Ich gönne mir etwas",
+      "fr": "Je me fais plaisir"
+    },
+    "stats": {
+      "a": 53,
+      "b": 47
+    },
+    "analysis": {
+      "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
+      "en": "Your choice shows how you tend to react in situations like this.",
+      "es": "Tu elección muestra cómo sueles reaccionar ante situaciones así.",
+      "pt": "A tua escolha mostra como costumas reagir em situações assim.",
+      "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
+      "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
+    }
+  },
+  {
+    "question": {
+      "ru": "Тебе неожиданно вернули небольшую сумму денег. На что потратишь? Ситуация: первый день на новой работе.",
+      "en": "You unexpectedly receive a small amount of money. What would you spend it on? Situation: your first day at a new job.",
+      "es": "Recibes inesperadamente una pequeña cantidad de dinero. ¿En qué la gastarías? Situación: tu primer día en un nuevo trabajo.",
+      "pt": "Recebes inesperadamente uma pequena quantia de dinheiro. Em que a gastarias? Situação: o teu primeiro dia num novo trabalho.",
+      "de": "Du bekommst unerwartet etwas Geld zurück. Wofür würdest du es ausgeben? Situation: dein erster Tag im neuen Job.",
+      "fr": "Tu reçois une petite somme de façon inattendue. Dans quoi la dépenserais-tu? Situation : ton premier jour dans un nouveau travail."
+    },
+    "a": {
+      "ru": "Отложу",
+      "en": "Save it",
+      "es": "Lo ahorraré",
+      "pt": "Vou guardar o dinheiro",
+      "de": "Ich spare es",
+      "fr": "Je l’épargne"
+    },
+    "b": {
+      "ru": "Порадую себя",
+      "en": "Treat myself",
+      "es": "Me daré un capricho",
+      "pt": "Vou oferecer-me algo",
+      "de": "Ich gönne mir etwas",
+      "fr": "Je me fais plaisir"
+    },
+    "stats": {
+      "a": 47,
+      "b": 53
+    },
+    "analysis": {
+      "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
+      "en": "Your choice shows how you tend to react in situations like this.",
+      "es": "Tu elección muestra cómo sueles reaccionar ante situaciones así.",
+      "pt": "A tua escolha mostra como costumas reagir em situações assim.",
+      "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
+      "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
+    }
+  },
+  {
+    "question": {
+      "ru": "В поездке планы рушатся из-за погоды. Что сделаешь? Ситуация: после тяжёлой недели.",
+      "en": "Your travel plans fall apart because of the weather. What do you do?",
+      "es": "Tus planes de viaje cambian por el clima. ¿Qué haces?",
+      "pt": "Os teus planos de viagem mudam por causa do tempo. O que fazes?",
+      "de": "Deine Reisepläne scheitern am Wetter. Was tust du?",
+      "fr": "Tes plans de voyage changent à cause de la météo. Que fais-tu?"
+    },
+    "a": {
+      "ru": "Составлю новый план",
+      "en": "Make a new plan",
+      "es": "Haré un nuevo plan",
+      "pt": "Farei um novo plano",
+      "de": "Ich mache einen neuen Plan",
+      "fr": "Je fais un nouveau plan"
+    },
+    "b": {
+      "ru": "Просто приму ситуацию",
+      "en": "Accept the situation",
+      "es": "Aceptar la situación",
+      "pt": "Aceitar a situação",
+      "de": "Ich akzeptiere die Situation",
+      "fr": "J’accepte la situation"
+    },
+    "stats": {
+      "a": 47,
+      "b": 53
+    },
+    "analysis": {
+      "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
+      "en": "Your choice shows how you tend to react in situations like this.",
+      "es": "Tu elección muestra cómo sueles reaccionar ante situaciones así.",
+      "pt": "A tua escolha mostra como costumas reagir em situações assim.",
+      "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
+      "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
+    }
+  },
+  {
+    "question": {
+      "ru": "В поездке планы рушатся из-за погоды. Что сделаешь? Ситуация: перед важной встречей.",
+      "en": "Your travel plans fall apart because of the weather. What do you do?",
+      "es": "Tus planes de viaje cambian por el clima. ¿Qué haces?",
+      "pt": "Os teus planos de viagem mudam por causa do tempo. O que fazes?",
+      "de": "Deine Reisepläne scheitern am Wetter. Was tust du?",
+      "fr": "Tes plans de voyage changent à cause de la météo. Que fais-tu?"
+    },
+    "a": {
+      "ru": "Составлю новый план",
+      "en": "Make a new plan",
+      "es": "Haré un nuevo plan",
+      "pt": "Farei um novo plano",
+      "de": "Ich mache einen neuen Plan",
+      "fr": "Je fais un nouveau plan"
+    },
+    "b": {
+      "ru": "Просто приму ситуацию",
+      "en": "Accept the situation",
+      "es": "Aceptar la situación",
+      "pt": "Aceitar a situação",
+      "de": "Ich akzeptiere die Situation",
+      "fr": "J’accepte la situation"
+    },
+    "stats": {
+      "a": 49,
+      "b": 51
+    },
+    "analysis": {
+      "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
+      "en": "Your choice shows how you tend to react in situations like this.",
+      "es": "Tu elección muestra cómo sueles reaccionar ante situaciones así.",
+      "pt": "A tua escolha mostra como costumas reagir em situações assim.",
+      "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
+      "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
+    }
+  },
+  {
+    "question": {
+      "ru": "В поездке планы рушатся из-за погоды. Что сделаешь? Ситуация: когда ты устал.",
+      "en": "Your travel plans fall apart because of the weather. What do you do?",
+      "es": "Tus planes de viaje cambian por el clima. ¿Qué haces?",
+      "pt": "Os teus planos de viagem mudam por causa do tempo. O que fazes?",
+      "de": "Deine Reisepläne scheitern am Wetter. Was tust du?",
+      "fr": "Tes plans de voyage changent à cause de la météo. Que fais-tu?"
+    },
+    "a": {
+      "ru": "Составлю новый план",
+      "en": "Make a new plan",
+      "es": "Haré un nuevo plan",
+      "pt": "Farei um novo plano",
+      "de": "Ich mache einen neuen Plan",
+      "fr": "Je fais un nouveau plan"
+    },
+    "b": {
+      "ru": "Просто приму ситуацию",
+      "en": "Accept the situation",
+      "es": "Aceptar la situación",
+      "pt": "Aceitar a situação",
+      "de": "Ich akzeptiere die Situation",
+      "fr": "J’accepte la situation"
+    },
+    "stats": {
+      "a": 51,
+      "b": 49
+    },
+    "analysis": {
+      "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
+      "en": "Your choice shows how you tend to react in situations like this.",
+      "es": "Tu elección muestra cómo sueles reaccionar ante situaciones así.",
+      "pt": "A tua escolha mostra como costumas reagir em situações assim.",
+      "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
+      "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
+    }
+  },
+  {
+    "question": {
+      "ru": "В поездке планы рушатся из-за погоды. Что сделаешь? Ситуация: в незнакомой компании.",
+      "en": "Your travel plans fall apart because of the weather. What do you do?",
+      "es": "Tus planes de viaje cambian por el clima. ¿Qué haces?",
+      "pt": "Os teus planos de viagem mudam por causa do tempo. O que fazes?",
+      "de": "Deine Reisepläne scheitern am Wetter. Was tust du?",
+      "fr": "Tes plans de voyage changent à cause de la météo. Que fais-tu?"
+    },
+    "a": {
+      "ru": "Составлю новый план",
+      "en": "Make a new plan",
+      "es": "Haré un nuevo plan",
+      "pt": "Farei um novo plano",
+      "de": "Ich mache einen neuen Plan",
+      "fr": "Je fais un nouveau plan"
+    },
+    "b": {
+      "ru": "Просто приму ситуацию",
+      "en": "Accept the situation",
+      "es": "Aceptar la situación",
+      "pt": "Aceitar a situação",
+      "de": "Ich akzeptiere die Situation",
+      "fr": "J’accepte la situation"
+    },
+    "stats": {
+      "a": 53,
+      "b": 47
+    },
+    "analysis": {
+      "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
+      "en": "Your choice shows how you tend to react in situations like this.",
+      "es": "Tu elección muestra cómo sueles reaccionar ante situaciones así.",
+      "pt": "A tua escolha mostra como costumas reagir em situações assim.",
+      "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
+      "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
+    }
+  },
+  {
+    "question": {
+      "ru": "В поездке планы рушатся из-за погоды. Что сделаешь? Ситуация: когда планы меняются в последний момент.",
+      "en": "Your travel plans fall apart because of the weather. What do you do?",
+      "es": "Tus planes de viaje cambian por el clima. ¿Qué haces?",
+      "pt": "Os teus planos de viagem mudam por causa do tempo. O que fazes?",
+      "de": "Deine Reisepläne scheitern am Wetter. Was tust du?",
+      "fr": "Tes plans de voyage changent à cause de la météo. Que fais-tu?"
+    },
+    "a": {
+      "ru": "Составлю новый план",
+      "en": "Make a new plan",
+      "es": "Haré un nuevo plan",
+      "pt": "Farei um novo plano",
+      "de": "Ich mache einen neuen Plan",
+      "fr": "Je fais un nouveau plan"
+    },
+    "b": {
+      "ru": "Просто приму ситуацию",
+      "en": "Accept the situation",
+      "es": "Aceptar la situación",
+      "pt": "Aceitar a situação",
+      "de": "Ich akzeptiere die Situation",
+      "fr": "J’accepte la situation"
+    },
+    "stats": {
+      "a": 47,
+      "b": 53
+    },
+    "analysis": {
+      "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
+      "en": "Your choice shows how you tend to react in situations like this.",
+      "es": "Tu elección muestra cómo sueles reaccionar ante situaciones así.",
+      "pt": "A tua escolha mostra como costumas reagir em situações assim.",
+      "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
+      "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
+    }
+  },
+  {
+    "question": {
+      "ru": "В компании начинается спор. Ты видишь сильные аргументы с обеих сторон. Что сделаешь? Ситуация: после тяжёлой недели.",
+      "en": "An argument starts in a group and both sides have strong points. What do you do? Situation: after a difficult week.",
+      "es": "Empieza una discusión y ambos lados tienen buenos argumentos. ¿Qué haces? Situación: después de una semana difícil.",
+      "pt": "Começa uma discussão e ambos os lados têm bons argumentos. O que fazes? Situação: depois de uma semana difícil.",
+      "de": "In einer Gruppe entsteht ein Streit, und beide Seiten haben gute Argumente. Was tust du? Situation: nach einer anstrengenden Woche.",
+      "fr": "Une dispute commence et les deux côtés ont de bons arguments. Que fais-tu? Situation : après une semaine difficile."
+    },
+    "a": {
+      "ru": "Попытаюсь найти компромисс",
+      "en": "Find a compromise",
+      "es": "Buscaré un compromiso",
+      "pt": "Tentarei encontrar um compromisso",
+      "de": "Ich suche einen Kompromiss",
+      "fr": "Je chercherai un compromis"
+    },
+    "b": {
+      "ru": "Выберу сторону, которую считаю правильной",
+      "en": "Choose the side I believe is right",
+      "es": "Elegiré el lado que considero correcto",
+      "pt": "Escolherei o lado que considero certo",
+      "de": "Ich wähle die Seite, die ich für richtig halte",
+      "fr": "Je choisis le côté que je pense juste"
+    },
+    "stats": {
+      "a": 47,
+      "b": 53
+    },
+    "analysis": {
+      "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
+      "en": "Your choice shows how you tend to react in situations like this.",
+      "es": "Tu elección muestra cómo sueles reaccionar ante situaciones así.",
+      "pt": "A tua escolha mostra como costumas reagir em situações assim.",
+      "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
+      "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
+    }
+  },
+  {
+    "question": {
+      "ru": "В компании начинается спор. Ты видишь сильные аргументы с обеих сторон. Что сделаешь? Ситуация: срочную задачу.",
+      "en": "An argument starts in a group and both sides have strong points. What do you do? Situation: an urgent task.",
+      "es": "Empieza una discusión y ambos lados tienen buenos argumentos. ¿Qué haces? Situación: una tarea urgente.",
+      "pt": "Começa uma discussão e ambos os lados têm bons argumentos. O que fazes? Situação: uma tarefa urgente.",
+      "de": "In einer Gruppe entsteht ein Streit, und beide Seiten haben gute Argumente. Was tust du? Situation: eine dringende Aufgabe.",
+      "fr": "Une dispute commence et les deux côtés ont de bons arguments. Que fais-tu? Situation : une tâche urgente."
+    },
+    "a": {
+      "ru": "Попытаюсь найти компромисс",
+      "en": "Find a compromise",
+      "es": "Buscaré un compromiso",
+      "pt": "Tentarei encontrar um compromisso",
+      "de": "Ich suche einen Kompromiss",
+      "fr": "Je chercherai un compromis"
+    },
+    "b": {
+      "ru": "Выберу сторону, которую считаю правильной",
+      "en": "Choose the side I believe is right",
+      "es": "Elegiré el lado que considero correcto",
+      "pt": "Escolherei o lado que considero certo",
+      "de": "Ich wähle die Seite, die ich für richtig halte",
+      "fr": "Je choisis le côté que je pense juste"
+    },
+    "stats": {
+      "a": 49,
+      "b": 51
+    },
+    "analysis": {
+      "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
+      "en": "Your choice shows how you tend to react in situations like this.",
+      "es": "Tu elección muestra cómo sueles reaccionar ante situaciones así.",
+      "pt": "A tua escolha mostra como costumas reagir em situações assim.",
+      "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
+      "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
+    }
+  },
+  {
+    "question": {
+      "ru": "В компании начинается спор. Ты видишь сильные аргументы с обеих сторон. Что сделаешь? Ситуация: в метро.",
+      "en": "An argument starts in a group and both sides have strong points. What do you do? Situation: on the subway.",
+      "es": "Empieza una discusión y ambos lados tienen buenos argumentos. ¿Qué haces? Situación: en el metro.",
+      "pt": "Começa uma discussão e ambos os lados têm bons argumentos. O que fazes? Situação: no metro.",
+      "de": "In einer Gruppe entsteht ein Streit, und beide Seiten haben gute Argumente. Was tust du? Situation: in der U-Bahn.",
+      "fr": "Une dispute commence et les deux côtés ont de bons arguments. Que fais-tu? Situation : dans le métro."
+    },
+    "a": {
+      "ru": "Попытаюсь найти компромисс",
+      "en": "Find a compromise",
+      "es": "Buscaré un compromiso",
+      "pt": "Tentarei encontrar um compromisso",
+      "de": "Ich suche einen Kompromiss",
+      "fr": "Je chercherai un compromis"
+    },
+    "b": {
+      "ru": "Выберу сторону, которую считаю правильной",
+      "en": "Choose the side I believe is right",
+      "es": "Elegiré el lado que considero correcto",
+      "pt": "Escolherei o lado que considero certo",
+      "de": "Ich wähle die Seite, die ich für richtig halte",
+      "fr": "Je choisis le côté que je pense juste"
+    },
+    "stats": {
+      "a": 51,
+      "b": 49
+    },
+    "analysis": {
+      "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
+      "en": "Your choice shows how you tend to react in situations like this.",
+      "es": "Tu elección muestra cómo sueles reaccionar ante situaciones así.",
+      "pt": "A tua escolha mostra como costumas reagir em situações assim.",
+      "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
+      "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
+    }
+  },
+  {
+    "question": {
+      "ru": "В компании начинается спор. Ты видишь сильные аргументы с обеих сторон. Что сделаешь? Ситуация: важную новость друга.",
+      "en": "An argument starts in a group and both sides have strong points. What do you do? Situation: an important friend’s news.",
+      "es": "Empieza una discusión y ambos lados tienen buenos argumentos. ¿Qué haces? Situación: una noticia importante de un amigo.",
+      "pt": "Começa uma discussão e ambos os lados têm bons argumentos. O que fazes? Situação: uma notícia importante de um amigo.",
+      "de": "In einer Gruppe entsteht ein Streit, und beide Seiten haben gute Argumente. Was tust du? Situation: eine wichtige Nachricht eines Freundes.",
+      "fr": "Une dispute commence et les deux côtés ont de bons arguments. Que fais-tu? Situation : une nouvelle importante d’un ami."
+    },
+    "a": {
+      "ru": "Попытаюсь найти компромисс",
+      "en": "Find a compromise",
+      "es": "Buscaré un compromiso",
+      "pt": "Tentarei encontrar um compromisso",
+      "de": "Ich suche einen Kompromiss",
+      "fr": "Je chercherai un compromis"
+    },
+    "b": {
+      "ru": "Выберу сторону, которую считаю правильной",
+      "en": "Choose the side I believe is right",
+      "es": "Elegiré el lado que considero correcto",
+      "pt": "Escolherei o lado que considero certo",
+      "de": "Ich wähle die Seite, die ich für richtig halte",
+      "fr": "Je choisis le côté que je pense juste"
+    },
+    "stats": {
+      "a": 53,
+      "b": 47
+    },
+    "analysis": {
+      "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
+      "en": "Your choice shows how you tend to react in situations like this.",
+      "es": "Tu elección muestra cómo sueles reaccionar ante situaciones así.",
+      "pt": "A tua escolha mostra como costumas reagir em situações assim.",
+      "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
+      "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
+    }
+  },
+  {
+    "question": {
+      "ru": "В компании начинается спор. Ты видишь сильные аргументы с обеих сторон. Что сделаешь? Ситуация: первый день на новой работе.",
+      "en": "An argument starts in a group and both sides have strong points. What do you do? Situation: your first day at a new job.",
+      "es": "Empieza una discusión y ambos lados tienen buenos argumentos. ¿Qué haces? Situación: tu primer día en un nuevo trabajo.",
+      "pt": "Começa uma discussão e ambos os lados têm bons argumentos. O que fazes? Situação: o teu primeiro dia num novo trabalho.",
+      "de": "In einer Gruppe entsteht ein Streit, und beide Seiten haben gute Argumente. Was tust du? Situation: dein erster Tag im neuen Job.",
+      "fr": "Une dispute commence et les deux côtés ont de bons arguments. Que fais-tu? Situation : ton premier jour dans un nouveau travail."
+    },
+    "a": {
+      "ru": "Попытаюсь найти компромисс",
+      "en": "Find a compromise",
+      "es": "Buscaré un compromiso",
+      "pt": "Tentarei encontrar um compromisso",
+      "de": "Ich suche einen Kompromiss",
+      "fr": "Je chercherai un compromis"
+    },
+    "b": {
+      "ru": "Выберу сторону, которую считаю правильной",
+      "en": "Choose the side I believe is right",
+      "es": "Elegiré el lado que considero correcto",
+      "pt": "Escolherei o lado que considero certo",
+      "de": "Ich wähle die Seite, die ich für richtig halte",
+      "fr": "Je choisis le côté que je pense juste"
+    },
+    "stats": {
+      "a": 47,
+      "b": 53
+    },
+    "analysis": {
+      "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
+      "en": "Your choice shows how you tend to react in situations like this.",
+      "es": "Tu elección muestra cómo sueles reaccionar ante situaciones así.",
+      "pt": "A tua escolha mostra como costumas reagir em situações assim.",
+      "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
+      "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
+    }
+  },
+  {
+    "question": {
+      "ru": "Ты хочешь выложить важный пост, но сомневаешься. Что скорее всего остановит тебя? Ситуация: после тяжёлой недели.",
+      "en": "You want to post something important but hesitate. What is most likely to stop you?",
+      "es": "Quieres publicar algo importante pero dudas. ¿Qué te frenaría?",
+      "pt": "Queres publicar algo importante, mas hesitas. O que te travaria?",
+      "de": "Du willst etwas Wichtiges posten, zögerst aber. Was würde dich eher stoppen?",
+      "fr": "Tu veux publier quelque chose d’important mais tu hésites. Qu’est-ce qui te freinerait?"
+    },
+    "a": {
+      "ru": "Страх реакции людей",
+      "en": "Fear of people’s reaction",
+      "es": "Miedo a la reacción de la gente",
+      "pt": "Medo da reação das pessoas",
+      "de": "Angst vor der Reaktion anderer",
+      "fr": "La peur de la réaction des autres"
+    },
+    "b": {
+      "ru": "Желание всё ещё доработать",
+      "en": "Wanting to improve it more",
+      "es": "Querer perfeccionarlo más",
+      "pt": "Querer aperfeiçoá-lo mais",
+      "de": "Der Wunsch, es weiter zu verbessern",
+      "fr": "L’envie de le perfectionner encore"
+    },
+    "stats": {
+      "a": 47,
+      "b": 53
+    },
+    "analysis": {
+      "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
+      "en": "Your choice shows how you tend to react in situations like this.",
+      "es": "Tu elección muestra cómo sueles reaccionar ante situaciones así.",
+      "pt": "A tua escolha mostra como costumas reagir em situações assim.",
+      "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
+      "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
+    }
+  },
+  {
+    "question": {
+      "ru": "Ты хочешь выложить важный пост, но сомневаешься. Что скорее всего остановит тебя? Ситуация: перед важной встречей.",
+      "en": "You want to post something important but hesitate. What is most likely to stop you?",
+      "es": "Quieres publicar algo importante pero dudas. ¿Qué te frenaría?",
+      "pt": "Queres publicar algo importante, mas hesitas. O que te travaria?",
+      "de": "Du willst etwas Wichtiges posten, zögerst aber. Was würde dich eher stoppen?",
+      "fr": "Tu veux publier quelque chose d’important mais tu hésites. Qu’est-ce qui te freinerait?"
+    },
+    "a": {
+      "ru": "Страх реакции людей",
+      "en": "Fear of people’s reaction",
+      "es": "Miedo a la reacción de la gente",
+      "pt": "Medo da reação das pessoas",
+      "de": "Angst vor der Reaktion anderer",
+      "fr": "La peur de la réaction des autres"
+    },
+    "b": {
+      "ru": "Желание всё ещё доработать",
+      "en": "Wanting to improve it more",
+      "es": "Querer perfeccionarlo más",
+      "pt": "Querer aperfeiçoá-lo mais",
+      "de": "Der Wunsch, es weiter zu verbessern",
+      "fr": "L’envie de le perfectionner encore"
+    },
+    "stats": {
+      "a": 49,
+      "b": 51
+    },
+    "analysis": {
+      "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
+      "en": "Your choice shows how you tend to react in situations like this.",
+      "es": "Tu elección muestra cómo sueles reaccionar ante situaciones así.",
+      "pt": "A tua escolha mostra como costumas reagir em situações assim.",
+      "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
+      "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
+    }
+  },
+  {
+    "question": {
+      "ru": "Ты хочешь выложить важный пост, но сомневаешься. Что скорее всего остановит тебя? Ситуация: когда ты устал.",
+      "en": "You want to post something important but hesitate. What is most likely to stop you?",
+      "es": "Quieres publicar algo importante pero dudas. ¿Qué te frenaría?",
+      "pt": "Queres publicar algo importante, mas hesitas. O que te travaria?",
+      "de": "Du willst etwas Wichtiges posten, zögerst aber. Was würde dich eher stoppen?",
+      "fr": "Tu veux publier quelque chose d’important mais tu hésites. Qu’est-ce qui te freinerait?"
+    },
+    "a": {
+      "ru": "Страх реакции людей",
+      "en": "Fear of people’s reaction",
+      "es": "Miedo a la reacción de la gente",
+      "pt": "Medo da reação das pessoas",
+      "de": "Angst vor der Reaktion anderer",
+      "fr": "La peur de la réaction des autres"
+    },
+    "b": {
+      "ru": "Желание всё ещё доработать",
+      "en": "Wanting to improve it more",
+      "es": "Querer perfeccionarlo más",
+      "pt": "Querer aperfeiçoá-lo mais",
+      "de": "Der Wunsch, es weiter zu verbessern",
+      "fr": "L’envie de le perfectionner encore"
+    },
+    "stats": {
+      "a": 51,
+      "b": 49
+    },
+    "analysis": {
+      "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
+      "en": "Your choice shows how you tend to react in situations like this.",
+      "es": "Tu elección muestra cómo sueles reaccionar ante situaciones así.",
+      "pt": "A tua escolha mostra como costumas reagir em situações assim.",
+      "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
+      "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
+    }
+  },
+  {
+    "question": {
+      "ru": "Ты хочешь выложить важный пост, но сомневаешься. Что скорее всего остановит тебя? Ситуация: в незнакомой компании.",
+      "en": "You want to post something important but hesitate. What is most likely to stop you?",
+      "es": "Quieres publicar algo importante pero dudas. ¿Qué te frenaría?",
+      "pt": "Queres publicar algo importante, mas hesitas. O que te travaria?",
+      "de": "Du willst etwas Wichtiges posten, zögerst aber. Was würde dich eher stoppen?",
+      "fr": "Tu veux publier quelque chose d’important mais tu hésites. Qu’est-ce qui te freinerait?"
+    },
+    "a": {
+      "ru": "Страх реакции людей",
+      "en": "Fear of people’s reaction",
+      "es": "Miedo a la reacción de la gente",
+      "pt": "Medo da reação das pessoas",
+      "de": "Angst vor der Reaktion anderer",
+      "fr": "La peur de la réaction des autres"
+    },
+    "b": {
+      "ru": "Желание всё ещё доработать",
+      "en": "Wanting to improve it more",
+      "es": "Querer perfeccionarlo más",
+      "pt": "Querer aperfeiçoá-lo mais",
+      "de": "Der Wunsch, es weiter zu verbessern",
+      "fr": "L’envie de le perfectionner encore"
+    },
+    "stats": {
+      "a": 53,
+      "b": 47
+    },
+    "analysis": {
+      "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
+      "en": "Your choice shows how you tend to react in situations like this.",
+      "es": "Tu elección muestra cómo sueles reaccionar ante situaciones así.",
+      "pt": "A tua escolha mostra como costumas reagir em situações assim.",
+      "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
+      "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
+    }
+  },
+  {
+    "question": {
+      "ru": "Ты хочешь выложить важный пост, но сомневаешься. Что скорее всего остановит тебя? Ситуация: когда планы меняются в последний момент.",
+      "en": "You want to post something important but hesitate. What is most likely to stop you?",
+      "es": "Quieres publicar algo importante pero dudas. ¿Qué te frenaría?",
+      "pt": "Queres publicar algo importante, mas hesitas. O que te travaria?",
+      "de": "Du willst etwas Wichtiges posten, zögerst aber. Was würde dich eher stoppen?",
+      "fr": "Tu veux publier quelque chose d’important mais tu hésites. Qu’est-ce qui te freinerait?"
+    },
+    "a": {
+      "ru": "Страх реакции людей",
+      "en": "Fear of people’s reaction",
+      "es": "Miedo a la reacción de la gente",
+      "pt": "Medo da reação das pessoas",
+      "de": "Angst vor der Reaktion anderer",
+      "fr": "La peur de la réaction des autres"
+    },
+    "b": {
+      "ru": "Желание всё ещё доработать",
+      "en": "Wanting to improve it more",
+      "es": "Querer perfeccionarlo más",
+      "pt": "Querer aperfeiçoá-lo mais",
+      "de": "Der Wunsch, es weiter zu verbessern",
+      "fr": "L’envie de le perfectionner encore"
+    },
+    "stats": {
+      "a": 47,
+      "b": 53
+    },
+    "analysis": {
+      "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
+      "en": "Your choice shows how you tend to react in situations like this.",
+      "es": "Tu elección muestra cómo sueles reaccionar ante situaciones así.",
+      "pt": "A tua escolha mostra como costumas reagir em situações assim.",
+      "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
+      "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
+    }
+  },
+  {
+    "question": {
+      "ru": "Ты заметил свою ошибку перед сдачей работы. Что сделаешь? Ситуация: после тяжёлой недели.",
+      "en": "You notice your mistake before submitting your work. What do you do? Situation: after a difficult week.",
+      "es": "Notas un error antes de entregar tu trabajo. ¿Qué haces? Situación: después de una semana difícil.",
+      "pt": "Notas um erro antes de entregar o trabalho. O que fazes? Situação: depois de uma semana difícil.",
+      "de": "Du bemerkst einen Fehler vor der Abgabe. Was tust du? Situation: nach einer anstrengenden Woche.",
+      "fr": "Tu remarques une erreur avant de rendre ton travail. Que fais-tu? Situation : après une semaine difficile."
+    },
+    "a": {
+      "ru": "Исправлю, даже если опоздаю",
+      "en": "Fix it even if I am late",
+      "es": "Lo corregiré aunque llegue tarde",
+      "pt": "Vou corrigir, mesmo que me atrase",
+      "de": "Ich korrigiere es, auch wenn ich zu spät bin",
+      "fr": "Je le corrige même si je suis en retard"
+    },
+    "b": {
+      "ru": "Сдам вовремя и объясню ситуацию",
+      "en": "Submit on time and explain",
+      "es": "Lo entregaré a tiempo y explicaré",
+      "pt": "Entregarei a tempo e explicarei",
+      "de": "Ich gebe es pünktlich ab und erkläre es",
+      "fr": "Je le rends à temps et j’explique"
+    },
+    "stats": {
+      "a": 47,
+      "b": 53
+    },
+    "analysis": {
+      "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
+      "en": "Your choice shows how you tend to react in situations like this.",
+      "es": "Tu elección muestra cómo sueles reaccionar ante situaciones así.",
+      "pt": "A tua escolha mostra como costumas reagir em situações assim.",
+      "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
+      "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
+    }
+  },
+  {
+    "question": {
+      "ru": "Ты заметил свою ошибку перед сдачей работы. Что сделаешь? Ситуация: срочную задачу.",
+      "en": "You notice your mistake before submitting your work. What do you do? Situation: an urgent task.",
+      "es": "Notas un error antes de entregar tu trabajo. ¿Qué haces? Situación: una tarea urgente.",
+      "pt": "Notas um erro antes de entregar o trabalho. O que fazes? Situação: uma tarefa urgente.",
+      "de": "Du bemerkst einen Fehler vor der Abgabe. Was tust du? Situation: eine dringende Aufgabe.",
+      "fr": "Tu remarques une erreur avant de rendre ton travail. Que fais-tu? Situation : une tâche urgente."
+    },
+    "a": {
+      "ru": "Исправлю, даже если опоздаю",
+      "en": "Fix it even if I am late",
+      "es": "Lo corregiré aunque llegue tarde",
+      "pt": "Vou corrigir, mesmo que me atrase",
+      "de": "Ich korrigiere es, auch wenn ich zu spät bin",
+      "fr": "Je le corrige même si je suis en retard"
+    },
+    "b": {
+      "ru": "Сдам вовремя и объясню ситуацию",
+      "en": "Submit on time and explain",
+      "es": "Lo entregaré a tiempo y explicaré",
+      "pt": "Entregarei a tempo e explicarei",
+      "de": "Ich gebe es pünktlich ab und erkläre es",
+      "fr": "Je le rends à temps et j’explique"
+    },
+    "stats": {
+      "a": 49,
+      "b": 51
+    },
+    "analysis": {
+      "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
+      "en": "Your choice shows how you tend to react in situations like this.",
+      "es": "Tu elección muestra cómo sueles reaccionar ante situaciones así.",
+      "pt": "A tua escolha mostra como costumas reagir em situações assim.",
+      "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
+      "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
+    }
+  },
+  {
+    "question": {
+      "ru": "Ты заметил свою ошибку перед сдачей работы. Что сделаешь? Ситуация: в метро.",
+      "en": "You notice your mistake before submitting your work. What do you do? Situation: on the subway.",
+      "es": "Notas un error antes de entregar tu trabajo. ¿Qué haces? Situación: en el metro.",
+      "pt": "Notas um erro antes de entregar o trabalho. O que fazes? Situação: no metro.",
+      "de": "Du bemerkst einen Fehler vor der Abgabe. Was tust du? Situation: in der U-Bahn.",
+      "fr": "Tu remarques une erreur avant de rendre ton travail. Que fais-tu? Situation : dans le métro."
+    },
+    "a": {
+      "ru": "Исправлю, даже если опоздаю",
+      "en": "Fix it even if I am late",
+      "es": "Lo corregiré aunque llegue tarde",
+      "pt": "Vou corrigir, mesmo que me atrase",
+      "de": "Ich korrigiere es, auch wenn ich zu spät bin",
+      "fr": "Je le corrige même si je suis en retard"
+    },
+    "b": {
+      "ru": "Сдам вовремя и объясню ситуацию",
+      "en": "Submit on time and explain",
+      "es": "Lo entregaré a tiempo y explicaré",
+      "pt": "Entregarei a tempo e explicarei",
+      "de": "Ich gebe es pünktlich ab und erkläre es",
+      "fr": "Je le rends à temps et j’explique"
+    },
+    "stats": {
+      "a": 51,
+      "b": 49
+    },
+    "analysis": {
+      "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
+      "en": "Your choice shows how you tend to react in situations like this.",
+      "es": "Tu elección muestra cómo sueles reaccionar ante situaciones así.",
+      "pt": "A tua escolha mostra como costumas reagir em situações assim.",
+      "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
+      "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
+    }
+  },
+  {
+    "question": {
+      "ru": "Ты заметил свою ошибку перед сдачей работы. Что сделаешь? Ситуация: важную новость друга.",
+      "en": "You notice your mistake before submitting your work. What do you do? Situation: an important friend’s news.",
+      "es": "Notas un error antes de entregar tu trabajo. ¿Qué haces? Situación: una noticia importante de un amigo.",
+      "pt": "Notas um erro antes de entregar o trabalho. O que fazes? Situação: uma notícia importante de um amigo.",
+      "de": "Du bemerkst einen Fehler vor der Abgabe. Was tust du? Situation: eine wichtige Nachricht eines Freundes.",
+      "fr": "Tu remarques une erreur avant de rendre ton travail. Que fais-tu? Situation : une nouvelle importante d’un ami."
+    },
+    "a": {
+      "ru": "Исправлю, даже если опоздаю",
+      "en": "Fix it even if I am late",
+      "es": "Lo corregiré aunque llegue tarde",
+      "pt": "Vou corrigir, mesmo que me atrase",
+      "de": "Ich korrigiere es, auch wenn ich zu spät bin",
+      "fr": "Je le corrige même si je suis en retard"
+    },
+    "b": {
+      "ru": "Сдам вовремя и объясню ситуацию",
+      "en": "Submit on time and explain",
+      "es": "Lo entregaré a tiempo y explicaré",
+      "pt": "Entregarei a tempo e explicarei",
+      "de": "Ich gebe es pünktlich ab und erkläre es",
+      "fr": "Je le rends à temps et j’explique"
+    },
+    "stats": {
+      "a": 53,
+      "b": 47
+    },
+    "analysis": {
+      "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
+      "en": "Your choice shows how you tend to react in situations like this.",
+      "es": "Tu elección muestra cómo sueles reaccionar ante situaciones así.",
+      "pt": "A tua escolha mostra como costumas reagir em situações assim.",
+      "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
+      "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
+    }
+  },
+  {
+    "question": {
+      "ru": "Ты заметил свою ошибку перед сдачей работы. Что сделаешь? Ситуация: первый день на новой работе.",
+      "en": "You notice your mistake before submitting your work. What do you do? Situation: your first day at a new job.",
+      "es": "Notas un error antes de entregar tu trabajo. ¿Qué haces? Situación: tu primer día en un nuevo trabajo.",
+      "pt": "Notas um erro antes de entregar o trabalho. O que fazes? Situação: o teu primeiro dia num novo trabalho.",
+      "de": "Du bemerkst einen Fehler vor der Abgabe. Was tust du? Situation: dein erster Tag im neuen Job.",
+      "fr": "Tu remarques une erreur avant de rendre ton travail. Que fais-tu? Situation : ton premier jour dans un nouveau travail."
+    },
+    "a": {
+      "ru": "Исправлю, даже если опоздаю",
+      "en": "Fix it even if I am late",
+      "es": "Lo corregiré aunque llegue tarde",
+      "pt": "Vou corrigir, mesmo que me atrase",
+      "de": "Ich korrigiere es, auch wenn ich zu spät bin",
+      "fr": "Je le corrige même si je suis en retard"
+    },
+    "b": {
+      "ru": "Сдам вовремя и объясню ситуацию",
+      "en": "Submit on time and explain",
+      "es": "Lo entregaré a tiempo y explicaré",
+      "pt": "Entregarei a tempo e explicarei",
+      "de": "Ich gebe es pünktlich ab und erkläre es",
+      "fr": "Je le rends à temps et j’explique"
+    },
+    "stats": {
+      "a": 47,
+      "b": 53
+    },
+    "analysis": {
+      "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
+      "en": "Your choice shows how you tend to react in situations like this.",
+      "es": "Tu elección muestra cómo sueles reaccionar ante situaciones así.",
+      "pt": "A tua escolha mostra como costumas reagir em situações assim.",
+      "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
+      "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
+    }
+  },
+  {
+    "question": {
+      "ru": "У тебя полностью свободный день. Что звучит приятнее? Ситуация: после тяжёлой недели.",
+      "en": "You have a completely free day. What sounds better?",
+      "es": "Tienes un día completamente libre. ¿Qué te atrae más?",
+      "pt": "Tens um dia totalmente livre. O que parece melhor?",
+      "de": "Du hast einen völlig freien Tag. Was klingt besser?",
+      "fr": "Tu as une journée entièrement libre. Qu’est-ce qui te tente le plus?"
+    },
+    "a": {
+      "ru": "Спокойный день без планов",
+      "en": "A calm day with no plans",
+      "es": "Un día tranquilo sin planes",
+      "pt": "Um dia calmo sem planos",
+      "de": "Ein ruhiger Tag ohne Pläne",
+      "fr": "Une journée calme sans plans"
+    },
+    "b": {
+      "ru": "День с новым занятием",
+      "en": "A day with something new",
+      "es": "Un día con algo nuevo",
+      "pt": "Um dia com algo novo",
+      "de": "Ein Tag mit etwas Neuem",
+      "fr": "Une journée avec une nouvelle activité"
+    },
+    "stats": {
+      "a": 47,
+      "b": 53
+    },
+    "analysis": {
+      "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
+      "en": "Your choice shows how you tend to react in situations like this.",
+      "es": "Tu elección muestra cómo sueles reaccionar ante situaciones así.",
+      "pt": "A tua escolha mostra como costumas reagir em situações assim.",
+      "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
+      "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
+    }
+  },
+  {
+    "question": {
+      "ru": "У тебя полностью свободный день. Что звучит приятнее? Ситуация: перед важной встречей.",
+      "en": "You have a completely free day. What sounds better?",
+      "es": "Tienes un día completamente libre. ¿Qué te atrae más?",
+      "pt": "Tens um dia totalmente livre. O que parece melhor?",
+      "de": "Du hast einen völlig freien Tag. Was klingt besser?",
+      "fr": "Tu as une journée entièrement libre. Qu’est-ce qui te tente le plus?"
+    },
+    "a": {
+      "ru": "Спокойный день без планов",
+      "en": "A calm day with no plans",
+      "es": "Un día tranquilo sin planes",
+      "pt": "Um dia calmo sem planos",
+      "de": "Ein ruhiger Tag ohne Pläne",
+      "fr": "Une journée calme sans plans"
+    },
+    "b": {
+      "ru": "День с новым занятием",
+      "en": "A day with something new",
+      "es": "Un día con algo nuevo",
+      "pt": "Um dia com algo novo",
+      "de": "Ein Tag mit etwas Neuem",
+      "fr": "Une journée avec une nouvelle activité"
+    },
+    "stats": {
+      "a": 49,
+      "b": 51
+    },
+    "analysis": {
+      "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
+      "en": "Your choice shows how you tend to react in situations like this.",
+      "es": "Tu elección muestra cómo sueles reaccionar ante situaciones así.",
+      "pt": "A tua escolha mostra como costumas reagir em situações assim.",
+      "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
+      "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
+    }
+  },
+  {
+    "question": {
+      "ru": "У тебя полностью свободный день. Что звучит приятнее? Ситуация: когда ты устал.",
+      "en": "You have a completely free day. What sounds better?",
+      "es": "Tienes un día completamente libre. ¿Qué te atrae más?",
+      "pt": "Tens um dia totalmente livre. O que parece melhor?",
+      "de": "Du hast einen völlig freien Tag. Was klingt besser?",
+      "fr": "Tu as une journée entièrement libre. Qu’est-ce qui te tente le plus?"
+    },
+    "a": {
+      "ru": "Спокойный день без планов",
+      "en": "A calm day with no plans",
+      "es": "Un día tranquilo sin planes",
+      "pt": "Um dia calmo sem planos",
+      "de": "Ein ruhiger Tag ohne Pläne",
+      "fr": "Une journée calme sans plans"
+    },
+    "b": {
+      "ru": "День с новым занятием",
+      "en": "A day with something new",
+      "es": "Un día con algo nuevo",
+      "pt": "Um dia com algo novo",
+      "de": "Ein Tag mit etwas Neuem",
+      "fr": "Une journée avec une nouvelle activité"
+    },
+    "stats": {
+      "a": 51,
+      "b": 49
+    },
+    "analysis": {
+      "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
+      "en": "Your choice shows how you tend to react in situations like this.",
+      "es": "Tu elección muestra cómo sueles reaccionar ante situaciones así.",
+      "pt": "A tua escolha mostra como costumas reagir em situações assim.",
+      "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
+      "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
+    }
+  },
+  {
+    "question": {
+      "ru": "У тебя полностью свободный день. Что звучит приятнее? Ситуация: в незнакомой компании.",
+      "en": "You have a completely free day. What sounds better?",
+      "es": "Tienes un día completamente libre. ¿Qué te atrae más?",
+      "pt": "Tens um dia totalmente livre. O que parece melhor?",
+      "de": "Du hast einen völlig freien Tag. Was klingt besser?",
+      "fr": "Tu as une journée entièrement libre. Qu’est-ce qui te tente le plus?"
+    },
+    "a": {
+      "ru": "Спокойный день без планов",
+      "en": "A calm day with no plans",
+      "es": "Un día tranquilo sin planes",
+      "pt": "Um dia calmo sem planos",
+      "de": "Ein ruhiger Tag ohne Pläne",
+      "fr": "Une journée calme sans plans"
+    },
+    "b": {
+      "ru": "День с новым занятием",
+      "en": "A day with something new",
+      "es": "Un día con algo nuevo",
+      "pt": "Um dia com algo novo",
+      "de": "Ein Tag mit etwas Neuem",
+      "fr": "Une journée avec une nouvelle activité"
+    },
+    "stats": {
+      "a": 53,
+      "b": 47
+    },
+    "analysis": {
+      "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
+      "en": "Your choice shows how you tend to react in situations like this.",
+      "es": "Tu elección muestra cómo sueles reaccionar ante situaciones así.",
+      "pt": "A tua escolha mostra como costumas reagir em situações assim.",
+      "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
+      "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
+    }
+  },
+  {
+    "question": {
+      "ru": "У тебя полностью свободный день. Что звучит приятнее? Ситуация: когда планы меняются в последний момент.",
+      "en": "You have a completely free day. What sounds better?",
+      "es": "Tienes un día completamente libre. ¿Qué te atrae más?",
+      "pt": "Tens um dia totalmente livre. O que parece melhor?",
+      "de": "Du hast einen völlig freien Tag. Was klingt besser?",
+      "fr": "Tu as une journée entièrement libre. Qu’est-ce qui te tente le plus?"
+    },
+    "a": {
+      "ru": "Спокойный день без планов",
+      "en": "A calm day with no plans",
+      "es": "Un día tranquilo sin planes",
+      "pt": "Um dia calmo sem planos",
+      "de": "Ein ruhiger Tag ohne Pläne",
+      "fr": "Une journée calme sans plans"
+    },
+    "b": {
+      "ru": "День с новым занятием",
+      "en": "A day with something new",
+      "es": "Un día con algo nuevo",
+      "pt": "Um dia com algo novo",
+      "de": "Ein Tag mit etwas Neuem",
+      "fr": "Une journée avec une nouvelle activité"
+    },
+    "stats": {
+      "a": 47,
+      "b": 53
+    },
+    "analysis": {
+      "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
+      "en": "Your choice shows how you tend to react in situations like this.",
+      "es": "Tu elección muestra cómo sueles reaccionar ante situaciones así.",
+      "pt": "A tua escolha mostra como costumas reagir em situações assim.",
+      "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
+      "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
+    }
+  },
+  {
+    "question": {
+      "ru": "Сосед регулярно шумит поздно вечером. Как поступишь? Ситуация: после тяжёлой недели.",
+      "en": "A neighbor regularly makes noise late at night. What do you do? Situation: after a difficult week.",
+      "es": "Un vecino hace ruido con frecuencia por la noche. ¿Qué haces? Situación: después de una semana difícil.",
+      "pt": "Um vizinho faz barulho regularmente à noite. O que fazes? Situação: depois de uma semana difícil.",
+      "de": "Ein Nachbar ist regelmäßig spät laut. Was tust du? Situation: nach einer anstrengenden Woche.",
+      "fr": "Un voisin fait régulièrement du bruit tard le soir. Que fais-tu? Situation : après une semaine difficile."
+    },
+    "a": {
+      "ru": "Спокойно поговорю",
+      "en": "Talk calmly",
+      "es": "Hablaré con calma",
+      "pt": "Falarei com calma",
+      "de": "Ich spreche ruhig mit ihm",
+      "fr": "J’en parle calmement"
+    },
+    "b": {
+      "ru": "Сразу обращусь за помощью",
+      "en": "Ask for help immediately",
+      "es": "Pediré ayuda de inmediato",
+      "pt": "Pedirei ajuda imediatamente",
+      "de": "Ich hole sofort Hilfe",
+      "fr": "Je demande immédiatement de l’aide"
+    },
+    "stats": {
+      "a": 47,
+      "b": 53
+    },
+    "analysis": {
+      "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
+      "en": "Your choice shows how you tend to react in situations like this.",
+      "es": "Tu elección muestra cómo sueles reaccionar ante situaciones así.",
+      "pt": "A tua escolha mostra como costumas reagir em situações assim.",
+      "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
+      "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
+    }
+  },
+  {
+    "question": {
+      "ru": "Сосед регулярно шумит поздно вечером. Как поступишь? Ситуация: срочную задачу.",
+      "en": "A neighbor regularly makes noise late at night. What do you do? Situation: an urgent task.",
+      "es": "Un vecino hace ruido con frecuencia por la noche. ¿Qué haces? Situación: una tarea urgente.",
+      "pt": "Um vizinho faz barulho regularmente à noite. O que fazes? Situação: uma tarefa urgente.",
+      "de": "Ein Nachbar ist regelmäßig spät laut. Was tust du? Situation: eine dringende Aufgabe.",
+      "fr": "Un voisin fait régulièrement du bruit tard le soir. Que fais-tu? Situation : une tâche urgente."
+    },
+    "a": {
+      "ru": "Спокойно поговорю",
+      "en": "Talk calmly",
+      "es": "Hablaré con calma",
+      "pt": "Falarei com calma",
+      "de": "Ich spreche ruhig mit ihm",
+      "fr": "J’en parle calmement"
+    },
+    "b": {
+      "ru": "Сразу обращусь за помощью",
+      "en": "Ask for help immediately",
+      "es": "Pediré ayuda de inmediato",
+      "pt": "Pedirei ajuda imediatamente",
+      "de": "Ich hole sofort Hilfe",
+      "fr": "Je demande immédiatement de l’aide"
+    },
+    "stats": {
+      "a": 49,
+      "b": 51
+    },
+    "analysis": {
+      "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
+      "en": "Your choice shows how you tend to react in situations like this.",
+      "es": "Tu elección muestra cómo sueles reaccionar ante situaciones así.",
+      "pt": "A tua escolha mostra como costumas reagir em situações assim.",
+      "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
+      "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
+    }
+  },
+  {
+    "question": {
+      "ru": "Сосед регулярно шумит поздно вечером. Как поступишь? Ситуация: в метро.",
+      "en": "A neighbor regularly makes noise late at night. What do you do? Situation: on the subway.",
+      "es": "Un vecino hace ruido con frecuencia por la noche. ¿Qué haces? Situación: en el metro.",
+      "pt": "Um vizinho faz barulho regularmente à noite. O que fazes? Situação: no metro.",
+      "de": "Ein Nachbar ist regelmäßig spät laut. Was tust du? Situation: in der U-Bahn.",
+      "fr": "Un voisin fait régulièrement du bruit tard le soir. Que fais-tu? Situation : dans le métro."
+    },
+    "a": {
+      "ru": "Спокойно поговорю",
+      "en": "Talk calmly",
+      "es": "Hablaré con calma",
+      "pt": "Falarei com calma",
+      "de": "Ich spreche ruhig mit ihm",
+      "fr": "J’en parle calmement"
+    },
+    "b": {
+      "ru": "Сразу обращусь за помощью",
+      "en": "Ask for help immediately",
+      "es": "Pediré ayuda de inmediato",
+      "pt": "Pedirei ajuda imediatamente",
+      "de": "Ich hole sofort Hilfe",
+      "fr": "Je demande immédiatement de l’aide"
+    },
+    "stats": {
+      "a": 51,
+      "b": 49
+    },
+    "analysis": {
+      "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
+      "en": "Your choice shows how you tend to react in situations like this.",
+      "es": "Tu elección muestra cómo sueles reaccionar ante situaciones así.",
+      "pt": "A tua escolha mostra como costumas reagir em situações assim.",
+      "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
+      "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
+    }
+  },
+  {
+    "question": {
+      "ru": "Сосед регулярно шумит поздно вечером. Как поступишь? Ситуация: важную новость друга.",
+      "en": "A neighbor regularly makes noise late at night. What do you do? Situation: an important friend’s news.",
+      "es": "Un vecino hace ruido con frecuencia por la noche. ¿Qué haces? Situación: una noticia importante de un amigo.",
+      "pt": "Um vizinho faz barulho regularmente à noite. O que fazes? Situação: uma notícia importante de um amigo.",
+      "de": "Ein Nachbar ist regelmäßig spät laut. Was tust du? Situation: eine wichtige Nachricht eines Freundes.",
+      "fr": "Un voisin fait régulièrement du bruit tard le soir. Que fais-tu? Situation : une nouvelle importante d’un ami."
+    },
+    "a": {
+      "ru": "Спокойно поговорю",
+      "en": "Talk calmly",
+      "es": "Hablaré con calma",
+      "pt": "Falarei com calma",
+      "de": "Ich spreche ruhig mit ihm",
+      "fr": "J’en parle calmement"
+    },
+    "b": {
+      "ru": "Сразу обращусь за помощью",
+      "en": "Ask for help immediately",
+      "es": "Pediré ayuda de inmediato",
+      "pt": "Pedirei ajuda imediatamente",
+      "de": "Ich hole sofort Hilfe",
+      "fr": "Je demande immédiatement de l’aide"
+    },
+    "stats": {
+      "a": 53,
+      "b": 47
+    },
+    "analysis": {
+      "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
+      "en": "Your choice shows how you tend to react in situations like this.",
+      "es": "Tu elección muestra cómo sueles reaccionar ante situaciones así.",
+      "pt": "A tua escolha mostra como costumas reagir em situações assim.",
+      "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
+      "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
+    }
+  },
+  {
+    "question": {
+      "ru": "Сосед регулярно шумит поздно вечером. Как поступишь? Ситуация: первый день на новой работе.",
+      "en": "A neighbor regularly makes noise late at night. What do you do? Situation: your first day at a new job.",
+      "es": "Un vecino hace ruido con frecuencia por la noche. ¿Qué haces? Situación: tu primer día en un nuevo trabajo.",
+      "pt": "Um vizinho faz barulho regularmente à noite. O que fazes? Situação: o teu primeiro dia num novo trabalho.",
+      "de": "Ein Nachbar ist regelmäßig spät laut. Was tust du? Situation: dein erster Tag im neuen Job.",
+      "fr": "Un voisin fait régulièrement du bruit tard le soir. Que fais-tu? Situation : ton premier jour dans un nouveau travail."
+    },
+    "a": {
+      "ru": "Спокойно поговорю",
+      "en": "Talk calmly",
+      "es": "Hablaré con calma",
+      "pt": "Falarei com calma",
+      "de": "Ich spreche ruhig mit ihm",
+      "fr": "J’en parle calmement"
+    },
+    "b": {
+      "ru": "Сразу обращусь за помощью",
+      "en": "Ask for help immediately",
+      "es": "Pediré ayuda de inmediato",
+      "pt": "Pedirei ajuda imediatamente",
+      "de": "Ich hole sofort Hilfe",
+      "fr": "Je demande immédiatement de l’aide"
+    },
+    "stats": {
+      "a": 47,
+      "b": 53
+    },
+    "analysis": {
+      "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
+      "en": "Your choice shows how you tend to react in situations like this.",
+      "es": "Tu elección muestra cómo sueles reaccionar ante situaciones así.",
+      "pt": "A tua escolha mostra como costumas reagir em situações assim.",
+      "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
+      "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
+    }
+  },
+  {
+    "question": {
+      "ru": "Тебя зовут на мероприятие, где почти никого не знаешь. Пойдёшь? Ситуация: после тяжёлой недели.",
+      "en": "You are invited to an event where you know almost nobody. Would you go?",
+      "es": "Te invitan a un evento donde casi no conoces a nadie. ¿Irías?",
+      "pt": "És convidado para um evento onde quase não conheces ninguém. Irias?",
+      "de": "Du bist zu einer Veranstaltung eingeladen, bei der du kaum jemanden kennst. Gehst du?",
+      "fr": "Tu es invité à un événement où tu ne connais presque personne. Iras-tu?"
+    },
+    "a": {
+      "ru": "Да, интересно познакомиться",
+      "en": "Yes, meeting people sounds interesting",
+      "es": "Sí, me interesa conocer gente",
+      "pt": "Sim, quero conhecer pessoas",
+      "de": "Ja, neue Menschen kennenlernen klingt interessant",
+      "fr": "Oui, j’ai envie de rencontrer du monde"
+    },
+    "b": {
+      "ru": "Только если будет знакомый человек",
+      "en": "Only if I know someone there",
+      "es": "Solo si conozco a alguien allí",
+      "pt": "Só se houver alguém conhecido",
+      "de": "Nur wenn ich jemanden kenne",
+      "fr": "Seulement si je connais quelqu’un"
+    },
+    "stats": {
+      "a": 47,
+      "b": 53
+    },
+    "analysis": {
+      "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
+      "en": "Your choice shows how you tend to react in situations like this.",
+      "es": "Tu elección muestra cómo sueles reaccionar ante situaciones así.",
+      "pt": "A tua escolha mostra como costumas reagir em situações assim.",
+      "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
+      "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
+    }
+  },
+  {
+    "question": {
+      "ru": "Тебя зовут на мероприятие, где почти никого не знаешь. Пойдёшь? Ситуация: перед важной встречей.",
+      "en": "You are invited to an event where you know almost nobody. Would you go?",
+      "es": "Te invitan a un evento donde casi no conoces a nadie. ¿Irías?",
+      "pt": "És convidado para um evento onde quase não conheces ninguém. Irias?",
+      "de": "Du bist zu einer Veranstaltung eingeladen, bei der du kaum jemanden kennst. Gehst du?",
+      "fr": "Tu es invité à un événement où tu ne connais presque personne. Iras-tu?"
+    },
+    "a": {
+      "ru": "Да, интересно познакомиться",
+      "en": "Yes, meeting people sounds interesting",
+      "es": "Sí, me interesa conocer gente",
+      "pt": "Sim, quero conhecer pessoas",
+      "de": "Ja, neue Menschen kennenlernen klingt interessant",
+      "fr": "Oui, j’ai envie de rencontrer du monde"
+    },
+    "b": {
+      "ru": "Только если будет знакомый человек",
+      "en": "Only if I know someone there",
+      "es": "Solo si conozco a alguien allí",
+      "pt": "Só se houver alguém conhecido",
+      "de": "Nur wenn ich jemanden kenne",
+      "fr": "Seulement si je connais quelqu’un"
+    },
+    "stats": {
+      "a": 49,
+      "b": 51
+    },
+    "analysis": {
+      "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
+      "en": "Your choice shows how you tend to react in situations like this.",
+      "es": "Tu elección muestra cómo sueles reaccionar ante situaciones así.",
+      "pt": "A tua escolha mostra como costumas reagir em situações assim.",
+      "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
+      "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
+    }
+  },
+  {
+    "question": {
+      "ru": "Тебя зовут на мероприятие, где почти никого не знаешь. Пойдёшь? Ситуация: когда ты устал.",
+      "en": "You are invited to an event where you know almost nobody. Would you go?",
+      "es": "Te invitan a un evento donde casi no conoces a nadie. ¿Irías?",
+      "pt": "És convidado para um evento onde quase não conheces ninguém. Irias?",
+      "de": "Du bist zu einer Veranstaltung eingeladen, bei der du kaum jemanden kennst. Gehst du?",
+      "fr": "Tu es invité à un événement où tu ne connais presque personne. Iras-tu?"
+    },
+    "a": {
+      "ru": "Да, интересно познакомиться",
+      "en": "Yes, meeting people sounds interesting",
+      "es": "Sí, me interesa conocer gente",
+      "pt": "Sim, quero conhecer pessoas",
+      "de": "Ja, neue Menschen kennenlernen klingt interessant",
+      "fr": "Oui, j’ai envie de rencontrer du monde"
+    },
+    "b": {
+      "ru": "Только если будет знакомый человек",
+      "en": "Only if I know someone there",
+      "es": "Solo si conozco a alguien allí",
+      "pt": "Só se houver alguém conhecido",
+      "de": "Nur wenn ich jemanden kenne",
+      "fr": "Seulement si je connais quelqu’un"
+    },
+    "stats": {
+      "a": 51,
+      "b": 49
+    },
+    "analysis": {
+      "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
+      "en": "Your choice shows how you tend to react in situations like this.",
+      "es": "Tu elección muestra cómo sueles reaccionar ante situaciones así.",
+      "pt": "A tua escolha mostra como costumas reagir em situações assim.",
+      "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
+      "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
+    }
+  },
+  {
+    "question": {
+      "ru": "Тебя зовут на мероприятие, где почти никого не знаешь. Пойдёшь? Ситуация: в незнакомой компании.",
+      "en": "You are invited to an event where you know almost nobody. Would you go?",
+      "es": "Te invitan a un evento donde casi no conoces a nadie. ¿Irías?",
+      "pt": "És convidado para um evento onde quase não conheces ninguém. Irias?",
+      "de": "Du bist zu einer Veranstaltung eingeladen, bei der du kaum jemanden kennst. Gehst du?",
+      "fr": "Tu es invité à un événement où tu ne connais presque personne. Iras-tu?"
+    },
+    "a": {
+      "ru": "Да, интересно познакомиться",
+      "en": "Yes, meeting people sounds interesting",
+      "es": "Sí, me interesa conocer gente",
+      "pt": "Sim, quero conhecer pessoas",
+      "de": "Ja, neue Menschen kennenlernen klingt interessant",
+      "fr": "Oui, j’ai envie de rencontrer du monde"
+    },
+    "b": {
+      "ru": "Только если будет знакомый человек",
+      "en": "Only if I know someone there",
+      "es": "Solo si conozco a alguien allí",
+      "pt": "Só se houver alguém conhecido",
+      "de": "Nur wenn ich jemanden kenne",
+      "fr": "Seulement si je connais quelqu’un"
+    },
+    "stats": {
+      "a": 53,
+      "b": 47
+    },
+    "analysis": {
+      "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
+      "en": "Your choice shows how you tend to react in situations like this.",
+      "es": "Tu elección muestra cómo sueles reaccionar ante situaciones así.",
+      "pt": "A tua escolha mostra como costumas reagir em situações assim.",
+      "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
+      "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
+    }
+  },
+  {
+    "question": {
+      "ru": "Тебя зовут на мероприятие, где почти никого не знаешь. Пойдёшь? Ситуация: когда планы меняются в последний момент.",
+      "en": "You are invited to an event where you know almost nobody. Would you go?",
+      "es": "Te invitan a un evento donde casi no conoces a nadie. ¿Irías?",
+      "pt": "És convidado para um evento onde quase não conheces ninguém. Irias?",
+      "de": "Du bist zu einer Veranstaltung eingeladen, bei der du kaum jemanden kennst. Gehst du?",
+      "fr": "Tu es invité à un événement où tu ne connais presque personne. Iras-tu?"
+    },
+    "a": {
+      "ru": "Да, интересно познакомиться",
+      "en": "Yes, meeting people sounds interesting",
+      "es": "Sí, me interesa conocer gente",
+      "pt": "Sim, quero conhecer pessoas",
+      "de": "Ja, neue Menschen kennenlernen klingt interessant",
+      "fr": "Oui, j’ai envie de rencontrer du monde"
+    },
+    "b": {
+      "ru": "Только если будет знакомый человек",
+      "en": "Only if I know someone there",
+      "es": "Solo si conozco a alguien allí",
+      "pt": "Só se houver alguém conhecido",
+      "de": "Nur wenn ich jemanden kenne",
+      "fr": "Seulement si je connais quelqu’un"
+    },
+    "stats": {
+      "a": 47,
+      "b": 53
+    },
+    "analysis": {
+      "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
+      "en": "Your choice shows how you tend to react in situations like this.",
+      "es": "Tu elección muestra cómo sueles reaccionar ante situaciones así.",
+      "pt": "A tua escolha mostra como costumas reagir em situações assim.",
+      "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
+      "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
+    }
+  },
+  {
+    "question": {
+      "ru": "Тебе дают честную, но неприятную обратную связь. Как отреагируешь? Ситуация: после тяжёлой недели.",
+      "en": "You receive honest but unpleasant feedback. How do you react? Situation: after a difficult week.",
+      "es": "Recibes una opinión sincera pero desagradable. ¿Cómo reaccionas? Situación: después de una semana difícil.",
+      "pt": "Recebes uma opinião honesta, mas desagradável. Como reages? Situação: depois de uma semana difícil.",
+      "de": "Du bekommst ehrliches, aber unangenehmes Feedback. Wie reagierst du? Situation: nach einer anstrengenden Woche.",
+      "fr": "Tu reçois un retour honnête mais désagréable. Comment réagis-tu? Situation : après une semaine difficile."
+    },
+    "a": {
+      "ru": "Подумаю, что из этого полезно",
+      "en": "Think about what is useful",
+      "es": "Pensaré qué puede ser útil",
+      "pt": "Vou pensar no que é útil",
+      "de": "Ich überlege, was nützlich ist",
+      "fr": "Je réfléchis à ce qui est utile"
+    },
+    "b": {
+      "ru": "Сначала защищу свою позицию",
+      "en": "Defend my position first",
+      "es": "Primero defenderé mi postura",
+      "pt": "Primeiro defenderei a minha posição",
+      "de": "Ich verteidige zuerst meine Position",
+      "fr": "Je défends d’abord ma position"
+    },
+    "stats": {
+      "a": 47,
+      "b": 53
+    },
+    "analysis": {
+      "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
+      "en": "Your choice shows how you tend to react in situations like this.",
+      "es": "Tu elección muestra cómo sueles reaccionar ante situaciones así.",
+      "pt": "A tua escolha mostra como costumas reagir em situações assim.",
+      "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
+      "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
+    }
+  },
+  {
+    "question": {
+      "ru": "Тебе дают честную, но неприятную обратную связь. Как отреагируешь? Ситуация: срочную задачу.",
+      "en": "You receive honest but unpleasant feedback. How do you react? Situation: an urgent task.",
+      "es": "Recibes una opinión sincera pero desagradable. ¿Cómo reaccionas? Situación: una tarea urgente.",
+      "pt": "Recebes uma opinião honesta, mas desagradável. Como reages? Situação: uma tarefa urgente.",
+      "de": "Du bekommst ehrliches, aber unangenehmes Feedback. Wie reagierst du? Situation: eine dringende Aufgabe.",
+      "fr": "Tu reçois un retour honnête mais désagréable. Comment réagis-tu? Situation : une tâche urgente."
+    },
+    "a": {
+      "ru": "Подумаю, что из этого полезно",
+      "en": "Think about what is useful",
+      "es": "Pensaré qué puede ser útil",
+      "pt": "Vou pensar no que é útil",
+      "de": "Ich überlege, was nützlich ist",
+      "fr": "Je réfléchis à ce qui est utile"
+    },
+    "b": {
+      "ru": "Сначала защищу свою позицию",
+      "en": "Defend my position first",
+      "es": "Primero defenderé mi postura",
+      "pt": "Primeiro defenderei a minha posição",
+      "de": "Ich verteidige zuerst meine Position",
+      "fr": "Je défends d’abord ma position"
+    },
+    "stats": {
+      "a": 49,
+      "b": 51
+    },
+    "analysis": {
+      "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
+      "en": "Your choice shows how you tend to react in situations like this.",
+      "es": "Tu elección muestra cómo sueles reaccionar ante situaciones así.",
+      "pt": "A tua escolha mostra como costumas reagir em situações assim.",
+      "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
+      "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
+    }
+  },
+  {
+    "question": {
+      "ru": "Тебе дают честную, но неприятную обратную связь. Как отреагируешь? Ситуация: в метро.",
+      "en": "You receive honest but unpleasant feedback. How do you react? Situation: on the subway.",
+      "es": "Recibes una opinión sincera pero desagradable. ¿Cómo reaccionas? Situación: en el metro.",
+      "pt": "Recebes uma opinião honesta, mas desagradável. Como reages? Situação: no metro.",
+      "de": "Du bekommst ehrliches, aber unangenehmes Feedback. Wie reagierst du? Situation: in der U-Bahn.",
+      "fr": "Tu reçois un retour honnête mais désagréable. Comment réagis-tu? Situation : dans le métro."
+    },
+    "a": {
+      "ru": "Подумаю, что из этого полезно",
+      "en": "Think about what is useful",
+      "es": "Pensaré qué puede ser útil",
+      "pt": "Vou pensar no que é útil",
+      "de": "Ich überlege, was nützlich ist",
+      "fr": "Je réfléchis à ce qui est utile"
+    },
+    "b": {
+      "ru": "Сначала защищу свою позицию",
+      "en": "Defend my position first",
+      "es": "Primero defenderé mi postura",
+      "pt": "Primeiro defenderei a minha posição",
+      "de": "Ich verteidige zuerst meine Position",
+      "fr": "Je défends d’abord ma position"
+    },
+    "stats": {
+      "a": 51,
+      "b": 49
+    },
+    "analysis": {
+      "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
+      "en": "Your choice shows how you tend to react in situations like this.",
+      "es": "Tu elección muestra cómo sueles reaccionar ante situaciones así.",
+      "pt": "A tua escolha mostra como costumas reagir em situações assim.",
+      "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
+      "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
+    }
+  },
+  {
+    "question": {
+      "ru": "Тебе дают честную, но неприятную обратную связь. Как отреагируешь? Ситуация: важную новость друга.",
+      "en": "You receive honest but unpleasant feedback. How do you react? Situation: an important friend’s news.",
+      "es": "Recibes una opinión sincera pero desagradable. ¿Cómo reaccionas? Situación: una noticia importante de un amigo.",
+      "pt": "Recebes uma opinião honesta, mas desagradável. Como reages? Situação: uma notícia importante de um amigo.",
+      "de": "Du bekommst ehrliches, aber unangenehmes Feedback. Wie reagierst du? Situation: eine wichtige Nachricht eines Freundes.",
+      "fr": "Tu reçois un retour honnête mais désagréable. Comment réagis-tu? Situation : une nouvelle importante d’un ami."
+    },
+    "a": {
+      "ru": "Подумаю, что из этого полезно",
+      "en": "Think about what is useful",
+      "es": "Pensaré qué puede ser útil",
+      "pt": "Vou pensar no que é útil",
+      "de": "Ich überlege, was nützlich ist",
+      "fr": "Je réfléchis à ce qui est utile"
+    },
+    "b": {
+      "ru": "Сначала защищу свою позицию",
+      "en": "Defend my position first",
+      "es": "Primero defenderé mi postura",
+      "pt": "Primeiro defenderei a minha posição",
+      "de": "Ich verteidige zuerst meine Position",
+      "fr": "Je défends d’abord ma position"
+    },
+    "stats": {
+      "a": 53,
+      "b": 47
+    },
+    "analysis": {
+      "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
+      "en": "Your choice shows how you tend to react in situations like this.",
+      "es": "Tu elección muestra cómo sueles reaccionar ante situaciones así.",
+      "pt": "A tua escolha mostra como costumas reagir em situações assim.",
+      "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
+      "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
+    }
+  },
+  {
+    "question": {
+      "ru": "Тебе дают честную, но неприятную обратную связь. Как отреагируешь? Ситуация: первый день на новой работе.",
+      "en": "You receive honest but unpleasant feedback. How do you react? Situation: your first day at a new job.",
+      "es": "Recibes una opinión sincera pero desagradable. ¿Cómo reaccionas? Situación: tu primer día en un nuevo trabajo.",
+      "pt": "Recebes uma opinião honesta, mas desagradável. Como reages? Situação: o teu primeiro dia num novo trabalho.",
+      "de": "Du bekommst ehrliches, aber unangenehmes Feedback. Wie reagierst du? Situation: dein erster Tag im neuen Job.",
+      "fr": "Tu reçois un retour honnête mais désagréable. Comment réagis-tu? Situation : ton premier jour dans un nouveau travail."
+    },
+    "a": {
+      "ru": "Подумаю, что из этого полезно",
+      "en": "Think about what is useful",
+      "es": "Pensaré qué puede ser útil",
+      "pt": "Vou pensar no que é útil",
+      "de": "Ich überlege, was nützlich ist",
+      "fr": "Je réfléchis à ce qui est utile"
+    },
+    "b": {
+      "ru": "Сначала защищу свою позицию",
+      "en": "Defend my position first",
+      "es": "Primero defenderé mi postura",
+      "pt": "Primeiro defenderei a minha posição",
+      "de": "Ich verteidige zuerst meine Position",
+      "fr": "Je défends d’abord ma position"
+    },
+    "stats": {
+      "a": 47,
+      "b": 53
+    },
+    "analysis": {
+      "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
+      "en": "Your choice shows how you tend to react in situations like this.",
+      "es": "Tu elección muestra cómo sueles reaccionar ante situaciones así.",
+      "pt": "A tua escolha mostra como costumas reagir em situações assim.",
+      "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
+      "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
+    }
+  },
+  {
+    "question": {
+      "ru": "Перед тобой появляется возможность попробовать то, чего ты никогда не делал. Что важнее? Ситуация: после тяжёлой недели.",
+      "en": "An opportunity appears to try something you have never done. What matters more?",
+      "es": "Aparece la oportunidad de probar algo que nunca has hecho. ¿Qué importa más?",
+      "pt": "Surge a oportunidade de experimentar algo que nunca fizeste. O que importa mais?",
+      "de": "Du kannst etwas ausprobieren, das du noch nie gemacht hast. Was zählt mehr?",
+      "fr": "Une occasion se présente de faire quelque chose que tu n’as jamais fait. Qu’est-ce qui compte le plus?"
+    },
+    "a": {
+      "ru": "Чтобы было интересно",
+      "en": "That it is interesting",
+      "es": "Que sea interesante",
+      "pt": "Que seja interessante",
+      "de": "Dass es interessant ist",
+      "fr": "Que ce soit intéressant"
+    },
+    "b": {
+      "ru": "Чтобы риск был разумным",
+      "en": "That the risk is reasonable",
+      "es": "Que el riesgo sea razonable",
+      "pt": "Que o risco seja razoável",
+      "de": "Dass das Risiko vertretbar ist",
+      "fr": "Que le risque reste raisonnable"
+    },
+    "stats": {
+      "a": 47,
+      "b": 53
+    },
+    "analysis": {
+      "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
+      "en": "Your choice shows how you tend to react in situations like this.",
+      "es": "Tu elección muestra cómo sueles reaccionar ante situaciones así.",
+      "pt": "A tua escolha mostra como costumas reagir em situações assim.",
+      "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
+      "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
+    }
+  },
+  {
+    "question": {
+      "ru": "Перед тобой появляется возможность попробовать то, чего ты никогда не делал. Что важнее? Ситуация: перед важной встречей.",
+      "en": "An opportunity appears to try something you have never done. What matters more?",
+      "es": "Aparece la oportunidad de probar algo que nunca has hecho. ¿Qué importa más?",
+      "pt": "Surge a oportunidade de experimentar algo que nunca fizeste. O que importa mais?",
+      "de": "Du kannst etwas ausprobieren, das du noch nie gemacht hast. Was zählt mehr?",
+      "fr": "Une occasion se présente de faire quelque chose que tu n’as jamais fait. Qu’est-ce qui compte le plus?"
+    },
+    "a": {
+      "ru": "Чтобы было интересно",
+      "en": "That it is interesting",
+      "es": "Que sea interesante",
+      "pt": "Que seja interessante",
+      "de": "Dass es interessant ist",
+      "fr": "Que ce soit intéressant"
+    },
+    "b": {
+      "ru": "Чтобы риск был разумным",
+      "en": "That the risk is reasonable",
+      "es": "Que el riesgo sea razonable",
+      "pt": "Que o risco seja razoável",
+      "de": "Dass das Risiko vertretbar ist",
+      "fr": "Que le risque reste raisonnable"
+    },
+    "stats": {
+      "a": 49,
+      "b": 51
+    },
+    "analysis": {
+      "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
+      "en": "Your choice shows how you tend to react in situations like this.",
+      "es": "Tu elección muestra cómo sueles reaccionar ante situaciones así.",
+      "pt": "A tua escolha mostra como costumas reagir em situações assim.",
+      "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
+      "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
+    }
+  },
+  {
+    "question": {
+      "ru": "Перед тобой появляется возможность попробовать то, чего ты никогда не делал. Что важнее? Ситуация: когда ты устал.",
+      "en": "An opportunity appears to try something you have never done. What matters more?",
+      "es": "Aparece la oportunidad de probar algo que nunca has hecho. ¿Qué importa más?",
+      "pt": "Surge a oportunidade de experimentar algo que nunca fizeste. O que importa mais?",
+      "de": "Du kannst etwas ausprobieren, das du noch nie gemacht hast. Was zählt mehr?",
+      "fr": "Une occasion se présente de faire quelque chose que tu n’as jamais fait. Qu’est-ce qui compte le plus?"
+    },
+    "a": {
+      "ru": "Чтобы было интересно",
+      "en": "That it is interesting",
+      "es": "Que sea interesante",
+      "pt": "Que seja interessante",
+      "de": "Dass es interessant ist",
+      "fr": "Que ce soit intéressant"
+    },
+    "b": {
+      "ru": "Чтобы риск был разумным",
+      "en": "That the risk is reasonable",
+      "es": "Que el riesgo sea razonable",
+      "pt": "Que o risco seja razoável",
+      "de": "Dass das Risiko vertretbar ist",
+      "fr": "Que le risque reste raisonnable"
+    },
+    "stats": {
+      "a": 51,
+      "b": 49
+    },
+    "analysis": {
+      "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
+      "en": "Your choice shows how you tend to react in situations like this.",
+      "es": "Tu elección muestra cómo sueles reaccionar ante situaciones así.",
+      "pt": "A tua escolha mostra como costumas reagir em situações assim.",
+      "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
+      "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
+    }
+  },
+  {
+    "question": {
+      "ru": "Перед тобой появляется возможность попробовать то, чего ты никогда не делал. Что важнее? Ситуация: в незнакомой компании.",
+      "en": "An opportunity appears to try something you have never done. What matters more?",
+      "es": "Aparece la oportunidad de probar algo que nunca has hecho. ¿Qué importa más?",
+      "pt": "Surge a oportunidade de experimentar algo que nunca fizeste. O que importa mais?",
+      "de": "Du kannst etwas ausprobieren, das du noch nie gemacht hast. Was zählt mehr?",
+      "fr": "Une occasion se présente de faire quelque chose que tu n’as jamais fait. Qu’est-ce qui compte le plus?"
+    },
+    "a": {
+      "ru": "Чтобы было интересно",
+      "en": "That it is interesting",
+      "es": "Que sea interesante",
+      "pt": "Que seja interessante",
+      "de": "Dass es interessant ist",
+      "fr": "Que ce soit intéressant"
+    },
+    "b": {
+      "ru": "Чтобы риск был разумным",
+      "en": "That the risk is reasonable",
+      "es": "Que el riesgo sea razonable",
+      "pt": "Que o risco seja razoável",
+      "de": "Dass das Risiko vertretbar ist",
+      "fr": "Que le risque reste raisonnable"
+    },
+    "stats": {
+      "a": 53,
+      "b": 47
+    },
+    "analysis": {
+      "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
+      "en": "Your choice shows how you tend to react in situations like this.",
+      "es": "Tu elección muestra cómo sueles reaccionar ante situaciones así.",
+      "pt": "A tua escolha mostra como costumas reagir em situações assim.",
+      "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
+      "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
+    }
+  },
+  {
+    "question": {
+      "ru": "Перед тобой появляется возможность попробовать то, чего ты никогда не делал. Что важнее? Ситуация: когда планы меняются в последний момент.",
+      "en": "An opportunity appears to try something you have never done. What matters more?",
+      "es": "Aparece la oportunidad de probar algo que nunca has hecho. ¿Qué importa más?",
+      "pt": "Surge a oportunidade de experimentar algo que nunca fizeste. O que importa mais?",
+      "de": "Du kannst etwas ausprobieren, das du noch nie gemacht hast. Was zählt mehr?",
+      "fr": "Une occasion se présente de faire quelque chose que tu n’as jamais fait. Qu’est-ce qui compte le plus?"
+    },
+    "a": {
+      "ru": "Чтобы было интересно",
+      "en": "That it is interesting",
+      "es": "Que sea interesante",
+      "pt": "Que seja interessante",
+      "de": "Dass es interessant ist",
+      "fr": "Que ce soit intéressant"
+    },
+    "b": {
+      "ru": "Чтобы риск был разумным",
+      "en": "That the risk is reasonable",
+      "es": "Que el riesgo sea razonable",
+      "pt": "Que o risco seja razoável",
+      "de": "Dass das Risiko vertretbar ist",
+      "fr": "Que le risque reste raisonnable"
+    },
+    "stats": {
+      "a": 47,
+      "b": 53
+    },
+    "analysis": {
+      "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
+      "en": "Your choice shows how you tend to react in situations like this.",
+      "es": "Tu elección muestra cómo sueles reaccionar ante situaciones así.",
+      "pt": "A tua escolha mostra como costumas reagir em situações assim.",
+      "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
+      "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
+    }
+  },
+  {
+    "question": {
+      "ru": "Кто-то обещал тебе помочь, но забыл. Что сделаешь? Ситуация: после тяжёлой недели.",
+      "en": "Someone promised to help you but forgot. What do you do? Situation: after a difficult week.",
+      "es": "Alguien prometió ayudarte pero lo olvidó. ¿Qué haces? Situación: después de una semana difícil.",
+      "pt": "Alguém prometeu ajudar-te, mas esqueceu-se. O que fazes? Situação: depois de uma semana difícil.",
+      "de": "Jemand hat dir Hilfe versprochen, aber es vergessen. Was tust du? Situation: nach einer anstrengenden Woche.",
+      "fr": "Quelqu’un t’a promis de l’aide mais a oublié. Que fais-tu? Situation : après une semaine difficile."
+    },
+    "a": {
+      "ru": "Напомню спокойно",
+      "en": "Remind them calmly",
+      "es": "Se lo recordaré con calma",
+      "pt": "Vou lembrar calmamente",
+      "de": "Ich erinnere die Person ruhig",
+      "fr": "Je le rappelle calmement"
+    },
+    "b": {
+      "ru": "Сделаю сам и запомню этот опыт",
+      "en": "Do it myself and remember the lesson",
+      "es": "Lo haré yo y recordaré la lección",
+      "pt": "Farei eu e guardarei a lição",
+      "de": "Ich mache es selbst und merke mir die Erfahrung",
+      "fr": "Je le fais moi-même et retiens la leçon"
+    },
+    "stats": {
+      "a": 47,
+      "b": 53
+    },
+    "analysis": {
+      "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
+      "en": "Your choice shows how you tend to react in situations like this.",
+      "es": "Tu elección muestra cómo sueles reaccionar ante situaciones así.",
+      "pt": "A tua escolha mostra como costumas reagir em situações assim.",
+      "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
+      "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
+    }
+  },
+  {
+    "question": {
+      "ru": "Кто-то обещал тебе помочь, но забыл. Что сделаешь? Ситуация: срочную задачу.",
+      "en": "Someone promised to help you but forgot. What do you do? Situation: an urgent task.",
+      "es": "Alguien prometió ayudarte pero lo olvidó. ¿Qué haces? Situación: una tarea urgente.",
+      "pt": "Alguém prometeu ajudar-te, mas esqueceu-se. O que fazes? Situação: uma tarefa urgente.",
+      "de": "Jemand hat dir Hilfe versprochen, aber es vergessen. Was tust du? Situation: eine dringende Aufgabe.",
+      "fr": "Quelqu’un t’a promis de l’aide mais a oublié. Que fais-tu? Situation : une tâche urgente."
+    },
+    "a": {
+      "ru": "Напомню спокойно",
+      "en": "Remind them calmly",
+      "es": "Se lo recordaré con calma",
+      "pt": "Vou lembrar calmamente",
+      "de": "Ich erinnere die Person ruhig",
+      "fr": "Je le rappelle calmement"
+    },
+    "b": {
+      "ru": "Сделаю сам и запомню этот опыт",
+      "en": "Do it myself and remember the lesson",
+      "es": "Lo haré yo y recordaré la lección",
+      "pt": "Farei eu e guardarei a lição",
+      "de": "Ich mache es selbst und merke mir die Erfahrung",
+      "fr": "Je le fais moi-même et retiens la leçon"
+    },
+    "stats": {
+      "a": 49,
+      "b": 51
+    },
+    "analysis": {
+      "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
+      "en": "Your choice shows how you tend to react in situations like this.",
+      "es": "Tu elección muestra cómo sueles reaccionar ante situaciones así.",
+      "pt": "A tua escolha mostra como costumas reagir em situações assim.",
+      "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
+      "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
+    }
+  },
+  {
+    "question": {
+      "ru": "Кто-то обещал тебе помочь, но забыл. Что сделаешь? Ситуация: в метро.",
+      "en": "Someone promised to help you but forgot. What do you do? Situation: on the subway.",
+      "es": "Alguien prometió ayudarte pero lo olvidó. ¿Qué haces? Situación: en el metro.",
+      "pt": "Alguém prometeu ajudar-te, mas esqueceu-se. O que fazes? Situação: no metro.",
+      "de": "Jemand hat dir Hilfe versprochen, aber es vergessen. Was tust du? Situation: in der U-Bahn.",
+      "fr": "Quelqu’un t’a promis de l’aide mais a oublié. Que fais-tu? Situation : dans le métro."
+    },
+    "a": {
+      "ru": "Напомню спокойно",
+      "en": "Remind them calmly",
+      "es": "Se lo recordaré con calma",
+      "pt": "Vou lembrar calmamente",
+      "de": "Ich erinnere die Person ruhig",
+      "fr": "Je le rappelle calmement"
+    },
+    "b": {
+      "ru": "Сделаю сам и запомню этот опыт",
+      "en": "Do it myself and remember the lesson",
+      "es": "Lo haré yo y recordaré la lección",
+      "pt": "Farei eu e guardarei a lição",
+      "de": "Ich mache es selbst und merke mir die Erfahrung",
+      "fr": "Je le fais moi-même et retiens la leçon"
+    },
+    "stats": {
+      "a": 51,
+      "b": 49
+    },
+    "analysis": {
+      "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
+      "en": "Your choice shows how you tend to react in situations like this.",
+      "es": "Tu elección muestra cómo sueles reaccionar ante situaciones así.",
+      "pt": "A tua escolha mostra como costumas reagir em situações assim.",
+      "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
+      "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
+    }
+  },
+  {
+    "question": {
+      "ru": "Кто-то обещал тебе помочь, но забыл. Что сделаешь? Ситуация: важную новость друга.",
+      "en": "Someone promised to help you but forgot. What do you do? Situation: an important friend’s news.",
+      "es": "Alguien prometió ayudarte pero lo olvidó. ¿Qué haces? Situación: una noticia importante de un amigo.",
+      "pt": "Alguém prometeu ajudar-te, mas esqueceu-se. O que fazes? Situação: uma notícia importante de um amigo.",
+      "de": "Jemand hat dir Hilfe versprochen, aber es vergessen. Was tust du? Situation: eine wichtige Nachricht eines Freundes.",
+      "fr": "Quelqu’un t’a promis de l’aide mais a oublié. Que fais-tu? Situation : une nouvelle importante d’un ami."
+    },
+    "a": {
+      "ru": "Напомню спокойно",
+      "en": "Remind them calmly",
+      "es": "Se lo recordaré con calma",
+      "pt": "Vou lembrar calmamente",
+      "de": "Ich erinnere die Person ruhig",
+      "fr": "Je le rappelle calmement"
+    },
+    "b": {
+      "ru": "Сделаю сам и запомню этот опыт",
+      "en": "Do it myself and remember the lesson",
+      "es": "Lo haré yo y recordaré la lección",
+      "pt": "Farei eu e guardarei a lição",
+      "de": "Ich mache es selbst und merke mir die Erfahrung",
+      "fr": "Je le fais moi-même et retiens la leçon"
+    },
+    "stats": {
+      "a": 53,
+      "b": 47
+    },
+    "analysis": {
+      "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
+      "en": "Your choice shows how you tend to react in situations like this.",
+      "es": "Tu elección muestra cómo sueles reaccionar ante situaciones así.",
+      "pt": "A tua escolha mostra como costumas reagir em situações assim.",
+      "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
+      "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
+    }
+  },
+  {
+    "question": {
+      "ru": "Кто-то обещал тебе помочь, но забыл. Что сделаешь? Ситуация: первый день на новой работе.",
+      "en": "Someone promised to help you but forgot. What do you do? Situation: your first day at a new job.",
+      "es": "Alguien prometió ayudarte pero lo olvidó. ¿Qué haces? Situación: tu primer día en un nuevo trabajo.",
+      "pt": "Alguém prometeu ajudar-te, mas esqueceu-se. O que fazes? Situação: o teu primeiro dia num novo trabalho.",
+      "de": "Jemand hat dir Hilfe versprochen, aber es vergessen. Was tust du? Situation: dein erster Tag im neuen Job.",
+      "fr": "Quelqu’un t’a promis de l’aide mais a oublié. Que fais-tu? Situation : ton premier jour dans un nouveau travail."
+    },
+    "a": {
+      "ru": "Напомню спокойно",
+      "en": "Remind them calmly",
+      "es": "Se lo recordaré con calma",
+      "pt": "Vou lembrar calmamente",
+      "de": "Ich erinnere die Person ruhig",
+      "fr": "Je le rappelle calmement"
+    },
+    "b": {
+      "ru": "Сделаю сам и запомню этот опыт",
+      "en": "Do it myself and remember the lesson",
+      "es": "Lo haré yo y recordaré la lección",
+      "pt": "Farei eu e guardarei a lição",
+      "de": "Ich mache es selbst und merke mir die Erfahrung",
+      "fr": "Je le fais moi-même et retiens la leçon"
+    },
+    "stats": {
+      "a": 47,
+      "b": 53
+    },
+    "analysis": {
+      "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
+      "en": "Your choice shows how you tend to react in situations like this.",
+      "es": "Tu elección muestra cómo sueles reaccionar ante situaciones así.",
+      "pt": "A tua escolha mostra como costumas reagir em situações assim.",
+      "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
+      "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
+    }
+  },
+  {
+    "question": {
+      "ru": "В интернете тебя неправильно поняли. Что сделаешь? Ситуация: после тяжёлой недели.",
+      "en": "People online misunderstood you. What do you do?",
+      "es": "En internet te han entendido mal. ¿Qué haces?",
+      "pt": "Na internet entenderam-te mal. O que fazes?",
+      "de": "Im Internet wurdest du missverstanden. Was tust du?",
+      "fr": "Sur Internet, on t’a mal compris. Que fais-tu?"
+    },
+    "a": {
+      "ru": "Объясню свою мысль",
+      "en": "Explain what I meant",
+      "es": "Explicaré lo que quería decir",
+      "pt": "Explicarei o que quis dizer",
+      "de": "Ich erkläre, was ich meinte",
+      "fr": "J’explique ce que je voulais dire"
+    },
+    "b": {
+      "ru": "Не буду тратить на это энергию",
+      "en": "I will not spend energy on it",
+      "es": "No gastaré energía en ello",
+      "pt": "Não gastarei energia nisso",
+      "de": "Ich verschwende keine Energie darauf",
+      "fr": "Je n’y consacre pas mon énergie"
+    },
+    "stats": {
+      "a": 47,
+      "b": 53
+    },
+    "analysis": {
+      "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
+      "en": "Your choice shows how you tend to react in situations like this.",
+      "es": "Tu elección muestra cómo sueles reaccionar ante situaciones así.",
+      "pt": "A tua escolha mostra como costumas reagir em situações assim.",
+      "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
+      "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
+    }
+  },
+  {
+    "question": {
+      "ru": "В интернете тебя неправильно поняли. Что сделаешь? Ситуация: перед важной встречей.",
+      "en": "People online misunderstood you. What do you do?",
+      "es": "En internet te han entendido mal. ¿Qué haces?",
+      "pt": "Na internet entenderam-te mal. O que fazes?",
+      "de": "Im Internet wurdest du missverstanden. Was tust du?",
+      "fr": "Sur Internet, on t’a mal compris. Que fais-tu?"
+    },
+    "a": {
+      "ru": "Объясню свою мысль",
+      "en": "Explain what I meant",
+      "es": "Explicaré lo que quería decir",
+      "pt": "Explicarei o que quis dizer",
+      "de": "Ich erkläre, was ich meinte",
+      "fr": "J’explique ce que je voulais dire"
+    },
+    "b": {
+      "ru": "Не буду тратить на это энергию",
+      "en": "I will not spend energy on it",
+      "es": "No gastaré energía en ello",
+      "pt": "Não gastarei energia nisso",
+      "de": "Ich verschwende keine Energie darauf",
+      "fr": "Je n’y consacre pas mon énergie"
+    },
+    "stats": {
+      "a": 49,
+      "b": 51
+    },
+    "analysis": {
+      "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
+      "en": "Your choice shows how you tend to react in situations like this.",
+      "es": "Tu elección muestra cómo sueles reaccionar ante situaciones así.",
+      "pt": "A tua escolha mostra como costumas reagir em situações assim.",
+      "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
+      "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
+    }
+  },
+  {
+    "question": {
+      "ru": "В интернете тебя неправильно поняли. Что сделаешь? Ситуация: когда ты устал.",
+      "en": "People online misunderstood you. What do you do?",
+      "es": "En internet te han entendido mal. ¿Qué haces?",
+      "pt": "Na internet entenderam-te mal. O que fazes?",
+      "de": "Im Internet wurdest du missverstanden. Was tust du?",
+      "fr": "Sur Internet, on t’a mal compris. Que fais-tu?"
+    },
+    "a": {
+      "ru": "Объясню свою мысль",
+      "en": "Explain what I meant",
+      "es": "Explicaré lo que quería decir",
+      "pt": "Explicarei o que quis dizer",
+      "de": "Ich erkläre, was ich meinte",
+      "fr": "J’explique ce que je voulais dire"
+    },
+    "b": {
+      "ru": "Не буду тратить на это энергию",
+      "en": "I will not spend energy on it",
+      "es": "No gastaré energía en ello",
+      "pt": "Não gastarei energia nisso",
+      "de": "Ich verschwende keine Energie darauf",
+      "fr": "Je n’y consacre pas mon énergie"
+    },
+    "stats": {
+      "a": 51,
+      "b": 49
+    },
+    "analysis": {
+      "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
+      "en": "Your choice shows how you tend to react in situations like this.",
+      "es": "Tu elección muestra cómo sueles reaccionar ante situaciones así.",
+      "pt": "A tua escolha mostra como costumas reagir em situações assim.",
+      "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
+      "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
+    }
+  },
+  {
+    "question": {
+      "ru": "В интернете тебя неправильно поняли. Что сделаешь? Ситуация: в незнакомой компании.",
+      "en": "People online misunderstood you. What do you do?",
+      "es": "En internet te han entendido mal. ¿Qué haces?",
+      "pt": "Na internet entenderam-te mal. O que fazes?",
+      "de": "Im Internet wurdest du missverstanden. Was tust du?",
+      "fr": "Sur Internet, on t’a mal compris. Que fais-tu?"
+    },
+    "a": {
+      "ru": "Объясню свою мысль",
+      "en": "Explain what I meant",
+      "es": "Explicaré lo que quería decir",
+      "pt": "Explicarei o que quis dizer",
+      "de": "Ich erkläre, was ich meinte",
+      "fr": "J’explique ce que je voulais dire"
+    },
+    "b": {
+      "ru": "Не буду тратить на это энергию",
+      "en": "I will not spend energy on it",
+      "es": "No gastaré energía en ello",
+      "pt": "Não gastarei energia nisso",
+      "de": "Ich verschwende keine Energie darauf",
+      "fr": "Je n’y consacre pas mon énergie"
+    },
+    "stats": {
+      "a": 53,
+      "b": 47
+    },
+    "analysis": {
+      "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
+      "en": "Your choice shows how you tend to react in situations like this.",
+      "es": "Tu elección muestra cómo sueles reaccionar ante situaciones así.",
+      "pt": "A tua escolha mostra como costumas reagir em situações assim.",
+      "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
+      "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
+    }
+  },
+  {
+    "question": {
+      "ru": "В интернете тебя неправильно поняли. Что сделаешь? Ситуация: когда планы меняются в последний момент.",
+      "en": "People online misunderstood you. What do you do?",
+      "es": "En internet te han entendido mal. ¿Qué haces?",
+      "pt": "Na internet entenderam-te mal. O que fazes?",
+      "de": "Im Internet wurdest du missverstanden. Was tust du?",
+      "fr": "Sur Internet, on t’a mal compris. Que fais-tu?"
+    },
+    "a": {
+      "ru": "Объясню свою мысль",
+      "en": "Explain what I meant",
+      "es": "Explicaré lo que quería decir",
+      "pt": "Explicarei o que quis dizer",
+      "de": "Ich erkläre, was ich meinte",
+      "fr": "J’explique ce que je voulais dire"
+    },
+    "b": {
+      "ru": "Не буду тратить на это энергию",
+      "en": "I will not spend energy on it",
+      "es": "No gastaré energía en ello",
+      "pt": "Não gastarei energia nisso",
+      "de": "Ich verschwende keine Energie darauf",
+      "fr": "Je n’y consacre pas mon énergie"
+    },
+    "stats": {
+      "a": 47,
+      "b": 53
+    },
+    "analysis": {
+      "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
+      "en": "Your choice shows how you tend to react in situations like this.",
+      "es": "Tu elección muestra cómo sueles reaccionar ante situaciones así.",
+      "pt": "A tua escolha mostra como costumas reagir em situações assim.",
+      "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
+      "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
+    }
+  },
+  {
+    "question": {
+      "ru": "Важная цель внезапно стала сложнее. Твоя реакция? Ситуация: после тяжёлой недели.",
+      "en": "An important goal suddenly becomes harder. How do you react? Situation: after a difficult week.",
+      "es": "Una meta importante se vuelve de repente más difícil. ¿Cómo reaccionas? Situación: después de una semana difícil.",
+      "pt": "Um objetivo importante torna-se de repente mais difícil. Como reages? Situação: depois de uma semana difícil.",
+      "de": "Ein wichtiges Ziel wird plötzlich schwieriger. Wie reagierst du? Situation: nach einer anstrengenden Woche.",
+      "fr": "Un objectif important devient soudainement plus difficile. Comment réagis-tu? Situation : après une semaine difficile."
+    },
+    "a": {
+      "ru": "Разобью путь на маленькие шаги",
+      "en": "Break the path into small steps",
+      "es": "Dividiré el camino en pequeños pasos",
+      "pt": "Vou dividir o caminho em pequenos passos",
+      "de": "Ich teile den Weg in kleine Schritte",
+      "fr": "Je divise le chemin en petites étapes"
+    },
+    "b": {
+      "ru": "Поменяю подход",
+      "en": "Change the approach",
+      "es": "Cambiaré el enfoque",
+      "pt": "Mudarei a abordagem",
+      "de": "Ich ändere den Ansatz",
+      "fr": "Je change d’approche"
+    },
+    "stats": {
+      "a": 47,
+      "b": 53
+    },
+    "analysis": {
+      "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
+      "en": "Your choice shows how you tend to react in situations like this.",
+      "es": "Tu elección muestra cómo sueles reaccionar ante situaciones así.",
+      "pt": "A tua escolha mostra como costumas reagir em situações assim.",
+      "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
+      "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
+    }
+  },
+  {
+    "question": {
+      "ru": "Важная цель внезапно стала сложнее. Твоя реакция? Ситуация: срочную задачу.",
+      "en": "An important goal suddenly becomes harder. How do you react? Situation: an urgent task.",
+      "es": "Una meta importante se vuelve de repente más difícil. ¿Cómo reaccionas? Situación: una tarea urgente.",
+      "pt": "Um objetivo importante torna-se de repente mais difícil. Como reages? Situação: uma tarefa urgente.",
+      "de": "Ein wichtiges Ziel wird plötzlich schwieriger. Wie reagierst du? Situation: eine dringende Aufgabe.",
+      "fr": "Un objectif important devient soudainement plus difficile. Comment réagis-tu? Situation : une tâche urgente."
+    },
+    "a": {
+      "ru": "Разобью путь на маленькие шаги",
+      "en": "Break the path into small steps",
+      "es": "Dividiré el camino en pequeños pasos",
+      "pt": "Vou dividir o caminho em pequenos passos",
+      "de": "Ich teile den Weg in kleine Schritte",
+      "fr": "Je divise le chemin en petites étapes"
+    },
+    "b": {
+      "ru": "Поменяю подход",
+      "en": "Change the approach",
+      "es": "Cambiaré el enfoque",
+      "pt": "Mudarei a abordagem",
+      "de": "Ich ändere den Ansatz",
+      "fr": "Je change d’approche"
+    },
+    "stats": {
+      "a": 49,
+      "b": 51
+    },
+    "analysis": {
+      "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
+      "en": "Your choice shows how you tend to react in situations like this.",
+      "es": "Tu elección muestra cómo sueles reaccionar ante situaciones así.",
+      "pt": "A tua escolha mostra como costumas reagir em situações assim.",
+      "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
+      "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
+    }
+  },
+  {
+    "question": {
+      "ru": "Важная цель внезапно стала сложнее. Твоя реакция? Ситуация: в метро.",
+      "en": "An important goal suddenly becomes harder. How do you react? Situation: on the subway.",
+      "es": "Una meta importante se vuelve de repente más difícil. ¿Cómo reaccionas? Situación: en el metro.",
+      "pt": "Um objetivo importante torna-se de repente mais difícil. Como reages? Situação: no metro.",
+      "de": "Ein wichtiges Ziel wird plötzlich schwieriger. Wie reagierst du? Situation: in der U-Bahn.",
+      "fr": "Un objectif important devient soudainement plus difficile. Comment réagis-tu? Situation : dans le métro."
+    },
+    "a": {
+      "ru": "Разобью путь на маленькие шаги",
+      "en": "Break the path into small steps",
+      "es": "Dividiré el camino en pequeños pasos",
+      "pt": "Vou dividir o caminho em pequenos passos",
+      "de": "Ich teile den Weg in kleine Schritte",
+      "fr": "Je divise le chemin en petites étapes"
+    },
+    "b": {
+      "ru": "Поменяю подход",
+      "en": "Change the approach",
+      "es": "Cambiaré el enfoque",
+      "pt": "Mudarei a abordagem",
+      "de": "Ich ändere den Ansatz",
+      "fr": "Je change d’approche"
+    },
+    "stats": {
+      "a": 51,
+      "b": 49
+    },
+    "analysis": {
+      "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
+      "en": "Your choice shows how you tend to react in situations like this.",
+      "es": "Tu elección muestra cómo sueles reaccionar ante situaciones así.",
+      "pt": "A tua escolha mostra como costumas reagir em situações assim.",
+      "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
+      "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
+    }
+  },
+  {
+    "question": {
+      "ru": "Важная цель внезапно стала сложнее. Твоя реакция? Ситуация: важную новость друга.",
+      "en": "An important goal suddenly becomes harder. How do you react? Situation: an important friend’s news.",
+      "es": "Una meta importante se vuelve de repente más difícil. ¿Cómo reaccionas? Situación: una noticia importante de un amigo.",
+      "pt": "Um objetivo importante torna-se de repente mais difícil. Como reages? Situação: uma notícia importante de um amigo.",
+      "de": "Ein wichtiges Ziel wird plötzlich schwieriger. Wie reagierst du? Situation: eine wichtige Nachricht eines Freundes.",
+      "fr": "Un objectif important devient soudainement plus difficile. Comment réagis-tu? Situation : une nouvelle importante d’un ami."
+    },
+    "a": {
+      "ru": "Разобью путь на маленькие шаги",
+      "en": "Break the path into small steps",
+      "es": "Dividiré el camino en pequeños pasos",
+      "pt": "Vou dividir o caminho em pequenos passos",
+      "de": "Ich teile den Weg in kleine Schritte",
+      "fr": "Je divise le chemin en petites étapes"
+    },
+    "b": {
+      "ru": "Поменяю подход",
+      "en": "Change the approach",
+      "es": "Cambiaré el enfoque",
+      "pt": "Mudarei a abordagem",
+      "de": "Ich ändere den Ansatz",
+      "fr": "Je change d’approche"
+    },
+    "stats": {
+      "a": 53,
+      "b": 47
+    },
+    "analysis": {
+      "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
+      "en": "Your choice shows how you tend to react in situations like this.",
+      "es": "Tu elección muestra cómo sueles reaccionar ante situaciones así.",
+      "pt": "A tua escolha mostra como costumas reagir em situações assim.",
+      "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
+      "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
+    }
+  },
+  {
+    "question": {
+      "ru": "Важная цель внезапно стала сложнее. Твоя реакция? Ситуация: первый день на новой работе.",
+      "en": "An important goal suddenly becomes harder. How do you react? Situation: your first day at a new job.",
+      "es": "Una meta importante se vuelve de repente más difícil. ¿Cómo reaccionas? Situación: tu primer día en un nuevo trabajo.",
+      "pt": "Um objetivo importante torna-se de repente mais difícil. Como reages? Situação: o teu primeiro dia num novo trabalho.",
+      "de": "Ein wichtiges Ziel wird plötzlich schwieriger. Wie reagierst du? Situation: dein erster Tag im neuen Job.",
+      "fr": "Un objectif important devient soudainement plus difficile. Comment réagis-tu? Situation : ton premier jour dans un nouveau travail."
+    },
+    "a": {
+      "ru": "Разобью путь на маленькие шаги",
+      "en": "Break the path into small steps",
+      "es": "Dividiré el camino en pequeños pasos",
+      "pt": "Vou dividir o caminho em pequenos passos",
+      "de": "Ich teile den Weg in kleine Schritte",
+      "fr": "Je divise le chemin en petites étapes"
+    },
+    "b": {
+      "ru": "Поменяю подход",
+      "en": "Change the approach",
+      "es": "Cambiaré el enfoque",
+      "pt": "Mudarei a abordagem",
+      "de": "Ich ändere den Ansatz",
+      "fr": "Je change d’approche"
+    },
+    "stats": {
+      "a": 47,
+      "b": 53
+    },
+    "analysis": {
+      "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
+      "en": "Your choice shows how you tend to react in situations like this.",
+      "es": "Tu elección muestra cómo sueles reaccionar ante situaciones así.",
+      "pt": "A tua escolha mostra como costumas reagir em situações assim.",
+      "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
+      "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
+    }
+  },
+  {
+    "question": {
+      "ru": "Ты оказался в незнакомом городе один. Что сделаешь первым? Ситуация: после тяжёлой недели.",
+      "en": "You are alone in an unfamiliar city. What do you do first?",
+      "es": "Estás solo en una ciudad desconocida. ¿Qué haces primero?",
+      "pt": "Estás sozinho numa cidade desconhecida. O que fazes primeiro?",
+      "de": "Du bist allein in einer unbekannten Stadt. Was tust du zuerst?",
+      "fr": "Tu es seul dans une ville inconnue. Que fais-tu en premier?"
+    },
+    "a": {
+      "ru": "Изучу карту и маршрут",
+      "en": "Study the map and route",
+      "es": "Estudiaré el mapa y la ruta",
+      "pt": "Vou estudar o mapa e o percurso",
+      "de": "Ich schaue mir Karte und Route an",
+      "fr": "J’étudie la carte et l’itinéraire"
+    },
+    "b": {
+      "ru": "Пойду исследовать район",
+      "en": "Explore the area",
+      "es": "Exploraré la zona",
+      "pt": "Vou explorar a zona",
+      "de": "Ich erkunde die Gegend",
+      "fr": "J’explore le quartier"
+    },
+    "stats": {
+      "a": 47,
+      "b": 53
+    },
+    "analysis": {
+      "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
+      "en": "Your choice shows how you tend to react in situations like this.",
+      "es": "Tu elección muestra cómo sueles reaccionar ante situaciones así.",
+      "pt": "A tua escolha mostra como costumas reagir em situações assim.",
+      "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
+      "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
+    }
+  },
+  {
+    "question": {
+      "ru": "Ты оказался в незнакомом городе один. Что сделаешь первым? Ситуация: перед важной встречей.",
+      "en": "You are alone in an unfamiliar city. What do you do first?",
+      "es": "Estás solo en una ciudad desconocida. ¿Qué haces primero?",
+      "pt": "Estás sozinho numa cidade desconhecida. O que fazes primeiro?",
+      "de": "Du bist allein in einer unbekannten Stadt. Was tust du zuerst?",
+      "fr": "Tu es seul dans une ville inconnue. Que fais-tu en premier?"
+    },
+    "a": {
+      "ru": "Изучу карту и маршрут",
+      "en": "Study the map and route",
+      "es": "Estudiaré el mapa y la ruta",
+      "pt": "Vou estudar o mapa e o percurso",
+      "de": "Ich schaue mir Karte und Route an",
+      "fr": "J’étudie la carte et l’itinéraire"
+    },
+    "b": {
+      "ru": "Пойду исследовать район",
+      "en": "Explore the area",
+      "es": "Exploraré la zona",
+      "pt": "Vou explorar a zona",
+      "de": "Ich erkunde die Gegend",
+      "fr": "J’explore le quartier"
+    },
+    "stats": {
+      "a": 49,
+      "b": 51
+    },
+    "analysis": {
+      "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
+      "en": "Your choice shows how you tend to react in situations like this.",
+      "es": "Tu elección muestra cómo sueles reaccionar ante situaciones así.",
+      "pt": "A tua escolha mostra como costumas reagir em situações assim.",
+      "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
+      "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
+    }
+  },
+  {
+    "question": {
+      "ru": "Ты оказался в незнакомом городе один. Что сделаешь первым? Ситуация: когда ты устал.",
+      "en": "You are alone in an unfamiliar city. What do you do first?",
+      "es": "Estás solo en una ciudad desconocida. ¿Qué haces primero?",
+      "pt": "Estás sozinho numa cidade desconhecida. O que fazes primeiro?",
+      "de": "Du bist allein in einer unbekannten Stadt. Was tust du zuerst?",
+      "fr": "Tu es seul dans une ville inconnue. Que fais-tu en premier?"
+    },
+    "a": {
+      "ru": "Изучу карту и маршрут",
+      "en": "Study the map and route",
+      "es": "Estudiaré el mapa y la ruta",
+      "pt": "Vou estudar o mapa e o percurso",
+      "de": "Ich schaue mir Karte und Route an",
+      "fr": "J’étudie la carte et l’itinéraire"
+    },
+    "b": {
+      "ru": "Пойду исследовать район",
+      "en": "Explore the area",
+      "es": "Exploraré la zona",
+      "pt": "Vou explorar a zona",
+      "de": "Ich erkunde die Gegend",
+      "fr": "J’explore le quartier"
+    },
+    "stats": {
+      "a": 51,
+      "b": 49
+    },
+    "analysis": {
+      "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
+      "en": "Your choice shows how you tend to react in situations like this.",
+      "es": "Tu elección muestra cómo sueles reaccionar ante situaciones así.",
+      "pt": "A tua escolha mostra como costumas reagir em situações assim.",
+      "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
+      "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
+    }
+  },
+  {
+    "question": {
+      "ru": "Ты оказался в незнакомом городе один. Что сделаешь первым? Ситуация: в незнакомой компании.",
+      "en": "You are alone in an unfamiliar city. What do you do first?",
+      "es": "Estás solo en una ciudad desconocida. ¿Qué haces primero?",
+      "pt": "Estás sozinho numa cidade desconhecida. O que fazes primeiro?",
+      "de": "Du bist allein in einer unbekannten Stadt. Was tust du zuerst?",
+      "fr": "Tu es seul dans une ville inconnue. Que fais-tu en premier?"
+    },
+    "a": {
+      "ru": "Изучу карту и маршрут",
+      "en": "Study the map and route",
+      "es": "Estudiaré el mapa y la ruta",
+      "pt": "Vou estudar o mapa e o percurso",
+      "de": "Ich schaue mir Karte und Route an",
+      "fr": "J’étudie la carte et l’itinéraire"
+    },
+    "b": {
+      "ru": "Пойду исследовать район",
+      "en": "Explore the area",
+      "es": "Exploraré la zona",
+      "pt": "Vou explorar a zona",
+      "de": "Ich erkunde die Gegend",
+      "fr": "J’explore le quartier"
+    },
+    "stats": {
+      "a": 53,
+      "b": 47
+    },
+    "analysis": {
+      "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
+      "en": "Your choice shows how you tend to react in situations like this.",
+      "es": "Tu elección muestra cómo sueles reaccionar ante situaciones así.",
+      "pt": "A tua escolha mostra como costumas reagir em situações assim.",
+      "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
+      "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
+    }
+  },
+  {
+    "question": {
+      "ru": "Ты оказался в незнакомом городе один. Что сделаешь первым? Ситуация: когда планы меняются в последний момент.",
+      "en": "You are alone in an unfamiliar city. What do you do first?",
+      "es": "Estás solo en una ciudad desconocida. ¿Qué haces primero?",
+      "pt": "Estás sozinho numa cidade desconhecida. O que fazes primeiro?",
+      "de": "Du bist allein in einer unbekannten Stadt. Was tust du zuerst?",
+      "fr": "Tu es seul dans une ville inconnue. Que fais-tu en premier?"
+    },
+    "a": {
+      "ru": "Изучу карту и маршрут",
+      "en": "Study the map and route",
+      "es": "Estudiaré el mapa y la ruta",
+      "pt": "Vou estudar o mapa e o percurso",
+      "de": "Ich schaue mir Karte und Route an",
+      "fr": "J’étudie la carte et l’itinéraire"
+    },
+    "b": {
+      "ru": "Пойду исследовать район",
+      "en": "Explore the area",
+      "es": "Exploraré la zona",
+      "pt": "Vou explorar a zona",
+      "de": "Ich erkunde die Gegend",
+      "fr": "J’explore le quartier"
+    },
+    "stats": {
+      "a": 47,
+      "b": 53
+    },
+    "analysis": {
+      "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
+      "en": "Your choice shows how you tend to react in situations like this.",
+      "es": "Tu elección muestra cómo sueles reaccionar ante situaciones así.",
+      "pt": "A tua escolha mostra como costumas reagir em situações assim.",
+      "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
+      "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
+    }
+  },
+  {
+    "question": {
+      "ru": "Ты хочешь изменить одну привычку. Что поможет больше всего? Ситуация: после тяжёлой недели.",
+      "en": "You want to change one habit. What would help most? Situation: after a difficult week.",
+      "es": "Quieres cambiar un hábito. ¿Qué ayudaría más? Situación: después de una semana difícil.",
+      "pt": "Queres mudar um hábito. O que ajudaria mais? Situação: depois de uma semana difícil.",
+      "de": "Du willst eine Gewohnheit ändern. Was hilft am meisten? Situation: nach einer anstrengenden Woche.",
+      "fr": "Tu veux changer une habitude. Qu’est-ce qui t’aiderait le plus? Situation : après une semaine difficile."
+    },
+    "a": {
+      "ru": "Чёткий план",
+      "en": "A clear plan",
+      "es": "Un plan claro",
+      "pt": "Um plano claro",
+      "de": "Ein klarer Plan",
+      "fr": "Un plan clair"
+    },
+    "b": {
+      "ru": "Маленькие действия каждый день",
+      "en": "Small actions every day",
+      "es": "Pequeñas acciones cada día",
+      "pt": "Pequenas ações todos os dias",
+      "de": "Kleine Schritte jeden Tag",
+      "fr": "De petites actions chaque jour"
+    },
+    "stats": {
+      "a": 47,
+      "b": 53
+    },
+    "analysis": {
+      "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
+      "en": "Your choice shows how you tend to react in situations like this.",
+      "es": "Tu elección muestra cómo sueles reaccionar ante situaciones así.",
+      "pt": "A tua escolha mostra como costumas reagir em situações assim.",
+      "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
+      "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
+    }
+  },
+  {
+    "question": {
+      "ru": "Ты хочешь изменить одну привычку. Что поможет больше всего? Ситуация: срочную задачу.",
+      "en": "You want to change one habit. What would help most? Situation: an urgent task.",
+      "es": "Quieres cambiar un hábito. ¿Qué ayudaría más? Situación: una tarea urgente.",
+      "pt": "Queres mudar um hábito. O que ajudaria mais? Situação: uma tarefa urgente.",
+      "de": "Du willst eine Gewohnheit ändern. Was hilft am meisten? Situation: eine dringende Aufgabe.",
+      "fr": "Tu veux changer une habitude. Qu’est-ce qui t’aiderait le plus? Situation : une tâche urgente."
+    },
+    "a": {
+      "ru": "Чёткий план",
+      "en": "A clear plan",
+      "es": "Un plan claro",
+      "pt": "Um plano claro",
+      "de": "Ein klarer Plan",
+      "fr": "Un plan clair"
+    },
+    "b": {
+      "ru": "Маленькие действия каждый день",
+      "en": "Small actions every day",
+      "es": "Pequeñas acciones cada día",
+      "pt": "Pequenas ações todos os dias",
+      "de": "Kleine Schritte jeden Tag",
+      "fr": "De petites actions chaque jour"
+    },
+    "stats": {
+      "a": 49,
+      "b": 51
+    },
+    "analysis": {
+      "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
+      "en": "Your choice shows how you tend to react in situations like this.",
+      "es": "Tu elección muestra cómo sueles reaccionar ante situaciones así.",
+      "pt": "A tua escolha mostra como costumas reagir em situações assim.",
+      "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
+      "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
+    }
+  },
+  {
+    "question": {
+      "ru": "Ты хочешь изменить одну привычку. Что поможет больше всего? Ситуация: в метро.",
+      "en": "You want to change one habit. What would help most? Situation: on the subway.",
+      "es": "Quieres cambiar un hábito. ¿Qué ayudaría más? Situación: en el metro.",
+      "pt": "Queres mudar um hábito. O que ajudaria mais? Situação: no metro.",
+      "de": "Du willst eine Gewohnheit ändern. Was hilft am meisten? Situation: in der U-Bahn.",
+      "fr": "Tu veux changer une habitude. Qu’est-ce qui t’aiderait le plus? Situation : dans le métro."
+    },
+    "a": {
+      "ru": "Чёткий план",
+      "en": "A clear plan",
+      "es": "Un plan claro",
+      "pt": "Um plano claro",
+      "de": "Ein klarer Plan",
+      "fr": "Un plan clair"
+    },
+    "b": {
+      "ru": "Маленькие действия каждый день",
+      "en": "Small actions every day",
+      "es": "Pequeñas acciones cada día",
+      "pt": "Pequenas ações todos os dias",
+      "de": "Kleine Schritte jeden Tag",
+      "fr": "De petites actions chaque jour"
+    },
+    "stats": {
+      "a": 51,
+      "b": 49
+    },
+    "analysis": {
+      "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
+      "en": "Your choice shows how you tend to react in situations like this.",
+      "es": "Tu elección muestra cómo sueles reaccionar ante situaciones así.",
+      "pt": "A tua escolha mostra como costumas reagir em situações assim.",
+      "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
+      "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
+    }
+  },
+  {
+    "question": {
+      "ru": "Ты хочешь изменить одну привычку. Что поможет больше всего? Ситуация: важную новость друга.",
+      "en": "You want to change one habit. What would help most? Situation: an important friend’s news.",
+      "es": "Quieres cambiar un hábito. ¿Qué ayudaría más? Situación: una noticia importante de un amigo.",
+      "pt": "Queres mudar um hábito. O que ajudaria mais? Situação: uma notícia importante de um amigo.",
+      "de": "Du willst eine Gewohnheit ändern. Was hilft am meisten? Situation: eine wichtige Nachricht eines Freundes.",
+      "fr": "Tu veux changer une habitude. Qu’est-ce qui t’aiderait le plus? Situation : une nouvelle importante d’un ami."
+    },
+    "a": {
+      "ru": "Чёткий план",
+      "en": "A clear plan",
+      "es": "Un plan claro",
+      "pt": "Um plano claro",
+      "de": "Ein klarer Plan",
+      "fr": "Un plan clair"
+    },
+    "b": {
+      "ru": "Маленькие действия каждый день",
+      "en": "Small actions every day",
+      "es": "Pequeñas acciones cada día",
+      "pt": "Pequenas ações todos os dias",
+      "de": "Kleine Schritte jeden Tag",
+      "fr": "De petites actions chaque jour"
+    },
+    "stats": {
+      "a": 53,
+      "b": 47
+    },
+    "analysis": {
+      "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
+      "en": "Your choice shows how you tend to react in situations like this.",
+      "es": "Tu elección muestra cómo sueles reaccionar ante situaciones así.",
+      "pt": "A tua escolha mostra como costumas reagir em situações assim.",
+      "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
+      "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
+    }
+  },
+  {
+    "question": {
+      "ru": "Ты хочешь изменить одну привычку. Что поможет больше всего? Ситуация: первый день на новой работе.",
+      "en": "You want to change one habit. What would help most? Situation: your first day at a new job.",
+      "es": "Quieres cambiar un hábito. ¿Qué ayudaría más? Situación: tu primer día en un nuevo trabajo.",
+      "pt": "Queres mudar um hábito. O que ajudaria mais? Situação: o teu primeiro dia num novo trabalho.",
+      "de": "Du willst eine Gewohnheit ändern. Was hilft am meisten? Situation: dein erster Tag im neuen Job.",
+      "fr": "Tu veux changer une habitude. Qu’est-ce qui t’aiderait le plus? Situation : ton premier jour dans un nouveau travail."
+    },
+    "a": {
+      "ru": "Чёткий план",
+      "en": "A clear plan",
+      "es": "Un plan claro",
+      "pt": "Um plano claro",
+      "de": "Ein klarer Plan",
+      "fr": "Un plan clair"
+    },
+    "b": {
+      "ru": "Маленькие действия каждый день",
+      "en": "Small actions every day",
+      "es": "Pequeñas acciones cada día",
+      "pt": "Pequenas ações todos os dias",
+      "de": "Kleine Schritte jeden Tag",
+      "fr": "De petites actions chaque jour"
+    },
+    "stats": {
+      "a": 47,
+      "b": 53
+    },
+    "analysis": {
+      "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
+      "en": "Your choice shows how you tend to react in situations like this.",
+      "es": "Tu elección muestra cómo sueles reaccionar ante situaciones así.",
+      "pt": "A tua escolha mostra como costumas reagir em situações assim.",
+      "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
+      "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
+    }
   }
 ];
-
 const NEXT_BUTTON_TEXTS = [
   { ru: "Шагнуть в неизвестность...", en: "Step into the unknown...", es: "Dar el paso hacia lo desconocido..." },
   { ru: "Продолжить путь...", en: "Continue the path...", es: "Continuar el camino..." },
@@ -892,6 +4675,14 @@ const LABYRINTH_RIDDLES = [
         "ru": "У обычного бога используй вопрос о том, что он сказал бы на другой вопрос; это позволяет нейтрализовать неизвестное значение «da» и «ja».",
         "en": "У обычного бога используй вопрос о том, что он сказал бы на другой вопрос; это позволяет нейтрализовать неизвестное значение «da» и «ja».",
         "es": "У обычного бога используй вопрос о том, что он сказал бы на другой вопрос; это позволяет нейтрализовать неизвестное значение «da» и «ja»."
+      },
+      {
+        "ru": "После того как найдёшь неслучайного бога, используй вопросы о том, что он ответил бы на другой вопрос — это снимает проблему с «da» и «ja».",
+        "en": "Once you have a non-Random god, use questions about what that god would answer to another question; this neutralizes the unknown meaning of “da” and “ja”.",
+        "es": "Cuando encuentres al dios que no es Aleatorio, usa preguntas sobre lo que respondería a otra pregunta; así neutralizas el significado desconocido de «da» y «ja».",
+        "pt": "Depois de encontrares o deus que não é Aleatório, usa perguntas sobre o que ele responderia a outra pergunta; isso neutraliza o significado desconhecido de «da» e «ja».",
+        "de": "Sobald du einen Nicht-Zufallsgott gefunden hast, frage, was er auf eine andere Frage antworten würde; so neutralisierst du die unbekannte Bedeutung von „da“ und „ja“.",
+        "fr": "Une fois le dieu non-Aléatoire trouvé, utilise des questions sur ce qu’il répondrait à une autre question ; cela neutralise le sens inconnu de « da » et « ja »."
       }
     ],
     "answer": {
@@ -952,8 +4743,7 @@ function renderLabyrinthRiddle() {
       <div class="labyrinth-counter">${state.currentRiddle + 1} ${t('countOf')} ${LABYRINTH_RIDDLES.length}</div>
       <div class="labyrinth-riddle">${loc(riddle.riddle)}</div>
       <div class="labyrinth-hints">
-        <button class="labyrinth-hint-btn ${state.hintsUsed.includes(0) ? 'used' : ''}" onclick="showLabyrinthHint(0)">1</button>
-        <button class="labyrinth-hint-btn ${state.hintsUsed.includes(1) ? 'used' : ''}" onclick="showLabyrinthHint(1)">2</button>
+        ${[0,1,2].slice(0, state.currentRiddle === LABYRINTH_RIDDLES.length - 1 ? 3 : 2).map(i => `<button class="labyrinth-hint-btn ${state.hintsUsed.includes(i) ? 'used' : ''}" onclick="showLabyrinthHint(${i})"><span>✦</span>${i+1}</button>`).join('')}
       </div>
       <div class="labyrinth-hint-text" id="labyrinth-hint-text"></div>
       <button class="labyrinth-answer-btn" id="labyrinth-answer-btn" onclick="showLabyrinthAnswerConfirm()">${t('lookAnswer')}</button>
@@ -1071,134 +4861,1032 @@ function closeLabyrinth() {
 // ============================================================
 const DESTINY_QUESTIONS = [
   {
-    question: { ru: "Ты стоишь на перекрестке. Куда пойдешь?", en: "You stand at a crossroads. Where do you go?", es: "Estás en una encrucijada. A dónde vas?" },
-    options: [
-      { text: { ru: "В темный лес, где шепчутся духи", en: "Into the dark forest where spirits whisper", es: "Al bosque oscuro donde susurran los espíritus" }, scores: { mystic: 2, warrior: 0, sage: 0, trickster: 0, healer: 1, wanderer: 0, guardian: 0 } },
-      { text: { ru: "На вершину горы, покоряя небеса", en: "To the mountain peak, conquering the skies", es: "A la cima de la montaña, conquistando los cielos" }, scores: { mystic: 0, warrior: 2, sage: 0, trickster: 0, healer: 0, wanderer: 1, guardian: 0 } },
-      { text: { ru: "В древнюю библиотеку тайн", en: "To the ancient library of secrets", es: "A la antigua biblioteca de secretos" }, scores: { mystic: 0, warrior: 0, sage: 2, trickster: 0, healer: 0, wanderer: 0, guardian: 1 } },
-      { text: { ru: "В шумный город, где течет золото", en: "To the bustling city where gold flows", es: "A la bulliciosa ciudad donde fluye el oro" }, scores: { mystic: 0, warrior: 0, sage: 0, trickster: 2, healer: 0, wanderer: 0, guardian: 0 } }
+    "question": {
+      "ru": "Когда у тебя появляется свободный вечер, что ты чаще выбираешь?",
+      "en": "When you get a free evening, what do you usually choose?",
+      "es": "Cuando tienes una tarde libre, ¿qué sueles elegir?",
+      "pt": "Quando tens uma noite livre, o que costumas escolher?",
+      "de": "Wenn du einen freien Abend hast, was wählst du meist?",
+      "fr": "Quand une soirée se libère, que choisis-tu le plus souvent ?"
+    },
+    "options": [
+      {
+        "text": {
+          "ru": "Встретиться с близкими",
+          "en": "Meet people close to me",
+          "es": "Quedar con gente cercana",
+          "pt": "Estar com pessoas próximas",
+          "de": "Zeit mit Menschen, die mir nahestehen",
+          "fr": "Voir des proches"
+        },
+        "scores": {
+          "leader": 0,
+          "planner": 0,
+          "analyst": 0,
+          "empath": 0,
+          "creator": 0,
+          "explorer": 0,
+          "realist": 0,
+          "dreamer": 0,
+          "sage": 0,
+          "rebel": 0,
+          "connector": 2
+        }
+      },
+      {
+        "text": {
+          "ru": "Заняться своим делом",
+          "en": "Work on my own thing",
+          "es": "Hacer mis cosas",
+          "pt": "Tratar das minhas coisas",
+          "de": "Mein eigenes Ding machen",
+          "fr": "Faire mes propres activités"
+        },
+        "scores": {
+          "leader": 0,
+          "planner": 0,
+          "analyst": 0,
+          "empath": 0,
+          "creator": 2,
+          "explorer": 0,
+          "realist": 0,
+          "dreamer": 0,
+          "sage": 0,
+          "rebel": 0
+        }
+      },
+      {
+        "text": {
+          "ru": "Пойти куда-нибудь спонтанно",
+          "en": "Go somewhere spontaneously",
+          "es": "Salir espontáneamente",
+          "pt": "Sair espontaneamente",
+          "de": "Spontan irgendwohin gehen",
+          "fr": "Sortir spontanément"
+        },
+        "scores": {
+          "leader": 0,
+          "planner": 0,
+          "analyst": 0,
+          "empath": 0,
+          "creator": 0,
+          "explorer": 2,
+          "realist": 0,
+          "dreamer": 0,
+          "sage": 0,
+          "rebel": 0
+        }
+      },
+      {
+        "text": {
+          "ru": "Остаться дома и перезагрузиться",
+          "en": "Stay home and reset",
+          "es": "Quedarme en casa y desconectar",
+          "pt": "Ficar em casa e desligar",
+          "de": "Zu Hause abschalten",
+          "fr": "Rester chez moi pour souffler"
+        },
+        "scores": {
+          "leader": 0,
+          "planner": 0,
+          "analyst": 0,
+          "empath": 0,
+          "creator": 0,
+          "explorer": 0,
+          "realist": 2,
+          "dreamer": 0,
+          "sage": 0,
+          "rebel": 0
+        }
+      }
     ]
   },
   {
-    question: { ru: "Перед тобой четыре артефакта. Какой возьмешь?", en: "Four artifacts lie before you. Which do you take?", es: "Cuatro artefactos ante ti. Cuál tomas?" },
-    options: [
-      { text: { ru: "Кристалл со звездами внутри", en: "A crystal with stars inside", es: "Un cristal con estrellas dentro" }, scores: { mystic: 2, warrior: 0, sage: 1, trickster: 0, healer: 0, wanderer: 0, guardian: 0 } },
-      { text: { ru: "Меч из метеоритного железа", en: "A sword of meteoric iron", es: "Una espada de hierro meteórico" }, scores: { mystic: 0, warrior: 2, sage: 0, trickster: 0, healer: 0, wanderer: 1, guardian: 0 } },
-      { text: { ru: "Свиток с забытыми заклинаниями", en: "A scroll of forgotten spells", es: "Un pergamino de hechizos olvidados" }, scores: { mystic: 0, warrior: 0, sage: 2, trickster: 0, healer: 0, wanderer: 0, guardian: 1 } },
-      { text: { ru: "Маска, меняющая лицо", en: "A mask that changes your face", es: "Una máscara que cambia tu rostro" }, scores: { mystic: 0, warrior: 0, sage: 0, trickster: 2, healer: 0, wanderer: 0, guardian: 0 } }
+    "question": {
+      "ru": "Если планы на день внезапно меняются, что ты делаешь первым?",
+      "en": "When your plans suddenly change, what do you do first?",
+      "es": "Si tus planes cambian de repente, ¿qué haces primero?",
+      "pt": "Se os teus planos mudarem de repente, o que fazes primeiro?",
+      "de": "Wenn sich deine Pläne plötzlich ändern, was tust du zuerst?",
+      "fr": "Si tes plans changent soudainement, que fais-tu d’abord ?"
+    },
+    "options": [
+      {
+        "text": {
+          "ru": "Быстро перестраиваю план",
+          "en": "Rebuild my plan",
+          "es": "Reorganizar el plan",
+          "pt": "Reorganizar o plano",
+          "de": "Meinen Plan neu ordnen",
+          "fr": "Revoir mon plan"
+        },
+        "scores": {
+          "leader": 0,
+          "planner": 2,
+          "analyst": 0,
+          "empath": 0,
+          "creator": 0,
+          "explorer": 0,
+          "realist": 0,
+          "dreamer": 0,
+          "sage": 0,
+          "rebel": 0
+        }
+      },
+      {
+        "text": {
+          "ru": "Сначала оцениваю варианты",
+          "en": "Assess the options",
+          "es": "Evaluar las opciones",
+          "pt": "Avaliar as opções",
+          "de": "Die Möglichkeiten prüfen",
+          "fr": "Évaluer les options"
+        },
+        "scores": {
+          "leader": 0,
+          "planner": 0,
+          "analyst": 2,
+          "empath": 0,
+          "creator": 0,
+          "explorer": 0,
+          "realist": 0,
+          "dreamer": 0,
+          "sage": 0,
+          "rebel": 0
+        }
+      },
+      {
+        "text": {
+          "ru": "Действую по ситуации",
+          "en": "Act in the moment",
+          "es": "Actuar sobre la marcha",
+          "pt": "Agir no momento",
+          "de": "Im Moment handeln",
+          "fr": "Agir selon le moment"
+        },
+        "scores": {
+          "leader": 0,
+          "planner": 0,
+          "analyst": 0,
+          "empath": 0,
+          "creator": 0,
+          "explorer": 0,
+          "realist": 0,
+          "dreamer": 0,
+          "sage": 0,
+          "rebel": 2
+        }
+      },
+      {
+        "text": {
+          "ru": "Ищу кого-то, с кем можно обсудить",
+          "en": "Talk it through with someone",
+          "es": "Hablarlo con alguien",
+          "pt": "Falar com alguém",
+          "de": "Mit jemandem darüber sprechen",
+          "fr": "En parler avec quelqu’un"
+        },
+        "scores": {
+          "leader": 0,
+          "planner": 0,
+          "analyst": 0,
+          "empath": 0,
+          "creator": 0,
+          "explorer": 0,
+          "realist": 0,
+          "dreamer": 0,
+          "sage": 0,
+          "rebel": 0,
+          "connector": 2
+        }
+      }
     ]
   },
   {
-    question: { ru: "Враг стоит перед тобой. Как поступишь?", en: "An enemy stands before you. What do you do?", es: "Un enemigo está ante ti. Qué haces?" },
-    options: [
-      { text: { ru: "Прочту его ауру и найду слабое место", en: "Read his aura and find the weak spot", es: "Leer su aura y encontrar el punto débil" }, scores: { mystic: 2, warrior: 0, sage: 0, trickster: 0, healer: 1, wanderer: 0, guardian: 0 } },
-      { text: { ru: "Вступлю в честный поединок", en: "Engage in honorable combat", es: "Enfrentarme en combate honorable" }, scores: { mystic: 0, warrior: 2, sage: 0, trickster: 0, healer: 0, wanderer: 0, guardian: 1 } },
-      { text: { ru: "Попытаюсь убедить словами", en: "Try to convince with words", es: "Intentar convencer con palabras" }, scores: { mystic: 0, warrior: 0, sage: 2, trickster: 0, healer: 1, wanderer: 0, guardian: 0 } },
-      { text: { ru: "Обойду с тыла, пока не заметит", en: "Flank him before he notices", es: "Flanquearlo antes de que note" }, scores: { mystic: 0, warrior: 0, sage: 0, trickster: 2, healer: 0, wanderer: 1, guardian: 0 } }
+    "question": {
+      "ru": "Ты получил неожиданную сумму денег. Что тебе ближе?",
+      "en": "You receive an unexpected amount of money. What feels right?",
+      "es": "Recibes una cantidad inesperada de dinero. ¿Qué prefieres?",
+      "pt": "Recebes uma quantia inesperada. O que preferes?",
+      "de": "Du bekommst unerwartet Geld. Was passt eher zu dir?",
+      "fr": "Tu reçois une somme d’argent inattendue. Que préfères-tu ?"
+    },
+    "options": [
+      {
+        "text": {
+          "ru": "Отложить большую часть",
+          "en": "Save most of it",
+          "es": "Ahorrar la mayor parte",
+          "pt": "Guardar a maior parte",
+          "de": "Den größten Teil sparen",
+          "fr": "Épargner la plus grande partie"
+        },
+        "scores": {
+          "leader": 0,
+          "planner": 0,
+          "analyst": 0,
+          "empath": 0,
+          "creator": 0,
+          "explorer": 0,
+          "realist": 2,
+          "dreamer": 0,
+          "sage": 0,
+          "rebel": 0
+        }
+      },
+      {
+        "text": {
+          "ru": "Купить то, что давно хотел",
+          "en": "Buy something I wanted",
+          "es": "Comprar algo que quería",
+          "pt": "Comprar algo que queria",
+          "de": "Etwas kaufen, das ich wollte",
+          "fr": "Acheter ce dont j’avais envie"
+        },
+        "scores": {
+          "leader": 0,
+          "planner": 0,
+          "analyst": 0,
+          "empath": 0,
+          "creator": 0,
+          "explorer": 0,
+          "realist": 0,
+          "dreamer": 2,
+          "sage": 0,
+          "rebel": 0
+        }
+      },
+      {
+        "text": {
+          "ru": "Вложить в обучение или навык",
+          "en": "Invest in learning",
+          "es": "Invertir en aprender",
+          "pt": "Investir em aprendizagem",
+          "de": "In Lernen investieren",
+          "fr": "Investir dans l’apprentissage"
+        },
+        "scores": {
+          "leader": 0,
+          "planner": 0,
+          "analyst": 0,
+          "empath": 0,
+          "creator": 0,
+          "explorer": 0,
+          "realist": 0,
+          "dreamer": 0,
+          "sage": 2,
+          "rebel": 0
+        }
+      },
+      {
+        "text": {
+          "ru": "Разделить между несколькими целями",
+          "en": "Split it between goals",
+          "es": "Repartirlo entre varios objetivos",
+          "pt": "Dividir por objetivos",
+          "de": "Auf mehrere Ziele verteilen",
+          "fr": "Répartir entre plusieurs objectifs"
+        },
+        "scores": {
+          "leader": 0,
+          "planner": 2,
+          "analyst": 0,
+          "empath": 0,
+          "creator": 0,
+          "explorer": 0,
+          "realist": 0,
+          "dreamer": 0,
+          "sage": 0,
+          "rebel": 0
+        }
+      }
     ]
   },
   {
-    question: { ru: "Какое время суток тебе ближе?", en: "What time of day is closest to you?", es: "Qué momento del día te es más cercano?" },
-    options: [
-      { text: { ru: "Полночь, когда миры смыкаются", en: "Midnight, when worlds converge", es: "Medianoche, cuando los mundos convergen" }, scores: { mystic: 2, warrior: 0, sage: 1, trickster: 0, healer: 0, wanderer: 0, guardian: 0 } },
-      { text: { ru: "Рассвет, когда начинается битва", en: "Dawn, when the battle begins", es: "Amanecer, cuando comienza la batalla" }, scores: { mystic: 0, warrior: 2, sage: 0, trickster: 0, healer: 0, wanderer: 0, guardian: 1 } },
-      { text: { ru: "Полдень, когда свет развеивает тени", en: "Noon, when light dispels shadows", es: "Mediodía, cuando la luz disipa las sombras" }, scores: { mystic: 0, warrior: 0, sage: 2, trickster: 0, healer: 1, wanderer: 0, guardian: 0 } },
-      { text: { ru: "Сумерки, когда правда и ложь путаются", en: "Twilight, when truth and lie blur", es: "Crepúsculo, cuando la verdad y la mentira se confunden" }, scores: { mystic: 1, warrior: 0, sage: 0, trickster: 2, healer: 0, wanderer: 1, guardian: 0 } }
+    "question": {
+      "ru": "В новой компании ты обычно…",
+      "en": "In a new group, you usually…",
+      "es": "En un grupo nuevo, normalmente…",
+      "pt": "Num grupo novo, normalmente…",
+      "de": "In einer neuen Gruppe…",
+      "fr": "Dans un nouveau groupe, tu…"
+    },
+    "options": [
+      {
+        "text": {
+          "ru": "Сам начинаешь разговор",
+          "en": "Start the conversation",
+          "es": "Empiezo la conversación",
+          "pt": "Começo a conversa",
+          "de": "Ich beginne das Gespräch",
+          "fr": "Je lance la conversation"
+        },
+        "scores": {
+          "leader": 2,
+          "planner": 0,
+          "analyst": 0,
+          "empath": 0,
+          "creator": 0,
+          "explorer": 0,
+          "realist": 0,
+          "dreamer": 0,
+          "sage": 0,
+          "rebel": 0
+        }
+      },
+      {
+        "text": {
+          "ru": "Сначала наблюдаешь",
+          "en": "Observe first",
+          "es": "Observo primero",
+          "pt": "Observo primeiro",
+          "de": "Ich beobachte zuerst",
+          "fr": "J’observe d’abord"
+        },
+        "scores": {
+          "leader": 0,
+          "planner": 0,
+          "analyst": 2,
+          "empath": 0,
+          "creator": 0,
+          "explorer": 0,
+          "realist": 0,
+          "dreamer": 0,
+          "sage": 0,
+          "rebel": 0
+        }
+      },
+      {
+        "text": {
+          "ru": "Предлагаешь общую активность",
+          "en": "Suggest a group activity",
+          "es": "Propongo una actividad",
+          "pt": "Proponho uma atividade",
+          "de": "Ich schlage etwas Gemeinsames vor",
+          "fr": "Je propose une activité"
+        },
+        "scores": {
+          "leader": 0,
+          "planner": 0,
+          "analyst": 0,
+          "empath": 0,
+          "creator": 2,
+          "explorer": 0,
+          "realist": 0,
+          "dreamer": 0,
+          "sage": 0,
+          "rebel": 0
+        }
+      },
+      {
+        "text": {
+          "ru": "Быстро находишь одного близкого по духу человека",
+          "en": "Find one person I connect with",
+          "es": "Encuentro a alguien afín",
+          "pt": "Encontro alguém com quem me identifico",
+          "de": "Ich finde eine Person, mit der ich mich verbinde",
+          "fr": "Je trouve quelqu’un avec qui je me sens bien"
+        },
+        "scores": {
+          "leader": 0,
+          "planner": 0,
+          "analyst": 0,
+          "empath": 0,
+          "creator": 0,
+          "explorer": 0,
+          "realist": 0,
+          "dreamer": 0,
+          "sage": 0,
+          "rebel": 0,
+          "connector": 2
+        }
+      }
     ]
   },
   {
-    question: { ru: "Тебе предложили стать кем угодно. Кем станешь?", en: "You are offered to become anyone. Who do you become?", es: "Te ofrecen ser cualquiera. En quién te conviertes?" },
-    options: [
-      { text: { ru: "Провидцем, видящим сквозь время", en: "A seer who sees through time", es: "Un vidente que ve a través del tiempo" }, scores: { mystic: 2, warrior: 0, sage: 1, trickster: 0, healer: 0, wanderer: 0, guardian: 0 } },
-      { text: { ru: "Воином, защищающим слабых", en: "A warrior who protects the weak", es: "Un guerrero que protege a los débiles" }, scores: { mystic: 0, warrior: 2, sage: 0, trickster: 0, healer: 0, wanderer: 0, guardian: 2 } },
-      { text: { ru: "Мудрецом, хранящим знания", en: "A sage who keeps knowledge", es: "Un sabio que guarda el conocimiento" }, scores: { mystic: 0, warrior: 0, sage: 2, trickster: 0, healer: 0, wanderer: 0, guardian: 1 } },
-      { text: { ru: "Путником без имени", en: "A nameless wanderer", es: "Un viajero sin nombre" }, scores: { mystic: 0, warrior: 0, sage: 0, trickster: 1, healer: 0, wanderer: 2, guardian: 0 } }
+    "question": {
+      "ru": "Если кто-то критикует твою идею, ты скорее…",
+      "en": "When someone criticizes your idea, you tend to…",
+      "es": "Cuando alguien critica tu idea, sueles…",
+      "pt": "Quando alguém critica a tua ideia, tu…",
+      "de": "Wenn jemand deine Idee kritisiert, dann…",
+      "fr": "Quand quelqu’un critique ton idée, tu…"
+    },
+    "options": [
+      {
+        "text": {
+          "ru": "Спрашиваю, что можно улучшить",
+          "en": "Ask what can be improved",
+          "es": "Pregunto qué mejorar",
+          "pt": "Pergunto o que melhorar",
+          "de": "Ich frage, was besser werden kann",
+          "fr": "Je demande ce qui peut être amélioré"
+        },
+        "scores": {
+          "leader": 0,
+          "planner": 0,
+          "analyst": 0,
+          "empath": 0,
+          "creator": 0,
+          "explorer": 0,
+          "realist": 0,
+          "dreamer": 0,
+          "sage": 2,
+          "rebel": 0
+        }
+      },
+      {
+        "text": {
+          "ru": "Защищаю то, во что верю",
+          "en": "Defend what I believe in",
+          "es": "Defiendo lo que creo",
+          "pt": "Defendo aquilo em que acredito",
+          "de": "Ich verteidige, woran ich glaube",
+          "fr": "Je défends ce en quoi je crois"
+        },
+        "scores": {
+          "leader": 2,
+          "planner": 0,
+          "analyst": 0,
+          "empath": 0,
+          "creator": 0,
+          "explorer": 0,
+          "realist": 0,
+          "dreamer": 0,
+          "sage": 0,
+          "rebel": 0
+        }
+      },
+      {
+        "text": {
+          "ru": "Обдумываю критику позже",
+          "en": "Think about the criticism later",
+          "es": "Lo pienso después",
+          "pt": "Penso nisso depois",
+          "de": "Ich denke später darüber nach",
+          "fr": "J’y réfléchis plus tard"
+        },
+        "scores": {
+          "leader": 0,
+          "planner": 0,
+          "analyst": 0,
+          "empath": 0,
+          "creator": 0,
+          "explorer": 0,
+          "realist": 2,
+          "dreamer": 0,
+          "sage": 0,
+          "rebel": 0
+        }
+      },
+      {
+        "text": {
+          "ru": "Использую замечание как повод сделать иначе",
+          "en": "Use it as a reason to do it differently",
+          "es": "Lo uso para hacerlo de otra manera",
+          "pt": "Uso a crítica para fazer diferente",
+          "de": "Ich nutze es, um es anders zu machen",
+          "fr": "Je m’en sers pour faire autrement"
+        },
+        "scores": {
+          "leader": 0,
+          "planner": 0,
+          "analyst": 0,
+          "empath": 0,
+          "creator": 2,
+          "explorer": 0,
+          "realist": 0,
+          "dreamer": 0,
+          "sage": 0,
+          "rebel": 0
+        }
+      }
     ]
   },
   {
-    question: { ru: "Какой элемент тебе ближе?", en: "Which element is closest to you?", es: "Qué elemento te es más cercano?" },
-    options: [
-      { text: { ru: "Эфир — невидимая сила", en: "Aether — invisible force", es: "Éter — fuerza invisible" }, scores: { mystic: 2, warrior: 0, sage: 1, trickster: 0, healer: 0, wanderer: 0, guardian: 0 } },
-      { text: { ru: "Огонь — разрушение и возрождение", en: "Fire — destruction and rebirth", es: "Fuego — destrucción y renacimiento" }, scores: { mystic: 0, warrior: 2, sage: 0, trickster: 0, healer: 1, wanderer: 0, guardian: 0 } },
-      { text: { ru: "Вода — мудрость и адаптация", en: "Water — wisdom and adaptation", es: "Agua — sabiduría y adaptación" }, scores: { mystic: 0, warrior: 0, sage: 2, trickster: 0, healer: 2, wanderer: 0, guardian: 0 } },
-      { text: { ru: "Тень — скрытность и обман", en: "Shadow — secrecy and deceit", es: "Sombra — secreto y engaño" }, scores: { mystic: 1, warrior: 0, sage: 0, trickster: 2, healer: 0, wanderer: 1, guardian: 0 } }
+    "question": {
+      "ru": "Тебе предлагают попробовать новое занятие, о котором ты ничего не знаешь. Ты…",
+      "en": "Someone offers you a new activity you know nothing about. You…",
+      "es": "Te proponen una actividad nueva que no conoces. Tú…",
+      "pt": "Propõem-te uma atividade nova que desconheces. Tu…",
+      "de": "Dir wird eine neue Aktivität angeboten, die du nicht kennst. Du…",
+      "fr": "On te propose une activité inconnue. Tu…"
+    },
+    "options": [
+      {
+        "text": {
+          "ru": "Сразу пробую",
+          "en": "Try it immediately",
+          "es": "Lo pruebo enseguida",
+          "pt": "Experimento logo",
+          "de": "Ich probiere es sofort",
+          "fr": "J’essaie tout de suite"
+        },
+        "scores": {
+          "leader": 0,
+          "planner": 0,
+          "analyst": 0,
+          "empath": 0,
+          "creator": 0,
+          "explorer": 2,
+          "realist": 0,
+          "dreamer": 0,
+          "sage": 0,
+          "rebel": 0
+        }
+      },
+      {
+        "text": {
+          "ru": "Сначала читаю отзывы",
+          "en": "Read reviews first",
+          "es": "Leo opiniones",
+          "pt": "Leio opiniões",
+          "de": "Ich lese zuerst Bewertungen",
+          "fr": "Je lis des avis"
+        },
+        "scores": {
+          "leader": 0,
+          "planner": 0,
+          "analyst": 2,
+          "empath": 0,
+          "creator": 0,
+          "explorer": 0,
+          "realist": 0,
+          "dreamer": 0,
+          "sage": 0,
+          "rebel": 0
+        }
+      },
+      {
+        "text": {
+          "ru": "Зову друга",
+          "en": "Invite a friend",
+          "es": "Invito a un amigo",
+          "pt": "Convido um amigo",
+          "de": "Ich nehme einen Freund mit",
+          "fr": "J’invite un ami"
+        },
+        "scores": {
+          "leader": 0,
+          "planner": 0,
+          "analyst": 0,
+          "empath": 0,
+          "creator": 0,
+          "explorer": 0,
+          "realist": 0,
+          "dreamer": 0,
+          "sage": 0,
+          "rebel": 0,
+          "connector": 2
+        }
+      },
+      {
+        "text": {
+          "ru": "Соглашаюсь, если это поможет мне вырасти",
+          "en": "Say yes if it helps me grow",
+          "es": "Acepto si me ayuda a crecer",
+          "pt": "Aceito se me fizer crescer",
+          "de": "Ich sage zu, wenn es mich weiterbringt",
+          "fr": "J’accepte si cela m’aide à progresser"
+        },
+        "scores": {
+          "leader": 0,
+          "planner": 0,
+          "analyst": 0,
+          "empath": 0,
+          "creator": 0,
+          "explorer": 0,
+          "realist": 0,
+          "dreamer": 0,
+          "sage": 2,
+          "rebel": 0
+        }
+      }
     ]
   },
   {
-    question: { ru: "Ты нашел древний свиток. Что делаешь?", en: "You found an ancient scroll. What do you do?", es: "Encontraste un pergamino antiguo. Qué haces?" },
-    options: [
-      { text: { ru: "Читаю вслух, призывая духов", en: "Read aloud, summoning spirits", es: "Leer en voz alta, invocando espíritus" }, scores: { mystic: 2, warrior: 0, sage: 0, trickster: 0, healer: 1, wanderer: 0, guardian: 0 } },
-      { text: { ru: "Использую как оружие", en: "Use it as a weapon", es: "Usarlo como arma" }, scores: { mystic: 0, warrior: 2, sage: 0, trickster: 0, healer: 0, wanderer: 0, guardian: 1 } },
-      { text: { ru: "Изучаю, записывая каждую деталь", en: "Study it, recording every detail", es: "Estudiarlo, registrando cada detalle" }, scores: { mystic: 0, warrior: 0, sage: 2, trickster: 0, healer: 0, wanderer: 0, guardian: 1 } },
-      { text: { ru: "Продаю тому, кто больше заплатит", en: "Sell it to the highest bidder", es: "Venderlo al mejor postor" }, scores: { mystic: 0, warrior: 0, sage: 0, trickster: 2, healer: 0, wanderer: 1, guardian: 0 } }
+    "question": {
+      "ru": "Когда нужно принять важное решение, тебе спокойнее…",
+      "en": "When making an important decision, you feel calmer when…",
+      "es": "Al tomar una decisión importante, estás más tranquilo cuando…",
+      "pt": "Ao tomar uma decisão importante, sentes-te mais tranquilo quando…",
+      "de": "Bei einer wichtigen Entscheidung fühlst du dich ruhiger, wenn…",
+      "fr": "Pour une décision importante, tu te sens plus serein quand…"
+    },
+    "options": [
+      {
+        "text": {
+          "ru": "Иметь чёткий план",
+          "en": "Have a clear plan",
+          "es": "Tengo un plan claro",
+          "pt": "Ter um plano claro",
+          "de": "Einen klaren Plan zu haben",
+          "fr": "Avoir un plan clair"
+        },
+        "scores": {
+          "leader": 0,
+          "planner": 2,
+          "analyst": 0,
+          "empath": 0,
+          "creator": 0,
+          "explorer": 0,
+          "realist": 0,
+          "dreamer": 0,
+          "sage": 0,
+          "rebel": 0
+        }
+      },
+      {
+        "text": {
+          "ru": "Собрать максимум информации",
+          "en": "Collect as much information as possible",
+          "es": "Reúno información",
+          "pt": "Reunir informação",
+          "de": "Möglichst viele Informationen zu sammeln",
+          "fr": "Réunir un maximum d’informations"
+        },
+        "scores": {
+          "leader": 0,
+          "planner": 0,
+          "analyst": 2,
+          "empath": 0,
+          "creator": 0,
+          "explorer": 0,
+          "realist": 0,
+          "dreamer": 0,
+          "sage": 0,
+          "rebel": 0
+        }
+      },
+      {
+        "text": {
+          "ru": "Довериться внутреннему ощущению",
+          "en": "Trust my intuition",
+          "es": "Confío en mi intuición",
+          "pt": "Confiar na intuição",
+          "de": "Meiner Intuition zu vertrauen",
+          "fr": "Faire confiance à mon intuition"
+        },
+        "scores": {
+          "leader": 0,
+          "planner": 0,
+          "analyst": 0,
+          "empath": 0,
+          "creator": 0,
+          "explorer": 0,
+          "realist": 0,
+          "dreamer": 2,
+          "sage": 0,
+          "rebel": 0
+        }
+      },
+      {
+        "text": {
+          "ru": "Обсудить решение с близким человеком",
+          "en": "Discuss it with someone close",
+          "es": "Lo hablo con alguien cercano",
+          "pt": "Falar com alguém próximo",
+          "de": "Mit einer nahestehenden Person zu sprechen",
+          "fr": "En parler à un proche"
+        },
+        "scores": {
+          "leader": 0,
+          "planner": 0,
+          "analyst": 0,
+          "empath": 2,
+          "creator": 0,
+          "explorer": 0,
+          "realist": 0,
+          "dreamer": 0,
+          "sage": 0,
+          "rebel": 0
+        }
+      }
     ]
   },
   {
-    question: { ru: "Какой дар ты бы выбрал?", en: "Which gift would you choose?", es: "Qué don elegirías?" },
-    options: [
-      { text: { ru: "Видеть будущее во снах", en: "See the future in dreams", es: "Ver el futuro en sueños" }, scores: { mystic: 2, warrior: 0, sage: 1, trickster: 0, healer: 0, wanderer: 0, guardian: 0 } },
-      { text: { ru: "Непобедимую силу в бою", en: "Unbeatable strength in battle", es: "Fuerza invencible en batalla" }, scores: { mystic: 0, warrior: 2, sage: 0, trickster: 0, healer: 0, wanderer: 0, guardian: 1 } },
-      { text: { ru: "Помнить все прочитанное", en: "Remember everything read", es: "Recordar todo lo leído" }, scores: { mystic: 0, warrior: 0, sage: 2, trickster: 0, healer: 0, wanderer: 0, guardian: 1 } },
-      { text: { ru: "Менять облик по желанию", en: "Change appearance at will", es: "Cambiar de apariencia a voluntad" }, scores: { mystic: 1, warrior: 0, sage: 0, trickster: 2, healer: 0, wanderer: 1, guardian: 0 } }
+    "question": {
+      "ru": "Если близкий человек расстроен, ты чаще…",
+      "en": "When someone close to you is upset, you usually…",
+      "es": "Si alguien cercano está triste, normalmente…",
+      "pt": "Quando alguém próximo está triste, normalmente…",
+      "de": "Wenn jemand dir nahestehender traurig ist, dann…",
+      "fr": "Quand un proche est triste, tu…"
+    },
+    "options": [
+      {
+        "text": {
+          "ru": "Сначала выслушиваю",
+          "en": "Listen first",
+          "es": "Escucho primero",
+          "pt": "Ouço primeiro",
+          "de": "Ich höre zuerst zu",
+          "fr": "J’écoute d’abord"
+        },
+        "scores": {
+          "leader": 0,
+          "planner": 0,
+          "analyst": 0,
+          "empath": 2,
+          "creator": 0,
+          "explorer": 0,
+          "realist": 0,
+          "dreamer": 0,
+          "sage": 0,
+          "rebel": 0
+        }
+      },
+      {
+        "text": {
+          "ru": "Пытаюсь найти практическое решение",
+          "en": "Look for a practical solution",
+          "es": "Busco una solución práctica",
+          "pt": "Procuro uma solução prática",
+          "de": "Ich suche eine praktische Lösung",
+          "fr": "Je cherche une solution pratique"
+        },
+        "scores": {
+          "leader": 0,
+          "planner": 0,
+          "analyst": 0,
+          "empath": 0,
+          "creator": 0,
+          "explorer": 0,
+          "realist": 2,
+          "dreamer": 0,
+          "sage": 0,
+          "rebel": 0
+        }
+      },
+      {
+        "text": {
+          "ru": "Даю пространство",
+          "en": "Give them space",
+          "es": "Le doy espacio",
+          "pt": "Dou espaço",
+          "de": "Ich gebe Raum",
+          "fr": "Je lui laisse de l’espace"
+        },
+        "scores": {
+          "leader": 0,
+          "planner": 0,
+          "analyst": 0,
+          "empath": 0,
+          "creator": 0,
+          "explorer": 0,
+          "realist": 0,
+          "dreamer": 0,
+          "sage": 2,
+          "rebel": 0
+        }
+      },
+      {
+        "text": {
+          "ru": "Предлагаю отвлечься и сменить обстановку",
+          "en": "Suggest a change of scene",
+          "es": "Propongo cambiar de ambiente",
+          "pt": "Proponho mudar de ambiente",
+          "de": "Ich schlage einen Ortswechsel vor",
+          "fr": "Je propose de changer d’air"
+        },
+        "scores": {
+          "leader": 0,
+          "planner": 0,
+          "analyst": 0,
+          "empath": 0,
+          "creator": 0,
+          "explorer": 2,
+          "realist": 0,
+          "dreamer": 0,
+          "sage": 0,
+          "rebel": 0
+        }
+      }
     ]
   },
   {
-    question: { ru: "Тебя пригласили на бал в замок. Как появишься?", en: "You are invited to a castle ball. How do you appear?", es: "Te invitan a un baile en el castillo. Cómo apareces?" },
-    options: [
-      { text: { ru: "В плаще из звездной пыли", en: "In a cloak of stardust", es: "En una capa de polvo de estrellas" }, scores: { mystic: 2, warrior: 0, sage: 1, trickster: 0, healer: 0, wanderer: 0, guardian: 0 } },
-      { text: { ru: "В доспехах, готовый к чему угодно", en: "In armor, ready for anything", es: "En armadura, listo para cualquier cosa" }, scores: { mystic: 0, warrior: 2, sage: 0, trickster: 0, healer: 0, wanderer: 0, guardian: 2 } },
-      { text: { ru: "В мантии ученого с книгами", en: "In a scholar's robe with books", es: "En una túnica de erudito con libros" }, scores: { mystic: 0, warrior: 0, sage: 2, trickster: 0, healer: 0, wanderer: 0, guardian: 1 } },
-      { text: { ru: "Никто не узнает, кто я", en: "No one will know who I am", es: "Nadie sabrá quién soy" }, scores: { mystic: 0, warrior: 0, sage: 0, trickster: 2, healer: 0, wanderer: 2, guardian: 0 } }
+    "question": {
+      "ru": "Что сильнее всего мотивирует тебя закончить сложное дело?",
+      "en": "What motivates you most to finish something difficult?",
+      "es": "¿Qué te motiva más a terminar algo difícil?",
+      "pt": "O que mais te motiva a terminar algo difícil?",
+      "de": "Was motiviert dich am stärksten, etwas Schwieriges zu beenden?",
+      "fr": "Qu’est-ce qui te motive le plus à finir quelque chose de difficile ?"
+    },
+    "options": [
+      {
+        "text": {
+          "ru": "Видимый результат",
+          "en": "A visible result",
+          "es": "Un resultado visible",
+          "pt": "Um resultado visível",
+          "de": "Ein sichtbares Ergebnis",
+          "fr": "Un résultat visible"
+        },
+        "scores": {
+          "leader": 0,
+          "planner": 2,
+          "analyst": 0,
+          "empath": 0,
+          "creator": 0,
+          "explorer": 0,
+          "realist": 0,
+          "dreamer": 0,
+          "sage": 0,
+          "rebel": 0
+        }
+      },
+      {
+        "text": {
+          "ru": "Интерес к самому процессу",
+          "en": "Interest in the process",
+          "es": "El interés por el proceso",
+          "pt": "Interesse pelo processo",
+          "de": "Interesse am Prozess",
+          "fr": "L’intérêt du processus"
+        },
+        "scores": {
+          "leader": 0,
+          "planner": 0,
+          "analyst": 0,
+          "empath": 0,
+          "creator": 2,
+          "explorer": 0,
+          "realist": 0,
+          "dreamer": 0,
+          "sage": 0,
+          "rebel": 0
+        }
+      },
+      {
+        "text": {
+          "ru": "Чувство ответственности",
+          "en": "A sense of responsibility",
+          "es": "El sentido de responsabilidad",
+          "pt": "Sentido de responsabilidade",
+          "de": "Verantwortungsgefühl",
+          "fr": "Le sens des responsabilités"
+        },
+        "scores": {
+          "leader": 0,
+          "planner": 0,
+          "analyst": 0,
+          "empath": 2,
+          "creator": 0,
+          "explorer": 0,
+          "realist": 0,
+          "dreamer": 0,
+          "sage": 0,
+          "rebel": 0
+        }
+      },
+      {
+        "text": {
+          "ru": "Желание доказать себе, что смогу",
+          "en": "Proving to myself that I can",
+          "es": "Demostrarme que puedo",
+          "pt": "Provar a mim próprio que consigo",
+          "de": "Mir selbst zu beweisen, dass ich es kann",
+          "fr": "Me prouver que j’en suis capable"
+        },
+        "scores": {
+          "leader": 0,
+          "planner": 0,
+          "analyst": 0,
+          "empath": 0,
+          "creator": 0,
+          "explorer": 0,
+          "realist": 0,
+          "dreamer": 0,
+          "sage": 0,
+          "rebel": 2
+        }
+      }
     ]
   },
   {
-    question: { ru: "Что для тебя важнее всего?", en: "What matters most to you?", es: "Qué es lo más importante para ti?" },
-    options: [
-      { text: { ru: "Понимать тайны мира", en: "Understanding the world's mysteries", es: "Comprender los misterios del mundo" }, scores: { mystic: 2, warrior: 0, sage: 1, trickster: 0, healer: 0, wanderer: 0, guardian: 0 } },
-      { text: { ru: "Защищать тех, кто слаб", en: "Protecting those who are weak", es: "Proteger a quienes son débiles" }, scores: { mystic: 0, warrior: 2, sage: 0, trickster: 0, healer: 1, wanderer: 0, guardian: 2 } },
-      { text: { ru: "Передавать знания будущим", en: "Passing knowledge to the future", es: "Transmitir conocimiento al futuro" }, scores: { mystic: 0, warrior: 0, sage: 2, trickster: 0, healer: 0, wanderer: 0, guardian: 1 } },
-      { text: { ru: "Жить свободно, не зная границ", en: "Living freely, knowing no bounds", es: "Vivir libremente, sin conocer límites" }, scores: { mystic: 1, warrior: 0, sage: 0, trickster: 1, healer: 0, wanderer: 2, guardian: 0 } }
+    "question": {
+      "ru": "Если ты понимаешь, что привычный путь больше не работает, ты…",
+      "en": "If you realize your usual path no longer works, you…",
+      "es": "Si tu camino habitual deja de funcionar, tú…",
+      "pt": "Se percebes que o teu caminho habitual já não funciona, tu…",
+      "de": "Wenn dein bisheriger Weg nicht mehr funktioniert, dann…",
+      "fr": "Si ton chemin habituel ne fonctionne plus, tu…"
+    },
+    "options": [
+      {
+        "text": {
+          "ru": "Меняю стратегию",
+          "en": "Change the strategy",
+          "es": "Cambio la estrategia",
+          "pt": "Mudo a estratégia",
+          "de": "Ich ändere die Strategie",
+          "fr": "Je change de stratégie"
+        },
+        "scores": {
+          "leader": 0,
+          "planner": 0,
+          "analyst": 2,
+          "empath": 0,
+          "creator": 0,
+          "explorer": 0,
+          "realist": 0,
+          "dreamer": 0,
+          "sage": 0,
+          "rebel": 0
+        }
+      },
+      {
+        "text": {
+          "ru": "Ищу совершенно новый путь",
+          "en": "Find a completely new path",
+          "es": "Busco un camino nuevo",
+          "pt": "Procuro um caminho novo",
+          "de": "Ich suche einen völlig neuen Weg",
+          "fr": "Je cherche une nouvelle voie"
+        },
+        "scores": {
+          "leader": 0,
+          "planner": 0,
+          "analyst": 0,
+          "empath": 0,
+          "creator": 0,
+          "explorer": 2,
+          "realist": 0,
+          "dreamer": 0,
+          "sage": 0,
+          "rebel": 0
+        }
+      },
+      {
+        "text": {
+          "ru": "Возвращаюсь к основам",
+          "en": "Return to the basics",
+          "es": "Vuelvo a lo básico",
+          "pt": "Volto ao básico",
+          "de": "Ich gehe zurück zu den Grundlagen",
+          "fr": "Je reviens aux bases"
+        },
+        "scores": {
+          "leader": 0,
+          "planner": 0,
+          "analyst": 0,
+          "empath": 0,
+          "creator": 0,
+          "explorer": 0,
+          "realist": 2,
+          "dreamer": 0,
+          "sage": 0,
+          "rebel": 0
+        }
+      },
+      {
+        "text": {
+          "ru": "Спрашиваю совет у того, кому доверяю",
+          "en": "Ask someone I trust for advice",
+          "es": "Pido consejo a alguien de confianza",
+          "pt": "Peço conselho a alguém de confiança",
+          "de": "Ich frage jemanden meines Vertrauens",
+          "fr": "Je demande conseil à quelqu’un de confiance"
+        },
+        "scores": {
+          "leader": 0,
+          "planner": 0,
+          "analyst": 0,
+          "empath": 0,
+          "creator": 0,
+          "explorer": 0,
+          "realist": 0,
+          "dreamer": 0,
+          "sage": 0,
+          "rebel": 0,
+          "connector": 2
+        }
+      }
     ]
   }
 ];
-
 const DESTINY_TITLES = {
-  mystic: { name: { ru: "Провидец Теней", en: "Shadow Seer", es: "Vidente de Sombras" }, description: { ru: "Ты видишь то, что скрыто от других. Мир откровений — твоя стихия.", en: "You see what is hidden. The world of revelations is your element.", es: "Ves lo oculto. El mundo de revelaciones es tu elemento." }, traits: { ru: ["Интуиция", "Эмпатия", "Видение"], en: ["Intuition", "Empathy", "Vision"], es: ["Intuición", "Empatía", "Visión"] } },
-  warrior: { name: { ru: "Страж Судьбы", en: "Guardian of Fate", es: "Guardián del Destino" }, description: { ru: "Твой путь — защита и честь. Ты встаешь на защиту слабых.", en: "Your path is protection and honor. You stand up for the weak.", es: "Tu camino es protección y honor. Defiendes a los débiles." }, traits: { ru: ["Храбрость", "Честь", "Решительность"], en: ["Courage", "Honor", "Determination"], es: ["Coraje", "Honor", "Determinación"] } },
-  sage: { name: { ru: "Хранитель Знаний", en: "Keeper of Knowledge", es: "Guardián del Conocimiento" }, description: { ru: "Ты — собиратель мудрости веков. Каждое слово — кирпичик в твоем храме.", en: "You collect centuries of wisdom. Every word is a brick in your temple.", es: "Coleccionas siglos de sabiduría. Cada palabra es un ladrillo en tu templo." }, traits: { ru: ["Мудрость", "Терпение", "Аналитика"], en: ["Wisdom", "Patience", "Analytics"], es: ["Sabiduría", "Paciencia", "Análisis"] } },
-  trickster: { name: { ru: "Теневой Странник", en: "Shadow Wanderer", es: "Viajero de las Sombras" }, description: { ru: "Ты живешь по своим правилам. Мир — игра, где ты на шаг впереди.", en: "You live by your own rules. The world is a game where you are ahead.", es: "Vives por tus propias reglas. El mundo es un juego donde vas adelante." }, traits: { ru: ["Хитрость", "Адаптивность", "Свобода"], en: ["Cunning", "Adaptability", "Freedom"], es: ["Astucia", "Adaptabilidad", "Libertad"] } },
-  healer: { name: { ru: "Целитель Душ", en: "Soul Healer", es: "Sanador de Almas" }, description: { ru: "Твои руки несут тепло. Ты восстанавливаешь то, что разрушено.", en: "Your hands carry warmth. You restore what is broken.", es: "Tus manos llevan calor. Restauras lo roto." }, traits: { ru: ["Сострадание", "Терпение", "Свет"], en: ["Compassion", "Patience", "Light"], es: ["Compasión", "Paciencia", "Luz"] } },
-  wanderer: { name: { ru: "Вечный Странник", en: "Eternal Wanderer", es: "Viajero Eterno" }, description: { ru: "Ты не принадлежишь нигде. Твой дом — дорога, спутники — ветер и звезды.", en: "You belong nowhere. Your home is the road, companions are wind and stars.", es: "No perteneces a ningún lado. Tu hogar es el camino, compañeros el viento y estrellas." }, traits: { ru: ["Свобода", "Любопытство", "Независимость"], en: ["Freedom", "Curiosity", "Independence"], es: ["Libertad", "Curiosidad", "Independencia"] } },
-  guardian: { name: { ru: "Небесный Страж", en: "Celestial Guardian", es: "Guardián Celestial" }, description: { ru: "Ты — стена между хаосом и порядком. Клятва — защищать любой ценой.", en: "You are the wall between chaos and order. Your oath is to protect at any cost.", es: "Eres el muro entre el caos y el orden. Tu juramento es proteger a cualquier costo." }, traits: { ru: ["Верность", "Сила", "Жертвенность"], en: ["Loyalty", "Strength", "Sacrifice"], es: ["Lealtad", "Fuerza", "Sacrificio"] } },
-  mystic_warrior: { name: { ru: "Боевой Маг", en: "Battle Mage", es: "Mago de Batalla" }, description: { ru: "Ты владеешь силой и видением. Меч и кристалл — твои спутники.", en: "You wield both strength and vision. Sword and crystal are your companions.", es: "Empuñas fuerza y visión. Espada y cristal son tus compañeros." }, traits: { ru: ["Сила", "Видение", "Решительность"], en: ["Strength", "Vision", "Determination"], es: ["Fuerza", "Visión", "Determinación"] } },
-  mystic_sage: { name: { ru: "Астролог", en: "Astrologer", es: "Astrólogo" }, description: { ru: "Ты читаешь звезды и свитки. Небо — твоя библиотека.", en: "You read stars and scrolls. The sky is your library.", es: "Lees estrellas y pergaminos. El cielo es tu biblioteca." }, traits: { ru: ["Знания", "Интуиция", "Терпение"], en: ["Knowledge", "Intuition", "Patience"], es: ["Conocimiento", "Intuición", "Paciencia"] } },
-  mystic_trickster: { name: { ru: "Иллюзионист", en: "Illusionist", es: "Ilusionista" }, description: { ru: "Ты видишь то, что другие не замечаешь, и используешь это.", en: "You see what others miss, and you use it.", es: "Ves lo que otros no ven, y lo usas." }, traits: { ru: ["Обман", "Видение", "Хитрость"], en: ["Deceit", "Vision", "Cunning"], es: ["Engaño", "Visión", "Astucia"] } },
-  mystic_healer: { name: { ru: "Шаман", en: "Shaman", es: "Chamán" }, description: { ru: "Ты лечишь духом и видением. Твоя сила — в связи с потусторонним.", en: "You heal with spirit and vision. Your power is in the connection beyond.", es: "Sanas con espíritu y visión. Tu poder está en la conexión más allá." }, traits: { ru: ["Целительство", "Видение", "Мистика"], en: ["Healing", "Vision", "Mysticism"], es: ["Sanación", "Visión", "Misticismo"] } },
-  mystic_wanderer: { name: { ru: "Звездный Скиталец", en: "Star Wanderer", es: "Errante Estelar" }, description: { ru: "Ты следуешь за звездами, которые только ты видишь.", en: "You follow stars that only you can see.", es: "Sigues estrellas que solo tú puedes ver." }, traits: { ru: ["Свобода", "Видение", "Тайна"], en: ["Freedom", "Vision", "Mystery"], es: ["Libertad", "Visión", "Misterio"] } },
-  mystic_guardian: { name: { ru: "Оракул", en: "Oracle", es: "Oráculo" }, description: { ru: "Ты видишь угрозы до их появления и предупреждаешь других.", en: "You see threats before they appear and warn others.", es: "Ves amenazas antes de que aparezcan y adviertes a otros." }, traits: { ru: ["Предвидение", "Защита", "Мудрость"], en: ["Foresight", "Protection", "Wisdom"], es: ["Previsión", "Protección", "Sabiduría"] } },
-  warrior_sage: { name: { ru: "Стратег", en: "Strategist", es: "Estratega" }, description: { ru: "Ты побеждаешь не силой, а расчетом. Каждый бой — шахматная партия.", en: "You win not by force, but by calculation. Every battle is a chess game.", es: "Ganas no por fuerza, sino por cálculo. Cada batalla es un juego de ajedrez." }, traits: { ru: ["Тактика", "Сила", "Мудрость"], en: ["Tactics", "Strength", "Wisdom"], es: ["Táctica", "Fuerza", "Sabiduría"] } },
-  warrior_trickster: { name: { ru: "Наемник", en: "Mercenary", es: "Mercenario" }, description: { ru: "Ты сражаешься не за идеалы, а за результат. Правила — для слабых.", en: "You fight not for ideals, but for results. Rules are for the weak.", es: "Luchas no por ideales, sino por resultados. Las reglas son para débiles." }, traits: { ru: ["Сила", "Хитрость", "Прагматизм"], en: ["Strength", "Cunning", "Pragmatism"], es: ["Fuerza", "Astucia", "Pragmatismo"] } },
-  warrior_healer: { name: { ru: "Паладин", en: "Paladin", es: "Paladín" }, description: { ru: "Ты сражаешься, чтобы защитить, и лечишь, чтобы спасти.", en: "You fight to protect, and heal to save.", es: "Luchas para proteger, y sanas para salvar." }, traits: { ru: ["Честь", "Целительство", "Сила"], en: ["Honor", "Healing", "Strength"], es: ["Honor", "Sanación", "Fuerza"] } },
-  warrior_wanderer: { name: { ru: "Ронин", en: "Ronin", es: "Ronin" }, description: { ru: "Ты — воин без хозяина. Твой путь — дорога, твой кодекс — честь.", en: "You are a warrior without a master. Your path is the road, your code is honor.", es: "Eres un guerrero sin amo. Tu camino es la ruta, tu código es el honor." }, traits: { ru: ["Свобода", "Честь", "Сила"], en: ["Freedom", "Honor", "Strength"], es: ["Libertad", "Honor", "Fuerza"] } },
-  warrior_guardian: { name: { ru: "Рыцарь", en: "Knight", es: "Caballero" }, description: { ru: "Ты — воплощение верности. Твой щит — для слабых, меч — для тиранов.", en: "You are the embodiment of loyalty. Your shield is for the weak, your sword for tyrants.", es: "Eres la encarnación de la lealtad. Tu escudo es para los débiles, tu espada para tiranos." }, traits: { ru: ["Верность", "Сила", "Жертвенность"], en: ["Loyalty", "Strength", "Sacrifice"], es: ["Lealtad", "Fuerza", "Sacrificio"] } },
-  sage_trickster: { name: { ru: "Алхимик", en: "Alchemist", es: "Alquimista" }, description: { ru: "Ты превращаешь знания в силу, а силу — в золото.", en: "You turn knowledge into power, and power into gold.", es: "Conviertes conocimiento en poder, y poder en oro." }, traits: { ru: ["Знания", "Хитрость", "Трансформация"], en: ["Knowledge", "Cunning", "Transformation"], es: ["Conocimiento", "Astucia", "Transformación"] } },
-  sage_healer: { name: { ru: "Монах", en: "Monk", es: "Monje" }, description: { ru: "Ты ищешь истину, чтобы исцелить мир. Тишина — твой союзник.", en: "You seek truth to heal the world. Silence is your ally.", es: "Buscas la verdad para sanar el mundo. El silencio es tu aliado." }, traits: { ru: ["Мудрость", "Целительство", "Покой"], en: ["Wisdom", "Healing", "Calm"], es: ["Sabiduría", "Sanación", "Calma"] } },
-  sage_wanderer: { name: { ru: "Философ", en: "Philosopher", es: "Filósofo" }, description: { ru: "Ты странствуешь в поисках истины. Каждый город — страница, каждый встречный — урок.", en: "You wander in search of truth. Every city is a page, every stranger a lesson.", es: "Vagas en busca de verdad. Cada ciudad es una página, cada desconocido una lección." }, traits: { ru: ["Мудрость", "Свобода", "Познание"], en: ["Wisdom", "Freedom", "Knowledge"], es: ["Sabiduría", "Libertad", "Conocimiento"] } },
-  sage_guardian: { name: { ru: "Хранитель Закона", en: "Law Keeper", es: "Guardián de la Ley" }, description: { ru: "Ты знаешь законы мира и защищаешь их. Без порядка — нет света.", en: "You know the laws of the world and protect them. Without order, there is no light.", es: "Conoces las leyes del mundo y las proteges. Sin orden no hay luz." }, traits: { ru: ["Мудрость", "Порядок", "Защита"], en: ["Wisdom", "Order", "Protection"], es: ["Sabiduría", "Orden", "Protección"] } },
-  trickster_healer: { name: { ru: "Шарлатан", en: "Charlatan", es: "Charlatán" }, description: { ru: "Ты лечишь одной рукой, а другой забираешь последнее. Но результат — здоровье.", en: "You heal with one hand and take with the other. But the result is health.", es: "Sanas con una mano y tomas con la otra. Pero el resultado es salud." }, traits: { ru: ["Хитрость", "Целительство", "Амбивалентность"], en: ["Cunning", "Healing", "Ambivalence"], es: ["Astucia", "Sanación", "Ambivalencia"] } },
-  trickster_wanderer: { name: { ru: "Бард", en: "Bard", es: "Bardo" }, description: { ru: "Ты путешествуешь, рассказывая истории. Правда — лишь инструмент твоего искусства.", en: "You travel telling stories. Truth is just a tool of your art.", es: "Viajas contando historias. La verdad es solo una herramienta de tu arte." }, traits: { ru: ["Свобода", "Хитрость", "Искусство"], en: ["Freedom", "Cunning", "Art"], es: ["Libertad", "Astucia", "Arte"] } },
-  trickster_guardian: { name: { ru: "Шпион", en: "Spy", es: "Espía" }, description: { ru: "Ты защищаешь, притворяясь врагом. Твоя ложь — щит, твоя маска — доспех.", en: "You protect by pretending to be the enemy. Your lie is a shield, your mask is armor.", es: "Proteges fingiendo ser el enemigo. Tu mentira es un escudo, tu máscara una armadura." }, traits: { ru: ["Хитрость", "Защита", "Тайна"], en: ["Cunning", "Protection", "Secrecy"], es: ["Astucia", "Protección", "Secreto"] } },
-  healer_wanderer: { name: { ru: "Цыганка", en: "Gypsy Healer", es: "Curandera Gitana" }, description: { ru: "Ты лечишь тех, кого встречаешь на дороге. Твоя аптека — поля и леса.", en: "You heal those you meet on the road. Your pharmacy is fields and forests.", es: "Sanas a quienes encuentras en el camino. Tu farmacia son campos y bosques." }, traits: { ru: ["Свобода", "Целительство", "Природа"], en: ["Freedom", "Healing", "Nature"], es: ["Libertad", "Sanación", "Naturaleza"] } },
-  healer_guardian: { name: { ru: "Медсестра Поля Боя", en: "Field Medic", es: "Médico de Campo" }, description: { ru: "Ты стоишь между жизнью и смертью, защищая обе.", en: "You stand between life and death, protecting both.", es: "Te paras entre la vida y la muerte, protegiendo ambas." }, traits: { ru: ["Целительство", "Защита", "Смелость"], en: ["Healing", "Protection", "Bravery"], es: ["Sanación", "Protección", "Valentía"] } },
-  wanderer_guardian: { name: { ru: "Пограничник", en: "Ranger", es: "Guardabosques" }, description: { ru: "Ты бродишь по чужим землям, защищая свои. Никто не знает твоих троп.", en: "You roam foreign lands protecting your own. No one knows your trails.", es: "Vagas por tierras extrañas protegiendo las tuyas. Nadie conoce tus sendas." }, traits: { ru: ["Свобода", "Защита", "Выживание"], en: ["Freedom", "Protection", "Survival"], es: ["Libertad", "Protección", "Supervivencia"] } },
-  balanced: { name: { ru: "Архонт", en: "Archon", es: "Arconte" }, description: { ru: "Ты владеешь всеми силами в равной мере. Ты — редкость, ты — равновесие.", en: "You wield all forces equally. You are rare, you are balance.", es: "Empuñas todas las fuerzas por igual. Eres raro, eres equilibrio." }, traits: { ru: ["Баланс", "Все", "Гармония"], en: ["Balance", "All", "Harmony"], es: ["Equilibrio", "Todo", "Armonía"] } },
-  shadow: { name: { ru: "Антигерой", en: "Antihero", es: "Antihéroe" }, description: { ru: "Ты не вписываешься ни в одну категорию. Твоя сила — в противоречиях.", en: "You fit no category. Your strength is in contradictions.", es: "No encajas en ninguna categoría. Tu fuerza está en las contradicciones." }, traits: { ru: ["Противоречие", "Сила", "Тайна"], en: ["Contradiction", "Strength", "Mystery"], es: ["Contradicción", "Fuerza", "Misterio"] } }
+  leader: { name: {"ru": "Лидер", "en": "Leader", "es": "Líder", "pt": "Líder", "de": "Anführer", "fr": "Leader"}, description: {"ru": "Ты берёшь ответственность и умеешь вести других, когда ситуация требует решения.", "en": "You take responsibility and can lead others when a situation needs a decision.", "es": "Asumes responsabilidades y sabes guiar a otros cuando hace falta decidir.", "pt": "Assumes responsabilidade e sabes liderar quando uma situação exige uma decisão.", "de": "Du übernimmst Verantwortung und kannst andere führen, wenn eine Entscheidung nötig ist.", "fr": "Tu prends tes responsabilités et sais guider les autres quand une décision s’impose."} },
+  planner: { name: {"ru": "Стратег", "en": "Strategist", "es": "Estratega", "pt": "Estratega", "de": "Stratege", "fr": "Stratège"}, description: {"ru": "Ты любишь видеть несколько шагов вперёд и превращать хаос в понятный план.", "en": "You like seeing several steps ahead and turning chaos into a clear plan.", "es": "Te gusta ver varios pasos por delante y convertir el caos en un plan claro.", "pt": "Gostas de ver vários passos à frente e transformar o caos num plano claro.", "de": "Du denkst gern mehrere Schritte voraus und machst aus Chaos einen klaren Plan.", "fr": "Tu aimes voir plusieurs étapes à l’avance et transformer le chaos en plan clair."} },
+  analyst: { name: {"ru": "Аналитик", "en": "Analyst", "es": "Analista", "pt": "Analista", "de": "Analytiker", "fr": "Analyste"}, description: {"ru": "Ты замечаешь детали, сравниваешь варианты и редко принимаешь важные решения вслепую.", "en": "You notice details, compare options and rarely make important decisions blindly.", "es": "Observas detalles, comparas opciones y rara vez decides a ciegas.", "pt": "Reparas nos detalhes, comparas opções e raramente decides às cegas.", "de": "Du bemerkst Details, vergleichst Möglichkeiten und entscheidest selten blind.", "fr": "Tu remarques les détails, compares les options et décides rarement à l’aveugle."} },
+  empath: { name: {"ru": "Эмпат", "en": "Empath", "es": "Empático", "pt": "Empático", "de": "Empath", "fr": "Empathe"}, description: {"ru": "Ты тонко чувствуешь людей и часто понимаешь их состояние раньше, чем они его объяснят.", "en": "You sense people deeply and often understand how they feel before they explain it.", "es": "Percibes a las personas con sensibilidad y a menudo entiendes cómo se sienten antes de que lo digan.", "pt": "Sentes as pessoas com profundidade e muitas vezes percebes o que sentem antes de explicarem.", "de": "Du spürst Menschen gut und verstehst oft, was sie fühlen, bevor sie es erklären.", "fr": "Tu ressens profondément les autres et comprends souvent leur état avant qu’ils ne l’expliquent."} },
+  creator: { name: {"ru": "Создатель", "en": "Creator", "es": "Creador", "pt": "Criador", "de": "Schöpfer", "fr": "Créateur"}, description: {"ru": "Тебе важно создавать своё: идеи, проекты, атмосферу и вещи, которых раньше не было.", "en": "You need to create your own ideas, projects, atmosphere and things that did not exist before.", "es": "Necesitas crear lo tuyo: ideas, proyectos, ambientes y cosas nuevas.", "pt": "Precisas de criar o que é teu: ideias, projetos, ambientes e coisas novas.", "de": "Du willst Eigenes schaffen: Ideen, Projekte, Atmosphäre und Neues.", "fr": "Tu as besoin de créer ton propre univers : idées, projets, atmosphère et nouveautés."} },
+  explorer: { name: {"ru": "Исследователь", "en": "Explorer", "es": "Explorador", "pt": "Explorador", "de": "Entdecker", "fr": "Explorateur"}, description: {"ru": "Тебя тянет к новому опыту, местам и возможностям, которые расширяют привычные границы.", "en": "You are drawn to new experiences, places and possibilities that expand your familiar boundaries.", "es": "Te atraen las experiencias y posibilidades nuevas que amplían tus límites.", "pt": "És atraído por novas experiências e possibilidades que alargam os teus limites.", "de": "Dich ziehen neue Erfahrungen und Möglichkeiten an, die deine Grenzen erweitern.", "fr": "Tu es attiré par les expériences et possibilités qui élargissent tes limites."} },
+  realist: { name: {"ru": "Реалист", "en": "Realist", "es": "Realista", "pt": "Realista", "de": "Realist", "fr": "Réaliste"}, description: {"ru": "Ты ценишь практичность, устойчивость и решения, которые работают не только на словах.", "en": "You value practicality, stability and solutions that work beyond words.", "es": "Valoras la practicidad, la estabilidad y las soluciones que funcionan.", "pt": "Valorizas a praticidade, a estabilidade e soluções que funcionam.", "de": "Du schätzt praktische, stabile Lösungen, die wirklich funktionieren.", "fr": "Tu privilégies le concret, la stabilité et les solutions qui fonctionnent vraiment."} },
+  dreamer: { name: {"ru": "Мечтатель", "en": "Dreamer", "es": "Soñador", "pt": "Sonhador", "de": "Träumer", "fr": "Rêveur"}, description: {"ru": "Ты умеешь видеть возможности там, где другие видят только ограничения, и не боишься больших идей.", "en": "You see possibilities where others see limits and are not afraid of big ideas.", "es": "Ves posibilidades donde otros ven límites y no temes a las grandes ideas.", "pt": "Vês possibilidades onde outros veem limites e não tens medo de grandes ideias.", "de": "Du siehst Möglichkeiten, wo andere Grenzen sehen, und hast keine Angst vor großen Ideen.", "fr": "Tu vois des possibilités là où d’autres voient des limites et tu n’as pas peur des grandes idées."} },
+  sage: { name: {"ru": "Мудрец", "en": "Sage", "es": "Sabio", "pt": "Sábio", "de": "Weiser", "fr": "Sage"}, description: {"ru": "Ты предпочитаешь сначала понять смысл и последствия, а уже потом действовать.", "en": "You prefer to understand meaning and consequences before acting.", "es": "Prefieres comprender el sentido y las consecuencias antes de actuar.", "pt": "Preferes compreender o sentido e as consequências antes de agir.", "de": "Du möchtest Sinn und Folgen zuerst verstehen und dann handeln.", "fr": "Tu préfères comprendre le sens et les conséquences avant d’agir."} },
+  rebel: { name: {"ru": "Свободный Дух", "en": "Free Spirit", "es": "Espíritu Libre", "pt": "Espírito Livre", "de": "Freigeist", "fr": "Esprit Libre"}, description: {"ru": "Ты не любишь жить по чужому шаблону и готов менять правила, если они перестали иметь смысл.", "en": "You dislike living by someone else’s template and will change rules when they stop making sense.", "es": "No te gusta vivir según el molde de otros y cambias las reglas cuando dejan de tener sentido.", "pt": "Não gostas de viver segundo o molde dos outros e mudas regras quando deixam de fazer sentido.", "de": "Du lebst ungern nach fremden Mustern und änderst Regeln, wenn sie keinen Sinn mehr ergeben.", "fr": "Tu n’aimes pas vivre selon le modèle des autres et changes les règles quand elles perdent leur sens."} }
 };
-
 function openTrueDestiny() {
   const saved = localStorage.getItem('true_destiny');
   if (saved) {
     const state = JSON.parse(saved);
+    const expectedKeys = ['leader','planner','analyst','empath','creator','explorer','realist','dreamer','sage','rebel'];
+    if (!state.scores || expectedKeys.some(k => typeof state.scores[k] !== 'number')) {
+      localStorage.removeItem('true_destiny');
+      return openTrueDestiny();
+    }
     if (state.completed) { showDestinyResult(state.scores); return; }
     if (state.currentQuestion > 0) { renderDestinyQuestion(state.currentQuestion); return; }
   }
@@ -1266,36 +5954,21 @@ function answerDestiny(qIndex, optIndex) {
 }
 
 function showDestinyResult(scores) {
-  // Сортируем категории по очкам
-  const sorted = Object.entries(scores).sort((a, b) => b[1] - a[1]);
-  const [first, second] = sorted;
-
-  let winner;
-  // Если все очки равны (или почти равны) — баланс
-  const allEqual = sorted.every(([k,v]) => Math.abs(v - first[1]) <= 1);
-  if (allEqual && sorted.length > 2) {
-    winner = 'balanced';
-  } else if (first[1] === second[1]) {
-    // Ничья — берем комбинацию
-    const combo = [first[0], second[0]].sort().join('_');
-    winner = DESTINY_TITLES[combo] ? combo : 'shadow';
-  } else {
-    // Чистая победа
-    winner = first[0];
-  }
-
-  const title = DESTINY_TITLES[winner];
+  const sorted = Object.entries(scores).sort((a,b)=>b[1]-a[1]);
+  const winner = sorted[0]?.[0] || 'realist';
+  const title = DESTINY_TITLES[winner] || DESTINY_TITLES.realist;
   const overlay = document.createElement('div');
   overlay.className = 'destiny-overlay active';
   overlay.innerHTML = `
     <button class="overlay-close-x" onclick="closeDestiny()">&times;</button>
-    <div class="destiny-container destiny-result destiny-result-minimal">
+    <div class="destiny-container destiny-result destiny-result-minimal destiny-result-rich">
+      <div class="destiny-result-symbol">✦</div>
       <div class="destiny-result-kicker">${t('destinyResultTitle')}</div>
       <div class="destiny-result-title">${loc(title.name)}</div>
       <div class="destiny-result-desc">${loc(title.description)}</div>
-      <div class="final-channel-note">${t('finalChannel')}</div><div class="final-actions"><button class="destiny-restart" onclick="restartDestiny()">${t('destinyRestartBtn')}</button><a class="fate-channel-btn" href="${CHANNEL_URL}" target="_blank" rel="noopener">${t('openTelegram')}</a></div>
-    </div>
-  `;
+      <div class="final-channel-note">${t('finalChannel')}</div>
+      <div class="final-actions"><button class="destiny-restart" onclick="restartDestiny()">${t('destinyRestartBtn')}</button><a class="fate-channel-btn" href="${CHANNEL_URL}" target="_blank" rel="noopener">${t('openTelegram')}</a></div>
+    </div>`;
   document.body.appendChild(overlay);
 }
 
