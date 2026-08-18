@@ -184,6 +184,22 @@ const LANGUAGE_HINTS = {
 for (const [k,v] of Object.entries(LANGUAGE_HINTS)) T[k] = T[k] || {};
 for (const lang of Object.keys(LANGUAGE_HINTS)) T[lang].languageHint = LANGUAGE_HINTS[lang];
 
+const RATING_TEXTS = {
+  ru: {
+    title:'Оценить Your Destiny', thanks:'Спасибо за вашу оценку!', open:'Открыть Telegram-канал',
+    1:'Нам искренне жаль, что проект не оправдал ваших ожиданий. Мы только начинаем свой путь и будем усердно работать над улучшением Your Destiny. Напишите нам в Telegram, что именно пошло не так.',
+    2:'Спасибо за критику! Мы видим, что приложению есть куда расти. Если у вас есть конкретные замечания по интерфейсу или концепции — поделитесь ими в директ нашего канала.',
+    3:'Нейтральная оценка — отличный повод для роста! Прямо сейчас мы создаем интерактивные истории, чтобы сделать Your Destiny намного интереснее. Следите за обновлениями в нашем Telegram.',
+    4:'Прекрасный результат! Нам чуть-чуть не хватило до идеала, но мы это исправим. Заглядывайте в наш Telegram-канал, там мы регулярно делимся дневниками разработки и спойлерами!',
+    5:'Потрясающе! Ваша максимальная оценка вдохновляет нас творить дальше. Вы — часть нашей вселенной. Ждем вас в официальном Telegram-канале Your Destiny!'
+  },
+  en: { title:'Rate Your Destiny', thanks:'Thank you for your rating!', open:'Open Telegram Channel', 1:'We are truly sorry that the project did not meet your expectations. We are only beginning our journey and will keep working hard to improve Your Destiny. Tell us on Telegram what went wrong.', 2:'Thank you for the criticism! We know the app still has room to grow. If you have specific comments about the interface or concept, share them in our channel direct.', 3:'A neutral rating is a great reason to grow! We are currently creating interactive stories to make Your Destiny much more engaging. Follow the updates on Telegram.', 4:'A wonderful result! We were just a little short of perfection, but we will fix that. Visit our Telegram channel for development diaries and spoilers!', 5:'Amazing! Your highest rating inspires us to keep creating. You are part of our universe. We are waiting for you in the official Your Destiny Telegram channel!' },
+  es: { title:'Valorar Your Destiny', thanks:'¡Gracias por tu valoración!', open:'Abrir canal de Telegram', 1:'Sentimos sinceramente que el proyecto no haya cumplido tus expectativas. Estamos comenzando este camino y seguiremos trabajando para mejorar Your Destiny. Cuéntanos en Telegram qué salió mal.', 2:'¡Gracias por la crítica! Sabemos que la aplicación todavía puede crecer. Si tienes comentarios concretos sobre la interfaz o el concepto, compártelos por mensaje directo en nuestro canal.', 3:'¡Una valoración neutral es una buena razón para crecer! Estamos creando historias interactivas para hacer Your Destiny mucho más interesante. Sigue las novedades en Telegram.', 4:'¡Un resultado excelente! Nos faltó muy poco para la perfección, pero lo corregiremos. Visita nuestro canal de Telegram para diarios de desarrollo y spoilers.', 5:'¡Increíble! Tu máxima valoración nos inspira a seguir creando. Eres parte de nuestro universo. Te esperamos en el canal oficial de Telegram de Your Destiny.' },
+  pt: { title:'Avaliar Your Destiny', thanks:'Obrigado pela tua avaliação!', open:'Abrir canal do Telegram', 1:'Lamentamos sinceramente que o projeto não tenha correspondido às tuas expectativas. Estamos apenas a começar e continuaremos a trabalhar para melhorar o Your Destiny. Diz-nos no Telegram o que correu mal.', 2:'Obrigado pela crítica! Sabemos que a aplicação ainda pode crescer. Se tiveres comentários concretos sobre a interface ou o conceito, partilha-os por mensagem direta no nosso canal.', 3:'Uma avaliação neutra é um ótimo motivo para crescer! Estamos a criar histórias interativas para tornar o Your Destiny muito mais interessante. Acompanha as novidades no Telegram.', 4:'Um excelente resultado! Faltou muito pouco para a perfeição, mas vamos corrigir isso. Visita o nosso canal do Telegram para diários de desenvolvimento e spoilers.', 5:'Fantástico! A tua avaliação máxima inspira-nos a continuar a criar. Fazes parte do nosso universo. Esperamos por ti no canal oficial do Telegram do Your Destiny.' },
+  de: { title:'Your Destiny bewerten', thanks:'Danke für deine Bewertung!', open:'Telegram-Kanal öffnen', 1:'Es tut uns ehrlich leid, dass das Projekt deine Erwartungen nicht erfüllt hat. Wir stehen noch am Anfang und arbeiten weiter an Your Destiny. Schreib uns auf Telegram, was nicht funktioniert hat.', 2:'Danke für die Kritik! Wir wissen, dass die App noch wachsen kann. Wenn du konkrete Hinweise zu Interface oder Konzept hast, teile sie per Direktnachricht in unserem Kanal.', 3:'Eine neutrale Bewertung ist ein guter Anstoß zum Wachstum! Wir entwickeln gerade interaktive Geschichten, damit Your Destiny noch spannender wird. Folge den Updates auf Telegram.', 4:'Ein großartiges Ergebnis! Bis zur Perfektion fehlte nur ein wenig, aber das werden wir verbessern. In unserem Telegram-Kanal teilen wir Entwicklungsberichte und Spoiler.', 5:'Fantastisch! Deine höchste Bewertung inspiriert uns, weiterzumachen. Du bist Teil unseres Universums. Wir erwarten dich im offiziellen Telegram-Kanal von Your Destiny.' },
+  fr: { title:'Évaluer Your Destiny', thanks:'Merci pour votre évaluation !', open:'Ouvrir le canal Telegram', 1:'Nous sommes sincèrement désolés que le projet n’ait pas répondu à vos attentes. Nous commençons tout juste et continuerons à améliorer Your Destiny. Dites-nous sur Telegram ce qui n’a pas fonctionné.', 2:'Merci pour votre critique ! Nous savons que l’application peut encore progresser. Si vous avez des remarques précises sur l’interface ou le concept, partagez-les en message direct sur notre canal.', 3:'Une note neutre est une excellente raison de progresser ! Nous créons actuellement des histoires interactives pour rendre Your Destiny bien plus captivant. Suivez les nouveautés sur Telegram.', 4:'Excellent résultat ! Il nous manquait un tout petit peu pour atteindre la perfection, mais nous allons corriger cela. Retrouvez nos journaux de développement et spoilers sur Telegram.', 5:'Fantastique ! Votre note maximale nous inspire à continuer à créer. Vous faites partie de notre univers. Nous vous attendons sur le canal Telegram officiel de Your Destiny.' }
+};
+
 
 function t(key) { return (T[currentLang] && T[currentLang][key]) || T.en[key] || key; }
 function loc(value) { return value && (value[currentLang] ?? value.en ?? value.ru ?? Object.values(value)[0]) || ''; }
@@ -230,26 +246,26 @@ function initFirstVisit() {
 function showTimeCapsule() {
   initFirstVisit();
   const firstVisit = localStorage.getItem('first_visit_at');
-  const formatted = formatFirstVisit(firstVisit, true);
+  const d = new Date(firstVisit);
+  const datePart = d.toLocaleDateString(DATE_LOCALES[currentLang] || 'en-GB', { day:'2-digit', month:'long', year:'numeric' });
+  const timePart = d.toLocaleTimeString(DATE_LOCALES[currentLang] || 'en-GB', { hour:'2-digit', minute:'2-digit', hour12:false });
   const texts = {
-    ru:`Ты впервые открыл Your Destiny ${formatted}. С этого момента начинается твой личный путь в игре.`,
-    en:`You first opened Your Destiny on ${formatted}. This exact moment marks the beginning of your journey.`,
-    es:`Abriste Your Destiny por primera vez el ${formatted}. Este momento exacto marca el inicio de tu camino.`,
-    pt:`Abriste o Your Destiny pela primeira vez em ${formatted}. Este momento exato marca o início do teu caminho.`,
-    de:`Du hast Your Destiny erstmals am ${formatted} geöffnet. Dieser genaue Moment markiert den Beginn deiner Reise.`,
-    fr:`Tu as ouvert Your Destiny pour la première fois le ${formatted}. Ce moment précis marque le début de ton parcours.`
+    ru:`Ты впервые вошёл в Your Destiny ${datePart} в ${timePart}. С этого момента началась твоя история в этом мире.`,
+    en:`You first entered Your Destiny on ${datePart} at ${timePart}. From that moment, your story in this world began.`,
+    es:`Entraste por primera vez en Your Destiny el ${datePart} a las ${timePart}. Desde ese momento comenzó tu historia en este mundo.`,
+    pt:`Entraste pela primeira vez no Your Destiny em ${datePart}, às ${timePart}. A partir desse momento começou a tua história neste mundo.`,
+    de:`Du bist am ${datePart} um ${timePart} erstmals in Your Destiny eingetreten. Von diesem Moment an begann deine Geschichte in dieser Welt.`,
+    fr:`Tu es entré pour la première fois dans Your Destiny le ${datePart} à ${timePart}. À partir de cet instant, ton histoire dans cet univers a commencé.`
   };
   const overlay = document.createElement('div');
   overlay.className = 'fate-overlay active';
   overlay.innerHTML = `<button class="overlay-close-x" onclick="this.closest('.fate-overlay').remove()">&times;</button>
     <div class="time-capsule-card">
-      <div class="capsule-orbit"><span>✦</span></div>
-      <div class="capsule-kicker">${t('timeCapsule')}</div>
-      <div class="capsule-title">${t('capsule')}</div>
-      <div class="capsule-date">${formatted}</div>
+      <div class="capsule-title">${t('timeCapsule')}</div>
+      <div class="capsule-date">${datePart}</div>
+      <div class="capsule-time">${timePart}</div>
       <div class="capsule-divider"></div>
       <div class="capsule-text">${texts[currentLang] || texts.en}</div>
-      <button class="fate-next" onclick="this.closest('.fate-overlay').remove()">${t('close')}</button>
     </div>`;
   document.body.appendChild(overlay);
 }
@@ -257,7 +273,7 @@ function showTimeCapsule() {
 function showInfoOverlay(title, text) {
   const overlay = document.createElement('div');
   overlay.className = 'fate-overlay active';
-  overlay.innerHTML = `<button class="overlay-close-x" onclick="this.closest('.fate-overlay').remove()">&times;</button><div class="fate-container info-card"><div class="fate-final-title">${title}</div><div class="fate-final-text">${text}</div><button class="fate-next" onclick="this.closest('.fate-overlay').remove()">${t('close')}</button></div>`;
+  overlay.innerHTML = `<button class="overlay-close-x" onclick="this.closest('.fate-overlay').remove()">&times;</button><div class="fate-container info-card"><div class="fate-final-title">${title}</div><div class="fate-final-text">${text}</div></div>`;
   document.body.appendChild(overlay);
 }
 
@@ -394,9 +410,16 @@ function loadSettings() {
 function renderThemeColors() {
   const container = document.querySelector('.theme-colors');
   if (!container) return;
-  container.innerHTML = THEMES.map((th, i) => `
-    <button class="color-option ${th.id === currentTheme ? 'active' : ''} theme-${th.id}" data-theme="${th.id}" aria-label="${loc(th.name)}" onclick="setTheme('${th.id}')" style="--swatch:${th.swatch}"><span></span><small>${i + 1}</small></button>
+  container.innerHTML = THEMES.map(th => `
+    <button class="color-option ${th.id === currentTheme ? 'active' : ''} theme-${th.id}" data-theme="${th.id}" aria-label="${loc(th.name)}" onclick="event.stopPropagation();setTheme('${th.id}')" style="--swatch:${th.swatch}"><span></span></button>
   `).join('');
+}
+
+function toggleLanguagePicker() {
+  document.getElementById('language-picker-panel')?.classList.toggle('open');
+}
+function toggleThemePicker() {
+  document.getElementById('theme-picker-panel')?.classList.toggle('open');
 }
 
 function setTheme(theme) {
@@ -405,19 +428,20 @@ function setTheme(theme) {
   localStorage.setItem('theme', theme);
   renderThemeColors();
   const th = THEMES.find(x => x.id === theme);
-  document.getElementById('theme-name').textContent = th ? loc(th.name) : theme;
+  const name = document.getElementById('theme-name');
+  if (name) name.textContent = th ? loc(th.name) : theme;
+  document.getElementById('theme-picker-panel')?.classList.remove('open');
 }
 
 function setLanguage(lang) {
+  if (!T[lang]) lang = 'en';
   currentLang = lang;
   localStorage.setItem('lang', lang);
   localStorage.setItem('lang_manual', '1');
   updateLanguageUI();
   renderThemeColors();
   updateVipDisplay();
-  switchScreen('settings');
-  document.querySelectorAll('.nav-item').forEach(n => n.classList.remove('active'));
-  document.querySelector('[data-screen="settings"]').classList.add('active');
+  document.getElementById('language-picker-panel')?.classList.remove('open');
 }
 
 function updateLanguageUI() {
@@ -425,6 +449,8 @@ function updateLanguageUI() {
     const btn = document.getElementById(`lang-${lang}-btn`);
     if (btn) btn.classList.toggle('active', currentLang === lang);
   });
+  const languageCurrent = document.getElementById('language-current');
+  if (languageCurrent) languageCurrent.textContent = {ru:'Русский',en:'English',es:'Español',pt:'Português',de:'Deutsch',fr:'Français'}[currentLang];
   document.documentElement.lang = currentLang;
   document.querySelectorAll('[data-t]').forEach(el => {
     const key = el.dataset.t;
@@ -508,17 +534,80 @@ function showToast(message) {
 
 
 
+function showRatingModal() {
+  const overlay=document.createElement('div'); overlay.className='fate-overlay active';
+  const texts=RATING_TEXTS[currentLang]||RATING_TEXTS.en;
+  overlay.innerHTML=`<button class="overlay-close-x" onclick="this.closest('.fate-overlay').remove()">&times;</button><div class="rating-card"><div class="rating-title">${texts.title}</div><div class="rating-stars" role="radiogroup" aria-label="${texts.title}">${[1,2,3,4,5].map(i=>`<button class="rating-star" data-rating="${i}" aria-label="${i}" onclick="selectRating(${i})">★</button>`).join('')}</div><div class="rating-thanks">${texts.thanks}</div><div class="rating-text" id="rating-text"></div><a class="author-channel-btn rating-channel-btn" href="${CHANNEL_URL}" target="_blank" rel="noopener">${texts.open}</a></div>`;
+  document.body.appendChild(overlay);
+}
+function selectRating(value){
+  const stars=document.querySelectorAll('.rating-star'); stars.forEach(star=>star.classList.toggle('selected',Number(star.dataset.rating)<=value));
+  const text=document.getElementById('rating-text'); const texts=RATING_TEXTS[currentLang]||RATING_TEXTS.en; if(text) text.textContent=texts[value]||texts[5];
+}
+
 function showSupportAuthor() {
   const overlay = document.createElement('div');
   overlay.className = 'fate-overlay active';
-  overlay.innerHTML = `<button class="overlay-close-x" onclick="this.closest('.fate-overlay').remove()">&times;</button><div class="author-card"><div class="author-emblem">✦</div><div class="author-title">${t('supportAuthor')}</div><div class="author-subtitle">${t('supportDesc')}</div><div class="wallet-card"><div class="wallet-label">${t('wallet')}</div><div class="wallet-address">${WALLET}</div><button class="wallet-copy-btn" onclick="copyWallet()">${t('copy')}</button></div><a class="author-channel-btn" href="${CHANNEL_URL}" target="_blank" rel="noopener">${t('openTelegram')}</a></div>`;
+  const desc = {
+    ru:'Your Destiny — независимый проект, созданный со страстью и заботой. Вы можете поддержать автора и внести добровольный вклад в развитие проекта. Любая отправленная сумма является безвозмездным даром, осуществляется по вашему личному решению и не налагает на создателя встречных обязательств. Это не является оплатой за товары, работы или услуги.',
+    en:'Your Destiny is an independent project created with passion and care. You may support the creator with a voluntary contribution to the project. Any amount is a gratuitous gift made by your own choice and does not create a counter-obligation for the creator. It is not payment for goods, work or services.',
+    es:'Your Destiny es un proyecto independiente creado con pasión y cuidado. Puedes apoyar al creador con una contribución voluntaria. Cualquier cantidad es un donativo realizado libremente y no crea obligaciones de contraprestación para el creador. No constituye un pago por bienes, trabajos o servicios.',
+    pt:'Your Destiny é um projeto independente criado com paixão e cuidado. Podes apoiar o autor com um contributo voluntário. Qualquer valor é um donativo feito por decisão própria e não cria obrigações de contraprestação para o criador. Não constitui pagamento por bens, trabalhos ou serviços.',
+    de:'Your Destiny ist ein unabhängiges Projekt, das mit Leidenschaft und Sorgfalt geschaffen wurde. Du kannst den Ersteller mit einem freiwilligen Beitrag unterstützen. Jeder Betrag ist eine freiwillige Schenkung und begründet keine Gegenleistungspflicht des Erstellers. Es handelt sich nicht um eine Zahlung für Waren, Arbeiten oder Dienstleistungen.',
+    fr:'Your Destiny est un projet indépendant créé avec passion et soin. Vous pouvez soutenir le créateur par une contribution volontaire. Toute somme versée constitue un don librement décidé et ne crée aucune obligation de contrepartie pour le créateur. Il ne s’agit pas d’un paiement pour des biens, travaux ou services.'
+  };
+  overlay.innerHTML = `<button class="overlay-close-x" onclick="this.closest('.fate-overlay').remove()">&times;</button>
+    <div class="author-card support-card">
+      <div class="author-title">${t('supportAuthor')}</div>
+      <div class="author-subtitle support-copy">${desc[currentLang] || desc.en}</div>
+      <div class="support-payment-grid">
+        <div class="payment-block"><span>${({ru:'Криптосеть',en:'Network',es:'Red',pt:'Rede',de:'Netzwerk',fr:'Réseau'})[currentLang]}</span><strong>Tron (TRC-20)</strong></div>
+        <div class="payment-block"><span>${({ru:'Токен актива',en:'Asset token',es:'Token',pt:'Token',de:'Asset-Token',fr:'Jeton'})[currentLang]}</span><strong>USDT</strong></div>
+        <div class="payment-block payment-address"><span>${({ru:'Адрес платежа',en:'Payment address',es:'Dirección de pago',pt:'Endereço de pagamento',de:'Zahlungsadresse',fr:'Adresse de paiement'})[currentLang]}</span><strong>${WALLET}</strong></div>
+      </div>
+      <button class="wallet-copy-btn support-copy-btn" onclick="copyWallet()">${t('copy')}</button>
+    </div>`;
   document.body.appendChild(overlay);
 }
 
 function showBecomeAuthor() {
   const overlay = document.createElement('div');
   overlay.className = 'fate-overlay active';
-  overlay.innerHTML = `<button class="overlay-close-x" onclick="this.closest('.fate-overlay').remove()">&times;</button><div class="author-card"><div class="author-emblem">✎</div><div class="author-title">${t('becomeAuthor')}</div><div class="author-subtitle">${t('authorDesc')}</div><div class="author-info-list"><div>✦ ${t('authorStories')}</div><div>✦ ${t('authorRiddles')}</div><div>✦ ${t('authorIdeas')}</div></div><div class="author-legal-text">${t('authorLegal')}</div><a class="author-channel-btn" href="${DIRECT_URL}" target="_blank" rel="noopener">${t('writeDirect')}</a></div>`;
+  const legal = {
+    ru:'Отправляя текст, сценарий, историю, загадку, изображение, концепцию или иной материал в Your Destiny, вы подтверждаете, что обладаете всеми необходимыми правами и разрешениями на его передачу и использование и что материал не нарушает права третьих лиц. Если материал принят к использованию, вы соглашаетесь предоставить Your Destiny максимально широкий объём прав, необходимый для его воспроизведения, редактирования, адаптации, перевода, публикации, распространения, монетизации и включения в состав проекта, без ограничения территории и на весь допустимый законом срок, если отдельным письменным соглашением не установлено иное. Вознаграждение, роялти, обязательная выплата или обязательное указание авторства не возникают автоматически из самого факта отправки. После принятия материала вы не вправе требовать его удаления, запрета использования или дополнительной оплаты, кроме случаев, прямо предусмотренных отдельным письменным соглашением или императивными нормами применимого права. Вы также подтверждаете, что самостоятельно урегулируете любые претензии третьих лиц, связанные с нарушением предоставленных вами гарантий. Не отправляйте материалы, права на которые вы не можете предоставить на этих условиях.',
+    en:'By submitting text, scripts, stories, riddles, images, concepts or other material to Your Destiny, you confirm that you hold all rights and permissions required for its submission and use and that the material does not infringe third-party rights. If the material is accepted for use, you agree to grant Your Destiny the broadest rights reasonably required to reproduce, edit, adapt, translate, publish, distribute, monetize and incorporate the material into the project, worldwide and for the maximum period permitted by law, unless a separate written agreement provides otherwise. Compensation, royalties, mandatory payment or mandatory attribution do not arise automatically from submission. After acceptance, you agree not to demand removal, prohibition of use or additional payment except where a separate written agreement or mandatory applicable law expressly provides otherwise. You also agree to handle third-party claims arising from a breach of your warranties. Do not submit material you cannot grant on these terms.',
+    es:'Al enviar textos, guiones, historias, acertijos, imágenes, conceptos u otros materiales a Your Destiny, confirmas que posees todos los derechos y permisos necesarios para su envío y uso y que el material no infringe derechos de terceros. Si el material es aceptado, aceptas conceder a Your Destiny los derechos más amplios razonablemente necesarios para reproducirlo, editarlo, adaptarlo, traducirlo, publicarlo, distribuirlo, monetizarlo e incorporarlo al proyecto, en todo el mundo y durante el máximo plazo permitido por la ley, salvo acuerdo escrito distinto. La remuneración, regalías, pago obligatorio o atribución obligatoria no nacen automáticamente del envío. Tras la aceptación, aceptas no exigir la retirada, prohibición de uso ni pagos adicionales salvo que lo establezca expresamente un acuerdo escrito o una norma legal imperativa. También asumes la gestión de reclamaciones de terceros derivadas del incumplimiento de tus garantías. No envíes materiales que no puedas conceder bajo estas condiciones.',
+    pt:'Ao enviar textos, guiões, histórias, enigmas, imagens, conceitos ou outros materiais para o Your Destiny, confirmas que tens todos os direitos e autorizações necessários para o envio e utilização e que o material não viola direitos de terceiros. Se o material for aceite, concordas em conceder ao Your Destiny os direitos mais amplos razoavelmente necessários para reproduzir, editar, adaptar, traduzir, publicar, distribuir, monetizar e integrar o material no projeto, em todo o mundo e pelo período máximo permitido por lei, salvo acordo escrito em contrário. Remuneração, royalties, pagamento obrigatório ou atribuição obrigatória não surgem automaticamente do envio. Após a aceitação, concordas em não exigir remoção, proibição de utilização ou pagamento adicional, salvo quando previsto expressamente por acordo escrito ou por norma legal imperativa. Assumes também a gestão de reclamações de terceiros resultantes da violação das tuas garantias. Não envies materiais que não possas disponibilizar nestas condições.',
+    de:'Mit der Einreichung von Texten, Skripten, Geschichten, Rätseln, Bildern, Konzepten oder anderen Materialien bei Your Destiny bestätigst du, dass du über alle erforderlichen Rechte und Genehmigungen verfügst und keine Rechte Dritter verletzt werden. Wird das Material angenommen, stimmst du zu, Your Destiny die weitestgehenden vernünftigerweise erforderlichen Rechte zur Vervielfältigung, Bearbeitung, Anpassung, Übersetzung, Veröffentlichung, Verbreitung, Monetarisierung und Einbindung in das Projekt weltweit und für die gesetzlich zulässige Höchstdauer einzuräumen, sofern keine schriftliche Vereinbarung etwas anderes bestimmt. Vergütung, Tantiemen, eine verpflichtende Zahlung oder verpflichtende Namensnennung entstehen nicht allein durch die Einreichung. Nach Annahme stimmst du zu, keine Entfernung, Nutzungsuntersagung oder zusätzliche Zahlung zu verlangen, außer soweit dies ausdrücklich schriftlich vereinbart oder gesetzlich zwingend vorgesehen ist. Für Ansprüche Dritter aufgrund einer Verletzung deiner Zusicherungen bist du selbst verantwortlich. Reiche kein Material ein, das du nicht unter diesen Bedingungen zur Verfügung stellen darfst.',
+    fr:'En envoyant des textes, scénarios, histoires, énigmes, images, concepts ou autres contenus à Your Destiny, vous confirmez disposer de tous les droits et autorisations nécessaires à leur transmission et à leur utilisation et ne pas porter atteinte aux droits de tiers. Si le contenu est accepté, vous acceptez d’accorder à Your Destiny les droits les plus larges raisonnablement nécessaires pour le reproduire, le modifier, l’adapter, le traduire, le publier, le distribuer, le monétiser et l’intégrer au projet, dans le monde entier et pour la durée maximale autorisée par la loi, sauf accord écrit contraire. Aucune rémunération, redevance, paiement obligatoire ou attribution obligatoire ne naît automatiquement de l’envoi. Après acceptation, vous acceptez de ne pas exiger le retrait, l’interdiction d’utilisation ou un paiement supplémentaire, sauf disposition expresse d’un accord écrit ou d’une règle impérative applicable. Vous assumez également les réclamations de tiers résultant d’une violation de vos garanties. N’envoyez pas de contenu que vous ne pouvez pas concéder dans ces conditions.'
+  };
+
+  const generic = legal[currentLang] || legal.en;
+  overlay.innerHTML = `<button class="overlay-close-x" onclick="this.closest('.fate-overlay').remove()">&times;</button>
+    <div class="author-card legal-author-card">
+      <div class="author-title">${t('becomeAuthor')}</div>
+      <div class="author-subtitle">${t('authorDesc')}</div>
+      <div class="author-legal-text">${generic}</div>
+      <button class="author-channel-btn" onclick="showAuthorConfirm()">${currentLang==='ru'?'Продолжить':currentLang==='de'?'Weiter':currentLang==='fr'?'Continuer':currentLang==='es'?'Continuar':currentLang==='pt'?'Continuar':'Continue'}</button>
+    </div>`;
+  document.body.appendChild(overlay);
+}
+
+function showAuthorConfirm() {
+  const previous = document.querySelector('.fate-overlay');
+  if (previous) previous.remove();
+  const overlay = document.createElement('div');
+  overlay.className = 'fate-overlay active';
+  const text = {
+    ru:'Подтвердите, что вы прочитали условия, обладаете необходимыми правами на отправляемый материал и соглашаетесь с указанными условиями передачи и использования.',
+    en:'Confirm that you have read the terms, hold the necessary rights to the submitted material and agree to the stated submission and use conditions.',
+    es:'Confirma que has leído las condiciones, tienes los derechos necesarios sobre el material y aceptas las condiciones de envío y uso.',
+    pt:'Confirma que leste as condições, tens os direitos necessários sobre o material e aceitas as condições de envio e utilização.',
+    de:'Bestätige, dass du die Bedingungen gelesen hast, über die erforderlichen Rechte verfügst und den Bedingungen für Einreichung und Nutzung zustimmst.',
+    fr:'Confirmez que vous avez lu les conditions, disposez des droits nécessaires sur le contenu et acceptez les conditions d’envoi et d’utilisation.'
+  };
+  const yes = {ru:'Согласен — написать',en:'I agree — write',es:'Acepto — escribir',pt:'Aceito — escrever',de:'Ich stimme zu — schreiben',fr:'J’accepte — écrire'};
+  overlay.innerHTML = `<button class="overlay-close-x" onclick="this.closest('.fate-overlay').remove()">&times;</button><div class="author-card legal-confirm-card"><div class="author-title">${t('becomeAuthor')}</div><div class="author-legal-text">${text[currentLang]||text.en}</div><a class="author-channel-btn" href="${DIRECT_URL}" target="_blank" rel="noopener">${yes[currentLang]||yes.en}</a></div>`;
   document.body.appendChild(overlay);
 }
 
@@ -6097,31 +6186,28 @@ const WISDOM_QUOTES = [
   { ru: "Ты — автор своей судьбы. Пиши шедевр.", en: "You are the author of your fate. Write a masterpiece.", es: "Eres el autor de tu destino. Escribe una obra maestra." }
 ];
 
-function showWisdom() {
+function renderWisdomCard(overlay) {
   let index = parseInt(localStorage.getItem('wisdom_index') || '0');
   if (index >= WISDOM_QUOTES.length) index = 0;
   const quote = WISDOM_QUOTES[index];
   localStorage.setItem('wisdom_index', ((index + 1) % WISDOM_QUOTES.length).toString());
-  const overlay = document.createElement('div');
-  overlay.className = 'wisdom-overlay active';
-  overlay.innerHTML = `
-    <button class="overlay-close-x" onclick="closeWisdom()">&times;</button>
+  overlay.innerHTML = `<button class="overlay-close-x" onclick="closeWisdom()">&times;</button>
     <div class="wisdom-container">
-      <div class="wisdom-symbol">✦</div>
       <div class="wisdom-heading">${t('wisdom')}</div>
-      <div class="wisdom-divider"><span>✦</span></div>
-      <div class="wisdom-label">${t('wisdomLabel')}</div>
       <div class="wisdom-quote">${loc(quote)}</div>
-      <div class="wisdom-footer-mark">— ${t('wisdomFooter')} —</div>
       <button class="wisdom-close-btn" onclick="nextWisdom()">${t('wisdomClose')}</button>
     </div>`;
+}
+function showWisdom() {
+  const overlay = document.createElement('div');
+  overlay.className = 'wisdom-overlay active';
   document.body.appendChild(overlay);
+  renderWisdomCard(overlay);
 }
 function nextWisdom() {
   const overlay = document.querySelector('.wisdom-overlay');
   if (!overlay) return;
-  overlay.classList.remove('active');
-  setTimeout(() => { overlay.remove(); showWisdom(); }, 250);
+  renderWisdomCard(overlay);
 }
 
 function closeWisdom() {
@@ -6134,18 +6220,18 @@ function closeWisdom() {
 // ============================================================
 function showAbout() {
   const overlay = document.createElement('div');
-  overlay.className = 'fate-overlay';
-  overlay.innerHTML = `
-    <button class="overlay-close-x" onclick="this.closest('.fate-overlay').classList.remove('active');setTimeout(()=>this.closest('.fate-overlay').remove(),300)">&times;</button>
-    <div class="fate-container about-card">
-      <div class="fate-final-title">${t('about')}</div>
-      <div class="about-lead">${EXTRA_I18N[currentLang].aboutLead}</div>
-      <div class="about-body">${EXTRA_I18N[currentLang].aboutBody}</div>
-      <div class="about-feature-grid"><div>✦ ${t('chronicles')}</div><div>✦ ${t('labyrinth')}</div><div>✦ ${t('trueDestiny')}</div><div>✦ ${t('wisdom')}</div></div>
-      <a class="fate-channel-btn" href="${CHANNEL_URL}" target="_blank" rel="noopener">${t('openTelegram')}</a>
-    </div>`;
+  overlay.className = 'fate-overlay active';
+  const copy = {
+    ru:{lead:'Your Destiny начинается там, где заканчиваются готовые ответы.', body:'Это личное пространство выбора, наблюдений и маленьких испытаний. Здесь ты можешь проверить логику, увидеть собственный стиль решений, остановиться на одной мысли или просто открыть следующий вопрос из любопытства. Проект развивается постепенно: новые истории, загадки и сценарии будут появляться по мере роста вселенной.', note:'Не ищи здесь правильную судьбу. Ищи ту, которую выбрал бы именно ты.'},
+    en:{lead:'Your Destiny begins where ready-made answers end.', body:'It is a personal space for choices, observations and small challenges. Test your logic, discover your decision-making style, pause over a thought or simply open the next question out of curiosity. The universe grows gradually as new stories, riddles and scenarios are added.', note:'Do not look for the correct destiny here. Look for the one you would choose yourself.'},
+    es:{lead:'Your Destiny comienza donde terminan las respuestas prefabricadas.', body:'Es un espacio personal de elecciones, observaciones y pequeños desafíos. Pon a prueba tu lógica, descubre cómo decides, detente ante una idea o abre la siguiente pregunta por simple curiosidad. El universo crecerá poco a poco con nuevas historias, acertijos y escenarios.', note:'No busques aquí el destino correcto. Busca el que elegirías tú.'},
+    pt:{lead:'Your Destiny começa onde terminam as respostas prontas.', body:'É um espaço pessoal de escolhas, observações e pequenos desafios. Testa a tua lógica, descobre a tua forma de decidir, para numa ideia ou abre a próxima pergunta por curiosidade. O universo cresce gradualmente com novas histórias, enigmas e cenários.', note:'Não procures aqui o destino certo. Procura aquele que escolherias.'},
+    de:{lead:'Your Destiny beginnt dort, wo fertige Antworten enden.', body:'Es ist ein persönlicher Raum für Entscheidungen, Beobachtungen und kleine Prüfungen. Teste deine Logik, entdecke deine Art zu entscheiden, halte bei einem Gedanken inne oder öffne die nächste Frage aus Neugier. Das Universum wächst nach und nach mit neuen Geschichten, Rätseln und Szenarien.', note:'Suche hier nicht nach dem richtigen Schicksal. Suche nach dem, das du selbst wählen würdest.'},
+    fr:{lead:'Your Destiny commence là où les réponses toutes faites s’arrêtent.', body:'C’est un espace personnel de choix, d’observations et de petits défis. Teste ta logique, découvre ta manière de décider, arrête-toi sur une idée ou ouvre simplement la question suivante par curiosité. L’univers grandira progressivement avec de nouvelles histoires, énigmes et scénarios.', note:'Ne cherche pas ici le destin correct. Cherche celui que tu choisirais toi-même.'}
+  };
+  const c=copy[currentLang]||copy.en;
+  overlay.innerHTML=`<button class="overlay-close-x" onclick="this.closest('.fate-overlay').remove()">&times;</button><div class="fate-container about-card"><div class="fate-final-title">${t('about')}</div><div class="about-lead">${c.lead}</div><div class="about-body">${c.body}</div><div class="about-note">${c.note}</div></div>`;
   document.body.appendChild(overlay);
-  setTimeout(()=>overlay.classList.add('active'),10);
 }
 
 const LEGAL_TERMS = {
@@ -6159,7 +6245,7 @@ const LEGAL_TERMS = {
 function showTerms() {
   const overlay = document.createElement('div'); overlay.className = 'fate-overlay active';
   const bodyText = LEGAL_TERMS[currentLang] || LEGAL_TERMS.en;
-  overlay.innerHTML = `<button class="overlay-close-x" onclick="this.closest('.fate-overlay').remove()">&times;</button><div class="fate-container legal-card"><div class="fate-final-title">${t('termsTitle')}</div><div class="legal-text">${bodyText.split('\n\n').map((part)=>`<p>${part}</p>`).join('')}</div><button class="fate-next" onclick="this.closest('.fate-overlay').remove()">${t('close')}</button></div>`;
+  overlay.innerHTML = `<button class="overlay-close-x" onclick="this.closest('.fate-overlay').remove()">&times;</button><div class="fate-container legal-card"><div class="fate-final-title">${t('termsTitle')}</div><div class="legal-text">${bodyText.split('\n\n').map((part)=>`<p>${part}</p>`).join('')}</div></div>`;
   document.body.appendChild(overlay);
 }
 
@@ -6174,7 +6260,7 @@ const LEGAL_PRIVACY = {
 function showPrivacy() {
   const overlay = document.createElement('div'); overlay.className = 'fate-overlay active';
   const bodyText = LEGAL_PRIVACY[currentLang] || LEGAL_PRIVACY.en;
-  overlay.innerHTML = `<button class="overlay-close-x" onclick="this.closest('.fate-overlay').remove()">&times;</button><div class="fate-container legal-card"><div class="fate-final-title">${t('privacyTitle')}</div><div class="legal-text">${bodyText.split('\n\n').map((part)=>`<p>${part}</p>`).join('')}</div><button class="fate-next" onclick="this.closest('.fate-overlay').remove()">${t('close')}</button></div>`;
+  overlay.innerHTML = `<button class="overlay-close-x" onclick="this.closest('.fate-overlay').remove()">&times;</button><div class="fate-container legal-card"><div class="fate-final-title">${t('privacyTitle')}</div><div class="legal-text">${bodyText.split('\n\n').map((part)=>`<p>${part}</p>`).join('')}</div></div>`;
   document.body.appendChild(overlay);
 }
 
