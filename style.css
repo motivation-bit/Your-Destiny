@@ -1551,3 +1551,49 @@ html, body {
   .theme-colors { gap:7px; }
   .color-option { width:38px; height:38px; }
 }
+
+
+/* ===== Final multilingual / final-card polish ===== */
+.lang-selector { flex-wrap: wrap; justify-content: flex-end; max-width: 230px; row-gap: 6px; }
+.lang-btn { min-width: 42px; padding: 6px 9px; }
+.author-channel-btn, .fate-channel-btn {
+  display:inline-flex; align-items:center; justify-content:center;
+  min-height:44px; padding:11px 18px; margin-top:12px;
+  border-radius:13px; text-decoration:none;
+  background:linear-gradient(135deg,var(--gold-dark),var(--gold));
+  color:#1a0a00; font:700 .78rem 'Cinzel',serif; letter-spacing:.08em;
+  border:1px solid rgba(244,208,63,.55); box-shadow:0 8px 25px rgba(212,175,55,.18);
+}
+.author-legal-text { margin:18px 0 4px; padding:14px; border:1px solid rgba(212,175,55,.15); border-radius:14px; background:rgba(0,0,0,.18); color:var(--text-muted); text-align:left; font:.72rem/1.65 'Noto Serif',serif; }
+.final-channel-note { margin:18px auto 4px; max-width:340px; color:var(--text-secondary); font:.78rem/1.65 'Noto Serif',serif; text-align:center; }
+.final-actions { display:flex; flex-direction:column; align-items:stretch; gap:2px; margin-top:10px; }
+.final-actions .fate-next, .final-actions .labyrinth-next-btn, .final-actions .destiny-restart { width:100%; margin-top:0; }
+.about-card { max-width:410px !important; }
+.about-lead { margin:4px 0 16px; color:var(--text-primary); font:600 1rem/1.65 'Noto Serif',serif; text-align:left; }
+.about-body { color:var(--text-secondary); font:.88rem/1.75 'Noto Serif',serif; text-align:left; }
+.about-feature-grid { display:grid; grid-template-columns:1fr 1fr; gap:9px; margin:20px 0 8px; }
+.about-feature-grid > div { padding:11px 10px; border:1px solid var(--glass-border); border-radius:12px; background:rgba(255,255,255,.025); color:var(--gold); font:.72rem/1.45 'Cinzel',serif; }
+
+/* Kaleidoscope is a sequential colour journey: purple → blue → crimson → emerald → amber → purple. */
+.theme-kaleidoscope { --bg-solid:#0d0917; --accent:#7b3fb3; }
+.theme-kaleidoscope #app-container::before {
+  content:''; position:fixed; inset:-30%; z-index:0; pointer-events:none;
+  background:linear-gradient(125deg,#6f3aa8 0%,#264e8b 22%,#9b2f43 43%,#2d7b45 65%,#c18a19 83%,#6f3aa8 100%);
+  background-size:300% 300%; filter:blur(60px) saturate(125%); opacity:.28;
+  animation:kaleidoscopeSequential 22s ease-in-out infinite;
+}
+@keyframes kaleidoscopeSequential {
+  0% { background-position:0% 50%; transform:rotate(0deg) scale(1); }
+  20% { background-position:55% 50%; transform:rotate(4deg) scale(1.03); }
+  40% { background-position:100% 50%; transform:rotate(-3deg) scale(1.05); }
+  60% { background-position:45% 50%; transform:rotate(3deg) scale(1.03); }
+  80% { background-position:0% 50%; transform:rotate(-2deg) scale(1.05); }
+  100% { background-position:0% 50%; transform:rotate(0deg) scale(1); }
+}
+@media (max-width:380px) {
+  .lang-selector { max-width:200px; gap:5px; }
+  .lang-btn { min-width:39px; padding:5px 7px; font-size:.68rem; }
+  .about-feature-grid { grid-template-columns:1fr; }
+}
+
+#app-container > * { position:relative; z-index:1; }

@@ -97,23 +97,118 @@ const T = {
   }
 };
 
-function t(key) { return T[currentLang][key] || key; }
+// Дополнительные языки интерфейса. Английский используется только как безопасный
+// резерв для контента, для которого ещё не добавлена отдельная редакция.
+T.pt = {
+  ...T.en,
+  novels:'Novelas', surveys:'Questionários', contacts:'Contactos', favorites:'Favoritos', settings:'Definições',
+  loading:'A carregar histórias...', emptyNovels:'As histórias chegarão em breve...', emptySurveys:'Questionários em desenvolvimento...', emptyContacts:'Contactos em desenvolvimento...', emptyFavorites:'Os teus momentos especiais aparecerão aqui...',
+  music:'Música', theme:'Cor do tema', language:'Idioma', promo:'Código promocional', activate:'Ativar', promoPlaceholder:'Introduza o código promocional...', promoHint:'Encontre códigos promocionais no nosso canal do Telegram',
+  vipStatus:'Estado VIP', freeVersion:'Versão gratuita', vipActive:'VIP ativo', timeLeft:'Restante', days:'d', hours:'h', minutes:'min', timeCapsule:'Cápsula do Tempo', rateApp:'Avaliar aplicação', storySchedule:'Calendário de Histórias',
+  supportAuthor:'Apoiar o Autor', becomeAuthor:'Tornar-se Autor', wisdom:'Sabedoria do Destino', chronicles:'Crónicas do Destino', labyrinth:'Labirinto de Enigmas', trueDestiny:'Qual é o teu Verdadeiro Destino?', about:'Sobre o jogo',
+  terms:'Termos de Utilização', privacy:'Política de Privacidade', community:'Canal da Comunidade', back:'Voltar', close:'Fechar', continue:'Continuar', restart:'Começar de novo', exit:'Sair para o menu', pause:'Pausa',
+  lockTitle:'VIP necessário', lockText:'Concluíste 2 capítulos gratuitos. Ativa o VIP para aceder a todos os capítulos.', goToChannel:'Ir para o canal', enterPromo:'Introduzir código promocional', toMenu:'Para o menu',
+  wallet:'Carteira de apoio', copy:'Copiar', copied:'Copiado', soon:'Em breve', thanks:'Obrigado', wisdomClose:'Seguinte', destinyStart:'Começar previsão', destinyRestart:'Fazer novamente',
+  riddleEnter:'Entrar no Labirinto', riddleReady:'Pronto? O Labirinto espera por ti.', riddleRules1:'Uma de cada vez: cada enigma é desbloqueado após a resposta ao anterior.', riddleRules2:'Não tenhas pressa: pensa o tempo que precisares.', riddleRules3:'Ajuda: duas pistas. As pistas apenas orientam o raciocínio.',
+  lookAnswer:'Ver resposta', answerConfirm:'Tens a certeza de que queres revelar a resposta?', backToRiddle:'Voltar ao enigma', yesOpen:'Sim, revelar', goFurther:'Continuar', riddleComplete:'Parabéns', riddleCompleteText:'Conquistaste o Labirinto de Enigmas!',
+  fateComplete:'Crónicas concluídas', fateCompleteText:'Todos os dilemas foram concluídos. Novos aparecerão nas atualizações.',
+  aboutText1:'Your Destiny é um espaço narrativo de escolhas, histórias, enigmas e reflexões sobre decisões e destino.', aboutText2:'Histórias que convidam a escolher e a descobrir diferentes caminhos.', aboutText3:'Crónicas do Destino — dilemas que colocam escolhas difíceis diante de ti.', aboutText4:'Labirinto de Enigmas — desafios lógicos com dificuldade crescente.', aboutText5:'Verdadeiro Destino — um questionário de arquétipos baseado nas tuas escolhas.', aboutText6:'Sabedoria do Destino — pensamentos para parar, observar e continuar.',
+  termsTitle:'Termos de Utilização', privacyTitle:'Política de Privacidade', stepIntoUnknown:'Entrar no desconhecido...', next:'Seguinte', hint:'Pista', hintUsed:'Usada', destinyResultTitle:'O Teu Verdadeiro Destino', destinyResultDesc:'Arquétipo revelado', destinyRestartBtn:'Fazer novamente', empty:'Vazio por agora...'
+};
+T.de = {
+  ...T.en,
+  novels:'Novellen', surveys:'Fragebögen', contacts:'Kontakte', favorites:'Favoriten', settings:'Einstellungen', loading:'Geschichten werden geladen...', emptyNovels:'Geschichten erscheinen bald...', emptySurveys:'Fragebögen in Entwicklung...', emptyContacts:'Kontakte in Entwicklung...', emptyFavorites:'Deine besonderen Momente erscheinen hier...',
+  music:'Musik', theme:'Themenfarbe', language:'Sprache', promo:'Promo-Code', activate:'Aktivieren', promoPlaceholder:'Promo-Code eingeben...', promoHint:'Promo-Codes findest du im Telegram-Kanal', vipStatus:'VIP-Status', freeVersion:'Kostenlose Version', vipActive:'VIP aktiv', timeLeft:'Verbleibend', days:'T', hours:'Std.', minutes:'Min.', timeCapsule:'Zeitkapsel', rateApp:'App bewerten', storySchedule:'Geschichtenplan',
+  supportAuthor:'Autor unterstützen', becomeAuthor:'Autor werden', wisdom:'Weisheit des Schicksals', chronicles:'Chroniken des Schicksals', labyrinth:'Labyrinth der Rätsel', trueDestiny:'Was ist dein wahres Schicksal?', about:'Über das Spiel', terms:'Nutzungsbedingungen', privacy:'Datenschutzerklärung', community:'Community-Kanal', back:'Zurück', close:'Schließen', continue:'Weiter', restart:'Neu beginnen', exit:'Zum Menü', pause:'Pause', lockTitle:'VIP erforderlich', lockText:'Du hast 2 kostenlose Kapitel abgeschlossen. Aktiviere VIP für alle Kapitel.', goToChannel:'Zum Kanal', enterPromo:'Promo-Code eingeben', toMenu:'Zum Menü', wallet:'Unterstützungs-Wallet', copy:'Kopieren', copied:'Kopiert', soon:'Bald', thanks:'Danke', wisdomClose:'Weiter', destinyStart:'Vorhersage starten', destinyRestart:'Neu starten',
+  riddleEnter:'Labyrinth betreten', riddleReady:'Bereit? Das Labyrinth wartet.', riddleRules1:'Eines nach dem anderen: Jedes Rätsel wird nach der vorherigen Antwort freigeschaltet.', riddleRules2:'Nimm dir Zeit und denke in Ruhe nach.', riddleRules3:'Hilfe: zwei Hinweise. Sie geben nur eine Denkrichtung vor.', lookAnswer:'Antwort anzeigen', answerConfirm:'Möchtest du die Antwort wirklich anzeigen?', backToRiddle:'Zurück zum Rätsel', yesOpen:'Ja, anzeigen', goFurther:'Weiter', riddleComplete:'Glückwunsch', riddleCompleteText:'Du hast das Rätsellabyrinth gemeistert!', fateComplete:'Chroniken abgeschlossen', fateCompleteText:'Alle Dilemmata wurden abgeschlossen. Neue erscheinen mit Updates.',
+  aboutText1:'Your Destiny ist ein interaktiver Raum aus Geschichten, Entscheidungen, Rätseln und Reflexionen über das Schicksal.', aboutText2:'Geschichten, in denen deine Entscheidungen unterschiedliche Wege eröffnen.', aboutText3:'Chroniken des Schicksals — Dilemmata, die schwierige Entscheidungen stellen.', aboutText4:'Rätsellabyrinth — logische Herausforderungen mit steigender Schwierigkeit.', aboutText5:'Wahres Schicksal — ein Archetypen-Test, der deine Entscheidungen auswertet.', aboutText6:'Weisheit des Schicksals — Gedanken zum Innehalten, Beobachten und Weitergehen.', termsTitle:'Nutzungsbedingungen', privacyTitle:'Datenschutzerklärung', stepIntoUnknown:'Ins Unbekannte...', next:'Weiter', hint:'Hinweis', hintUsed:'Verwendet', destinyResultTitle:'Dein wahres Schicksal', destinyResultDesc:'Archetyp enthüllt', destinyRestartBtn:'Neu starten', empty:'Derzeit leer...'
+};
+T.fr = {
+  ...T.en,
+  novels:'Romans', surveys:'Questionnaires', contacts:'Contacts', favorites:'Favoris', settings:'Paramètres', loading:'Chargement des histoires...', emptyNovels:'Les histoires arriveront bientôt...', emptySurveys:'Questionnaires en développement...', emptyContacts:'Contacts en développement...', emptyFavorites:'Tes moments précieux apparaîtront ici...',
+  music:'Musique', theme:'Couleur du thème', language:'Langue', promo:'Code promo', activate:'Activer', promoPlaceholder:'Entrer le code promo...', promoHint:'Les codes promo sont disponibles sur notre canal Telegram', vipStatus:'Statut VIP', freeVersion:'Version gratuite', vipActive:'VIP actif', timeLeft:'Restant', days:'j', hours:'h', minutes:'min', timeCapsule:'Capsule temporelle', rateApp:"Évaluer l’application", storySchedule:'Calendrier des histoires',
+  supportAuthor:"Soutenir l’auteur", becomeAuthor:'Devenir auteur', wisdom:'Sagesse du Destin', chronicles:'Chroniques du Destin', labyrinth:'Labyrinthe des énigmes', trueDestiny:'Quel est ton véritable destin ?', about:'À propos du jeu', terms:"Conditions d’utilisation", privacy:'Politique de confidentialité', community:'Canal de la communauté', back:'Retour', close:'Fermer', continue:'Continuer', restart:'Recommencer', exit:'Retour au menu', pause:'Pause', lockTitle:'VIP requis', lockText:'Tu as terminé 2 chapitres gratuits. Active le VIP pour accéder à tous les chapitres.', goToChannel:'Ouvrir le canal', enterPromo:'Entrer le code promo', toMenu:'Au menu', wallet:'Portefeuille de soutien', copy:'Copier', copied:'Copié', soon:'Bientôt', thanks:'Merci', wisdomClose:'Suivant', destinyStart:'Commencer la prédiction', destinyRestart:'Recommencer',
+  riddleEnter:'Entrer dans le Labyrinthe', riddleReady:'Prêt ? Le Labyrinthe t’attend.', riddleRules1:'Un par un : chaque énigme se débloque après la réponse à la précédente.', riddleRules2:'Prends ton temps et réfléchis autant que nécessaire.', riddleRules3:'Aide : deux indices. Ils donnent seulement une direction de réflexion.', lookAnswer:'Voir la réponse', answerConfirm:'Veux-tu vraiment révéler la réponse ?', backToRiddle:"Retour à l’énigme", yesOpen:'Oui, révéler', goFurther:'Continuer', riddleComplete:'Félicitations', riddleCompleteText:'Tu as vaincu le Labyrinthe des énigmes !', fateComplete:'Chroniques terminées', fateCompleteText:'Tous les dilemmes sont terminés. De nouveaux apparaîtront dans les mises à jour.',
+  aboutText1:'Your Destiny est un espace narratif de choix, d’histoires, d’énigmes et de réflexions sur le destin.', aboutText2:'Des histoires où tes choix ouvrent des chemins différents.', aboutText3:'Chroniques du Destin — des dilemmes qui mettent des choix difficiles face à toi.', aboutText4:'Labyrinthe des énigmes — des défis logiques à difficulté croissante.', aboutText5:'Véritable Destin — un questionnaire d’archétypes basé sur tes choix.', aboutText6:'Sagesse du Destin — des pensées pour s’arrêter, observer et avancer.', termsTitle:"Conditions d’utilisation", privacyTitle:'Politique de confidentialité', stepIntoUnknown:'Entrer dans l’inconnu...', next:'Suivant', hint:'Indice', hintUsed:'Utilisé', destinyResultTitle:'Ton véritable destin', destinyResultDesc:'Archétype révélé', destinyRestartBtn:'Recommencer', empty:'Vide pour le moment...'
+};
+
+
+
+// Дополнительные языки интерфейса. Английский используется только как безопасный
+// резерв для контента, для которого ещё не добавлена отдельная редакция.
+T.pt = {
+  ...T.en,
+  novels:'Novelas', surveys:'Questionários', contacts:'Contactos', favorites:'Favoritos', settings:'Definições',
+  loading:'A carregar histórias...', emptyNovels:'As histórias chegarão em breve...', emptySurveys:'Questionários em desenvolvimento...', emptyContacts:'Contactos em desenvolvimento...', emptyFavorites:'Os teus momentos especiais aparecerão aqui...',
+  music:'Música', theme:'Cor do tema', language:'Idioma', promo:'Código promocional', activate:'Ativar', promoPlaceholder:'Introduza o código promocional...', promoHint:'Encontre códigos promocionais no nosso canal do Telegram',
+  vipStatus:'Estado VIP', freeVersion:'Versão gratuita', vipActive:'VIP ativo', timeLeft:'Restante', days:'d', hours:'h', minutes:'min', timeCapsule:'Cápsula do Tempo', rateApp:'Avaliar aplicação', storySchedule:'Calendário de Histórias',
+  supportAuthor:'Apoiar o Autor', becomeAuthor:'Tornar-se Autor', wisdom:'Sabedoria do Destino', chronicles:'Crónicas do Destino', labyrinth:'Labirinto de Enigmas', trueDestiny:'Qual é o teu Verdadeiro Destino?', about:'Sobre o jogo',
+  terms:'Termos de Utilização', privacy:'Política de Privacidade', community:'Canal da Comunidade', back:'Voltar', close:'Fechar', continue:'Continuar', restart:'Começar de novo', exit:'Sair para o menu', pause:'Pausa',
+  lockTitle:'VIP necessário', lockText:'Concluíste 2 capítulos gratuitos. Ativa o VIP para aceder a todos os capítulos.', goToChannel:'Ir para o canal', enterPromo:'Introduzir código promocional', toMenu:'Para o menu',
+  wallet:'Carteira de apoio', copy:'Copiar', copied:'Copiado', soon:'Em breve', thanks:'Obrigado', wisdomClose:'Seguinte', destinyStart:'Começar previsão', destinyRestart:'Fazer novamente',
+  riddleEnter:'Entrar no Labirinto', riddleReady:'Pronto? O Labirinto espera por ti.', riddleRules1:'Uma de cada vez: cada enigma é desbloqueado após a resposta ao anterior.', riddleRules2:'Não tenhas pressa: pensa o tempo que precisares.', riddleRules3:'Ajuda: duas pistas. As pistas apenas orientam o raciocínio.',
+  lookAnswer:'Ver resposta', answerConfirm:'Tens a certeza de que queres revelar a resposta?', backToRiddle:'Voltar ao enigma', yesOpen:'Sim, revelar', goFurther:'Continuar', riddleComplete:'Parabéns', riddleCompleteText:'Conquistaste o Labirinto de Enigmas!',
+  fateComplete:'Crónicas concluídas', fateCompleteText:'Todos os dilemas foram concluídos. Novos aparecerão nas atualizações.',
+  aboutText1:'Your Destiny é um espaço narrativo de escolhas, histórias, enigmas e reflexões sobre decisões e destino.', aboutText2:'Histórias que convidam a escolher e a descobrir diferentes caminhos.', aboutText3:'Crónicas do Destino — dilemas que colocam escolhas difíceis diante de ti.', aboutText4:'Labirinto de Enigmas — desafios lógicos com dificuldade crescente.', aboutText5:'Verdadeiro Destino — um questionário de arquétipos baseado nas tuas escolhas.', aboutText6:'Sabedoria do Destino — pensamentos para parar, observar e continuar.',
+  termsTitle:'Termos de Utilização', privacyTitle:'Política de Privacidade', stepIntoUnknown:'Entrar no desconhecido...', next:'Seguinte', hint:'Pista', hintUsed:'Usada', destinyResultTitle:'O Teu Verdadeiro Destino', destinyResultDesc:'Arquétipo revelado', destinyRestartBtn:'Fazer novamente', empty:'Vazio por agora...'
+};
+T.de = {
+  ...T.en,
+  novels:'Novellen', surveys:'Fragebögen', contacts:'Kontakte', favorites:'Favoriten', settings:'Einstellungen', loading:'Geschichten werden geladen...', emptyNovels:'Geschichten erscheinen bald...', emptySurveys:'Fragebögen in Entwicklung...', emptyContacts:'Kontakte in Entwicklung...', emptyFavorites:'Deine besonderen Momente erscheinen hier...',
+  music:'Musik', theme:'Themenfarbe', language:'Sprache', promo:'Promo-Code', activate:'Aktivieren', promoPlaceholder:'Promo-Code eingeben...', promoHint:'Promo-Codes findest du im Telegram-Kanal', vipStatus:'VIP-Status', freeVersion:'Kostenlose Version', vipActive:'VIP aktiv', timeLeft:'Verbleibend', days:'T', hours:'Std.', minutes:'Min.', timeCapsule:'Zeitkapsel', rateApp:'App bewerten', storySchedule:'Geschichtenplan',
+  supportAuthor:'Autor unterstützen', becomeAuthor:'Autor werden', wisdom:'Weisheit des Schicksals', chronicles:'Chroniken des Schicksals', labyrinth:'Labyrinth der Rätsel', trueDestiny:'Was ist dein wahres Schicksal?', about:'Über das Spiel', terms:'Nutzungsbedingungen', privacy:'Datenschutzerklärung', community:'Community-Kanal', back:'Zurück', close:'Schließen', continue:'Weiter', restart:'Neu beginnen', exit:'Zum Menü', pause:'Pause', lockTitle:'VIP erforderlich', lockText:'Du hast 2 kostenlose Kapitel abgeschlossen. Aktiviere VIP für alle Kapitel.', goToChannel:'Zum Kanal', enterPromo:'Promo-Code eingeben', toMenu:'Zum Menü', wallet:'Unterstützungs-Wallet', copy:'Kopieren', copied:'Kopiert', soon:'Bald', thanks:'Danke', wisdomClose:'Weiter', destinyStart:'Vorhersage starten', destinyRestart:'Neu starten',
+  riddleEnter:'Labyrinth betreten', riddleReady:'Bereit? Das Labyrinth wartet.', riddleRules1:'Eines nach dem anderen: Jedes Rätsel wird nach der vorherigen Antwort freigeschaltet.', riddleRules2:'Nimm dir Zeit und denke in Ruhe nach.', riddleRules3:'Hilfe: zwei Hinweise. Sie geben nur eine Denkrichtung vor.', lookAnswer:'Antwort anzeigen', answerConfirm:'Möchtest du die Antwort wirklich anzeigen?', backToRiddle:'Zurück zum Rätsel', yesOpen:'Ja, anzeigen', goFurther:'Weiter', riddleComplete:'Glückwunsch', riddleCompleteText:'Du hast das Rätsellabyrinth gemeistert!', fateComplete:'Chroniken abgeschlossen', fateCompleteText:'Alle Dilemmata wurden abgeschlossen. Neue erscheinen mit Updates.',
+  aboutText1:'Your Destiny ist ein interaktiver Raum aus Geschichten, Entscheidungen, Rätseln und Reflexionen über das Schicksal.', aboutText2:'Geschichten, in denen deine Entscheidungen unterschiedliche Wege eröffnen.', aboutText3:'Chroniken des Schicksals — Dilemmata, die schwierige Entscheidungen stellen.', aboutText4:'Rätsellabyrinth — logische Herausforderungen mit steigender Schwierigkeit.', aboutText5:'Wahres Schicksal — ein Archetypen-Test, der deine Entscheidungen auswertet.', aboutText6:'Weisheit des Schicksals — Gedanken zum Innehalten, Beobachten und Weitergehen.', termsTitle:'Nutzungsbedingungen', privacyTitle:'Datenschutzerklärung', stepIntoUnknown:'Ins Unbekannte...', next:'Weiter', hint:'Hinweis', hintUsed:'Verwendet', destinyResultTitle:'Dein wahres Schicksal', destinyResultDesc:'Archetyp enthüllt', destinyRestartBtn:'Neu starten', empty:'Derzeit leer...'
+};
+T.fr = {
+  ...T.en,
+  novels:'Romans', surveys:'Questionnaires', contacts:'Contacts', favorites:'Favoris', settings:'Paramètres', loading:'Chargement des histoires...', emptyNovels:'Les histoires arriveront bientôt...', emptySurveys:'Questionnaires en développement...', emptyContacts:'Contacts en développement...', emptyFavorites:'Tes moments précieux apparaîtront ici...',
+  music:'Musique', theme:'Couleur du thème', language:'Langue', promo:'Code promo', activate:'Activer', promoPlaceholder:'Entrer le code promo...', promoHint:'Les codes promo sont disponibles sur notre canal Telegram', vipStatus:'Statut VIP', freeVersion:'Version gratuite', vipActive:'VIP actif', timeLeft:'Restant', days:'j', hours:'h', minutes:'min', timeCapsule:'Capsule temporelle', rateApp:"Évaluer l’application", storySchedule:'Calendrier des histoires',
+  supportAuthor:"Soutenir l’auteur", becomeAuthor:'Devenir auteur', wisdom:'Sagesse du Destin', chronicles:'Chroniques du Destin', labyrinth:'Labyrinthe des énigmes', trueDestiny:'Quel est ton véritable destin ?', about:'À propos du jeu', terms:"Conditions d’utilisation", privacy:'Politique de confidentialité', community:'Canal de la communauté', back:'Retour', close:'Fermer', continue:'Continuer', restart:'Recommencer', exit:'Retour au menu', pause:'Pause', lockTitle:'VIP requis', lockText:'Tu as terminé 2 chapitres gratuits. Active le VIP pour accéder à tous les chapitres.', goToChannel:'Ouvrir le canal', enterPromo:'Entrer le code promo', toMenu:'Au menu', wallet:'Portefeuille de soutien', copy:'Copier', copied:'Copié', soon:'Bientôt', thanks:'Merci', wisdomClose:'Suivant', destinyStart:'Commencer la prédiction', destinyRestart:'Recommencer',
+  riddleEnter:'Entrer dans le Labyrinthe', riddleReady:'Prêt ? Le Labyrinthe t’attend.', riddleRules1:'Un par un : chaque énigme se débloque après la réponse à la précédente.', riddleRules2:'Prends ton temps et réfléchis autant que nécessaire.', riddleRules3:'Aide : deux indices. Ils donnent seulement une direction de réflexion.', lookAnswer:'Voir la réponse', answerConfirm:'Veux-tu vraiment révéler la réponse ?', backToRiddle:"Retour à l’énigme", yesOpen:'Oui, révéler', goFurther:'Continuer', riddleComplete:'Félicitations', riddleCompleteText:'Tu as vaincu le Labyrinthe des énigmes !', fateComplete:'Chroniques terminées', fateCompleteText:'Tous les dilemmes sont terminés. De nouveaux apparaîtront dans les mises à jour.',
+  aboutText1:'Your Destiny est un espace narratif de choix, d’histoires, d’énigmes et de réflexions sur le destin.', aboutText2:'Des histoires où tes choix ouvrent des chemins différents.', aboutText3:'Chroniques du Destin — des dilemmes qui mettent des choix difficiles face à toi.', aboutText4:'Labyrinthe des énigmes — des défis logiques à difficulté croissante.', aboutText5:'Véritable Destin — un questionnaire d’archétypes basé sur tes choix.', aboutText6:'Sagesse du Destin — des pensées pour s’arrêter, observer et avancer.', termsTitle:"Conditions d’utilisation", privacyTitle:'Politique de confidentialité', stepIntoUnknown:'Entrer dans l’inconnu...', next:'Suivant', hint:'Indice', hintUsed:'Utilisé', destinyResultTitle:'Ton véritable destin', destinyResultDesc:'Archétype révélé', destinyRestartBtn:'Recommencer', empty:'Vide pour le moment...'
+};
+
+const EXTRA_I18N = {
+  ru:{vipActivated30:'VIP активирован на 30 дней',invalidPromo:'Неверный промокод',supportDesc:'Поддержка помогает сохранять развитие Your Destiny, создавать новые истории и поддерживать работу проекта.',authorDesc:'Раздел для авторов, которые хотят предложить проекту собственные истории, сценарии, загадки, визуальные идеи или другие оригинальные материалы.',authorStories:'Истории и сценарии',authorRiddles:'Загадки и логические задачи',authorIdeas:'Идеи и концепции новых разделов',authorLegal:'Отправляя материал, автор подтверждает, что обладает необходимыми правами на него. Передача материала не гарантирует публикацию или оплату. Условия использования, формат вознаграждения и права на опубликованный материал согласовываются отдельно до его принятия в проект.',writeDirect:'Написать в Direct',channelMore:'Больше историй, обновлений и материалов — в Telegram-канале.',openTelegram:'Telegram', capsule:'Точная дата и время первого входа', wisdomLabel:'ЗНАК СУДЬБЫ', wisdomFooter:'слово судьбы', hintConfirm:'Точно хочешь открыть подсказку? Она будет использована и не даст готового ответа.', hintYes:'Да, открыть', hintNo:'Назад', countOf:'из', destinyIntro:'10 вопросов помогут раскрыть твой архетип.', finalChannel:'В Telegram-канале есть ещё истории, новые испытания и обновления.', aboutLead:'Your Destiny — это интерактивное пространство, где выбор, логика, история и самоисследование соединяются в одном путешествии.', aboutBody:'Здесь можно проходить истории и дилеммы, проверять логику в Лабиринте, искать свой архетип, возвращаться к мыслям в Мудрости Судьбы и постепенно открывать новые грани проекта.'},
+  en:{vipActivated30:'VIP activated for 30 days',invalidPromo:'Invalid promo code',supportDesc:'Your support helps Your Destiny grow, create new stories and keep the project running.',authorDesc:'A space for creators who want to submit original stories, scripts, riddles, visual ideas or other materials for Your Destiny.',authorStories:'Stories and scripts',authorRiddles:'Riddles and logic',authorIdeas:'Ideas and new section concepts',authorLegal:'By submitting material, the author confirms that they hold the necessary rights to it. Submission does not guarantee publication or payment. Usage terms, compensation and rights for accepted material are agreed separately before publication.',writeDirect:'Write in Direct',channelMore:'More stories, updates and materials are available on the Telegram channel.',openTelegram:'Telegram',capsule:'Exact date and time of first entry',wisdomLabel:'SIGN OF FATE',wisdomFooter:'word of fate',hintConfirm:'Are you sure you want to open the hint? It will be used and will not reveal the answer.',hintYes:'Yes, open',hintNo:'Back',countOf:'of',destinyIntro:'10 questions will help reveal your archetype.',finalChannel:'There are more stories, new challenges and updates on the Telegram channel.',aboutLead:'Your Destiny is an interactive space where choice, logic, story and self-discovery meet in one journey.',aboutBody:'Explore stories and dilemmas, test your logic in the Labyrinth, discover your archetype, return to the Wisdom of Fate and gradually uncover new layers of the project.'},
+  es:{vipActivated30:'VIP activado durante 30 días',invalidPromo:'Código promocional no válido',supportDesc:'Tu apoyo ayuda a que Your Destiny crezca, cree nuevas historias y mantenga el proyecto.',authorDesc:'Un espacio para creadores que quieran proponer historias, guiones, acertijos, ideas visuales u otros materiales originales.',authorStories:'Historias y guiones',authorRiddles:'Acertijos y lógica',authorIdeas:'Ideas y conceptos de nuevas secciones',authorLegal:'Al enviar material, el autor confirma que posee los derechos necesarios. El envío no garantiza publicación ni pago. Las condiciones de uso, remuneración y derechos del material aceptado se acuerdan por separado antes de su publicación.',writeDirect:'Escribir por Direct',channelMore:'Más historias, novedades y materiales están en el canal de Telegram.',openTelegram:'Telegram',capsule:'Fecha y hora exactas de la primera entrada',wisdomLabel:'SEÑAL DEL DESTINO',wisdomFooter:'palabra del destino',hintConfirm:'¿Seguro que quieres abrir la pista? Se usará y no dará la respuesta.',hintYes:'Sí, abrir',hintNo:'Volver',countOf:'de',destinyIntro:'10 preguntas te ayudarán a descubrir tu arquetipo.',finalChannel:'En el canal de Telegram hay más historias, nuevos retos y novedades.',aboutLead:'Your Destiny es un espacio interactivo donde elección, lógica, historias y autoconocimiento se unen en un solo viaje.',aboutBody:'Explora historias y dilemas, prueba tu lógica en el Laberinto, descubre tu arquetipo, vuelve a la Sabiduría del Destino y descubre nuevas capas del proyecto.'},
+  pt:{vipActivated30:'VIP ativado por 30 dias',invalidPromo:'Código promocional inválido',supportDesc:'O teu apoio ajuda o Your Destiny a crescer, criar novas histórias e manter o projeto.',authorDesc:'Um espaço para criadores que querem enviar histórias, guiões, enigmas, ideias visuais ou outros materiais originais.',authorStories:'Histórias e guiões',authorRiddles:'Enigmas e lógica',authorIdeas:'Ideias e conceitos de novas secções',authorLegal:'Ao enviar material, o autor confirma que possui os direitos necessários. O envio não garante publicação nem pagamento. As condições de utilização, remuneração e direitos do material aceite são acordadas separadamente antes da publicação.',writeDirect:'Escrever por Direct',channelMore:'Mais histórias, novidades e materiais estão no canal do Telegram.',openTelegram:'Telegram',capsule:'Data e hora exatas da primeira entrada',wisdomLabel:'SINAL DO DESTINO',wisdomFooter:'palavra do destino',hintConfirm:'Tens a certeza de que queres abrir a pista? Ela será usada e não dará a resposta.',hintYes:'Sim, abrir',hintNo:'Voltar',countOf:'de',destinyIntro:'10 perguntas vão ajudar a revelar o teu arquétipo.',finalChannel:'No canal do Telegram há mais histórias, novos desafios e atualizações.',aboutLead:'Your Destiny é um espaço interativo onde escolha, lógica, histórias e autoconhecimento se encontram numa só viagem.',aboutBody:'Explora histórias e dilemas, testa a lógica no Labirinto, descobre o teu arquétipo, regressa à Sabedoria do Destino e descobre novas camadas do projeto.'},
+  de:{vipActivated30:'VIP für 30 Tage aktiviert',invalidPromo:'Ungültiger Promo-Code',supportDesc:'Deine Unterstützung hilft Your Destiny zu wachsen, neue Geschichten zu erstellen und das Projekt weiterzuführen.',authorDesc:'Ein Bereich für Kreative, die eigene Geschichten, Skripte, Rätsel, visuelle Ideen oder andere Originalmaterialien einreichen möchten.',authorStories:'Geschichten und Skripte',authorRiddles:'Rätsel und Logik',authorIdeas:'Ideen und Konzepte für neue Bereiche',authorLegal:'Mit der Einreichung bestätigt der Autor, dass er die erforderlichen Rechte besitzt. Eine Einreichung garantiert weder Veröffentlichung noch Vergütung. Nutzungsbedingungen, Vergütung und Rechte an angenommenem Material werden vor der Veröffentlichung gesondert vereinbart.',writeDirect:'Im Direct schreiben',channelMore:'Weitere Geschichten, Updates und Materialien findest du im Telegram-Kanal.',openTelegram:'Telegram',capsule:'Genaues Datum und Uhrzeit des ersten Zugangs',wisdomLabel:'ZEICHEN DES SCHICKSALS',wisdomFooter:'Wort des Schicksals',hintConfirm:'Möchtest du den Hinweis wirklich öffnen? Er wird verbraucht und verrät nicht die Antwort.',hintYes:'Ja, öffnen',hintNo:'Zurück',countOf:'von',destinyIntro:'10 Fragen helfen dir, deinen Archetyp zu entdecken.',finalChannel:'Im Telegram-Kanal gibt es weitere Geschichten, neue Herausforderungen und Updates.',aboutLead:'Your Destiny ist ein interaktiver Raum, in dem Entscheidungen, Logik, Geschichten und Selbsterkenntnis auf einer Reise zusammenkommen.',aboutBody:'Erlebe Geschichten und Dilemmata, teste deine Logik im Labyrinth, entdecke deinen Archetyp, kehre zur Weisheit des Schicksals zurück und entdecke neue Ebenen des Projekts.'},
+  fr:{vipActivated30:'VIP activé pour 30 jours',invalidPromo:'Code promo invalide',supportDesc:'Ton soutien aide Your Destiny à grandir, créer de nouvelles histoires et maintenir le projet.',authorDesc:'Un espace pour les créateurs qui souhaitent proposer des histoires, scénarios, énigmes, idées visuelles ou autres contenus originaux.',authorStories:'Histoires et scénarios',authorRiddles:'Énigmes et logique',authorIdeas:'Idées et concepts de nouvelles sections',authorLegal:'En envoyant un contenu, l’auteur confirme disposer des droits nécessaires. L’envoi ne garantit ni publication ni paiement. Les conditions d’utilisation, la rémunération et les droits liés à un contenu accepté sont convenus séparément avant publication.',writeDirect:'Écrire en Direct',channelMore:'Plus d’histoires, de nouveautés et de contenus sont disponibles sur le canal Telegram.',openTelegram:'Telegram',capsule:'Date et heure exactes de la première entrée',wisdomLabel:'SIGNE DU DESTIN',wisdomFooter:'parole du destin',hintConfirm:'Veux-tu vraiment ouvrir l’indice ? Il sera utilisé et ne donnera pas la réponse.',hintYes:'Oui, ouvrir',hintNo:'Retour',countOf:'sur',destinyIntro:'10 questions t’aideront à révéler ton archétype.',finalChannel:'Le canal Telegram contient encore des histoires, de nouveaux défis et des mises à jour.',aboutLead:'Your Destiny est un espace interactif où choix, logique, histoires et connaissance de soi se rencontrent au cours d’un même voyage.',aboutBody:'Découvre des histoires et des dilemmes, teste ta logique dans le Labyrinthe, révèle ton archétype, retrouve la Sagesse du Destin et découvre progressivement de nouvelles facettes du projet.'}
+};
+for (const lang of Object.keys(EXTRA_I18N)) Object.assign(T[lang], EXTRA_I18N[lang]);
+
+function t(key) { return (T[currentLang] && T[currentLang][key]) || T.en[key] || key; }
+function loc(value) { return value && (value[currentLang] ?? value.en ?? value.ru ?? Object.values(value)[0]) || ''; }
+const DATE_LOCALES = { ru:'ru-RU', en:'en-GB', es:'es-ES', pt:'pt-PT', de:'de-DE', fr:'fr-FR' };
+const CHANNEL_URL = 'https://t.me/YourDestiny_Official';
+const DIRECT_URL = 'https://t.me/YourDestiny_Official?direct';
 
 const THEMES = [
-  { id: 'purple', name: { ru: 'Королевский Пурпур', en: 'Royal Purple', es: 'Púrpura Real' }, grad: 'linear-gradient(135deg,#6f3aa8,#2e1a4a)' },
-  { id: 'sapphire', name: { ru: 'Полночный Сапфир', en: 'Midnight Sapphire', es: 'Zafiro de Medianoche' }, grad: 'linear-gradient(135deg,#264e8b,#101d3c)' },
-  { id: 'crimson', name: { ru: 'Багровый Занавес', en: 'Crimson Curtain', es: 'Telón Carmesí' }, grad: 'linear-gradient(135deg,#9b2f43,#4a1515)' },
-  { id: 'emerald', name: { ru: 'Изумрудный Лес', en: 'Emerald Forest', es: 'Bosque Esmeralda' }, grad: 'linear-gradient(135deg,#2d7b45,#102f20)' },
-  { id: 'amber', name: { ru: 'Янтарные Сумерки', en: 'Amber Twilight', es: 'Crepúsculo Ámbar' }, grad: 'linear-gradient(135deg,#c18a19,#5a3609)' },
-  { id: 'kaleidoscope', name: { ru: 'Калейдоскоп', en: 'Kaleidoscope', es: 'Caleidoscopio' }, grad: 'conic-gradient(from 0deg,#7b3fb3,#2d6a9b,#2d7b45,#c18a19,#9b2f43,#7b3fb3)' }
+  { id: 'purple', name: { ru: 'Королевский Пурпур', en: 'Royal Purple', es: 'Púrpura Real', pt:'Púrpura Real', de:'Königliches Purpur', fr:'Pourpre Royal' }, grad: 'linear-gradient(135deg,#6f3aa8,#2e1a4a)' },
+  { id: 'sapphire', name: { ru: 'Полночный Сапфир', en: 'Midnight Sapphire', es: 'Zafiro de Medianoche', pt:'Safira da Meia-Noite', de:'Mitternachtssaphir', fr:'Saphir de Minuit' }, grad: 'linear-gradient(135deg,#264e8b,#101d3c)' },
+  { id: 'crimson', name: { ru: 'Багровый Занавес', en: 'Crimson Curtain', es: 'Telón Carmesí', pt:'Cortina Carmesim', de:'Karmesinroter Vorhang', fr:'Rideau Cramoisi' }, grad: 'linear-gradient(135deg,#9b2f43,#4a1515)' },
+  { id: 'emerald', name: { ru: 'Изумрудный Лес', en: 'Emerald Forest', es: 'Bosque Esmeralda', pt:'Floresta Esmeralda', de:'Smaragdwald', fr:'Forêt Émeraude' }, grad: 'linear-gradient(135deg,#2d7b45,#102f20)' },
+  { id: 'amber', name: { ru: 'Янтарные Сумерки', en: 'Amber Twilight', es: 'Crepúsculo Ámbar', pt:'Crepúsculo Âmbar', de:'Bernstein-Dämmerung', fr:'Crépuscule Ambré' }, grad: 'linear-gradient(135deg,#c18a19,#5a3609)' },
+  { id: 'kaleidoscope', name: { ru: 'Калейдоскоп', en: 'Kaleidoscope', es: 'Caleidoscopio', pt:'Calidoscópio', de:'Kaleidoskop', fr:'Kaléidoscope' }, grad: 'conic-gradient(from 0deg,#7b3fb3,#2d6a9b,#2d7b45,#c18a19,#9b2f43,#7b3fb3)' }
 ];
 
 
 function detectLanguage() {
-  const telegramLang = tg?.initDataUnsafe?.user?.language_code;
-  const browserLang = (navigator.language || navigator.userLanguage || '').toLowerCase().split('-')[0];
-  const lang = (telegramLang || browserLang || '').toLowerCase().split('-')[0];
-  return ['ru', 'en'].includes(lang) ? lang : 'en';
+  const code = (tg?.initDataUnsafe?.user?.language_code || navigator.language || navigator.userLanguage || '').toLowerCase().split('-')[0];
+  const cis = ['ru','kk','be','ky','uk','uz','tg','tk','az','hy','ro','mo'];
+  if (cis.includes(code)) return 'ru';
+  if (['es','pt','de','fr','en'].includes(code)) return code;
+  return 'en';
+}
+
+function formatFirstVisit(value, includeTime = false) {
+  const d = new Date(value);
+  const opts = includeTime
+    ? { day:'numeric', month:'long', year:'numeric', hour:'2-digit', minute:'2-digit', hour12:false }
+    : { day:'numeric', month:'long', year:'numeric' };
+  return d.toLocaleString(DATE_LOCALES[currentLang] || 'en-GB', opts);
 }
 
 function initFirstVisit() {
@@ -123,18 +218,22 @@ function initFirstVisit() {
     localStorage.setItem('first_visit_at', firstVisit);
   }
   const el = document.getElementById('first-visit-date');
-  if (el) {
-    const d = new Date(firstVisit);
-    el.textContent = d.toLocaleDateString(currentLang === 'ru' ? 'ru-RU' : currentLang === 'es' ? 'es-ES' : 'en-GB', {day:'numeric', month:'long', year:'numeric'});
-  }
+  if (el) el.textContent = formatFirstVisit(firstVisit, true);
 }
 
 function showTimeCapsule() {
   initFirstVisit();
   const firstVisit = localStorage.getItem('first_visit_at');
-  const d = new Date(firstVisit);
-  const formatted = d.toLocaleDateString(currentLang === 'ru' ? 'ru-RU' : currentLang === 'es' ? 'es-ES' : 'en-GB', {day:'numeric', month:'long', year:'numeric'});
-  showInfoOverlay(t('timeCapsule'), currentLang === 'ru' ? `Ты впервые открыл игру ${formatted}. Эта дата сохранена как начало твоего пути в Your Destiny.` : currentLang === 'es' ? `Abriste el juego por primera vez el ${formatted}. Esta fecha marca el comienzo de tu camino en Your Destiny.` : `You first entered the game on ${formatted}. This date marks the beginning of your journey in Your Destiny.`);
+  const formatted = formatFirstVisit(firstVisit, true);
+  const texts = {
+    ru:`Ты впервые вошёл в Your Destiny: ${formatted}. Эта дата и точное время сохранены как начало твоего пути.`,
+    en:`You first entered Your Destiny on ${formatted}. This exact date and time mark the beginning of your journey.`,
+    es:`Entraste por primera vez en Your Destiny el ${formatted}. Esta fecha y hora exactas marcan el comienzo de tu camino.`,
+    pt:`Entraste pela primeira vez no Your Destiny em ${formatted}. Esta data e hora exatas marcam o início do teu caminho.`,
+    de:`Du hast Your Destiny erstmals am ${formatted} geöffnet. Dieses genaue Datum und diese Uhrzeit markieren den Beginn deiner Reise.`,
+    fr:`Tu as ouvert Your Destiny pour la première fois le ${formatted}. Cette date et cette heure précises marquent le début de ton parcours.`
+  };
+  showInfoOverlay(t('timeCapsule'), texts[currentLang] || texts.en);
 }
 
 function showInfoOverlay(title, text) {
@@ -147,7 +246,7 @@ function showInfoOverlay(title, text) {
 // ---------- Инициализация ----------
 document.addEventListener('DOMContentLoaded', () => {
   initTelegram();
-  currentLang = detectLanguage();
+  currentLang = localStorage.getItem('lang') || detectLanguage();
   localStorage.setItem('lang', currentLang);
   initParticles();
   initNavigation();
@@ -263,8 +362,8 @@ function switchScreen(screen) {
 }
 
 function loadSettings() {
-  const savedTheme = localStorage.getItem('theme') || 'purple';
-  setTheme(savedTheme);
+  const savedTheme = THEMES.some(x => x.id === localStorage.getItem('theme')) ? localStorage.getItem('theme') : 'purple';
+  setTheme(savedTheme || 'purple');
   const effects = localStorage.getItem('effects_enabled');
   if (effects === 'false') {
     visualEffectsEnabled = false;
@@ -288,7 +387,7 @@ function setTheme(theme) {
   localStorage.setItem('theme', theme);
   renderThemeColors();
   const th = THEMES.find(x => x.id === theme);
-  document.getElementById('theme-name').textContent = th ? th.name[currentLang] : theme;
+  document.getElementById('theme-name').textContent = th ? loc(th.name) : theme;
 }
 
 function setLanguage(lang) {
@@ -303,21 +402,24 @@ function setLanguage(lang) {
 }
 
 function updateLanguageUI() {
-  const ruBtn = document.getElementById('lang-ru-btn');
-  const enBtn = document.getElementById('lang-en-btn');
-  if (ruBtn) ruBtn.classList.toggle('active', currentLang === 'ru');
-  if (enBtn) enBtn.classList.toggle('active', currentLang === 'en');
-
+  ['ru','en','es','pt','de','fr'].forEach(lang => {
+    const btn = document.getElementById(`lang-${lang}-btn`);
+    if (btn) btn.classList.toggle('active', currentLang === lang);
+  });
+  document.documentElement.lang = currentLang;
   document.querySelectorAll('[data-t]').forEach(el => {
     const key = el.dataset.t;
     if (el.tagName === 'INPUT') { if (key === 'promoPlaceholder') el.placeholder = t(key); }
-    else { el.textContent = t(key); }
+    else el.textContent = t(key);
   });
-  document.getElementById('header-subtitle').textContent = t('novels');
+  const subtitle = document.getElementById('header-subtitle');
+  if (subtitle) subtitle.textContent = t('novels');
   const keys = ['novels','surveys','contacts','favorites','settings'];
   document.querySelectorAll('.nav-label').forEach((el, i) => { el.textContent = t(keys[i]); });
   const th = THEMES.find(x => x.id === currentTheme);
-  if (th) document.getElementById('theme-name').textContent = th.name[currentLang];
+  const themeName = document.getElementById('theme-name');
+  if (th && themeName) themeName.textContent = loc(th.name);
+  initFirstVisit();
 }
 
 function isVip() {
@@ -364,13 +466,13 @@ function activatePromo() {
     const expires = new Date(Date.now() + 30 * 24 * 60 * 60 * 1000);
     localStorage.setItem('vip_data', JSON.stringify({ code, activated: new Date().toISOString(), expires: expires.toISOString(), configCode: validCode }));
     status.className = 'promo-status success';
-    status.textContent = currentLang === 'ru' ? 'VIP активирован на 30 дней' : currentLang === 'en' ? 'VIP activated for 30 days' : 'VIP activado por 30 días';
+    status.textContent = t('vipActivated30');
     status.style.display = 'block';
     input.value = '';
     updateVipDisplay();
   } else {
     status.className = 'promo-status error';
-    status.textContent = currentLang === 'ru' ? 'Неверный промокод' : currentLang === 'en' ? 'Invalid promo code' : 'Código promocional inválido';
+    status.textContent = t('invalidPromo');
     status.style.display = 'block';
   }
 }
@@ -390,14 +492,14 @@ function showToast(message) {
 function showSupportAuthor() {
   const overlay = document.createElement('div');
   overlay.className = 'fate-overlay active';
-  overlay.innerHTML = `<button class="overlay-close-x" onclick="this.closest('.fate-overlay').remove()">&times;</button><div class="author-card"><div class="author-emblem">✦</div><div class="author-title">${t('supportAuthor')}</div><div class="author-subtitle">${currentLang === 'ru' ? 'Если тебе нравится Your Destiny, ты можешь поддержать развитие проекта.' : currentLang === 'es' ? 'Si te gusta Your Destiny, puedes apoyar el desarrollo del proyecto.' : 'If you enjoy Your Destiny, you can support the project.'}</div><div class="wallet-card"><div class="wallet-label">${t('wallet')}</div><div class="wallet-address">${WALLET}</div><button class="wallet-copy-btn" onclick="copyWallet()">${t('copy')}</button></div></div>`;
+  overlay.innerHTML = `<button class="overlay-close-x" onclick="this.closest('.fate-overlay').remove()">&times;</button><div class="author-card"><div class="author-emblem">✦</div><div class="author-title">${t('supportAuthor')}</div><div class="author-subtitle">${t('supportDesc')}</div><div class="wallet-card"><div class="wallet-label">${t('wallet')}</div><div class="wallet-address">${WALLET}</div><button class="wallet-copy-btn" onclick="copyWallet()">${t('copy')}</button></div><a class="author-channel-btn" href="${CHANNEL_URL}" target="_blank" rel="noopener">${t('openTelegram')}</a></div>`;
   document.body.appendChild(overlay);
 }
 
 function showBecomeAuthor() {
   const overlay = document.createElement('div');
   overlay.className = 'fate-overlay active';
-  overlay.innerHTML = `<button class="overlay-close-x" onclick="this.closest('.fate-overlay').remove()">&times;</button><div class="author-card"><div class="author-emblem">✎</div><div class="author-title">${t('becomeAuthor')}</div><div class="author-subtitle">${currentLang === 'ru' ? 'Создавай истории, загадки и судьбы для Your Destiny. Авторские материалы могут стать частью будущих обновлений проекта.' : currentLang === 'es' ? 'Crea historias, acertijos y destinos para Your Destiny. Tus materiales pueden formar parte de futuras actualizaciones.' : 'Create stories, riddles and destinies for Your Destiny. Your work may become part of future updates.'}</div><div class="author-info-list"><div>✦ ${currentLang === 'ru' ? 'Истории и сценарии' : currentLang === 'es' ? 'Historias y guiones' : 'Stories and scripts'}</div><div>✦ ${currentLang === 'ru' ? 'Загадки и логические задачи' : currentLang === 'es' ? 'Acertijos y lógica' : 'Riddles and logic'}</div><div>✦ ${currentLang === 'ru' ? 'Идеи для новых разделов' : currentLang === 'es' ? 'Ideas para nuevas secciones' : 'Ideas for new sections'}</div></div><button class="fate-next" onclick="this.closest('.fate-overlay').remove()">${t('close')}</button></div>`;
+  overlay.innerHTML = `<button class="overlay-close-x" onclick="this.closest('.fate-overlay').remove()">&times;</button><div class="author-card"><div class="author-emblem">✎</div><div class="author-title">${t('becomeAuthor')}</div><div class="author-subtitle">${t('authorDesc')}</div><div class="author-info-list"><div>✦ ${t('authorStories')}</div><div>✦ ${t('authorRiddles')}</div><div>✦ ${t('authorIdeas')}</div></div><div class="author-legal-text">${t('authorLegal')}</div><a class="author-channel-btn" href="${DIRECT_URL}" target="_blank" rel="noopener">${t('writeDirect')}</a></div>`;
   document.body.appendChild(overlay);
 }
 
@@ -470,18 +572,18 @@ function renderFateQuestion(index) {
     <button class="overlay-close-x" onclick="closeFateDilemmas()">&times;</button>
     <div class="fate-container">
       <div class="fate-counter">${index + 1} / ${FATE_DILEMMAS.length}</div>
-      <div class="fate-question">${d.question[currentLang]}</div>
+      <div class="fate-question">${loc(d.question)}</div>
       <div class="fate-choices" id="fate-choices">
-        <button class="fate-btn" onclick="answerFate(${index}, 'a')"><span class="fate-btn-text">${d.a[currentLang]}</span></button>
-        <button class="fate-btn" onclick="answerFate(${index}, 'b')"><span class="fate-btn-text">${d.b[currentLang]}</span></button>
+        <button class="fate-btn" onclick="answerFate(${index}, 'a')"><span class="fate-btn-text">${loc(d.a)}</span></button>
+        <button class="fate-btn" onclick="answerFate(${index}, 'b')"><span class="fate-btn-text">${loc(d.b)}</span></button>
       </div>
       <div class="fate-result" id="fate-result" style="display:none;">
         <div class="fate-stats">
           <div class="fate-stat-bar"><div class="fate-stat-fill" id="stat-a" style="width:0%"></div><span class="fate-stat-label">${d.stats.a}%</span></div>
           <div class="fate-stat-bar"><div class="fate-stat-fill" id="stat-b" style="width:0%"></div><span class="fate-stat-label">${d.stats.b}%</span></div>
         </div>
-        <div class="fate-analysis">${d.analysis[currentLang]}</div>
-        <button class="fate-next" onclick="nextFateQuestion()">${NEXT_BUTTON_TEXTS[index % NEXT_BUTTON_TEXTS.length][currentLang]}</button>
+        <div class="fate-analysis">${loc(d.analysis)}</div>
+        <button class="fate-next" onclick="nextFateQuestion()">${loc(NEXT_BUTTON_TEXTS[index % NEXT_BUTTON_TEXTS.length])}</button>
       </div>
     </div>
   `;
@@ -529,10 +631,15 @@ function showFateFinal() {
     <div class="fate-container fate-final">
       <div class="fate-final-title">${t('fateComplete')}</div>
       <div class="fate-final-text">${t('fateCompleteText')}</div>
-      <button class="fate-next" onclick="closeFateDilemmas()">${t('close')}</button>
-    </div>
-  `;
+      <div class="final-channel-note">${t('finalChannel')}</div>
+      <div class="final-actions"><button class="fate-next" onclick="restartFateDilemmas()">${t('restart')}</button><a class="fate-channel-btn" href="${CHANNEL_URL}" target="_blank" rel="noopener">${t('openTelegram')}</a></div>
+    </div>`;
   document.body.appendChild(overlay);
+}
+function restartFateDilemmas() {
+  localStorage.setItem('fate_dilemmas', JSON.stringify({currentIndex:0,answers:[]}));
+  const overlay=document.querySelector('.fate-overlay');
+  if(overlay){overlay.classList.remove('active');setTimeout(()=>{overlay.remove();openFateDilemmas();},250);}
 }
 
 function closeFateDilemmas() {
@@ -842,8 +949,8 @@ function renderLabyrinthRiddle() {
   overlay.innerHTML = `
     <button class="overlay-close-x" onclick="closeLabyrinth()">&times;</button>
     <div class="labyrinth-container">
-      <div class="labyrinth-counter">${state.currentRiddle + 1} ${currentLang === 'ru' ? 'из' : currentLang === 'es' ? 'de' : 'of'} ${LABYRINTH_RIDDLES.length}</div>
-      <div class="labyrinth-riddle">${riddle.riddle[currentLang]}</div>
+      <div class="labyrinth-counter">${state.currentRiddle + 1} ${t('countOf')} ${LABYRINTH_RIDDLES.length}</div>
+      <div class="labyrinth-riddle">${loc(riddle.riddle)}</div>
       <div class="labyrinth-hints">
         <button class="labyrinth-hint-btn ${state.hintsUsed.includes(0) ? 'used' : ''}" onclick="showLabyrinthHint(0)">1</button>
         <button class="labyrinth-hint-btn ${state.hintsUsed.includes(1) ? 'used' : ''}" onclick="showLabyrinthHint(1)">2</button>
@@ -851,7 +958,7 @@ function renderLabyrinthRiddle() {
       <div class="labyrinth-hint-text" id="labyrinth-hint-text"></div>
       <button class="labyrinth-answer-btn" id="labyrinth-answer-btn" onclick="showLabyrinthAnswerConfirm()">${t('lookAnswer')}</button>
       <div class="labyrinth-answer" id="labyrinth-answer" style="display:none;">
-        <div class="labyrinth-answer-text">${riddle.answer[currentLang]}</div>
+        <div class="labyrinth-answer-text">${loc(riddle.answer)}</div>
         <button class="labyrinth-next-btn" onclick="nextLabyrinthRiddle()">${t('goFurther')}</button>
       </div>
     </div>
@@ -866,9 +973,9 @@ function showLabyrinthHint(hintIndex) {
   const confirmOverlay = document.createElement('div');
   confirmOverlay.id = 'labyrinth-hint-confirm';
   confirmOverlay.className = 'labyrinth-confirm-overlay';
-  const text = currentLang === 'ru' ? 'Точно хочешь открыть подсказку? Она будет использована и не даст готового ответа.' : currentLang === 'es' ? '¿Seguro que quieres abrir la pista? Se consumirá y no dará la respuesta.' : 'Are you sure you want to open the hint? It will be used and will not reveal the answer.';
-  const yes = currentLang === 'ru' ? 'Да, открыть' : currentLang === 'es' ? 'Sí, abrir' : 'Yes, open';
-  const no = currentLang === 'ru' ? 'Назад' : currentLang === 'es' ? 'Volver' : 'Back';
+  const text = t('hintConfirm');
+  const yes = t('hintYes');
+  const no = t('hintNo');
   confirmOverlay.innerHTML = `<div class="labyrinth-confirm-box"><p>${text}</p><div class="labyrinth-confirm-btns"><button onclick="closeLabyrinthHintConfirm()">${no}</button><button onclick="confirmLabyrinthHint(${hintIndex})">${yes}</button></div></div>`;
   document.body.appendChild(confirmOverlay);
 }
@@ -885,7 +992,7 @@ function confirmLabyrinthHint(hintIndex) {
   if (!state.hintsUsed.includes(hintIndex)) state.hintsUsed.push(hintIndex);
   localStorage.setItem('labyrinth', JSON.stringify(state));
   const hintText = document.getElementById('labyrinth-hint-text');
-  hintText.textContent = riddle.hints[hintIndex][currentLang];
+  hintText.textContent = loc(riddle.hints[hintIndex]);
   hintText.style.display = 'block';
   document.querySelectorAll('.labyrinth-hint-btn')[hintIndex]?.classList.add('used');
 }
@@ -939,7 +1046,8 @@ function showLabyrinthFinal() {
     <div class="labyrinth-container labyrinth-final">
       <div class="labyrinth-final-title">${t('riddleComplete')}</div>
       <div class="labyrinth-final-text">${t('riddleCompleteText')}</div>
-      <button class="labyrinth-next-btn" onclick="restartLabyrinth()">${t('restart')}</button>
+      <div class="final-channel-note">${t('finalChannel')}</div>
+      <div class="final-actions"><button class="labyrinth-next-btn" onclick="restartLabyrinth()">${t('restart')}</button><a class="fate-channel-btn" href="${CHANNEL_URL}" target="_blank" rel="noopener">${t('openTelegram')}</a></div>
     </div>
   `;
   document.body.appendChild(overlay);
@@ -1102,7 +1210,7 @@ function openTrueDestiny() {
     <div class="destiny-container">
       <div class="destiny-title">${t('trueDestiny')}</div>
       <div class="destiny-intro">
-        <p>10 ${currentLang === 'ru' ? 'вопросов раскроют твою сущность' : currentLang === 'en' ? 'questions will reveal your essence' : 'preguntas revelarán tu esencia'}</p>
+        <p>${t('destinyIntro')}</p>
       </div>
       <button class="destiny-start-btn" onclick="startDestinyQuiz()">${t('destinyStart')}</button>
     </div>
@@ -1127,10 +1235,10 @@ function renderDestinyQuestion(index) {
     <button class="overlay-close-x" onclick="closeDestiny()">&times;</button>
     <div class="destiny-container">
       <div class="destiny-counter">${index + 1} / ${DESTINY_QUESTIONS.length}</div>
-      <div class="destiny-question">${q.question[currentLang]}</div>
+      <div class="destiny-question">${loc(q.question)}</div>
       <div class="destiny-options">
         ${q.options.map((opt, i) => `
-          <button class="destiny-option" onclick="answerDestiny(${index}, ${i})" style="animation-delay:${i * 0.1}s">${opt.text[currentLang]}</button>
+          <button class="destiny-option" onclick="answerDestiny(${index}, ${i})" style="animation-delay:${i * 0.1}s">${loc(opt.text)}</button>
         `).join('')}
       </div>
     </div>
@@ -1183,9 +1291,9 @@ function showDestinyResult(scores) {
     <button class="overlay-close-x" onclick="closeDestiny()">&times;</button>
     <div class="destiny-container destiny-result destiny-result-minimal">
       <div class="destiny-result-kicker">${t('destinyResultTitle')}</div>
-      <div class="destiny-result-title">${title.name[currentLang]}</div>
-      <div class="destiny-result-desc">${title.description[currentLang]}</div>
-      <button class="destiny-restart" onclick="closeDestiny()">${t('close')}</button>
+      <div class="destiny-result-title">${loc(title.name)}</div>
+      <div class="destiny-result-desc">${loc(title.description)}</div>
+      <div class="final-channel-note">${t('finalChannel')}</div><div class="final-actions"><button class="destiny-restart" onclick="restartDestiny()">${t('destinyRestartBtn')}</button><a class="fate-channel-btn" href="${CHANNEL_URL}" target="_blank" rel="noopener">${t('openTelegram')}</a></div>
     </div>
   `;
   document.body.appendChild(overlay);
@@ -1320,23 +1428,27 @@ function showWisdom() {
   let index = parseInt(localStorage.getItem('wisdom_index') || '0');
   if (index >= WISDOM_QUOTES.length) index = 0;
   const quote = WISDOM_QUOTES[index];
-  localStorage.setItem('wisdom_index', (index + 1).toString());
+  localStorage.setItem('wisdom_index', ((index + 1) % WISDOM_QUOTES.length).toString());
   const overlay = document.createElement('div');
-  overlay.className = 'wisdom-overlay';
+  overlay.className = 'wisdom-overlay active';
   overlay.innerHTML = `
     <button class="overlay-close-x" onclick="closeWisdom()">&times;</button>
     <div class="wisdom-container">
       <div class="wisdom-symbol">✦</div>
       <div class="wisdom-heading">${t('wisdom')}</div>
       <div class="wisdom-divider"><span>✦</span></div>
-      <div class="wisdom-label">${currentLang === 'ru' ? 'ЗНАК СУДЬБЫ' : currentLang === 'es' ? 'SEÑAL DEL DESTINO' : 'SIGN OF FATE'}</div>
-      <div class="wisdom-quote">${quote[currentLang]}</div>
-      <div class="wisdom-footer-mark">— ${currentLang === 'ru' ? 'слово судьбы' : currentLang === 'es' ? 'palabra del destino' : 'word of fate'} —</div>
-      <button class="wisdom-close-btn" onclick="closeWisdom()">${t('wisdomClose')}</button>
-    </div>
-  `;
+      <div class="wisdom-label">${t('wisdomLabel')}</div>
+      <div class="wisdom-quote">${loc(quote)}</div>
+      <div class="wisdom-footer-mark">— ${t('wisdomFooter')} —</div>
+      <button class="wisdom-close-btn" onclick="nextWisdom()">${t('wisdomClose')}</button>
+    </div>`;
   document.body.appendChild(overlay);
-  setTimeout(() => overlay.classList.add('active'), 10);
+}
+function nextWisdom() {
+  const overlay = document.querySelector('.wisdom-overlay');
+  if (!overlay) return;
+  overlay.classList.remove('active');
+  setTimeout(() => { overlay.remove(); showWisdom(); }, 250);
 }
 
 function closeWisdom() {
@@ -1351,35 +1463,45 @@ function showAbout() {
   const overlay = document.createElement('div');
   overlay.className = 'fate-overlay';
   overlay.innerHTML = `
-    <button class="overlay-close-x" onclick="this.closest('.fate-overlay').classList.remove('active');setTimeout(()=>this.closest('.fate-overlay').remove(),400)">&times;</button>
-    <div class="fate-container" style="max-width:380px;">
-      <div class="fate-final-title" style="font-size:1.3rem;">${t('about')}</div>
-      <div style="font-size:0.9rem;color:var(--text-secondary);line-height:1.7;text-align:left;margin-bottom:20px;">
-        <p style="margin-bottom:12px;"><b>Your Destiny</b> — ${t('aboutText1')}</p>
-        <p style="margin-bottom:12px;">${t('aboutText2')}</p>
-        <p style="margin-bottom:12px;">${t('aboutText3')}</p>
-        <p style="margin-bottom:12px;">${t('aboutText4')}</p>
-        <p style="margin-bottom:12px;">${t('aboutText5')}</p>
-        <p>${t('aboutText6')}</p>
-      </div>
-      <button class="fate-next" onclick="this.closest('.fate-overlay').classList.remove('active');setTimeout(()=>this.closest('.fate-overlay').remove(),400)">${t('close')}</button>
-    </div>
-  `;
+    <button class="overlay-close-x" onclick="this.closest('.fate-overlay').classList.remove('active');setTimeout(()=>this.closest('.fate-overlay').remove(),300)">&times;</button>
+    <div class="fate-container about-card">
+      <div class="fate-final-title">${t('about')}</div>
+      <div class="about-lead">${EXTRA_I18N[currentLang].aboutLead}</div>
+      <div class="about-body">${EXTRA_I18N[currentLang].aboutBody}</div>
+      <div class="about-feature-grid"><div>✦ ${t('chronicles')}</div><div>✦ ${t('labyrinth')}</div><div>✦ ${t('trueDestiny')}</div><div>✦ ${t('wisdom')}</div></div>
+      <a class="fate-channel-btn" href="${CHANNEL_URL}" target="_blank" rel="noopener">${t('openTelegram')}</a>
+    </div>`;
   document.body.appendChild(overlay);
-  setTimeout(() => overlay.classList.add('active'), 10);
+  setTimeout(()=>overlay.classList.add('active'),10);
 }
 
+const LEGAL_TERMS = {
+  ru:`1. Общие положения. Настоящие условия регулируют доступ к Your Destiny и использование его интерфейса, текстов, историй, загадок, механик, визуальных материалов и иных компонентов. Используя приложение, пользователь подтверждает ознакомление с условиями в пределах, допускаемых применимым законодательством.\n\n2. Назначение. Your Destiny является развлекательным цифровым продуктом. Тесты, архетипы, дилеммы, результаты и иные материалы имеют художественный и развлекательный характер и не являются медицинской, психологической, юридической, финансовой или иной профессиональной рекомендацией.\n\n3. Интеллектуальная собственность. Название, код, дизайн, тексты, графика, структура интерфейса и оригинальные материалы принадлежат правообладателю либо используются на законном основании. Копирование, публикация, продажа, распространение или переработка материалов без разрешения запрещены, кроме случаев, прямо разрешённых законом.\n\n4. Пользователь. Запрещено вмешиваться в работу приложения, обходить технические ограничения, использовать автоматизацию для нарушения работы сервиса, выдавать себя за администрацию или предпринимать действия, способные причинить вред сервису либо другим пользователям.\n\n5. VIP и промокоды. VIP-доступ предоставляется на срок, указанный в приложении. Уже активированный срок не обнуляется при последующей смене промокода. Невалидный, просроченный или отозванный код не даёт права на доступ.\n\n6. Доступность. Функции могут изменяться, обновляться, временно отключаться или прекращаться. Непрерывная доступность не гарантируется из-за технических работ, ошибок браузера, Telegram, хостинга, сети или иных сторонних систем.\n\n7. Ограничение ответственности. В максимально допустимой законом степени правообладатель не отвечает за косвенные убытки, потерю локального прогресса, недоступность сторонних сервисов или последствия использования развлекательных материалов.\n\n8. Изменения. Условия могут обновляться. Продолжение использования после публикации новой редакции означает ознакомление с ней в пределах применимого права.\n\n9. Разделимость. Недействительность отдельного положения не влияет на остальные положения.`,
+  en:`1. General provisions. These terms govern access to and use of Your Destiny, including its interface, texts, stories, riddles, mechanics, visual materials and other components. By using the application, the user acknowledges these terms to the extent permitted by applicable law.\n\n2. Purpose. Your Destiny is an entertainment product. Tests, archetypes, dilemmas, results and other materials are fictional or entertainment-oriented and are not medical, psychological, legal, financial or other professional advice.\n\n3. Intellectual property. The name, code, design, texts, graphics, interface structure and original materials belong to the rights holder or are lawfully used. Copying, publishing, selling, distributing or adapting materials without permission is prohibited except where expressly permitted by law.\n\n4. User conduct. Users must not interfere with the application, bypass technical restrictions, use automation to disrupt the service, impersonate administrators or take actions that may harm the service or other users.\n\n5. VIP and promo codes. VIP access is provided for the period stated in the application. An already activated period does not reset when the promo code is later changed. Invalid, expired or revoked codes grant no access.\n\n6. Availability. Features may be changed, updated, suspended or discontinued. Continuous availability is not guaranteed because of maintenance, browser, Telegram, hosting, network or other third-party failures.\n\n7. Limitation of liability. To the maximum extent permitted by law, the rights holder is not liable for indirect losses, loss of local progress, third-party outages or consequences of using entertainment materials.\n\n8. Changes. These terms may be updated. Continued use after publication of a new version constitutes notice of the updated terms to the extent permitted by applicable law.\n\n9. Severability. If any provision is invalid, the remaining provisions remain effective.`,
+  es:`1. Disposiciones generales. Estas condiciones regulan el acceso y uso de Your Destiny, incluidos su interfaz, textos, historias, acertijos, mecánicas, materiales visuales y demás componentes. Al usar la aplicación, el usuario reconoce estas condiciones dentro de los límites permitidos por la ley aplicable.\n\n2. Finalidad. Your Destiny es un producto de entretenimiento. Los tests, arquetipos, dilemas, resultados y demás materiales tienen carácter ficticio o de entretenimiento y no constituyen asesoramiento médico, psicológico, jurídico, financiero ni profesional.\n\n3. Propiedad intelectual. El nombre, código, diseño, textos, gráficos, estructura de interfaz y materiales originales pertenecen al titular de los derechos o se utilizan legalmente. Se prohíbe copiar, publicar, vender, distribuir o adaptar materiales sin autorización salvo cuando la ley lo permita expresamente.\n\n4. Conducta del usuario. No se permite interferir con la aplicación, eludir restricciones técnicas, usar automatización para alterar el servicio, hacerse pasar por administradores o causar daños al servicio o a otros usuarios.\n\n5. VIP y códigos. El acceso VIP se concede durante el período indicado. Un período ya activado no se reinicia al cambiar posteriormente el código. Los códigos inválidos, caducados o revocados no conceden acceso.\n\n6. Disponibilidad. Las funciones pueden modificarse, actualizarse, suspenderse o retirarse. No se garantiza disponibilidad continua por fallos de mantenimiento, navegador, Telegram, alojamiento, red u otros terceros.\n\n7. Responsabilidad. En la máxima medida permitida por la ley, el titular no responde por pérdidas indirectas, pérdida del progreso local, interrupciones de terceros o consecuencias del uso de materiales de entretenimiento.\n\n8. Cambios. Estas condiciones pueden actualizarse. El uso continuado tras una nueva versión implica conocimiento de los cambios.\n\n9. Separabilidad. Si una disposición es inválida, las demás conservan su vigencia.`,
+  pt:`1. Disposições gerais. Estes termos regulam o acesso e utilização do Your Destiny, incluindo interface, textos, histórias, enigmas, mecânicas, materiais visuais e outros componentes. Ao utilizar a aplicação, o utilizador reconhece estes termos nos limites permitidos pela lei aplicável.\n\n2. Finalidade. Your Destiny é um produto de entretenimento. Testes, arquétipos, dilemas, resultados e outros materiais têm caráter fictício ou de entretenimento e não constituem aconselhamento médico, psicológico, jurídico, financeiro ou profissional.\n\n3. Propriedade intelectual. O nome, código, design, textos, gráficos, estrutura da interface e materiais originais pertencem ao titular dos direitos ou são utilizados legalmente. É proibido copiar, publicar, vender, distribuir ou adaptar materiais sem autorização, salvo quando permitido por lei.\n\n4. Utilizador. Não é permitido interferir com a aplicação, contornar restrições técnicas, utilizar automação para perturbar o serviço, fazer-se passar por administradores ou causar danos ao serviço ou a outros utilizadores.\n\n5. VIP e códigos promocionais. O acesso VIP é concedido pelo período indicado. Um período já ativado não é reiniciado quando o código é alterado. Códigos inválidos, expirados ou revogados não concedem acesso.\n\n6. Disponibilidade. As funções podem ser alteradas, atualizadas, suspensas ou removidas. Não é garantida disponibilidade contínua devido a manutenção, navegador, Telegram, alojamento, rede ou terceiros.\n\n7. Responsabilidade. Na máxima medida permitida pela lei, o titular não responde por perdas indiretas, perda de progresso local, interrupções de terceiros ou consequências do uso de materiais de entretenimento.\n\n8. Alterações. Estes termos podem ser atualizados. A utilização continuada após nova versão constitui conhecimento das alterações.\n\n9. Separabilidade. Se uma disposição for inválida, as restantes continuam em vigor.`,
+  de:`1. Allgemeine Bestimmungen. Diese Bedingungen regeln den Zugang zu und die Nutzung von Your Destiny einschließlich Oberfläche, Texten, Geschichten, Rätseln, Mechaniken, visuellen Materialien und weiteren Bestandteilen. Mit der Nutzung erkennt der Nutzer diese Bedingungen im gesetzlich zulässigen Umfang an.\n\n2. Zweck. Your Destiny ist ein Unterhaltungsprodukt. Tests, Archetypen, Dilemmata, Ergebnisse und andere Inhalte sind fiktional oder unterhaltungsbezogen und stellen keine medizinische, psychologische, rechtliche, finanzielle oder sonstige professionelle Beratung dar.\n\n3. Geistiges Eigentum. Name, Code, Design, Texte, Grafiken, Oberflächenstruktur und Originalmaterialien gehören dem Rechteinhaber oder werden rechtmäßig genutzt. Kopieren, Veröffentlichen, Verkaufen, Verbreiten oder Bearbeiten ohne Erlaubnis ist untersagt, soweit gesetzlich nicht erlaubt.\n\n4. Nutzerverhalten. Eingriffe in die Anwendung, Umgehung technischer Beschränkungen, missbräuchliche Automatisierung, Identitätsvortäuschung oder schädliche Handlungen gegenüber Dienst und Nutzern sind untersagt.\n\n5. VIP und Promo-Codes. VIP-Zugang gilt für den angegebenen Zeitraum. Ein bereits aktivierter Zeitraum wird bei einem späteren Codewechsel nicht zurückgesetzt. Ungültige, abgelaufene oder widerrufene Codes gewähren keinen Zugang.\n\n6. Verfügbarkeit. Funktionen können geändert, aktualisiert, ausgesetzt oder eingestellt werden. Eine dauerhafte Verfügbarkeit wird wegen Wartung, Browser-, Telegram-, Hosting-, Netzwerk- oder Drittanbieterfehlern nicht garantiert.\n\n7. Haftung. Soweit gesetzlich zulässig haftet der Rechteinhaber nicht für indirekte Schäden, Verlust lokaler Fortschritte, Ausfälle Dritter oder Folgen der Nutzung von Unterhaltungsinhalten.\n\n8. Änderungen. Diese Bedingungen können aktualisiert werden. Die weitere Nutzung nach Veröffentlichung einer neuen Fassung gilt im gesetzlich zulässigen Umfang als Kenntnisnahme.\n\n9. Salvatorische Klausel. Die Unwirksamkeit einer Bestimmung lässt die übrigen Bestimmungen unberührt.`,
+  fr:`1. Dispositions générales. Les présentes conditions régissent l’accès à Your Destiny et son utilisation, y compris l’interface, les textes, histoires, énigmes, mécaniques, éléments visuels et autres composants. L’utilisation vaut prise de connaissance dans les limites prévues par la loi applicable.\n\n2. Objet. Your Destiny est un produit de divertissement. Tests, archétypes, dilemmes, résultats et autres contenus sont fictifs ou destinés au divertissement et ne constituent pas un conseil médical, psychologique, juridique, financier ou professionnel.\n\n3. Propriété intellectuelle. Le nom, le code, le design, les textes, graphiques, structure de l’interface et contenus originaux appartiennent au titulaire des droits ou sont utilisés légalement. Toute copie, publication, vente, distribution ou adaptation non autorisée est interdite sauf disposition légale contraire.\n\n4. Utilisateur. Il est interdit d’interférer avec l’application, de contourner les restrictions techniques, d’utiliser une automatisation pour perturber le service, de se faire passer pour l’administration ou de causer un préjudice au service ou à ses utilisateurs.\n\n5. VIP et codes promo. L’accès VIP est accordé pour la durée indiquée. Une durée déjà activée n’est pas réinitialisée lors d’un changement ultérieur de code. Les codes invalides, expirés ou révoqués ne donnent aucun accès.\n\n6. Disponibilité. Les fonctions peuvent être modifiées, mises à jour, suspendues ou supprimées. Une disponibilité continue n’est pas garantie en cas de maintenance ou de défaillance du navigateur, de Telegram, de l’hébergement, du réseau ou de tiers.\n\n7. Responsabilité. Dans la mesure maximale permise par la loi, le titulaire n’est pas responsable des pertes indirectes, de la perte de progression locale, des interruptions de tiers ou des conséquences liées aux contenus de divertissement.\n\n8. Modifications. Les présentes conditions peuvent être mises à jour. La poursuite de l’utilisation après publication d’une nouvelle version vaut prise de connaissance dans les limites légales.\n\n9. Divisibilité. Si une disposition est invalide, les autres restent applicables.`
+};
 function showTerms() {
-  const overlay = document.createElement('div');
-  overlay.className = 'fate-overlay active';
-  const bodyText = currentLang === 'ru' ? "Общие положения. Настоящие условия регулируют доступ и использование Your Destiny, его интерфейса, текстов, иллюстраций, игровых механик, историй, загадок и иных материалов. Используя приложение, пользователь подтверждает, что ознакомился с условиями и принимает их в пределах, допускаемых применимым законодательством.\n\nНазначение сервиса. Your Destiny является развлекательным цифровым продуктом. Игровые тесты, архетипы, «предсказания», психологические дилеммы и иные результаты имеют исключительно развлекательный и художественный характер и не являются медицинской, психологической, юридической, финансовой или иной профессиональной консультацией.\n\nИнтеллектуальная собственность. Исходный код, дизайн, название, визуальные элементы, тексты, структура интерфейса и оригинальные материалы принадлежат правообладателю либо используются на законных основаниях. Запрещается копировать, распространять, продавать, публиковать или перерабатывать материалы проекта без соответствующего разрешения, за исключением случаев, прямо разрешённых законом.\n\nПользовательские действия. Пользователь обязан не вмешиваться в работу приложения, не пытаться обходить ограничения доступа, не использовать автоматизированные средства для нарушения работы сервиса и не предпринимать действий, способных повредить инфраструктуре, данным или другим пользователям.\n\nVIP и промокоды. VIP-доступ и промокоды предоставляют только тот объём доступа и на тот срок, который указан внутри приложения или в официальном сообщении проекта. Срок активированного доступа не изменяется автоматически при последующей замене действующего промокода. Невалидные, просроченные или отозванные промокоды не предоставляют доступа.\n\nДоступность. Разработчик вправе изменять, приостанавливать, обновлять или прекращать отдельные функции приложения. В связи с техническими работами, обновлениями, ошибками сторонних платформ или сетевыми сбоями непрерывная доступность не гарантируется.\n\nОграничение ответственности. В максимально допустимой законом степени разработчик не несёт ответственности за косвенные убытки, потерю локального прогресса, недоступность сторонних сервисов, ошибки Telegram, браузера, хостинга или сети. Пользователь самостоятельно отвечает за сохранность необходимых ему данных.\n\nИзменения условий. Условия могут периодически обновляться. Продолжение использования приложения после публикации новой редакции означает ознакомление с изменениями в пределах, допускаемых законом.\n\nПрименимое право. Если отдельные положения признаются недействительными, остальные положения сохраняют силу. Права и обязанности сторон толкуются с учётом обязательных норм законодательства, применимого к конкретной ситуации." : "General provisions. These terms govern access to and use of Your Destiny, including its interface, text, illustrations, game mechanics, stories, riddles and other materials. By using the application, the user confirms that they have read and accepted these terms to the extent permitted by applicable law.\n\nPurpose of the service. Your Destiny is an entertainment product. Tests, archetypes, “predictions”, psychological dilemmas and other results are fictional or entertainment-oriented and do not constitute medical, psychological, legal, financial or other professional advice.\n\nIntellectual property. The source code, design, name, visual elements, texts, interface structure and original materials belong to the rights holder or are used lawfully. Copying, distributing, selling, publishing or adapting project materials without permission is prohibited except where expressly allowed by law.\n\nUser conduct. Users must not interfere with the application, bypass access restrictions, use automated means to disrupt the service, or take actions that may harm infrastructure, data or other users.\n\nVIP and promo codes. VIP access and promo codes provide only the access and duration stated in the application or official project communication. An already activated access period does not reset merely because the current promo code is later changed. Invalid, expired or revoked codes do not grant access.\n\nAvailability. The developer may modify, suspend, update or discontinue individual features. Continuous availability is not guaranteed due to maintenance, updates, third-party platform issues, hosting, browser or network failures.\n\nLimitation of liability. To the maximum extent permitted by law, the developer is not liable for indirect losses, loss of local progress, or outages caused by Telegram, browsers, hosting, networks or other third parties. Users are responsible for keeping any data they consider important.\n\nChanges. These terms may be updated from time to time. Continued use after a new version is published constitutes notice of the changes to the extent permitted by law.\n\nSeverability and governing rules. If a provision is found invalid, the remaining provisions remain effective. Rights and obligations are interpreted subject to mandatory law applicable to the relevant situation.";
-  overlay.innerHTML = `<button class="overlay-close-x" onclick="this.closest('.fate-overlay').remove()">&times;</button><div class="fate-container legal-card"><div class="fate-final-title">${t('termsTitle')}</div><div class="legal-text">${bodyText.split('\n\n').map((part,i)=>`<p><b>${i+1}.</b> ${part}</p>`).join('')}</div><button class="fate-next" onclick="this.closest('.fate-overlay').remove()">${t('close')}</button></div>`;
+  const overlay = document.createElement('div'); overlay.className = 'fate-overlay active';
+  const bodyText = LEGAL_TERMS[currentLang] || LEGAL_TERMS.en;
+  overlay.innerHTML = `<button class="overlay-close-x" onclick="this.closest('.fate-overlay').remove()">&times;</button><div class="fate-container legal-card"><div class="fate-final-title">${t('termsTitle')}</div><div class="legal-text">${bodyText.split('\n\n').map((part)=>`<p>${part}</p>`).join('')}</div><button class="fate-next" onclick="this.closest('.fate-overlay').remove()">${t('close')}</button></div>`;
   document.body.appendChild(overlay);
 }
+
+const LEGAL_PRIVACY = {
+  ru:`1. Общая информация. Your Destiny может работать внутри Telegram WebApp или в обычном браузере. Набор технических данных зависит от среды запуска и настроек платформы.\n\n2. Локальные данные. Прогресс, тема, язык, дата первого входа, VIP-состояние и настройки могут храниться в localStorage. Очистка данных браузера или смена устройства может удалить локальные данные.\n\n3. Telegram. При запуске внутри Telegram приложение может получать предоставляемый платформой технический контекст, включая language_code. Приложение не запрашивает пароль Telegram или код подтверждения.\n\n4. Сторонние сервисы. Веб-приложение может использовать Telegram WebApp API, CDN, хостинг и иные технические ресурсы, которые обрабатываются по правилам соответствующих поставщиков.\n\n5. Минимизация. Для работы Your Destiny не требуется отдельный аккаунт. Не вводите в игровые поля пароли, платёжные реквизиты, документы, приватные ключи или иные чувствительные данные.\n\n6. Безопасность. Принимаются разумные технические меры, однако абсолютная безопасность веб-сервиса не гарантируется.\n\n7. Хранение. Локальные данные хранятся до их удаления пользователем, очистки браузера или изменения логики приложения. Данные сторонних платформ регулируются их собственными политиками.\n\n8. Изменения. Политика может обновляться при изменении функций, платформ или требований законодательства.`,
+  en:`1. General information. Your Destiny may run inside Telegram WebApp or in a standard browser. Available technical data depends on the launch environment and platform settings.\n\n2. Local data. Progress, theme, language, first-entry date, VIP status and settings may be stored in localStorage. Clearing browser data or changing devices may remove local data.\n\n3. Telegram. When launched inside Telegram, the application may receive platform-provided technical context, including language_code. The application does not request a Telegram password or verification code.\n\n4. Third-party services. The web app may use the Telegram WebApp API, CDN, hosting and other technical resources governed by the relevant providers’ policies.\n\n5. Data minimization. Your Destiny does not require a separate account. Do not enter passwords, payment credentials, identity documents, private keys or other sensitive data into game fields.\n\n6. Security. Reasonable technical measures may be used, but absolute web-service security cannot be guaranteed.\n\n7. Retention. Local data remains until deleted by the user, cleared by the browser or changed by the application. Third-party data is subject to their own policies.\n\n8. Changes. This policy may be updated when features, platforms or legal requirements change.`,
+  es:`1. Información general. Your Destiny puede ejecutarse dentro de Telegram WebApp o en un navegador normal. Los datos técnicos disponibles dependen del entorno y de la plataforma.\n\n2. Datos locales. El progreso, tema, idioma, fecha de primera entrada, estado VIP y ajustes pueden guardarse en localStorage. Limpiar el navegador o cambiar de dispositivo puede eliminarlos.\n\n3. Telegram. Dentro de Telegram, la aplicación puede recibir contexto técnico proporcionado por la plataforma, incluido language_code. No solicita contraseñas ni códigos de Telegram.\n\n4. Servicios externos. La aplicación puede utilizar Telegram WebApp API, CDN, alojamiento y otros recursos sujetos a las políticas de sus proveedores.\n\n5. Minimización. Your Destiny no requiere una cuenta independiente. No introduzcas contraseñas, datos de pago, documentos, claves privadas ni información sensible en los campos del juego.\n\n6. Seguridad. Se pueden aplicar medidas razonables, pero no se garantiza una seguridad absoluta.\n\n7. Conservación. Los datos locales permanecen hasta que el usuario los elimina, limpia el navegador o cambia la aplicación. Los datos de terceros se rigen por sus políticas.\n\n8. Cambios. Esta política puede actualizarse cuando cambien las funciones, plataformas o requisitos legales.`,
+  pt:`1. Informações gerais. O Your Destiny pode funcionar no Telegram WebApp ou num navegador normal. Os dados técnicos disponíveis dependem do ambiente e da plataforma.\n\n2. Dados locais. Progresso, tema, idioma, data da primeira entrada, estado VIP e definições podem ser guardados no localStorage. Limpar o navegador ou mudar de dispositivo pode eliminá-los.\n\n3. Telegram. Dentro do Telegram, a aplicação pode receber contexto técnico fornecido pela plataforma, incluindo language_code. Não solicita palavras-passe nem códigos do Telegram.\n\n4. Serviços externos. A aplicação pode utilizar Telegram WebApp API, CDN, alojamento e outros recursos sujeitos às políticas dos respetivos fornecedores.\n\n5. Minimização. O Your Destiny não exige uma conta separada. Não introduzas palavras-passe, dados de pagamento, documentos, chaves privadas ou outros dados sensíveis nos campos do jogo.\n\n6. Segurança. Podem ser utilizadas medidas técnicas razoáveis, mas não é garantida segurança absoluta.\n\n7. Retenção. Os dados locais permanecem até serem apagados pelo utilizador, pelo navegador ou pela aplicação. Os dados de terceiros seguem as suas próprias políticas.\n\n8. Alterações. Esta política pode ser atualizada quando mudarem funções, plataformas ou requisitos legais.`,
+  de:`1. Allgemeine Informationen. Your Destiny kann in Telegram WebApp oder einem normalen Browser laufen. Verfügbare technische Daten hängen von Umgebung und Plattform ab.\n\n2. Lokale Daten. Fortschritt, Thema, Sprache, Datum des ersten Zugangs, VIP-Status und Einstellungen können in localStorage gespeichert werden. Das Löschen von Browserdaten oder ein Gerätewechsel kann sie entfernen.\n\n3. Telegram. Innerhalb von Telegram kann die Anwendung technischen Kontext der Plattform erhalten, einschließlich language_code. Telegram-Passwörter oder Bestätigungscodes werden nicht abgefragt.\n\n4. Drittanbieter. Die Anwendung kann Telegram WebApp API, CDN, Hosting und weitere Ressourcen nutzen, die den Richtlinien ihrer Anbieter unterliegen.\n\n5. Datenminimierung. Your Destiny benötigt kein separates Konto. Gib keine Passwörter, Zahlungsdaten, Dokumente, privaten Schlüssel oder andere sensible Daten in Spielfelder ein.\n\n6. Sicherheit. Angemessene technische Maßnahmen können eingesetzt werden, absolute Sicherheit wird jedoch nicht garantiert.\n\n7. Speicherung. Lokale Daten bleiben bis zur Löschung durch Nutzer, Browser oder Anwendung erhalten. Daten von Drittanbietern unterliegen deren eigenen Richtlinien.\n\n8. Änderungen. Diese Richtlinie kann bei Änderungen von Funktionen, Plattformen oder gesetzlichen Anforderungen aktualisiert werden.`,
+  fr:`1. Informations générales. Your Destiny peut fonctionner dans Telegram WebApp ou dans un navigateur classique. Les données techniques disponibles dépendent de l’environnement et de la plateforme.\n\n2. Données locales. La progression, le thème, la langue, la date de première entrée, le statut VIP et les réglages peuvent être enregistrés dans localStorage. Effacer les données du navigateur ou changer d’appareil peut les supprimer.\n\n3. Telegram. Dans Telegram, l’application peut recevoir un contexte technique fourni par la plateforme, notamment language_code. Aucun mot de passe ni code de confirmation Telegram n’est demandé.\n\n4. Services tiers. L’application peut utiliser l’API Telegram WebApp, un CDN, un hébergement et d’autres ressources soumis aux politiques de leurs fournisseurs.\n\n5. Minimisation. Your Destiny ne nécessite pas de compte séparé. Ne saisis pas de mots de passe, données de paiement, documents, clés privées ou autres informations sensibles dans les champs du jeu.\n\n6. Sécurité. Des mesures techniques raisonnables peuvent être utilisées, mais une sécurité absolue ne peut être garantie.\n\n7. Conservation. Les données locales restent jusqu’à leur suppression par l’utilisateur, le navigateur ou l’application. Les données de tiers suivent leurs propres politiques.\n\n8. Modifications. Cette politique peut être mise à jour en cas de changement des fonctions, plateformes ou exigences légales.`
+};
 function showPrivacy() {
-  const overlay = document.createElement('div');
-  overlay.className = 'fate-overlay active';
-  const bodyText = currentLang === 'ru' ? "Общая информация. Your Destiny может работать как веб-приложение внутри Telegram WebApp или в обычном браузере. Набор доступных технических данных зависит от среды запуска и настроек платформы.\n\nЛокальное хранение. Игровой прогресс, выбранная тема, дата первого запуска, состояние VIP-доступа, настройки и часть пользовательских предпочтений могут сохраняться локально в localStorage браузера. Очистка данных браузера, переустановка среды или изменение устройства может удалить такие данные.\n\nTelegram. При запуске внутри Telegram приложение может получать от Telegram технический контекст WebApp, включая доступный языковой код и данные, предоставляемые платформой в соответствии с её собственными правилами. Приложение не должно запрашивать у пользователя пароль Telegram или код подтверждения.\n\nСторонние ресурсы. Приложение может использовать внешние ресурсы, включая Telegram WebApp API, CDN или иные технические сервисы. Такие сервисы могут обрабатывать технические данные самостоятельно в соответствии со своими политиками.\n\nМинимизация данных. Приложение предназначено для работы без необходимости создавать отдельный аккаунт внутри Your Destiny. Не следует вводить в игровые поля пароли, платёжные реквизиты, документы, секретные ключи или иные чувствительные сведения.\n\nБезопасность. Принимаются разумные технические меры, но ни один веб-сервис не может гарантировать абсолютную безопасность данных. Пользователь понимает риск, связанный с браузером, устройством, сетью и сторонними платформами.\n\nХранение и удаление. Локальные данные хранятся до их удаления пользователем, очистки браузера либо изменения логики приложения. Отдельные данные, которые обрабатываются сторонними платформами, регулируются их собственными сроками хранения.\n\nИзменения политики. Политика может обновляться при изменении функций, платформ или требований законодательства. Актуальная редакция размещается внутри приложения.\n\nКонтакты и запросы. Если появится отдельный официальный канал для запросов по вопросам приватности, он будет указан в приложении или официальных материалах проекта." : "General information. Your Destiny may run as a Telegram WebApp or in a standard browser. The technical information available to the application depends on the environment and platform settings.\n\nLocal storage. Game progress, selected theme, first-visit date, VIP status, settings and certain preferences may be stored locally in browser localStorage. Clearing browser data, reinstalling the environment or changing devices may remove such data.\n\nTelegram. When launched inside Telegram, the application may receive WebApp context supplied by Telegram, such as a language code and other platform-provided information subject to Telegram’s own rules. The application should never require a Telegram password or verification code.\n\nThird-party resources. The application may use external resources such as the Telegram WebApp API, CDNs or other technical services. Such services may process technical data under their own policies.\n\nData minimization. Your Destiny is designed to work without requiring a separate account inside the application. Users should not enter passwords, payment credentials, private keys, identity documents or other sensitive information into game fields.\n\nSecurity. Reasonable technical measures may be used, but no web service can guarantee absolute security. Users acknowledge risks associated with their browser, device, network and third-party platforms.\n\nRetention and deletion. Local data remains until deleted by the user, cleared by the browser, or changed by the application. Data handled by third-party platforms is subject to their own retention practices.\n\nPolicy changes. This policy may be updated when features, platforms or legal requirements change. The current version is made available inside the application.\n\nPrivacy requests. If an official privacy contact channel is introduced, it will be published inside the application or through official project materials.";
-  overlay.innerHTML = `<button class="overlay-close-x" onclick="this.closest('.fate-overlay').remove()">&times;</button><div class="fate-container legal-card"><div class="fate-final-title">${t('privacyTitle')}</div><div class="legal-text">${bodyText.split('\n\n').map((part,i)=>`<p><b>${i+1}.</b> ${part}</p>`).join('')}</div><button class="fate-next" onclick="this.closest('.fate-overlay').remove()">${t('close')}</button></div>`;
+  const overlay = document.createElement('div'); overlay.className = 'fate-overlay active';
+  const bodyText = LEGAL_PRIVACY[currentLang] || LEGAL_PRIVACY.en;
+  overlay.innerHTML = `<button class="overlay-close-x" onclick="this.closest('.fate-overlay').remove()">&times;</button><div class="fate-container legal-card"><div class="fate-final-title">${t('privacyTitle')}</div><div class="legal-text">${bodyText.split('\n\n').map((part)=>`<p>${part}</p>`).join('')}</div><button class="fate-next" onclick="this.closest('.fate-overlay').remove()">${t('close')}</button></div>`;
   document.body.appendChild(overlay);
 }
+
