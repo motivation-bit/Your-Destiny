@@ -1884,3 +1884,41 @@ body.theme-kaleidoscope #app-container::after { background:linear-gradient(180de
 .fate-overlay,.labyrinth-overlay,.destiny-overlay { will-change:opacity; }
 .fate-overlay > .fate-container,.labyrinth-overlay > .labyrinth-container,.destiny-overlay > .destiny-container { animation:none !important; }
 @keyframes modalIn { from{opacity:0;transform:translate(-50%,-48%) scale(.985)} to{opacity:1;transform:translate(-50%,-50%) scale(1)} }
+
+/* ===== FINAL USER PASS ===== */
+.language-picker-panel::before{content:attr(data-title)!important}
+.language-picker-panel::after{pointer-events:none!important;background:rgba(0,0,0,.46)!important;backdrop-filter:blur(4px)!important}
+.lang-backdrop{position:fixed;inset:0;z-index:4999;background:rgba(0,0,0,.42);backdrop-filter:blur(3px)}
+.language-picker-panel{z-index:5000}
+
+/* Theme swatches: darker, restrained, no labels/numbers. */
+.color-option{filter:saturate(.78) brightness(.72)}
+.color-option.active{filter:saturate(.9) brightness(.8)}
+.color-option.theme-purple span{background:#35205f}.color-option.theme-sapphire span{background:#182e58}.color-option.theme-crimson span{background:#5a1832}.color-option.theme-emerald span{background:#174d3b}.color-option.theme-amber span{background:#5a4112}
+.color-option.theme-kaleidoscope span{background:conic-gradient(from 210deg,#35205f 0 72deg,#182e58 72deg 144deg,#5a1832 144deg 216deg,#174d3b 216deg 288deg,#5a4112 288deg 360deg)}
+body.theme-kaleidoscope #app-container::before{animation:kaleidoscopeSolidStrict 32s ease-in-out infinite;background:#35205f}
+@keyframes kaleidoscopeSolidStrict{0%,16%{background:#35205f}24%,40%{background:#182e58}48%,64%{background:#5a1832}72%,88%{background:#174d3b}96%{background:#5a4112}100%{background:#35205f}}
+
+/* No decorative diamonds/symbols in feature sections. */
+.setting-feature::after,.wisdom-symbol,.wisdom-divider,.wisdom-label,.wisdom-footer-mark,.destiny-result-symbol{display:none!important;content:none!important}
+.schedule-icon{display:none!important}.schedule-entry{display:block}
+
+/* These four sections are full-screen reading pages, not centered pop-up cards. */
+.fate-overlay:has(.rating-card),.fate-overlay:has(.schedule-card),.fate-overlay:has(.support-card),.fate-overlay:has(.legal-author-card),.fate-overlay:has(.legal-confirm-card){padding:0;align-items:stretch;justify-content:stretch;background:linear-gradient(180deg,rgba(5,3,12,.99),rgba(19,8,30,.99));backdrop-filter:none}
+.fate-overlay:has(.rating-card) .rating-card,.fate-overlay:has(.schedule-card) .schedule-card,.fate-overlay:has(.support-card) .support-card,.fate-overlay:has(.legal-author-card) .legal-author-card,.fate-overlay:has(.legal-confirm-card) .legal-confirm-card{width:100%!important;max-width:none!important;height:100%!important;max-height:none!important;min-height:100%;border:0;border-radius:0;box-shadow:none;background:transparent;overflow-y:auto;padding:88px 24px 42px;display:flex;flex-direction:column;justify-content:center}
+.fate-overlay:has(.rating-card) .rating-card .rating-title,.fate-overlay:has(.schedule-card) .schedule-card .schedule-title,.fate-overlay:has(.support-card) .support-card .author-title,.fate-overlay:has(.legal-author-card) .legal-author-card .author-title,.fate-overlay:has(.legal-confirm-card) .legal-confirm-card .author-title{font-size:clamp(1.45rem,6vw,2rem)}
+.fate-overlay:has(.legal-author-card) .author-legal-text,.fate-overlay:has(.legal-confirm-card) .author-legal-text{max-height:none;flex:0 1 auto;overflow:auto;padding:22px;line-height:1.9}
+.fate-overlay:has(.schedule-card) .schedule-card{justify-content:flex-start;padding-top:100px}.fate-overlay:has(.schedule-card) .schedule-entry{margin-top:10px}.fate-overlay:has(.support-card) .support-card{justify-content:flex-start;padding-top:100px}.fate-overlay:has(.legal-author-card) .legal-author-card,.fate-overlay:has(.legal-confirm-card) .legal-confirm-card{justify-content:flex-start;padding-top:100px}
+.fate-overlay:has(.rating-card) .rating-card{justify-content:flex-start;padding-top:105px}.fate-overlay:has(.rating-card) .rating-stars{margin:24px 0}.fate-overlay:has(.rating-card) .rating-star{font-size:3rem}
+
+/* Author controls are refined, less saturated gold. */
+.author-channel-btn,.wallet-copy-btn{background:linear-gradient(180deg,rgba(212,175,55,.16),rgba(212,175,55,.07))!important;border:1px solid rgba(212,175,55,.48)!important;color:var(--gold-light)!important;box-shadow:0 10px 26px rgba(0,0,0,.24)!important;border-radius:14px!important;font-family:'Cinzel',serif!important}
+.community-wrap{padding:0 2px}.community-btn{display:block;width:100%;padding:14px 18px;border:1px solid rgba(212,175,55,.55);border-radius:14px;background:transparent;color:var(--gold);font:600 .88rem 'Cinzel',serif;text-align:center;text-decoration:none;letter-spacing:.06em}
+.reset-test-wrap{padding:0 2px}.reset-all-btn{width:100%;padding:11px;border:1px solid rgba(192,57,43,.32);border-radius:12px;background:transparent;color:#b8796e;font:600 .76rem 'Noto Serif',serif}
+
+/* Legal pages get a little more breathing room vertically. */
+.legal-card{max-height:94vh!important;padding-top:56px!important;padding-bottom:50px!important}.legal-text{max-height:76vh!important;overflow-y:auto!important;padding-bottom:28px}
+
+@media(max-width:430px){.fate-overlay:has(.rating-card) .rating-card,.fate-overlay:has(.schedule-card) .schedule-card,.fate-overlay:has(.support-card) .support-card,.fate-overlay:has(.legal-author-card) .legal-author-card,.fate-overlay:has(.legal-confirm-card) .legal-confirm-card{padding-left:18px;padding-right:18px}.fate-overlay:has(.rating-card) .rating-star{font-size:2.65rem}}
+.wisdom-heading{display:none!important}
+body.theme-kaleidoscope #app-container::after{background:transparent!important}

@@ -601,7 +601,7 @@ function showSupportAuthor() {
   };
   overlay.innerHTML = `<button class="overlay-close-x" onclick="this.closest('.fate-overlay').remove()">&times;</button>
     <div class="author-card support-card">
-      <div class="author-title">${t('supportAuthor')}</div>
+      <div class="author-title">${({ru:'Поддержать проект',en:'Support the project',es:'Apoyar el proyecto',pt:'Apoiar o projeto',de:'Projekt unterstützen',fr:'Soutenir le projet'})[currentLang]}</div>
       <div class="author-subtitle support-copy">${desc[currentLang] || desc.en}</div>
       <div class="support-payment-grid">
         <div class="payment-block"><span>${({ru:'Криптосеть',en:'Network',es:'Red',pt:'Rede',de:'Netzwerk',fr:'Réseau'})[currentLang]}</span><strong>Tron (TRC-20)</strong></div>
@@ -6297,3 +6297,41 @@ function showPrivacy() {
   document.body.appendChild(overlay);
 }
 
+
+// ===== Final behavior pass =====
+function detectLanguage(){
+  const code=(tg?.initDataUnsafe?.user?.language_code||navigator.language||navigator.userLanguage||'en').toLowerCase().split('-')[0].split('_')[0];
+  if(['ru','kk','be','ky'].includes(code)) return 'ru';
+  if(['en','es','pt','de','fr'].includes(code)) return code;
+  return 'en';
+}
+function closeLanguagePicker(){
+  document.getElementById('language-picker-panel')?.classList.remove('open');
+  document.getElementById('lang-backdrop')?.remove();
+}
+function toggleLanguagePicker(){
+  const panel=document.getElementById('language-picker-panel'); if(!panel)return;
+  if(panel.classList.contains('open')){closeLanguagePicker();return;}
+  panel.dataset.title=(T[currentLang]?.languageTitle||T[currentLang]?.language||'Language');
+  const backdrop=document.createElement('div');backdrop.id='lang-backdrop';backdrop.className='lang-backdrop';backdrop.onclick=closeLanguagePicker;document.body.appendChild(backdrop);
+  panel.classList.add('open');
+}
+function setLanguage(lang){
+  if(!T[lang])lang='en';currentLang=lang;localStorage.setItem('lang',lang);localStorage.setItem('lang_manual','1');
+  updateLanguageUI();renderThemeColors();updateVipDisplay();closeLanguagePicker();
+}
+function resetAllForTesting(){
+  if(confirm(t('resetConfirm')||'Reset all local game data?')){localStorage.clear();location.reload();}
+}
+
+Object.assign(T.ru,{resetAll:'Очистить всё'});Object.assign(T.en,{resetAll:'Clear everything'});Object.assign(T.es,{resetAll:'Borrar todo'});Object.assign(T.pt,{resetAll:'Limpar tudo'});Object.assign(T.de,{resetAll:'Alles löschen'});Object.assign(T.fr,{resetAll:'Tout effacer'});
+
+// Last labyrinth riddle: the three hints become progressively more direct.
+if (typeof LABYRINTH_RIDDLES !== 'undefined' && LABYRINTH_RIDDLES.length) {
+  const last = LABYRINTH_RIDDLES[LABYRINTH_RIDDLES.length - 1];
+  last.hints = [
+    {ru:'Обрати внимание на ключевое слово в формулировке загадки.',en:'Pay attention to the key word in the wording.',es:'Presta atención a la palabra clave de la formulación.',pt:'Presta atenção à palavra-chave da formulação.',de:'Achte auf das Schlüsselwort in der Formulierung.',fr:'Fais attention au mot-clé dans la formulation.'},
+    {ru:'Не воспринимай текст буквально: подумай, какую идею описывают сразу все детали.',en:'Do not take it literally: think about the idea described by all the details together.',es:'No lo tomes literalmente: piensa en la idea que describen todos los detalles.',pt:'Não interpretes literalmente: pensa na ideia descrita por todos os detalhes.',de:'Lies es nicht wörtlich: Denke an die Idee hinter allen Details.',fr:'Ne le prends pas au sens littéral : pense à l’idée décrite par tous les détails.'},
+    {ru:'Сопоставь последнюю деталь с первой: она почти напрямую указывает, какой ответ нужно выбрать.',en:'Connect the last detail with the first: it almost directly points to the answer.',es:'Relaciona el último detalle con el primero: casi indica directamente la respuesta.',pt:'Liga o último detalhe ao primeiro: ele quase indica diretamente a resposta.',de:'Verbinde das letzte Detail mit dem ersten: Es weist fast direkt auf die Antwort.',fr:'Relie le dernier détail au premier : il indique presque directement la réponse.'}
+  ];
+}
