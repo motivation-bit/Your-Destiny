@@ -85,7 +85,7 @@
           </div>
           <div class="settings-value language-current" id="language-current">Русский</div>
         </div>
-        <div class="language-picker-panel" id="language-picker-panel">
+        <div class="language-picker-panel" id="language-picker-panel"><div class="language-panel-title" id="language-panel-title">Язык</div>
           <button class="lang-btn" id="lang-ru-btn" onclick="event.stopPropagation();setLanguage('ru')"><span>Русский</span><small>RU</small></button>
           <button class="lang-btn" id="lang-en-btn" onclick="event.stopPropagation();setLanguage('en')"><span>English</span><small>EN</small></button>
           <button class="lang-btn" id="lang-es-btn" onclick="event.stopPropagation();setLanguage('es')"><span>Español</span><small>ES</small></button>
@@ -126,7 +126,7 @@
             <input type="text" class="promo-input" id="promo-input" data-t="promoPlaceholder" placeholder="Введите промокод..." maxlength="20">
             <button class="promo-btn" onclick="activatePromo()" data-t="activate">Активировать</button>
           </div>
-          <div style="font-size:0.78rem;color:var(--text-muted);padding:0 4px;" data-t="promoHint">Промокод можно найти в Telegram-канале</div>
+          <div id="promo-hint" style="font-size:0.78rem;color:var(--text-muted);padding:0 4px;">Актуальные промокоды — в нашем Telegram-канале.</div>
           <div id="promo-status" style="display:none;"></div>
         </div>
       </div>
@@ -135,7 +135,7 @@
         <div class="settings-item">
           <div class="settings-item-left">
             <svg class="settings-icon" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-            <span class="settings-label" data-t="vipStatus">VIP-статус</span>
+            <span class="settings-label">Premium</span>
           </div>
           <span class="settings-value" id="vip-status" data-t="freeVersion">Бесплатная версия</span>
         </div>

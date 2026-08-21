@@ -1,29 +1,17 @@
-# YOUR DESTINY — polished Telegram WebApp build
+# Your Destiny — Final project
 
-Готовая сборка для GitHub / Cloudflare Pages / Telegram WebApp.
+Updated: 2026-08-21
 
-## Структура
-- `index.html` — интерфейс
-- `style.css` — оформление и анимации
-- `app.js` — логика, языки, темы, 100 дилемм, 10 вопросов Истинной Судьбы и Лабиринт
-- `promo-config.js` — единственный файл для смены активного промокода
-- `splash-cover.png` — заставка
+Included:
+- six-language interface and Telegram language detection
+- five dark theme choices; Kaleidoscope removed
+- redesigned settings language/theme/promo/Premium/time capsule areas
+- full-screen Rating, Story Schedule, Support and Become an Author screens
+- 100 unique Chronicles of Fate questions with 3 answers and percentage results
+- stable in-place Wisdom navigation
+- redesigned Labyrinth hint flow, clearer coin riddle, 10 final hints and expanded explanation
+- reset-all testing control
+- existing splash cover and 3-second intro
 
-## Язык
-Автоматически определяется `language_code` Telegram. Русский и языки СНГ открывают RU; ES/PT/DE/FR открываются на соответствующем языке; остальные — EN. После ручного выбора язык сохраняется.
-
-## Темы
-Порядок: Королевский Пурпур → Полночный Сапфир → Багровый Занавес → Изумрудный Лес → Янтарные Сумерки → Калейдоскоп. Калейдоскоп последовательно и плавно заполняет весь фон одним цветом за раз.
-
-## Контент
-- Хроники Судьбы — 100 вопросов.
-- Истинная Судьба — 10 повседневных вопросов, по 4 варианта и 10 архетипов-финалов.
-- Лабиринт Загадок — 10 задач по сложности; обычные задачи имеют 2 подсказки, последняя — 3.
-- Время первого входа хранится с точной датой и временем.
-
-## Telegram
-Канал: https://t.me/YourDestiny_Official
-Direct: https://t.me/YourDestiny_Official?direct
-
-## Запуск
-Загрузите содержимое этого архива в корень GitHub-репозитория. Для Cloudflare Pages используйте корень репозитория как директорию публикации.
+Telegram channel: https://t.me/YourDestiny_Official
+Author direct: https://t.me/YourDestiny_Official?direct

@@ -1922,3 +1922,83 @@ body.theme-kaleidoscope #app-container::before{animation:kaleidoscopeSolidStrict
 @media(max-width:430px){.fate-overlay:has(.rating-card) .rating-card,.fate-overlay:has(.schedule-card) .schedule-card,.fate-overlay:has(.support-card) .support-card,.fate-overlay:has(.legal-author-card) .legal-author-card,.fate-overlay:has(.legal-confirm-card) .legal-confirm-card{padding-left:18px;padding-right:18px}.fate-overlay:has(.rating-card) .rating-star{font-size:2.65rem}}
 .wisdom-heading{display:none!important}
 body.theme-kaleidoscope #app-container::after{background:transparent!important}
+
+
+/* ===== FINAL USER REQUEST PASS 2026-08-21 ===== */
+/* Language row: one-line label + current language. */
+.language-setting{display:flex!important;align-items:center!important;justify-content:space-between!important;min-height:58px!important;cursor:pointer!important;}
+.language-setting .settings-item-left{display:flex!important;align-items:center!important;gap:12px!important;min-width:0!important;}
+.language-setting .settings-label{white-space:nowrap!important;}
+.language-current{margin-left:auto!important;white-space:nowrap!important;text-align:right!important;max-width:none!important;font-size:.84rem!important;}
+/* Dedicated dim layer: panel stays crisp, outside is only slightly darkened. */
+#lang-backdrop{position:fixed!important;inset:0!important;z-index:4999!important;background:rgba(0,0,0,.30)!important;backdrop-filter:none!important;}
+.language-picker-panel{z-index:5000!important;}
+.language-picker-panel::before{display:none!important;}
+.language-picker-panel::after{display:none!important;}
+.language-panel-title{grid-column:1/-1;color:var(--gold-light);font:700 1.15rem 'Cinzel',serif;letter-spacing:.12em;padding:0 2px 6px;}
+/* Theme is one coherent settings block. */
+.theme-picker-panel{display:block!important;border-top:0!important;padding:8px 14px 14px!important;background:transparent!important;}
+.theme-colors{display:flex!important;flex-wrap:nowrap!important;gap:12px!important;justify-content:space-between!important;align-items:center!important;width:100%!important;}
+.color-option{flex:1 1 0!important;width:auto!important;max-width:58px!important;height:48px!important;border-radius:50%!important;background:rgba(7,4,16,.7)!important;border:1px solid rgba(255,255,255,.12)!important;box-shadow:inset 0 0 0 3px rgba(5,3,12,.78),0 7px 18px rgba(0,0,0,.28)!important;}
+.color-option span{filter:saturate(.72) brightness(.72)!important;}
+.color-option.active{border-color:var(--gold-light)!important;box-shadow:inset 0 0 0 3px rgba(5,3,12,.78),0 0 0 2px rgba(244,208,63,.22),0 0 20px rgba(244,208,63,.12)!important;transform:scale(1.04)!important;}
+.theme-picker-panel .theme-kaleidoscope{display:none!important;}
+/* Premium status. */
+#vip-status{font-weight:600!important;}
+#vip-status.premium-status{color:var(--gold-light)!important;}
+/* Promo action stays inside its block. */
+.promo-input-group{display:flex!important;gap:8px!important;align-items:center!important;}
+.promo-btn{flex:0 0 auto!important;width:auto!important;min-width:96px!important;padding:10px 12px!important;font-size:.68rem!important;white-space:nowrap!important;}
+#promo-hint{line-height:1.55!important;}
+#promo-hint a{color:var(--gold-light)!important;text-decoration:none!important;font-weight:600!important;}
+/* Time capsule one-line date and time. */
+#first-visit-date{white-space:nowrap!important;font-size:.72rem!important;letter-spacing:0!important;max-width:62%!important;overflow:hidden!important;text-overflow:ellipsis!important;}
+.time-capsule-card{width:min(92vw,560px)!important;max-height:86vh!important;overflow:auto!important;text-align:center!important;}
+.capsule-text{margin:18px auto 22px!important;max-width:520px!important;}
+.capsule-date{white-space:nowrap!important;font-size:clamp(1.15rem,5vw,1.75rem)!important;margin:10px 0 4px!important;}
+.capsule-time{white-space:nowrap!important;color:var(--gold-light)!important;font-size:1rem!important;margin-bottom:0!important;}
+/* Full-screen content for the four requested settings pages. */
+.fate-overlay{padding:0!important;}
+.fate-overlay>.schedule-card,.fate-overlay>.author-card,.fate-overlay>.rating-card{width:100%!important;max-width:none!important;min-height:100vh!important;max-height:none!important;border:0!important;border-radius:0!important;background:linear-gradient(180deg,rgba(12,7,23,.98),rgba(5,3,12,.99))!important;box-shadow:none!important;overflow:auto!important;padding:82px 24px 42px!important;}
+.schedule-card,.support-card,.legal-author-card,.legal-confirm-card{display:flex!important;flex-direction:column!important;justify-content:center!important;}
+.schedule-title{font-size:clamp(1.35rem,5vw,2rem)!important;}
+.schedule-entry,.schedule-icon{display:none!important;}
+.schedule-lead{max-width:700px!important;margin:24px auto!important;font-size:1rem!important;line-height:1.95!important;}
+.schedule-note{max-width:700px!important;margin:22px auto 0!important;font-size:.88rem!important;}
+/* Remove special colors from those four menu rows. */
+.schedule-item,.support-item,.author-item,.rate-item{background:transparent!important;}
+/* Rating: lower content, framed rounded stars. */
+.rating-card{justify-content:center!important;}
+.rating-title{margin-top:24px!important;}
+.rating-stars{margin:34px auto 18px!important;gap:8px!important;}
+.rating-star{width:48px!important;height:48px!important;border:1px solid rgba(212,175,55,.32)!important;border-radius:14px!important;background:rgba(255,255,255,.025)!important;display:flex!important;align-items:center!important;justify-content:center!important;font-size:2rem!important;padding:0!important;}
+.rating-star.selected{background:rgba(212,175,55,.09)!important;border-color:rgba(244,208,63,.75)!important;}
+.rating-feedback{max-width:650px!important;margin:0 auto!important;}
+.rating-text{max-width:650px!important;margin:10px auto!important;line-height:1.85!important;}
+.rating-channel-btn{max-width:420px!important;margin:20px auto 0!important;}
+/* Author reading view. */
+.legal-author-card,.legal-confirm-card{justify-content:flex-start!important;padding-top:84px!important;}
+.legal-author-card .author-title,.legal-confirm-card .author-title{font-size:clamp(1.35rem,5vw,2rem)!important;text-align:left!important;}
+.legal-author-card .author-subtitle{font-size:1rem!important;line-height:1.75!important;text-align:left!important;max-width:760px!important;margin:12px 0 20px!important;}
+.author-legal-text{border:0!important;background:transparent!important;padding:0!important;max-height:none!important;overflow:visible!important;font-size:.94rem!important;line-height:1.95!important;max-width:820px!important;}
+.author-channel-btn{background:linear-gradient(180deg,#d7bb62,#9d7620)!important;color:#1a1206!important;border:1px solid rgba(244,208,63,.45)!important;box-shadow:0 10px 25px rgba(212,175,55,.12)!important;border-radius:14px!important;padding:13px 18px!important;}
+.author-back-check{position:absolute!important;top:16px!important;left:16px!important;width:40px!important;height:40px!important;border-radius:50%!important;background:rgba(255,255,255,.05)!important;border:1px solid rgba(212,175,55,.3)!important;color:var(--gold-light)!important;font-size:1.2rem!important;z-index:12!important;}
+/* Labyrinth: stable viewport, counter/riddle never gets squeezed by hints. */
+.labyrinth-overlay{padding:0!important;overflow-y:auto!important;}
+.labyrinth-container{width:min(92vw,720px)!important;max-height:calc(100vh - 70px)!important;overflow-y:auto!important;padding:76px 22px 38px!important;margin:auto!important;}
+.labyrinth-counter{margin-bottom:28px!important;padding-top:8px!important;}
+.labyrinth-riddle{margin-bottom:24px!important;max-height:none!important;overflow:visible!important;line-height:1.8!important;}
+.labyrinth-hints{margin-top:18px!important;}
+.labyrinth-hint-text{min-height:0!important;margin-top:14px!important;}
+/* Wisdom stays in-place, no decorative diamonds. */
+.wisdom-container::before,.wisdom-container::after{display:none!important;}
+/* Legal text breathing room. */
+.legal-card{max-height:calc(100vh - 34px)!important;margin-top:8px!important;margin-bottom:8px!important;padding-top:62px!important;padding-bottom:50px!important;}
+@media(max-width:600px){
+  .theme-colors{gap:7px!important;}
+  .color-option{height:43px!important;max-width:48px!important;}
+  .language-picker-panel{width:min(90vw,390px)!important;}
+  .language-picker-panel.open{grid-template-columns:1fr 1fr!important;}
+  .rating-star{width:44px!important;height:44px!important;font-size:1.8rem!important;}
+  #first-visit-date{font-size:.64rem!important;max-width:58%!important;}
+}
