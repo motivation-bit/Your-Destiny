@@ -2002,3 +2002,104 @@ body.theme-kaleidoscope #app-container::after{background:transparent!important}
   .rating-star{width:44px!important;height:44px!important;font-size:1.8rem!important;}
   #first-visit-date{font-size:.64rem!important;max-width:58%!important;}
 }
+
+
+/* ===== FINAL PRECISION VISUAL OVERRIDES 2026-08-22 ===== */
+.language-setting{align-items:center!important;min-height:58px!important;}
+.language-setting .settings-item-left{align-items:center!important;}
+.language-setting .settings-item-left>div{display:flex!important;align-items:center!important;}
+.language-setting .settings-label,.language-current{line-height:1.2!important;white-space:nowrap!important;}
+.language-current{display:block!important;margin-left:auto!important;align-self:center!important;}
+#lang-backdrop{background:rgba(0,0,0,.24)!important;backdrop-filter:none!important;}
+.language-picker-panel{z-index:5000!important;}
+
+/* Theme: five dark circular emerald-like swatches, no shadow behind each circle. */
+.theme-setting{align-items:center!important;}
+.theme-setting .settings-item-left{flex:1 1 auto!important;min-width:0!important;}
+.theme-setting .settings-value{white-space:nowrap!important;text-align:right!important;}
+.theme-picker-panel{display:block!important;padding:8px 14px 16px!important;border-top:0!important;}
+.theme-colors{display:flex!important;flex-wrap:nowrap!important;justify-content:space-between!important;gap:10px!important;width:100%!important;}
+.color-option,.color-option:hover,.color-option:active{flex:0 0 42px!important;width:42px!important;min-width:42px!important;max-width:42px!important;height:42px!important;min-height:42px!important;max-height:42px!important;aspect-ratio:1/1!important;border-radius:50%!important;padding:0!important;background:transparent!important;box-shadow:none!important;filter:none!important;transform:none!important;overflow:visible!important;}
+.color-option::after{display:none!important;}
+.color-option span{position:absolute!important;inset:0!important;width:42px!important;height:42px!important;border-radius:50%!important;box-shadow:none!important;filter:brightness(.62) saturate(.78)!important;border:1px solid rgba(255,255,255,.10)!important;}
+.color-option.active{border:1px solid var(--gold-light)!important;box-shadow:0 0 0 2px rgba(212,175,55,.18)!important;}
+.color-option.active span{filter:brightness(.68) saturate(.82)!important;}
+.theme-picker-panel .theme-kaleidoscope{display:none!important;}
+
+/* Promo / Premium */
+.promo-btn{min-width:86px!important;padding:8px 10px!important;font-size:.64rem!important;}
+#promo-hint a{color:var(--gold-light)!important;font-weight:600!important;text-decoration:none!important;}
+#vip-status.premium-status{color:var(--gold-light)!important;}
+#vip-status{font-weight:600!important;}
+
+/* Capsule setting row hides the date entirely. */
+#first-visit-date{display:none!important;}
+.time-capsule-card{width:min(92vw,560px)!important;text-align:center!important;}
+.capsule-text{max-width:520px!important;margin:16px auto!important;line-height:1.75!important;}
+.capsule-date{font-family:'Cinzel',serif!important;font-weight:700!important;color:var(--gold-light)!important;font-size:clamp(1.25rem,5.4vw,1.9rem)!important;white-space:nowrap!important;margin:8px auto 2px!important;}
+.capsule-time{font-family:'Cinzel',serif!important;font-weight:700!important;color:var(--gold-light)!important;font-size:clamp(1rem,4vw,1.2rem)!important;white-space:nowrap!important;margin-bottom:10px!important;}
+.capsule-after{margin-top:14px!important;}
+
+/* Four ordinary settings rows: same visual treatment as the rest. */
+.schedule-item,.support-item,.author-item,.rate-item{background:transparent!important;border-color:var(--border-color)!important;box-shadow:none!important;}
+
+/* Rating: a single elegant outline around the star group. */
+.rating-stars{border:1px solid rgba(212,175,55,.34)!important;border-radius:18px!important;padding:7px 10px!important;gap:2px!important;width:max-content!important;max-width:100%!important;margin:30px auto 20px!important;background:rgba(255,255,255,.018)!important;}
+.rating-star{border:0!important;background:transparent!important;box-shadow:none!important;border-radius:0!important;width:56px!important;height:58px!important;font-size:3.05rem!important;line-height:1!important;color:rgba(255,255,255,.22)!important;}
+.rating-star.selected{background:transparent!important;border:0!important;color:var(--gold-light)!important;text-shadow:0 0 14px rgba(244,208,63,.22)!important;}
+.rating-card.compact .rating-stars{margin-top:26px!important;}
+.rating-card.compact .rating-star{font-size:3.05rem!important;}
+
+/* Full-screen author pages, with comfortable reading width. */
+.legal-author-card,.legal-confirm-card{width:100%!important;max-width:none!important;min-height:100vh!important;padding:96px 8vw 44px!important;}
+.author-intro-card{justify-content:center!important;text-align:center!important;}
+.author-intro-card .author-subtitle{max-width:720px!important;margin:18px auto 28px!important;text-align:center!important;line-height:1.9!important;font-size:1.04rem!important;}
+.author-legal-text{max-width:820px!important;margin:18px auto 28px!important;padding:0!important;border:0!important;background:transparent!important;line-height:1.95!important;font-size:1rem!important;}
+.author-channel-btn{align-self:center!important;max-width:440px!important;width:100%!important;background:linear-gradient(180deg,#b89a4b,#8f6d21)!important;color:#171008!important;border:1px solid rgba(244,208,63,.42)!important;box-shadow:0 8px 24px rgba(0,0,0,.18)!important;border-radius:12px!important;}
+.author-back-check{position:fixed!important;top:max(14px,env(safe-area-inset-top))!important;left:16px!important;width:40px!important;height:40px!important;border-radius:50%!important;background:rgba(255,255,255,.035)!important;border:1px solid rgba(212,175,55,.28)!important;color:var(--gold-light)!important;font-size:1.35rem!important;z-index:10001!important;}
+
+/* Schedule: title -> lead above gold divider -> future entries -> note pinned visually at bottom. */
+.schedule-card{justify-content:flex-start!important;text-align:center!important;}
+.schedule-title{margin-bottom:16px!important;}
+.schedule-lead{margin:0 auto 20px!important;max-width:760px!important;line-height:1.85!important;}
+.schedule-divider{width:min(620px,82vw)!important;height:1px!important;background:linear-gradient(90deg,transparent,var(--gold),transparent)!important;margin:4px auto 22px!important;}
+.schedule-note{margin-top:auto!important;padding-top:26px!important;max-width:760px!important;line-height:1.7!important;}
+
+/* About page: no old quote/lead; comfortable side margins. */
+.about-card-final{max-width:900px!important;padding-left:10vw!important;padding-right:10vw!important;}
+.about-card-final .about-body{line-height:1.95!important;font-size:1rem!important;text-align:left!important;}
+
+/* Wisdom: ornate frame without extra diamonds. */
+.wisdom-frame{position:relative!important;border:1px solid rgba(212,175,55,.38)!important;border-radius:22px!important;padding:42px 26px!important;background:linear-gradient(145deg,rgba(28,13,48,.55),rgba(8,5,18,.42))!important;}
+.wisdom-frame::before,.wisdom-frame::after{content:''!important;position:absolute!important;width:34px!important;height:34px!important;border-color:rgba(212,175,55,.65)!important;border-style:solid!important;pointer-events:none!important;}
+.wisdom-frame::before{top:10px!important;left:10px!important;border-width:1px 0 0 1px!important;border-radius:8px 0 0 0!important;}
+.wisdom-frame::after{right:10px!important;bottom:10px!important;border-width:0 1px 1px 0!important;border-radius:0 0 8px 0!important;}
+.wisdom-quote{line-height:1.9!important;font-size:1.08rem!important;}
+.wisdom-next-btn{margin-top:20px!important;}
+
+/* Stable close button: fixed to viewport corner, never moves when content scrolls. */
+.overlay-close-x{position:fixed!important;top:max(14px,env(safe-area-inset-top))!important;right:16px!important;z-index:10000!important;}
+.fate-overlay,.labyrinth-overlay,.destiny-overlay{overflow-y:auto!important;}
+
+/* Labyrinth counter has breathing room; hints never push the close button. */
+.labyrinth-container{padding-top:88px!important;}
+.labyrinth-counter{margin-bottom:30px!important;padding-top:4px!important;}
+.labyrinth-riddle{margin-bottom:26px!important;line-height:1.85!important;}
+.labyrinth-hints{margin-top:20px!important;}
+
+/* Chronicles: extra side breathing room and readable result blocks. */
+.fate-container{padding-left:1cm!important;padding-right:1cm!important;max-width:820px!important;}
+.fate-mini-block{margin:12px 0!important;padding:13px 14px!important;border-left:1px solid rgba(212,175,55,.28)!important;background:rgba(255,255,255,.02)!important;border-radius:10px!important;line-height:1.65!important;}
+.fate-mini-block strong{display:block!important;color:var(--gold-light)!important;margin-bottom:5px!important;}
+.fate-stat-label{font-variant-numeric:tabular-nums!important;}
+
+@media(max-width:600px){
+  .theme-colors{gap:7px!important;justify-content:space-between!important;}
+  .color-option,.color-option span{width:38px!important;min-width:38px!important;max-width:38px!important;height:38px!important;min-height:38px!important;max-height:38px!important;}
+  .rating-star{width:50px!important;height:52px!important;font-size:2.75rem!important;}
+  .legal-author-card,.legal-confirm-card{padding-left:7vw!important;padding-right:7vw!important;}
+  .about-card-final{padding-left:1cm!important;padding-right:1cm!important;}
+  .fate-container{padding-left:1cm!important;padding-right:1cm!important;}
+}
+/* Keep every fixed close control clear of the first line of content. */
+.fate-overlay>.fate-container,.destiny-overlay>.destiny-container,.wisdom-overlay>.wisdom-container{padding-top:88px!important;}

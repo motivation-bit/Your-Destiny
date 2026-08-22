@@ -6400,3 +6400,317 @@ if (typeof LABYRINTH_RIDDLES !== 'undefined') {
     en:'Step-by-step. 1) First guarantee that you have a god who is not Random. For example, ask B: “If I asked you ‘Is A Random?’, would you answer ja?” If B is Random, the other two are non-Random, so C is safe. If B is not Random, the nested wording lets you reason about A while neutralizing truth/falsehood and the unknown meaning of da/ja. 2) Once you have a non-Random god, use the same nested form: “If I asked you X, would you answer ja?” This gives a stable interpretation without first learning which word means yes. 3) Use the remaining questions to determine which other god is Random. 4) The last role follows by elimination. The key is the nested question, not guessing the meaning of da/ja.'
   };
 }
+
+
+/* ============================================================
+   FINAL PRECISION PASS — 2026-08-22
+   ============================================================ */
+(function(){
+  const LANG_NAMES={ru:'Русский',en:'English',es:'Español',pt:'Português',de:'Deutsch',fr:'Français'};
+
+  // Final language picker behavior: keep the game visible but slightly dimmed;
+  // the picker itself remains crisp. Switching language is immediate and persistent.
+  window.closeLanguagePicker=function(){
+    document.getElementById('language-picker-panel')?.classList.remove('open');
+    document.getElementById('lang-backdrop')?.remove();
+  };
+  window.toggleLanguagePicker=function(){
+    const panel=document.getElementById('language-picker-panel'); if(!panel)return;
+    if(panel.classList.contains('open')) return closeLanguagePicker();
+    const title=document.getElementById('language-panel-title');
+    if(title) title.textContent=(T[currentLang]?.language||'Language');
+    const backdrop=document.createElement('div');
+    backdrop.id='lang-backdrop'; backdrop.className='lang-backdrop'; backdrop.onclick=closeLanguagePicker;
+    document.body.appendChild(backdrop); panel.classList.add('open');
+  };
+  window.setLanguage=function(lang){
+    if(!T[lang]) lang='en';
+    currentLang=lang;
+    localStorage.setItem('lang',lang); localStorage.setItem('lang_manual','1');
+    updateLanguageUI(); renderThemeColors(); updateVipDisplay();
+    closeLanguagePicker();
+  };
+
+  // Five fixed themes only. No kaleidoscope.
+  if(Array.isArray(THEMES)){
+    THEMES.splice(5);
+  }
+  window.renderThemeColors=function(){
+    const container=document.querySelector('.theme-colors'); if(!container)return;
+    container.innerHTML=THEMES.map(th=>`<button class="color-option ${th.id===currentTheme?'active':''} theme-${th.id}" data-theme="${th.id}" aria-label="${loc(th.name)}" onclick="event.stopPropagation();setTheme('${th.id}')" style="--swatch:${th.swatch}"><span></span></button>`).join('');
+  };
+  window.setTheme=function(theme){
+    if(!THEMES.some(x=>x.id===theme)) theme='purple';
+    document.body.className='theme-'+theme; currentTheme=theme; localStorage.setItem('theme',theme);
+    const th=THEMES.find(x=>x.id===theme); const name=document.getElementById('theme-name');
+    if(name) name.textContent=th?loc(th.name):theme;
+    renderThemeColors();
+  };
+
+  // Premium wording.
+  Object.assign(T.ru,{premiumAvailable:'Доступно',premiumRestricted:'Ограничен'});
+  Object.assign(T.en,{premiumAvailable:'Available',premiumRestricted:'Restricted'});
+  Object.assign(T.es,{premiumAvailable:'Disponible',premiumRestricted:'Limitado'});
+  Object.assign(T.pt,{premiumAvailable:'Disponível',premiumRestricted:'Limitado'});
+  Object.assign(T.de,{premiumAvailable:'Verfügbar',premiumRestricted:'Eingeschränkt'});
+  Object.assign(T.fr,{premiumAvailable:'Disponible',premiumRestricted:'Limité'});
+
+  // Promo wording with the whole Telegram-channel phrase linked and gold.
+  const promoTexts={
+    ru:'Актуальные промокоды — в нашем Telegram-канале.',
+    en:'Current promo codes are in our Telegram channel.',
+    es:'Códigos promocionales actuales — en nuestro canal de Telegram.',
+    pt:'Códigos promocionais atuais — no nosso canal do Telegram.',
+    de:'Aktuelle Promo-Codes gibt es in unserem Telegram-Kanal.',
+    fr:'Les codes promo actuels sont sur notre canal Telegram.'
+  };
+  function renderPromoHint(){
+    const el=document.getElementById('promo-hint'); if(!el)return;
+    const raw=promoTexts[currentLang]||promoTexts.en;
+    const idx=raw.toLowerCase().indexOf('telegram');
+    if(idx<0){el.textContent=raw;return;}
+    let end=idx+'telegram'.length;
+    const tail=raw.slice(end);
+    const suffixMatch=tail.match(/^(?:[- ](?:канале|канал|channel|canal|Kanal|chaîne))?/i);
+    if(suffixMatch&&suffixMatch[0]) end+=suffixMatch[0].length;
+    const phrase=raw.slice(idx,end);
+    el.innerHTML=raw.slice(0,idx)+`<a href="${CHANNEL_URL}" target="_blank" rel="noopener">${phrase}</a>`+raw.slice(end);
+  }
+
+  const oldUpdateLanguageUI=window.updateLanguageUI;
+  window.updateLanguageUI=function(){
+    if(typeof oldUpdateLanguageUI==='function') oldUpdateLanguageUI();
+    const cur=document.getElementById('language-current'); if(cur) cur.textContent=LANG_NAMES[currentLang]||LANG_NAMES.en;
+    const title=document.getElementById('language-panel-title'); if(title) title.textContent=T[currentLang]?.language||'Language';
+    renderPromoHint();
+    document.documentElement.lang=currentLang;
+  };
+
+  // Capsule: setting row never shows the date; modal has sentence -> date/time -> closing line.
+  window.initFirstVisit=function(){
+    let firstVisit=localStorage.getItem('first_visit_at');
+    if(!firstVisit){firstVisit=new Date().toISOString();localStorage.setItem('first_visit_at',firstVisit);}
+    const el=document.getElementById('first-visit-date'); if(el) el.textContent='';
+  };
+  window.showTimeCapsule=function(){
+    initFirstVisit();
+    const d=new Date(localStorage.getItem('first_visit_at'));
+    const datePart=d.toLocaleDateString(DATE_LOCALES[currentLang]||'en-GB',{day:'2-digit',month:'long',year:'numeric'});
+    const timePart=d.toLocaleTimeString(DATE_LOCALES[currentLang]||'en-GB',{hour:'2-digit',minute:'2-digit',hour12:false});
+    const copy={
+      ru:{first:'Ты впервые вошёл в Your Destiny:',after:'С этого момента началась твоя история в этом мире.'},
+      en:{first:'You first entered Your Destiny:',after:'From this moment, your story in this world began.'},
+      es:{first:'Entraste por primera vez en Your Destiny:',after:'Desde este momento comenzó tu historia en este mundo.'},
+      pt:{first:'Entraste pela primeira vez no Your Destiny:',after:'A partir deste momento começou a tua história neste mundo.'},
+      de:{first:'Du bist erstmals in Your Destiny eingetreten:',after:'Von diesem Moment an begann deine Geschichte in dieser Welt.'},
+      fr:{first:'Tu es entré pour la première fois dans Your Destiny :',after:'À partir de cet instant, ton histoire dans cet univers a commencé.'}
+    }[currentLang]||{};
+    const overlay=document.createElement('div'); overlay.className='fate-overlay active';
+    overlay.innerHTML=`<button class="overlay-close-x" onclick="this.closest('.fate-overlay').remove()">&times;</button><div class="time-capsule-card"><div class="capsule-title">${t('timeCapsule')}</div><div class="capsule-text">${copy.first}</div><div class="capsule-date">${datePart}</div><div class="capsule-time">${timePart}</div><div class="capsule-text capsule-after">${copy.after}</div></div>`;
+    document.body.appendChild(overlay);
+  };
+
+  // Rating: large stars inside one elegant outline, no per-star boxes.
+  window.showRatingModal=function(){
+    const overlay=document.createElement('div'); overlay.className='fate-overlay active';
+    const texts=RATING_TEXTS[currentLang]||RATING_TEXTS.en; const saved=Number(localStorage.getItem('your_destiny_rating')||0);
+    overlay.innerHTML=`<button class="overlay-close-x" onclick="this.closest('.fate-overlay').remove()">&times;</button><div class="rating-card ${saved?'has-rating':'compact'}" id="rating-card"><div class="rating-title">${texts.title}</div><div class="rating-stars" role="radiogroup" aria-label="${texts.title}">${[1,2,3,4,5].map(i=>`<button class="rating-star ${i<=saved?'selected':''}" data-rating="${i}" aria-label="${i}" onclick="selectRating(${i})">★</button>`).join('')}</div><div class="rating-feedback" id="rating-feedback" ${saved?'':'hidden'}><div class="rating-thanks">${texts.thanks}</div><div class="rating-text" id="rating-text">${saved?(texts[saved]||texts[5]):''}</div><a class="rating-channel-btn" href="${CHANNEL_URL}" target="_blank" rel="noopener">${texts.open}</a></div></div>`;
+    document.body.appendChild(overlay);
+  };
+  window.selectRating=function(value){
+    localStorage.setItem('your_destiny_rating',String(value));
+    const card=document.getElementById('rating-card'); const stars=document.querySelectorAll('.rating-star');
+    stars.forEach(star=>star.classList.toggle('selected',Number(star.dataset.rating)<=value));
+    card?.classList.remove('compact'); card?.classList.add('has-rating');
+    const feedback=document.getElementById('rating-feedback'); if(feedback) feedback.hidden=false;
+    const texts=RATING_TEXTS[currentLang]||RATING_TEXTS.en;
+    const text=document.getElementById('rating-text'); if(text) text.textContent=texts[value]||texts[5];
+    const thanks=document.querySelector('.rating-thanks'); if(thanks) thanks.textContent=texts.thanks;
+    const channel=document.querySelector('.rating-channel-btn'); if(channel) channel.textContent=texts.open;
+  };
+
+  // Schedule is intentionally sourced from its own editable file.
+  window.showStorySchedule=function(){
+    const c=(window.STORY_SCHEDULE_COPY&&window.STORY_SCHEDULE_COPY[currentLang])||window.STORY_SCHEDULE_COPY.en;
+    const overlay=document.createElement('div'); overlay.className='fate-overlay active';
+    overlay.innerHTML=`<button class="overlay-close-x" onclick="this.closest('.fate-overlay').remove()">&times;</button><div class="schedule-card"><div class="schedule-title">${c.title}</div><div class="schedule-lead">${c.lead}</div><div class="schedule-divider"></div><div class="schedule-future"></div><div class="schedule-note">${c.note}</div></div>`;
+    document.body.appendChild(overlay);
+  };
+
+  // Support page remains clean in the settings list; wallet is only visible after opening it.
+  // Author flow: attractive introduction -> strict transfer terms -> final confirmation.
+  const authorIntro={
+    ru:'Есть история, сцена, загадка или идея, которую хочется увидеть внутри Your Destiny? Поделитесь ею с нами. Возможно, именно ваш замысел однажды станет частью мира игры.',
+    en:'Have a story, scene, riddle or idea you would like to see inside Your Destiny? Share it with us. Your idea may one day become part of the game world.',
+    es:'¿Tienes una historia, escena, acertijo o idea que te gustaría ver en Your Destiny? Compártela con nosotros. Tu idea puede convertirse algún día en parte del mundo del juego.',
+    pt:'Tens uma história, cena, enigma ou ideia que gostarias de ver no Your Destiny? Partilha-a connosco. A tua ideia pode um dia tornar-se parte do mundo do jogo.',
+    de:'Du hast eine Geschichte, Szene, ein Rätsel oder eine Idee, die du in Your Destiny sehen möchtest? Teile sie mit uns. Deine Idee könnte eines Tages Teil der Spielwelt werden.',
+    fr:'Vous avez une histoire, une scène, une énigme ou une idée que vous aimeriez voir dans Your Destiny ? Partagez-la avec nous. Votre idée pourrait un jour devenir une partie du monde du jeu.'
+  };
+  const authorLegal={
+    ru:'Отправляя материал, вы подтверждаете, что вправе его передать. С момента отправки и принятия материала все исключительные имущественные права на него передаются Your Destiny безвозмездно и без ограничения территории: право использовать, изменять, сокращать, дополнять, перерабатывать, переводить, адаптировать, объединять с другими материалами, публиковать, распространять, размещать, лицензировать, передавать третьим лицам и монетизировать материал любым способом. Вы не требуете за этот материал оплату, роялти, долю дохода, обязательное указание имени, удаление материала или прекращение его использования. Your Destiny самостоятельно решает, использовать ли материал, когда и в каком виде. Отправляя материал, вы также подтверждаете отсутствие претензий третьих лиц и берёте на себя ответственность за права на предоставленный материал.',
+    en:'By submitting material, you confirm that you are entitled to submit it. From submission and acceptance, all exclusive economic rights in the material are transferred to Your Destiny without compensation and without territorial limitation, including the right to use, edit, shorten, expand, adapt, translate, combine, publish, distribute, display, license, transfer to third parties and monetize the material in any manner. You do not claim payment, royalties, revenue share, mandatory attribution, removal of the material or cessation of its use. Your Destiny independently decides whether, when and in what form the material is used. You also confirm that no third-party claims prevent the submission and accept responsibility for the rights to the material.',
+    es:'Al enviar material, confirmas que tienes derecho a entregarlo. Desde su envío y aceptación, todos los derechos patrimoniales exclusivos sobre el material se transfieren a Your Destiny sin remuneración y sin limitación territorial, incluido el derecho a usarlo, modificarlo, reducirlo, ampliarlo, adaptarlo, traducirlo, combinarlo, publicarlo, distribuirlo, mostrarlo, licenciarlo, transferirlo a terceros y monetizarlo de cualquier forma. No reclamarás pago, regalías, participación en ingresos, atribución obligatoria, retirada del material ni cese de su uso. Your Destiny decide por sí mismo si, cuándo y en qué forma utilizará el material. También confirmas que no existen reclamaciones de terceros que impidan su entrega y asumes la responsabilidad por los derechos sobre el material.',
+    pt:'Ao enviar material, confirmas que tens o direito de o entregar. A partir do envio e aceitação, todos os direitos patrimoniais exclusivos sobre o material são transferidos para o Your Destiny sem remuneração e sem limitação territorial, incluindo o direito de usar, editar, reduzir, ampliar, adaptar, traduzir, combinar, publicar, distribuir, exibir, licenciar, transferir a terceiros e monetizar o material de qualquer forma. Não reclamarás pagamento, royalties, participação em receitas, atribuição obrigatória, remoção do material ou cessação da sua utilização. O Your Destiny decide autonomamente se, quando e em que forma utilizará o material. Confirmas ainda que não existem reclamações de terceiros que impeçam o envio e assumes a responsabilidade pelos direitos sobre o material.',
+    de:'Mit der Einreichung bestätigst du, dass du zur Übermittlung berechtigt bist. Mit Einreichung und Annahme werden sämtliche ausschließlichen vermögensrechtlichen Rechte am Material unentgeltlich und ohne territoriale Begrenzung auf Your Destiny übertragen, einschließlich Nutzung, Bearbeitung, Kürzung, Erweiterung, Anpassung, Übersetzung, Verbindung, Veröffentlichung, Verbreitung, Darstellung, Lizenzierung, Übertragung an Dritte und Monetarisierung. Du verlangst dafür keine Zahlung, Tantiemen, Umsatzbeteiligung, verpflichtende Namensnennung, Entfernung oder Beendigung der Nutzung. Your Destiny entscheidet selbst, ob, wann und in welcher Form das Material verwendet wird. Du bestätigst außerdem, dass keine Rechte Dritter der Übermittlung entgegenstehen, und übernimmst die Verantwortung für die Rechte am Material.',
+    fr:'En envoyant un contenu, vous confirmez être autorisé à le transmettre. Dès son envoi et son acceptation, l’ensemble des droits patrimoniaux exclusifs sur le contenu est transféré à Your Destiny sans rémunération et sans limitation territoriale, notamment le droit de l’utiliser, modifier, réduire, compléter, adapter, traduire, combiner, publier, distribuer, afficher, concéder sous licence, transférer à des tiers et monétiser de toute manière. Vous ne réclamez ni paiement, ni redevances, ni part des revenus, ni attribution obligatoire, ni retrait du contenu, ni cessation de son utilisation. Your Destiny décide librement si, quand et sous quelle forme le contenu est utilisé. Vous confirmez également qu’aucun droit de tiers ne s’oppose à l’envoi et assumez la responsabilité des droits sur le contenu.'
+  };
+  const authorContinue={ru:'Продолжить',en:'Continue',es:'Continuar',pt:'Continuar',de:'Weiter',fr:'Continuer'};
+  const authorConfirm={ru:'Подтвердите ещё раз: вы прочитали условия, понимаете, что после принятия материала права переходят Your Destiny без выплаты и дальнейших имущественных требований с вашей стороны, и хотите перейти к отправке материала.',en:'Confirm once more: you have read the terms, understand that after acceptance the rights transfer to Your Destiny without payment or further economic claims from you, and want to proceed to submission.',es:'Confirma una vez más: has leído las condiciones, entiendes que tras la aceptación los derechos pasan a Your Destiny sin pago ni futuras reclamaciones económicas por tu parte y quieres continuar.',pt:'Confirma novamente: leste as condições, compreendes que após a aceitação os direitos passam para o Your Destiny sem pagamento nem futuras reivindicações económicas da tua parte e queres continuar.',de:'Bestätige erneut: Du hast die Bedingungen gelesen, verstehst, dass die Rechte nach Annahme ohne Zahlung und ohne weitere vermögensrechtliche Ansprüche auf Your Destiny übergehen, und möchtest fortfahren.',fr:'Confirmez à nouveau : vous avez lu les conditions, comprenez qu’après acceptation les droits sont transférés à Your Destiny sans paiement ni autres revendications patrimoniales de votre part, et souhaitez continuer.'};
+  const authorAgree={ru:'Согласен — написать',en:'I agree — write',es:'Acepto — escribir',pt:'Aceito — escrever',de:'Ich stimme zu — schreiben',fr:"J’accepte — écrire"};
+  window.showBecomeAuthor=function(){
+    const overlay=document.createElement('div'); overlay.className='fate-overlay active';
+    overlay.innerHTML=`<button class="overlay-close-x" onclick="this.closest('.fate-overlay').remove()">&times;</button><div class="author-card legal-author-card author-intro-card"><div class="author-title">${t('becomeAuthor')}</div><div class="author-subtitle">${authorIntro[currentLang]||authorIntro.en}</div><button class="author-channel-btn" onclick="showAuthorLegal()">${authorContinue[currentLang]||authorContinue.en}</button></div>`;
+    document.body.appendChild(overlay);
+  };
+  window.showAuthorLegal=function(){
+    document.querySelector('.fate-overlay')?.remove(); const overlay=document.createElement('div'); overlay.className='fate-overlay active';
+    overlay.innerHTML=`<button class="overlay-close-x" onclick="this.closest('.fate-overlay').remove()">&times;</button><button class="author-back-check" onclick="this.closest('.fate-overlay').remove();showBecomeAuthor()" aria-label="Back">↩</button><div class="author-card legal-author-card"><div class="author-title">${t('becomeAuthor')}</div><div class="author-legal-text">${authorLegal[currentLang]||authorLegal.en}</div><button class="author-channel-btn" onclick="showAuthorConfirm()">${authorContinue[currentLang]||authorContinue.en}</button></div>`;
+    document.body.appendChild(overlay);
+  };
+  window.showAuthorConfirm=function(){
+    document.querySelector('.fate-overlay')?.remove(); const overlay=document.createElement('div'); overlay.className='fate-overlay active';
+    overlay.innerHTML=`<button class="overlay-close-x" onclick="this.closest('.fate-overlay').remove()">&times;</button><button class="author-back-check" onclick="this.closest('.fate-overlay').remove();showAuthorLegal()" aria-label="Back">↩</button><div class="author-card legal-confirm-card"><div class="author-title">${t('becomeAuthor')}</div><div class="author-legal-text">${authorConfirm[currentLang]||authorConfirm.en}</div><a class="author-channel-btn" href="${DIRECT_URL}" target="_blank" rel="noopener">${authorAgree[currentLang]||authorAgree.en}</a></div>`;
+    document.body.appendChild(overlay);
+  };
+
+  // About: explicitly explains what is inside the game, without the old wording.
+  window.showAbout=function(){
+    const copy={
+      ru:'Здесь ты можешь проходить истории и принимать решения, отвечать на вопросы, разгадывать логические задачи, открывать разные варианты своей судьбы и читать короткие мысли о выборе. Каждый раздел устроен по-своему, поэтому можно просто выбрать то, что интересно сейчас, и продолжить с того места, где остановился.',
+      en:'Here you can play through stories and make choices, answer questions, solve logic challenges, explore different versions of your destiny and read short thoughts about choice. Each section works differently, so simply open whatever interests you now and continue from where you stopped.',
+      es:'Aquí puedes recorrer historias y tomar decisiones, responder preguntas, resolver retos de lógica, descubrir distintas versiones de tu destino y leer pensamientos breves sobre las decisiones. Cada sección funciona de forma diferente, así que puedes abrir lo que te interese y continuar donde lo dejaste.',
+      pt:'Aqui podes percorrer histórias e tomar decisões, responder a perguntas, resolver desafios de lógica, descobrir diferentes versões do teu destino e ler pensamentos breves sobre escolhas. Cada secção funciona de forma diferente, por isso podes abrir o que te interessa e continuar de onde paraste.',
+      de:'Hier kannst du Geschichten erleben und Entscheidungen treffen, Fragen beantworten, Logikaufgaben lösen, verschiedene Facetten deines Schicksals entdecken und kurze Gedanken über Entscheidungen lesen. Jeder Bereich funktioniert etwas anders, sodass du einfach das öffnen kannst, was dich gerade interessiert.',
+      fr:'Ici, vous pouvez parcourir des histoires et faire des choix, répondre à des questions, résoudre des défis logiques, découvrir différentes facettes de votre destin et lire de courtes pensées sur les décisions. Chaque section fonctionne différemment : ouvrez simplement ce qui vous intéresse et reprenez là où vous vous êtes arrêté.'
+    };
+    const overlay=document.createElement('div'); overlay.className='fate-overlay active'; overlay.innerHTML=`<button class="overlay-close-x" onclick="this.closest('.fate-overlay').remove()">&times;</button><div class="fate-container about-card about-card-final"><div class="fate-final-title">${t('about')}</div><div class="about-body">${copy[currentLang]||copy.en}</div></div>`; document.body.appendChild(overlay);
+  };
+
+  // Wisdom: immediate in-place switching; no modal replacement/lag.
+  window.showWisdom=function(){
+    const overlay=document.createElement('div'); overlay.className='wisdom-overlay active';
+    document.body.appendChild(overlay); renderWisdomCard(overlay);
+  };
+  window.nextWisdom=function(){
+    const overlay=document.querySelector('.wisdom-overlay'); if(!overlay)return;
+    renderWisdomCard(overlay);
+  };
+
+  // Better final channel copy.
+  const finalChannel={
+    ru:'Заглядывайте в наш Telegram-канал — мы уже приготовили для вас похожие задачи.',
+    en:'Visit our Telegram channel — we have already prepared similar challenges for you.',
+    es:'Visita nuestro canal de Telegram — ya hemos preparado retos parecidos para ti.',
+    pt:'Visita o nosso canal do Telegram — já preparámos desafios semelhantes para ti.',
+    de:'Besuche unseren Telegram-Kanal — wir haben bereits ähnliche Aufgaben für dich vorbereitet.',
+    fr:'Rejoignez notre canal Telegram — nous avons déjà préparé des défis similaires pour vous.'
+  };
+  Object.keys(finalChannel).forEach(k=>{T[k].finalChannel=finalChannel[k];});
+
+  // Chronicles: one decimal place, always exactly 100.0%; immediate answer result;
+  // no generic disclaimer text. Mini-archetype + light pros/cons.
+  function normalizedStats(st){
+    const vals=[Number(st.a)||0,Number(st.b)||0,Number(st.c)||0], sum=vals.reduce((a,b)=>a+b,0)||1;
+    let out=vals.map(v=>Math.round(v/sum*1000)/10); const diff=Math.round((100-out.reduce((a,b)=>a+b,0))*10)/10; out[2]=Math.round((out[2]+diff)*10)/10; return out;
+  }
+  function miniArchetype(d,choice){
+    const text=String(loc(d[choice])).toLowerCase();
+    if(/эконом|сэконом|дешев|сберег|save|cheap|econom|économ|spar/.test(text)) return {ru:'Рациональный Стратег',en:'Rational Strategist'};
+    if(/удоб|комфорт|отдых|comfort|rest|confort|komfort/.test(text)) return {ru:'Ценитель Комфорта',en:'Comfort Seeker'};
+    if(/персп|будущ|рост|career|future|growth|perspect/.test(text)) return {ru:'Инвестор-Провидец',en:'Future Investor'};
+    if(/помог|поддерж|выслуш|listen|help|support|aide|hilf/.test(text)) return {ru:'Внимательный Союзник',en:'Attentive Ally'};
+    if(/план|plan|strateg|стратег/.test(text)) return {ru:'Системный Планировщик',en:'Systematic Planner'};
+    if(/нов|спонтан|путеш|explor|new|voyag|neu|nouveau/.test(text)) return {ru:'Исследователь Возможностей',en:'Opportunity Explorer'};
+    return {ru:'Практичный Наблюдатель',en:'Practical Observer'};
+  }
+  const miniByChoice={
+    ru:{a:'Экономия часто даёт контроль над ресурсами.',b:'Удобство снижает ежедневное напряжение.',c:'Перспектива помогает смотреть дальше текущего момента.'},
+    en:{a:'Saving often gives you control over resources.',b:'Convenience reduces daily friction.',c:'Perspective helps you look beyond the current moment.'}
+  };
+  function fateAnalysis(d,choice){
+    const arch=miniArchetype(d,choice); const labels=miniByChoice[currentLang]||miniByChoice.en;
+    const chosen=choice==='a'?labels.a:choice==='b'?labels.b:labels.c;
+    const risk=currentLang==='ru'?(choice==='a'?'Минус: иногда можно слишком долго считать выгоду.':choice==='b'?'Минус: удобство иногда заставляет откладывать сложное.':'Минус: взгляд далеко вперёд может отодвинуть решение сейчас.'):(choice==='a'?'Downside: you may spend too long calculating the benefit.':choice==='b'?'Downside: convenience can sometimes delay difficult action.':'Downside: looking far ahead can delay the decision in front of you.');
+    return `<div class="fate-mini-block"><strong>🎭 2. ${currentLang==='ru'?'Мини-архетип':'Mini-archetype'}</strong><div>${arch[currentLang]||arch.en}</div></div><div class="fate-mini-block"><strong>⚖️ 3. ${currentLang==='ru'?'Быстрый разбор плюсов и минусов':'Quick pros & cons'}</strong><div>${chosen}</div><div>${risk}</div></div>`;
+  }
+  window.renderFateQuestion=function(index){
+    const d=FATE_DILEMMAS[index]; let overlay=document.getElementById('fate-overlay');
+    if(!overlay){overlay=document.createElement('div');overlay.id='fate-overlay';overlay.className='fate-overlay active';document.body.appendChild(overlay);} overlay.className='fate-overlay active';
+    overlay.innerHTML=`<button class="overlay-close-x" onclick="closeFateDilemmas()">&times;</button><div class="fate-container"><div class="fate-counter">${index+1} / ${FATE_DILEMMAS.length}</div><div class="fate-question">${loc(d.question)}</div><div class="fate-choices" id="fate-choices"><button class="fate-btn" onclick="answerFate(${index},'a')"><span class="fate-btn-text">${loc(d.a)}</span></button><button class="fate-btn" onclick="answerFate(${index},'b')"><span class="fate-btn-text">${loc(d.b)}</span></button><button class="fate-btn" onclick="answerFate(${index},'c')"><span class="fate-btn-text">${loc(d.c)}</span></button></div><div class="fate-result" id="fate-result" style="display:none"><div class="fate-stats">${['a','b','c'].map(k=>`<div class="fate-stat-bar"><div class="fate-stat-fill" style="width:${normalizedStats(d.stats)[k==='a'?0:k==='b'?1:2]}%"></div><span class="fate-stat-label">${normalizedStats(d.stats)[k==='a'?0:k==='b'?1:2].toFixed(1)}%</span></div>`).join('')}</div><div class="fate-analysis" id="fate-analysis"></div><button class="fate-next" onclick="nextFateQuestion()">${loc(NEXT_BUTTON_TEXTS[index%NEXT_BUTTON_TEXTS.length])}</button></div></div>`;
+  };
+  window.answerFate=function(index,choice){
+    const d=FATE_DILEMMAS[index]; const state=JSON.parse(localStorage.getItem('fate_dilemmas')||'{"currentIndex":0,"answers":[]}'); state.answers.push({index,choice}); state.currentIndex=index+1; localStorage.setItem('fate_dilemmas',JSON.stringify(state));
+    const result=document.getElementById('fate-result'), choices=document.getElementById('fate-choices'); if(!result||!choices)return;
+    choices.style.display='none'; result.style.display='block'; const analysis=document.getElementById('fate-analysis'); if(analysis)analysis.innerHTML=fateAnalysis(d,choice);
+  };
+
+  // True Destiny: 23 questions and exactly 8 result types; restart works immediately.
+  const Q=(q,opts)=>({question:q,options:opts});
+  const tr=(ru,en,es,pt,de,fr)=>({ru,en,es,pt,de,fr});
+  const opt=(txt,scores)=>({text:txt,scores});
+  const S=(k)=>({leader:k==='leader'?2:0,planner:k==='planner'?2:0,analyst:k==='analyst'?2:0,empath:k==='empath'?2:0,creator:k==='creator'?2:0,explorer:k==='explorer'?2:0,realist:k==='realist'?2:0,dreamer:k==='dreamer'?2:0});
+  const extra=[
+    Q(tr('Тебе нужно выбрать подарок близкому человеку. Что важнее всего?','You need to choose a gift for someone close. What matters most?','Tienes que elegir un regalo para alguien cercano. ¿Qué importa más?','Precisas de escolher um presente para alguém próximo. O que importa mais?','Du musst ein Geschenk für einen nahestehenden Menschen wählen. Was ist am wichtigsten?','Tu dois choisir un cadeau pour un proche. Qu’est-ce qui compte le plus?'),[
+      opt(tr('Практичность','Practicality','Practicidad','Praticidade','Praktikabilität','Praticité'),S('realist')),opt(tr('Личная история','Personal meaning','Significado personal','Significado pessoal','Persönliche Bedeutung','Signification personnelle'),S('empath')),opt(tr('Эффект неожиданности','Surprise factor','Factor sorpresa','Efeito surpresa','Überraschungseffekt','Effet de surprise'),S('creator')),opt(tr('Что-то совсем необычное','Something unusual','Algo inusual','Algo fora do comum','Etwas Ungewöhnliches','Quelque chose d’inhabituel'),S('explorer'))]),
+    Q(tr('Если в споре друзей оба уверены в своей правоте, что ты сделаешь?','If two friends are both sure they are right, what do you do?','Si dos amigos están seguros de tener razón, ¿qué haces?','Se dois amigos têm a certeza de ter razão, o que fazes?','Wenn zwei Freunde überzeugt sind, recht zu haben, was tust du?','Si deux amis sont certains d’avoir raison, que fais-tu?'),[
+      opt(tr('Разберу факты','Look at the facts','Revisar los hechos','Analisar os factos','Fakten prüfen','Examiner les faits'),S('analyst')),opt(tr('Попробую их примирить','Try to reconcile them','Intentar reconciliarlos','Tentar reconciliá-los','Sie versöhnen','Les réconcilier'),S('empath')),opt(tr('Предложу конкретное решение','Offer a concrete solution','Proponer una solución concreta','Propor uma solução concreta','Eine konkrete Lösung vorschlagen','Proposer une solution concrète'),S('leader')),opt(tr('Оставлю им пространство самим разобраться','Give them space','Darles espacio','Dar-lhes espaço','Ihnen Raum geben','Leur laisser de l’espace'),S('analyst'))]),
+    Q(tr('Ты замечаешь, что дома давно пора что-то изменить. С чего начнёшь?','You notice that something at home should have been changed long ago. Where do you start?','Notas que en casa hace tiempo que algo necesita cambiar. ¿Por dónde empiezas?','Notas que em casa algo já devia ter mudado. Por onde começas?','Du merkst, dass zu Hause längst etwas verändert werden sollte. Wo beginnst du?','Tu remarques qu’une chose à la maison devrait changer depuis longtemps. Par quoi commences-tu?'),[
+      opt(tr('Составлю список','Make a list','Hacer una lista','Fazer uma lista','Eine Liste erstellen','Faire une liste'),S('planner')),opt(tr('Начну сразу с самого заметного','Start with the most visible thing','Empezar por lo más visible','Começar pelo mais visível','Mit dem Auffälligsten beginnen','Commencer par le plus visible'),S('leader')),opt(tr('Поищу красивую идею','Find a creative idea','Buscar una idea creativa','Procurar uma ideia criativa','Eine kreative Idee suchen','Chercher une idée créative'),S('creator')),opt(tr('Посмотрю варианты и сравню','Compare options','Comparar opciones','Comparar opções','Möglichkeiten vergleichen','Comparer les options'),S('analyst'))]),
+    Q(tr('Что ты скорее выберешь для свободного дня в незнакомом городе?','What would you choose for a free day in an unfamiliar city?','¿Qué elegirías para un día libre en una ciudad desconocida?','O que escolherias para um dia livre numa cidade desconhecida?','Was würdest du an einem freien Tag in einer unbekannten Stadt wählen?','Que choisirais-tu pour une journée libre dans une ville inconnue?'),[
+      opt(tr('Заранее составлю маршрут','Plan a route in advance','Planear una ruta','Planear um percurso','Eine Route planen','Préparer un itinéraire'),S('planner')),opt(tr('Просто пойду куда интересно','Just wander','Ir donde parezca interesante','Ir onde parecer interessante','Einfach losgehen','Flâner selon l’envie'),S('explorer')),opt(tr('Найду места с необычной историей','Find places with unusual stories','Buscar lugares con historias curiosas','Procurar lugares com histórias curiosas','Orte mit ungewöhnlichen Geschichten suchen','Chercher des lieux aux histoires étonnantes'),S('dreamer')),opt(tr('Выберу самое удобное и известное','Choose the convenient known places','Elegir lugares cómodos y conocidos','Escolher lugares conhecidos e convenientes','Bekannte und bequeme Orte wählen','Choisir des lieux connus et pratiques'),S('realist'))]),
+    Q(tr('Если тебе предлагают выступить перед людьми без подготовки, что сильнее всего мешает?','If you are asked to speak to people without preparation, what gets in your way most?','Si te piden hablar ante personas sin preparación, ¿qué te frena más?','Se te pedirem para falar sem preparação, o que mais te trava?','Wenn du unvorbereitet vor Menschen sprechen sollst, was hindert dich am meisten?','Si on te demande de parler sans préparation, qu’est-ce qui te freine le plus?'),[
+      opt(tr('Страх ошибиться','Fear of making a mistake','Miedo a equivocarme','Medo de errar','Angst vor Fehlern','Peur de me tromper'),S('analyst')),opt(tr('Боязнь разочаровать людей','Fear of disappointing people','Miedo a decepcionar','Medo de desiludir','Angst, Menschen zu enttäuschen','Peur de décevoir'),S('empath')),opt(tr('Не люблю ограничения без подготовки','I dislike being unprepared','No me gustan las limitaciones sin preparación','Não gosto de limitações sem preparação','Ich mag unvorbereitete Einschränkungen nicht','Je n’aime pas les contraintes sans préparation'),S('explorer')),opt(tr('Наоборот, нравится импровизация','I actually like improvising','Me gusta improvisar','Na verdade gosto de improvisar','Ich improvisiere gern','J’aime improviser'),S('creator'))]),
+    Q(tr('У тебя появился шанс бесплатно научиться одному новому навыку. Что выберешь?','You get a free chance to learn one new skill. What do you choose?','Puedes aprender gratis una nueva habilidad. ¿Cuál eliges?','Podes aprender gratuitamente uma nova competência. Qual escolhes?','Du kannst kostenlos eine neue Fähigkeit lernen. Welche wählst du?','Tu peux apprendre gratuitement une nouvelle compétence. Laquelle choisis-tu?'),[
+      opt(tr('То, что пригодится в работе','Something useful for work','Algo útil para el trabajo','Algo útil para o trabalho','Etwas Nützliches für die Arbeit','Quelque chose d’utile au travail'),S('realist')),opt(tr('То, что давно интересно','Something I have long been curious about','Algo que me interesa desde hace tiempo','Algo que me interessa há muito','Etwas, das mich schon lange interessiert','Quelque chose qui m’intéresse depuis longtemps'),S('explorer')),opt(tr('То, что поможет создать свой проект','Something that helps me create a project','Algo que ayude a crear mi proyecto','Algo que ajude a criar um projeto','Etwas für ein eigenes Projekt','Quelque chose pour créer mon projet'),S('creator')),opt(tr('То, что расширит мой кругозор','Something that broadens my view','Algo que amplíe mi visión','Algo que amplie os meus horizontes','Etwas, das meinen Horizont erweitert','Quelque chose qui élargit mon horizon'),S('dreamer'))]),
+    Q(tr('Если утром всё идёт не по плану, что помогает тебе быстрее прийти в себя?','When your morning goes off plan, what helps you recover fastest?','Cuando tu mañana sale mal, ¿qué te ayuda a recuperarte?','Quando a manhã corre mal, o que te ajuda a recuperar mais depressa?','Wenn dein Morgen aus dem Plan läuft, was hilft dir am schnellsten?','Quand ta matinée déraille, qu’est-ce qui t’aide à te reprendre?'),[
+      opt(tr('Новый план на день','A new plan','Un nuevo plan','Um novo plano','Ein neuer Plan','Un nouveau plan'),S('planner')),opt(tr('Пауза и тишина','A pause and quiet','Una pausa y silencio','Uma pausa e silêncio','Eine Pause und Ruhe','Une pause et du calme'),S('realist')),opt(tr('Разговор с близким','Talk to someone close','Hablar con alguien cercano','Falar com alguém próximo','Mit jemandem Nahestehendem sprechen','Parler à un proche'),S('empath')),opt(tr('Переключиться на что-то интересное','Switch to something interesting','Cambiar a algo interesante','Mudar para algo interessante','Zu etwas Interessantem wechseln','Passer à quelque chose d’intéressant'),S('explorer'))]),
+    Q(tr('Ты видишь старую фотографию, которая вызывает сильное воспоминание. Что хочется сделать?','You see an old photo that brings back a strong memory. What do you want to do?','Ves una foto antigua que despierta un recuerdo fuerte. ¿Qué quieres hacer?','Vês uma fotografia antiga que traz uma memória forte. O que te apetece fazer?','Du siehst ein altes Foto, das eine starke Erinnerung weckt. Was möchtest du tun?','Tu vois une vieille photo qui réveille un souvenir fort. Que veux-tu faire?'),[
+      opt(tr('Рассмотреть детали','Study the details','Mirar los detalles','Observar os detalhes','Details betrachten','Regarder les détails'),S('analyst')),opt(tr('Позвонить человеку с фото','Call someone from the photo','Llamar a alguien de la foto','Ligar a alguém da fotografia','Jemanden auf dem Foto anrufen','Appeler quelqu’un de la photo'),S('empath')),opt(tr('Придумать, как сохранить воспоминание','Find a way to preserve it','Buscar cómo conservar el recuerdo','Pensar em como guardar a memória','Eine Erinnerung bewahren','Trouver comment préserver le souvenir'),S('creator')),opt(tr('Представить, что было до и после','Imagine before and after','Imaginar el antes y el después','Imaginar o antes e o depois','Davor und danach vorstellen','Imaginer avant et après'),S('dreamer'))]),
+    Q(tr('Если нужно выбрать между двумя одинаково хорошими вариантами, что тебе помогает?','If two options are equally good, what helps you choose?','Si dos opciones son igual de buenas, ¿qué te ayuda a elegir?','Se duas opções são igualmente boas, o que te ajuda a escolher?','Wenn zwei Optionen gleich gut sind, was hilft dir?','Si deux options se valent, qu’est-ce qui t’aide à choisir?'),[
+      opt(tr('Плюсы и минусы','Pros and cons','Pros y contras','Prós e contras','Vor- und Nachteile','Pour et contre'),S('analyst')),opt(tr('Первое внутреннее ощущение','First gut feeling','Primera sensación','Primeira sensação','Erstes Bauchgefühl','Première intuition'),S('dreamer')),opt(tr('Что будет проще реализовать','What will be easier to implement','Qué será más fácil de realizar','O que será mais fácil de concretizar','Was leichter umzusetzen ist','Ce qui sera plus facile à réaliser'),S('realist')),opt(tr('Что даст больше нового опыта','What gives more new experience','Qué dará más experiencia nueva','O que dará mais experiência nova','Was mehr neue Erfahrung bringt','Ce qui apporte plus d’expérience'),S('explorer'))]),
+    Q(tr('Как ты относишься к человеку, который полностью поменял профессию?','How do you feel about someone who completely changed careers?','¿Cómo ves a alguien que cambió de profesión por completo?','Como vês alguém que mudou totalmente de profissão?','Wie siehst du jemanden, der den Beruf komplett gewechselt hat?','Que penses-tu de quelqu’un qui a complètement changé de métier?'),[
+      opt(tr('Смело','Brave','Valiente','Corajoso','Mutig','Courageux'),S('explorer')),opt(tr('Разумно, если есть план','Reasonable with a plan','Razonable con un plan','Razoável com um plano','Vernünftig mit Plan','Raisonnable avec un plan'),S('planner')),opt(tr('Главное — чтобы человек был счастлив','What matters is happiness','Lo importante es que sea feliz','O importante é ser feliz','Hauptsache glücklich','L’important est d’être heureux'),S('empath')),opt(tr('Зависит от причин','Depends on the reasons','Depende de las razones','Depende das razões','Hängt von den Gründen ab','Cela dépend des raisons'),S('analyst'))]),
+    Q(tr('Тебе предлагают изменить привычный порядок дня на неделю. Что думаешь первым?','You are asked to change your daily routine for a week. What do you think first?','Te proponen cambiar tu rutina durante una semana. ¿Qué piensas primero?','Propõem-te mudar a rotina durante uma semana. O que pensas primeiro?','Du sollst eine Woche lang deine Routine ändern. Was denkst du zuerst?','On te propose de changer ta routine pendant une semaine. À quoi penses-tu d’abord?'),[
+      opt(tr('Как это скажется на результате','How it will affect results','Cómo afectará al resultado','Como afetará o resultado','Wie es das Ergebnis beeinflusst','Comment cela affectera le résultat'),S('realist')),opt(tr('Что можно попробовать нового','What new thing I can try','Qué cosa nueva puedo probar','O que posso experimentar','Was Neues ich ausprobieren kann','Ce que je peux essayer de nouveau'),S('explorer')),opt(tr('Как лучше всё организовать','How to organize it','Cómo organizarlo mejor','Como organizar tudo','Wie man alles organisiert','Comment tout organiser'),S('planner')),opt(tr('Может быть, это вдохновит','Maybe it will inspire me','Quizá me inspire','Talvez me inspire','Vielleicht inspiriert es mich','Cela pourrait peut-être m’inspirer'),S('dreamer'))]),
+    Q(tr('Если твой знакомый боится начать новое дело, что ты скажешь?','If someone you know is afraid to start something new, what do you say?','Si alguien que conoces teme empezar algo nuevo, ¿qué le dices?','Se alguém que conheces tem medo de começar algo novo, o que dizes?','Wenn jemand, den du kennst, Angst vor etwas Neuem hat, was sagst du?','Si quelqu’un que tu connais a peur de commencer quelque chose de nouveau, que lui dis-tu?'),[
+      opt(tr('Начни с маленького шага','Start with a small step','Empieza con un pequeño paso','Começa por um pequeno passo','Mit einem kleinen Schritt beginnen','Commence par un petit pas'),S('planner')),opt(tr('Ты не узнаешь, пока не попробуешь','You will not know until you try','No lo sabrás hasta probar','Não saberás até tentar','Du weißt es erst, wenn du es versuchst','Tu ne sauras qu’en essayant'),S('explorer')),opt(tr('Я помогу тебе разобраться','I will help you figure it out','Te ayudaré a entenderlo','Eu ajudo-te a perceber','Ich helfe dir dabei','Je t’aiderai à y voir clair'),S('empath')),opt(tr('Представь, что всё получится','Imagine it working out','Imagina que todo sale bien','Imagina que corre bem','Stell dir vor, es klappt','Imagine que tout fonctionne'),S('dreamer'))]),
+    Q(tr('Когда ты выбираешь фильм на вечер, что чаще решает?','When choosing a movie for the evening, what decides most often?','Al elegir una película para la noche, ¿qué pesa más?','Ao escolher um filme para a noite, o que pesa mais?','Bei der Filmauswahl für den Abend, was entscheidet?','Pour choisir un film le soir, qu’est-ce qui compte le plus?'),[
+      opt(tr('Рейтинг и отзывы','Ratings and reviews','Valoraciones y reseñas','Avaliações e críticas','Bewertungen und Rezensionen','Notes et avis'),S('analyst')),opt(tr('Настроение сейчас','My mood','Mi estado de ánimo','O meu estado de espírito','Meine Stimmung','Mon humeur'),S('empath')),opt(tr('Жанр, который люблю','A genre I like','Un género que me gusta','Um género de que gosto','Ein Genre, das ich mag','Un genre que j’aime'),S('realist')),opt(tr('Что-то, чего ещё не видел','Something new to me','Algo que no haya visto','Algo que ainda não vi','Etwas, das ich noch nicht kenne','Quelque chose que je n’ai jamais vu'),S('explorer'))]),
+    Q(tr('Если ты можешь один раз изменить прошлое, что тебе важнее получить от этого?','If you could change one thing in the past, what would you want most?','Si pudieras cambiar una cosa del pasado, ¿qué querrías obtener?','Se pudesses mudar uma coisa do passado, o que gostarias de obter?','Wenn du eine Sache in der Vergangenheit ändern könntest, was wäre dir wichtig?','Si tu pouvais changer une chose du passé, qu’aimerais-tu obtenir?'),[
+      opt(tr('Исправить ошибку','Fix a mistake','Corregir un error','Corrigir um erro','Einen Fehler korrigieren','Corriger une erreur'),S('analyst')),opt(tr('Сохранить важный момент','Preserve an important moment','Conservar un momento importante','Guardar um momento importante','Einen wichtigen Moment bewahren','Préserver un moment important'),S('empath')),opt(tr('Открыть другой путь','Open a different path','Abrir otro camino','Abrir outro caminho','Einen anderen Weg öffnen','Ouvrir un autre chemin'),S('explorer')),opt(tr('Узнать, что было бы','Know what might have been','Saber qué habría pasado','Saber o que poderia ter acontecido','Wissen, was hätte sein können','Savoir ce qui aurait pu arriver'),S('dreamer'))])
+  ];
+  // Map the existing 10 questions to the eight result types and append 13 new everyday questions.
+  const mapScore=(scores)=>{const o={leader:0,planner:0,analyst:0,empath:0,creator:0,explorer:0,realist:0,dreamer:0}; for(const [k,v] of Object.entries(scores||{})){const m={sage:'analyst',rebel:'explorer',connector:'empath'}[k]||k;if(o[m]!=null)o[m]+=Number(v)||0;} return o;};
+  DESTINY_QUESTIONS.forEach(q=>q.options.forEach(o=>o.scores=mapScore(o.scores)));
+  DESTINY_QUESTIONS.push(...extra); DESTINY_QUESTIONS.splice(23);
+  const allowed=['leader','planner','analyst','empath','creator','explorer','realist','dreamer'];
+  for(const key of Object.keys(DESTINY_TITLES)) if(!allowed.includes(key)) delete DESTINY_TITLES[key];
+  const oldStart=window.startDestinyQuiz;
+  window.startDestinyQuiz=function(){const scores={};allowed.forEach(k=>scores[k]=0);localStorage.setItem('true_destiny',JSON.stringify({currentQuestion:0,scores,completed:false}));const overlay=document.getElementById('destiny-overlay');if(overlay)renderDestinyQuestion(0);};
+  window.restartDestiny=function(){const scores={};allowed.forEach(k=>scores[k]=0);localStorage.setItem('true_destiny',JSON.stringify({currentQuestion:0,scores,completed:false}));const overlay=document.getElementById('destiny-overlay');if(overlay)renderDestinyQuestion(0);else openTrueDestiny();};
+  window.openTrueDestiny=function(){
+    const saved=localStorage.getItem('true_destiny'); if(saved){try{const st=JSON.parse(saved);if(st.completed){showDestinyResult(st.scores);return;}if(typeof st.currentQuestion==='number'&&st.currentQuestion>0){renderDestinyQuestion(st.currentQuestion);return;}}catch(e){localStorage.removeItem('true_destiny');}}
+    const overlay=document.createElement('div');overlay.id='destiny-overlay';overlay.className='destiny-overlay active';overlay.innerHTML=`<button class="overlay-close-x" onclick="closeDestiny()">&times;</button><div class="destiny-container"><div class="destiny-title">${t('trueDestiny')}</div><div class="destiny-intro"><p>${t('destinyIntro')}</p></div><button class="destiny-start-btn" onclick="startDestinyQuiz()">${t('destinyStart')}</button></div>`;document.body.appendChild(overlay);
+  };
+  window.answerDestiny=function(qIndex,optIndex){const q=DESTINY_QUESTIONS[qIndex];let st=JSON.parse(localStorage.getItem('true_destiny'));if(!st){startDestinyQuiz();st=JSON.parse(localStorage.getItem('true_destiny'));}st.currentQuestion=qIndex+1;for(const k of Object.keys(st.scores))st.scores[k]+=(Number(q.options[optIndex].scores[k])||0);if(st.currentQuestion>=DESTINY_QUESTIONS.length)st.completed=true;localStorage.setItem('true_destiny',JSON.stringify(st));const overlay=document.getElementById('destiny-overlay');if(!overlay)return;if(st.completed)showDestinyResultInPlace(overlay,st.scores);else renderDestinyQuestion(st.currentQuestion);};
+  // Result text gets the requested Telegram sentence.
+  window.showDestinyResultInPlace=function(overlay,scores){const sorted=Object.entries(scores).sort((a,b)=>b[1]-a[1]);const winner=sorted[0]?.[0]||'realist';const title=DESTINY_TITLES[winner]||DESTINY_TITLES.realist;overlay.className='destiny-overlay active';overlay.innerHTML=`<button class="overlay-close-x" onclick="closeDestiny()">&times;</button><div class="destiny-container destiny-result destiny-result-minimal destiny-result-rich"><div class="destiny-result-symbol">✦</div><div class="destiny-result-kicker">${t('destinyResultTitle')}</div><div class="destiny-result-title">${loc(title.name)}</div><div class="destiny-result-desc">${loc(title.description)}</div><div class="final-channel-note">${t('finalChannel')}</div><div class="final-actions"><button class="destiny-restart" onclick="restartDestiny()">${t('destinyRestartBtn')}</button><a class="fate-channel-btn" href="${CHANNEL_URL}" target="_blank" rel="noopener">${t('openTelegram')}</a></div></div>`;};
+
+  // Labyrinth: first and ninth hints are suggestive, not answers; last riddle has 10 hints already.
+  if(typeof LABYRINTH_RIDDLES!=='undefined'){
+    LABYRINTH_RIDDLES[0].hints=[
+      {ru:'Посмотри на три части суток как на три разных периода одного человеческого пути.',en:'Treat the three parts of the day as three stages of one human journey.',es:'Mira las tres partes del día como tres etapas de un mismo recorrido humano.',pt:'Vê as três partes do dia como três fases de uma mesma vida.',de:'Betrachte die drei Tageszeiten als drei Phasen eines menschlichen Weges.',fr:'Considère les trois moments de la journée comme trois étapes d’une même vie.'},
+      {ru:'В начале человеку нужна одна форма опоры, позже — другая. Что меняется с возрастом?',en:'At the beginning a person needs one kind of support, later another. What changes with age?',es:'Al principio una persona necesita un tipo de apoyo y después otro. ¿Qué cambia con la edad?',pt:'No início a pessoa precisa de um tipo de apoio e depois de outro. O que muda com a idade?',de:'Am Anfang braucht ein Mensch eine Art von Stütze, später eine andere. Was verändert sich mit dem Alter?',fr:'Au début, une personne a besoin d’un type de soutien, puis d’un autre. Qu’est-ce qui change avec l’âge?'},
+      {ru:'Третья «нога» здесь означает не часть тела, а дополнительную опору. Подумай о том, чем пользуются пожилые люди.',en:'The third “leg” is not a body part but an extra support. Think of what older people may use.',es:'La tercera «pata» no es una parte del cuerpo, sino un apoyo adicional. Piensa en lo que usan algunas personas mayores.',pt:'A terceira “perna” não é uma parte do corpo, mas um apoio extra. Pensa no que algumas pessoas idosas usam.',de:'Das dritte „Bein“ ist kein Körperteil, sondern eine zusätzliche Stütze. Denke daran, was ältere Menschen benutzen können.',fr:'La troisième « jambe » n’est pas une partie du corps, mais un soutien supplémentaire. Pense à ce que peuvent utiliser les personnes âgées.'}
+    ];
+    LABYRINTH_RIDDLES[8].hints=[
+      {ru:'Здесь важен не размер кувшинок, а то, как меняется покрытая ими площадь с каждым днём.',en:'The key is not the lilies’ size but how the covered area changes each day.',es:'La clave no es el tamaño, sino cómo cambia el área cubierta cada día.',pt:'O importante não é o tamanho, mas como a área coberta muda a cada dia.',de:'Entscheidend ist nicht die Größe, sondern wie sich die bedeckte Fläche täglich verändert.',fr:'Le point clé n’est pas la taille, mais l’évolution de la surface couverte chaque jour.'},
+      {ru:'Если рост происходит вдвое за один и тот же промежуток времени, один день назад площадь была вдвое меньше.',en:'If the covered area doubles over the same interval, one day earlier it was half as large.',es:'Si el área se duplica en el mismo intervalo, un día antes era la mitad.',pt:'Se a área duplica no mesmo intervalo, um dia antes era metade.',de:'Wenn sich die Fläche im gleichen Zeitraum verdoppelt, war sie einen Tag zuvor halb so groß.',fr:'Si la surface double dans le même intervalle, elle était deux fois plus petite la veille.'},
+      {ru:'Сравни состояние озера на предпоследний и последний день и только потом оцени две кувшинки вместе.',en:'Compare the lake on the penultimate and final day, then consider the two lilies together.',es:'Compara el lago el penúltimo y último día y después considera las dos plantas juntas.',pt:'Compara o lago no penúltimo e no último dia e só depois pensa nos dois nenúfares juntos.',de:'Vergleiche den vorletzten und letzten Tag und betrachte dann beide Seerosen zusammen.',fr:'Compare le lac l’avant-dernier et le dernier jour, puis considère les deux nénuphars ensemble.'}
+    ];
+    // Repeatedly opened hints are shown in place; only the first use asks for confirmation.
+    window.showLabyrinthHint=function(hintIndex){const st=JSON.parse(localStorage.getItem('labyrinth')||'{"currentRiddle":0,"hintsUsed":[]}');const r=LABYRINTH_RIDDLES[st.currentRiddle];if(st.hintsUsed.includes(hintIndex)){const el=document.getElementById('labyrinth-hint-text');if(el){el.textContent=loc(r.hints[hintIndex]);el.style.display='block';}return;}const c=document.createElement('div');c.id='labyrinth-hint-confirm';c.className='labyrinth-confirm-overlay';c.innerHTML=`<div class="labyrinth-confirm-box"><p>${t('hintConfirm')}</p><div class="labyrinth-confirm-btns"><button onclick="closeLabyrinthHintConfirm()">${t('hintNo')}</button><button onclick="confirmLabyrinthHint(${hintIndex})">${t('hintYes')}</button></div></div>`;document.body.appendChild(c);};
+    window.restartLabyrinth=function(){localStorage.setItem('labyrinth',JSON.stringify({currentRiddle:0,hintsUsed:[]}));const o=document.getElementById('labyrinth-overlay');if(o)renderLabyrinthRiddle();else openLabyrinth();};
+  }
+})();
