@@ -6629,16 +6629,10 @@ if (typeof LABYRINTH_RIDDLES !== 'undefined') {
     en:{a:'Saving often gives you control over resources.',b:'Convenience reduces daily friction.',c:'Perspective helps you look beyond the current moment.'}
   };
   function fateAnalysis(d,choice){
-    const picked=loc(d[choice]);
-    const summaries={
-      ru:`Ты выбрал «${picked}». Этот ответ показывает твой подход именно к этому выбору.`,
-      en:`You chose “${picked}”. This shows how you approach this particular choice.`,
-      es:`Elegiste «${picked}». Este resultado muestra cómo afrontas esta elección.`,
-      pt:`Escolheste «${picked}». Este resultado mostra como encaras esta escolha.`,
-      de:`Du hast „${picked}“ gewählt. Das zeigt deinen Umgang mit dieser konkreten Entscheidung.`,
-      fr:`Tu as choisi « ${picked} ». Ce choix montre ta manière d’aborder cette décision.`
-    };
-    return `<div class=\"fate-mini-block\"><div>${summaries[currentLang]||summaries.en}</div></div>`;
+    const arch=miniArchetype(d,choice); const labels=miniByChoice[currentLang]||miniByChoice.en;
+    const chosen=choice==='a'?labels.a:choice==='b'?labels.b:labels.c;
+    const risk=currentLang==='ru'?(choice==='a'?'Минус: иногда можно слишком долго считать выгоду.':choice==='b'?'Минус: удобство иногда заставляет откладывать сложное.':'Минус: взгляд далеко вперёд может отодвинуть решение сейчас.'):(choice==='a'?'Downside: you may spend too long calculating the benefit.':choice==='b'?'Downside: convenience can sometimes delay difficult action.':'Downside: looking far ahead can delay the decision in front of you.');
+    return `<div class="fate-mini-block"><strong>🎭 2. ${currentLang==='ru'?'Мини-архетип':'Mini-archetype'}</strong><div>${arch[currentLang]||arch.en}</div></div><div class="fate-mini-block"><strong>⚖️ 3. ${currentLang==='ru'?'Быстрый разбор плюсов и минусов':'Quick pros & cons'}</strong><div>${chosen}</div><div>${risk}</div></div>`;
   }
   window.renderFateQuestion=function(index){
     const d=FATE_DILEMMAS[index]; let overlay=document.getElementById('fate-overlay');
@@ -6718,90 +6712,5 @@ if (typeof LABYRINTH_RIDDLES !== 'undefined') {
     // Repeatedly opened hints are shown in place; only the first use asks for confirmation.
     window.showLabyrinthHint=function(hintIndex){const st=JSON.parse(localStorage.getItem('labyrinth')||'{"currentRiddle":0,"hintsUsed":[]}');const r=LABYRINTH_RIDDLES[st.currentRiddle];if(st.hintsUsed.includes(hintIndex)){const el=document.getElementById('labyrinth-hint-text');if(el){el.textContent=loc(r.hints[hintIndex]);el.style.display='block';}return;}const c=document.createElement('div');c.id='labyrinth-hint-confirm';c.className='labyrinth-confirm-overlay';c.innerHTML=`<div class="labyrinth-confirm-box"><p>${t('hintConfirm')}</p><div class="labyrinth-confirm-btns"><button onclick="closeLabyrinthHintConfirm()">${t('hintNo')}</button><button onclick="confirmLabyrinthHint(${hintIndex})">${t('hintYes')}</button></div></div>`;document.body.appendChild(c);};
     window.restartLabyrinth=function(){localStorage.setItem('labyrinth',JSON.stringify({currentRiddle:0,hintsUsed:[]}));const o=document.getElementById('labyrinth-overlay');if(o)renderLabyrinthRiddle();else openLabyrinth();};
-  }
-})();
-
-/* ===== v4.1 behavior fixes ===== */
-(function(){
-  const LANG_NAMES={ru:'Русский',en:'English',es:'Español',pt:'Português',de:'Deutsch',fr:'Français'};
-  window.toggleLanguagePicker=function(){
-    const panel=document.getElementById('language-picker-panel'); if(!panel)return;
-    const open=panel.classList.contains('open');
-    if(open){closeLanguagePicker();return;}
-    const title=document.getElementById('language-panel-title'); if(title) title.textContent=t('language')||LANG_NAMES[currentLang]||'Language';
-    document.querySelectorAll('.lang-btn').forEach(b=>b.classList.remove('active'));
-    document.getElementById('lang-'+currentLang+'-btn')?.classList.add('active');
-    const backdrop=document.createElement('div');backdrop.id='lang-backdrop';backdrop.className='lang-backdrop';backdrop.addEventListener('click',closeLanguagePicker);
-    document.body.appendChild(backdrop);panel.classList.add('open');
-  };
-  window.closeLanguagePicker=function(){document.getElementById('language-picker-panel')?.classList.remove('open');document.getElementById('lang-backdrop')?.remove();};
-  window.setLanguage=function(lang){
-    if(!T[lang])lang='en'; currentLang=lang; localStorage.setItem('lang',lang); localStorage.setItem('lang_manual','1');
-    updateLanguageUI(); renderThemeColors(); updateVipDisplay();
-    const current=document.getElementById('language-current'); if(current) current.textContent=LANG_NAMES[lang]||lang;
-    const title=document.getElementById('language-panel-title'); if(title) title.textContent=t('language')||LANG_NAMES[lang]||'Language';
-    document.querySelectorAll('.lang-btn').forEach(b=>b.classList.toggle('active',b.id==='lang-'+lang+'-btn'));
-    closeLanguagePicker();
-  };
-
-  /* Keep all four featured settings in the same ordinary purple treatment. */
-  const themeColor='#140a26';
-  document.documentElement.style.setProperty('--feature-fixed-purple',themeColor);
-
-  /* Rating: larger rounded outline stars, with feedback only after selection. */
-  window.showRatingModal=function(){
-    const overlay=document.createElement('div'); overlay.className='fate-overlay active';
-    const texts=RATING_TEXTS[currentLang]||RATING_TEXTS.en; const saved=Number(localStorage.getItem('your_destiny_rating')||0);
-    overlay.innerHTML=`<button class="overlay-close-x" onclick="this.closest('.fate-overlay').remove()">&times;</button>
-      <div class="rating-card ${saved?'has-rating':'compact'}" id="rating-card">
-        <div class="rating-title">${texts.title}</div>
-        <div class="rating-stars" role="radiogroup" aria-label="${texts.title}">${[1,2,3,4,5].map(i=>`<button class="rating-star ${i<=saved?'selected':''}" data-rating="${i}" aria-label="${i}" onclick="selectRating(${i})">★</button>`).join('')}</div>
-        <div class="rating-feedback" id="rating-feedback" ${saved?'':'hidden'}>
-          <div class="rating-thanks">${texts.thanks}</div><div class="rating-text" id="rating-text">${saved?(texts[saved]||texts[5]):''}</div>
-          <a class="rating-channel-btn" href="${CHANNEL_URL}" target="_blank" rel="noopener">${texts.open}</a>
-        </div>
-      </div>`;
-    document.body.appendChild(overlay);
-  };
-
-  /* Three-stage author flow: inviting intro -> legal transfer -> final confirmation. */
-  const authorIntro={ru:{sub:'Есть история, сценарий, сцена или идея, которой хочется дать жизнь? Поделитесь ею с Your Destiny — возможно, именно она станет частью следующего мира.',btn:'Продолжить'},en:{sub:'Have a story, script, scene or idea you want to bring to life? Share it with Your Destiny — it may become part of the next world.',btn:'Continue'},es:{sub:'¿Tienes una historia, un guion, una escena o una idea que quieres dar vida? Compártela con Your Destiny.',btn:'Continuar'},pt:{sub:'Tens uma história, guião, cena ou ideia que gostarias de dar vida? Partilha-a com Your Destiny.',btn:'Continuar'},de:{sub:'Du hast eine Geschichte, ein Drehbuch, eine Szene oder eine Idee, die du zum Leben erwecken möchtest? Teile sie mit Your Destiny.',btn:'Weiter'},fr:{sub:'Vous avez une histoire, un scénario, une scène ou une idée à faire vivre ? Partagez-la avec Your Destiny.',btn:'Continuer'}};
-  const authorLegal={
-    ru:'Передавая материал Your Destiny, вы безвозмездно передаёте проекту исключительные имущественные права на переданный материал в полном объёме, включая право использовать, воспроизводить, изменять, сокращать, дополнять, перерабатывать, переводить, объединять с другими материалами, публиковать, распространять, показывать, лицензировать и иным образом распоряжаться им. После передачи вы не сохраняете имущественных требований к Your Destiny в отношении такого материала и не вправе требовать оплату, роялти, долю дохода, удаления, прекращения использования или запрета переработки. Вы также подтверждаете, что вправе передать материал и что он не нарушает права третьих лиц. Отправка материала не означает обязательства Your Destiny его публиковать или использовать.',
-    en:'By submitting material to Your Destiny, you transfer to the project, without compensation, the exclusive economic rights to the submitted material in full, including the rights to use, reproduce, edit, shorten, expand, adapt, translate, combine, publish, distribute, display, license and otherwise dispose of it. After the transfer, you retain no economic claim against Your Destiny concerning that material and may not demand payment, royalties, revenue share, removal, cessation of use or a ban on adaptation. You also confirm that you are entitled to submit the material and that it does not infringe third-party rights. Submission does not obligate Your Destiny to publish or use it.',
-    es:'Al enviar material a Your Destiny, cedes al proyecto, sin remuneración, los derechos patrimoniales exclusivos sobre el material en su totalidad, incluidos usar, reproducir, editar, adaptar, traducir, publicar, distribuir, licenciar y disponer de él. Tras la cesión, no conservarás reclamaciones económicas frente a Your Destiny sobre ese material ni podrás exigir pago, regalías, participación en ingresos, retirada, cese de uso o prohibición de adaptación. Confirmas además que puedes entregar el material y que no infringe derechos de terceros. El envío no obliga a Your Destiny a publicarlo ni utilizarlo.',
-    pt:'Ao enviar material para o Your Destiny, cedes ao projeto, sem remuneração, os direitos patrimoniais exclusivos sobre o material na íntegra, incluindo usar, reproduzir, editar, adaptar, traduzir, publicar, distribuir, licenciar e dele dispor. Após a cessão, não manténs qualquer reivindicação económica contra o Your Destiny relativamente a esse material nem podes exigir pagamento, royalties, participação em receitas, remoção, cessação de utilização ou proibição de adaptação. Confirmas também que podes enviar o material e que este não viola direitos de terceiros. O envio não obriga o Your Destiny a publicar ou utilizar o material.',
-    de:'Mit der Einreichung von Material bei Your Destiny überträgst du dem Projekt unentgeltlich die ausschließlichen vermögensrechtlichen Rechte am Material vollständig, einschließlich Nutzung, Vervielfältigung, Bearbeitung, Kürzung, Erweiterung, Anpassung, Übersetzung, Veröffentlichung, Verbreitung, Lizenzierung und sonstiger Verwertung. Nach der Übertragung bestehen keine vermögensrechtlichen Ansprüche gegen Your Destiny bezüglich dieses Materials; insbesondere können keine Zahlung, Tantiemen, Umsatzbeteiligung, Entfernung, Nutzungsbeendigung oder ein Bearbeitungsverbot verlangt werden. Du bestätigst außerdem, dass du zur Einreichung berechtigt bist und keine Rechte Dritter verletzt werden. Die Einreichung verpflichtet Your Destiny nicht zur Veröffentlichung oder Nutzung.',
-    fr:'En envoyant un contenu à Your Destiny, vous cédez au projet, sans rémunération, les droits patrimoniaux exclusifs sur ce contenu dans leur intégralité, notamment pour l’utiliser, le reproduire, le modifier, l’adapter, le traduire, le publier, le distribuer, le concéder sous licence et en disposer. Après la cession, vous ne conservez aucune revendication patrimoniale contre Your Destiny concernant ce contenu et ne pouvez exiger paiement, redevances, part des revenus, retrait, cessation d’utilisation ou interdiction d’adaptation. Vous confirmez également être autorisé à transmettre le contenu et qu’il ne porte pas atteinte aux droits de tiers. L’envoi n’oblige pas Your Destiny à publier ou utiliser le contenu.'
-  };
-  const authorConfirm={ru:'Я прочитал условия, понимаю, что после отправки права на материал переходят Your Destiny, и согласен отправить его.',en:'I have read the terms, understand that the rights to the material transfer to Your Destiny after submission, and agree to send it.',es:'He leído las condiciones, entiendo que los derechos del material pasan a Your Destiny y acepto enviarlo.',pt:'Li as condições, compreendo que os direitos do material passam para o Your Destiny e aceito enviá-lo.',de:'Ich habe die Bedingungen gelesen, verstehe die Übertragung der Rechte an Your Destiny und stimme der Einreichung zu.',fr:'J’ai lu les conditions, comprends que les droits du contenu sont transférés à Your Destiny et accepte de l’envoyer.'};
-  const authorBack={ru:'Назад',en:'Back',es:'Atrás',pt:'Voltar',de:'Zurück',fr:'Retour'};
-  const authorContinue={ru:'Продолжить',en:'Continue',es:'Continuar',pt:'Continuar',de:'Weiter',fr:'Continuer'};
-  const authorWrite={ru:'Согласен — написать',en:'I agree — write',es:'Acepto — escribir',pt:'Aceito — escrever',de:'Ich stimme zu — schreiben',fr:'J’accepte — écrire'};
-  window.showBecomeAuthor=function(){
-    const old=document.querySelector('.fate-overlay'); if(old)old.remove();
-    const o=document.createElement('div');o.className='fate-overlay active author-slide-in';o.innerHTML=`<button class="author-fixed-close" onclick="this.closest('.fate-overlay').remove()">&times;</button><div class="author-legal-scroll"><div class="author-title">${t('becomeAuthor')}</div><div class="author-subtitle">${authorIntro[currentLang]?.sub||authorIntro.en.sub}</div><button class="author-channel-btn" onclick="showAuthorLegal()">${authorIntro[currentLang]?.btn||authorIntro.en.btn}</button></div>`;document.body.appendChild(o);
-  };
-  window.showAuthorLegal=function(){
-    const o=document.querySelector('.fate-overlay'); if(!o)return;
-    o.innerHTML=`<button class="author-fixed-back" onclick="showBecomeAuthor()" aria-label="${authorBack[currentLang]||authorBack.en}">←</button><button class="author-fixed-close" onclick="this.closest('.fate-overlay').remove()">&times;</button><div class="author-legal-scroll"><div class="author-title">${t('becomeAuthor')}</div><div class="author-legal-text">${authorLegal[currentLang]||authorLegal.en}</div><button class="author-channel-btn" onclick="showAuthorConfirm()">${authorContinue[currentLang]||authorContinue.en}</button></div>`;
-  };
-  window.showAuthorConfirm=function(){
-    const o=document.querySelector('.fate-overlay');if(!o)return;
-    o.innerHTML=`<button class="author-fixed-back" onclick="showAuthorLegal()" aria-label="${authorBack[currentLang]||authorBack.en}">←</button><button class="author-fixed-close" onclick="this.closest('.fate-overlay').remove()">&times;</button><div class="author-legal-scroll"><div class="author-title">${t('becomeAuthor')}</div><div class="author-legal-text">${authorConfirm[currentLang]||authorConfirm.en}</div><a class="author-channel-btn" href="${DIRECT_URL}" target="_blank" rel="noopener">${authorWrite[currentLang]||authorWrite.en}</a></div>`;
-  };
-
-  /* Compact wisdom: same overlay, immediate content replacement. */
-  window.showWisdom=function(){const o=document.createElement('div');o.className='wisdom-overlay active';document.body.appendChild(o);renderWisdomCard(o);};
-  window.nextWisdom=function(){const o=document.querySelector('.wisdom-overlay');if(o)renderWisdomCard(o);};
-
-  /* Chronicles: concise answer analysis only, no generic pros/cons template. */
-  const oldRender=window.renderFateQuestion;
-  if(oldRender){
-    window.renderFateQuestion=function(index){oldRender(index);const a=document.getElementById('fate-analysis');if(a)a.innerHTML='';};
-  }
-  const oldAnswer=window.answerFate;
-  if(oldAnswer){
-    window.answerFate=function(index,choice){oldAnswer(index,choice);const d=FATE_DILEMMAS[index];const result=document.getElementById('fate-analysis');if(!result)return;const picked=loc(d[choice]);const summaries={ru:`Ты выбрал «${picked}». Этот ответ показывает твой подход именно к этому выбору.`,en:`You chose “${picked}”. This shows how you approach this particular choice.`,es:`Elegiste «${picked}». Este resultado muestra cómo afrontas esta elección.`,pt:`Escolheste «${picked}». Este resultado mostra como encaras esta escolha.`,de:`Du hast „${picked}“ gewählt. Das zeigt deinen Umgang mit dieser konkreten Entscheidung.`,fr:`Tu as choisi « ${picked} ». Ce choix montre ta manière d’aborder cette décision.`};result.innerHTML=`<div class="fate-mini-block"><div>${summaries[currentLang]||summaries.en}</div></div>`;};
   }
 })();
