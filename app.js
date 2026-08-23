@@ -6340,7 +6340,6 @@ function toggleLanguagePicker(){
   if(panel.classList.contains('open')){closeLanguagePicker();return;}
   panel.dataset.title=(T[currentLang]?.languageTitle||T[currentLang]?.language||'Language');
   const title=document.getElementById('language-panel-title'); if(title) title.textContent=panel.dataset.title;
-  const backdrop=document.createElement('div');backdrop.id='lang-backdrop';backdrop.className='lang-backdrop';backdrop.onclick=closeLanguagePicker;document.body.appendChild(backdrop);
   panel.classList.add('open');
 }
 function setLanguage(lang){
@@ -6408,8 +6407,7 @@ if (typeof LABYRINTH_RIDDLES !== 'undefined') {
 (function(){
   const LANG_NAMES={ru:'Русский',en:'English',es:'Español',pt:'Português',de:'Deutsch',fr:'Français'};
 
-  // Final language picker behavior: keep the game visible but slightly dimmed;
-  // the picker itself remains crisp. Switching language is immediate and persistent.
+  // Language picker is a standalone panel; the underlying interface is not dimmed. Switching language is immediate and persistent.
   window.closeLanguagePicker=function(){
     document.getElementById('language-picker-panel')?.classList.remove('open');
     document.getElementById('lang-backdrop')?.remove();
@@ -6419,9 +6417,7 @@ if (typeof LABYRINTH_RIDDLES !== 'undefined') {
     if(panel.classList.contains('open')) return closeLanguagePicker();
     const title=document.getElementById('language-panel-title');
     if(title) title.textContent=(T[currentLang]?.language||'Language');
-    const backdrop=document.createElement('div');
-    backdrop.id='lang-backdrop'; backdrop.className='lang-backdrop'; backdrop.onclick=closeLanguagePicker;
-    document.body.appendChild(backdrop); panel.classList.add('open');
+    panel.classList.add('open');
   };
   window.setLanguage=function(lang){
     if(!T[lang]) lang='en';
@@ -6772,17 +6768,14 @@ function renderFateQuestion(index) {
 function answerFate(index,choice){
   const d=FATE_DILEMMAS[index], st=fateOneDecimalStats(d.stats);
   const choicesDiv=document.getElementById('fate-choices'), resultDiv=document.getElementById('fate-result');
-  createGoldExplosion();
-  choicesDiv.style.opacity='0'; choicesDiv.style.transform='scale(.9)'; choicesDiv.style.transition='all .35s ease';
-  setTimeout(()=>{
-    choicesDiv.style.display='none'; resultDiv.style.display='block';
-    document.getElementById('stat-a').style.width=st.a+'%';
-    document.getElementById('stat-b').style.width=st.b+'%';
-    document.getElementById('stat-c').style.width=st.c+'%';
-    const analysis=document.getElementById('fate-analysis'); if(analysis) analysis.textContent=fateShortAnalysis(d,choice);
-    let state=JSON.parse(localStorage.getItem('fate_dilemmas')||'{"currentIndex":0,"answers":[]}');
-    state.answers.push({index,choice}); state.currentIndex=index+1; localStorage.setItem('fate_dilemmas',JSON.stringify(state));
-  },350);
+  choicesDiv.style.display='none';
+  resultDiv.style.display='block';
+  document.getElementById('stat-a').style.width=st.a+'%';
+  document.getElementById('stat-b').style.width=st.b+'%';
+  document.getElementById('stat-c').style.width=st.c+'%';
+  const analysis=document.getElementById('fate-analysis'); if(analysis) analysis.textContent=fateShortAnalysis(d,choice);
+  let state=JSON.parse(localStorage.getItem('fate_dilemmas')||'{"currentIndex":0,"answers":[]}');
+  state.answers.push({index,choice}); state.currentIndex=index+1; localStorage.setItem('fate_dilemmas',JSON.stringify(state));
 }
 
 // Last Labyrinth riddle: exactly ten user-specified hints and a detailed answer.

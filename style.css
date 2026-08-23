@@ -2204,3 +2204,16 @@ body.theme-kaleidoscope #app-container::after{background:transparent!important}
   border-color:var(--glass-border)!important;
   box-shadow:none!important;
 }
+
+/* Final requested language-row alignment: planet icon + label sit slightly lower. */
+.language-setting .settings-item-left{transform:translateY(3px)!important;}
+/* Language picker is a standalone bright panel; never dim the page behind it. */
+.lang-backdrop{display:none!important;}
+.language-picker-panel::after{display:none!important;content:none!important;}
+/* Wisdom: trim the empty top area further without changing the content. */
+.wisdom-overlay .wisdom-container{padding-top:30px!important;}
+/* Author legal controls stay pinned to the viewport while the legal text scrolls. */
+.fate-overlay:has(.legal-author-card) .overlay-close-x,
+.fate-overlay:has(.legal-confirm-card) .overlay-close-x,
+.fate-overlay:has(.legal-author-card) .author-back-check,
+.fate-overlay:has(.legal-confirm-card) .author-back-check{position:fixed!important;top:max(14px,env(safe-area-inset-top))!important;bottom:auto!important;z-index:10050!important;}
