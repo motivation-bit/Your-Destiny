@@ -6625,10 +6625,16 @@ if (typeof LABYRINTH_RIDDLES !== 'undefined') {
     en:{a:'Saving often gives you control over resources.',b:'Convenience reduces daily friction.',c:'Perspective helps you look beyond the current moment.'}
   };
   function fateAnalysis(d,choice){
-    const arch=miniArchetype(d,choice); const labels=miniByChoice[currentLang]||miniByChoice.en;
-    const chosen=choice==='a'?labels.a:choice==='b'?labels.b:labels.c;
-    const risk=currentLang==='ru'?(choice==='a'?'Минус: иногда можно слишком долго считать выгоду.':choice==='b'?'Минус: удобство иногда заставляет откладывать сложное.':'Минус: взгляд далеко вперёд может отодвинуть решение сейчас.'):(choice==='a'?'Downside: you may spend too long calculating the benefit.':choice==='b'?'Downside: convenience can sometimes delay difficult action.':'Downside: looking far ahead can delay the decision in front of you.');
-    return `<div class="fate-mini-block"><strong>🎭 2. ${currentLang==='ru'?'Мини-архетип':'Mini-archetype'}</strong><div>${arch[currentLang]||arch.en}</div></div><div class="fate-mini-block"><strong>⚖️ 3. ${currentLang==='ru'?'Быстрый разбор плюсов и минусов':'Quick pros & cons'}</strong><div>${chosen}</div><div>${risk}</div></div>`;
+    const choiceText=loc(d[choice]);
+    const fallback={
+      ru:`Ты выбрал «${choiceText}». Этот ответ показывает твою естественную реакцию на подобные ситуации.`,
+      en:`You chose “${choiceText}”. This answer shows your natural reaction to situations like this.`,
+      es:`Has elegido «${choiceText}». Esta respuesta muestra tu reacción natural ante situaciones parecidas.`,
+      pt:`Escolheste «${choiceText}». Esta resposta mostra a tua reação natural perante situações semelhantes.`,
+      de:`Du hast „${choiceText}“ gewählt. Diese Antwort zeigt deine natürliche Reaktion auf ähnliche Situationen.`,
+      fr:`Tu as choisi « ${choiceText} ». Cette réponse montre ta réaction naturelle face à ce type de situation.`
+    };
+    return `<div class="fate-short-analysis">${fallback[currentLang]||fallback.en}</div>`;
   }
   window.renderFateQuestion=function(index){
     const d=FATE_DILEMMAS[index]; let overlay=document.getElementById('fate-overlay');
@@ -6798,3 +6804,31 @@ if(typeof LABYRINTH_RIDDLES!=='undefined' && LABYRINTH_RIDDLES.length){
     en:'Detailed answer. 1) First find a god who is definitely not Random. Ask B: “If I asked you ‘Is A Random?’, would you answer ‘ja’?” If B is Random, the answer is unreliable, but then A and C are both non-Random, so C is safe. If B is not Random, the nested wording neutralizes the difference between Truth and Lie and removes the need to know the literal meaning of “ja” and “da”; the answer lets you select a non-Random god. 2) Ask that non-Random god: “If I asked you ‘Are you the Liar?’, would you answer ‘ja’?” A “ja” identifies Lie; “da” identifies Truth. 3) Ask the same god: “If I asked you ‘Is B Random?’, would you answer ‘ja’?” “Ja” means B is Random; “da” means the remaining unresolved god is Random. The final role follows by elimination. Example: if C is confirmed non-Random, then C is identified as Truth, and the third question shows B is Random, A must be Lie. The key is that the nested wording makes Truth and Lie answer in the same reliable way without translating “ja” and “da”.'
   };
 }
+
+/* ===== v4.1.4 requested final adjustments ===== */
+(function(){
+  // Language row: move the planet icon + "Language" label exactly 2mm lower.
+  const style=document.createElement('style');
+  style.textContent='.language-setting .settings-item-left{transform:translateY(5px)!important;}';
+  document.head.appendChild(style);
+
+  // The last Labyrinth riddle gets two additional hints (5 total in this build).
+  if (typeof LABYRINTH_RIDDLES !== 'undefined' && LABYRINTH_RIDDLES.length) {
+    const last=LABYRINTH_RIDDLES[LABYRINTH_RIDDLES.length-1];
+    const extra=[
+      {ru:'После первого вопроса вам уже не нужно выяснять всё сразу: определите одного бога, который точно не Случай, и продолжайте спрашивать его.',en:'After the first question you do not need to determine everything at once: identify one god who is definitely not Random, then continue with that god.',es:'Después de la primera pregunta no necesitas determinarlo todo de inmediato: identifica a un dios que no sea Azar y continúa preguntándole.',pt:'Depois da primeira pergunta, não precisas de descobrir tudo de uma vez: identifica um deus que não seja o Acaso e continua a perguntar-lhe.',de:'Nach der ersten Frage musst du nicht alles sofort bestimmen: Finde einen Gott, der sicher nicht der Zufall ist, und frage ihn weiter.',fr:'Après la première question, inutile de tout déterminer immédiatement : identifie un dieu qui n’est certainement pas le Hasard, puis continue avec lui.'},
+      {ru:'Когда надёжный бог уже найден, используй вопрос с «если я спрошу тебя…». Он одновременно обходится с правдой, ложью и неизвестным значением «ja/da».',en:'Once you have a reliable god, use the “If I asked you…” construction. It neutralizes truth, lies, and the unknown meaning of “ja/da” at the same time.',es:'Cuando hayas encontrado un dios fiable, usa la construcción «Si te preguntara…». Así neutralizas a la vez la verdad, la mentira y el significado desconocido de «ja/da».',pt:'Depois de encontrares um deus fiável, usa a construção «Se eu te perguntasse…». Ela neutraliza ao mesmo tempo a verdade, a mentira e o significado desconhecido de «ja/da».',de:'Wenn du einen zuverlässigen Gott gefunden hast, verwende die Formulierung „Wenn ich dich fragen würde …“. Damit neutralisierst du Wahrheit, Lüge und die unbekannte Bedeutung von „ja/da“ gleichzeitig.',fr:'Une fois le dieu fiable trouvé, utilise la formulation « Si je te demandais… ». Elle neutralise à la fois la vérité, le mensonge et le sens inconnu de « ja/da ».'}
+    ];
+    last.hints = (last.hints||[]).concat(extra);
+    // Ensure the final answer is localized in all six supported languages.
+    last.answer={
+      ru:'Ответ: сначала найдите бога, который не является богом Случая. Спросите B: «Если я спрошу у тебя „Бог A — бог случая?“, ты ответишь „ja“?». Если ответ «ja», безопасным будет C; если «da», безопасным будет A. Затем спросите найденного безопасного бога: «Если я спрошу у тебя „Ты — бог лжи?“, ты ответишь „ja“?». Ответ «ja» означает, что он бог лжи, а «da» — бог истины. Третьим вопросом спросите его, является ли B богом Случая, используя ту же конструкцию. После этого последняя роль определяется методом исключения.',
+      en:'Answer: first identify a god who is not Random. Ask B: “If I asked you whether God A is Random, would you answer ‘ja’?” If the answer is “ja”, C is the safe god; if it is “da”, A is the safe god. Then ask that safe god: “If I asked you whether you are the Liar, would you answer ‘ja’?” A “ja” means Liar; “da” means Truth. With the third question, ask the same god whether B is Random, using the same construction. The final role is then determined by elimination.',
+      es:'Respuesta: primero identifica a un dios que no sea Azar. Pregunta a B: «Si te preguntara si el dios A es Azar, ¿responderías “ja”?». Si responde «ja», C es el dios seguro; si responde «da», A es el dios seguro. Después pregunta al dios seguro: «Si te preguntara si eres el dios de la mentira, ¿responderías “ja”?». «Ja» significa que es el Mentiroso; «da» significa que es el dios de la Verdad. Con la tercera pregunta, pregúntale si B es Azar usando la misma construcción. La última identidad se determina por eliminación.',
+      pt:'Resposta: primeiro identifica um deus que não seja o Acaso. Pergunta a B: «Se eu te perguntasse se o deus A é o Acaso, responderias “ja”?». Se responder «ja», C é o deus seguro; se responder «da», A é o deus seguro. Depois pergunta ao deus seguro: «Se eu te perguntasse se és o deus da Mentira, responderias “ja”?». «Ja» significa Mentira; «da» significa Verdade. Na terceira pergunta, pergunta-lhe se B é o Acaso usando a mesma construção. A última identidade é determinada por eliminação.',
+      de:'Antwort: Bestimme zuerst einen Gott, der nicht der Zufall ist. Frage B: „Wenn ich dich fragen würde, ob Gott A der Zufall ist, würdest du mit ‚ja‘ antworten?“ Bei „ja“ ist C der sichere Gott; bei „da“ ist A der sichere Gott. Frage dann den sicheren Gott: „Wenn ich dich fragen würde, ob du der Lügner bist, würdest du mit ‚ja‘ antworten?“ „Ja“ bedeutet Lügner, „da“ bedeutet Wahrheitsgott. Mit der dritten Frage fragst du denselben Gott, ob B der Zufall ist, wieder mit derselben Konstruktion. Die letzte Rolle ergibt sich durch Ausschluss.',
+      fr:'Réponse : commence par identifier un dieu qui n’est pas le Hasard. Demande à B : « Si je te demandais si le dieu A est le Hasard, répondrais-tu “ja” ? ». Si la réponse est « ja », C est le dieu fiable ; si c’est « da », A est le dieu fiable. Demande ensuite à ce dieu fiable : « Si je te demandais si tu es le dieu du Mensonge, répondrais-tu “ja” ? ». « Ja » signifie Mensonge et « da » signifie Vérité. Pour la troisième question, demande-lui si B est le Hasard avec la même construction. Le dernier rôle se déduit par élimination.'
+    };
+  }
+
+})();
