@@ -2103,3 +2103,41 @@ body.theme-kaleidoscope #app-container::after{background:transparent!important}
 }
 /* Keep every fixed close control clear of the first line of content. */
 .fate-overlay>.fate-container,.destiny-overlay>.destiny-container,.wisdom-overlay>.wisdom-container{padding-top:88px!important;}
+
+/* ===== ONLY THE REQUESTED FINAL TWEAKS 2026-08-23 ===== */
+/* Language: one compact row; icon, label and selected value share the same vertical center. */
+.language-setting{
+  display:flex!important;align-items:center!important;min-height:54px!important;height:54px!important;
+  padding-top:0!important;padding-bottom:0!important;
+}
+.language-setting .settings-item-left{display:flex!important;align-items:center!important;height:100%!important;gap:10px!important;min-width:0!important;}
+.language-setting .settings-icon{flex:0 0 22px!important;width:22px!important;height:22px!important;display:block!important;}
+.language-setting .settings-label,.language-setting .language-current{line-height:1!important;white-space:nowrap!important;}
+.language-setting .language-current{margin-left:auto!important;align-self:center!important;max-width:52%!important;overflow:hidden!important;text-overflow:ellipsis!important;}
+/* Keep the picker bright while only the page behind it is dimmed. */
+#lang-backdrop{z-index:4999!important;background:rgba(0,0,0,.28)!important;backdrop-filter:none!important;}
+.language-picker-panel{z-index:5000!important;opacity:1!important;filter:none!important;}
+
+/* Rating: rounded star shapes using rounded SVG joins. */
+.rating-star{border-radius:16px!important;display:grid!important;place-items:center!important;}
+.rating-star svg{width:100%!important;height:100%!important;display:block!important;overflow:visible!important;}
+.rating-star svg path{fill:currentColor!important;stroke:currentColor!important;stroke-width:1.1!important;stroke-linejoin:round!important;stroke-linecap:round!important;}
+
+/* Author legal screen: fixed controls remain visible while the text scrolls; page content rises from below. */
+.fate-overlay:has(.legal-author-card),.fate-overlay:has(.legal-confirm-card){overflow:hidden!important;}
+.fate-overlay:has(.legal-author-card) .legal-author-card,.fate-overlay:has(.legal-confirm-card) .legal-confirm-card{overflow-y:auto!important;-webkit-overflow-scrolling:touch!important;animation:authorRise .28s ease-out both!important;}
+.fate-overlay:has(.legal-author-card) .overlay-close-x,.fate-overlay:has(.legal-confirm-card) .overlay-close-x,.fate-overlay:has(.legal-author-card) .author-back-check,.fate-overlay:has(.legal-confirm-card) .author-back-check{position:fixed!important;z-index:10020!important;top:max(14px,env(safe-area-inset-top))!important;bottom:auto!important;}
+@keyframes authorRise{from{transform:translateY(42px);opacity:.92}to{transform:translateY(0);opacity:1}}
+
+/* Wisdom: compact, not a large popup. */
+.wisdom-container{max-width:340px!important;padding:24px 20px 20px!important;border-radius:20px!important;}
+.wisdom-quote{min-height:78px!important;font-size:1rem!important;line-height:1.75!important;margin-bottom:10px!important;}
+.wisdom-close-btn{margin-top:8px!important;padding:11px 14px!important;}
+
+/* Chronicles: percentage labels and fills stay aligned; result text is intentionally short. */
+.fate-stat-label{font-variant-numeric:tabular-nums!important;white-space:nowrap!important;}
+.fate-stat-fill{transition:width .35s ease!important;}
+.fate-analysis{line-height:1.65!important;margin-top:14px!important;}
+
+/* Do not introduce any extra special styling for the four settings rows. */
+.rate-item,.schedule-item,.support-item,.author-item{background:transparent!important;border-color:var(--border-color)!important;box-shadow:none!important;}

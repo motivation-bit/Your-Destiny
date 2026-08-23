@@ -561,7 +561,7 @@ function showRatingModal() {
   overlay.innerHTML=`<button class="overlay-close-x" onclick="this.closest('.fate-overlay').remove()">&times;</button>
     <div class="rating-card ${saved ? 'has-rating' : 'compact'}" id="rating-card">
       <div class="rating-title">${texts.title}</div>
-      <div class="rating-stars" role="radiogroup" aria-label="${texts.title}">${[1,2,3,4,5].map(i=>`<button class="rating-star ${i<=saved?'selected':''}" data-rating="${i}" aria-label="${i}" onclick="selectRating(${i})">★</button>`).join('')}</div>
+      <div class="rating-stars" role="radiogroup" aria-label="${texts.title}">${[1,2,3,4,5].map(i=>`<button class="rating-star ${i<=saved?'selected':''}" data-rating="${i}" aria-label="${i}" onclick="selectRating(${i})"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.7l2.85 5.78 6.38.93-4.62 4.5 1.09 6.36L12 17.27l-5.7 3 1.09-6.36-4.62-4.5 6.38-.93L12 2.7z"/></svg></button>`).join('')}</div>
       <div class="rating-feedback" id="rating-feedback" ${saved?'':'hidden'}>
         <div class="rating-thanks">${texts.thanks}</div>
         <div class="rating-text" id="rating-text">${saved ? (texts[saved]||texts[5]) : ''}</div>
@@ -6514,7 +6514,7 @@ if (typeof LABYRINTH_RIDDLES !== 'undefined') {
   window.showRatingModal=function(){
     const overlay=document.createElement('div'); overlay.className='fate-overlay active';
     const texts=RATING_TEXTS[currentLang]||RATING_TEXTS.en; const saved=Number(localStorage.getItem('your_destiny_rating')||0);
-    overlay.innerHTML=`<button class="overlay-close-x" onclick="this.closest('.fate-overlay').remove()">&times;</button><div class="rating-card ${saved?'has-rating':'compact'}" id="rating-card"><div class="rating-title">${texts.title}</div><div class="rating-stars" role="radiogroup" aria-label="${texts.title}">${[1,2,3,4,5].map(i=>`<button class="rating-star ${i<=saved?'selected':''}" data-rating="${i}" aria-label="${i}" onclick="selectRating(${i})">★</button>`).join('')}</div><div class="rating-feedback" id="rating-feedback" ${saved?'':'hidden'}><div class="rating-thanks">${texts.thanks}</div><div class="rating-text" id="rating-text">${saved?(texts[saved]||texts[5]):''}</div><a class="rating-channel-btn" href="${CHANNEL_URL}" target="_blank" rel="noopener">${texts.open}</a></div></div>`;
+    overlay.innerHTML=`<button class="overlay-close-x" onclick="this.closest('.fate-overlay').remove()">&times;</button><div class="rating-card ${saved?'has-rating':'compact'}" id="rating-card"><div class="rating-title">${texts.title}</div><div class="rating-stars" role="radiogroup" aria-label="${texts.title}">${[1,2,3,4,5].map(i=>`<button class="rating-star ${i<=saved?'selected':''}" data-rating="${i}" aria-label="${i}" onclick="selectRating(${i})"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.7l2.85 5.78 6.38.93-4.62 4.5 1.09 6.36L12 17.27l-5.7 3 1.09-6.36-4.62-4.5 6.38-.93L12 2.7z"/></svg></button>`).join('')}</div><div class="rating-feedback" id="rating-feedback" ${saved?'':'hidden'}><div class="rating-thanks">${texts.thanks}</div><div class="rating-text" id="rating-text">${saved?(texts[saved]||texts[5]):''}</div><a class="rating-channel-btn" href="${CHANNEL_URL}" target="_blank" rel="noopener">${texts.open}</a></div></div>`;
     document.body.appendChild(overlay);
   };
   window.selectRating=function(value){
@@ -6714,3 +6714,95 @@ if (typeof LABYRINTH_RIDDLES !== 'undefined') {
     window.restartLabyrinth=function(){localStorage.setItem('labyrinth',JSON.stringify({currentRiddle:0,hintsUsed:[]}));const o=document.getElementById('labyrinth-overlay');if(o)renderLabyrinthRiddle();else openLabyrinth();};
   }
 })();
+
+
+// ===== USER REQUESTED PRECISION PATCH 2026-08-23 =====
+// Keep the language row compact and let the existing picker handle real language switching.
+// The picker backdrop is separate, so only the page behind the picker is dimmed.
+
+// Chronicles: show one-decimal percentages and a short answer-specific interpretation.
+function fateOneDecimalStats(stats){
+  const vals=[Number(stats.a)||0,Number(stats.b)||0,Number(stats.c)||0];
+  const total=vals.reduce((a,b)=>a+b,0)||100;
+  let rounded=vals.map(v=>Math.floor((v/total*1000))/10);
+  let remainder=Math.round((100-rounded.reduce((a,b)=>a+b,0))*10)/10;
+  const order=vals.map((v,i)=>({i,v})).sort((x,y)=>y.v-x.v).map(x=>x.i);
+  let k=0;
+  while(remainder>0.0001){ rounded[order[k%3]]=Math.round((rounded[order[k%3]]+0.1)*10)/10; remainder=Math.round((remainder-0.1)*10)/10; k++; }
+  return {a:rounded[0],b:rounded[1],c:rounded[2]};
+}
+function fateShortAnalysis(d,choice){
+  const answer=loc(d[choice]);
+  const templates={
+    ru:`Ты выбрал «${answer}». Этот вариант показывает, какой подход тебе ближе в этом вопросе.`,
+    en:`You chose “${answer}”. This shows which approach feels closer to you in this question.`,
+    es:`Has elegido «${answer}». Esta opción muestra qué enfoque te resulta más cercano en esta pregunta.`,
+    pt:`Escolheste «${answer}». Esta escolha mostra qual abordagem te é mais próxima nesta questão.`,
+    de:`Du hast „${answer}“ gewählt. Diese Wahl zeigt, welcher Ansatz dir bei dieser Frage näherliegt.`,
+    fr:`Tu as choisi « ${answer} ». Ce choix montre quelle approche te correspond le mieux dans cette question.`
+  };
+  return templates[currentLang]||templates.en;
+}
+function renderFateQuestion(index) {
+  const d=FATE_DILEMMAS[index];
+  let overlay=document.getElementById('fate-overlay');
+  if(!overlay){ overlay=document.createElement('div'); overlay.id='fate-overlay'; overlay.className='fate-overlay active'; document.body.appendChild(overlay); }
+  const st=fateOneDecimalStats(d.stats);
+  overlay.innerHTML=`
+    <button class="overlay-close-x" onclick="closeFateDilemmas()">&times;</button>
+    <div class="fate-container">
+      <div class="fate-counter">${index+1} / ${FATE_DILEMMAS.length}</div>
+      <div class="fate-question">${loc(d.question)}</div>
+      <div class="fate-choices" id="fate-choices">
+        <button class="fate-btn" onclick="answerFate(${index}, 'a')"><span class="fate-btn-text">${loc(d.a)}</span></button>
+        <button class="fate-btn" onclick="answerFate(${index}, 'b')"><span class="fate-btn-text">${loc(d.b)}</span></button>
+        <button class="fate-btn" onclick="answerFate(${index}, 'c')"><span class="fate-btn-text">${loc(d.c)}</span></button>
+      </div>
+      <div class="fate-result" id="fate-result" style="display:none;">
+        <div class="fate-stats">
+          <div class="fate-stat-bar"><div class="fate-stat-fill" id="stat-a" style="width:0%"></div><span class="fate-stat-label">${st.a.toFixed(1)}%</span></div>
+          <div class="fate-stat-bar"><div class="fate-stat-fill" id="stat-b" style="width:0%"></div><span class="fate-stat-label">${st.b.toFixed(1)}%</span></div>
+          <div class="fate-stat-bar"><div class="fate-stat-fill" id="stat-c" style="width:0%"></div><span class="fate-stat-label">${st.c.toFixed(1)}%</span></div>
+        </div>
+        <div class="fate-analysis" id="fate-analysis"></div>
+        <button class="fate-next" onclick="nextFateQuestion()">${loc(NEXT_BUTTON_TEXTS[index % NEXT_BUTTON_TEXTS.length])}</button>
+      </div>
+    </div>`;
+}
+function answerFate(index,choice){
+  const d=FATE_DILEMMAS[index], st=fateOneDecimalStats(d.stats);
+  const choicesDiv=document.getElementById('fate-choices'), resultDiv=document.getElementById('fate-result');
+  createGoldExplosion();
+  choicesDiv.style.opacity='0'; choicesDiv.style.transform='scale(.9)'; choicesDiv.style.transition='all .35s ease';
+  setTimeout(()=>{
+    choicesDiv.style.display='none'; resultDiv.style.display='block';
+    document.getElementById('stat-a').style.width=st.a+'%';
+    document.getElementById('stat-b').style.width=st.b+'%';
+    document.getElementById('stat-c').style.width=st.c+'%';
+    const analysis=document.getElementById('fate-analysis'); if(analysis) analysis.textContent=fateShortAnalysis(d,choice);
+    let state=JSON.parse(localStorage.getItem('fate_dilemmas')||'{"currentIndex":0,"answers":[]}');
+    state.answers.push({index,choice}); state.currentIndex=index+1; localStorage.setItem('fate_dilemmas',JSON.stringify(state));
+  },350);
+}
+
+// Last Labyrinth riddle: exactly ten progressive hints and a clearer example-led answer.
+if(typeof LABYRINTH_RIDDLES!=='undefined' && LABYRINTH_RIDDLES.length){
+  const last=LABYRINTH_RIDDLES[LABYRINTH_RIDDLES.length-1];
+  last.hints=[
+    {ru:'Начни не с определения всех трёх богов, а с поиска того, кому можно доверять дальше.',en:'Do not start by identifying all three gods; first find one you can safely question next.',es:'No empieces identificando a los tres; primero encuentra a uno al que puedas preguntar con seguridad.'},
+    {ru:'Случайный бог — главная проблема: его ответы нельзя использовать как надёжную опору.',en:'The Random god is the main obstacle: his answers cannot be treated as reliable.',es:'El dios Aleatorio es el principal obstáculo: sus respuestas no son una base fiable.'},
+    {ru:'Поэтому первый вопрос должен позволить выбрать бога, который точно не является Случайным.',en:'The first question should let you choose a god who is definitely not Random.',es:'La primera pregunta debe permitirte elegir un dios que no sea Aleatorio.'},
+    {ru:'Полезный приём — спрашивать не только «что правда?», но и «что ты бы ответил на такой вопрос?».',en:'A useful technique is to ask not only “what is true?” but “what would you answer to this question?”.',es:'Una técnica útil es preguntar no solo «qué es verdad», sino «qué responderías a esta pregunta».'},
+    {ru:'Такой вложенный вопрос помогает одновременно обойти ложь и неизвестное значение «da/ja».',en:'This nested question helps neutralize both lying and the unknown meaning of “da/ja”.',es:'Esta pregunta anidada ayuda a neutralizar tanto la mentira como el significado desconocido de «da/ja».'},
+    {ru:'Когда у тебя уже есть неслучайный бог, дальше используй именно его для проверки остальных.',en:'Once you have a non-Random god, use that god to check the others.',es:'Cuando tengas un dios no Aleatorio, úsalo para comprobar a los demás.'},
+    {ru:'Пример: спроси у найденного бога, является ли B Случайным, через вопрос о том, какое слово он произнесёт.',en:'Example: ask the reliable god whether B is Random through a question about which word he would say.',es:'Ejemplo: pregunta al dios fiable si B es Aleatorio mediante una pregunta sobre qué palabra diría.'},
+    {ru:'Если ответ указывает, что B — Случайный, ты уже знаешь двух оставшихся по принципу исключения.',en:'If the answer indicates B is Random, the other two can be determined by elimination.',es:'Si la respuesta indica que B es Aleatorio, los otros dos se determinan por eliminación.'},
+    {ru:'Если B не Случайный, тот же надёжный бог поможет различить Истину и Ложь.',en:'If B is not Random, the same reliable god can distinguish Truth from Falsehood.',es:'Si B no es Aleatorio, el mismo dios fiable permite distinguir Verdad de Mentira.'},
+    {ru:'Итоговый принцип: сначала гарантированно найди неслучайного бога, затем двумя вложенными вопросами разберись с остальными.',en:'Final principle: first guarantee a non-Random god, then use two nested questions to resolve the remaining gods.',es:'Principio final: primero garantiza un dios no Aleatorio y luego usa dos preguntas anidadas para resolver los demás.'}
+  ];
+  last.answer={
+    ru:'Ответ по шагам. Сначала найди бога, который точно не является Случайным. Например, спроси B: «Если бы я спросил тебя: “A — бог Случая?”, ты бы ответил “ja”?» Такой вложенный вопрос позволяет выбрать A или C как гарантированно неслучайного бога в зависимости от ответа. Затем обращайся только к найденному надёжному богу. Вторым вопросом спроси его в той же форме, является ли один из оставшихся богов Ложью или Истиной. Третьим — кто из оставшихся является Случаем. После этого последний бог определяется автоматически. Смысл приёма в том, что вопрос «что ты ответил бы на другой вопрос?» одновременно убирает проблему лжи и неизвестного значения слов «da» и «ja».',
+    en:'Step-by-step answer. First find a god who is definitely not Random. For example, ask B a nested question about whether A is Random. This lets you select a god who is safe to question next. Then use only that reliable god. Ask the second nested question to distinguish Truth from Falsehood, and the third to determine which remaining god is Random. The last identity follows by elimination. The key trick is the nested “what would you answer?” wording: it neutralizes both lying and the unknown meaning of “da” and “ja”.',
+    es:'Respuesta paso a paso. Primero encuentra un dios que no sea Aleatorio. Después usa solo ese dios fiable para distinguir Verdad y Mentira y para comprobar cuál de los otros es Aleatorio. El último se determina por eliminación. La clave es preguntar qué respondería ante otra pregunta: así se neutralizan tanto la mentira como el significado desconocido de «da» y «ja».'
+  };
+}
