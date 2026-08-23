@@ -2103,3 +2103,45 @@ body.theme-kaleidoscope #app-container::after{background:transparent!important}
 }
 /* Keep every fixed close control clear of the first line of content. */
 .fate-overlay>.fate-container,.destiny-overlay>.destiny-container,.wisdom-overlay>.wisdom-container{padding-top:88px!important;}
+
+
+/* ============================================================
+   FINAL USER REQUEST — VISUAL OVERRIDES
+   ============================================================ */
+/* Language row: same height/line as every other settings row. */
+.language-setting{min-height:50px;height:50px;padding-top:12px!important;padding-bottom:12px!important;white-space:nowrap;}
+.language-setting .settings-item-left{min-width:0;flex:1;white-space:nowrap;}
+.language-setting .settings-label{white-space:nowrap;display:block;line-height:1;}
+.language-setting .language-current{flex:0 0 auto;max-width:none!important;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-size:.78rem;line-height:1;text-align:right;}
+@media(max-width:430px){.language-setting .language-current{font-size:.74rem;}.language-setting .settings-item-left{gap:11px;}}
+
+/* Picker itself stays crisp; only the page behind it is dimmed. */
+.language-picker-panel::after{display:none!important;}
+.lang-backdrop{background:rgba(0,0,0,.38)!important;backdrop-filter:none!important;-webkit-backdrop-filter:none!important;z-index:4999!important;}
+.language-picker-panel{z-index:5000!important;filter:none!important;opacity:1!important;}
+.language-picker-panel.open{opacity:1!important;}
+.lang-btn.active{border-color:var(--gold)!important;background:rgba(212,175,55,.11)!important;color:var(--gold-light)!important;box-shadow:inset 0 0 0 1px rgba(212,175,55,.12)!important;}
+
+/* Rating stars: softer/rounder glyph treatment. */
+.rating-star{font-family:'Arial Rounded MT Bold','Trebuchet MS',Georgia,sans-serif!important;font-weight:700!important;border-radius:18px!important;letter-spacing:-.02em;transform:scale(.98);}
+.rating-star.selected{transform:scale(1.03);}
+
+/* Author controls remain fixed while the legal page scrolls. */
+.fate-overlay:has(.legal-author-card),.fate-overlay:has(.legal-confirm-card){position:fixed!important;inset:0!important;overflow:hidden!important;}
+.fate-overlay:has(.legal-author-card) .legal-author-card,.fate-overlay:has(.legal-confirm-card) .legal-confirm-card{height:100vh!important;max-height:none!important;overflow-y:auto!important;overscroll-behavior:contain;padding-top:96px!important;padding-bottom:56px!important;}
+.fate-overlay:has(.legal-author-card) .overlay-close-x,.fate-overlay:has(.legal-confirm-card) .overlay-close-x{position:fixed!important;top:max(14px,env(safe-area-inset-top))!important;right:16px!important;z-index:10003!important;}
+.author-back-arrow{position:fixed!important;top:max(14px,env(safe-area-inset-top))!important;left:16px!important;width:40px!important;height:40px!important;border-radius:50%!important;background:rgba(255,255,255,.035)!important;border:1px solid rgba(212,175,55,.28)!important;color:var(--gold-light)!important;font-size:1.45rem!important;line-height:1!important;display:grid!important;place-items:center!important;z-index:10003!important;cursor:pointer!important;}
+
+/* Wisdom: compact, not a large pop-up. */
+.wisdom-overlay{padding:14px!important;}
+.wisdom-container{max-width:330px!important;padding:22px 20px!important;border-radius:18px!important;box-shadow:0 14px 40px rgba(0,0,0,.42)!important;}
+.wisdom-quote{font-size:.98rem!important;line-height:1.65!important;margin-bottom:18px!important;}
+.wisdom-close-btn{padding:10px 22px!important;border-radius:11px!important;font-size:.8rem!important;}
+
+/* Chronicles result: only the short interpretation, no numbered archetype/pros-cons blocks. */
+.fate-short-analysis{font-family:'Noto Serif',serif;font-size:.95rem;line-height:1.72;color:var(--text-secondary);padding:15px 16px;background:rgba(212,175,55,.045);border:1px solid rgba(212,175,55,.1);border-radius:14px;margin-bottom:20px;}
+.fate-analysis:has(.fate-short-analysis){padding:0!important;border:0!important;background:transparent!important;}
+
+/* The four settings entries keep the normal border treatment but always use Royal Purple inside. */
+.rate-item,.schedule-item,.support-item,.author-item{background:#35205f!important;border-color:var(--glass-border)!important;box-shadow:none!important;}
+.rate-item:active,.schedule-item:active,.support-item:active,.author-item:active{background:#35205f!important;}

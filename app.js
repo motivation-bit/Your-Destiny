@@ -6714,3 +6714,141 @@ if (typeof LABYRINTH_RIDDLES !== 'undefined') {
     window.restartLabyrinth=function(){localStorage.setItem('labyrinth',JSON.stringify({currentRiddle:0,hintsUsed:[]}));const o=document.getElementById('labyrinth-overlay');if(o)renderLabyrinthRiddle();else openLabyrinth();};
   }
 })();
+
+
+/* ============================================================
+   FINAL USER REQUEST — 2026-08-23
+   Narrow fixes only: language row/picker, rating stars, author controls,
+   compact wisdom, chronicles result copy, and final labyrinth hints.
+   ============================================================ */
+(function(){
+  const LANG_NAMES_FINAL={ru:'Русский',en:'English',es:'Español',pt:'Português',de:'Deutsch',fr:'Français'};
+
+  // Language: keep the current language in one compact row and mark the active choice.
+  window.updateLanguageUI=function(){
+    ['ru','en','es','pt','de','fr'].forEach(lang=>{
+      const btn=document.getElementById('lang-'+lang+'-btn');
+      if(btn) btn.classList.toggle('active',currentLang===lang);
+    });
+    const cur=document.getElementById('language-current');
+    if(cur) cur.textContent=LANG_NAMES_FINAL[currentLang]||LANG_NAMES_FINAL.en;
+    const title=document.getElementById('language-panel-title');
+    if(title) title.textContent=T[currentLang]?.language||'Language';
+    document.documentElement.lang=currentLang;
+    document.querySelectorAll('[data-t]').forEach(el=>{
+      const key=el.dataset.t;
+      if(el.tagName==='INPUT') { if(key==='promoPlaceholder') el.placeholder=t(key); }
+      else el.textContent=t(key);
+    });
+    const subtitle=document.getElementById('header-subtitle'); if(subtitle) subtitle.textContent=t('novels');
+    const keys=['novels','surveys','contacts','favorites','settings'];
+    document.querySelectorAll('.nav-label').forEach((el,i)=>{el.textContent=t(keys[i]);});
+    const th=THEMES.find(x=>x.id===currentTheme); const themeName=document.getElementById('theme-name');
+    if(th&&themeName) themeName.textContent=loc(th.name);
+    initFirstVisit();
+    if(typeof renderPromoHint==='function') renderPromoHint();
+    else { const p=document.getElementById('promo-hint'); if(p) p.textContent=t('promoHint'); }
+  };
+
+  window.setLanguage=function(lang){
+    if(!T[lang]) lang='en';
+    currentLang=lang;
+    localStorage.setItem('lang',lang);
+    localStorage.setItem('lang_manual','1');
+    updateLanguageUI();
+    renderThemeColors();
+    updateVipDisplay();
+    closeLanguagePicker();
+  };
+
+  // Re-open the picker with the existing crisp panel + dimmed page behind it.
+  window.toggleLanguagePicker=function(){
+    const panel=document.getElementById('language-picker-panel'); if(!panel) return;
+    if(panel.classList.contains('open')) return closeLanguagePicker();
+    const title=document.getElementById('language-panel-title');
+    if(title) title.textContent=T[currentLang]?.language||'Language';
+    ['ru','en','es','pt','de','fr'].forEach(lang=>{
+      const btn=document.getElementById('lang-'+lang+'-btn');
+      if(btn) btn.classList.toggle('active',currentLang===lang);
+    });
+    let backdrop=document.getElementById('lang-backdrop');
+    if(!backdrop){
+      backdrop=document.createElement('div');
+      backdrop.id='lang-backdrop'; backdrop.className='lang-backdrop';
+      backdrop.addEventListener('click',closeLanguagePicker);
+      document.body.appendChild(backdrop);
+    }
+    panel.classList.add('open');
+  };
+  window.closeLanguagePicker=function(){
+    document.getElementById('language-picker-panel')?.classList.remove('open');
+    document.getElementById('lang-backdrop')?.remove();
+  };
+
+  // Chronicles: one decimal place and bars exactly match the shown percentages.
+  if(typeof normalizedStats==='function'){
+    const oldRenderFate=window.renderFateQuestion;
+    window.renderFateQuestion=function(index){
+      const d=FATE_DILEMMAS[index];
+      let overlay=document.getElementById('fate-overlay');
+      if(!overlay){ overlay=document.createElement('div'); overlay.id='fate-overlay'; overlay.className='fate-overlay active'; document.body.appendChild(overlay); }
+      const vals=normalizedStats(d.stats);
+      const keys=['a','b','c'];
+      overlay.className='fate-overlay active';
+      overlay.innerHTML=`<button class="overlay-close-x" onclick="closeFateDilemmas()">&times;</button><div class="fate-container"><div class="fate-counter">${index+1} / ${FATE_DILEMMAS.length}</div><div class="fate-question">${loc(d.question)}</div><div class="fate-choices" id="fate-choices"><button class="fate-btn" onclick="answerFate(${index},'a')"><span class="fate-btn-text">${loc(d.a)}</span></button><button class="fate-btn" onclick="answerFate(${index},'b')"><span class="fate-btn-text">${loc(d.b)}</span></button><button class="fate-btn" onclick="answerFate(${index},'c')"><span class="fate-btn-text">${loc(d.c)}</span></button></div><div class="fate-result" id="fate-result" style="display:none"><div class="fate-stats">${keys.map((k,i)=>`<div class="fate-stat-bar"><div class="fate-stat-fill" style="width:${vals[i].toFixed(1)}%"></div><span class="fate-stat-label">${vals[i].toFixed(1)}%</span></div>`).join('')}</div><div class="fate-analysis" id="fate-analysis"></div><button class="fate-next" onclick="nextFateQuestion()">${loc(NEXT_BUTTON_TEXTS[index%NEXT_BUTTON_TEXTS.length])}</button></div></div>`;
+    };
+  }
+
+  // Chronicles: only a short reading of the selected answer; no archetype/pros-cons headings.
+  window.fateAnalysis=function(d,choice){
+    const labels=miniByChoice[currentLang]||miniByChoice.en;
+    const chosen=choice==='a'?labels.a:choice==='b'?labels.b:labels.c;
+    const short={
+      ru:{a:'Ты выбрал вариант, где на первом месте экономия и контроль ресурсов.',b:'Ты выбрал вариант, где важнее удобство и снижение ежедневного напряжения.',c:'Ты выбрал вариант, где важнее смотреть вперёд и учитывать перспективу.'},
+      en:{a:'You chose the option that puts saving and control of resources first.',b:'You chose the option that puts convenience and less daily friction first.',c:'You chose the option that puts the future and longer-term perspective first.'},
+      es:{a:'Has elegido la opción que prioriza el ahorro y el control de los recursos.',b:'Has elegido la opción que prioriza la comodidad y menos tensión diaria.',c:'Has elegido la opción que prioriza el futuro y la perspectiva a largo plazo.'},
+      pt:{a:'Escolheste a opção que coloca a poupança e o controlo dos recursos em primeiro lugar.',b:'Escolheste a opção que dá prioridade à comodidade e a menos tensão diária.',c:'Escolheste a opção que dá prioridade ao futuro e à perspetiva a longo prazo.'},
+      de:{a:'Du hast die Option gewählt, bei der Sparen und Kontrolle über Ressourcen im Vordergrund stehen.',b:'Du hast die Option gewählt, bei der Komfort und weniger täglicher Stress wichtiger sind.',c:'Du hast die Option gewählt, bei der Zukunft und langfristige Perspektive wichtiger sind.'},
+      fr:{a:'Tu as choisi l’option qui privilégie l’économie et le contrôle des ressources.',b:'Tu as choisi l’option qui privilégie le confort et moins de tension au quotidien.',c:'Tu as choisi l’option qui privilégie l’avenir et la perspective à long terme.'}
+    };
+    const lang=short[currentLang]||short.en;
+    return `<div class="fate-short-analysis">${lang[choice]||chosen}</div>`;
+  };
+  const oldAnswerFate=window.answerFate;
+  window.answerFate=function(index,choice){
+    const d=FATE_DILEMMAS[index];
+    const state=JSON.parse(localStorage.getItem('fate_dilemmas')||'{"currentIndex":0,"answers":[]}');
+    state.answers.push({index,choice}); state.currentIndex=index+1; localStorage.setItem('fate_dilemmas',JSON.stringify(state));
+    const result=document.getElementById('fate-result'), choices=document.getElementById('fate-choices');
+    if(!result||!choices)return;
+    choices.style.display='none'; result.style.display='block';
+    const analysis=document.getElementById('fate-analysis'); if(analysis) analysis.innerHTML=fateAnalysis(d,choice);
+    const vals=normalizedStats(d.stats);
+    result.querySelectorAll('.fate-stat-fill').forEach((el,i)=>{el.style.width=vals[i].toFixed(1)+'%';});
+  };
+
+  // Author confirmation: the return control is a real back arrow, not a checkmark.
+  window.showAuthorConfirm=function(){
+    const previous=document.querySelector('.fate-overlay'); if(previous) previous.remove();
+    const overlay=document.createElement('div'); overlay.className='fate-overlay active';
+    const text={
+      ru:'Подтвердите, что вы прочитали условия, обладаете необходимыми правами на отправляемый материал и соглашаетесь с указанными условиями передачи и использования.',
+      en:'Confirm that you have read the terms, hold the necessary rights to the submitted material and agree to the stated submission and use conditions.',
+      es:'Confirma que has leído las condiciones, tienes los derechos necesarios sobre el material y aceptas las condiciones de envío y uso.',
+      pt:'Confirma que leste as condições, tens os direitos necessários sobre o material e aceitas as condições de envio e utilização.',
+      de:'Bestätige, dass du die Bedingungen gelesen hast, über die erforderlichen Rechte verfügst und den Bedingungen für Einreichung und Nutzung zustimmst.',
+      fr:'Confirmez que vous avez lu les conditions, disposez des droits nécessaires sur le contenu et acceptez les conditions d’envoi et d’utilisation.'
+    };
+    const yes={ru:'Согласен — написать',en:'I agree — write',es:'Acepto — escribir',pt:'Aceito — escrever',de:'Ich stimme zu — schreiben',fr:'J’accepte — écrire'};
+    overlay.innerHTML=`<button class="overlay-close-x" onclick="this.closest('.fate-overlay').remove()">&times;</button><button class="author-back-arrow" onclick="this.closest('.fate-overlay').remove();showBecomeAuthor()" aria-label="Back">←</button><div class="author-card legal-confirm-card"><div class="author-title">${t('becomeAuthor')}</div><div class="author-legal-text">${text[currentLang]||text.en}</div><a class="author-channel-btn" href="${DIRECT_URL}" target="_blank" rel="noopener">${yes[currentLang]||yes.en}</a></div>`;
+    document.body.appendChild(overlay);
+  };
+
+  // Ensure the last labyrinth riddle has exactly ten hints.
+  if(typeof LABYRINTH_RIDDLES!=='undefined' && LABYRINTH_RIDDLES.length){
+    const last=LABYRINTH_RIDDLES[LABYRINTH_RIDDLES.length-1];
+    if(!Array.isArray(last.hints)) last.hints=[];
+    while(last.hints.length<10) last.hints.push(last.hints[last.hints.length-1]||{ru:'Сосредоточься на формулировке вопроса и проверь ответ шаг за шагом.',en:'Focus on the wording and check the answer step by step.'});
+    if(last.hints.length>10) last.hints=last.hints.slice(0,10);
+  }
+})();
