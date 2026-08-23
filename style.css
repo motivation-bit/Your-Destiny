@@ -2142,31 +2142,65 @@ body.theme-kaleidoscope #app-container::after{background:transparent!important}
 /* Do not introduce any extra special styling for the four settings rows. */
 .rate-item,.schedule-item,.support-item,.author-item{background:transparent!important;border-color:var(--border-color)!important;box-shadow:none!important;}
 
-/* v4.1.1 — only requested refinements */
-.language-setting .settings-item-left,
-.language-setting .settings-icon,
-.language-setting .settings-label,
-.language-setting .language-current{transform:translateY(3px)!important;}
-.language-setting{min-height:58px!important;height:58px!important;}
-.language-setting .settings-label,.language-setting .language-current{line-height:1!important;white-space:nowrap!important;}
+/* ===== REQUESTED FINAL FIXES ===== */
+/* Language picker: the page dims, while the picker itself stays fully crisp and interactive. */
+.lang-backdrop{
+  position:fixed!important;
+  inset:0!important;
+  z-index:4999!important;
+  background:rgba(0,0,0,.34)!important;
+  backdrop-filter:none!important;
+  -webkit-backdrop-filter:none!important;
+  cursor:pointer!important;
+}
+.language-picker-panel{
+  z-index:5000!important;
+  opacity:1!important;
+  filter:none!important;
+  pointer-events:auto!important;
+}
+.language-picker-panel::after{display:none!important;content:none!important;}
 
-/* Author legal reader: controls remain fixed while the text scrolls. */
+/* Author legal pages: controls belong to the viewport, not to the scrolling text. */
 .fate-overlay:has(.legal-author-card),
 .fate-overlay:has(.legal-confirm-card){overflow:hidden!important;}
-.fate-overlay:has(.legal-author-card) .legal-author-card,
-.fate-overlay:has(.legal-confirm-card) .legal-confirm-card{overflow-y:auto!important;-webkit-overflow-scrolling:touch!important;padding-top:92px!important;padding-bottom:44px!important;}
 .fate-overlay:has(.legal-author-card) .overlay-close-x,
 .fate-overlay:has(.legal-confirm-card) .overlay-close-x,
 .fate-overlay:has(.legal-author-card) .author-back-check,
-.fate-overlay:has(.legal-confirm-card) .author-back-check{position:fixed!important;top:max(14px,env(safe-area-inset-top))!important;bottom:auto!important;z-index:10050!important;}
-.fate-overlay:has(.legal-author-card) .author-back-check,
-.fate-overlay:has(.legal-confirm-card) .author-back-check{left:16px!important;right:auto!important;}
+.fate-overlay:has(.legal-confirm-card) .author-back-check{
+  position:fixed!important;
+  top:max(14px,env(safe-area-inset-top))!important;
+  bottom:auto!important;
+  z-index:10050!important;
+  visibility:visible!important;
+  opacity:1!important;
+}
 .fate-overlay:has(.legal-author-card) .overlay-close-x,
 .fate-overlay:has(.legal-confirm-card) .overlay-close-x{right:16px!important;}
+.fate-overlay:has(.legal-author-card) .author-back-check,
+.fate-overlay:has(.legal-confirm-card) .author-back-check{left:16px!important;}
+.fate-overlay:has(.legal-author-card) .legal-author-card,
+.fate-overlay:has(.legal-confirm-card) .legal-confirm-card{
+  padding-top:calc(86px + env(safe-area-inset-top))!important;
+  padding-bottom:42px!important;
+  min-height:100vh!important;
+  box-sizing:border-box!important;
+  overflow-y:auto!important;
+  -webkit-overflow-scrolling:touch!important;
+}
 
-/* Compact Wisdom card. */
-.wisdom-container{max-width:330px!important;max-height:62vh!important;padding:20px 18px 18px!important;overflow:auto!important;}
-.wisdom-quote{margin:12px 0!important;line-height:1.55!important;}
+/* Wisdom: remove the unnecessary empty area above the quote. */
+.wisdom-overlay .wisdom-container{
+  padding-top:42px!important;
+  padding-bottom:18px!important;
+}
+.wisdom-overlay .wisdom-heading{margin-top:0!important;}
 
-/* Rounded rating stars. */
-.rating-star{border-radius:18px!important;}
+/* The four settings rows use the same restrained border treatment as every other row. */
+.settings-item.rate-item,
+.settings-item.schedule-item,
+.settings-item.support-item,
+.settings-item.author-item{
+  border-color:var(--glass-border)!important;
+  box-shadow:none!important;
+}
