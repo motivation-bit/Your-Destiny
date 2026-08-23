@@ -2141,3 +2141,32 @@ body.theme-kaleidoscope #app-container::after{background:transparent!important}
 
 /* Do not introduce any extra special styling for the four settings rows. */
 .rate-item,.schedule-item,.support-item,.author-item{background:transparent!important;border-color:var(--border-color)!important;box-shadow:none!important;}
+
+/* v4.1.1 — only requested refinements */
+.language-setting .settings-item-left,
+.language-setting .settings-icon,
+.language-setting .settings-label,
+.language-setting .language-current{transform:translateY(3px)!important;}
+.language-setting{min-height:58px!important;height:58px!important;}
+.language-setting .settings-label,.language-setting .language-current{line-height:1!important;white-space:nowrap!important;}
+
+/* Author legal reader: controls remain fixed while the text scrolls. */
+.fate-overlay:has(.legal-author-card),
+.fate-overlay:has(.legal-confirm-card){overflow:hidden!important;}
+.fate-overlay:has(.legal-author-card) .legal-author-card,
+.fate-overlay:has(.legal-confirm-card) .legal-confirm-card{overflow-y:auto!important;-webkit-overflow-scrolling:touch!important;padding-top:92px!important;padding-bottom:44px!important;}
+.fate-overlay:has(.legal-author-card) .overlay-close-x,
+.fate-overlay:has(.legal-confirm-card) .overlay-close-x,
+.fate-overlay:has(.legal-author-card) .author-back-check,
+.fate-overlay:has(.legal-confirm-card) .author-back-check{position:fixed!important;top:max(14px,env(safe-area-inset-top))!important;bottom:auto!important;z-index:10050!important;}
+.fate-overlay:has(.legal-author-card) .author-back-check,
+.fate-overlay:has(.legal-confirm-card) .author-back-check{left:16px!important;right:auto!important;}
+.fate-overlay:has(.legal-author-card) .overlay-close-x,
+.fate-overlay:has(.legal-confirm-card) .overlay-close-x{right:16px!important;}
+
+/* Compact Wisdom card. */
+.wisdom-container{max-width:330px!important;max-height:62vh!important;padding:20px 18px 18px!important;overflow:auto!important;}
+.wisdom-quote{margin:12px 0!important;line-height:1.55!important;}
+
+/* Rounded rating stars. */
+.rating-star{border-radius:18px!important;}

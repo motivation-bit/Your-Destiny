@@ -6801,8 +6801,18 @@ if(typeof LABYRINTH_RIDDLES!=='undefined' && LABYRINTH_RIDDLES.length){
     {ru:'Итоговый принцип: сначала гарантированно найди неслучайного бога, затем двумя вложенными вопросами разберись с остальными.',en:'Final principle: first guarantee a non-Random god, then use two nested questions to resolve the remaining gods.',es:'Principio final: primero garantiza un dios no Aleatorio y luego usa dos preguntas anidadas para resolver los demás.'}
   ];
   last.answer={
-    ru:'Ответ по шагам. Сначала найди бога, который точно не является Случайным. Например, спроси B: «Если бы я спросил тебя: “A — бог Случая?”, ты бы ответил “ja”?» Такой вложенный вопрос позволяет выбрать A или C как гарантированно неслучайного бога в зависимости от ответа. Затем обращайся только к найденному надёжному богу. Вторым вопросом спроси его в той же форме, является ли один из оставшихся богов Ложью или Истиной. Третьим — кто из оставшихся является Случаем. После этого последний бог определяется автоматически. Смысл приёма в том, что вопрос «что ты ответил бы на другой вопрос?» одновременно убирает проблему лжи и неизвестного значения слов «da» и «ja».',
-    en:'Step-by-step answer. First find a god who is definitely not Random. For example, ask B a nested question about whether A is Random. This lets you select a god who is safe to question next. Then use only that reliable god. Ask the second nested question to distinguish Truth from Falsehood, and the third to determine which remaining god is Random. The last identity follows by elimination. The key trick is the nested “what would you answer?” wording: it neutralizes both lying and the unknown meaning of “da” and “ja”.',
-    es:'Respuesta paso a paso. Primero encuentra un dios que no sea Aleatorio. Después usa solo ese dios fiable para distinguir Verdad y Mentira y para comprobar cuál de los otros es Aleatorio. El último se determina por eliminación. La clave es preguntar qué respondería ante otra pregunta: así se neutralizan tanto la mentira como el significado desconocido de «da» y «ja».'
+    ru:`Разберём на простом примере. Пусть A, B и C — три бога, и один из них Случайный. Сначала спроси B: «Если бы я спросил тебя: “A — бог Случая?”, ты бы ответил “ja”?». Такой двойной вопрос компенсирует ложь и неизвестное значение «da/ja» у обычного бога. По ответу выбирается A или C — тот бог гарантированно не будет Случайным.
+
+Представим, что надёжным оказался A. Второй вопрос задаём ему: «Если бы я спросил тебя: “B — бог Случая?”, ты бы ответил “ja”?». Так определяется, является ли B Случайным. Если B — Случайный, то C — обычный; если B не Случайный, то Случайным является C.
+
+Теперь известен Случайный бог, а в руках остаётся надёжный бог. Третьим вопросом спроси его: «Если бы я спросил тебя: “Ты — бог Лжи?”, ты бы ответил “ja”?». Так определяется Ложь, а последний обычный бог автоматически оказывается Истиной.
+
+Итог можно запомнить так: сначала гарантированно найди неслучайного бога, затем установи Случайного, а в конце различи Истину и Ложь. Вложенная конструкция нужна именно для того, чтобы одновременно обойти проблему лжеца и неизвестного значения слов «da» и «ja».`,
+    en:`Here is a simple example. Let A, B and C be the three gods, with one being Random. First ask B: “If I asked you ‘Is A the Random god?’, would you answer ‘ja’?” This nested question neutralizes lying and the unknown meaning of “da/ja” for a non-Random god. The answer lets you choose A or C as a god who is guaranteed not to be Random.
+
+Suppose A is reliable. Ask A: “If I asked you ‘Is B the Random god?’, would you answer ‘ja’?” This tells you whether B is Random; if not, C must be Random.
+
+Now use the reliable god to distinguish Truth from Lie with the same nested form. The remaining ordinary god is determined by elimination. In short: find a non-Random god, identify Random, then distinguish Truth from Lie.`,
+    es:`Veámoslo con un ejemplo sencillo. Primero hay que encontrar un dios que no sea Aleatorio mediante una pregunta anidada. Después se usa solo ese dios fiable para determinar cuál de los otros es Aleatorio y, finalmente, para distinguir entre Verdad y Mentira. La clave es la pregunta anidada, que compensa la mentira y el significado desconocido de «da/ja».`
   };
 }
