@@ -6625,16 +6625,10 @@ if (typeof LABYRINTH_RIDDLES !== 'undefined') {
     en:{a:'Saving often gives you control over resources.',b:'Convenience reduces daily friction.',c:'Perspective helps you look beyond the current moment.'}
   };
   function fateAnalysis(d,choice){
-    const choiceText=loc(d[choice]);
-    const fallback={
-      ru:`Ты выбрал «${choiceText}». Этот ответ показывает твою естественную реакцию на подобные ситуации.`,
-      en:`You chose “${choiceText}”. This answer shows your natural reaction to situations like this.`,
-      es:`Has elegido «${choiceText}». Esta respuesta muestra tu reacción natural ante situaciones parecidas.`,
-      pt:`Escolheste «${choiceText}». Esta resposta mostra a tua reação natural perante situações semelhantes.`,
-      de:`Du hast „${choiceText}“ gewählt. Diese Antwort zeigt deine natürliche Reaktion auf ähnliche Situationen.`,
-      fr:`Tu as choisi « ${choiceText} ». Cette réponse montre ta réaction naturelle face à ce type de situation.`
-    };
-    return `<div class="fate-short-analysis">${fallback[currentLang]||fallback.en}</div>`;
+    const arch=miniArchetype(d,choice); const labels=miniByChoice[currentLang]||miniByChoice.en;
+    const chosen=choice==='a'?labels.a:choice==='b'?labels.b:labels.c;
+    const risk=currentLang==='ru'?(choice==='a'?'Минус: иногда можно слишком долго считать выгоду.':choice==='b'?'Минус: удобство иногда заставляет откладывать сложное.':'Минус: взгляд далеко вперёд может отодвинуть решение сейчас.'):(choice==='a'?'Downside: you may spend too long calculating the benefit.':choice==='b'?'Downside: convenience can sometimes delay difficult action.':'Downside: looking far ahead can delay the decision in front of you.');
+    return `<div class="fate-mini-block"><strong>🎭 2. ${currentLang==='ru'?'Мини-архетип':'Mini-archetype'}</strong><div>${arch[currentLang]||arch.en}</div></div><div class="fate-mini-block"><strong>⚖️ 3. ${currentLang==='ru'?'Быстрый разбор плюсов и минусов':'Quick pros & cons'}</strong><div>${chosen}</div><div>${risk}</div></div>`;
   }
   window.renderFateQuestion=function(index){
     const d=FATE_DILEMMAS[index]; let overlay=document.getElementById('fate-overlay');
@@ -6831,4 +6825,132 @@ if(typeof LABYRINTH_RIDDLES!=='undefined' && LABYRINTH_RIDDLES.length){
     };
   }
 
+  // Keep Chronicle analysis strictly to a short, choice-specific paragraph.
+  if(typeof fateAnalysis==='function'){
+    window.__shortFateAnalysis = fateAnalysis;
+    fateAnalysis = function(d,choice){
+      const text=(d.analysis && (d.analysis[currentLang]||d.analysis.en||d.analysis.ru)) || '';
+      const cleaned=text.replace(/🎭[^<]*|⚖️[^<]*/g,'').trim();
+      const choiceText=loc(d[choice]);
+      const custom={
+        ru:`Ты выбрал «${choiceText}». ${cleaned||'Этот выбор показывает твою естественную реакцию на подобные обстоятельства.'}`,
+        en:`You chose “${choiceText}”. ${cleaned||'This choice shows your natural reaction to situations like this.'}`,
+        es:`Has elegido «${choiceText}». ${cleaned||'Esta elección muestra tu reacción natural ante situaciones parecidas.'}`,
+        pt:`Escolheste «${choiceText}». ${cleaned||'Esta escolha mostra a tua reação natural perante situações semelhantes.'}`,
+        de:`Du hast „${choiceText}“ gewählt. ${cleaned||'Diese Wahl zeigt deine natürliche Reaktion auf ähnliche Situationen.'}`,
+        fr:`Tu as choisi « ${choiceText} ». ${cleaned||'Ce choix montre ta réaction naturelle face à ce type de situation.'}`
+      };
+      return `<div class="fate-short-analysis">${custom[currentLang]||custom.en}</div>`;
+    };
+  }
+})();
+
+/* ===== v4.1.5 strict user-request patch ===== */
+(function(){
+  // Move the Language icon + label another 2mm down (total 10px in this UI).
+  const s=document.createElement('style');
+  s.textContent='.language-setting .settings-item-left{transform:translateY(10px)!important;}';
+  document.head.appendChild(s);
+
+  const LANGS=['ru','en','es','pt','de','fr'];
+  const LANG_NAMES={ru:'Русский',en:'English',es:'Español',pt:'Português',de:'Deutsch',fr:'Français'};
+  const chroniclesFinal={
+    ru:'100 из 100! Ты официально прошел этот гигантский опросник. Далеко не каждый добирается до финала, так что ты настоящий герой. Давай посмотрим, что твои решения говорят о тебе!',
+    en:'100 out of 100! You have officially completed this giant questionnaire. Not everyone makes it to the finish, so you are a true hero. Let’s see what your decisions say about you!',
+    es:'¡100 de 100! Has completado oficialmente este enorme cuestionario. No todo el mundo llega al final, así que eres un verdadero héroe. ¡Veamos qué dicen tus decisiones sobre ti!',
+    pt:'100 de 100! Concluíste oficialmente este enorme questionário. Nem toda a gente chega ao fim, por isso és um verdadeiro herói. Vamos ver o que as tuas decisões dizem sobre ti!',
+    de:'100 von 100! Du hast diesen riesigen Fragebogen offiziell abgeschlossen. Nicht jeder schafft es bis zum Ende – du bist ein echter Held. Sehen wir uns an, was deine Entscheidungen über dich sagen!',
+    fr:'100 sur 100 ! Tu as officiellement terminé cet immense questionnaire. Tout le monde n’arrive pas jusqu’au bout : tu es donc un vrai héros. Voyons ce que tes décisions disent de toi !'
+  };
+  const showResultsText={
+    ru:'Показать итоги',en:'Show results',es:'Mostrar resultados',pt:'Mostrar resultados',de:'Ergebnisse anzeigen',fr:'Afficher les résultats'
+  };
+  const tgFinal={
+    ru:'Заглядывайте в наш Telegram-канал — мы уже приготовили для вас похожие задачи.',
+    en:'Visit our Telegram channel — we have already prepared similar challenges for you.',
+    es:'Visita nuestro canal de Telegram: ya hemos preparado retos parecidos para ti.',
+    pt:'Visita o nosso canal do Telegram — já preparámos desafios semelhantes para ti.',
+    de:'Schau in unseren Telegram-Kanal — dort haben wir bereits ähnliche Aufgaben für dich vorbereitet.',
+    fr:'Rejoins notre canal Telegram — nous avons déjà préparé des défis similaires pour toi.'
+  };
+  const archetypes={
+    ru:[['strategist','Рациональный стратег'],['empath','Чуткий человек'],['explorer','Свободный исследователь']],
+    en:[['strategist','Rational Strategist'],['empath','Empathetic Thinker'],['explorer','Independent Explorer']],
+    es:[['strategist','Estratega racional'],['empath','Persona empática'],['explorer','Explorador independiente']],
+    pt:[['strategist','Estrategista racional'],['empath','Pessoa empática'],['explorer','Explorador independente']],
+    de:[['strategist','Rationaler Stratege'],['empath','Einfühlsamer Mensch'],['explorer','Unabhängiger Entdecker']],
+    fr:[['strategist','Stratège rationnel'],['empath','Personne empathique'],['explorer','Explorateur indépendant']]
+  };
+  function getFateState(){return JSON.parse(localStorage.getItem('fate_dilemmas')||'{"currentIndex":0,"answers":[]}');}
+  function saveFateState(st){localStorage.setItem('fate_dilemmas',JSON.stringify(st));}
+  function finalFateResult(overlay){
+    const st=getFateState(), scores={a:0,b:0,c:0};
+    (st.answers||[]).forEach(x=>{if(scores[x.choice]!=null)scores[x.choice]++;});
+    const max=Math.max(scores.a,scores.b,scores.c), dominant=scores.a===max?'a':scores.b===max?'b':'c';
+    const idx={a:0,b:1,c:2}[dominant];
+    const arch=archetypes[currentLang]||archetypes.en;
+    overlay.innerHTML=`<button class="overlay-close-x" onclick="closeFateDilemmas()">&times;</button><div class="fate-container fate-final"><div class="fate-final-title">${chroniclesFinal[currentLang]||chroniclesFinal.en}</div><button class="fate-next" onclick="showChronicleResults()">${showResultsText[currentLang]||showResultsText.en}</button><div class="final-channel-note">${tgFinal[currentLang]||tgFinal.en}</div></div>`;
+    overlay.dataset.dominant=arch[idx][1];
+  }
+  window.showChronicleResults=function(){
+    const overlay=document.getElementById('fate-overlay'); if(!overlay)return;
+    const st=getFateState(), scores={a:0,b:0,c:0};
+    (st.answers||[]).forEach(x=>{if(scores[x.choice]!=null)scores[x.choice]++;});
+    const max=Math.max(scores.a,scores.b,scores.c), dominant=scores.a===max?'a':scores.b===max?'b':'c';
+    const idx={a:0,b:1,c:2}[dominant], arch=archetypes[currentLang]||archetypes.en;
+    const desc={
+      ru:'Твои решения чаще всего тяготеют к этому типу — именно совокупность ответов привела тебя к такому результату.',
+      en:'Your choices most often lean toward this type — the overall combination of your answers led to this result.',
+      es:'Tus decisiones se inclinan sobre todo hacia este tipo: la combinación de tus respuestas te llevó a este resultado.',
+      pt:'As tuas escolhas tendem sobretudo para este tipo — a combinação das tuas respostas levou-te a este resultado.',
+      de:'Deine Entscheidungen tendieren am stärksten zu diesem Typ – die Gesamtheit deiner Antworten hat zu diesem Ergebnis geführt.',
+      fr:'Tes choix correspondent surtout à ce type : l’ensemble de tes réponses t’a conduit à ce résultat.'
+    };
+    overlay.innerHTML=`<button class="overlay-close-x" onclick="closeFateDilemmas()">&times;</button><div class="fate-container fate-final"><div class="fate-final-title">${arch[idx][1]}</div><div class="fate-final-text">${desc[currentLang]||desc.en}</div><div class="final-channel-note">${tgFinal[currentLang]||tgFinal.en}</div><button class="fate-next" onclick="restartFateDilemmas()">${t('restart')}</button></div>`;
+  };
+  window.renderFateQuestion=function(index){
+    const d=FATE_DILEMMAS[index];
+    let overlay=document.getElementById('fate-overlay');
+    if(!overlay){overlay=document.createElement('div');overlay.id='fate-overlay';document.body.appendChild(overlay);}
+    overlay.className='fate-overlay active';
+    overlay.innerHTML=`<button class="overlay-close-x" onclick="closeFateDilemmas()">&times;</button><div class="fate-container"><div class="fate-counter">${index+1} / ${FATE_DILEMMAS.length}</div><div class="fate-question">${loc(d.question)}</div><div class="fate-choices" id="fate-choices"><button class="fate-btn" onclick="answerFate(${index},'a')"><span class="fate-btn-text">${loc(d.a)}</span></button><button class="fate-btn" onclick="answerFate(${index},'b')"><span class="fate-btn-text">${loc(d.b)}</span></button><button class="fate-btn" onclick="answerFate(${index},'c')"><span class="fate-btn-text">${loc(d.c)}</span></button></div></div>`;
+  };
+  window.answerFate=function(index,choice){
+    const st=getFateState();
+    st.answers=(st.answers||[]).filter(x=>x.index!==index);
+    st.answers.push({index,choice}); st.currentIndex=index+1; saveFateState(st);
+    if(index+1>=FATE_DILEMMAS.length){finalFateResult(document.getElementById('fate-overlay'));return;}
+    renderFateQuestion(index+1);
+  };
+
+  // Last riddle: exactly 5 hints, all localized.
+  if(typeof LABYRINTH_RIDDLES!=='undefined'&&LABYRINTH_RIDDLES.length){
+    const last=LABYRINTH_RIDDLES[LABYRINTH_RIDDLES.length-1];
+    last.hints=[
+      {ru:'Вам не обязательно переводить слова «ja» и «da» (узнавать, какое из них «да», а какое «нет»), чтобы решить задачу.',en:'You do not need to translate “ja” and “da” or determine which means “yes” and which means “no” to solve the puzzle.',es:'No necesitas traducir «ja» y «da» ni averiguar cuál significa «sí» y cuál «no» para resolver el problema.',pt:'Não é necessário traduzir «ja» e «da» nem descobrir qual significa «sim» e qual significa «não» para resolver o problema.',de:'Du musst „ja“ und „da“ nicht übersetzen und auch nicht herausfinden, welches Wort „ja“ und welches „nein“ bedeutet.',fr:'Il n’est pas nécessaire de traduire « ja » et « da », ni de savoir lequel signifie « oui » ou « non », pour résoudre le problème.'},
+      {ru:'Вы не обязаны задавать по одному вопросу каждому богу. Вы можете задать два или даже все три вопроса одному и тому же богу, если это выгодно.',en:'You do not have to ask one question to each god. You may ask two or even all three questions to the same god if useful.',es:'No tienes que hacer una pregunta a cada dios. Puedes hacer dos o incluso las tres preguntas al mismo dios si te conviene.',pt:'Não tens de fazer uma pergunta a cada deus. Podes fazer duas ou até as três perguntas ao mesmo deus, se isso for útil.',de:'Du musst nicht jedem Gott eine Frage stellen. Du kannst zwei oder sogar alle drei Fragen demselben Gott stellen, wenn es sinnvoll ist.',fr:'Tu n’es pas obligé de poser une question à chaque dieu. Tu peux poser deux, voire les trois questions au même dieu si cela t’aide.'},
+      {ru:'Ваш второй вопрос может сильно зависеть от того, какой ответ вы получили на первый вопрос.',en:'Your second question may depend heavily on the answer you received to the first.',es:'Tu segunda pregunta puede depender mucho de la respuesta que recibiste a la primera.',pt:'A tua segunda pergunta pode depender muito da resposta que recebeste à primeira.',de:'Deine zweite Frage kann stark davon abhängen, welche Antwort du auf die erste erhalten hast.',fr:'Ta deuxième question peut dépendre fortement de la réponse reçue à la première.'},
+      {ru:'Подумайте, что произойдет, если встроить одно утверждение внутрь другого. Например: «Если я спрошу тебя о факте Х, ответишь ли ты "ja"?»',en:'Think about embedding one statement inside another: “If I asked you about fact X, would you answer ‘ja’?”',es:'Piensa en introducir una afirmación dentro de otra: «Si te preguntara por el hecho X, ¿responderías “ja”?».',pt:'Pensa em colocar uma afirmação dentro de outra: «Se te perguntasse sobre o facto X, responderias “ja”?».',de:'Denke darüber nach, eine Aussage in eine andere einzubetten: „Wenn ich dich nach Tatsache X fragen würde, würdest du ‚ja‘ antworten?“',fr:'Réfléchis à l’idée d’intégrer une affirmation dans une autre : « Si je te demandais si le fait X est vrai, répondrais-tu “ja” ? »'},
+      {ru:'В правильной сложной формулировке Бог Лжи соврет о своей собственной лжи (сработает закон двойного отрицания). В итоге он выдаст точно такой же ответ («ja» или «da»), как и Бог Истины!',en:'With the right nested wording, the Liar lies about his own lie. Double negation makes his final answer match the Truth god’s answer.',es:'Con la formulación anidada correcta, el Mentiroso miente sobre su propia mentira. La doble negación hace que su respuesta final coincida con la del dios de la Verdad.',pt:'Com a formulação aninhada correta, o Mentiroso mente sobre a sua própria mentira. A dupla negação faz com que a resposta final coincida com a do deus da Verdade.',de:'Mit der richtigen verschachtelten Formulierung lügt der Lügner über seine eigene Lüge. Die doppelte Verneinung führt dazu, dass seine Antwort der des Wahrheitsgottes entspricht.',fr:'Avec la bonne formulation imbriquée, le Menteur ment sur son propre mensonge. La double négation fait que sa réponse finale correspond à celle du dieu de la Vérité.'}
+    ];
+
+    // Ensure every labyrinth question/answer/hint has all six language keys.
+    // Existing translated content is preserved; when a legacy entry is missing a language,
+    // the English version is used instead of falling back to Russian.
+    LABYRINTH_RIDDLES.forEach(r=>{
+      ['riddle','answer'].forEach(k=>{if(r[k]) LANGS.forEach(l=>{if(!r[k][l]) r[k][l]=r[k].en||r[k].ru;});});
+      (r.hints||[]).forEach(h=>LANGS.forEach(l=>{if(!h[l]) h[l]=h.en||h.ru;}));
+    });
+  }
+
+  // Legacy Chronicle choices contained many Russian-only strings. Never fall back to Russian
+  // for a selected non-Russian interface; use the available English value instead.
+  if(typeof FATE_DILEMMAS!=='undefined'){
+    FATE_DILEMMAS.forEach(d=>{
+      ['question','a','b','c'].forEach(k=>{
+        if(!d[k])return;
+        LANGS.forEach(l=>{if(!d[k][l])d[k][l]=d[k].en||d[k].ru;});
+      });
+    });
+  }
 })();
