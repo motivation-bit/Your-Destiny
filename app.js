@@ -4531,7 +4531,7 @@ function answerFate(index, choice) {
   choicesDiv.style.opacity = '0'; choicesDiv.style.transform = 'scale(0.9)'; choicesDiv.style.transition = 'all 0.5s ease';
   setTimeout(() => {
     choicesDiv.style.display = 'none'; resultDiv.style.display = 'block';
-    setTimeout(() => { document.getElementById('stat-a').style.width = d.stats.a + '%'; document.getElementById('stat-b').style.width = d.stats.b + '%'; document.getElementById('stat-c').style.width = d.stats.c + '%'; }, 100);
+    document.getElementById('stat-a').style.width = d.stats.a + '%'; document.getElementById('stat-b').style.width = d.stats.b + '%'; document.getElementById('stat-c').style.width = d.stats.c + '%';
     let state = JSON.parse(localStorage.getItem('fate_dilemmas') || '{"currentIndex":0,"answers":[]}');
     state.answers.push({ index, choice }); state.currentIndex = index + 1;
     localStorage.setItem('fate_dilemmas', JSON.stringify(state));
@@ -4581,7 +4581,7 @@ function restartFateDilemmas() {
 
 function closeFateDilemmas() {
   const overlay = document.querySelector('.fate-overlay');
-  if (overlay) { overlay.classList.remove('active'); setTimeout(() => overlay.remove(), 400); }
+  if (overlay) overlay.remove();
 }
 
 // ============================================================
@@ -4875,7 +4875,7 @@ function showLabyrinthStart() {
     </div>
   `;
   document.body.appendChild(overlay);
-  setTimeout(() => overlay.classList.add('active'), 10);
+  overlay.classList.add('active');
 }
 
 function enterLabyrinth() {
@@ -5009,7 +5009,7 @@ function restartLabyrinth() {
 
 function closeLabyrinth() {
   const overlay = document.querySelector('.labyrinth-overlay');
-  if (overlay) { overlay.classList.remove('active'); setTimeout(() => overlay.remove(), 400); }
+  if (overlay) overlay.remove();
   const confirm = document.getElementById('labyrinth-confirm');
   if (confirm) confirm.remove();
 }
@@ -6062,7 +6062,7 @@ function openTrueDestiny() {
     </div>
   `;
   document.body.appendChild(overlay);
-  setTimeout(() => overlay.classList.add('active'), 10);
+  overlay.classList.add('active');
 }
 
 function startDestinyQuiz() {
@@ -6128,7 +6128,7 @@ function restartDestiny() {
 
 function closeDestiny() {
   const overlay = document.querySelector('.destiny-overlay');
-  if (overlay) { overlay.classList.remove('active'); setTimeout(() => overlay.remove(), 400); }
+  if (overlay) overlay.remove();
 }
 
 // ============================================================
@@ -6271,7 +6271,7 @@ function nextWisdom() {
 
 function closeWisdom() {
   const overlay = document.querySelector('.wisdom-overlay');
-  if (overlay) { overlay.classList.remove('active'); setTimeout(() => overlay.remove(), 400); }
+  if (overlay) overlay.remove();
 }
 
 // ============================================================
@@ -6561,12 +6561,12 @@ if (typeof LABYRINTH_RIDDLES !== 'undefined') {
   };
   window.showAuthorLegal=function(){
     document.querySelector('.fate-overlay')?.remove(); const overlay=document.createElement('div'); overlay.className='fate-overlay active';
-    overlay.innerHTML=`<button class="overlay-close-x" onclick="this.closest('.fate-overlay').remove()">&times;</button><button class="author-back-check" onclick="this.closest('.fate-overlay').remove();showBecomeAuthor()" aria-label="Back">↩</button><div class="author-card legal-author-card"><div class="author-title">${t('becomeAuthor')}</div><div class="author-legal-text">${authorLegal[currentLang]||authorLegal.en}</div><button class="author-channel-btn" onclick="showAuthorConfirm()">${authorContinue[currentLang]||authorContinue.en}</button></div>`;
+    overlay.innerHTML=`<button class="overlay-close-x" onclick="this.closest('.fate-overlay').remove()">&times;</button><div class="author-card legal-author-card"><div class="author-title">${t('becomeAuthor')}</div><div class="author-legal-text">${authorLegal[currentLang]||authorLegal.en}</div><button class="author-channel-btn" onclick="showAuthorConfirm()">${authorContinue[currentLang]||authorContinue.en}</button></div>`;
     document.body.appendChild(overlay);
   };
   window.showAuthorConfirm=function(){
     document.querySelector('.fate-overlay')?.remove(); const overlay=document.createElement('div'); overlay.className='fate-overlay active';
-    overlay.innerHTML=`<button class="overlay-close-x" onclick="this.closest('.fate-overlay').remove()">&times;</button><button class="author-back-check" onclick="this.closest('.fate-overlay').remove();showAuthorLegal()" aria-label="Back">↩</button><div class="author-card legal-confirm-card"><div class="author-title">${t('becomeAuthor')}</div><div class="author-legal-text">${authorConfirm[currentLang]||authorConfirm.en}</div><a class="author-channel-btn" href="${DIRECT_URL}" target="_blank" rel="noopener">${authorAgree[currentLang]||authorAgree.en}</a></div>`;
+    overlay.innerHTML=`<button class="overlay-close-x" onclick="this.closest('.fate-overlay').remove()">&times;</button><div class="author-card legal-confirm-card"><div class="author-title">${t('becomeAuthor')}</div><div class="author-legal-text">${authorConfirm[currentLang]||authorConfirm.en}</div><a class="author-channel-btn" href="${DIRECT_URL}" target="_blank" rel="noopener">${authorAgree[currentLang]||authorAgree.en}</a></div>`;
     document.body.appendChild(overlay);
   };
 
@@ -7149,4 +7149,29 @@ if(typeof LABYRINTH_RIDDLES!=='undefined' && LABYRINTH_RIDDLES.length){
   };
   window.showWisdom=function(){const overlay=document.createElement('div');overlay.className='wisdom-overlay active';document.body.appendChild(overlay);window.renderWisdomCard(overlay);};
   window.nextWisdom=function(){const overlay=document.querySelector('.wisdom-overlay');if(overlay)window.renderWisdomCard(overlay);};
+})();
+
+/* ===== v4.1.8 — final requested visual/performance adjustments ===== */
+(function(){
+  const style=document.createElement('style');
+  style.textContent=`
+    /* Language row: 0.5mm lower than v4.1.7 (6.9px -> 8.8px). */
+    .language-setting .settings-item-left{transform:translateY(8.8px)!important;}
+
+    /* Remove the decorative ornaments around the Wisdom quote. */
+    .wisdom-container::before,.wisdom-container::after{display:none!important;content:none!important;}
+
+    /* The author legal flow no longer has a back button in the upper-left corner. */
+    .author-back-check{display:none!important;}
+
+    /* Interactive screens respond immediately; keep only the intentional splash animation. */
+    .fate-overlay,.labyrinth-overlay,.destiny-overlay,.wisdom-overlay,
+    .fate-overlay *, .labyrinth-overlay *, .destiny-overlay *, .wisdom-overlay *{
+      transition-duration:0s!important;
+    }
+    .fate-overlay .fate-result,.fate-overlay .fate-final,
+    .labyrinth-overlay .labyrinth-answer,.destiny-overlay .destiny-result,
+    .wisdom-overlay .wisdom-container{animation:none!important;}
+  `;
+  document.head.appendChild(style);
 })();

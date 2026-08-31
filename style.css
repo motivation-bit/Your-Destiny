@@ -2219,5 +2219,11 @@ body.theme-kaleidoscope #app-container::after{background:transparent!important}
 .fate-overlay:has(.legal-confirm-card) .author-back-check{position:fixed!important;top:max(14px,env(safe-area-inset-top))!important;bottom:auto!important;z-index:10050!important;}
 
 /* v4.1.4 */
-.language-setting .settings-item-left{transform:translateY(5px)!important;}
+.language-setting .settings-item-left{transform:translateY(6.9px)!important;}
 .fate-short-analysis{padding:12px 2px;font-size:.94rem;line-height:1.55;color:var(--text-main);}
+
+
+/* v4.1.7 — immediate interactions: no artificial waits between game states. */
+.fate-overlay,.labyrinth-overlay,.destiny-overlay,.wisdom-overlay{transition:none!important;}
+.fate-overlay .fate-container,.labyrinth-overlay .labyrinth-container,.destiny-overlay .destiny-container,.wisdom-overlay .wisdom-container{animation:none!important;transition:none!important;}
+.fate-overlay .fate-stat-fill,.fate-overlay .fate-progress-fill,.labyrinth-overlay .fate-stat-fill,.destiny-overlay .fate-stat-fill{transition:none!important;}
