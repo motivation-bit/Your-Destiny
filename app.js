@@ -6346,11 +6346,8 @@ function setLanguage(lang){
   if(!T[lang])lang='en';currentLang=lang;localStorage.setItem('lang',lang);localStorage.setItem('lang_manual','1');
   updateLanguageUI();renderThemeColors();updateVipDisplay();closeLanguagePicker();
 }
-function resetAllForTesting(){
-  if(confirm(t('resetConfirm')||'Reset all local game data?')){localStorage.clear();location.reload();}
-}
 
-Object.assign(T.ru,{resetAll:'Очистить всё'});Object.assign(T.en,{resetAll:'Clear everything'});Object.assign(T.es,{resetAll:'Borrar todo'});Object.assign(T.pt,{resetAll:'Limpar tudo'});Object.assign(T.de,{resetAll:'Alles löschen'});Object.assign(T.fr,{resetAll:'Tout effacer'});
+
 
 // Last labyrinth riddle: the three hints become progressively more direct.
 if (typeof LABYRINTH_RIDDLES !== 'undefined' && LABYRINTH_RIDDLES.length) {
@@ -6988,63 +6985,35 @@ if(typeof LABYRINTH_RIDDLES!=='undefined' && LABYRINTH_RIDDLES.length){
   // Translate legacy content that historically had only RU/EN/ES. The translation is
   // cached locally so a question is translated only once per language/device.
   const cacheKey=(kind,index,field,lang)=>`yd_i18n_${kind}_${index}_${field}_${lang}`;
-  async function translateText(text,target,source='en'){
-    if(!text || target===source) return text;
-    const key=`yd_auto_${source}_${target}_${text}`;
-    const cached=localStorage.getItem(key);
-    if(cached) return cached;
-    try{
-      const url='https://translate.googleapis.com/translate_a/single?client=gtx&sl='+encodeURIComponent(source)+'&tl='+encodeURIComponent(target)+'&dt=t&q='+encodeURIComponent(text);
-      const res=await fetch(url,{method:'GET'});
-      if(!res.ok) throw new Error('translation');
-      const data=await res.json();
-      const out=Array.isArray(data)&&Array.isArray(data[0]) ? data[0].map(x=>x[0]||'').join('') : '';
-      if(out){localStorage.setItem(key,out);return out;}
-    }catch(e){}
-    return text;
-  }
+  // Performance mode: game screens never wait for network translation requests.
+  // All interactions render synchronously from bundled/localized data. A background
+  // preloader may warm the browser cache, but it is never awaited by gameplay.
+  function translateText(text,target,source='en'){ return text || ''; }
 
   function sourceValue(obj){
-    if(!obj) return '';
-    if(obj.en && obj.en!==obj.ru) return {text:obj.en,source:'en'};
-    if(obj.ru) return {text:obj.ru,source:'ru'};
-    return {text:obj.en||'',source:'en'};
+    if(!obj) return {text:'',source:'en'};
+    return {text:obj[currentLang] || obj.en || obj.ru || '', source: currentLang};
   }
 
-  async function localizeObjectField(obj,index,kind,field){
+  function localizeObjectField(obj,index,kind,field){
     if(!obj) return '';
-    const existing=obj[currentLang];
-    // Preserve an actual translation. The old patch used EN as a placeholder for missing locales.
-    if(existing && currentLang!=='pt' && currentLang!=='de' && currentLang!=='fr' && existing!==obj.en) return existing;
-    if(existing && (currentLang==='pt'||currentLang==='de'||currentLang==='fr') && existing!==obj.en && existing!==obj.ru) return existing;
-    const cached=localStorage.getItem(cacheKey(kind,index,field,currentLang));
-    if(cached){obj[currentLang]=cached;return cached;}
-    const src=sourceValue(obj);
-    const out=await translateText(src.text,currentLang,src.source);
-    obj[currentLang]=out;
-    try{localStorage.setItem(cacheKey(kind,index,field,currentLang),out);}catch(e){}
-    return out;
+    return obj[currentLang] || obj.en || obj.ru || '';
   }
 
   // Chronicles: every question and every answer is displayed in the selected language.
   const originalRenderFateQuestion=window.renderFateQuestion||renderFateQuestion;
-  window.renderFateQuestion=async function(index){
+  window.renderFateQuestion=function(index){
     const d=FATE_DILEMMAS[index];
     if(!d) return;
-    // Keep the screen stable while translation is prepared.
     let overlay=document.getElementById('fate-overlay');
     if(!overlay){overlay=document.createElement('div');overlay.id='fate-overlay';document.body.appendChild(overlay);}
     overlay.className='fate-overlay active';
-    overlay.innerHTML='<button class="overlay-close-x" onclick="closeFateDilemmas()">&times;</button><div class="fate-container"><div class="fate-counter">'+(index+1)+' / '+FATE_DILEMMAS.length+'</div><div class="fate-question" style="opacity:.65">…</div></div>';
-    const vals=await Promise.all([
-      localizeObjectField(d.question,index,'fate','question'),
-      localizeObjectField(d.a,index,'fate','a'),
-      localizeObjectField(d.b,index,'fate','b'),
-      localizeObjectField(d.c,index,'fate','c'),
-      localizeObjectField(d.analysis,index,'fate','analysis'),
-      localizeObjectField(NEXT_BUTTON_TEXTS[index%NEXT_BUTTON_TEXTS.length],index,'next','text')
-    ]);
-    const [q,a,b,c,analysis,next]=vals;
+    const q=localizeObjectField(d.question,index,'fate','question');
+    const a=localizeObjectField(d.a,index,'fate','a');
+    const b=localizeObjectField(d.b,index,'fate','b');
+    const c=localizeObjectField(d.c,index,'fate','c');
+    const analysis=localizeObjectField(d.analysis,index,'fate','analysis');
+    const next=localizeObjectField(NEXT_BUTTON_TEXTS[index%NEXT_BUTTON_TEXTS.length],index,'next','text');
     overlay.innerHTML=`
       <button class="overlay-close-x" onclick="closeFateDilemmas()">&times;</button>
       <div class="fate-container">
@@ -7086,7 +7055,7 @@ if(typeof LABYRINTH_RIDDLES!=='undefined' && LABYRINTH_RIDDLES.length){
 
   // Labyrinth: every riddle, answer and hint uses the selected language.
   const oldRenderLab=window.renderLabyrinthRiddle||renderLabyrinthRiddle;
-  window.renderLabyrinthRiddle=async function(){
+  window.renderLabyrinthRiddle=function(){
     const saved=localStorage.getItem('labyrinth');
     const state=saved?JSON.parse(saved):{currentRiddle:0,hintsUsed:[]};
     const r=LABYRINTH_RIDDLES[state.currentRiddle];
@@ -7095,9 +7064,9 @@ if(typeof LABYRINTH_RIDDLES!=='undefined' && LABYRINTH_RIDDLES.length){
     if(!overlay){overlay=document.createElement('div');overlay.id='labyrinth-overlay';document.body.appendChild(overlay);}
     overlay.className='labyrinth-overlay active';
     overlay.innerHTML='<button class="overlay-close-x" onclick="closeLabyrinth()">&times;</button><div class="labyrinth-container"><div class="labyrinth-counter">'+(state.currentRiddle+1)+' '+t('countOf')+' '+LABYRINTH_RIDDLES.length+'</div><div class="labyrinth-riddle" style="opacity:.65">…</div></div>';
-    const q=await localizeObjectField(r.riddle,state.currentRiddle,'labyrinth','riddle');
-    const ans=await localizeObjectField(r.answer,state.currentRiddle,'labyrinth','answer');
-    const hints=await Promise.all((r.hints||[]).map((h,i)=>localizeObjectField(h,state.currentRiddle,'labyrinthHint',String(i))));
+    const q=localizeObjectField(r.riddle,state.currentRiddle,'labyrinth','riddle');
+    const ans=localizeObjectField(r.answer,state.currentRiddle,'labyrinth','answer');
+    const hints=(r.hints||[]).map((h,i)=>localizeObjectField(h,state.currentRiddle,'labyrinthHint',String(i)));
     const hintCount=state.currentRiddle===LABYRINTH_RIDDLES.length-1?Math.min(5,hints.length):Math.min(2,hints.length);
     r.hints.slice(0,hintCount).forEach((h,i)=>{h[currentLang]=hints[i];});
     overlay.innerHTML=`
@@ -7113,7 +7082,7 @@ if(typeof LABYRINTH_RIDDLES!=='undefined' && LABYRINTH_RIDDLES.length){
         <div class="labyrinth-answer" id="labyrinth-answer" style="display:none"><div class="labyrinth-answer-text">${ans}</div><button class="labyrinth-next-btn" onclick="nextLabyrinthRiddle()">${t('goFurther')}</button></div>
       </div>`;
   };
-  window.showLabyrinthHint=async function(hintIndex){
+  window.showLabyrinthHint=function(hintIndex){
     const saved=localStorage.getItem('labyrinth');
     const state=saved?JSON.parse(saved):{currentRiddle:0,hintsUsed:[]};
     const r=LABYRINTH_RIDDLES[state.currentRiddle];
@@ -7123,28 +7092,28 @@ if(typeof LABYRINTH_RIDDLES!=='undefined' && LABYRINTH_RIDDLES.length){
       c.innerHTML=`<div class="labyrinth-confirm-box"><p>${t('hintConfirm')}</p><div class="labyrinth-confirm-btns"><button onclick="closeLabyrinthHintConfirm()">${t('hintNo')}</button><button onclick="confirmLabyrinthHint(${hintIndex})">${t('hintYes')}</button></div></div>`;
       document.body.appendChild(c);return;
     }
-    const text=await localizeObjectField(r.hints[hintIndex],state.currentRiddle,'labyrinthHint',String(hintIndex));
+    const text=localizeObjectField(r.hints[hintIndex],state.currentRiddle,'labyrinthHint',String(hintIndex));
     const el=document.getElementById('labyrinth-hint-text');if(el){el.textContent=text;el.style.display='block';}
   };
-  window.confirmLabyrinthHint=async function(hintIndex){
+  window.confirmLabyrinthHint=function(hintIndex){
     closeLabyrinthHintConfirm();
     const saved=localStorage.getItem('labyrinth');const state=saved?JSON.parse(saved):{currentRiddle:0,hintsUsed:[]};
     const r=LABYRINTH_RIDDLES[state.currentRiddle];if(!r?.hints?.[hintIndex])return;
     if(!state.hintsUsed.includes(hintIndex))state.hintsUsed.push(hintIndex);localStorage.setItem('labyrinth',JSON.stringify(state));
-    const text=await localizeObjectField(r.hints[hintIndex],state.currentRiddle,'labyrinthHint',String(hintIndex));
+    const text=localizeObjectField(r.hints[hintIndex],state.currentRiddle,'labyrinthHint',String(hintIndex));
     const el=document.getElementById('labyrinth-hint-text');if(el){el.textContent=text;el.style.display='block';}
     document.querySelectorAll('.labyrinth-hint-btn')[hintIndex]?.classList.add('used');
   };
 
   // Wisdom: headings/buttons already use T; quotes are translated for PT/DE/FR on demand and cached.
   const oldWisdom=window.renderWisdomCard||renderWisdomCard;
-  window.renderWisdomCard=async function(overlay){
+  window.renderWisdomCard=function(overlay){
     let index=parseInt(localStorage.getItem('wisdom_index')||'0');
     if(index>=WISDOM_QUOTES.length)index=0;
     const quote=WISDOM_QUOTES[index];
     localStorage.setItem('wisdom_index',((index+1)%WISDOM_QUOTES.length).toString());
     let text=loc(quote);
-    if(['pt','de','fr'].includes(currentLang)) text=await translateText(quote.en,currentLang,'en');
+    if(['pt','de','fr'].includes(currentLang)) text=quote[currentLang]||quote.en||quote.ru;
     overlay.innerHTML=`<button class="overlay-close-x" onclick="closeWisdom()">&times;</button><div class="wisdom-container"><div class="wisdom-heading">${t('wisdom')}</div><div class="wisdom-quote">${text}</div><button class="wisdom-close-btn" onclick="nextWisdom()">${t('wisdomClose')}</button></div>`;
   };
   window.showWisdom=function(){const overlay=document.createElement('div');overlay.className='wisdom-overlay active';document.body.appendChild(overlay);window.renderWisdomCard(overlay);};

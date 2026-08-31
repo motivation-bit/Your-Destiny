@@ -2227,3 +2227,24 @@ body.theme-kaleidoscope #app-container::after{background:transparent!important}
 .fate-overlay,.labyrinth-overlay,.destiny-overlay,.wisdom-overlay{transition:none!important;}
 .fate-overlay .fate-container,.labyrinth-overlay .labyrinth-container,.destiny-overlay .destiny-container,.wisdom-overlay .wisdom-container{animation:none!important;transition:none!important;}
 .fate-overlay .fate-stat-fill,.fate-overlay .fate-progress-fill,.labyrinth-overlay .fate-stat-fill,.destiny-overlay .fate-stat-fill{transition:none!important;}
+
+/* ===== v4.1.9 requested precision/performance pass ===== */
+/* Language row: move planet icon + "Language" label 0.2mm (~0.76px) upward. */
+.language-setting .settings-item-left{transform:translateY(8.04px)!important;}
+
+/* No decorative ornaments around Wisdom of Fate. */
+.wisdom-container::before,.wisdom-container::after{display:none!important;content:none!important;}
+
+/* Interaction-first rendering: no transition/animation waits on game overlays. */
+.fate-overlay,.labyrinth-overlay,.destiny-overlay,.wisdom-overlay,
+.fate-overlay *,.labyrinth-overlay *,.destiny-overlay *,.wisdom-overlay *{
+  transition-duration:0s!important;
+  animation-duration:0s!important;
+  animation-delay:0s!important;
+}
+
+/* Legal pages: titles stay inside the reading area with comfortable top spacing. */
+.legal-card .fate-final-title{margin-top:0!important;padding-top:4px!important;}
+
+/* Reset-progress test control removed from the UI. */
+.reset-test-wrap,.reset-all-btn{display:none!important;}
