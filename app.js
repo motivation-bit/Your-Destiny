@@ -6954,3 +6954,199 @@ if(typeof LABYRINTH_RIDDLES!=='undefined' && LABYRINTH_RIDDLES.length){
     });
   }
 })();
+
+/* ===== 2026-08-31 USER REQUESTED FINAL PATCH ===== */
+(function(){
+  const LANGS=['ru','en','es','pt','de','fr'];
+  const restartConfirm={
+    ru:'Точно хочешь начать Хроники Судьбы заново? Текущий прогресс этого раздела будет сброшен.',
+    en:'Are you sure you want to restart the Chronicles of Fate? Your current progress in this section will be reset.',
+    es:'¿Seguro que quieres reiniciar las Crónicas del Destino? Se restablecerá tu progreso actual en esta sección.',
+    pt:'Tens a certeza de que queres reiniciar as Crónicas do Destino? O progresso atual desta secção será reiniciado.',
+    de:'Möchtest du die Chroniken des Schicksals wirklich neu beginnen? Dein aktueller Fortschritt in diesem Bereich wird zurückgesetzt.',
+    fr:'Es-tu sûr de vouloir recommencer les Chroniques du Destin ? Ta progression actuelle dans cette section sera réinitialisée.'
+  };
+  LANGS.forEach(l=>{ if(T[l]) T[l].restartConfirm=restartConfirm[l]; });
+
+  // Language row: it was 10px lower in the previous patch. Move it 1.5mm upward.
+  // 1.5mm ≈ 5.67 CSS px, so the final offset is 10 - 5.67 ≈ 4.33px downward.
+  const style=document.createElement('style');
+  style.textContent=`
+    .language-setting .settings-item-left{transform:translateY(4.33px)!important;}
+    .wisdom-container{position:relative!important;overflow:visible!important;}
+    .wisdom-container::before,.wisdom-container::after{
+      display:block!important;position:absolute!important;left:50%!important;transform:translateX(-50%)!important;
+      width:min(82%,300px)!important;height:18px!important;border:0!important;background:none!important;
+      color:rgba(212,175,55,.72)!important;font-family:serif!important;font-size:18px!important;line-height:18px!important;
+      text-align:center!important;opacity:.9!important;pointer-events:none!important;
+    }
+    .wisdom-container::before{content:'❦  ─────────  ❦';top:-13px!important;}
+    .wisdom-container::after{content:'❧  ─────────  ❧';bottom:-13px!important;}
+  `;
+  document.head.appendChild(style);
+
+  // Translate legacy content that historically had only RU/EN/ES. The translation is
+  // cached locally so a question is translated only once per language/device.
+  const cacheKey=(kind,index,field,lang)=>`yd_i18n_${kind}_${index}_${field}_${lang}`;
+  async function translateText(text,target,source='en'){
+    if(!text || target===source) return text;
+    const key=`yd_auto_${source}_${target}_${text}`;
+    const cached=localStorage.getItem(key);
+    if(cached) return cached;
+    try{
+      const url='https://translate.googleapis.com/translate_a/single?client=gtx&sl='+encodeURIComponent(source)+'&tl='+encodeURIComponent(target)+'&dt=t&q='+encodeURIComponent(text);
+      const res=await fetch(url,{method:'GET'});
+      if(!res.ok) throw new Error('translation');
+      const data=await res.json();
+      const out=Array.isArray(data)&&Array.isArray(data[0]) ? data[0].map(x=>x[0]||'').join('') : '';
+      if(out){localStorage.setItem(key,out);return out;}
+    }catch(e){}
+    return text;
+  }
+
+  function sourceValue(obj){
+    if(!obj) return '';
+    if(obj.en && obj.en!==obj.ru) return {text:obj.en,source:'en'};
+    if(obj.ru) return {text:obj.ru,source:'ru'};
+    return {text:obj.en||'',source:'en'};
+  }
+
+  async function localizeObjectField(obj,index,kind,field){
+    if(!obj) return '';
+    const existing=obj[currentLang];
+    // Preserve an actual translation. The old patch used EN as a placeholder for missing locales.
+    if(existing && currentLang!=='pt' && currentLang!=='de' && currentLang!=='fr' && existing!==obj.en) return existing;
+    if(existing && (currentLang==='pt'||currentLang==='de'||currentLang==='fr') && existing!==obj.en && existing!==obj.ru) return existing;
+    const cached=localStorage.getItem(cacheKey(kind,index,field,currentLang));
+    if(cached){obj[currentLang]=cached;return cached;}
+    const src=sourceValue(obj);
+    const out=await translateText(src.text,currentLang,src.source);
+    obj[currentLang]=out;
+    try{localStorage.setItem(cacheKey(kind,index,field,currentLang),out);}catch(e){}
+    return out;
+  }
+
+  // Chronicles: every question and every answer is displayed in the selected language.
+  const originalRenderFateQuestion=window.renderFateQuestion||renderFateQuestion;
+  window.renderFateQuestion=async function(index){
+    const d=FATE_DILEMMAS[index];
+    if(!d) return;
+    // Keep the screen stable while translation is prepared.
+    let overlay=document.getElementById('fate-overlay');
+    if(!overlay){overlay=document.createElement('div');overlay.id='fate-overlay';document.body.appendChild(overlay);}
+    overlay.className='fate-overlay active';
+    overlay.innerHTML='<button class="overlay-close-x" onclick="closeFateDilemmas()">&times;</button><div class="fate-container"><div class="fate-counter">'+(index+1)+' / '+FATE_DILEMMAS.length+'</div><div class="fate-question" style="opacity:.65">…</div></div>';
+    const vals=await Promise.all([
+      localizeObjectField(d.question,index,'fate','question'),
+      localizeObjectField(d.a,index,'fate','a'),
+      localizeObjectField(d.b,index,'fate','b'),
+      localizeObjectField(d.c,index,'fate','c'),
+      localizeObjectField(d.analysis,index,'fate','analysis'),
+      localizeObjectField(NEXT_BUTTON_TEXTS[index%NEXT_BUTTON_TEXTS.length],index,'next','text')
+    ]);
+    const [q,a,b,c,analysis,next]=vals;
+    overlay.innerHTML=`
+      <button class="overlay-close-x" onclick="closeFateDilemmas()">&times;</button>
+      <div class="fate-container">
+        <div class="fate-counter">${index+1} / ${FATE_DILEMMAS.length}</div>
+        <div class="fate-question">${q}</div>
+        <div class="fate-choices" id="fate-choices">
+          <button class="fate-btn" onclick="answerFate(${index},'a')"><span class="fate-btn-text">${a}</span></button>
+          <button class="fate-btn" onclick="answerFate(${index},'b')"><span class="fate-btn-text">${b}</span></button>
+          <button class="fate-btn" onclick="answerFate(${index},'c')"><span class="fate-btn-text">${c}</span></button>
+        </div>
+        <div class="fate-result" id="fate-result" style="display:none">
+          <div class="fate-stats">
+            <div class="fate-stat-bar"><div class="fate-stat-fill" id="stat-a" style="width:0%"></div><span class="fate-stat-label">${Number(d.stats.a).toFixed(1)}%</span></div>
+            <div class="fate-stat-bar"><div class="fate-stat-fill" id="stat-b" style="width:0%"></div><span class="fate-stat-label">${Number(d.stats.b).toFixed(1)}%</span></div>
+            <div class="fate-stat-bar"><div class="fate-stat-fill" id="stat-c" style="width:0%"></div><span class="fate-stat-label">${Number(d.stats.c).toFixed(1)}%</span></div>
+          </div>
+          <div class="fate-analysis">${analysis}</div>
+          <button class="fate-next" onclick="nextFateQuestion()">${next}</button>
+        </div>
+      </div>`;
+  };
+  window.openFateDilemmas=async function(){
+    const saved=localStorage.getItem('fate_dilemmas');
+    const state=saved?JSON.parse(saved):{currentIndex:0,answers:[]};
+    if(state.currentIndex>=FATE_DILEMMAS.length){showFateFinal();return;}
+    window.renderFateQuestion(state.currentIndex);
+  };
+  window.nextFateQuestion=function(){
+    const state=JSON.parse(localStorage.getItem('fate_dilemmas')||'{"currentIndex":0,"answers":[]}');
+    const overlay=document.getElementById('fate-overlay');
+    if(state.currentIndex>=FATE_DILEMMAS.length){if(overlay)showFateFinalInPlace(overlay);return;}
+    window.renderFateQuestion(state.currentIndex);
+  };
+  window.restartFateDilemmas=function(){
+    if(!confirm(t('restartConfirm'))) return;
+    localStorage.setItem('fate_dilemmas',JSON.stringify({currentIndex:0,answers:[]}));
+    window.renderFateQuestion(0);
+  };
+
+  // Labyrinth: every riddle, answer and hint uses the selected language.
+  const oldRenderLab=window.renderLabyrinthRiddle||renderLabyrinthRiddle;
+  window.renderLabyrinthRiddle=async function(){
+    const saved=localStorage.getItem('labyrinth');
+    const state=saved?JSON.parse(saved):{currentRiddle:0,hintsUsed:[]};
+    const r=LABYRINTH_RIDDLES[state.currentRiddle];
+    if(!r) return;
+    let overlay=document.getElementById('labyrinth-overlay');
+    if(!overlay){overlay=document.createElement('div');overlay.id='labyrinth-overlay';document.body.appendChild(overlay);}
+    overlay.className='labyrinth-overlay active';
+    overlay.innerHTML='<button class="overlay-close-x" onclick="closeLabyrinth()">&times;</button><div class="labyrinth-container"><div class="labyrinth-counter">'+(state.currentRiddle+1)+' '+t('countOf')+' '+LABYRINTH_RIDDLES.length+'</div><div class="labyrinth-riddle" style="opacity:.65">…</div></div>';
+    const q=await localizeObjectField(r.riddle,state.currentRiddle,'labyrinth','riddle');
+    const ans=await localizeObjectField(r.answer,state.currentRiddle,'labyrinth','answer');
+    const hints=await Promise.all((r.hints||[]).map((h,i)=>localizeObjectField(h,state.currentRiddle,'labyrinthHint',String(i))));
+    const hintCount=state.currentRiddle===LABYRINTH_RIDDLES.length-1?Math.min(5,hints.length):Math.min(2,hints.length);
+    r.hints.slice(0,hintCount).forEach((h,i)=>{h[currentLang]=hints[i];});
+    overlay.innerHTML=`
+      <button class="overlay-close-x" onclick="closeLabyrinth()">&times;</button>
+      <div class="labyrinth-container">
+        <div class="labyrinth-counter">${state.currentRiddle+1} ${t('countOf')} ${LABYRINTH_RIDDLES.length}</div>
+        <div class="labyrinth-riddle">${q}</div>
+        <div class="labyrinth-hints">
+          ${Array.from({length:hintCount},(_,i)=>`<button class="labyrinth-hint-btn ${state.hintsUsed.includes(i)?'used':''}" onclick="showLabyrinthHint(${i})"><span>✦</span>${i+1}</button>`).join('')}
+        </div>
+        <div class="labyrinth-hint-text" id="labyrinth-hint-text"></div>
+        <button class="labyrinth-answer-btn" id="labyrinth-answer-btn" onclick="showLabyrinthAnswerConfirm()">${t('lookAnswer')}</button>
+        <div class="labyrinth-answer" id="labyrinth-answer" style="display:none"><div class="labyrinth-answer-text">${ans}</div><button class="labyrinth-next-btn" onclick="nextLabyrinthRiddle()">${t('goFurther')}</button></div>
+      </div>`;
+  };
+  window.showLabyrinthHint=async function(hintIndex){
+    const saved=localStorage.getItem('labyrinth');
+    const state=saved?JSON.parse(saved):{currentRiddle:0,hintsUsed:[]};
+    const r=LABYRINTH_RIDDLES[state.currentRiddle];
+    if(!r?.hints?.[hintIndex]) return;
+    if(!state.hintsUsed.includes(hintIndex)){
+      const c=document.createElement('div');c.id='labyrinth-hint-confirm';c.className='labyrinth-confirm-overlay';
+      c.innerHTML=`<div class="labyrinth-confirm-box"><p>${t('hintConfirm')}</p><div class="labyrinth-confirm-btns"><button onclick="closeLabyrinthHintConfirm()">${t('hintNo')}</button><button onclick="confirmLabyrinthHint(${hintIndex})">${t('hintYes')}</button></div></div>`;
+      document.body.appendChild(c);return;
+    }
+    const text=await localizeObjectField(r.hints[hintIndex],state.currentRiddle,'labyrinthHint',String(hintIndex));
+    const el=document.getElementById('labyrinth-hint-text');if(el){el.textContent=text;el.style.display='block';}
+  };
+  window.confirmLabyrinthHint=async function(hintIndex){
+    closeLabyrinthHintConfirm();
+    const saved=localStorage.getItem('labyrinth');const state=saved?JSON.parse(saved):{currentRiddle:0,hintsUsed:[]};
+    const r=LABYRINTH_RIDDLES[state.currentRiddle];if(!r?.hints?.[hintIndex])return;
+    if(!state.hintsUsed.includes(hintIndex))state.hintsUsed.push(hintIndex);localStorage.setItem('labyrinth',JSON.stringify(state));
+    const text=await localizeObjectField(r.hints[hintIndex],state.currentRiddle,'labyrinthHint',String(hintIndex));
+    const el=document.getElementById('labyrinth-hint-text');if(el){el.textContent=text;el.style.display='block';}
+    document.querySelectorAll('.labyrinth-hint-btn')[hintIndex]?.classList.add('used');
+  };
+
+  // Wisdom: headings/buttons already use T; quotes are translated for PT/DE/FR on demand and cached.
+  const oldWisdom=window.renderWisdomCard||renderWisdomCard;
+  window.renderWisdomCard=async function(overlay){
+    let index=parseInt(localStorage.getItem('wisdom_index')||'0');
+    if(index>=WISDOM_QUOTES.length)index=0;
+    const quote=WISDOM_QUOTES[index];
+    localStorage.setItem('wisdom_index',((index+1)%WISDOM_QUOTES.length).toString());
+    let text=loc(quote);
+    if(['pt','de','fr'].includes(currentLang)) text=await translateText(quote.en,currentLang,'en');
+    overlay.innerHTML=`<button class="overlay-close-x" onclick="closeWisdom()">&times;</button><div class="wisdom-container"><div class="wisdom-heading">${t('wisdom')}</div><div class="wisdom-quote">${text}</div><button class="wisdom-close-btn" onclick="nextWisdom()">${t('wisdomClose')}</button></div>`;
+  };
+  window.showWisdom=function(){const overlay=document.createElement('div');overlay.className='wisdom-overlay active';document.body.appendChild(overlay);window.renderWisdomCard(overlay);};
+  window.nextWisdom=function(){const overlay=document.querySelector('.wisdom-overlay');if(overlay)window.renderWisdomCard(overlay);};
+})();
