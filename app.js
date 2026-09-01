@@ -706,8 +706,7 @@ const FATE_DILEMMAS = [
     },
     "stats": {
       "a": 47,
-      "b": 53,
-      "c": 20
+      "b": 53
     },
     "analysis": {
       "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
@@ -716,14 +715,6 @@ const FATE_DILEMMAS = [
       "pt": "A tua escolha mostra como costumas reagir em situações assim.",
       "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
       "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
-    },
-    "c": {
-      "ru": "Рассмотрю ещё один вариант и выберу по ситуации",
-      "en": "Consider another option and decide based on the situation",
-      "es": "Consideraré otra opción y decidiré según la situación",
-      "pt": "Vou considerar outra opção e decidir conforme a situação",
-      "de": "Ich ziehe eine weitere Möglichkeit in Betracht und entscheide je nach Situation",
-      "fr": "J’envisagerai une autre option et déciderai selon la situation"
     }
   },
   {
@@ -753,8 +744,7 @@ const FATE_DILEMMAS = [
     },
     "stats": {
       "a": 49,
-      "b": 51,
-      "c": 20
+      "b": 51
     },
     "analysis": {
       "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
@@ -763,14 +753,6 @@ const FATE_DILEMMAS = [
       "pt": "A tua escolha mostra como costumas reagir em situações assim.",
       "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
       "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
-    },
-    "c": {
-      "ru": "Рассмотрю ещё один вариант и выберу по ситуации",
-      "en": "Consider another option and decide based on the situation",
-      "es": "Consideraré otra opción y decidiré según la situación",
-      "pt": "Vou considerar outra opção e decidir conforme a situação",
-      "de": "Ich ziehe eine weitere Möglichkeit in Betracht und entscheide je nach Situation",
-      "fr": "J’envisagerai une autre option et déciderai selon la situation"
     }
   },
   {
@@ -800,8 +782,7 @@ const FATE_DILEMMAS = [
     },
     "stats": {
       "a": 51,
-      "b": 49,
-      "c": 20
+      "b": 49
     },
     "analysis": {
       "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
@@ -810,14 +791,6 @@ const FATE_DILEMMAS = [
       "pt": "A tua escolha mostra como costumas reagir em situações assim.",
       "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
       "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
-    },
-    "c": {
-      "ru": "Рассмотрю ещё один вариант и выберу по ситуации",
-      "en": "Consider another option and decide based on the situation",
-      "es": "Consideraré otra opción y decidiré según la situación",
-      "pt": "Vou considerar outra opção e decidir conforme a situação",
-      "de": "Ich ziehe eine weitere Möglichkeit in Betracht und entscheide je nach Situation",
-      "fr": "J’envisagerai une autre option et déciderai selon la situation"
     }
   },
   {
@@ -847,8 +820,7 @@ const FATE_DILEMMAS = [
     },
     "stats": {
       "a": 53,
-      "b": 47,
-      "c": 20
+      "b": 47
     },
     "analysis": {
       "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
@@ -857,14 +829,6 @@ const FATE_DILEMMAS = [
       "pt": "A tua escolha mostra como costumas reagir em situações assim.",
       "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
       "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
-    },
-    "c": {
-      "ru": "Рассмотрю ещё один вариант и выберу по ситуации",
-      "en": "Consider another option and decide based on the situation",
-      "es": "Consideraré otra opción y decidiré según la situación",
-      "pt": "Vou considerar outra opção e decidir conforme a situação",
-      "de": "Ich ziehe eine weitere Möglichkeit in Betracht und entscheide je nach Situation",
-      "fr": "J’envisagerai une autre option et déciderai selon la situation"
     }
   },
   {
@@ -894,8 +858,7 @@ const FATE_DILEMMAS = [
     },
     "stats": {
       "a": 47,
-      "b": 53,
-      "c": 20
+      "b": 53
     },
     "analysis": {
       "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
@@ -904,14 +867,6 @@ const FATE_DILEMMAS = [
       "pt": "A tua escolha mostra como costumas reagir em situações assim.",
       "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
       "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
-    },
-    "c": {
-      "ru": "Рассмотрю ещё один вариант и выберу по ситуации",
-      "en": "Consider another option and decide based on the situation",
-      "es": "Consideraré otra opción y decidiré según la situación",
-      "pt": "Vou considerar outra opção e decidir conforme a situação",
-      "de": "Ich ziehe eine weitere Möglichkeit in Betracht und entscheide je nach Situation",
-      "fr": "J’envisagerai une autre option et déciderai selon la situation"
     }
   },
   {
@@ -941,8 +896,7 @@ const FATE_DILEMMAS = [
     },
     "stats": {
       "a": 47,
-      "b": 53,
-      "c": 20
+      "b": 53
     },
     "analysis": {
       "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
@@ -951,14 +905,6 @@ const FATE_DILEMMAS = [
       "pt": "A tua escolha mostra como costumas reagir em situações assim.",
       "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
       "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
-    },
-    "c": {
-      "ru": "Рассмотрю ещё один вариант и выберу по ситуации",
-      "en": "Consider another option and decide based on the situation",
-      "es": "Consideraré otra opción y decidiré según la situación",
-      "pt": "Vou considerar outra opção e decidir conforme a situação",
-      "de": "Ich ziehe eine weitere Möglichkeit in Betracht und entscheide je nach Situation",
-      "fr": "J’envisagerai une autre option et déciderai selon la situation"
     }
   },
   {
@@ -988,8 +934,7 @@ const FATE_DILEMMAS = [
     },
     "stats": {
       "a": 49,
-      "b": 51,
-      "c": 20
+      "b": 51
     },
     "analysis": {
       "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
@@ -998,14 +943,6 @@ const FATE_DILEMMAS = [
       "pt": "A tua escolha mostra como costumas reagir em situações assim.",
       "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
       "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
-    },
-    "c": {
-      "ru": "Рассмотрю ещё один вариант и выберу по ситуации",
-      "en": "Consider another option and decide based on the situation",
-      "es": "Consideraré otra opción y decidiré según la situación",
-      "pt": "Vou considerar outra opção e decidir conforme a situação",
-      "de": "Ich ziehe eine weitere Möglichkeit in Betracht und entscheide je nach Situation",
-      "fr": "J’envisagerai une autre option et déciderai selon la situation"
     }
   },
   {
@@ -1035,8 +972,7 @@ const FATE_DILEMMAS = [
     },
     "stats": {
       "a": 51,
-      "b": 49,
-      "c": 20
+      "b": 49
     },
     "analysis": {
       "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
@@ -1045,14 +981,6 @@ const FATE_DILEMMAS = [
       "pt": "A tua escolha mostra como costumas reagir em situações assim.",
       "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
       "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
-    },
-    "c": {
-      "ru": "Рассмотрю ещё один вариант и выберу по ситуации",
-      "en": "Consider another option and decide based on the situation",
-      "es": "Consideraré otra opción y decidiré según la situación",
-      "pt": "Vou considerar outra opção e decidir conforme a situação",
-      "de": "Ich ziehe eine weitere Möglichkeit in Betracht und entscheide je nach Situation",
-      "fr": "J’envisagerai une autre option et déciderai selon la situation"
     }
   },
   {
@@ -1082,8 +1010,7 @@ const FATE_DILEMMAS = [
     },
     "stats": {
       "a": 53,
-      "b": 47,
-      "c": 20
+      "b": 47
     },
     "analysis": {
       "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
@@ -1092,14 +1019,6 @@ const FATE_DILEMMAS = [
       "pt": "A tua escolha mostra como costumas reagir em situações assim.",
       "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
       "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
-    },
-    "c": {
-      "ru": "Рассмотрю ещё один вариант и выберу по ситуации",
-      "en": "Consider another option and decide based on the situation",
-      "es": "Consideraré otra opción y decidiré según la situación",
-      "pt": "Vou considerar outra opção e decidir conforme a situação",
-      "de": "Ich ziehe eine weitere Möglichkeit in Betracht und entscheide je nach Situation",
-      "fr": "J’envisagerai une autre option et déciderai selon la situation"
     }
   },
   {
@@ -1129,8 +1048,7 @@ const FATE_DILEMMAS = [
     },
     "stats": {
       "a": 47,
-      "b": 53,
-      "c": 20
+      "b": 53
     },
     "analysis": {
       "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
@@ -1139,14 +1057,6 @@ const FATE_DILEMMAS = [
       "pt": "A tua escolha mostra como costumas reagir em situações assim.",
       "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
       "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
-    },
-    "c": {
-      "ru": "Рассмотрю ещё один вариант и выберу по ситуации",
-      "en": "Consider another option and decide based on the situation",
-      "es": "Consideraré otra opción y decidiré según la situación",
-      "pt": "Vou considerar outra opção e decidir conforme a situação",
-      "de": "Ich ziehe eine weitere Möglichkeit in Betracht und entscheide je nach Situation",
-      "fr": "J’envisagerai une autre option et déciderai selon la situation"
     }
   },
   {
@@ -1176,8 +1086,7 @@ const FATE_DILEMMAS = [
     },
     "stats": {
       "a": 47,
-      "b": 53,
-      "c": 20
+      "b": 53
     },
     "analysis": {
       "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
@@ -1186,14 +1095,6 @@ const FATE_DILEMMAS = [
       "pt": "A tua escolha mostra como costumas reagir em situações assim.",
       "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
       "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
-    },
-    "c": {
-      "ru": "Рассмотрю ещё один вариант и выберу по ситуации",
-      "en": "Consider another option and decide based on the situation",
-      "es": "Consideraré otra opción y decidiré según la situación",
-      "pt": "Vou considerar outra opção e decidir conforme a situação",
-      "de": "Ich ziehe eine weitere Möglichkeit in Betracht und entscheide je nach Situation",
-      "fr": "J’envisagerai une autre option et déciderai selon la situation"
     }
   },
   {
@@ -1223,8 +1124,7 @@ const FATE_DILEMMAS = [
     },
     "stats": {
       "a": 49,
-      "b": 51,
-      "c": 20
+      "b": 51
     },
     "analysis": {
       "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
@@ -1233,14 +1133,6 @@ const FATE_DILEMMAS = [
       "pt": "A tua escolha mostra como costumas reagir em situações assim.",
       "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
       "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
-    },
-    "c": {
-      "ru": "Рассмотрю ещё один вариант и выберу по ситуации",
-      "en": "Consider another option and decide based on the situation",
-      "es": "Consideraré otra opción y decidiré según la situación",
-      "pt": "Vou considerar outra opção e decidir conforme a situação",
-      "de": "Ich ziehe eine weitere Möglichkeit in Betracht und entscheide je nach Situation",
-      "fr": "J’envisagerai une autre option et déciderai selon la situation"
     }
   },
   {
@@ -1270,8 +1162,7 @@ const FATE_DILEMMAS = [
     },
     "stats": {
       "a": 51,
-      "b": 49,
-      "c": 20
+      "b": 49
     },
     "analysis": {
       "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
@@ -1280,14 +1171,6 @@ const FATE_DILEMMAS = [
       "pt": "A tua escolha mostra como costumas reagir em situações assim.",
       "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
       "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
-    },
-    "c": {
-      "ru": "Рассмотрю ещё один вариант и выберу по ситуации",
-      "en": "Consider another option and decide based on the situation",
-      "es": "Consideraré otra opción y decidiré según la situación",
-      "pt": "Vou considerar outra opção e decidir conforme a situação",
-      "de": "Ich ziehe eine weitere Möglichkeit in Betracht und entscheide je nach Situation",
-      "fr": "J’envisagerai une autre option et déciderai selon la situation"
     }
   },
   {
@@ -1317,8 +1200,7 @@ const FATE_DILEMMAS = [
     },
     "stats": {
       "a": 53,
-      "b": 47,
-      "c": 20
+      "b": 47
     },
     "analysis": {
       "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
@@ -1327,14 +1209,6 @@ const FATE_DILEMMAS = [
       "pt": "A tua escolha mostra como costumas reagir em situações assim.",
       "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
       "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
-    },
-    "c": {
-      "ru": "Рассмотрю ещё один вариант и выберу по ситуации",
-      "en": "Consider another option and decide based on the situation",
-      "es": "Consideraré otra opción y decidiré según la situación",
-      "pt": "Vou considerar outra opção e decidir conforme a situação",
-      "de": "Ich ziehe eine weitere Möglichkeit in Betracht und entscheide je nach Situation",
-      "fr": "J’envisagerai une autre option et déciderai selon la situation"
     }
   },
   {
@@ -1364,8 +1238,7 @@ const FATE_DILEMMAS = [
     },
     "stats": {
       "a": 47,
-      "b": 53,
-      "c": 20
+      "b": 53
     },
     "analysis": {
       "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
@@ -1374,14 +1247,6 @@ const FATE_DILEMMAS = [
       "pt": "A tua escolha mostra como costumas reagir em situações assim.",
       "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
       "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
-    },
-    "c": {
-      "ru": "Рассмотрю ещё один вариант и выберу по ситуации",
-      "en": "Consider another option and decide based on the situation",
-      "es": "Consideraré otra opción y decidiré según la situación",
-      "pt": "Vou considerar outra opção e decidir conforme a situação",
-      "de": "Ich ziehe eine weitere Möglichkeit in Betracht und entscheide je nach Situation",
-      "fr": "J’envisagerai une autre option et déciderai selon la situation"
     }
   },
   {
@@ -1411,8 +1276,7 @@ const FATE_DILEMMAS = [
     },
     "stats": {
       "a": 47,
-      "b": 53,
-      "c": 20
+      "b": 53
     },
     "analysis": {
       "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
@@ -1421,14 +1285,6 @@ const FATE_DILEMMAS = [
       "pt": "A tua escolha mostra como costumas reagir em situações assim.",
       "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
       "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
-    },
-    "c": {
-      "ru": "Рассмотрю ещё один вариант и выберу по ситуации",
-      "en": "Consider another option and decide based on the situation",
-      "es": "Consideraré otra opción y decidiré según la situación",
-      "pt": "Vou considerar outra opção e decidir conforme a situação",
-      "de": "Ich ziehe eine weitere Möglichkeit in Betracht und entscheide je nach Situation",
-      "fr": "J’envisagerai une autre option et déciderai selon la situation"
     }
   },
   {
@@ -1458,8 +1314,7 @@ const FATE_DILEMMAS = [
     },
     "stats": {
       "a": 49,
-      "b": 51,
-      "c": 20
+      "b": 51
     },
     "analysis": {
       "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
@@ -1468,14 +1323,6 @@ const FATE_DILEMMAS = [
       "pt": "A tua escolha mostra como costumas reagir em situações assim.",
       "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
       "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
-    },
-    "c": {
-      "ru": "Рассмотрю ещё один вариант и выберу по ситуации",
-      "en": "Consider another option and decide based on the situation",
-      "es": "Consideraré otra opción y decidiré según la situación",
-      "pt": "Vou considerar outra opção e decidir conforme a situação",
-      "de": "Ich ziehe eine weitere Möglichkeit in Betracht und entscheide je nach Situation",
-      "fr": "J’envisagerai une autre option et déciderai selon la situation"
     }
   },
   {
@@ -1505,8 +1352,7 @@ const FATE_DILEMMAS = [
     },
     "stats": {
       "a": 51,
-      "b": 49,
-      "c": 20
+      "b": 49
     },
     "analysis": {
       "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
@@ -1515,14 +1361,6 @@ const FATE_DILEMMAS = [
       "pt": "A tua escolha mostra como costumas reagir em situações assim.",
       "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
       "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
-    },
-    "c": {
-      "ru": "Рассмотрю ещё один вариант и выберу по ситуации",
-      "en": "Consider another option and decide based on the situation",
-      "es": "Consideraré otra opción y decidiré según la situación",
-      "pt": "Vou considerar outra opção e decidir conforme a situação",
-      "de": "Ich ziehe eine weitere Möglichkeit in Betracht und entscheide je nach Situation",
-      "fr": "J’envisagerai une autre option et déciderai selon la situation"
     }
   },
   {
@@ -1552,8 +1390,7 @@ const FATE_DILEMMAS = [
     },
     "stats": {
       "a": 53,
-      "b": 47,
-      "c": 20
+      "b": 47
     },
     "analysis": {
       "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
@@ -1562,14 +1399,6 @@ const FATE_DILEMMAS = [
       "pt": "A tua escolha mostra como costumas reagir em situações assim.",
       "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
       "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
-    },
-    "c": {
-      "ru": "Рассмотрю ещё один вариант и выберу по ситуации",
-      "en": "Consider another option and decide based on the situation",
-      "es": "Consideraré otra opción y decidiré según la situación",
-      "pt": "Vou considerar outra opção e decidir conforme a situação",
-      "de": "Ich ziehe eine weitere Möglichkeit in Betracht und entscheide je nach Situation",
-      "fr": "J’envisagerai une autre option et déciderai selon la situation"
     }
   },
   {
@@ -1599,8 +1428,7 @@ const FATE_DILEMMAS = [
     },
     "stats": {
       "a": 47,
-      "b": 53,
-      "c": 20
+      "b": 53
     },
     "analysis": {
       "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
@@ -1609,14 +1437,6 @@ const FATE_DILEMMAS = [
       "pt": "A tua escolha mostra como costumas reagir em situações assim.",
       "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
       "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
-    },
-    "c": {
-      "ru": "Рассмотрю ещё один вариант и выберу по ситуации",
-      "en": "Consider another option and decide based on the situation",
-      "es": "Consideraré otra opción y decidiré según la situación",
-      "pt": "Vou considerar outra opção e decidir conforme a situação",
-      "de": "Ich ziehe eine weitere Möglichkeit in Betracht und entscheide je nach Situation",
-      "fr": "J’envisagerai une autre option et déciderai selon la situation"
     }
   },
   {
@@ -1646,8 +1466,7 @@ const FATE_DILEMMAS = [
     },
     "stats": {
       "a": 47,
-      "b": 53,
-      "c": 20
+      "b": 53
     },
     "analysis": {
       "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
@@ -1656,14 +1475,6 @@ const FATE_DILEMMAS = [
       "pt": "A tua escolha mostra como costumas reagir em situações assim.",
       "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
       "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
-    },
-    "c": {
-      "ru": "Рассмотрю ещё один вариант и выберу по ситуации",
-      "en": "Consider another option and decide based on the situation",
-      "es": "Consideraré otra opción y decidiré según la situación",
-      "pt": "Vou considerar outra opção e decidir conforme a situação",
-      "de": "Ich ziehe eine weitere Möglichkeit in Betracht und entscheide je nach Situation",
-      "fr": "J’envisagerai une autre option et déciderai selon la situation"
     }
   },
   {
@@ -1693,8 +1504,7 @@ const FATE_DILEMMAS = [
     },
     "stats": {
       "a": 49,
-      "b": 51,
-      "c": 20
+      "b": 51
     },
     "analysis": {
       "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
@@ -1703,14 +1513,6 @@ const FATE_DILEMMAS = [
       "pt": "A tua escolha mostra como costumas reagir em situações assim.",
       "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
       "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
-    },
-    "c": {
-      "ru": "Рассмотрю ещё один вариант и выберу по ситуации",
-      "en": "Consider another option and decide based on the situation",
-      "es": "Consideraré otra opción y decidiré según la situación",
-      "pt": "Vou considerar outra opção e decidir conforme a situação",
-      "de": "Ich ziehe eine weitere Möglichkeit in Betracht und entscheide je nach Situation",
-      "fr": "J’envisagerai une autre option et déciderai selon la situation"
     }
   },
   {
@@ -1740,8 +1542,7 @@ const FATE_DILEMMAS = [
     },
     "stats": {
       "a": 51,
-      "b": 49,
-      "c": 20
+      "b": 49
     },
     "analysis": {
       "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
@@ -1750,14 +1551,6 @@ const FATE_DILEMMAS = [
       "pt": "A tua escolha mostra como costumas reagir em situações assim.",
       "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
       "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
-    },
-    "c": {
-      "ru": "Рассмотрю ещё один вариант и выберу по ситуации",
-      "en": "Consider another option and decide based on the situation",
-      "es": "Consideraré otra opción y decidiré según la situación",
-      "pt": "Vou considerar outra opção e decidir conforme a situação",
-      "de": "Ich ziehe eine weitere Möglichkeit in Betracht und entscheide je nach Situation",
-      "fr": "J’envisagerai une autre option et déciderai selon la situation"
     }
   },
   {
@@ -1787,8 +1580,7 @@ const FATE_DILEMMAS = [
     },
     "stats": {
       "a": 53,
-      "b": 47,
-      "c": 20
+      "b": 47
     },
     "analysis": {
       "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
@@ -1797,14 +1589,6 @@ const FATE_DILEMMAS = [
       "pt": "A tua escolha mostra como costumas reagir em situações assim.",
       "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
       "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
-    },
-    "c": {
-      "ru": "Рассмотрю ещё один вариант и выберу по ситуации",
-      "en": "Consider another option and decide based on the situation",
-      "es": "Consideraré otra opción y decidiré según la situación",
-      "pt": "Vou considerar outra opção e decidir conforme a situação",
-      "de": "Ich ziehe eine weitere Möglichkeit in Betracht und entscheide je nach Situation",
-      "fr": "J’envisagerai une autre option et déciderai selon la situation"
     }
   },
   {
@@ -1834,8 +1618,7 @@ const FATE_DILEMMAS = [
     },
     "stats": {
       "a": 47,
-      "b": 53,
-      "c": 20
+      "b": 53
     },
     "analysis": {
       "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
@@ -1844,14 +1627,6 @@ const FATE_DILEMMAS = [
       "pt": "A tua escolha mostra como costumas reagir em situações assim.",
       "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
       "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
-    },
-    "c": {
-      "ru": "Рассмотрю ещё один вариант и выберу по ситуации",
-      "en": "Consider another option and decide based on the situation",
-      "es": "Consideraré otra opción y decidiré según la situación",
-      "pt": "Vou considerar outra opção e decidir conforme a situação",
-      "de": "Ich ziehe eine weitere Möglichkeit in Betracht und entscheide je nach Situation",
-      "fr": "J’envisagerai une autre option et déciderai selon la situation"
     }
   },
   {
@@ -1881,8 +1656,7 @@ const FATE_DILEMMAS = [
     },
     "stats": {
       "a": 47,
-      "b": 53,
-      "c": 20
+      "b": 53
     },
     "analysis": {
       "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
@@ -1891,14 +1665,6 @@ const FATE_DILEMMAS = [
       "pt": "A tua escolha mostra como costumas reagir em situações assim.",
       "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
       "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
-    },
-    "c": {
-      "ru": "Рассмотрю ещё один вариант и выберу по ситуации",
-      "en": "Consider another option and decide based on the situation",
-      "es": "Consideraré otra opción y decidiré según la situación",
-      "pt": "Vou considerar outra opção e decidir conforme a situação",
-      "de": "Ich ziehe eine weitere Möglichkeit in Betracht und entscheide je nach Situation",
-      "fr": "J’envisagerai une autre option et déciderai selon la situation"
     }
   },
   {
@@ -1928,8 +1694,7 @@ const FATE_DILEMMAS = [
     },
     "stats": {
       "a": 49,
-      "b": 51,
-      "c": 20
+      "b": 51
     },
     "analysis": {
       "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
@@ -1938,14 +1703,6 @@ const FATE_DILEMMAS = [
       "pt": "A tua escolha mostra como costumas reagir em situações assim.",
       "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
       "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
-    },
-    "c": {
-      "ru": "Рассмотрю ещё один вариант и выберу по ситуации",
-      "en": "Consider another option and decide based on the situation",
-      "es": "Consideraré otra opción y decidiré según la situación",
-      "pt": "Vou considerar outra opção e decidir conforme a situação",
-      "de": "Ich ziehe eine weitere Möglichkeit in Betracht und entscheide je nach Situation",
-      "fr": "J’envisagerai une autre option et déciderai selon la situation"
     }
   },
   {
@@ -1975,8 +1732,7 @@ const FATE_DILEMMAS = [
     },
     "stats": {
       "a": 51,
-      "b": 49,
-      "c": 20
+      "b": 49
     },
     "analysis": {
       "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
@@ -1985,14 +1741,6 @@ const FATE_DILEMMAS = [
       "pt": "A tua escolha mostra como costumas reagir em situações assim.",
       "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
       "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
-    },
-    "c": {
-      "ru": "Рассмотрю ещё один вариант и выберу по ситуации",
-      "en": "Consider another option and decide based on the situation",
-      "es": "Consideraré otra opción y decidiré según la situación",
-      "pt": "Vou considerar outra opção e decidir conforme a situação",
-      "de": "Ich ziehe eine weitere Möglichkeit in Betracht und entscheide je nach Situation",
-      "fr": "J’envisagerai une autre option et déciderai selon la situation"
     }
   },
   {
@@ -2022,8 +1770,7 @@ const FATE_DILEMMAS = [
     },
     "stats": {
       "a": 53,
-      "b": 47,
-      "c": 20
+      "b": 47
     },
     "analysis": {
       "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
@@ -2032,14 +1779,6 @@ const FATE_DILEMMAS = [
       "pt": "A tua escolha mostra como costumas reagir em situações assim.",
       "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
       "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
-    },
-    "c": {
-      "ru": "Рассмотрю ещё один вариант и выберу по ситуации",
-      "en": "Consider another option and decide based on the situation",
-      "es": "Consideraré otra opción y decidiré según la situación",
-      "pt": "Vou considerar outra opção e decidir conforme a situação",
-      "de": "Ich ziehe eine weitere Möglichkeit in Betracht und entscheide je nach Situation",
-      "fr": "J’envisagerai une autre option et déciderai selon la situation"
     }
   },
   {
@@ -2069,8 +1808,7 @@ const FATE_DILEMMAS = [
     },
     "stats": {
       "a": 47,
-      "b": 53,
-      "c": 20
+      "b": 53
     },
     "analysis": {
       "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
@@ -2079,14 +1817,6 @@ const FATE_DILEMMAS = [
       "pt": "A tua escolha mostra como costumas reagir em situações assim.",
       "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
       "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
-    },
-    "c": {
-      "ru": "Рассмотрю ещё один вариант и выберу по ситуации",
-      "en": "Consider another option and decide based on the situation",
-      "es": "Consideraré otra opción y decidiré según la situación",
-      "pt": "Vou considerar outra opção e decidir conforme a situação",
-      "de": "Ich ziehe eine weitere Möglichkeit in Betracht und entscheide je nach Situation",
-      "fr": "J’envisagerai une autre option et déciderai selon la situation"
     }
   },
   {
@@ -2116,8 +1846,7 @@ const FATE_DILEMMAS = [
     },
     "stats": {
       "a": 47,
-      "b": 53,
-      "c": 20
+      "b": 53
     },
     "analysis": {
       "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
@@ -2126,14 +1855,6 @@ const FATE_DILEMMAS = [
       "pt": "A tua escolha mostra como costumas reagir em situações assim.",
       "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
       "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
-    },
-    "c": {
-      "ru": "Рассмотрю ещё один вариант и выберу по ситуации",
-      "en": "Consider another option and decide based on the situation",
-      "es": "Consideraré otra opción y decidiré según la situación",
-      "pt": "Vou considerar outra opção e decidir conforme a situação",
-      "de": "Ich ziehe eine weitere Möglichkeit in Betracht und entscheide je nach Situation",
-      "fr": "J’envisagerai une autre option et déciderai selon la situation"
     }
   },
   {
@@ -2163,8 +1884,7 @@ const FATE_DILEMMAS = [
     },
     "stats": {
       "a": 49,
-      "b": 51,
-      "c": 20
+      "b": 51
     },
     "analysis": {
       "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
@@ -2173,14 +1893,6 @@ const FATE_DILEMMAS = [
       "pt": "A tua escolha mostra como costumas reagir em situações assim.",
       "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
       "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
-    },
-    "c": {
-      "ru": "Рассмотрю ещё один вариант и выберу по ситуации",
-      "en": "Consider another option and decide based on the situation",
-      "es": "Consideraré otra opción y decidiré según la situación",
-      "pt": "Vou considerar outra opção e decidir conforme a situação",
-      "de": "Ich ziehe eine weitere Möglichkeit in Betracht und entscheide je nach Situation",
-      "fr": "J’envisagerai une autre option et déciderai selon la situation"
     }
   },
   {
@@ -2210,8 +1922,7 @@ const FATE_DILEMMAS = [
     },
     "stats": {
       "a": 51,
-      "b": 49,
-      "c": 20
+      "b": 49
     },
     "analysis": {
       "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
@@ -2220,14 +1931,6 @@ const FATE_DILEMMAS = [
       "pt": "A tua escolha mostra como costumas reagir em situações assim.",
       "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
       "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
-    },
-    "c": {
-      "ru": "Рассмотрю ещё один вариант и выберу по ситуации",
-      "en": "Consider another option and decide based on the situation",
-      "es": "Consideraré otra opción y decidiré según la situación",
-      "pt": "Vou considerar outra opção e decidir conforme a situação",
-      "de": "Ich ziehe eine weitere Möglichkeit in Betracht und entscheide je nach Situation",
-      "fr": "J’envisagerai une autre option et déciderai selon la situation"
     }
   },
   {
@@ -2257,8 +1960,7 @@ const FATE_DILEMMAS = [
     },
     "stats": {
       "a": 53,
-      "b": 47,
-      "c": 20
+      "b": 47
     },
     "analysis": {
       "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
@@ -2267,14 +1969,6 @@ const FATE_DILEMMAS = [
       "pt": "A tua escolha mostra como costumas reagir em situações assim.",
       "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
       "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
-    },
-    "c": {
-      "ru": "Рассмотрю ещё один вариант и выберу по ситуации",
-      "en": "Consider another option and decide based on the situation",
-      "es": "Consideraré otra opción y decidiré según la situación",
-      "pt": "Vou considerar outra opção e decidir conforme a situação",
-      "de": "Ich ziehe eine weitere Möglichkeit in Betracht und entscheide je nach Situation",
-      "fr": "J’envisagerai une autre option et déciderai selon la situation"
     }
   },
   {
@@ -2304,8 +1998,7 @@ const FATE_DILEMMAS = [
     },
     "stats": {
       "a": 47,
-      "b": 53,
-      "c": 20
+      "b": 53
     },
     "analysis": {
       "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
@@ -2314,14 +2007,6 @@ const FATE_DILEMMAS = [
       "pt": "A tua escolha mostra como costumas reagir em situações assim.",
       "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
       "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
-    },
-    "c": {
-      "ru": "Рассмотрю ещё один вариант и выберу по ситуации",
-      "en": "Consider another option and decide based on the situation",
-      "es": "Consideraré otra opción y decidiré según la situación",
-      "pt": "Vou considerar outra opção e decidir conforme a situação",
-      "de": "Ich ziehe eine weitere Möglichkeit in Betracht und entscheide je nach Situation",
-      "fr": "J’envisagerai une autre option et déciderai selon la situation"
     }
   },
   {
@@ -2351,8 +2036,7 @@ const FATE_DILEMMAS = [
     },
     "stats": {
       "a": 47,
-      "b": 53,
-      "c": 20
+      "b": 53
     },
     "analysis": {
       "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
@@ -2361,14 +2045,6 @@ const FATE_DILEMMAS = [
       "pt": "A tua escolha mostra como costumas reagir em situações assim.",
       "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
       "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
-    },
-    "c": {
-      "ru": "Рассмотрю ещё один вариант и выберу по ситуации",
-      "en": "Consider another option and decide based on the situation",
-      "es": "Consideraré otra opción y decidiré según la situación",
-      "pt": "Vou considerar outra opção e decidir conforme a situação",
-      "de": "Ich ziehe eine weitere Möglichkeit in Betracht und entscheide je nach Situation",
-      "fr": "J’envisagerai une autre option et déciderai selon la situation"
     }
   },
   {
@@ -2398,8 +2074,7 @@ const FATE_DILEMMAS = [
     },
     "stats": {
       "a": 49,
-      "b": 51,
-      "c": 20
+      "b": 51
     },
     "analysis": {
       "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
@@ -2408,14 +2083,6 @@ const FATE_DILEMMAS = [
       "pt": "A tua escolha mostra como costumas reagir em situações assim.",
       "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
       "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
-    },
-    "c": {
-      "ru": "Рассмотрю ещё один вариант и выберу по ситуации",
-      "en": "Consider another option and decide based on the situation",
-      "es": "Consideraré otra opción y decidiré según la situación",
-      "pt": "Vou considerar outra opção e decidir conforme a situação",
-      "de": "Ich ziehe eine weitere Möglichkeit in Betracht und entscheide je nach Situation",
-      "fr": "J’envisagerai une autre option et déciderai selon la situation"
     }
   },
   {
@@ -2445,8 +2112,7 @@ const FATE_DILEMMAS = [
     },
     "stats": {
       "a": 51,
-      "b": 49,
-      "c": 20
+      "b": 49
     },
     "analysis": {
       "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
@@ -2455,14 +2121,6 @@ const FATE_DILEMMAS = [
       "pt": "A tua escolha mostra como costumas reagir em situações assim.",
       "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
       "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
-    },
-    "c": {
-      "ru": "Рассмотрю ещё один вариант и выберу по ситуации",
-      "en": "Consider another option and decide based on the situation",
-      "es": "Consideraré otra opción y decidiré según la situación",
-      "pt": "Vou considerar outra opção e decidir conforme a situação",
-      "de": "Ich ziehe eine weitere Möglichkeit in Betracht und entscheide je nach Situation",
-      "fr": "J’envisagerai une autre option et déciderai selon la situation"
     }
   },
   {
@@ -2492,8 +2150,7 @@ const FATE_DILEMMAS = [
     },
     "stats": {
       "a": 53,
-      "b": 47,
-      "c": 20
+      "b": 47
     },
     "analysis": {
       "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
@@ -2502,14 +2159,6 @@ const FATE_DILEMMAS = [
       "pt": "A tua escolha mostra como costumas reagir em situações assim.",
       "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
       "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
-    },
-    "c": {
-      "ru": "Рассмотрю ещё один вариант и выберу по ситуации",
-      "en": "Consider another option and decide based on the situation",
-      "es": "Consideraré otra opción y decidiré según la situación",
-      "pt": "Vou considerar outra opção e decidir conforme a situação",
-      "de": "Ich ziehe eine weitere Möglichkeit in Betracht und entscheide je nach Situation",
-      "fr": "J’envisagerai une autre option et déciderai selon la situation"
     }
   },
   {
@@ -2539,8 +2188,7 @@ const FATE_DILEMMAS = [
     },
     "stats": {
       "a": 47,
-      "b": 53,
-      "c": 20
+      "b": 53
     },
     "analysis": {
       "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
@@ -2549,14 +2197,6 @@ const FATE_DILEMMAS = [
       "pt": "A tua escolha mostra como costumas reagir em situações assim.",
       "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
       "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
-    },
-    "c": {
-      "ru": "Рассмотрю ещё один вариант и выберу по ситуации",
-      "en": "Consider another option and decide based on the situation",
-      "es": "Consideraré otra opción y decidiré según la situación",
-      "pt": "Vou considerar outra opção e decidir conforme a situação",
-      "de": "Ich ziehe eine weitere Möglichkeit in Betracht und entscheide je nach Situation",
-      "fr": "J’envisagerai une autre option et déciderai selon la situation"
     }
   },
   {
@@ -2586,8 +2226,7 @@ const FATE_DILEMMAS = [
     },
     "stats": {
       "a": 47,
-      "b": 53,
-      "c": 20
+      "b": 53
     },
     "analysis": {
       "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
@@ -2596,14 +2235,6 @@ const FATE_DILEMMAS = [
       "pt": "A tua escolha mostra como costumas reagir em situações assim.",
       "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
       "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
-    },
-    "c": {
-      "ru": "Рассмотрю ещё один вариант и выберу по ситуации",
-      "en": "Consider another option and decide based on the situation",
-      "es": "Consideraré otra opción y decidiré según la situación",
-      "pt": "Vou considerar outra opção e decidir conforme a situação",
-      "de": "Ich ziehe eine weitere Möglichkeit in Betracht und entscheide je nach Situation",
-      "fr": "J’envisagerai une autre option et déciderai selon la situation"
     }
   },
   {
@@ -2633,8 +2264,7 @@ const FATE_DILEMMAS = [
     },
     "stats": {
       "a": 49,
-      "b": 51,
-      "c": 20
+      "b": 51
     },
     "analysis": {
       "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
@@ -2643,14 +2273,6 @@ const FATE_DILEMMAS = [
       "pt": "A tua escolha mostra como costumas reagir em situações assim.",
       "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
       "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
-    },
-    "c": {
-      "ru": "Рассмотрю ещё один вариант и выберу по ситуации",
-      "en": "Consider another option and decide based on the situation",
-      "es": "Consideraré otra opción y decidiré según la situación",
-      "pt": "Vou considerar outra opção e decidir conforme a situação",
-      "de": "Ich ziehe eine weitere Möglichkeit in Betracht und entscheide je nach Situation",
-      "fr": "J’envisagerai une autre option et déciderai selon la situation"
     }
   },
   {
@@ -2680,8 +2302,7 @@ const FATE_DILEMMAS = [
     },
     "stats": {
       "a": 51,
-      "b": 49,
-      "c": 20
+      "b": 49
     },
     "analysis": {
       "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
@@ -2690,14 +2311,6 @@ const FATE_DILEMMAS = [
       "pt": "A tua escolha mostra como costumas reagir em situações assim.",
       "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
       "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
-    },
-    "c": {
-      "ru": "Рассмотрю ещё один вариант и выберу по ситуации",
-      "en": "Consider another option and decide based on the situation",
-      "es": "Consideraré otra opción y decidiré según la situación",
-      "pt": "Vou considerar outra opção e decidir conforme a situação",
-      "de": "Ich ziehe eine weitere Möglichkeit in Betracht und entscheide je nach Situation",
-      "fr": "J’envisagerai une autre option et déciderai selon la situation"
     }
   },
   {
@@ -2727,8 +2340,7 @@ const FATE_DILEMMAS = [
     },
     "stats": {
       "a": 53,
-      "b": 47,
-      "c": 20
+      "b": 47
     },
     "analysis": {
       "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
@@ -2737,14 +2349,6 @@ const FATE_DILEMMAS = [
       "pt": "A tua escolha mostra como costumas reagir em situações assim.",
       "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
       "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
-    },
-    "c": {
-      "ru": "Рассмотрю ещё один вариант и выберу по ситуации",
-      "en": "Consider another option and decide based on the situation",
-      "es": "Consideraré otra opción y decidiré según la situación",
-      "pt": "Vou considerar outra opção e decidir conforme a situação",
-      "de": "Ich ziehe eine weitere Möglichkeit in Betracht und entscheide je nach Situation",
-      "fr": "J’envisagerai une autre option et déciderai selon la situation"
     }
   },
   {
@@ -2774,8 +2378,7 @@ const FATE_DILEMMAS = [
     },
     "stats": {
       "a": 47,
-      "b": 53,
-      "c": 20
+      "b": 53
     },
     "analysis": {
       "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
@@ -2784,14 +2387,6 @@ const FATE_DILEMMAS = [
       "pt": "A tua escolha mostra como costumas reagir em situações assim.",
       "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
       "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
-    },
-    "c": {
-      "ru": "Рассмотрю ещё один вариант и выберу по ситуации",
-      "en": "Consider another option and decide based on the situation",
-      "es": "Consideraré otra opción y decidiré según la situación",
-      "pt": "Vou considerar outra opção e decidir conforme a situação",
-      "de": "Ich ziehe eine weitere Möglichkeit in Betracht und entscheide je nach Situation",
-      "fr": "J’envisagerai une autre option et déciderai selon la situation"
     }
   },
   {
@@ -2821,8 +2416,7 @@ const FATE_DILEMMAS = [
     },
     "stats": {
       "a": 47,
-      "b": 53,
-      "c": 20
+      "b": 53
     },
     "analysis": {
       "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
@@ -2831,14 +2425,6 @@ const FATE_DILEMMAS = [
       "pt": "A tua escolha mostra como costumas reagir em situações assim.",
       "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
       "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
-    },
-    "c": {
-      "ru": "Рассмотрю ещё один вариант и выберу по ситуации",
-      "en": "Consider another option and decide based on the situation",
-      "es": "Consideraré otra opción y decidiré según la situación",
-      "pt": "Vou considerar outra opção e decidir conforme a situação",
-      "de": "Ich ziehe eine weitere Möglichkeit in Betracht und entscheide je nach Situation",
-      "fr": "J’envisagerai une autre option et déciderai selon la situation"
     }
   },
   {
@@ -2868,8 +2454,7 @@ const FATE_DILEMMAS = [
     },
     "stats": {
       "a": 49,
-      "b": 51,
-      "c": 20
+      "b": 51
     },
     "analysis": {
       "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
@@ -2878,14 +2463,6 @@ const FATE_DILEMMAS = [
       "pt": "A tua escolha mostra como costumas reagir em situações assim.",
       "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
       "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
-    },
-    "c": {
-      "ru": "Рассмотрю ещё один вариант и выберу по ситуации",
-      "en": "Consider another option and decide based on the situation",
-      "es": "Consideraré otra opción y decidiré según la situación",
-      "pt": "Vou considerar outra opção e decidir conforme a situação",
-      "de": "Ich ziehe eine weitere Möglichkeit in Betracht und entscheide je nach Situation",
-      "fr": "J’envisagerai une autre option et déciderai selon la situation"
     }
   },
   {
@@ -2915,8 +2492,7 @@ const FATE_DILEMMAS = [
     },
     "stats": {
       "a": 51,
-      "b": 49,
-      "c": 20
+      "b": 49
     },
     "analysis": {
       "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
@@ -2925,14 +2501,6 @@ const FATE_DILEMMAS = [
       "pt": "A tua escolha mostra como costumas reagir em situações assim.",
       "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
       "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
-    },
-    "c": {
-      "ru": "Рассмотрю ещё один вариант и выберу по ситуации",
-      "en": "Consider another option and decide based on the situation",
-      "es": "Consideraré otra opción y decidiré según la situación",
-      "pt": "Vou considerar outra opção e decidir conforme a situação",
-      "de": "Ich ziehe eine weitere Möglichkeit in Betracht und entscheide je nach Situation",
-      "fr": "J’envisagerai une autre option et déciderai selon la situation"
     }
   },
   {
@@ -2962,8 +2530,7 @@ const FATE_DILEMMAS = [
     },
     "stats": {
       "a": 53,
-      "b": 47,
-      "c": 20
+      "b": 47
     },
     "analysis": {
       "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
@@ -2972,14 +2539,6 @@ const FATE_DILEMMAS = [
       "pt": "A tua escolha mostra como costumas reagir em situações assim.",
       "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
       "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
-    },
-    "c": {
-      "ru": "Рассмотрю ещё один вариант и выберу по ситуации",
-      "en": "Consider another option and decide based on the situation",
-      "es": "Consideraré otra opción y decidiré según la situación",
-      "pt": "Vou considerar outra opção e decidir conforme a situação",
-      "de": "Ich ziehe eine weitere Möglichkeit in Betracht und entscheide je nach Situation",
-      "fr": "J’envisagerai une autre option et déciderai selon la situation"
     }
   },
   {
@@ -3009,8 +2568,7 @@ const FATE_DILEMMAS = [
     },
     "stats": {
       "a": 47,
-      "b": 53,
-      "c": 20
+      "b": 53
     },
     "analysis": {
       "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
@@ -3019,14 +2577,6 @@ const FATE_DILEMMAS = [
       "pt": "A tua escolha mostra como costumas reagir em situações assim.",
       "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
       "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
-    },
-    "c": {
-      "ru": "Рассмотрю ещё один вариант и выберу по ситуации",
-      "en": "Consider another option and decide based on the situation",
-      "es": "Consideraré otra opción y decidiré según la situación",
-      "pt": "Vou considerar outra opção e decidir conforme a situação",
-      "de": "Ich ziehe eine weitere Möglichkeit in Betracht und entscheide je nach Situation",
-      "fr": "J’envisagerai une autre option et déciderai selon la situation"
     }
   },
   {
@@ -3056,8 +2606,7 @@ const FATE_DILEMMAS = [
     },
     "stats": {
       "a": 47,
-      "b": 53,
-      "c": 20
+      "b": 53
     },
     "analysis": {
       "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
@@ -3066,14 +2615,6 @@ const FATE_DILEMMAS = [
       "pt": "A tua escolha mostra como costumas reagir em situações assim.",
       "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
       "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
-    },
-    "c": {
-      "ru": "Рассмотрю ещё один вариант и выберу по ситуации",
-      "en": "Consider another option and decide based on the situation",
-      "es": "Consideraré otra opción y decidiré según la situación",
-      "pt": "Vou considerar outra opção e decidir conforme a situação",
-      "de": "Ich ziehe eine weitere Möglichkeit in Betracht und entscheide je nach Situation",
-      "fr": "J’envisagerai une autre option et déciderai selon la situation"
     }
   },
   {
@@ -3103,8 +2644,7 @@ const FATE_DILEMMAS = [
     },
     "stats": {
       "a": 49,
-      "b": 51,
-      "c": 20
+      "b": 51
     },
     "analysis": {
       "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
@@ -3113,14 +2653,6 @@ const FATE_DILEMMAS = [
       "pt": "A tua escolha mostra como costumas reagir em situações assim.",
       "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
       "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
-    },
-    "c": {
-      "ru": "Рассмотрю ещё один вариант и выберу по ситуации",
-      "en": "Consider another option and decide based on the situation",
-      "es": "Consideraré otra opción y decidiré según la situación",
-      "pt": "Vou considerar outra opção e decidir conforme a situação",
-      "de": "Ich ziehe eine weitere Möglichkeit in Betracht und entscheide je nach Situation",
-      "fr": "J’envisagerai une autre option et déciderai selon la situation"
     }
   },
   {
@@ -3150,8 +2682,7 @@ const FATE_DILEMMAS = [
     },
     "stats": {
       "a": 51,
-      "b": 49,
-      "c": 20
+      "b": 49
     },
     "analysis": {
       "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
@@ -3160,14 +2691,6 @@ const FATE_DILEMMAS = [
       "pt": "A tua escolha mostra como costumas reagir em situações assim.",
       "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
       "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
-    },
-    "c": {
-      "ru": "Рассмотрю ещё один вариант и выберу по ситуации",
-      "en": "Consider another option and decide based on the situation",
-      "es": "Consideraré otra opción y decidiré según la situación",
-      "pt": "Vou considerar outra opção e decidir conforme a situação",
-      "de": "Ich ziehe eine weitere Möglichkeit in Betracht und entscheide je nach Situation",
-      "fr": "J’envisagerai une autre option et déciderai selon la situation"
     }
   },
   {
@@ -3197,8 +2720,7 @@ const FATE_DILEMMAS = [
     },
     "stats": {
       "a": 53,
-      "b": 47,
-      "c": 20
+      "b": 47
     },
     "analysis": {
       "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
@@ -3207,14 +2729,6 @@ const FATE_DILEMMAS = [
       "pt": "A tua escolha mostra como costumas reagir em situações assim.",
       "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
       "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
-    },
-    "c": {
-      "ru": "Рассмотрю ещё один вариант и выберу по ситуации",
-      "en": "Consider another option and decide based on the situation",
-      "es": "Consideraré otra opción y decidiré según la situación",
-      "pt": "Vou considerar outra opção e decidir conforme a situação",
-      "de": "Ich ziehe eine weitere Möglichkeit in Betracht und entscheide je nach Situation",
-      "fr": "J’envisagerai une autre option et déciderai selon la situation"
     }
   },
   {
@@ -3244,8 +2758,7 @@ const FATE_DILEMMAS = [
     },
     "stats": {
       "a": 47,
-      "b": 53,
-      "c": 20
+      "b": 53
     },
     "analysis": {
       "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
@@ -3254,14 +2767,6 @@ const FATE_DILEMMAS = [
       "pt": "A tua escolha mostra como costumas reagir em situações assim.",
       "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
       "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
-    },
-    "c": {
-      "ru": "Рассмотрю ещё один вариант и выберу по ситуации",
-      "en": "Consider another option and decide based on the situation",
-      "es": "Consideraré otra opción y decidiré según la situación",
-      "pt": "Vou considerar outra opção e decidir conforme a situação",
-      "de": "Ich ziehe eine weitere Möglichkeit in Betracht und entscheide je nach Situation",
-      "fr": "J’envisagerai une autre option et déciderai selon la situation"
     }
   },
   {
@@ -3291,8 +2796,7 @@ const FATE_DILEMMAS = [
     },
     "stats": {
       "a": 47,
-      "b": 53,
-      "c": 20
+      "b": 53
     },
     "analysis": {
       "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
@@ -3301,14 +2805,6 @@ const FATE_DILEMMAS = [
       "pt": "A tua escolha mostra como costumas reagir em situações assim.",
       "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
       "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
-    },
-    "c": {
-      "ru": "Рассмотрю ещё один вариант и выберу по ситуации",
-      "en": "Consider another option and decide based on the situation",
-      "es": "Consideraré otra opción y decidiré según la situación",
-      "pt": "Vou considerar outra opção e decidir conforme a situação",
-      "de": "Ich ziehe eine weitere Möglichkeit in Betracht und entscheide je nach Situation",
-      "fr": "J’envisagerai une autre option et déciderai selon la situation"
     }
   },
   {
@@ -3338,8 +2834,7 @@ const FATE_DILEMMAS = [
     },
     "stats": {
       "a": 49,
-      "b": 51,
-      "c": 20
+      "b": 51
     },
     "analysis": {
       "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
@@ -3348,14 +2843,6 @@ const FATE_DILEMMAS = [
       "pt": "A tua escolha mostra como costumas reagir em situações assim.",
       "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
       "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
-    },
-    "c": {
-      "ru": "Рассмотрю ещё один вариант и выберу по ситуации",
-      "en": "Consider another option and decide based on the situation",
-      "es": "Consideraré otra opción y decidiré según la situación",
-      "pt": "Vou considerar outra opção e decidir conforme a situação",
-      "de": "Ich ziehe eine weitere Möglichkeit in Betracht und entscheide je nach Situation",
-      "fr": "J’envisagerai une autre option et déciderai selon la situation"
     }
   },
   {
@@ -3385,8 +2872,7 @@ const FATE_DILEMMAS = [
     },
     "stats": {
       "a": 51,
-      "b": 49,
-      "c": 20
+      "b": 49
     },
     "analysis": {
       "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
@@ -3395,14 +2881,6 @@ const FATE_DILEMMAS = [
       "pt": "A tua escolha mostra como costumas reagir em situações assim.",
       "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
       "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
-    },
-    "c": {
-      "ru": "Рассмотрю ещё один вариант и выберу по ситуации",
-      "en": "Consider another option and decide based on the situation",
-      "es": "Consideraré otra opción y decidiré según la situación",
-      "pt": "Vou considerar outra opção e decidir conforme a situação",
-      "de": "Ich ziehe eine weitere Möglichkeit in Betracht und entscheide je nach Situation",
-      "fr": "J’envisagerai une autre option et déciderai selon la situation"
     }
   },
   {
@@ -3432,8 +2910,7 @@ const FATE_DILEMMAS = [
     },
     "stats": {
       "a": 53,
-      "b": 47,
-      "c": 20
+      "b": 47
     },
     "analysis": {
       "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
@@ -3442,14 +2919,6 @@ const FATE_DILEMMAS = [
       "pt": "A tua escolha mostra como costumas reagir em situações assim.",
       "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
       "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
-    },
-    "c": {
-      "ru": "Рассмотрю ещё один вариант и выберу по ситуации",
-      "en": "Consider another option and decide based on the situation",
-      "es": "Consideraré otra opción y decidiré según la situación",
-      "pt": "Vou considerar outra opção e decidir conforme a situação",
-      "de": "Ich ziehe eine weitere Möglichkeit in Betracht und entscheide je nach Situation",
-      "fr": "J’envisagerai une autre option et déciderai selon la situation"
     }
   },
   {
@@ -3479,8 +2948,7 @@ const FATE_DILEMMAS = [
     },
     "stats": {
       "a": 47,
-      "b": 53,
-      "c": 20
+      "b": 53
     },
     "analysis": {
       "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
@@ -3489,14 +2957,6 @@ const FATE_DILEMMAS = [
       "pt": "A tua escolha mostra como costumas reagir em situações assim.",
       "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
       "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
-    },
-    "c": {
-      "ru": "Рассмотрю ещё один вариант и выберу по ситуации",
-      "en": "Consider another option and decide based on the situation",
-      "es": "Consideraré otra opción y decidiré según la situación",
-      "pt": "Vou considerar outra opção e decidir conforme a situação",
-      "de": "Ich ziehe eine weitere Möglichkeit in Betracht und entscheide je nach Situation",
-      "fr": "J’envisagerai une autre option et déciderai selon la situation"
     }
   },
   {
@@ -3526,8 +2986,7 @@ const FATE_DILEMMAS = [
     },
     "stats": {
       "a": 47,
-      "b": 53,
-      "c": 20
+      "b": 53
     },
     "analysis": {
       "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
@@ -3536,14 +2995,6 @@ const FATE_DILEMMAS = [
       "pt": "A tua escolha mostra como costumas reagir em situações assim.",
       "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
       "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
-    },
-    "c": {
-      "ru": "Рассмотрю ещё один вариант и выберу по ситуации",
-      "en": "Consider another option and decide based on the situation",
-      "es": "Consideraré otra opción y decidiré según la situación",
-      "pt": "Vou considerar outra opção e decidir conforme a situação",
-      "de": "Ich ziehe eine weitere Möglichkeit in Betracht und entscheide je nach Situation",
-      "fr": "J’envisagerai une autre option et déciderai selon la situation"
     }
   },
   {
@@ -3573,8 +3024,7 @@ const FATE_DILEMMAS = [
     },
     "stats": {
       "a": 49,
-      "b": 51,
-      "c": 20
+      "b": 51
     },
     "analysis": {
       "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
@@ -3583,14 +3033,6 @@ const FATE_DILEMMAS = [
       "pt": "A tua escolha mostra como costumas reagir em situações assim.",
       "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
       "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
-    },
-    "c": {
-      "ru": "Рассмотрю ещё один вариант и выберу по ситуации",
-      "en": "Consider another option and decide based on the situation",
-      "es": "Consideraré otra opción y decidiré según la situación",
-      "pt": "Vou considerar outra opção e decidir conforme a situação",
-      "de": "Ich ziehe eine weitere Möglichkeit in Betracht und entscheide je nach Situation",
-      "fr": "J’envisagerai une autre option et déciderai selon la situation"
     }
   },
   {
@@ -3620,8 +3062,7 @@ const FATE_DILEMMAS = [
     },
     "stats": {
       "a": 51,
-      "b": 49,
-      "c": 20
+      "b": 49
     },
     "analysis": {
       "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
@@ -3630,14 +3071,6 @@ const FATE_DILEMMAS = [
       "pt": "A tua escolha mostra como costumas reagir em situações assim.",
       "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
       "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
-    },
-    "c": {
-      "ru": "Рассмотрю ещё один вариант и выберу по ситуации",
-      "en": "Consider another option and decide based on the situation",
-      "es": "Consideraré otra opción y decidiré según la situación",
-      "pt": "Vou considerar outra opção e decidir conforme a situação",
-      "de": "Ich ziehe eine weitere Möglichkeit in Betracht und entscheide je nach Situation",
-      "fr": "J’envisagerai une autre option et déciderai selon la situation"
     }
   },
   {
@@ -3667,8 +3100,7 @@ const FATE_DILEMMAS = [
     },
     "stats": {
       "a": 53,
-      "b": 47,
-      "c": 20
+      "b": 47
     },
     "analysis": {
       "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
@@ -3677,14 +3109,6 @@ const FATE_DILEMMAS = [
       "pt": "A tua escolha mostra como costumas reagir em situações assim.",
       "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
       "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
-    },
-    "c": {
-      "ru": "Рассмотрю ещё один вариант и выберу по ситуации",
-      "en": "Consider another option and decide based on the situation",
-      "es": "Consideraré otra opción y decidiré según la situación",
-      "pt": "Vou considerar outra opção e decidir conforme a situação",
-      "de": "Ich ziehe eine weitere Möglichkeit in Betracht und entscheide je nach Situation",
-      "fr": "J’envisagerai une autre option et déciderai selon la situation"
     }
   },
   {
@@ -3714,8 +3138,7 @@ const FATE_DILEMMAS = [
     },
     "stats": {
       "a": 47,
-      "b": 53,
-      "c": 20
+      "b": 53
     },
     "analysis": {
       "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
@@ -3724,14 +3147,6 @@ const FATE_DILEMMAS = [
       "pt": "A tua escolha mostra como costumas reagir em situações assim.",
       "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
       "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
-    },
-    "c": {
-      "ru": "Рассмотрю ещё один вариант и выберу по ситуации",
-      "en": "Consider another option and decide based on the situation",
-      "es": "Consideraré otra opción y decidiré según la situación",
-      "pt": "Vou considerar outra opção e decidir conforme a situação",
-      "de": "Ich ziehe eine weitere Möglichkeit in Betracht und entscheide je nach Situation",
-      "fr": "J’envisagerai une autre option et déciderai selon la situation"
     }
   },
   {
@@ -3761,8 +3176,7 @@ const FATE_DILEMMAS = [
     },
     "stats": {
       "a": 47,
-      "b": 53,
-      "c": 20
+      "b": 53
     },
     "analysis": {
       "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
@@ -3771,14 +3185,6 @@ const FATE_DILEMMAS = [
       "pt": "A tua escolha mostra como costumas reagir em situações assim.",
       "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
       "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
-    },
-    "c": {
-      "ru": "Рассмотрю ещё один вариант и выберу по ситуации",
-      "en": "Consider another option and decide based on the situation",
-      "es": "Consideraré otra opción y decidiré según la situación",
-      "pt": "Vou considerar outra opção e decidir conforme a situação",
-      "de": "Ich ziehe eine weitere Möglichkeit in Betracht und entscheide je nach Situation",
-      "fr": "J’envisagerai une autre option et déciderai selon la situation"
     }
   },
   {
@@ -3808,8 +3214,7 @@ const FATE_DILEMMAS = [
     },
     "stats": {
       "a": 49,
-      "b": 51,
-      "c": 20
+      "b": 51
     },
     "analysis": {
       "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
@@ -3818,14 +3223,6 @@ const FATE_DILEMMAS = [
       "pt": "A tua escolha mostra como costumas reagir em situações assim.",
       "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
       "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
-    },
-    "c": {
-      "ru": "Рассмотрю ещё один вариант и выберу по ситуации",
-      "en": "Consider another option and decide based on the situation",
-      "es": "Consideraré otra opción y decidiré según la situación",
-      "pt": "Vou considerar outra opção e decidir conforme a situação",
-      "de": "Ich ziehe eine weitere Möglichkeit in Betracht und entscheide je nach Situation",
-      "fr": "J’envisagerai une autre option et déciderai selon la situation"
     }
   },
   {
@@ -3855,8 +3252,7 @@ const FATE_DILEMMAS = [
     },
     "stats": {
       "a": 51,
-      "b": 49,
-      "c": 20
+      "b": 49
     },
     "analysis": {
       "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
@@ -3865,14 +3261,6 @@ const FATE_DILEMMAS = [
       "pt": "A tua escolha mostra como costumas reagir em situações assim.",
       "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
       "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
-    },
-    "c": {
-      "ru": "Рассмотрю ещё один вариант и выберу по ситуации",
-      "en": "Consider another option and decide based on the situation",
-      "es": "Consideraré otra opción y decidiré según la situación",
-      "pt": "Vou considerar outra opção e decidir conforme a situação",
-      "de": "Ich ziehe eine weitere Möglichkeit in Betracht und entscheide je nach Situation",
-      "fr": "J’envisagerai une autre option et déciderai selon la situation"
     }
   },
   {
@@ -3902,8 +3290,7 @@ const FATE_DILEMMAS = [
     },
     "stats": {
       "a": 53,
-      "b": 47,
-      "c": 20
+      "b": 47
     },
     "analysis": {
       "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
@@ -3912,14 +3299,6 @@ const FATE_DILEMMAS = [
       "pt": "A tua escolha mostra como costumas reagir em situações assim.",
       "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
       "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
-    },
-    "c": {
-      "ru": "Рассмотрю ещё один вариант и выберу по ситуации",
-      "en": "Consider another option and decide based on the situation",
-      "es": "Consideraré otra opción y decidiré según la situación",
-      "pt": "Vou considerar outra opção e decidir conforme a situação",
-      "de": "Ich ziehe eine weitere Möglichkeit in Betracht und entscheide je nach Situation",
-      "fr": "J’envisagerai une autre option et déciderai selon la situation"
     }
   },
   {
@@ -3949,8 +3328,7 @@ const FATE_DILEMMAS = [
     },
     "stats": {
       "a": 47,
-      "b": 53,
-      "c": 20
+      "b": 53
     },
     "analysis": {
       "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
@@ -3959,14 +3337,6 @@ const FATE_DILEMMAS = [
       "pt": "A tua escolha mostra como costumas reagir em situações assim.",
       "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
       "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
-    },
-    "c": {
-      "ru": "Рассмотрю ещё один вариант и выберу по ситуации",
-      "en": "Consider another option and decide based on the situation",
-      "es": "Consideraré otra opción y decidiré según la situación",
-      "pt": "Vou considerar outra opção e decidir conforme a situação",
-      "de": "Ich ziehe eine weitere Möglichkeit in Betracht und entscheide je nach Situation",
-      "fr": "J’envisagerai une autre option et déciderai selon la situation"
     }
   },
   {
@@ -3996,8 +3366,7 @@ const FATE_DILEMMAS = [
     },
     "stats": {
       "a": 47,
-      "b": 53,
-      "c": 20
+      "b": 53
     },
     "analysis": {
       "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
@@ -4006,14 +3375,6 @@ const FATE_DILEMMAS = [
       "pt": "A tua escolha mostra como costumas reagir em situações assim.",
       "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
       "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
-    },
-    "c": {
-      "ru": "Рассмотрю ещё один вариант и выберу по ситуации",
-      "en": "Consider another option and decide based on the situation",
-      "es": "Consideraré otra opción y decidiré según la situación",
-      "pt": "Vou considerar outra opção e decidir conforme a situação",
-      "de": "Ich ziehe eine weitere Möglichkeit in Betracht und entscheide je nach Situation",
-      "fr": "J’envisagerai une autre option et déciderai selon la situation"
     }
   },
   {
@@ -4043,8 +3404,7 @@ const FATE_DILEMMAS = [
     },
     "stats": {
       "a": 49,
-      "b": 51,
-      "c": 20
+      "b": 51
     },
     "analysis": {
       "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
@@ -4053,14 +3413,6 @@ const FATE_DILEMMAS = [
       "pt": "A tua escolha mostra como costumas reagir em situações assim.",
       "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
       "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
-    },
-    "c": {
-      "ru": "Рассмотрю ещё один вариант и выберу по ситуации",
-      "en": "Consider another option and decide based on the situation",
-      "es": "Consideraré otra opción y decidiré según la situación",
-      "pt": "Vou considerar outra opção e decidir conforme a situação",
-      "de": "Ich ziehe eine weitere Möglichkeit in Betracht und entscheide je nach Situation",
-      "fr": "J’envisagerai une autre option et déciderai selon la situation"
     }
   },
   {
@@ -4090,8 +3442,7 @@ const FATE_DILEMMAS = [
     },
     "stats": {
       "a": 51,
-      "b": 49,
-      "c": 20
+      "b": 49
     },
     "analysis": {
       "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
@@ -4100,14 +3451,6 @@ const FATE_DILEMMAS = [
       "pt": "A tua escolha mostra como costumas reagir em situações assim.",
       "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
       "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
-    },
-    "c": {
-      "ru": "Рассмотрю ещё один вариант и выберу по ситуации",
-      "en": "Consider another option and decide based on the situation",
-      "es": "Consideraré otra opción y decidiré según la situación",
-      "pt": "Vou considerar outra opção e decidir conforme a situação",
-      "de": "Ich ziehe eine weitere Möglichkeit in Betracht und entscheide je nach Situation",
-      "fr": "J’envisagerai une autre option et déciderai selon la situation"
     }
   },
   {
@@ -4137,8 +3480,7 @@ const FATE_DILEMMAS = [
     },
     "stats": {
       "a": 53,
-      "b": 47,
-      "c": 20
+      "b": 47
     },
     "analysis": {
       "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
@@ -4147,14 +3489,6 @@ const FATE_DILEMMAS = [
       "pt": "A tua escolha mostra como costumas reagir em situações assim.",
       "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
       "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
-    },
-    "c": {
-      "ru": "Рассмотрю ещё один вариант и выберу по ситуации",
-      "en": "Consider another option and decide based on the situation",
-      "es": "Consideraré otra opción y decidiré según la situación",
-      "pt": "Vou considerar outra opção e decidir conforme a situação",
-      "de": "Ich ziehe eine weitere Möglichkeit in Betracht und entscheide je nach Situation",
-      "fr": "J’envisagerai une autre option et déciderai selon la situation"
     }
   },
   {
@@ -4184,8 +3518,7 @@ const FATE_DILEMMAS = [
     },
     "stats": {
       "a": 47,
-      "b": 53,
-      "c": 20
+      "b": 53
     },
     "analysis": {
       "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
@@ -4194,14 +3527,6 @@ const FATE_DILEMMAS = [
       "pt": "A tua escolha mostra como costumas reagir em situações assim.",
       "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
       "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
-    },
-    "c": {
-      "ru": "Рассмотрю ещё один вариант и выберу по ситуации",
-      "en": "Consider another option and decide based on the situation",
-      "es": "Consideraré otra opción y decidiré según la situación",
-      "pt": "Vou considerar outra opção e decidir conforme a situação",
-      "de": "Ich ziehe eine weitere Möglichkeit in Betracht und entscheide je nach Situation",
-      "fr": "J’envisagerai une autre option et déciderai selon la situation"
     }
   },
   {
@@ -4231,8 +3556,7 @@ const FATE_DILEMMAS = [
     },
     "stats": {
       "a": 47,
-      "b": 53,
-      "c": 20
+      "b": 53
     },
     "analysis": {
       "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
@@ -4241,14 +3565,6 @@ const FATE_DILEMMAS = [
       "pt": "A tua escolha mostra como costumas reagir em situações assim.",
       "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
       "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
-    },
-    "c": {
-      "ru": "Рассмотрю ещё один вариант и выберу по ситуации",
-      "en": "Consider another option and decide based on the situation",
-      "es": "Consideraré otra opción y decidiré según la situación",
-      "pt": "Vou considerar outra opção e decidir conforme a situação",
-      "de": "Ich ziehe eine weitere Möglichkeit in Betracht und entscheide je nach Situation",
-      "fr": "J’envisagerai une autre option et déciderai selon la situation"
     }
   },
   {
@@ -4278,8 +3594,7 @@ const FATE_DILEMMAS = [
     },
     "stats": {
       "a": 49,
-      "b": 51,
-      "c": 20
+      "b": 51
     },
     "analysis": {
       "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
@@ -4288,14 +3603,6 @@ const FATE_DILEMMAS = [
       "pt": "A tua escolha mostra como costumas reagir em situações assim.",
       "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
       "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
-    },
-    "c": {
-      "ru": "Рассмотрю ещё один вариант и выберу по ситуации",
-      "en": "Consider another option and decide based on the situation",
-      "es": "Consideraré otra opción y decidiré según la situación",
-      "pt": "Vou considerar outra opção e decidir conforme a situação",
-      "de": "Ich ziehe eine weitere Möglichkeit in Betracht und entscheide je nach Situation",
-      "fr": "J’envisagerai une autre option et déciderai selon la situation"
     }
   },
   {
@@ -4325,8 +3632,7 @@ const FATE_DILEMMAS = [
     },
     "stats": {
       "a": 51,
-      "b": 49,
-      "c": 20
+      "b": 49
     },
     "analysis": {
       "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
@@ -4335,14 +3641,6 @@ const FATE_DILEMMAS = [
       "pt": "A tua escolha mostra como costumas reagir em situações assim.",
       "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
       "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
-    },
-    "c": {
-      "ru": "Рассмотрю ещё один вариант и выберу по ситуации",
-      "en": "Consider another option and decide based on the situation",
-      "es": "Consideraré otra opción y decidiré según la situación",
-      "pt": "Vou considerar outra opção e decidir conforme a situação",
-      "de": "Ich ziehe eine weitere Möglichkeit in Betracht und entscheide je nach Situation",
-      "fr": "J’envisagerai une autre option et déciderai selon la situation"
     }
   },
   {
@@ -4372,8 +3670,7 @@ const FATE_DILEMMAS = [
     },
     "stats": {
       "a": 53,
-      "b": 47,
-      "c": 20
+      "b": 47
     },
     "analysis": {
       "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
@@ -4382,14 +3679,6 @@ const FATE_DILEMMAS = [
       "pt": "A tua escolha mostra como costumas reagir em situações assim.",
       "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
       "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
-    },
-    "c": {
-      "ru": "Рассмотрю ещё один вариант и выберу по ситуации",
-      "en": "Consider another option and decide based on the situation",
-      "es": "Consideraré otra opción y decidiré según la situación",
-      "pt": "Vou considerar outra opção e decidir conforme a situação",
-      "de": "Ich ziehe eine weitere Möglichkeit in Betracht und entscheide je nach Situation",
-      "fr": "J’envisagerai une autre option et déciderai selon la situation"
     }
   },
   {
@@ -4419,8 +3708,7 @@ const FATE_DILEMMAS = [
     },
     "stats": {
       "a": 47,
-      "b": 53,
-      "c": 20
+      "b": 53
     },
     "analysis": {
       "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
@@ -4429,14 +3717,6 @@ const FATE_DILEMMAS = [
       "pt": "A tua escolha mostra como costumas reagir em situações assim.",
       "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
       "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
-    },
-    "c": {
-      "ru": "Рассмотрю ещё один вариант и выберу по ситуации",
-      "en": "Consider another option and decide based on the situation",
-      "es": "Consideraré otra opción y decidiré según la situación",
-      "pt": "Vou considerar outra opção e decidir conforme a situação",
-      "de": "Ich ziehe eine weitere Möglichkeit in Betracht und entscheide je nach Situation",
-      "fr": "J’envisagerai une autre option et déciderai selon la situation"
     }
   },
   {
@@ -4466,8 +3746,7 @@ const FATE_DILEMMAS = [
     },
     "stats": {
       "a": 47,
-      "b": 53,
-      "c": 20
+      "b": 53
     },
     "analysis": {
       "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
@@ -4476,14 +3755,6 @@ const FATE_DILEMMAS = [
       "pt": "A tua escolha mostra como costumas reagir em situações assim.",
       "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
       "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
-    },
-    "c": {
-      "ru": "Рассмотрю ещё один вариант и выберу по ситуации",
-      "en": "Consider another option and decide based on the situation",
-      "es": "Consideraré otra opción y decidiré según la situación",
-      "pt": "Vou considerar outra opção e decidir conforme a situação",
-      "de": "Ich ziehe eine weitere Möglichkeit in Betracht und entscheide je nach Situation",
-      "fr": "J’envisagerai une autre option et déciderai selon la situation"
     }
   },
   {
@@ -4513,8 +3784,7 @@ const FATE_DILEMMAS = [
     },
     "stats": {
       "a": 49,
-      "b": 51,
-      "c": 20
+      "b": 51
     },
     "analysis": {
       "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
@@ -4523,14 +3793,6 @@ const FATE_DILEMMAS = [
       "pt": "A tua escolha mostra como costumas reagir em situações assim.",
       "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
       "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
-    },
-    "c": {
-      "ru": "Рассмотрю ещё один вариант и выберу по ситуации",
-      "en": "Consider another option and decide based on the situation",
-      "es": "Consideraré otra opción y decidiré según la situación",
-      "pt": "Vou considerar outra opção e decidir conforme a situação",
-      "de": "Ich ziehe eine weitere Möglichkeit in Betracht und entscheide je nach Situation",
-      "fr": "J’envisagerai une autre option et déciderai selon la situation"
     }
   },
   {
@@ -4560,8 +3822,7 @@ const FATE_DILEMMAS = [
     },
     "stats": {
       "a": 51,
-      "b": 49,
-      "c": 20
+      "b": 49
     },
     "analysis": {
       "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
@@ -4570,14 +3831,6 @@ const FATE_DILEMMAS = [
       "pt": "A tua escolha mostra como costumas reagir em situações assim.",
       "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
       "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
-    },
-    "c": {
-      "ru": "Рассмотрю ещё один вариант и выберу по ситуации",
-      "en": "Consider another option and decide based on the situation",
-      "es": "Consideraré otra opción y decidiré según la situación",
-      "pt": "Vou considerar outra opção e decidir conforme a situação",
-      "de": "Ich ziehe eine weitere Möglichkeit in Betracht und entscheide je nach Situation",
-      "fr": "J’envisagerai une autre option et déciderai selon la situation"
     }
   },
   {
@@ -4607,8 +3860,7 @@ const FATE_DILEMMAS = [
     },
     "stats": {
       "a": 53,
-      "b": 47,
-      "c": 20
+      "b": 47
     },
     "analysis": {
       "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
@@ -4617,14 +3869,6 @@ const FATE_DILEMMAS = [
       "pt": "A tua escolha mostra como costumas reagir em situações assim.",
       "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
       "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
-    },
-    "c": {
-      "ru": "Рассмотрю ещё один вариант и выберу по ситуации",
-      "en": "Consider another option and decide based on the situation",
-      "es": "Consideraré otra opción y decidiré según la situación",
-      "pt": "Vou considerar outra opção e decidir conforme a situação",
-      "de": "Ich ziehe eine weitere Möglichkeit in Betracht und entscheide je nach Situation",
-      "fr": "J’envisagerai une autre option et déciderai selon la situation"
     }
   },
   {
@@ -4654,8 +3898,7 @@ const FATE_DILEMMAS = [
     },
     "stats": {
       "a": 47,
-      "b": 53,
-      "c": 20
+      "b": 53
     },
     "analysis": {
       "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
@@ -4664,14 +3907,6 @@ const FATE_DILEMMAS = [
       "pt": "A tua escolha mostra como costumas reagir em situações assim.",
       "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
       "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
-    },
-    "c": {
-      "ru": "Рассмотрю ещё один вариант и выберу по ситуации",
-      "en": "Consider another option and decide based on the situation",
-      "es": "Consideraré otra opción y decidiré según la situación",
-      "pt": "Vou considerar outra opção e decidir conforme a situação",
-      "de": "Ich ziehe eine weitere Möglichkeit in Betracht und entscheide je nach Situation",
-      "fr": "J’envisagerai une autre option et déciderai selon la situation"
     }
   },
   {
@@ -4701,8 +3936,7 @@ const FATE_DILEMMAS = [
     },
     "stats": {
       "a": 47,
-      "b": 53,
-      "c": 20
+      "b": 53
     },
     "analysis": {
       "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
@@ -4711,14 +3945,6 @@ const FATE_DILEMMAS = [
       "pt": "A tua escolha mostra como costumas reagir em situações assim.",
       "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
       "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
-    },
-    "c": {
-      "ru": "Рассмотрю ещё один вариант и выберу по ситуации",
-      "en": "Consider another option and decide based on the situation",
-      "es": "Consideraré otra opción y decidiré según la situación",
-      "pt": "Vou considerar outra opção e decidir conforme a situação",
-      "de": "Ich ziehe eine weitere Möglichkeit in Betracht und entscheide je nach Situation",
-      "fr": "J’envisagerai une autre option et déciderai selon la situation"
     }
   },
   {
@@ -4748,8 +3974,7 @@ const FATE_DILEMMAS = [
     },
     "stats": {
       "a": 49,
-      "b": 51,
-      "c": 20
+      "b": 51
     },
     "analysis": {
       "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
@@ -4758,14 +3983,6 @@ const FATE_DILEMMAS = [
       "pt": "A tua escolha mostra como costumas reagir em situações assim.",
       "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
       "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
-    },
-    "c": {
-      "ru": "Рассмотрю ещё один вариант и выберу по ситуации",
-      "en": "Consider another option and decide based on the situation",
-      "es": "Consideraré otra opción y decidiré según la situación",
-      "pt": "Vou considerar outra opção e decidir conforme a situação",
-      "de": "Ich ziehe eine weitere Möglichkeit in Betracht und entscheide je nach Situation",
-      "fr": "J’envisagerai une autre option et déciderai selon la situation"
     }
   },
   {
@@ -4795,8 +4012,7 @@ const FATE_DILEMMAS = [
     },
     "stats": {
       "a": 51,
-      "b": 49,
-      "c": 20
+      "b": 49
     },
     "analysis": {
       "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
@@ -4805,14 +4021,6 @@ const FATE_DILEMMAS = [
       "pt": "A tua escolha mostra como costumas reagir em situações assim.",
       "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
       "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
-    },
-    "c": {
-      "ru": "Рассмотрю ещё один вариант и выберу по ситуации",
-      "en": "Consider another option and decide based on the situation",
-      "es": "Consideraré otra opción y decidiré según la situación",
-      "pt": "Vou considerar outra opção e decidir conforme a situação",
-      "de": "Ich ziehe eine weitere Möglichkeit in Betracht und entscheide je nach Situation",
-      "fr": "J’envisagerai une autre option et déciderai selon la situation"
     }
   },
   {
@@ -4842,8 +4050,7 @@ const FATE_DILEMMAS = [
     },
     "stats": {
       "a": 53,
-      "b": 47,
-      "c": 20
+      "b": 47
     },
     "analysis": {
       "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
@@ -4852,14 +4059,6 @@ const FATE_DILEMMAS = [
       "pt": "A tua escolha mostra como costumas reagir em situações assim.",
       "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
       "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
-    },
-    "c": {
-      "ru": "Рассмотрю ещё один вариант и выберу по ситуации",
-      "en": "Consider another option and decide based on the situation",
-      "es": "Consideraré otra opción y decidiré según la situación",
-      "pt": "Vou considerar outra opção e decidir conforme a situação",
-      "de": "Ich ziehe eine weitere Möglichkeit in Betracht und entscheide je nach Situation",
-      "fr": "J’envisagerai une autre option et déciderai selon la situation"
     }
   },
   {
@@ -4889,8 +4088,7 @@ const FATE_DILEMMAS = [
     },
     "stats": {
       "a": 47,
-      "b": 53,
-      "c": 20
+      "b": 53
     },
     "analysis": {
       "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
@@ -4899,14 +4097,6 @@ const FATE_DILEMMAS = [
       "pt": "A tua escolha mostra como costumas reagir em situações assim.",
       "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
       "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
-    },
-    "c": {
-      "ru": "Рассмотрю ещё один вариант и выберу по ситуации",
-      "en": "Consider another option and decide based on the situation",
-      "es": "Consideraré otra opción y decidiré según la situación",
-      "pt": "Vou considerar outra opção e decidir conforme a situação",
-      "de": "Ich ziehe eine weitere Möglichkeit in Betracht und entscheide je nach Situation",
-      "fr": "J’envisagerai une autre option et déciderai selon la situation"
     }
   },
   {
@@ -4936,8 +4126,7 @@ const FATE_DILEMMAS = [
     },
     "stats": {
       "a": 47,
-      "b": 53,
-      "c": 20
+      "b": 53
     },
     "analysis": {
       "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
@@ -4946,14 +4135,6 @@ const FATE_DILEMMAS = [
       "pt": "A tua escolha mostra como costumas reagir em situações assim.",
       "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
       "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
-    },
-    "c": {
-      "ru": "Рассмотрю ещё один вариант и выберу по ситуации",
-      "en": "Consider another option and decide based on the situation",
-      "es": "Consideraré otra opción y decidiré según la situación",
-      "pt": "Vou considerar outra opção e decidir conforme a situação",
-      "de": "Ich ziehe eine weitere Möglichkeit in Betracht und entscheide je nach Situation",
-      "fr": "J’envisagerai une autre option et déciderai selon la situation"
     }
   },
   {
@@ -4983,8 +4164,7 @@ const FATE_DILEMMAS = [
     },
     "stats": {
       "a": 49,
-      "b": 51,
-      "c": 20
+      "b": 51
     },
     "analysis": {
       "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
@@ -4993,14 +4173,6 @@ const FATE_DILEMMAS = [
       "pt": "A tua escolha mostra como costumas reagir em situações assim.",
       "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
       "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
-    },
-    "c": {
-      "ru": "Рассмотрю ещё один вариант и выберу по ситуации",
-      "en": "Consider another option and decide based on the situation",
-      "es": "Consideraré otra opción y decidiré según la situación",
-      "pt": "Vou considerar outra opção e decidir conforme a situação",
-      "de": "Ich ziehe eine weitere Möglichkeit in Betracht und entscheide je nach Situation",
-      "fr": "J’envisagerai une autre option et déciderai selon la situation"
     }
   },
   {
@@ -5030,8 +4202,7 @@ const FATE_DILEMMAS = [
     },
     "stats": {
       "a": 51,
-      "b": 49,
-      "c": 20
+      "b": 49
     },
     "analysis": {
       "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
@@ -5040,14 +4211,6 @@ const FATE_DILEMMAS = [
       "pt": "A tua escolha mostra como costumas reagir em situações assim.",
       "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
       "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
-    },
-    "c": {
-      "ru": "Рассмотрю ещё один вариант и выберу по ситуации",
-      "en": "Consider another option and decide based on the situation",
-      "es": "Consideraré otra opción y decidiré según la situación",
-      "pt": "Vou considerar outra opção e decidir conforme a situação",
-      "de": "Ich ziehe eine weitere Möglichkeit in Betracht und entscheide je nach Situation",
-      "fr": "J’envisagerai une autre option et déciderai selon la situation"
     }
   },
   {
@@ -5077,8 +4240,7 @@ const FATE_DILEMMAS = [
     },
     "stats": {
       "a": 53,
-      "b": 47,
-      "c": 20
+      "b": 47
     },
     "analysis": {
       "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
@@ -5087,14 +4249,6 @@ const FATE_DILEMMAS = [
       "pt": "A tua escolha mostra como costumas reagir em situações assim.",
       "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
       "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
-    },
-    "c": {
-      "ru": "Рассмотрю ещё один вариант и выберу по ситуации",
-      "en": "Consider another option and decide based on the situation",
-      "es": "Consideraré otra opción y decidiré según la situación",
-      "pt": "Vou considerar outra opção e decidir conforme a situação",
-      "de": "Ich ziehe eine weitere Möglichkeit in Betracht und entscheide je nach Situation",
-      "fr": "J’envisagerai une autre option et déciderai selon la situation"
     }
   },
   {
@@ -5124,8 +4278,7 @@ const FATE_DILEMMAS = [
     },
     "stats": {
       "a": 47,
-      "b": 53,
-      "c": 20
+      "b": 53
     },
     "analysis": {
       "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
@@ -5134,14 +4287,6 @@ const FATE_DILEMMAS = [
       "pt": "A tua escolha mostra como costumas reagir em situações assim.",
       "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
       "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
-    },
-    "c": {
-      "ru": "Рассмотрю ещё один вариант и выберу по ситуации",
-      "en": "Consider another option and decide based on the situation",
-      "es": "Consideraré otra opción y decidiré según la situación",
-      "pt": "Vou considerar outra opção e decidir conforme a situação",
-      "de": "Ich ziehe eine weitere Möglichkeit in Betracht und entscheide je nach Situation",
-      "fr": "J’envisagerai une autre option et déciderai selon la situation"
     }
   },
   {
@@ -5171,8 +4316,7 @@ const FATE_DILEMMAS = [
     },
     "stats": {
       "a": 47,
-      "b": 53,
-      "c": 20
+      "b": 53
     },
     "analysis": {
       "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
@@ -5181,14 +4325,6 @@ const FATE_DILEMMAS = [
       "pt": "A tua escolha mostra como costumas reagir em situações assim.",
       "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
       "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
-    },
-    "c": {
-      "ru": "Рассмотрю ещё один вариант и выберу по ситуации",
-      "en": "Consider another option and decide based on the situation",
-      "es": "Consideraré otra opción y decidiré según la situación",
-      "pt": "Vou considerar outra opção e decidir conforme a situação",
-      "de": "Ich ziehe eine weitere Möglichkeit in Betracht und entscheide je nach Situation",
-      "fr": "J’envisagerai une autre option et déciderai selon la situation"
     }
   },
   {
@@ -5218,8 +4354,7 @@ const FATE_DILEMMAS = [
     },
     "stats": {
       "a": 49,
-      "b": 51,
-      "c": 20
+      "b": 51
     },
     "analysis": {
       "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
@@ -5228,14 +4363,6 @@ const FATE_DILEMMAS = [
       "pt": "A tua escolha mostra como costumas reagir em situações assim.",
       "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
       "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
-    },
-    "c": {
-      "ru": "Рассмотрю ещё один вариант и выберу по ситуации",
-      "en": "Consider another option and decide based on the situation",
-      "es": "Consideraré otra opción y decidiré según la situación",
-      "pt": "Vou considerar outra opção e decidir conforme a situação",
-      "de": "Ich ziehe eine weitere Möglichkeit in Betracht und entscheide je nach Situation",
-      "fr": "J’envisagerai une autre option et déciderai selon la situation"
     }
   },
   {
@@ -5265,8 +4392,7 @@ const FATE_DILEMMAS = [
     },
     "stats": {
       "a": 51,
-      "b": 49,
-      "c": 20
+      "b": 49
     },
     "analysis": {
       "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
@@ -5275,14 +4401,6 @@ const FATE_DILEMMAS = [
       "pt": "A tua escolha mostra como costumas reagir em situações assim.",
       "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
       "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
-    },
-    "c": {
-      "ru": "Рассмотрю ещё один вариант и выберу по ситуации",
-      "en": "Consider another option and decide based on the situation",
-      "es": "Consideraré otra opción y decidiré según la situación",
-      "pt": "Vou considerar outra opção e decidir conforme a situação",
-      "de": "Ich ziehe eine weitere Möglichkeit in Betracht und entscheide je nach Situation",
-      "fr": "J’envisagerai une autre option et déciderai selon la situation"
     }
   },
   {
@@ -5312,8 +4430,7 @@ const FATE_DILEMMAS = [
     },
     "stats": {
       "a": 53,
-      "b": 47,
-      "c": 20
+      "b": 47
     },
     "analysis": {
       "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
@@ -5322,14 +4439,6 @@ const FATE_DILEMMAS = [
       "pt": "A tua escolha mostra como costumas reagir em situações assim.",
       "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
       "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
-    },
-    "c": {
-      "ru": "Рассмотрю ещё один вариант и выберу по ситуации",
-      "en": "Consider another option and decide based on the situation",
-      "es": "Consideraré otra opción y decidiré según la situación",
-      "pt": "Vou considerar outra opção e decidir conforme a situação",
-      "de": "Ich ziehe eine weitere Möglichkeit in Betracht und entscheide je nach Situation",
-      "fr": "J’envisagerai une autre option et déciderai selon la situation"
     }
   },
   {
@@ -5359,8 +4468,7 @@ const FATE_DILEMMAS = [
     },
     "stats": {
       "a": 47,
-      "b": 53,
-      "c": 20
+      "b": 53
     },
     "analysis": {
       "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
@@ -5369,22 +4477,17 @@ const FATE_DILEMMAS = [
       "pt": "A tua escolha mostra como costumas reagir em situações assim.",
       "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
       "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
-    },
-    "c": {
-      "ru": "Рассмотрю ещё один вариант и выберу по ситуации",
-      "en": "Consider another option and decide based on the situation",
-      "es": "Consideraré otra opción y decidiré según la situación",
-      "pt": "Vou considerar outra opção e decidir conforme a situação",
-      "de": "Ich ziehe eine weitere Möglichkeit in Betracht und entscheide je nach Situation",
-      "fr": "J’envisagerai une autre option et déciderai selon la situation"
     }
   }
 ];
-const FATE_DILEMMAS_UNIQUE_100 = [{"question":{"ru":"Тебе предлагают работу мечты, но переезд неизбежен. Что перевесит при решении?","en":"You are offered your dream job, but moving is unavoidable. What matters most in your decision?"},"a":{"ru":"Карьерный рост","en":"Карьерный рост"},"b":{"ru":"Стабильность привычной жизни","en":"Стабильность привычной жизни"},"c":{"ru":"Возможность начать всё заново","en":"Возможность начать всё заново"},"stats":{"a":37,"b":31,"c":32},"analysis":{"ru":"Твой выбор отражает один из возможных способов смотреть на эту ситуацию. Здесь нет единственно правильного ответа.","en":"Your choice reflects one possible way of looking at this situation. There is no single correct answer."}},{"question":{"ru":"Как ты поступишь, если член семьи попросит о помощи в день, когда у тебя уже всё расписано?","en":"What would you do if a family member asked for help on a day when your schedule was already full?"},"a":{"ru":"Перенесу часть своих дел","en":"Перенесу часть своих дел"},"b":{"ru":"Попрошу помочь найти другой вариант","en":"Попрошу помочь найти другой вариант"},"c":{"ru":"Помогу, даже если придётся отказаться от планов","en":"Помогу, даже если придётся отказаться от планов"},"stats":{"a":44,"b":36,"c":20},"analysis":{"ru":"Твой выбор отражает один из возможных способов смотреть на эту ситуацию. Здесь нет единственно правильного ответа.","en":"Your choice reflects one possible way of looking at this situation. There is no single correct answer."}},{"question":{"ru":"Друг признался, что совершил серьёзную ошибку. Что ты сделаешь первым?","en":"A friend admits making a serious mistake. What do you do first?"},"a":{"ru":"Спокойно выслушаю","en":"Спокойно выслушаю"},"b":{"ru":"Сразу предложу решение","en":"Сразу предложу решение"},"c":{"ru":"Спрошу, чего он ждёт от меня","en":"Спрошу, чего он ждёт от меня"},"stats":{"a":51,"b":29,"c":20},"analysis":{"ru":"Твой выбор отражает один из возможных способов смотреть на эту ситуацию. Здесь нет единственно правильного ответа.","en":"Your choice reflects one possible way of looking at this situation. There is no single correct answer."}},{"question":{"ru":"Ты получил неожиданную крупную сумму денег. На что потратишь её в первую очередь?","en":"You receive an unexpected large sum of money. What do you spend it on first?"},"a":{"ru":"Закрою важные расходы","en":"Закрою важные расходы"},"b":{"ru":"Отложу большую часть","en":"Отложу большую часть"},"c":{"ru":"Куплю то, о чём давно мечтал","en":"Куплю то, о чём давно мечтал"},"stats":{"a":58,"b":22,"c":20},"analysis":{"ru":"Твой выбор отражает один из возможных способов смотреть на эту ситуацию. Здесь нет единственно правильного ответа.","en":"Your choice reflects one possible way of looking at this situation. There is no single correct answer."}},{"question":{"ru":"Твой близкий человек выбирает путь, который тебе кажется ошибочным. Как поступишь?","en":"Someone close to you chooses a path you think is wrong. What do you do?"},"a":{"ru":"Объясню свои опасения","en":"Объясню свои опасения"},"b":{"ru":"Дам ему самому принять решение","en":"Дам ему самому принять решение"},"c":{"ru":"Постараюсь показать последствия на примере","en":"Постараюсь показать последствия на примере"},"stats":{"a":40,"b":40,"c":20},"analysis":{"ru":"Твой выбор отражает один из возможных способов смотреть на эту ситуацию. Здесь нет единственно правильного ответа.","en":"Your choice reflects one possible way of looking at this situation. There is no single correct answer."}},{"question":{"ru":"В компании обсуждают человека, которого нет рядом. Ты замечаешь, что разговор становится неприятным. Что сделаешь?","en":"People are discussing someone who is absent, and the conversation turns unpleasant. What do you do?"},"a":{"ru":"Переведу разговор","en":"Переведу разговор"},"b":{"ru":"Скажу, что это несправедливо","en":"Скажу, что это несправедливо"},"c":{"ru":"Останусь нейтральным","en":"Останусь нейтральным"},"stats":{"a":47,"b":33,"c":20},"analysis":{"ru":"Твой выбор отражает один из возможных способов смотреть на эту ситуацию. Здесь нет единственно правильного ответа.","en":"Your choice reflects one possible way of looking at this situation. There is no single correct answer."}},{"question":{"ru":"Ты обещал себе отдохнуть, но появляется срочная возможность заработать. Что выберешь?","en":"You promised yourself a day off, but an urgent opportunity to earn money appears. What do you choose?"},"a":{"ru":"Останусь отдыхать","en":"Останусь отдыхать"},"b":{"ru":"Возьмусь за возможность","en":"Возьмусь за возможность"},"c":{"ru":"Попробую совместить оба варианта","en":"Попробую совместить оба варианта"},"stats":{"a":54,"b":26,"c":20},"analysis":{"ru":"Твой выбор отражает один из возможных способов смотреть на эту ситуацию. Здесь нет единственно правильного ответа.","en":"Your choice reflects one possible way of looking at this situation. There is no single correct answer."}},{"question":{"ru":"Как ты реагируешь, когда твой план неожиданно рушится утром?","en":"How do you react when your plan suddenly falls apart in the morning?"},"a":{"ru":"Быстро строю новый план","en":"Быстро строю новый план"},"b":{"ru":"Делаю только самое необходимое","en":"Делаю только самое необходимое"},"c":{"ru":"Сначала беру паузу и успокаиваюсь","en":"Сначала беру паузу и успокаиваюсь"},"stats":{"a":61,"b":19,"c":20},"analysis":{"ru":"Твой выбор отражает один из возможных способов смотреть на эту ситуацию. Здесь нет единственно правильного ответа.","en":"Your choice reflects one possible way of looking at this situation. There is no single correct answer."}},{"question":{"ru":"Тебе нужно выбрать квартиру: дороже, но ближе к центру, или дешевле, но дальше. Что важнее?","en":"You must choose between a more expensive central apartment and a cheaper one farther away. What matters more?"},"a":{"ru":"Экономия","en":"Экономия"},"b":{"ru":"Удобство каждый день","en":"Удобство каждый день"},"c":{"ru":"Перспектива района","en":"Перспектива района"},"stats":{"a":43,"b":32,"c":25},"analysis":{"ru":"Твой выбор отражает один из возможных способов смотреть на эту ситуацию. Здесь нет единственно правильного ответа.","en":"Your choice reflects one possible way of looking at this situation. There is no single correct answer."}},{"question":{"ru":"Ты видишь, что коллега присвоил себе результат твоей работы. Что сделаешь?","en":"You notice a colleague taking credit for your work. What do you do?"},"a":{"ru":"Спокойно обозначу свой вклад","en":"Спокойно обозначу свой вклад"},"b":{"ru":"Сначала поговорю с ним лично","en":"Сначала поговорю с ним лично"},"c":{"ru":"Сразу обращусь к руководителю","en":"Сразу обращусь к руководителю"},"stats":{"a":50,"b":30,"c":20},"analysis":{"ru":"Твой выбор отражает один из возможных способов смотреть на эту ситуацию. Здесь нет единственно правильного ответа.","en":"Your choice reflects one possible way of looking at this situation. There is no single correct answer."}},{"question":{"ru":"Как ты поступишь, если тебе не ответили на важное сообщение весь день?","en":"What do you do when an important message gets no reply all day?"},"a":{"ru":"Напишу ещё раз","en":"Напишу ещё раз"},"b":{"ru":"Подожду до завтра","en":"Подожду до завтра"},"c":{"ru":"Позвоню, если вопрос срочный","en":"Позвоню, если вопрос срочный"},"stats":{"a":57,"b":23,"c":20},"analysis":{"ru":"Твой выбор отражает один из возможных способов смотреть на эту ситуацию. Здесь нет единственно правильного ответа.","en":"Your choice reflects one possible way of looking at this situation. There is no single correct answer."}},{"question":{"ru":"Тебе предлагают дружбу после конфликта, но доверие ещё не восстановилось. Что выберешь?","en":"Someone offers friendship after a conflict, but trust has not returned. What do you choose?"},"a":{"ru":"Дам шанс постепенно","en":"Дам шанс постепенно"},"b":{"ru":"Сначала потребую честного разговора","en":"Сначала потребую честного разговора"},"c":{"ru":"Оставлю отношения в прошлом","en":"Оставлю отношения в прошлом"},"stats":{"a":39,"b":36,"c":25},"analysis":{"ru":"Твой выбор отражает один из возможных способов смотреть на эту ситуацию. Здесь нет единственно правильного ответа.","en":"Your choice reflects one possible way of looking at this situation. There is no single correct answer."}},{"question":{"ru":"Если ребёнок спрашивает тебя о том, чего ты сам не знаешь, что скажешь?","en":"If a child asks you something you do not know, what do you say?"},"a":{"ru":"Честно признаюсь","en":"Честно признаюсь"},"b":{"ru":"Предложу найти ответ вместе","en":"Предложу найти ответ вместе"},"c":{"ru":"Скажу, что узнаю позже","en":"Скажу, что узнаю позже"},"stats":{"a":46,"b":34,"c":20},"analysis":{"ru":"Твой выбор отражает один из возможных способов смотреть на эту ситуацию. Здесь нет единственно правильного ответа.","en":"Your choice reflects one possible way of looking at this situation. There is no single correct answer."}},{"question":{"ru":"Тебе дают один свободный месяц без обязательств. Как используешь его?","en":"You get one free month with no obligations. How do you use it?"},"a":{"ru":"Путешествую","en":"Путешествую"},"b":{"ru":"Учусь чему-то новому","en":"Учусь чему-то новому"},"c":{"ru":"Отдыхаю и восстанавливаюсь","en":"Отдыхаю и восстанавливаюсь"},"stats":{"a":53,"b":27,"c":20},"analysis":{"ru":"Твой выбор отражает один из возможных способов смотреть на эту ситуацию. Здесь нет единственно правильного ответа.","en":"Your choice reflects one possible way of looking at this situation. There is no single correct answer."}},{"question":{"ru":"Ты узнаёшь, что твой старый знакомый добился большого успеха. Что чувствуешь первым?","en":"You learn that an old acquaintance achieved great success. What do you feel first?"},"a":{"ru":"Искреннюю радость","en":"Искреннюю радость"},"b":{"ru":"Мотивацию сравнить себя с ним","en":"Мотивацию сравнить себя с ним"},"c":{"ru":"Любопытство к его пути","en":"Любопытство к его пути"},"stats":{"a":60,"b":20,"c":20},"analysis":{"ru":"Твой выбор отражает один из возможных способов смотреть на эту ситуацию. Здесь нет единственно правильного ответа.","en":"Your choice reflects one possible way of looking at this situation. There is no single correct answer."}},{"question":{"ru":"В споре ты понимаешь, что твоя позиция слабее. Как поступишь?","en":"During an argument you realize your position is weaker. What do you do?"},"a":{"ru":"Признаю это","en":"Признаю это"},"b":{"ru":"Попробую найти компромисс","en":"Попробую найти компромисс"},"c":{"ru":"Продолжу спорить до новых аргументов","en":"Продолжу спорить до новых аргументов"},"stats":{"a":42,"b":38,"c":20},"analysis":{"ru":"Твой выбор отражает один из возможных способов смотреть на эту ситуацию. Здесь нет единственно правильного ответа.","en":"Your choice reflects one possible way of looking at this situation. There is no single correct answer."}},{"question":{"ru":"Ты можешь изменить одну вещь в своём распорядке. Что выберешь?","en":"You can change one thing in your daily routine. What do you choose?"},"a":{"ru":"Больше сна","en":"Больше сна"},"b":{"ru":"Больше времени на важные цели","en":"Больше времени на важные цели"},"c":{"ru":"Меньше бесполезных дел","en":"Меньше бесполезных дел"},"stats":{"a":49,"b":31,"c":20},"analysis":{"ru":"Твой выбор отражает один из возможных способов смотреть на эту ситуацию. Здесь нет единственно правильного ответа.","en":"Your choice reflects one possible way of looking at this situation. There is no single correct answer."}},{"question":{"ru":"Как ты относишься к человеку, который редко проявляет эмоции?","en":"How do you view someone who rarely shows emotions?"},"a":{"ru":"Не делаю выводов","en":"Не делаю выводов"},"b":{"ru":"Пытаюсь понять его характер","en":"Пытаюсь понять его характер"},"c":{"ru":"Держу дистанцию, пока не узнаю его лучше","en":"Держу дистанцию, пока не узнаю его лучше"},"stats":{"a":56,"b":24,"c":20},"analysis":{"ru":"Твой выбор отражает один из возможных способов смотреть на эту ситуацию. Здесь нет единственно правильного ответа.","en":"Your choice reflects one possible way of looking at this situation. There is no single correct answer."}},{"question":{"ru":"Тебе поручили дело без чётких инструкций. Что сделаешь?","en":"You are given a task with no clear instructions. What do you do?"},"a":{"ru":"Уточню ожидания","en":"Уточню ожидания"},"b":{"ru":"Начну и скорректирую по ходу","en":"Начну и скорректирую по ходу"},"c":{"ru":"Сам составлю план","en":"Сам составлю план"},"stats":{"a":38,"b":42,"c":20},"analysis":{"ru":"Твой выбор отражает один из возможных способов смотреть на эту ситуацию. Здесь нет единственно правильного ответа.","en":"Your choice reflects one possible way of looking at this situation. There is no single correct answer."}},{"question":{"ru":"Если твой друг переезжает далеко, что для тебя важнее сохранить?","en":"If your friend moves far away, what matters most to preserve?"},"a":{"ru":"Регулярное общение","en":"Регулярное общение"},"b":{"ru":"Общие традиции","en":"Общие традиции"},"c":{"ru":"Готовность встретиться при возможности","en":"Готовность встретиться при возможности"},"stats":{"a":45,"b":35,"c":20},"analysis":{"ru":"Твой выбор отражает один из возможных способов смотреть на эту ситуацию. Здесь нет единственно правильного ответа.","en":"Your choice reflects one possible way of looking at this situation. There is no single correct answer."}},{"question":{"ru":"Ты нашёл старую фотографию человека, с которым давно не общаешься. Что сделаешь?","en":"You find an old photo of someone you no longer talk to. What do you do?"},"a":{"ru":"Оставлю её себе","en":"Оставлю её себе"},"b":{"ru":"Напишу этому человеку","en":"Напишу этому человеку"},"c":{"ru":"Просто улыбнусь воспоминанию","en":"Просто улыбнусь воспоминанию"},"stats":{"a":52,"b":28,"c":20},"analysis":{"ru":"Твой выбор отражает один из возможных способов смотреть на эту ситуацию. Здесь нет единственно правильного ответа.","en":"Your choice reflects one possible way of looking at this situation. There is no single correct answer."}},{"question":{"ru":"Какой подарок тебе приятнее получить от близкого человека?","en":"Which gift is more meaningful to receive from someone close?"},"a":{"ru":"Полезный","en":"Полезный"},"b":{"ru":"Сделанный специально для меня","en":"Сделанный специально для меня"},"c":{"ru":"Связанный с общим воспоминанием","en":"Связанный с общим воспоминанием"},"stats":{"a":59,"b":21,"c":20},"analysis":{"ru":"Твой выбор отражает один из возможных способов смотреть на эту ситуацию. Здесь нет единственно правильного ответа.","en":"Your choice reflects one possible way of looking at this situation. There is no single correct answer."}},{"question":{"ru":"Ты опоздал на встречу по своей вине. Как поступишь?","en":"You are late to a meeting because of your own mistake. What do you do?"},"a":{"ru":"Сразу извинюсь","en":"Сразу извинюсь"},"b":{"ru":"Коротко объясню причину","en":"Коротко объясню причину"},"c":{"ru":"Предложу компенсировать неудобство","en":"Предложу компенсировать неудобство"},"stats":{"a":41,"b":39,"c":20},"analysis":{"ru":"Твой выбор отражает один из возможных способов смотреть на эту ситуацию. Здесь нет единственно правильного ответа.","en":"Your choice reflects one possible way of looking at this situation. There is no single correct answer."}},{"question":{"ru":"Тебе нужно провести день без телефона. Что будет самым сложным?","en":"You have to spend a day without your phone. What would be hardest?"},"a":{"ru":"Не проверять сообщения","en":"Не проверять сообщения"},"b":{"ru":"Не пользоваться картами и сервисами","en":"Не пользоваться картами и сервисами"},"c":{"ru":"Не отвлекаться привычным способом","en":"Не отвлекаться привычным способом"},"stats":{"a":48,"b":32,"c":20},"analysis":{"ru":"Твой выбор отражает один из возможных способов смотреть на эту ситуацию. Здесь нет единственно правильного ответа.","en":"Your choice reflects one possible way of looking at this situation. There is no single correct answer."}},{"question":{"ru":"Если сосед попросит присмотреть за его питомцем, но ты не уверен в своих силах?","en":"If a neighbor asks you to look after a pet but you are unsure you can handle it?"},"a":{"ru":"Честно откажусь","en":"Честно откажусь"},"b":{"ru":"Попробую помочь с инструкциями","en":"Попробую помочь с инструкциями"},"c":{"ru":"Предложу найти другого человека","en":"Предложу найти другого человека"},"stats":{"a":55,"b":25,"c":20},"analysis":{"ru":"Твой выбор отражает один из возможных способов смотреть на эту ситуацию. Здесь нет единственно правильного ответа.","en":"Your choice reflects one possible way of looking at this situation. There is no single correct answer."}},{"question":{"ru":"Как ты выбираешь ресторан в новом городе?","en":"How do you choose a restaurant in a new city?"},"a":{"ru":"По отзывам","en":"По отзывам"},"b":{"ru":"По атмосфере и виду","en":"По атмосфере и виду"},"c":{"ru":"Спрашиваю местных","en":"Спрашиваю местных"},"stats":{"a":37,"b":43,"c":20},"analysis":{"ru":"Твой выбор отражает один из возможных способов смотреть на эту ситуацию. Здесь нет единственно правильного ответа.","en":"Your choice reflects one possible way of looking at this situation. There is no single correct answer."}},{"question":{"ru":"Ты заметил ошибку в счёте магазина в свою пользу. Что сделаешь?","en":"You notice a checkout error that benefits you. What do you do?"},"a":{"ru":"Сообщу кассиру","en":"Сообщу кассиру"},"b":{"ru":"Проверю чек ещё раз","en":"Проверю чек ещё раз"},"c":{"ru":"Исправлю ошибку, даже если это неудобно","en":"Исправлю ошибку, даже если это неудобно"},"stats":{"a":44,"b":36,"c":20},"analysis":{"ru":"Твой выбор отражает один из возможных способов смотреть на эту ситуацию. Здесь нет единственно правильного ответа.","en":"Your choice reflects one possible way of looking at this situation. There is no single correct answer."}},{"question":{"ru":"Тебе предлагают выступить перед большой аудиторией. Что сильнее всего влияет на решение?","en":"You are asked to speak before a large audience. What affects your decision most?"},"a":{"ru":"Интерес к теме","en":"Интерес к теме"},"b":{"ru":"Страх оценки","en":"Страх оценки"},"c":{"ru":"Возможность попробовать себя","en":"Возможность попробовать себя"},"stats":{"a":51,"b":29,"c":20},"analysis":{"ru":"Твой выбор отражает один из возможных способов смотреть на эту ситуацию. Здесь нет единственно правильного ответа.","en":"Your choice reflects one possible way of looking at this situation. There is no single correct answer."}},{"question":{"ru":"Как ты реагируешь на человека, который постоянно перебивает?","en":"How do you react to someone who constantly interrupts?"},"a":{"ru":"Спокойно остановлю его","en":"Спокойно остановлю его"},"b":{"ru":"Дам договорить и продолжу","en":"Дам договорить и продолжу"},"c":{"ru":"Сменю формат разговора","en":"Сменю формат разговора"},"stats":{"a":58,"b":22,"c":20},"analysis":{"ru":"Твой выбор отражает один из возможных способов смотреть на эту ситуацию. Здесь нет единственно правильного ответа.","en":"Your choice reflects one possible way of looking at this situation. There is no single correct answer."}},{"question":{"ru":"Если тебе нужно научиться новому навыку за неделю, как начнёшь?","en":"If you need to learn a new skill in a week, how do you start?"},"a":{"ru":"Составлю программу","en":"Составлю программу"},"b":{"ru":"Сразу начну практиковаться","en":"Сразу начну практиковаться"},"c":{"ru":"Найду человека, который уже умеет","en":"Найду человека, который уже умеет"},"stats":{"a":40,"b":31,"c":29},"analysis":{"ru":"Твой выбор отражает один из возможных способов смотреть на эту ситуацию. Здесь нет единственно правильного ответа.","en":"Your choice reflects one possible way of looking at this situation. There is no single correct answer."}},{"question":{"ru":"Ты можешь сохранить только одну вещь из старого дома. Что выберешь?","en":"You can keep only one thing from an old home. What do you choose?"},"a":{"ru":"Фотографии","en":"Фотографии"},"b":{"ru":"Предмет с историей","en":"Предмет с историей"},"c":{"ru":"Что-то действительно полезное","en":"Что-то действительно полезное"},"stats":{"a":47,"b":33,"c":20},"analysis":{"ru":"Твой выбор отражает один из возможных способов смотреть на эту ситуацию. Здесь нет единственно правильного ответа.","en":"Your choice reflects one possible way of looking at this situation. There is no single correct answer."}},{"question":{"ru":"Что ты сделаешь, если случайно услышишь чужой личный разговор?","en":"What do you do if you accidentally overhear a private conversation?"},"a":{"ru":"Сделаю вид, что не слышал","en":"Сделаю вид, что не слышал"},"b":{"ru":"Уйду подальше","en":"Уйду подальше"},"c":{"ru":"Запомню только то, что нужно для безопасности","en":"Запомню только то, что нужно для безопасности"},"stats":{"a":54,"b":26,"c":20},"analysis":{"ru":"Твой выбор отражает один из возможных способов смотреть на эту ситуацию. Здесь нет единственно правильного ответа.","en":"Your choice reflects one possible way of looking at this situation. There is no single correct answer."}},{"question":{"ru":"Твой знакомый просит честную оценку своей работы. Что скажешь?","en":"An acquaintance asks for an honest assessment of their work. What do you say?"},"a":{"ru":"Сначала отмечу сильные стороны","en":"Сначала отмечу сильные стороны"},"b":{"ru":"Прямо укажу на слабые места","en":"Прямо укажу на слабые места"},"c":{"ru":"Дам конкретные шаги для улучшения","en":"Дам конкретные шаги для улучшения"},"stats":{"a":61,"b":19,"c":20},"analysis":{"ru":"Твой выбор отражает один из возможных способов смотреть на эту ситуацию. Здесь нет единственно правильного ответа.","en":"Your choice reflects one possible way of looking at this situation. There is no single correct answer."}},{"question":{"ru":"Ты должен выбрать между быстрым результатом и более качественным, но долгим вариантом.","en":"You must choose between a quick result and a slower but better one."},"a":{"ru":"Выберу качество","en":"Выберу качество"},"b":{"ru":"Выберу скорость","en":"Выберу скорость"},"c":{"ru":"Сравню последствия","en":"Сравню последствия"},"stats":{"a":43,"b":37,"c":20},"analysis":{"ru":"Твой выбор отражает один из возможных способов смотреть на эту ситуацию. Здесь нет единственно правильного ответа.","en":"Your choice reflects one possible way of looking at this situation. There is no single correct answer."}},{"question":{"ru":"Как ты реагируешь, когда кто-то неожиданно отменяет ваши планы?","en":"How do you react when someone unexpectedly cancels plans?"},"a":{"ru":"Предлагаю другой день","en":"Предлагаю другой день"},"b":{"ru":"Использую время для себя","en":"Использую время для себя"},"c":{"ru":"Сначала хочу понять причину","en":"Сначала хочу понять причину"},"stats":{"a":50,"b":30,"c":20},"analysis":{"ru":"Твой выбор отражает один из возможных способов смотреть на эту ситуацию. Здесь нет единственно правильного ответа.","en":"Your choice reflects one possible way of looking at this situation. There is no single correct answer."}},{"question":{"ru":"Тебе предлагают попробовать экстремальное развлечение. Что решит твой ответ?","en":"You are offered an extreme activity. What determines your answer?"},"a":{"ru":"Уровень риска","en":"Уровень риска"},"b":{"ru":"Интерес к новому","en":"Интерес к новому"},"c":{"ru":"Наличие надёжной компании","en":"Наличие надёжной компании"},"stats":{"a":57,"b":23,"c":20},"analysis":{"ru":"Твой выбор отражает один из возможных способов смотреть на эту ситуацию. Здесь нет единственно правильного ответа.","en":"Your choice reflects one possible way of looking at this situation. There is no single correct answer."}},{"question":{"ru":"Ты замечаешь, что близкий человек стал тише обычного. Что сделаешь?","en":"You notice someone close has become quieter than usual. What do you do?"},"a":{"ru":"Спрошу напрямую","en":"Спрошу напрямую"},"b":{"ru":"Дам время и буду рядом","en":"Дам время и буду рядом"},"c":{"ru":"Предложу отвлечься вместе","en":"Предложу отвлечься вместе"},"stats":{"a":39,"b":41,"c":20},"analysis":{"ru":"Твой выбор отражает один из возможных способов смотреть на эту ситуацию. Здесь нет единственно правильного ответа.","en":"Your choice reflects one possible way of looking at this situation. There is no single correct answer."}},{"question":{"ru":"Если тебе дали возможность задать один вопрос человеку из прошлого, что выберешь?","en":"If you could ask one question to someone from your past, what would you choose?"},"a":{"ru":"Почему всё произошло так","en":"Почему всё произошло так"},"b":{"ru":"Что бы ты изменил","en":"Что бы ты изменил"},"c":{"ru":"Счастлив ли ты сейчас","en":"Счастлив ли ты сейчас"},"stats":{"a":46,"b":32,"c":22},"analysis":{"ru":"Твой выбор отражает один из возможных способов смотреть на эту ситуацию. Здесь нет единственно правильного ответа.","en":"Your choice reflects one possible way of looking at this situation. There is no single correct answer."}},{"question":{"ru":"Как ты принимаешь решение о крупной покупке?","en":"How do you make a decision about a major purchase?"},"a":{"ru":"Сравниваю цены","en":"Сравниваю цены"},"b":{"ru":"Проверяю качество","en":"Проверяю качество"},"c":{"ru":"Жду, пока решение станет очевидным","en":"Жду, пока решение станет очевидным"},"stats":{"a":53,"b":27,"c":20},"analysis":{"ru":"Твой выбор отражает один из возможных способов смотреть на эту ситуацию. Здесь нет единственно правильного ответа.","en":"Your choice reflects one possible way of looking at this situation. There is no single correct answer."}},{"question":{"ru":"Тебе предлагают переехать в город, где ты никого не знаешь. Что привлекает больше всего?","en":"You are offered a move to a city where you know nobody. What attracts you most?"},"a":{"ru":"Новый опыт","en":"Новый опыт"},"b":{"ru":"Новые возможности","en":"Новые возможности"},"c":{"ru":"Свобода начать заново","en":"Свобода начать заново"},"stats":{"a":60,"b":20,"c":20},"analysis":{"ru":"Твой выбор отражает один из возможных способов смотреть на эту ситуацию. Здесь нет единственно правильного ответа.","en":"Your choice reflects one possible way of looking at this situation. There is no single correct answer."}},{"question":{"ru":"Что для тебя важнее в дружбе после десяти лет знакомства?","en":"What matters most in a friendship after ten years?"},"a":{"ru":"Доверие","en":"Доверие"},"b":{"ru":"Общие воспоминания","en":"Общие воспоминания"},"c":{"ru":"Возможность быть собой","en":"Возможность быть собой"},"stats":{"a":42,"b":36,"c":22},"analysis":{"ru":"Твой выбор отражает один из возможных способов смотреть на эту ситуацию. Здесь нет единственно правильного ответа.","en":"Your choice reflects one possible way of looking at this situation. There is no single correct answer."}},{"question":{"ru":"Ты получил критику от человека, которого уважаешь. Как поступишь?","en":"You receive criticism from someone you respect. What do you do?"},"a":{"ru":"Обдумаю её","en":"Обдумаю её"},"b":{"ru":"Попрошу конкретные примеры","en":"Попрошу конкретные примеры"},"c":{"ru":"Проверю результат на практике","en":"Проверю результат на практике"},"stats":{"a":49,"b":31,"c":20},"analysis":{"ru":"Твой выбор отражает один из возможных способов смотреть на эту ситуацию. Здесь нет единственно правильного ответа.","en":"Your choice reflects one possible way of looking at this situation. There is no single correct answer."}},{"question":{"ru":"Если тебе нужно выбрать подарок человеку, которого плохо знаешь?","en":"If you need to choose a gift for someone you barely know?"},"a":{"ru":"Что-то универсальное","en":"Что-то универсальное"},"b":{"ru":"Что-то связанное с его интересами","en":"Что-то связанное с его интересами"},"c":{"ru":"Сначала расспрошу знакомых","en":"Сначала расспрошу знакомых"},"stats":{"a":56,"b":24,"c":20},"analysis":{"ru":"Твой выбор отражает один из возможных способов смотреть на эту ситуацию. Здесь нет единственно правильного ответа.","en":"Your choice reflects one possible way of looking at this situation. There is no single correct answer."}},{"question":{"ru":"Как поступишь, если случайно испортил чужую вещь?","en":"What do you do if you accidentally damage someone else’s property?"},"a":{"ru":"Сразу признаюсь","en":"Сразу признаюсь"},"b":{"ru":"Предложу заменить","en":"Предложу заменить"},"c":{"ru":"Попробую сначала исправить","en":"Попробую сначала исправить"},"stats":{"a":38,"b":40,"c":22},"analysis":{"ru":"Твой выбор отражает один из возможных способов смотреть на эту ситуацию. Здесь нет единственно правильного ответа.","en":"Your choice reflects one possible way of looking at this situation. There is no single correct answer."}},{"question":{"ru":"Тебе нужно организовать поездку для нескольких людей. Что сделаешь первым?","en":"You need to organize a trip for several people. What do you do first?"},"a":{"ru":"Уточню бюджет","en":"Уточню бюджет"},"b":{"ru":"Соберу пожелания","en":"Соберу пожелания"},"c":{"ru":"Намечу маршрут","en":"Намечу маршрут"},"stats":{"a":45,"b":35,"c":20},"analysis":{"ru":"Твой выбор отражает один из возможных способов смотреть на эту ситуацию. Здесь нет единственно правильного ответа.","en":"Your choice reflects one possible way of looking at this situation. There is no single correct answer."}},{"question":{"ru":"Что ты делаешь, когда долго не можешь уснуть из-за мыслей?","en":"What do you do when thoughts keep you awake?"},"a":{"ru":"Записываю их","en":"Записываю их"},"b":{"ru":"Встаю и занимаюсь чем-то спокойным","en":"Встаю и занимаюсь чем-то спокойным"},"c":{"ru":"Пытаюсь просто отпустить их","en":"Пытаюсь просто отпустить их"},"stats":{"a":52,"b":28,"c":20},"analysis":{"ru":"Твой выбор отражает один из возможных способов смотреть на эту ситуацию. Здесь нет единственно правильного ответа.","en":"Your choice reflects one possible way of looking at this situation. There is no single correct answer."}},{"question":{"ru":"Ты узнаёшь, что знакомый говорит о тебе неправду. Что выберешь?","en":"You learn that an acquaintance is spreading a false story about you. What do you choose?"},"a":{"ru":"Поговорю с ним","en":"Поговорю с ним"},"b":{"ru":"Не стану реагировать","en":"Не стану реагировать"},"c":{"ru":"Объясню ситуацию тем, кого это касается","en":"Объясню ситуацию тем, кого это касается"},"stats":{"a":59,"b":21,"c":20},"analysis":{"ru":"Твой выбор отражает один из возможных способов смотреть на эту ситуацию. Здесь нет единственно правильного ответа.","en":"Your choice reflects one possible way of looking at this situation. There is no single correct answer."}},{"question":{"ru":"Как ты относишься к человеку, который часто меняет планы и интересы?","en":"How do you view someone who often changes plans and interests?"},"a":{"ru":"Как к любопытному человеку","en":"Как к любопытному человеку"},"b":{"ru":"Как к непостоянному","en":"Как к непостоянному"},"c":{"ru":"Пока просто наблюдаю","en":"Пока просто наблюдаю"},"stats":{"a":41,"b":39,"c":20},"analysis":{"ru":"Твой выбор отражает один из возможных способов смотреть на эту ситуацию. Здесь нет единственно правильного ответа.","en":"Your choice reflects one possible way of looking at this situation. There is no single correct answer."}},{"question":{"ru":"Тебе дают шанс начать проект, но результат никто не гарантирует. Что решит твой выбор?","en":"You can start a project with no guaranteed result. What decides your choice?"},"a":{"ru":"Потенциал","en":"Потенциал"},"b":{"ru":"Ресурсы","en":"Ресурсы"},"c":{"ru":"Личный интерес","en":"Личный интерес"},"stats":{"a":48,"b":32,"c":20},"analysis":{"ru":"Твой выбор отражает один из возможных способов смотреть на эту ситуацию. Здесь нет единственно правильного ответа.","en":"Your choice reflects one possible way of looking at this situation. There is no single correct answer."}},{"question":{"ru":"Как поступишь, если заметишь, что кто-то одинок на общем мероприятии?","en":"What do you do if you notice someone is alone at a gathering?"},"a":{"ru":"Подойду первым","en":"Подойду первым"},"b":{"ru":"Познакомлю его с кем-то","en":"Познакомлю его с кем-то"},"c":{"ru":"Не буду вмешиваться без причины","en":"Не буду вмешиваться без причины"},"stats":{"a":55,"b":25,"c":20},"analysis":{"ru":"Твой выбор отражает один из возможных способов смотреть на эту ситуацию. Здесь нет единственно правильного ответа.","en":"Your choice reflects one possible way of looking at this situation. There is no single correct answer."}},{"question":{"ru":"Если у тебя появляется новый сосед, что поможет быстрее привыкнуть друг к другу?","en":"If you get a new neighbor, what helps you become comfortable with each other?"},"a":{"ru":"Поздороваться и познакомиться","en":"Поздороваться и познакомиться"},"b":{"ru":"Предложить небольшую помощь","en":"Предложить небольшую помощь"},"c":{"ru":"Дать время привыкнуть","en":"Дать время привыкнуть"},"stats":{"a":37,"b":43,"c":20},"analysis":{"ru":"Твой выбор отражает один из возможных способов смотреть на эту ситуацию. Здесь нет единственно правильного ответа.","en":"Your choice reflects one possible way of looking at this situation. There is no single correct answer."}},{"question":{"ru":"Ты видишь очень красивый закат, но рядом никто не смотрит. Что сделаешь?","en":"You see a beautiful sunset while nobody around is watching. What do you do?"},"a":{"ru":"Сфотографирую","en":"Сфотографирую"},"b":{"ru":"Просто посмотрю","en":"Просто посмотрю"},"c":{"ru":"Позову близкого человека","en":"Позову близкого человека"},"stats":{"a":44,"b":36,"c":20},"analysis":{"ru":"Твой выбор отражает один из возможных способов смотреть на эту ситуацию. Здесь нет единственно правильного ответа.","en":"Your choice reflects one possible way of looking at this situation. There is no single correct answer."}},{"question":{"ru":"Как ты поступишь, если твоя идея на работе не получила поддержки?","en":"What do you do when your idea at work gets no support?"},"a":{"ru":"Уточню причины","en":"Уточню причины"},"b":{"ru":"Доработаю её","en":"Доработаю её"},"c":{"ru":"Переключусь на другую идею","en":"Переключусь на другую идею"},"stats":{"a":51,"b":29,"c":20},"analysis":{"ru":"Твой выбор отражает один из возможных способов смотреть на эту ситуацию. Здесь нет единственно правильного ответа.","en":"Your choice reflects one possible way of looking at this situation. There is no single correct answer."}},{"question":{"ru":"Тебе нужно выбрать новое хобби. Что привлечёт тебя сильнее?","en":"You need to choose a new hobby. What attracts you most?"},"a":{"ru":"Творчество","en":"Творчество"},"b":{"ru":"Движение","en":"Движение"},"c":{"ru":"Возможность знакомиться с людьми","en":"Возможность знакомиться с людьми"},"stats":{"a":58,"b":22,"c":20},"analysis":{"ru":"Твой выбор отражает один из возможных способов смотреть на эту ситуацию. Здесь нет единственно правильного ответа.","en":"Your choice reflects one possible way of looking at this situation. There is no single correct answer."}},{"question":{"ru":"Если ты случайно встретил человека, с которым был конфликт, как поступишь?","en":"If you unexpectedly meet someone you had a conflict with, what do you do?"},"a":{"ru":"Поздороваюсь спокойно","en":"Поздороваюсь спокойно"},"b":{"ru":"Сделаю вид, что не заметил","en":"Сделаю вид, что не заметил"},"c":{"ru":"Поговорю, если будет подходящий момент","en":"Поговорю, если будет подходящий момент"},"stats":{"a":40,"b":40,"c":20},"analysis":{"ru":"Твой выбор отражает один из возможных способов смотреть на эту ситуацию. Здесь нет единственно правильного ответа.","en":"Your choice reflects one possible way of looking at this situation. There is no single correct answer."}},{"question":{"ru":"Как ты реагируешь, когда младший человек даёт тебе хороший совет?","en":"How do you react when a younger person gives you good advice?"},"a":{"ru":"Слушаю без предубеждения","en":"Слушаю без предубеждения"},"b":{"ru":"Проверяю совет на практике","en":"Проверяю совет на практике"},"c":{"ru":"Уточняю его опыт","en":"Уточняю его опыт"},"stats":{"a":47,"b":33,"c":20},"analysis":{"ru":"Твой выбор отражает один из возможных способов смотреть на эту ситуацию. Здесь нет единственно правильного ответа.","en":"Your choice reflects one possible way of looking at this situation. There is no single correct answer."}},{"question":{"ru":"Тебе предлагают взять на себя чужую обязанность на один день. Что выберешь?","en":"You are asked to take someone else’s responsibility for one day. What do you choose?"},"a":{"ru":"Помогу, если могу","en":"Помогу, если могу"},"b":{"ru":"Попрошу заранее объяснить задачу","en":"Попрошу заранее объяснить задачу"},"c":{"ru":"Откажусь, если это мешает моим делам","en":"Откажусь, если это мешает моим делам"},"stats":{"a":54,"b":26,"c":20},"analysis":{"ru":"Твой выбор отражает один из возможных способов смотреть на эту ситуацию. Здесь нет единственно правильного ответа.","en":"Your choice reflects one possible way of looking at this situation. There is no single correct answer."}},{"question":{"ru":"Что важнее при выборе места для жизни: люди вокруг или само место?","en":"What matters more when choosing where to live: the people around you or the place itself?"},"a":{"ru":"Люди","en":"Люди"},"b":{"ru":"Инфраструктура и удобство","en":"Инфраструктура и удобство"},"c":{"ru":"Атмосфера","en":"Атмосфера"},"stats":{"a":61,"b":19,"c":20},"analysis":{"ru":"Твой выбор отражает один из возможных способов смотреть на эту ситуацию. Здесь нет единственно правильного ответа.","en":"Your choice reflects one possible way of looking at this situation. There is no single correct answer."}},{"question":{"ru":"Как ты поступишь, если увидишь потерянного ребёнка в общественном месте?","en":"What do you do if you see a lost child in a public place?"},"a":{"ru":"Сразу обращусь к сотрудникам","en":"Сразу обращусь к сотрудникам"},"b":{"ru":"Останусь рядом и помогу найти родителей","en":"Останусь рядом и помогу найти родителей"},"c":{"ru":"Позвоню в службу помощи","en":"Позвоню в службу помощи"},"stats":{"a":43,"b":31,"c":26},"analysis":{"ru":"Твой выбор отражает один из возможных способов смотреть на эту ситуацию. Здесь нет единственно правильного ответа.","en":"Your choice reflects one possible way of looking at this situation. There is no single correct answer."}},{"question":{"ru":"Тебе нужно объяснить сложную вещь человеку, который ничего о ней не знает. Как начнёшь?","en":"You need to explain something complex to someone who knows nothing about it. How do you start?"},"a":{"ru":"С простого примера","en":"С простого примера"},"b":{"ru":"С основной идеи","en":"С основной идеи"},"c":{"ru":"С вопроса о том, что ему уже известно","en":"С вопроса о том, что ему уже известно"},"stats":{"a":50,"b":30,"c":20},"analysis":{"ru":"Твой выбор отражает один из возможных способов смотреть на эту ситуацию. Здесь нет единственно правильного ответа.","en":"Your choice reflects one possible way of looking at this situation. There is no single correct answer."}},{"question":{"ru":"Как ты выбираешь, кому доверять важную личную информацию?","en":"How do you decide whom to trust with important personal information?"},"a":{"ru":"По прошлым поступкам","en":"По прошлым поступкам"},"b":{"ru":"По ощущению безопасности","en":"По ощущению безопасности"},"c":{"ru":"По тому, как человек хранит чужие секреты","en":"По тому, как человек хранит чужие секреты"},"stats":{"a":57,"b":23,"c":20},"analysis":{"ru":"Твой выбор отражает один из возможных способов смотреть на эту ситуацию. Здесь нет единственно правильного ответа.","en":"Your choice reflects one possible way of looking at this situation. There is no single correct answer."}},{"question":{"ru":"Если тебе предлагают работу с высокой зарплатой, но без свободного времени?","en":"If you are offered a high-paying job with almost no free time?"},"a":{"ru":"Соглашусь на время","en":"Соглашусь на время"},"b":{"ru":"Откажусь ради баланса","en":"Откажусь ради баланса"},"c":{"ru":"Попробую договориться об условиях","en":"Попробую договориться об условиях"},"stats":{"a":39,"b":35,"c":26},"analysis":{"ru":"Твой выбор отражает один из возможных способов смотреть на эту ситуацию. Здесь нет единственно правильного ответа.","en":"Your choice reflects one possible way of looking at this situation. There is no single correct answer."}},{"question":{"ru":"Твой друг забыл о твоём важном событии. Как воспримешь это?","en":"Your friend forgets an important event in your life. How do you take it?"},"a":{"ru":"Скажу, что мне было неприятно","en":"Скажу, что мне было неприятно"},"b":{"ru":"Постараюсь понять причину","en":"Постараюсь понять причину"},"c":{"ru":"Не буду делать выводов по одному случаю","en":"Не буду делать выводов по одному случаю"},"stats":{"a":46,"b":34,"c":20},"analysis":{"ru":"Твой выбор отражает один из возможных способов смотреть на эту ситуацию. Здесь нет единственно правильного ответа.","en":"Your choice reflects one possible way of looking at this situation. There is no single correct answer."}},{"question":{"ru":"Ты можешь провести вечер с одним человеком: с тем, кто тебя вдохновляет, или с тем, кто тебя хорошо понимает. Кого выберешь?","en":"You can spend an evening with one person: someone who inspires you or someone who understands you deeply. Who do you choose?"},"a":{"ru":"Того, кто вдохновляет","en":"Того, кто вдохновляет"},"b":{"ru":"Того, кто понимает","en":"Того, кто понимает"},"c":{"ru":"Выберу по настроению","en":"Выберу по настроению"},"stats":{"a":53,"b":27,"c":20},"analysis":{"ru":"Твой выбор отражает один из возможных способов смотреть на эту ситуацию. Здесь нет единственно правильного ответа.","en":"Your choice reflects one possible way of looking at this situation. There is no single correct answer."}},{"question":{"ru":"Как поступишь, если тебе доверили секрет, который может предотвратить чужую опасность?","en":"What do you do if you are trusted with a secret that could prevent someone’s danger?"},"a":{"ru":"Сначала оценю риск","en":"Сначала оценю риск"},"b":{"ru":"Предупрежу того, кому угрожает опасность","en":"Предупрежу того, кому угрожает опасность"},"c":{"ru":"Попрошу совета у компетентного человека","en":"Попрошу совета у компетентного человека"},"stats":{"a":60,"b":20,"c":20},"analysis":{"ru":"Твой выбор отражает один из возможных способов смотреть на эту ситуацию. Здесь нет единственно правильного ответа.","en":"Your choice reflects one possible way of looking at this situation. There is no single correct answer."}},{"question":{"ru":"Ты заметил, что твоя привычка отнимает слишком много времени. Что сделаешь?","en":"You notice a habit taking too much of your time. What do you do?"},"a":{"ru":"Установлю ограничение","en":"Установлю ограничение"},"b":{"ru":"Заменю её другой привычкой","en":"Заменю её другой привычкой"},"c":{"ru":"Буду отслеживать её несколько дней","en":"Буду отслеживать её несколько дней"},"stats":{"a":42,"b":38,"c":20},"analysis":{"ru":"Твой выбор отражает один из возможных способов смотреть на эту ситуацию. Здесь нет единственно правильного ответа.","en":"Your choice reflects one possible way of looking at this situation. There is no single correct answer."}},{"question":{"ru":"Что ты выберешь для выходного: заранее составленный день или полную свободу?","en":"For a day off, do you choose a planned schedule or complete freedom?"},"a":{"ru":"План","en":"План"},"b":{"ru":"Свободу","en":"Свободу"},"c":{"ru":"Небольшой план и пространство для спонтанности","en":"Небольшой план и пространство для спонтанности"},"stats":{"a":49,"b":31,"c":20},"analysis":{"ru":"Твой выбор отражает один из возможных способов смотреть на эту ситуацию. Здесь нет единственно правильного ответа.","en":"Your choice reflects one possible way of looking at this situation. There is no single correct answer."}},{"question":{"ru":"Если кто-то незнакомый делает тебе комплимент, как реагируешь?","en":"If a stranger compliments you, how do you react?"},"a":{"ru":"Просто благодарю","en":"Просто благодарю"},"b":{"ru":"Поддерживаю разговор","en":"Поддерживаю разговор"},"c":{"ru":"Смущаюсь и улыбаюсь","en":"Смущаюсь и улыбаюсь"},"stats":{"a":56,"b":24,"c":20},"analysis":{"ru":"Твой выбор отражает один из возможных способов смотреть на эту ситуацию. Здесь нет единственно правильного ответа.","en":"Your choice reflects one possible way of looking at this situation. There is no single correct answer."}},{"question":{"ru":"Тебе нужно принять решение за пять минут. Что поможет?","en":"You must make a decision in five minutes. What helps most?"},"a":{"ru":"Факты","en":"Факты"},"b":{"ru":"Интуиция","en":"Интуиция"},"c":{"ru":"Совет человека, которому доверяю","en":"Совет человека, которому доверяю"},"stats":{"a":38,"b":42,"c":20},"analysis":{"ru":"Твой выбор отражает один из возможных способов смотреть на эту ситуацию. Здесь нет единственно правильного ответа.","en":"Your choice reflects one possible way of looking at this situation. There is no single correct answer."}},{"question":{"ru":"Как ты поступишь, если твой любимый фильм оказался не таким хорошим при повторном просмотре?","en":"What do you do if a favorite movie feels less impressive on a rewatch?"},"a":{"ru":"Приму новое впечатление","en":"Приму новое впечатление"},"b":{"ru":"Попробую понять, что изменилось во мне","en":"Попробую понять, что изменилось во мне"},"c":{"ru":"Вспомню, почему он был важен тогда","en":"Вспомню, почему он был важен тогда"},"stats":{"a":45,"b":35,"c":20},"analysis":{"ru":"Твой выбор отражает один из возможных способов смотреть на эту ситуацию. Здесь нет единственно правильного ответа.","en":"Your choice reflects one possible way of looking at this situation. There is no single correct answer."}},{"question":{"ru":"Если ты видишь красивую вещь, которую можешь купить, но она тебе не нужна?","en":"If you see something beautiful you can afford but do not need?"},"a":{"ru":"Не куплю","en":"Не куплю"},"b":{"ru":"Возьму время подумать","en":"Возьму время подумать"},"c":{"ru":"Куплю, если это действительно порадует","en":"Куплю, если это действительно порадует"},"stats":{"a":52,"b":28,"c":20},"analysis":{"ru":"Твой выбор отражает один из возможных способов смотреть на эту ситуацию. Здесь нет единственно правильного ответа.","en":"Your choice reflects one possible way of looking at this situation. There is no single correct answer."}},{"question":{"ru":"Как ты относишься к переменам в городе, где живёшь?","en":"How do you feel about changes in the city where you live?"},"a":{"ru":"Люблю обновления","en":"Люблю обновления"},"b":{"ru":"Сначала сравниваю с прошлым","en":"Сначала сравниваю с прошлым"},"c":{"ru":"Предпочитаю знакомое","en":"Предпочитаю знакомое"},"stats":{"a":59,"b":21,"c":20},"analysis":{"ru":"Твой выбор отражает один из возможных способов смотреть на эту ситуацию. Здесь нет единственно правильного ответа.","en":"Your choice reflects one possible way of looking at this situation. There is no single correct answer."}},{"question":{"ru":"Тебе нужно выбрать между путешествием одному и поездкой с друзьями. Что привлекает?","en":"You must choose between traveling alone and traveling with friends. What attracts you?"},"a":{"ru":"Свобода","en":"Свобода"},"b":{"ru":"Компания","en":"Компания"},"c":{"ru":"Зависит от места","en":"Зависит от места"},"stats":{"a":41,"b":39,"c":20},"analysis":{"ru":"Твой выбор отражает один из возможных способов смотреть на эту ситуацию. Здесь нет единственно правильного ответа.","en":"Your choice reflects one possible way of looking at this situation. There is no single correct answer."}},{"question":{"ru":"Как ты поступишь, если твой знакомый просит совета, но уже принял решение?","en":"What do you do when someone asks for advice after already making a decision?"},"a":{"ru":"Скажу своё мнение без давления","en":"Скажу своё мнение без давления"},"b":{"ru":"Помогу проверить решение","en":"Помогу проверить решение"},"c":{"ru":"Спрошу, зачем ему мой совет","en":"Спрошу, зачем ему мой совет"},"stats":{"a":48,"b":32,"c":20},"analysis":{"ru":"Твой выбор отражает один из возможных способов смотреть на эту ситуацию. Здесь нет единственно правильного ответа.","en":"Your choice reflects one possible way of looking at this situation. There is no single correct answer."}},{"question":{"ru":"Ты обнаружил старую записку, которую написал сам несколько лет назад. Что сделаешь?","en":"You find an old note you wrote years ago. What do you do?"},"a":{"ru":"Перечитаю внимательно","en":"Перечитаю внимательно"},"b":{"ru":"Сравню себя тогда и сейчас","en":"Сравню себя тогда и сейчас"},"c":{"ru":"Уберу обратно как память","en":"Уберу обратно как память"},"stats":{"a":55,"b":25,"c":20},"analysis":{"ru":"Твой выбор отражает один из возможных способов смотреть на эту ситуацию. Здесь нет единственно правильного ответа.","en":"Your choice reflects one possible way of looking at this situation. There is no single correct answer."}},{"question":{"ru":"Что ты выберешь, если можешь бесплатно освоить один язык?","en":"Which language-learning opportunity would you choose if one were free?"},"a":{"ru":"Язык для путешествий","en":"Язык для путешествий"},"b":{"ru":"Язык для работы","en":"Язык для работы"},"c":{"ru":"Язык, который просто нравится","en":"Язык, который просто нравится"},"stats":{"a":37,"b":43,"c":20},"analysis":{"ru":"Твой выбор отражает один из возможных способов смотреть на эту ситуацию. Здесь нет единственно правильного ответа.","en":"Your choice reflects one possible way of looking at this situation. There is no single correct answer."}},{"question":{"ru":"Как ты реагируешь, если человек долго принимает решение?","en":"How do you react when someone takes a long time to decide?"},"a":{"ru":"Даю время","en":"Даю время"},"b":{"ru":"Предлагаю варианты","en":"Предлагаю варианты"},"c":{"ru":"Переходу к своему решению","en":"Переходу к своему решению"},"stats":{"a":44,"b":36,"c":20},"analysis":{"ru":"Твой выбор отражает один из возможных способов смотреть на эту ситуацию. Здесь нет единственно правильного ответа.","en":"Your choice reflects one possible way of looking at this situation. There is no single correct answer."}},{"question":{"ru":"Если ты потерял вещь, которая дорога эмоционально, что сделаешь?","en":"If you lose something with emotional value, what do you do?"},"a":{"ru":"Буду искать до конца","en":"Буду искать до конца"},"b":{"ru":"Приму потерю и сохраню воспоминание","en":"Приму потерю и сохраню воспоминание"},"c":{"ru":"Попробую восстановить похожую вещь","en":"Попробую восстановить похожую вещь"},"stats":{"a":51,"b":29,"c":20},"analysis":{"ru":"Твой выбор отражает один из возможных способов смотреть на эту ситуацию. Здесь нет единственно правильного ответа.","en":"Your choice reflects one possible way of looking at this situation. There is no single correct answer."}},{"question":{"ru":"Тебе предлагают вести блог, но ты не хочешь быть публичным. Что выберешь?","en":"You are offered a chance to run a blog, but you dislike being public. What do you choose?"},"a":{"ru":"Оставлю идею","en":"Оставлю идею"},"b":{"ru":"Буду вести анонимно","en":"Буду вести анонимно"},"c":{"ru":"Сделаю контент без личного образа","en":"Сделаю контент без личного образа"},"stats":{"a":58,"b":22,"c":20},"analysis":{"ru":"Твой выбор отражает один из возможных способов смотреть на эту ситуацию. Здесь нет единственно правильного ответа.","en":"Your choice reflects one possible way of looking at this situation. There is no single correct answer."}},{"question":{"ru":"Как ты поступишь, если заметишь, что твой друг слишком много работает?","en":"What do you do if you notice your friend is working too much?"},"a":{"ru":"Скажу прямо","en":"Скажу прямо"},"b":{"ru":"Предложу совместный отдых","en":"Предложу совместный отдых"},"c":{"ru":"Подожду, пока он сам заговорит","en":"Подожду, пока он сам заговорит"},"stats":{"a":40,"b":40,"c":20},"analysis":{"ru":"Твой выбор отражает один из возможных способов смотреть на эту ситуацию. Здесь нет единственно правильного ответа.","en":"Your choice reflects one possible way of looking at this situation. There is no single correct answer."}},{"question":{"ru":"Если у тебя есть один день, чтобы исправить давнюю ошибку, что выберешь?","en":"If you had one day to fix an old mistake, what would you choose?"},"a":{"ru":"Извиниться","en":"Извиниться"},"b":{"ru":"Исправить последствия","en":"Исправить последствия"},"c":{"ru":"Объяснить свою сторону","en":"Объяснить свою сторону"},"stats":{"a":47,"b":33,"c":20},"analysis":{"ru":"Твой выбор отражает один из возможных способов смотреть на эту ситуацию. Здесь нет единственно правильного ответа.","en":"Your choice reflects one possible way of looking at this situation. There is no single correct answer."}},{"question":{"ru":"Тебе предлагают купить вещь сильно дешевле рынка, но происхождение неясно. Что сделаешь?","en":"You are offered an item far below market price, but its origin is unclear. What do you do?"},"a":{"ru":"Откажусь","en":"Откажусь"},"b":{"ru":"Проверю происхождение","en":"Проверю происхождение"},"c":{"ru":"Куплю только при полной уверенности","en":"Куплю только при полной уверенности"},"stats":{"a":54,"b":26,"c":20},"analysis":{"ru":"Твой выбор отражает один из возможных способов смотреть на эту ситуацию. Здесь нет единственно правильного ответа.","en":"Your choice reflects one possible way of looking at this situation. There is no single correct answer."}},{"question":{"ru":"Как ты поступишь, если близкий человек не согласен с твоим важным решением?","en":"What do you do if someone close disagrees with an important decision you made?"},"a":{"ru":"Выслушаю аргументы","en":"Выслушаю аргументы"},"b":{"ru":"Оставлю решение за собой","en":"Оставлю решение за собой"},"c":{"ru":"Попробую найти середину","en":"Попробую найти середину"},"stats":{"a":61,"b":19,"c":20},"analysis":{"ru":"Твой выбор отражает один из возможных способов смотреть на эту ситуацию. Здесь нет единственно правильного ответа.","en":"Your choice reflects one possible way of looking at this situation. There is no single correct answer."}},{"question":{"ru":"Что тебе ближе в новом месте: сразу исследовать его или сначала освоиться?","en":"In a new place, do you prefer exploring immediately or settling in first?"},"a":{"ru":"Сразу исследовать","en":"Сразу исследовать"},"b":{"ru":"Сначала освоиться","en":"Сначала освоиться"},"c":{"ru":"Найти местного проводника","en":"Найти местного проводника"},"stats":{"a":43,"b":37,"c":20},"analysis":{"ru":"Твой выбор отражает один из возможных способов смотреть на эту ситуацию. Здесь нет единственно правильного ответа.","en":"Your choice reflects one possible way of looking at this situation. There is no single correct answer."}},{"question":{"ru":"Если тебе дают возможность бесплатно попробовать профессию на неделю, какую мотивацию выберешь?","en":"If you can try a profession for free for one week, what motivates you most?"},"a":{"ru":"Любопытство","en":"Любопытство"},"b":{"ru":"Проверка будущей карьеры","en":"Проверка будущей карьеры"},"c":{"ru":"Новый опыт","en":"Новый опыт"},"stats":{"a":50,"b":30,"c":20},"analysis":{"ru":"Твой выбор отражает один из возможных способов смотреть на эту ситуацию. Здесь нет единственно правильного ответа.","en":"Your choice reflects one possible way of looking at this situation. There is no single correct answer."}},{"question":{"ru":"Как ты относишься к человеку, который признаёт свою ошибку первым?","en":"How do you view someone who admits their mistake first?"},"a":{"ru":"Уважаю за честность","en":"Уважаю за честность"},"b":{"ru":"Смотрю на последствия","en":"Смотрю на последствия"},"c":{"ru":"Готов быстрее продолжить разговор","en":"Готов быстрее продолжить разговор"},"stats":{"a":57,"b":23,"c":20},"analysis":{"ru":"Твой выбор отражает один из возможных способов смотреть на эту ситуацию. Здесь нет единственно правильного ответа.","en":"Your choice reflects one possible way of looking at this situation. There is no single correct answer."}},{"question":{"ru":"Ты можешь вернуть один момент из детства на один час. Что выберешь?","en":"You can return to one childhood moment for one hour. What do you choose?"},"a":{"ru":"Семейный день","en":"Семейный день"},"b":{"ru":"Праздник с друзьями","en":"Праздник с друзьями"},"c":{"ru":"Обычный спокойный день","en":"Обычный спокойный день"},"stats":{"a":39,"b":41,"c":20},"analysis":{"ru":"Твой выбор отражает один из возможных способов смотреть на эту ситуацию. Здесь нет единственно правильного ответа.","en":"Your choice reflects one possible way of looking at this situation. There is no single correct answer."}},{"question":{"ru":"Как поступишь, если твоя цель стала неинтересной после того, как ты её почти достиг?","en":"What do you do when a goal stops feeling interesting just before you reach it?"},"a":{"ru":"Завершу начатое","en":"Завершу начатое"},"b":{"ru":"Пересмотрю цель","en":"Пересмотрю цель"},"c":{"ru":"Поищу новый смысл","en":"Поищу новый смысл"},"stats":{"a":46,"b":31,"c":23},"analysis":{"ru":"Твой выбор отражает один из возможных способов смотреть на эту ситуацию. Здесь нет единственно правильного ответа.","en":"Your choice reflects one possible way of looking at this situation. There is no single correct answer."}},{"question":{"ru":"Тебе предлагают выбрать одно качество для себя на ближайший год. Что выберешь?","en":"You can choose one quality to strengthen over the next year. Which one?"},"a":{"ru":"Терпение","en":"Терпение"},"b":{"ru":"Смелость","en":"Смелость"},"c":{"ru":"Дисциплина","en":"Дисциплина"},"stats":{"a":53,"b":27,"c":20},"analysis":{"ru":"Твой выбор отражает один из возможных способов смотреть на эту ситуацию. Здесь нет единственно правильного ответа.","en":"Your choice reflects one possible way of looking at this situation. There is no single correct answer."}},{"question":{"ru":"Если ты видишь человека, который явно волнуется перед выступлением, что сделаешь?","en":"If you see someone clearly nervous before speaking, what do you do?"},"a":{"ru":"Подбодрю","en":"Подбодрю"},"b":{"ru":"Дам пространство","en":"Дам пространство"},"c":{"ru":"Предложу практическую помощь","en":"Предложу практическую помощь"},"stats":{"a":60,"b":20,"c":20},"analysis":{"ru":"Твой выбор отражает один из возможных способов смотреть на эту ситуацию. Здесь нет единственно правильного ответа.","en":"Your choice reflects one possible way of looking at this situation. There is no single correct answer."}},{"question":{"ru":"Как ты поступишь, если новый знакомый слишком быстро рассказывает личные вещи?","en":"What do you do if a new acquaintance shares very personal things too quickly?"},"a":{"ru":"Внимательно выслушаю","en":"Внимательно выслушаю"},"b":{"ru":"Мягко поставлю границу","en":"Мягко поставлю границу"},"c":{"ru":"Сменю тему","en":"Сменю тему"},"stats":{"a":42,"b":35,"c":23},"analysis":{"ru":"Твой выбор отражает один из возможных способов смотреть на эту ситуацию. Здесь нет единственно правильного ответа.","en":"Your choice reflects one possible way of looking at this situation. There is no single correct answer."}},{"question":{"ru":"Что ты выберешь для вечера после очень насыщенного дня?","en":"What do you choose for an evening after a very busy day?"},"a":{"ru":"Тишину и отдых","en":"Тишину и отдых"},"b":{"ru":"Встречу с близкими","en":"Встречу с близкими"},"c":{"ru":"Любимое занятие","en":"Любимое занятие"},"stats":{"a":49,"b":31,"c":20},"analysis":{"ru":"Твой выбор отражает один из возможных способов смотреть на эту ситуацию. Здесь нет единственно правильного ответа.","en":"Your choice reflects one possible way of looking at this situation. There is no single correct answer."}},{"question":{"ru":"Если ты можешь узнать правду о любом одном событии прошлого, что выберешь?","en":"If you could learn the truth about one past event, what would you choose?"},"a":{"ru":"О личной истории","en":"О личной истории"},"b":{"ru":"О важном историческом событии","en":"О важном историческом событии"},"c":{"ru":"О собственной ошибке","en":"О собственной ошибке"},"stats":{"a":56,"b":24,"c":20},"analysis":{"ru":"Твой выбор отражает один из возможных способов смотреть на эту ситуацию. Здесь нет единственно правильного ответа.","en":"Your choice reflects one possible way of looking at this situation. There is no single correct answer."}},{"question":{"ru":"Тебе предлагают шанс начать учиться чему-то с нуля вместе с друзьями. Что важнее?","en":"You can start learning something from scratch with friends. What matters most?"},"a":{"ru":"Компания","en":"Компания"},"b":{"ru":"Сам предмет","en":"Сам предмет"},"c":{"ru":"Общий результат","en":"Общий результат"},"stats":{"a":38,"b":39,"c":23},"analysis":{"ru":"Твой выбор отражает один из возможных способов смотреть на эту ситуацию. Здесь нет единственно правильного ответа.","en":"Your choice reflects one possible way of looking at this situation. There is no single correct answer."}},{"question":{"ru":"Как ты реагируешь, когда кто-то делает работу иначе, чем ты?","en":"How do you react when someone does a task differently from you?"},"a":{"ru":"Смотрю на результат","en":"Смотрю на результат"},"b":{"ru":"Интересуюсь его методом","en":"Интересуюсь его методом"},"c":{"ru":"Предлагаю сравнить подходы","en":"Предлагаю сравнить подходы"},"stats":{"a":45,"b":35,"c":20},"analysis":{"ru":"Твой выбор отражает один из возможных способов смотреть на эту ситуацию. Здесь нет единственно правильного ответа.","en":"Your choice reflects one possible way of looking at this situation. There is no single correct answer."}},{"question":{"ru":"Если у тебя появился дополнительный час каждый день, куда направишь его?","en":"If you gained an extra hour every day, where would you put it?"},"a":{"ru":"Здоровье и отдых","en":"Здоровье и отдых"},"b":{"ru":"Учёба","en":"Учёба"},"c":{"ru":"Личный проект","en":"Личный проект"},"stats":{"a":52,"b":28,"c":20},"analysis":{"ru":"Твой выбор отражает один из возможных способов смотреть на эту ситуацию. Здесь нет единственно правильного ответа.","en":"Your choice reflects one possible way of looking at this situation. There is no single correct answer."}},{"question":{"ru":"Тебе нужно выбрать, что оставить в жизни: старую привычку или старую вещь. Что легче отпустить?","en":"You must choose what to let go of: an old habit or an old possession. Which is easier?"},"a":{"ru":"Вещь","en":"Вещь"},"b":{"ru":"Привычку","en":"Привычку"},"c":{"ru":"Зависит от воспоминаний","en":"Зависит от воспоминаний"},"stats":{"a":59,"b":21,"c":20},"analysis":{"ru":"Твой выбор отражает один из возможных способов смотреть на эту ситуацию. Здесь нет единственно правильного ответа.","en":"Your choice reflects one possible way of looking at this situation. There is no single correct answer."}},{"question":{"ru":"Как ты поступишь, если обещал сохранить нейтралитет в споре друзей?","en":"What do you do if you promised to stay neutral in a dispute between friends?"},"a":{"ru":"Сдержу обещание","en":"Сдержу обещание"},"b":{"ru":"Выскажусь только при просьбе","en":"Выскажусь только при просьбе"},"c":{"ru":"Помогу им поговорить спокойно","en":"Помогу им поговорить спокойно"},"stats":{"a":41,"b":39,"c":20},"analysis":{"ru":"Твой выбор отражает один из возможных способов смотреть на эту ситуацию. Здесь нет единственно правильного ответа.","en":"Your choice reflects one possible way of looking at this situation. There is no single correct answer."}},{"question":{"ru":"Если твоя мечта требует нескольких лет работы, что поможет не бросить её?","en":"If your dream requires years of work, what helps you keep going?"},"a":{"ru":"Разбить путь на этапы","en":"Разбить путь на этапы"},"b":{"ru":"Напоминать себе о цели","en":"Напоминать себе о цели"},"c":{"ru":"Видеть маленький результат","en":"Видеть маленький результат"},"stats":{"a":48,"b":32,"c":20},"analysis":{"ru":"Твой выбор отражает один из возможных способов смотреть на эту ситуацию. Здесь нет единственно правильного ответа.","en":"Your choice reflects one possible way of looking at this situation. There is no single correct answer."}},{"question":{"ru":"Что для тебя сильнее влияет на первое впечатление о человеке?","en":"What affects your first impression of someone most?"},"a":{"ru":"Манера общения","en":"Манера общения"},"b":{"ru":"Поступки","en":"Поступки"},"c":{"ru":"Отношение к другим","en":"Отношение к другим"},"stats":{"a":55,"b":25,"c":20},"analysis":{"ru":"Твой выбор отражает один из возможных способов смотреть на эту ситуацию. Здесь нет единственно правильного ответа.","en":"Your choice reflects one possible way of looking at this situation. There is no single correct answer."}}];
+const FATE_DILEMMAS_UNIQUE_100 = [{"question":{"ru":"Что тебе важнее всего сохранить в отношениях с родными?","en":"Что тебе важнее всего сохранить в отношениях с родными?","es":"Что тебе важнее всего сохранить в отношениях с родными?","pt":"Что тебе важнее всего сохранить в отношениях с родными?","de":"Что тебе важнее всего сохранить в отношениях с родными?","fr":"Что тебе важнее всего сохранить в отношениях с родными?"},"a":{"ru":"Сделаю сам","en":"Сделаю сам","es":"Сделаю сам","pt":"Сделаю сам","de":"Сделаю сам","fr":"Сделаю сам"},"b":{"ru":"Посоветуюсь","en":"Посоветуюсь","es":"Посоветуюсь","pt":"Посоветуюсь","de":"Посоветуюсь","fr":"Посоветуюсь"},"c":{"ru":"Дам время подумать","en":"Дам время подумать","es":"Дам время подумать","pt":"Дам время подумать","de":"Дам время подумать","fr":"Дам время подумать"},"stats":{"a":36,"b":24,"c":40},"analysis":{"ru":"","en":"","es":"","pt":"","de":"","fr":""}},{"question":{"ru":"Какой семейный обычай ты бы оставил детям?","en":"Какой семейный обычай ты бы оставил детям?","es":"Какой семейный обычай ты бы оставил детям?","pt":"Какой семейный обычай ты бы оставил детям?","de":"Какой семейный обычай ты бы оставил детям?","fr":"Какой семейный обычай ты бы оставил детям?"},"a":{"ru":"Точно придерживаться этого","en":"Точно придерживаться этого","es":"Точно придерживаться этого","pt":"Точно придерживаться этого","de":"Точно придерживаться этого","fr":"Точно придерживаться этого"},"b":{"ru":"Делать по вдохновению","en":"Делать по вдохновению","es":"Делать по вдохновению","pt":"Делать по вдохновению","de":"Делать по вдохновению","fr":"Делать по вдохновению"},"c":{"ru":"Искать свой вариант","en":"Искать свой вариант","es":"Искать свой вариант","pt":"Искать свой вариант","de":"Искать свой вариант","fr":"Искать свой вариант"},"stats":{"a":43,"b":35,"c":22},"analysis":{"ru":"","en":"","es":"","pt":"","de":"","fr":""}},{"question":{"ru":"Что ты предпочитаешь делать во время большого семейного праздника?","en":"Что ты предпочитаешь делать во время большого семейного праздника?","es":"Что ты предпочитаешь делать во время большого семейного праздника?","pt":"Что ты предпочитаешь делать во время большого семейного праздника?","de":"Что ты предпочитаешь делать во время большого семейного праздника?","fr":"Что ты предпочитаешь делать во время большого семейного праздника?"},"a":{"ru":"Говорить сразу","en":"Говорить сразу","es":"Говорить сразу","pt":"Говорить сразу","de":"Говорить сразу","fr":"Говорить сразу"},"b":{"ru":"Наблюдать сначала","en":"Наблюдать сначала","es":"Наблюдать сначала","pt":"Наблюдать сначала","de":"Наблюдать сначала","fr":"Наблюдать сначала"},"c":{"ru":"Вернуться к теме позже","en":"Вернуться к теме позже","es":"Вернуться к теме позже","pt":"Вернуться к теме позже","de":"Вернуться к теме позже","fr":"Вернуться к теме позже"},"stats":{"a":44,"b":46,"c":10},"analysis":{"ru":"","en":"","es":"","pt":"","de":"","fr":""}},{"question":{"ru":"Как ты обычно показываешь близким, что ценишь их?","en":"Как ты обычно показываешь близким, что ценишь их?","es":"Как ты обычно показываешь близким, что ценишь их?","pt":"Как ты обычно показываешь близким, что ценишь их?","de":"Как ты обычно показываешь близким, что ценишь их?","fr":"Как ты обычно показываешь близким, что ценишь их?"},"a":{"ru":"Довериться плану","en":"Довериться плану","es":"Довериться плану","pt":"Довериться плану","de":"Довериться плану","fr":"Довериться плану"},"b":{"ru":"Сравнить несколько путей","en":"Сравнить несколько путей","es":"Сравнить несколько путей","pt":"Сравнить несколько путей","de":"Сравнить несколько путей","fr":"Сравнить несколько путей"},"c":{"ru":"Спросить опытного человека","en":"Спросить опытного человека","es":"Спросить опытного человека","pt":"Спросить опытного человека","de":"Спросить опытного человека","fr":"Спросить опытного человека"},"stats":{"a":51,"b":32,"c":17},"analysis":{"ru":"","en":"","es":"","pt":"","de":"","fr":""}},{"question":{"ru":"Какой совет от старших ты считаешь самым полезным?","en":"Какой совет от старших ты считаешь самым полезным?","es":"Какой совет от старших ты считаешь самым полезным?","pt":"Какой совет от старших ты считаешь самым полезным?","de":"Какой совет от старших ты считаешь самым полезным?","fr":"Какой совет от старших ты считаешь самым полезным?"},"a":{"ru":"Оставить всё как есть","en":"Оставить всё как есть","es":"Оставить всё как есть","pt":"Оставить всё как есть","de":"Оставить всё как есть","fr":"Оставить всё как есть"},"b":{"ru":"Изменить главное","en":"Изменить главное","es":"Изменить главное","pt":"Изменить главное","de":"Изменить главное","fr":"Изменить главное"},"c":{"ru":"Перестроить всё постепенно","en":"Перестроить всё постепенно","es":"Перестроить всё постепенно","pt":"Перестроить всё постепенно","de":"Перестроить всё постепенно","fr":"Перестроить всё постепенно"},"stats":{"a":37,"b":43,"c":20},"analysis":{"ru":"","en":"","es":"","pt":"","de":"","fr":""}},{"question":{"ru":"Что делает человека настоящим другом в твоих глазах?","en":"Что делает человека настоящим другом в твоих глазах?","es":"Что делает человека настоящим другом в твоих глазах?","pt":"Что делает человека настоящим другом в твоих глазах?","de":"Что делает человека настоящим другом в твоих глазах?","fr":"Что делает человека настоящим другом в твоих глазах?"},"a":{"ru":"Сделаю сам","en":"Сделаю сам","es":"Сделаю сам","pt":"Сделаю сам","de":"Сделаю сам","fr":"Сделаю сам"},"b":{"ru":"Посоветуюсь","en":"Посоветуюсь","es":"Посоветуюсь","pt":"Посоветуюсь","de":"Посоветуюсь","fr":"Посоветуюсь"},"c":{"ru":"Дам время подумать","en":"Дам время подумать","es":"Дам время подумать","pt":"Дам время подумать","de":"Дам время подумать","fr":"Дам время подумать"},"stats":{"a":44,"b":29,"c":27},"analysis":{"ru":"","en":"","es":"","pt":"","de":"","fr":""}},{"question":{"ru":"Что тебе проще простить близкому другу?","en":"Что тебе проще простить близкому другу?","es":"Что тебе проще простить близкому другу?","pt":"Что тебе проще простить близкому другу?","de":"Что тебе проще простить близкому другу?","fr":"Что тебе проще простить близкому другу?"},"a":{"ru":"Точно придерживаться этого","en":"Точно придерживаться этого","es":"Точно придерживаться этого","pt":"Точно придерживаться этого","de":"Точно придерживаться этого","fr":"Точно придерживаться этого"},"b":{"ru":"Делать по вдохновению","en":"Делать по вдохновению","es":"Делать по вдохновению","pt":"Делать по вдохновению","de":"Делать по вдохновению","fr":"Делать по вдохновению"},"c":{"ru":"Искать свой вариант","en":"Искать свой вариант","es":"Искать свой вариант","pt":"Искать свой вариант","de":"Искать свой вариант","fr":"Искать свой вариант"},"stats":{"a":45,"b":40,"c":15},"analysis":{"ru":"","en":"","es":"","pt":"","de":"","fr":""}},{"question":{"ru":"Как ты выбираешь человека для совместной поездки?","en":"Как ты выбираешь человека для совместной поездки?","es":"Как ты выбираешь человека для совместной поездки?","pt":"Как ты выбираешь человека для совместной поездки?","de":"Как ты выбираешь человека для совместной поездки?","fr":"Как ты выбираешь человека для совместной поездки?"},"a":{"ru":"Говорить сразу","en":"Говорить сразу","es":"Говорить сразу","pt":"Говорить сразу","de":"Говорить сразу","fr":"Говорить сразу"},"b":{"ru":"Наблюдать сначала","en":"Наблюдать сначала","es":"Наблюдать сначала","pt":"Наблюдать сначала","de":"Наблюдать сначала","fr":"Наблюдать сначала"},"c":{"ru":"Вернуться к теме позже","en":"Вернуться к теме позже","es":"Вернуться к теме позже","pt":"Вернуться к теме позже","de":"Вернуться к теме позже","fr":"Вернуться к теме позже"},"stats":{"a":58,"b":26,"c":16},"analysis":{"ru":"","en":"","es":"","pt":"","de":"","fr":""}},{"question":{"ru":"Что ты предпочитаешь делать, когда друг долго молчит?","en":"Что ты предпочитаешь делать, когда друг долго молчит?","es":"Что ты предпочитаешь делать, когда друг долго молчит?","pt":"Что ты предпочитаешь делать, когда друг долго молчит?","de":"Что ты предпочитаешь делать, когда друг долго молчит?","fr":"Что ты предпочитаешь делать, когда друг долго молчит?"},"a":{"ru":"Довериться плану","en":"Довериться плану","es":"Довериться плану","pt":"Довериться плану","de":"Довериться плану","fr":"Довериться плану"},"b":{"ru":"Сравнить несколько путей","en":"Сравнить несколько путей","es":"Сравнить несколько путей","pt":"Сравнить несколько путей","de":"Сравнить несколько путей","fr":"Сравнить несколько путей"},"c":{"ru":"Спросить опытного человека","en":"Спросить опытного человека","es":"Спросить опытного человека","pt":"Спросить опытного человека","de":"Спросить опытного человека","fr":"Спросить опытного человека"},"stats":{"a":38,"b":37,"c":25},"analysis":{"ru":"","en":"","es":"","pt":"","de":"","fr":""}},{"question":{"ru":"Как ты относишься к дружбе, которая началась случайно?","en":"Как ты относишься к дружбе, которая началась случайно?","es":"Как ты относишься к дружбе, которая началась случайно?","pt":"Как ты относишься к дружбе, которая началась случайно?","de":"Как ты относишься к дружбе, которая началась случайно?","fr":"Как ты относишься к дружбе, которая началась случайно?"},"a":{"ru":"Оставить всё как есть","en":"Оставить всё как есть","es":"Оставить всё как есть","pt":"Оставить всё как есть","de":"Оставить всё как есть","fr":"Оставить всё как есть"},"b":{"ru":"Изменить главное","en":"Изменить главное","es":"Изменить главное","pt":"Изменить главное","de":"Изменить главное","fr":"Изменить главное"},"c":{"ru":"Перестроить всё постепенно","en":"Перестроить всё постепенно","es":"Перестроить всё постепенно","pt":"Перестроить всё постепенно","de":"Перестроить всё постепенно","fr":"Перестроить всё постепенно"},"stats":{"a":39,"b":48,"c":13},"analysis":{"ru":"","en":"","es":"","pt":"","de":"","fr":""}},{"question":{"ru":"Что для тебя важнее в хорошем рабочем дне?","en":"Что для тебя важнее в хорошем рабочем дне?","es":"Что для тебя важнее в хорошем рабочем дне?","pt":"Что для тебя важнее в хорошем рабочем дне?","de":"Что для тебя важнее в хорошем рабочем дне?","fr":"Что для тебя важнее в хорошем рабочем дне?"},"a":{"ru":"Сделаю сам","en":"Сделаю сам","es":"Сделаю сам","pt":"Сделаю сам","de":"Сделаю сам","fr":"Сделаю сам"},"b":{"ru":"Посоветуюсь","en":"Посоветуюсь","es":"Посоветуюсь","pt":"Посоветуюсь","de":"Посоветуюсь","fr":"Посоветуюсь"},"c":{"ru":"Дам время подумать","en":"Дам время подумать","es":"Дам время подумать","pt":"Дам время подумать","de":"Дам время подумать","fr":"Дам время подумать"},"stats":{"a":52,"b":34,"c":14},"analysis":{"ru":"","en":"","es":"","pt":"","de":"","fr":""}},{"question":{"ru":"Какой способ организации дел тебе ближе?","en":"Какой способ организации дел тебе ближе?","es":"Какой способ организации дел тебе ближе?","pt":"Какой способ организации дел тебе ближе?","de":"Какой способ организации дел тебе ближе?","fr":"Какой способ организации дел тебе ближе?"},"a":{"ru":"Точно придерживаться этого","en":"Точно придерживаться этого","es":"Точно придерживаться этого","pt":"Точно придерживаться этого","de":"Точно придерживаться этого","fr":"Точно придерживаться этого"},"b":{"ru":"Делать по вдохновению","en":"Делать по вдохновению","es":"Делать по вдохновению","pt":"Делать по вдохновению","de":"Делать по вдохновению","fr":"Делать по вдохновению"},"c":{"ru":"Искать свой вариант","en":"Искать свой вариант","es":"Искать свой вариант","pt":"Искать свой вариант","de":"Искать свой вариант","fr":"Искать свой вариант"},"stats":{"a":53,"b":45,"c":2},"analysis":{"ru":"","en":"","es":"","pt":"","de":"","fr":""}},{"question":{"ru":"Что сильнее мотивирует тебя закончить сложную задачу?","en":"Что сильнее мотивирует тебя закончить сложную задачу?","es":"Что сильнее мотивирует тебя закончить сложную задачу?","pt":"Что сильнее мотивирует тебя закончить сложную задачу?","de":"Что сильнее мотивирует тебя закончить сложную задачу?","fr":"Что сильнее мотивирует тебя закончить сложную задачу?"},"a":{"ru":"Говорить сразу","en":"Говорить сразу","es":"Говорить сразу","pt":"Говорить сразу","de":"Говорить сразу","fr":"Говорить сразу"},"b":{"ru":"Наблюдать сначала","en":"Наблюдать сначала","es":"Наблюдать сначала","pt":"Наблюдать сначала","de":"Наблюдать сначала","fr":"Наблюдать сначала"},"c":{"ru":"Вернуться к теме позже","en":"Вернуться к теме позже","es":"Вернуться к теме позже","pt":"Вернуться к теме позже","de":"Вернуться к теме позже","fr":"Вернуться к теме позже"},"stats":{"a":39,"b":31,"c":30},"analysis":{"ru":"","en":"","es":"","pt":"","de":"","fr":""}},{"question":{"ru":"Что ты ценишь в руководителе больше всего?","en":"Что ты ценишь в руководителе больше всего?","es":"Что ты ценишь в руководителе больше всего?","pt":"Что ты ценишь в руководителе больше всего?","de":"Что ты ценишь в руководителе больше всего?","fr":"Что ты ценишь в руководителе больше всего?"},"a":{"ru":"Довериться плану","en":"Довериться плану","es":"Довериться плану","pt":"Довериться плану","de":"Довериться плану","fr":"Довериться плану"},"b":{"ru":"Сравнить несколько путей","en":"Сравнить несколько путей","es":"Сравнить несколько путей","pt":"Сравнить несколько путей","de":"Сравнить несколько путей","fr":"Сравнить несколько путей"},"c":{"ru":"Спросить опытного человека","en":"Спросить опытного человека","es":"Спросить опытного человека","pt":"Спросить опытного человека","de":"Спросить опытного человека","fr":"Спросить опытного человека"},"stats":{"a":46,"b":42,"c":12},"analysis":{"ru":"","en":"","es":"","pt":"","de":"","fr":""}},{"question":{"ru":"Как ты выбираешь между интересной работой и удобным графиком?","en":"Как ты выбираешь между интересной работой и удобным графиком?","es":"Как ты выбираешь между интересной работой и удобным графиком?","pt":"Как ты выбираешь между интересной работой и удобным графиком?","de":"Как ты выбираешь между интересной работой и удобным графиком?","fr":"Как ты выбираешь между интересной работой и удобным графиком?"},"a":{"ru":"Оставить всё как есть","en":"Оставить всё как есть","es":"Оставить всё как есть","pt":"Оставить всё как есть","de":"Оставить всё как есть","fr":"Оставить всё как есть"},"b":{"ru":"Изменить главное","en":"Изменить главное","es":"Изменить главное","pt":"Изменить главное","de":"Изменить главное","fr":"Изменить главное"},"c":{"ru":"Перестроить всё постепенно","en":"Перестроить всё постепенно","es":"Перестроить всё постепенно","pt":"Перестроить всё постепенно","de":"Перестроить всё постепенно","fr":"Перестроить всё постепенно"},"stats":{"a":53,"b":28,"c":19},"analysis":{"ru":"","en":"","es":"","pt":"","de":"","fr":""}},{"question":{"ru":"На что тебе приятнее потратить неожиданную небольшую сумму?","en":"На что тебе приятнее потратить неожиданную небольшую сумму?","es":"На что тебе приятнее потратить неожиданную небольшую сумму?","pt":"На что тебе приятнее потратить неожиданную небольшую сумму?","de":"На что тебе приятнее потратить неожиданную небольшую сумму?","fr":"На что тебе приятнее потратить неожиданную небольшую сумму?"},"a":{"ru":"Сделаю сам","en":"Сделаю сам","es":"Сделаю сам","pt":"Сделаю сам","de":"Сделаю сам","fr":"Сделаю сам"},"b":{"ru":"Посоветуюсь","en":"Посоветуюсь","es":"Посоветуюсь","pt":"Посоветуюсь","de":"Посоветуюсь","fr":"Посоветуюсь"},"c":{"ru":"Дам время подумать","en":"Дам время подумать","es":"Дам время подумать","pt":"Дам время подумать","de":"Дам время подумать","fr":"Дам время подумать"},"stats":{"a":54,"b":39,"c":7},"analysis":{"ru":"","en":"","es":"","pt":"","de":"","fr":""}},{"question":{"ru":"Какой способ накопления тебе ближе?","en":"Какой способ накопления тебе ближе?","es":"Какой способ накопления тебе ближе?","pt":"Какой способ накопления тебе ближе?","de":"Какой способ накопления тебе ближе?","fr":"Какой способ накопления тебе ближе?"},"a":{"ru":"Точно придерживаться этого","en":"Точно придерживаться этого","es":"Точно придерживаться этого","pt":"Точно придерживаться этого","de":"Точно придерживаться этого","fr":"Точно придерживаться этого"},"b":{"ru":"Делать по вдохновению","en":"Делать по вдохновению","es":"Делать по вдохновению","pt":"Делать по вдохновению","de":"Делать по вдохновению","fr":"Делать по вдохновению"},"c":{"ru":"Искать свой вариант","en":"Искать свой вариант","es":"Искать свой вариант","pt":"Искать свой вариант","de":"Искать свой вариант","fr":"Искать свой вариант"},"stats":{"a":40,"b":25,"c":35},"analysis":{"ru":"","en":"","es":"","pt":"","de":"","fr":""}},{"question":{"ru":"Что ты проверяешь перед крупной покупкой?","en":"Что ты проверяешь перед крупной покупкой?","es":"Что ты проверяешь перед крупной покупкой?","pt":"Что ты проверяешь перед крупной покупкой?","de":"Что ты проверяешь перед крупной покупкой?","fr":"Что ты проверяешь перед крупной покупкой?"},"a":{"ru":"Говорить сразу","en":"Говорить сразу","es":"Говорить сразу","pt":"Говорить сразу","de":"Говорить сразу","fr":"Говорить сразу"},"b":{"ru":"Наблюдать сначала","en":"Наблюдать сначала","es":"Наблюдать сначала","pt":"Наблюдать сначала","de":"Наблюдать сначала","fr":"Наблюдать сначала"},"c":{"ru":"Вернуться к теме позже","en":"Вернуться к теме позже","es":"Вернуться к теме позже","pt":"Вернуться к теме позже","de":"Вернуться к теме позже","fr":"Вернуться к теме позже"},"stats":{"a":47,"b":36,"c":17},"analysis":{"ru":"","en":"","es":"","pt":"","de":"","fr":""}},{"question":{"ru":"Что для тебя важнее при выборе дорогой вещи?","en":"Что для тебя важнее при выборе дорогой вещи?","es":"Что для тебя важнее при выборе дорогой вещи?","pt":"Что для тебя важнее при выборе дорогой вещи?","de":"Что для тебя важнее при выборе дорогой вещи?","fr":"Что для тебя важнее при выборе дорогой вещи?"},"a":{"ru":"Довериться плану","en":"Довериться плану","es":"Довериться плану","pt":"Довериться плану","de":"Довериться плану","fr":"Довериться плану"},"b":{"ru":"Сравнить несколько путей","en":"Сравнить несколько путей","es":"Сравнить несколько путей","pt":"Сравнить несколько путей","de":"Сравнить несколько путей","fr":"Сравнить несколько путей"},"c":{"ru":"Спросить опытного человека","en":"Спросить опытного человека","es":"Спросить опытного человека","pt":"Спросить опытного человека","de":"Спросить опытного человека","fr":"Спросить опытного человека"},"stats":{"a":48,"b":47,"c":5},"analysis":{"ru":"","en":"","es":"","pt":"","de":"","fr":""}},{"question":{"ru":"Как ты относишься к покупкам, которые долго откладывал?","en":"Как ты относишься к покупкам, которые долго откладывал?","es":"Как ты относишься к покупкам, которые долго откладывал?","pt":"Как ты относишься к покупкам, которые долго откладывал?","de":"Как ты относишься к покупкам, которые долго откладывал?","fr":"Как ты относишься к покупкам, которые долго откладывал?"},"a":{"ru":"Оставить всё как есть","en":"Оставить всё как есть","es":"Оставить всё как есть","pt":"Оставить всё как есть","de":"Оставить всё как есть","fr":"Оставить всё как есть"},"b":{"ru":"Изменить главное","en":"Изменить главное","es":"Изменить главное","pt":"Изменить главное","de":"Изменить главное","fr":"Изменить главное"},"c":{"ru":"Перестроить всё постепенно","en":"Перестроить всё постепенно","es":"Перестроить всё постепенно","pt":"Перестроить всё постепенно","de":"Перестроить всё постепенно","fr":"Перестроить всё постепенно"},"stats":{"a":55,"b":33,"c":12},"analysis":{"ru":"","en":"","es":"","pt":"","de":"","fr":""}},{"question":{"ru":"На что ты хотел бы получать дополнительный час каждый день?","en":"На что ты хотел бы получать дополнительный час каждый день?","es":"На что ты хотел бы получать дополнительный час каждый день?","pt":"На что ты хотел бы получать дополнительный час каждый день?","de":"На что ты хотел бы получать дополнительный час каждый день?","fr":"На что ты хотел бы получать дополнительный час каждый день?"},"a":{"ru":"Сделаю сам","en":"Сделаю сам","es":"Сделаю сам","pt":"Сделаю сам","de":"Сделаю сам","fr":"Сделаю сам"},"b":{"ru":"Посоветуюсь","en":"Посоветуюсь","es":"Посоветуюсь","pt":"Посоветуюсь","de":"Посоветуюсь","fr":"Посоветуюсь"},"c":{"ru":"Дам время подумать","en":"Дам время подумать","es":"Дам время подумать","pt":"Дам время подумать","de":"Дам время подумать","fr":"Дам время подумать"},"stats":{"a":41,"b":44,"c":15},"analysis":{"ru":"","en":"","es":"","pt":"","de":"","fr":""}},{"question":{"ru":"Как ты предпочитаешь проводить редкий полностью свободный день?","en":"Как ты предпочитаешь проводить редкий полностью свободный день?","es":"Как ты предпочитаешь проводить редкий полностью свободный день?","pt":"Как ты предпочитаешь проводить редкий полностью свободный день?","de":"Как ты предпочитаешь проводить редкий полностью свободный день?","fr":"Как ты предпочитаешь проводить редкий полностью свободный день?"},"a":{"ru":"Точно придерживаться этого","en":"Точно придерживаться этого","es":"Точно придерживаться этого","pt":"Точно придерживаться этого","de":"Точно придерживаться этого","fr":"Точно придерживаться этого"},"b":{"ru":"Делать по вдохновению","en":"Делать по вдохновению","es":"Делать по вдохновению","pt":"Делать по вдохновению","de":"Делать по вдохновению","fr":"Делать по вдохновению"},"c":{"ru":"Искать свой вариант","en":"Искать свой вариант","es":"Искать свой вариант","pt":"Искать свой вариант","de":"Искать свой вариант","fr":"Искать свой вариант"},"stats":{"a":48,"b":30,"c":22},"analysis":{"ru":"","en":"","es":"","pt":"","de":"","fr":""}},{"question":{"ru":"Что ты делаешь, когда понимаешь, что день прошёл слишком быстро?","en":"Что ты делаешь, когда понимаешь, что день прошёл слишком быстро?","es":"Что ты делаешь, когда понимаешь, что день прошёл слишком быстро?","pt":"Что ты делаешь, когда понимаешь, что день прошёл слишком быстро?","de":"Что ты делаешь, когда понимаешь, что день прошёл слишком быстро?","fr":"Что ты делаешь, когда понимаешь, что день прошёл слишком быстро?"},"a":{"ru":"Говорить сразу","en":"Говорить сразу","es":"Говорить сразу","pt":"Говорить сразу","de":"Говорить сразу","fr":"Говорить сразу"},"b":{"ru":"Наблюдать сначала","en":"Наблюдать сначала","es":"Наблюдать сначала","pt":"Наблюдать сначала","de":"Наблюдать сначала","fr":"Наблюдать сначала"},"c":{"ru":"Вернуться к теме позже","en":"Вернуться к теме позже","es":"Вернуться к теме позже","pt":"Вернуться к теме позже","de":"Вернуться к теме позже","fr":"Вернуться к теме позже"},"stats":{"a":49,"b":41,"c":10},"analysis":{"ru":"","en":"","es":"","pt":"","de":"","fr":""}},{"question":{"ru":"Какой момент дня ты стараешься не отдавать делам?","en":"Какой момент дня ты стараешься не отдавать делам?","es":"Какой момент дня ты стараешься не отдавать делам?","pt":"Какой момент дня ты стараешься не отдавать делам?","de":"Какой момент дня ты стараешься не отдавать делам?","fr":"Какой момент дня ты стараешься не отдавать делам?"},"a":{"ru":"Довериться плану","en":"Довериться плану","es":"Довериться плану","pt":"Довериться плану","de":"Довериться плану","fr":"Довериться плану"},"b":{"ru":"Сравнить несколько путей","en":"Сравнить несколько путей","es":"Сравнить несколько путей","pt":"Сравнить несколько путей","de":"Сравнить несколько путей","fr":"Сравнить несколько путей"},"c":{"ru":"Спросить опытного человека","en":"Спросить опытного человека","es":"Спросить опытного человека","pt":"Спросить опытного человека","de":"Спросить опытного человека","fr":"Спросить опытного человека"},"stats":{"a":56,"b":27,"c":17},"analysis":{"ru":"","en":"","es":"","pt":"","de":"","fr":""}},{"question":{"ru":"Что тебе помогает перестать откладывать важное?","en":"Что тебе помогает перестать откладывать важное?","es":"Что тебе помогает перестать откладывать важное?","pt":"Что тебе помогает перестать откладывать важное?","de":"Что тебе помогает перестать откладывать важное?","fr":"Что тебе помогает перестать откладывать важное?"},"a":{"ru":"Оставить всё как есть","en":"Оставить всё как есть","es":"Оставить всё как есть","pt":"Оставить всё как есть","de":"Оставить всё как есть","fr":"Оставить всё как есть"},"b":{"ru":"Изменить главное","en":"Изменить главное","es":"Изменить главное","pt":"Изменить главное","de":"Изменить главное","fr":"Изменить главное"},"c":{"ru":"Перестроить всё постепенно","en":"Перестроить всё постепенно","es":"Перестроить всё постепенно","pt":"Перестроить всё постепенно","de":"Перестроить всё постепенно","fr":"Перестроить всё постепенно"},"stats":{"a":42,"b":38,"c":20},"analysis":{"ru":"","en":"","es":"","pt":"","de":"","fr":""}},{"question":{"ru":"Как ты выбираешь первую точку для прогулки в новом городе?","en":"Как ты выбираешь первую точку для прогулки в новом городе?","es":"Как ты выбираешь первую точку для прогулки в новом городе?","pt":"Как ты выбираешь первую точку для прогулки в новом городе?","de":"Как ты выбираешь первую точку для прогулки в новом городе?","fr":"Как ты выбираешь первую точку для прогулки в новом городе?"},"a":{"ru":"Сделаю сам","en":"Сделаю сам","es":"Сделаю сам","pt":"Сделаю сам","de":"Сделаю сам","fr":"Сделаю сам"},"b":{"ru":"Посоветуюсь","en":"Посоветуюсь","es":"Посоветуюсь","pt":"Посоветуюсь","de":"Посоветуюсь","fr":"Посоветуюсь"},"c":{"ru":"Дам время подумать","en":"Дам время подумать","es":"Дам время подумать","pt":"Дам время подумать","de":"Дам время подумать","fr":"Дам время подумать"},"stats":{"a":49,"b":24,"c":27},"analysis":{"ru":"","en":"","es":"","pt":"","de":"","fr":""}},{"question":{"ru":"Что ты обязательно хочешь узнать перед далёкой поездкой?","en":"Что ты обязательно хочешь узнать перед далёкой поездкой?","es":"Что ты обязательно хочешь узнать перед далёкой поездкой?","pt":"Что ты обязательно хочешь узнать перед далёкой поездкой?","de":"Что ты обязательно хочешь узнать перед далёкой поездкой?","fr":"Что ты обязательно хочешь узнать перед далёкой поездкой?"},"a":{"ru":"Точно придерживаться этого","en":"Точно придерживаться этого","es":"Точно придерживаться этого","pt":"Точно придерживаться этого","de":"Точно придерживаться этого","fr":"Точно придерживаться этого"},"b":{"ru":"Делать по вдохновению","en":"Делать по вдохновению","es":"Делать по вдохновению","pt":"Делать по вдохновению","de":"Делать по вдохновению","fr":"Делать по вдохновению"},"c":{"ru":"Искать свой вариант","en":"Искать свой вариант","es":"Искать свой вариант","pt":"Искать свой вариант","de":"Искать свой вариант","fr":"Искать свой вариант"},"stats":{"a":50,"b":35,"c":15},"analysis":{"ru":"","en":"","es":"","pt":"","de":"","fr":""}},{"question":{"ru":"Какой сувенир кажется тебе самым удачным?","en":"Какой сувенир кажется тебе самым удачным?","es":"Какой сувенир кажется тебе самым удачным?","pt":"Какой сувенир кажется тебе самым удачным?","de":"Какой сувенир кажется тебе самым удачным?","fr":"Какой сувенир кажется тебе самым удачным?"},"a":{"ru":"Говорить сразу","en":"Говорить сразу","es":"Говорить сразу","pt":"Говорить сразу","de":"Говорить сразу","fr":"Говорить сразу"},"b":{"ru":"Наблюдать сначала","en":"Наблюдать сначала","es":"Наблюдать сначала","pt":"Наблюдать сначала","de":"Наблюдать сначала","fr":"Наблюдать сначала"},"c":{"ru":"Вернуться к теме позже","en":"Вернуться к теме позже","es":"Вернуться к теме позже","pt":"Вернуться к теме позже","de":"Вернуться к теме позже","fr":"Вернуться к теме позже"},"stats":{"a":36,"b":46,"c":18},"analysis":{"ru":"","en":"","es":"","pt":"","de":"","fr":""}},{"question":{"ru":"Что ты предпочитаешь делать в месте, где оказался впервые?","en":"Что ты предпочитаешь делать в месте, где оказался впервые?","es":"Что ты предпочитаешь делать в месте, где оказался впервые?","pt":"Что ты предпочитаешь делать в месте, где оказался впервые?","de":"Что ты предпочитаешь делать в месте, где оказался впервые?","fr":"Что ты предпочитаешь делать в месте, где оказался впервые?"},"a":{"ru":"Довериться плану","en":"Довериться плану","es":"Довериться плану","pt":"Довериться плану","de":"Довериться плану","fr":"Довериться плану"},"b":{"ru":"Сравнить несколько путей","en":"Сравнить несколько путей","es":"Сравнить несколько путей","pt":"Сравнить несколько путей","de":"Сравнить несколько путей","fr":"Сравнить несколько путей"},"c":{"ru":"Спросить опытного человека","en":"Спросить опытного человека","es":"Спросить опытного человека","pt":"Спросить опытного человека","de":"Спросить опытного человека","fr":"Спросить опытного человека"},"stats":{"a":43,"b":32,"c":25},"analysis":{"ru":"","en":"","es":"","pt":"","de":"","fr":""}},{"question":{"ru":"Какой тип путешествия тебе запоминается сильнее всего?","en":"Какой тип путешествия тебе запоминается сильнее всего?","es":"Какой тип путешествия тебе запоминается сильнее всего?","pt":"Какой тип путешествия тебе запоминается сильнее всего?","de":"Какой тип путешествия тебе запоминается сильнее всего?","fr":"Какой тип путешествия тебе запоминается сильнее всего?"},"a":{"ru":"Оставить всё как есть","en":"Оставить всё как есть","es":"Оставить всё как есть","pt":"Оставить всё как есть","de":"Оставить всё как есть","fr":"Оставить всё как есть"},"b":{"ru":"Изменить главное","en":"Изменить главное","es":"Изменить главное","pt":"Изменить главное","de":"Изменить главное","fr":"Изменить главное"},"c":{"ru":"Перестроить всё постепенно","en":"Перестроить всё постепенно","es":"Перестроить всё постепенно","pt":"Перестроить всё постепенно","de":"Перестроить всё постепенно","fr":"Перестроить всё постепенно"},"stats":{"a":44,"b":43,"c":13},"analysis":{"ru":"","en":"","es":"","pt":"","de":"","fr":""}},{"question":{"ru":"Какой предмет дома делает пространство по-настоящему твоим?","en":"Какой предмет дома делает пространство по-настоящему твоим?","es":"Какой предмет дома делает пространство по-настоящему твоим?","pt":"Какой предмет дома делает пространство по-настоящему твоим?","de":"Какой предмет дома делает пространство по-настоящему твоим?","fr":"Какой предмет дома делает пространство по-настоящему твоим?"},"a":{"ru":"Сделаю сам","en":"Сделаю сам","es":"Сделаю сам","pt":"Сделаю сам","de":"Сделаю сам","fr":"Сделаю сам"},"b":{"ru":"Посоветуюсь","en":"Посоветуюсь","es":"Посоветуюсь","pt":"Посоветуюсь","de":"Посоветуюсь","fr":"Посоветуюсь"},"c":{"ru":"Дам время подумать","en":"Дам время подумать","es":"Дам время подумать","pt":"Дам время подумать","de":"Дам время подумать","fr":"Дам время подумать"},"stats":{"a":57,"b":29,"c":14},"analysis":{"ru":"","en":"","es":"","pt":"","de":"","fr":""}},{"question":{"ru":"Что ты изменил бы в комнате, если бы получил полный карт-бланш?","en":"Что ты изменил бы в комнате, если бы получил полный карт-бланш?","es":"Что ты изменил бы в комнате, если бы получил полный карт-бланш?","pt":"Что ты изменил бы в комнате, если бы получил полный карт-бланш?","de":"Что ты изменил бы в комнате, если бы получил полный карт-бланш?","fr":"Что ты изменил бы в комнате, если бы получил полный карт-бланш?"},"a":{"ru":"Точно придерживаться этого","en":"Точно придерживаться этого","es":"Точно придерживаться этого","pt":"Точно придерживаться этого","de":"Точно придерживаться этого","fr":"Точно придерживаться этого"},"b":{"ru":"Делать по вдохновению","en":"Делать по вдохновению","es":"Делать по вдохновению","pt":"Делать по вдохновению","de":"Делать по вдохновению","fr":"Делать по вдохновению"},"c":{"ru":"Искать свой вариант","en":"Искать свой вариант","es":"Искать свой вариант","pt":"Искать свой вариант","de":"Искать свой вариант","fr":"Искать свой вариант"},"stats":{"a":37,"b":40,"c":23},"analysis":{"ru":"","en":"","es":"","pt":"","de":"","fr":""}},{"question":{"ru":"Какой домашний звук тебе приятнее всего?","en":"Какой домашний звук тебе приятнее всего?","es":"Какой домашний звук тебе приятнее всего?","pt":"Какой домашний звук тебе приятнее всего?","de":"Какой домашний звук тебе приятнее всего?","fr":"Какой домашний звук тебе приятнее всего?"},"a":{"ru":"Говорить сразу","en":"Говорить сразу","es":"Говорить сразу","pt":"Говорить сразу","de":"Говорить сразу","fr":"Говорить сразу"},"b":{"ru":"Наблюдать сначала","en":"Наблюдать сначала","es":"Наблюдать сначала","pt":"Наблюдать сначала","de":"Наблюдать сначала","fr":"Наблюдать сначала"},"c":{"ru":"Вернуться к теме позже","en":"Вернуться к теме позже","es":"Вернуться к теме позже","pt":"Вернуться к теме позже","de":"Вернуться к теме позже","fr":"Вернуться к теме позже"},"stats":{"a":44,"b":26,"c":30},"analysis":{"ru":"","en":"","es":"","pt":"","de":"","fr":""}},{"question":{"ru":"Как ты решаешь, что пора расхламлять шкаф?","en":"Как ты решаешь, что пора расхламлять шкаф?","es":"Как ты решаешь, что пора расхламлять шкаф?","pt":"Как ты решаешь, что пора расхламлять шкаф?","de":"Как ты решаешь, что пора расхламлять шкаф?","fr":"Как ты решаешь, что пора расхламлять шкаф?"},"a":{"ru":"Довериться плану","en":"Довериться плану","es":"Довериться плану","pt":"Довериться плану","de":"Довериться плану","fr":"Довериться плану"},"b":{"ru":"Сравнить несколько путей","en":"Сравнить несколько путей","es":"Сравнить несколько путей","pt":"Сравнить несколько путей","de":"Сравнить несколько путей","fr":"Сравнить несколько путей"},"c":{"ru":"Спросить опытного человека","en":"Спросить опытного человека","es":"Спросить опытного человека","pt":"Спросить опытного человека","de":"Спросить опытного человека","fr":"Спросить опытного человека"},"stats":{"a":51,"b":37,"c":12},"analysis":{"ru":"","en":"","es":"","pt":"","de":"","fr":""}},{"question":{"ru":"Что важнее для хорошего вечера дома?","en":"Что важнее для хорошего вечера дома?","es":"Что важнее для хорошего вечера дома?","pt":"Что важнее для хорошего вечера дома?","de":"Что важнее для хорошего вечера дома?","fr":"Что важнее для хорошего вечера дома?"},"a":{"ru":"Оставить всё как есть","en":"Оставить всё как есть","es":"Оставить всё как есть","pt":"Оставить всё как есть","de":"Оставить всё как есть","fr":"Оставить всё как есть"},"b":{"ru":"Изменить главное","en":"Изменить главное","es":"Изменить главное","pt":"Изменить главное","de":"Изменить главное","fr":"Изменить главное"},"c":{"ru":"Перестроить всё постепенно","en":"Перестроить всё постепенно","es":"Перестроить всё постепенно","pt":"Перестроить всё постепенно","de":"Перестроить всё постепенно","fr":"Перестроить всё постепенно"},"stats":{"a":52,"b":48,"c":0},"analysis":{"ru":"","en":"","es":"","pt":"","de":"","fr":""}},{"question":{"ru":"Какое блюдо ты бы научился готовить идеально?","en":"Какое блюдо ты бы научился готовить идеально?","es":"Какое блюдо ты бы научился готовить идеально?","pt":"Какое блюдо ты бы научился готовить идеально?","de":"Какое блюдо ты бы научился готовить идеально?","fr":"Какое блюдо ты бы научился готовить идеально?"},"a":{"ru":"Сделаю сам","en":"Сделаю сам","es":"Сделаю сам","pt":"Сделаю сам","de":"Сделаю сам","fr":"Сделаю сам"},"b":{"ru":"Посоветуюсь","en":"Посоветуюсь","es":"Посоветуюсь","pt":"Посоветуюсь","de":"Посоветуюсь","fr":"Посоветуюсь"},"c":{"ru":"Дам время подумать","en":"Дам время подумать","es":"Дам время подумать","pt":"Дам время подумать","de":"Дам время подумать","fr":"Дам время подумать"},"stats":{"a":38,"b":34,"c":28},"analysis":{"ru":"","en":"","es":"","pt":"","de":"","fr":""}},{"question":{"ru":"Что ты скорее выберешь в незнакомом ресторане?","en":"Что ты скорее выберешь в незнакомом ресторане?","es":"Что ты скорее выберешь в незнакомом ресторане?","pt":"Что ты скорее выберешь в незнакомом ресторане?","de":"Что ты скорее выберешь в незнакомом ресторане?","fr":"Что ты скорее выберешь в незнакомом ресторане?"},"a":{"ru":"Точно придерживаться этого","en":"Точно придерживаться этого","es":"Точно придерживаться этого","pt":"Точно придерживаться этого","de":"Точно придерживаться этого","fr":"Точно придерживаться этого"},"b":{"ru":"Делать по вдохновению","en":"Делать по вдохновению","es":"Делать по вдохновению","pt":"Делать по вдохновению","de":"Делать по вдохновению","fr":"Делать по вдохновению"},"c":{"ru":"Искать свой вариант","en":"Искать свой вариант","es":"Искать свой вариант","pt":"Искать свой вариант","de":"Искать свой вариант","fr":"Искать свой вариант"},"stats":{"a":39,"b":45,"c":16},"analysis":{"ru":"","en":"","es":"","pt":"","de":"","fr":""}},{"question":{"ru":"Какой продукт всегда должен быть на твоей кухне?","en":"Какой продукт всегда должен быть на твоей кухне?","es":"Какой продукт всегда должен быть на твоей кухне?","pt":"Какой продукт всегда должен быть на твоей кухне?","de":"Какой продукт всегда должен быть на твоей кухне?","fr":"Какой продукт всегда должен быть на твоей кухне?"},"a":{"ru":"Говорить сразу","en":"Говорить сразу","es":"Говорить сразу","pt":"Говорить сразу","de":"Говорить сразу","fr":"Говорить сразу"},"b":{"ru":"Наблюдать сначала","en":"Наблюдать сначала","es":"Наблюдать сначала","pt":"Наблюдать сначала","de":"Наблюдать сначала","fr":"Наблюдать сначала"},"c":{"ru":"Вернуться к теме позже","en":"Вернуться к теме позже","es":"Вернуться к теме позже","pt":"Вернуться к теме позже","de":"Вернуться к теме позже","fr":"Вернуться к теме позже"},"stats":{"a":52,"b":31,"c":17},"analysis":{"ru":"","en":"","es":"","pt":"","de":"","fr":""}},{"question":{"ru":"Как ты относишься к рецептам, которые заметно меняют привычное блюдо?","en":"Как ты относишься к рецептам, которые заметно меняют привычное блюдо?","es":"Как ты относишься к рецептам, которые заметно меняют привычное блюдо?","pt":"Как ты относишься к рецептам, которые заметно меняют привычное блюдо?","de":"Как ты относишься к рецептам, которые заметно меняют привычное блюдо?","fr":"Как ты относишься к рецептам, которые заметно меняют привычное блюдо?"},"a":{"ru":"Довериться плану","en":"Довериться плану","es":"Довериться плану","pt":"Довериться плану","de":"Довериться плану","fr":"Довериться плану"},"b":{"ru":"Сравнить несколько путей","en":"Сравнить несколько путей","es":"Сравнить несколько путей","pt":"Сравнить несколько путей","de":"Сравнить несколько путей","fr":"Сравнить несколько путей"},"c":{"ru":"Спросить опытного человека","en":"Спросить опытного человека","es":"Спросить опытного человека","pt":"Спросить опытного человека","de":"Спросить опытного человека","fr":"Спросить опытного человека"},"stats":{"a":53,"b":42,"c":5},"analysis":{"ru":"","en":"","es":"","pt":"","de":"","fr":""}},{"question":{"ru":"Что делает обычный ужин особенным для тебя?","en":"Что делает обычный ужин особенным для тебя?","es":"Что делает обычный ужин особенным для тебя?","pt":"Что делает обычный ужин особенным для тебя?","de":"Что делает обычный ужин особенным для тебя?","fr":"Что делает обычный ужин особенным для тебя?"},"a":{"ru":"Оставить всё как есть","en":"Оставить всё как есть","es":"Оставить всё как есть","pt":"Оставить всё как есть","de":"Оставить всё как есть","fr":"Оставить всё как есть"},"b":{"ru":"Изменить главное","en":"Изменить главное","es":"Изменить главное","pt":"Изменить главное","de":"Изменить главное","fr":"Изменить главное"},"c":{"ru":"Перестроить всё постепенно","en":"Перестроить всё постепенно","es":"Перестроить всё постепенно","pt":"Перестроить всё постепенно","de":"Перестроить всё постепенно","fr":"Перестроить всё постепенно"},"stats":{"a":39,"b":28,"c":33},"analysis":{"ru":"","en":"","es":"","pt":"","de":"","fr":""}},{"question":{"ru":"Какую книгу ты бы хотел забыть и прочитать заново?","en":"Какую книгу ты бы хотел забыть и прочитать заново?","es":"Какую книгу ты бы хотел забыть и прочитать заново?","pt":"Какую книгу ты бы хотел забыть и прочитать заново?","de":"Какую книгу ты бы хотел забыть и прочитать заново?","fr":"Какую книгу ты бы хотел забыть и прочитать заново?"},"a":{"ru":"Сделаю сам","en":"Сделаю сам","es":"Сделаю сам","pt":"Сделаю сам","de":"Сделаю сам","fr":"Сделаю сам"},"b":{"ru":"Посоветуюсь","en":"Посоветуюсь","es":"Посоветуюсь","pt":"Посоветуюсь","de":"Посоветуюсь","fr":"Посоветуюсь"},"c":{"ru":"Дам время подумать","en":"Дам время подумать","es":"Дам время подумать","pt":"Дам время подумать","de":"Дам время подумать","fr":"Дам время подумать"},"stats":{"a":46,"b":39,"c":15},"analysis":{"ru":"","en":"","es":"","pt":"","de":"","fr":""}},{"question":{"ru":"Что сильнее удерживает твоё внимание в романе?","en":"Что сильнее удерживает твоё внимание в романе?","es":"Что сильнее удерживает твоё внимание в романе?","pt":"Что сильнее удерживает твоё внимание в романе?","de":"Что сильнее удерживает твоё внимание в романе?","fr":"Что сильнее удерживает твоё внимание в романе?"},"a":{"ru":"Точно придерживаться этого","en":"Точно придерживаться этого","es":"Точно придерживаться этого","pt":"Точно придерживаться этого","de":"Точно придерживаться этого","fr":"Точно придерживаться этого"},"b":{"ru":"Делать по вдохновению","en":"Делать по вдохновению","es":"Делать по вдохновению","pt":"Делать по вдохновению","de":"Делать по вдохновению","fr":"Делать по вдохновению"},"c":{"ru":"Искать свой вариант","en":"Искать свой вариант","es":"Искать свой вариант","pt":"Искать свой вариант","de":"Искать свой вариант","fr":"Искать свой вариант"},"stats":{"a":53,"b":25,"c":22},"analysis":{"ru":"","en":"","es":"","pt":"","de":"","fr":""}},{"question":{"ru":"Какой формат чтения тебе удобнее в дороге?","en":"Какой формат чтения тебе удобнее в дороге?","es":"Какой формат чтения тебе удобнее в дороге?","pt":"Какой формат чтения тебе удобнее в дороге?","de":"Какой формат чтения тебе удобнее в дороге?","fr":"Какой формат чтения тебе удобнее в дороге?"},"a":{"ru":"Говорить сразу","en":"Говорить сразу","es":"Говорить сразу","pt":"Говорить сразу","de":"Говорить сразу","fr":"Говорить сразу"},"b":{"ru":"Наблюдать сначала","en":"Наблюдать сначала","es":"Наблюдать сначала","pt":"Наблюдать сначала","de":"Наблюдать сначала","fr":"Наблюдать сначала"},"c":{"ru":"Вернуться к теме позже","en":"Вернуться к теме позже","es":"Вернуться к теме позже","pt":"Вернуться к теме позже","de":"Вернуться к теме позже","fr":"Вернуться к теме позже"},"stats":{"a":54,"b":36,"c":10},"analysis":{"ru":"","en":"","es":"","pt":"","de":"","fr":""}},{"question":{"ru":"Как ты выбираешь следующую книгу?","en":"Как ты выбираешь следующую книгу?","es":"Как ты выбираешь следующую книгу?","pt":"Как ты выбираешь следующую книгу?","de":"Как ты выбираешь следующую книгу?","fr":"Как ты выбираешь следующую книгу?"},"a":{"ru":"Довериться плану","en":"Довериться плану","es":"Довериться плану","pt":"Довериться плану","de":"Довериться плану","fr":"Довериться плану"},"b":{"ru":"Сравнить несколько путей","en":"Сравнить несколько путей","es":"Сравнить несколько путей","pt":"Сравнить несколько путей","de":"Сравнить несколько путей","fr":"Сравнить несколько путей"},"c":{"ru":"Спросить опытного человека","en":"Спросить опытного человека","es":"Спросить опытного человека","pt":"Спросить опытного человека","de":"Спросить опытного человека","fr":"Спросить опытного человека"},"stats":{"a":40,"b":47,"c":13},"analysis":{"ru":"","en":"","es":"","pt":"","de":"","fr":""}},{"question":{"ru":"Что ты предпочитаешь узнать о герое прежде всего?","en":"Что ты предпочитаешь узнать о герое прежде всего?","es":"Что ты предпочитаешь узнать о герое прежде всего?","pt":"Что ты предпочитаешь узнать о герое прежде всего?","de":"Что ты предпочитаешь узнать о герое прежде всего?","fr":"Что ты предпочитаешь узнать о герое прежде всего?"},"a":{"ru":"Оставить всё как есть","en":"Оставить всё как есть","es":"Оставить всё как есть","pt":"Оставить всё как есть","de":"Оставить всё как есть","fr":"Оставить всё как есть"},"b":{"ru":"Изменить главное","en":"Изменить главное","es":"Изменить главное","pt":"Изменить главное","de":"Изменить главное","fr":"Изменить главное"},"c":{"ru":"Перестроить всё постепенно","en":"Перестроить всё постепенно","es":"Перестроить всё постепенно","pt":"Перестроить всё постепенно","de":"Перестроить всё постепенно","fr":"Перестроить всё постепенно"},"stats":{"a":47,"b":33,"c":20},"analysis":{"ru":"","en":"","es":"","pt":"","de":"","fr":""}},{"question":{"ru":"Что заставляет тебя досмотреть фильм до конца?","en":"Что заставляет тебя досмотреть фильм до конца?","es":"Что заставляет тебя досмотреть фильм до конца?","pt":"Что заставляет тебя досмотреть фильм до конца?","de":"Что заставляет тебя досмотреть фильм до конца?","fr":"Что заставляет тебя досмотреть фильм до конца?"},"a":{"ru":"Сделаю сам","en":"Сделаю сам","es":"Сделаю сам","pt":"Сделаю сам","de":"Сделаю сам","fr":"Сделаю сам"},"b":{"ru":"Посоветуюсь","en":"Посоветуюсь","es":"Посоветуюсь","pt":"Посоветуюсь","de":"Посоветуюсь","fr":"Посоветуюсь"},"c":{"ru":"Дам время подумать","en":"Дам время подумать","es":"Дам время подумать","pt":"Дам время подумать","de":"Дам время подумать","fr":"Дам время подумать"},"stats":{"a":48,"b":44,"c":8},"analysis":{"ru":"","en":"","es":"","pt":"","de":"","fr":""}},{"question":{"ru":"Какой жанр ты выберешь для дождливого вечера?","en":"Какой жанр ты выберешь для дождливого вечера?","es":"Какой жанр ты выберешь для дождливого вечера?","pt":"Какой жанр ты выберешь для дождливого вечера?","de":"Какой жанр ты выберешь для дождливого вечера?","fr":"Какой жанр ты выберешь для дождливого вечера?"},"a":{"ru":"Точно придерживаться этого","en":"Точно придерживаться этого","es":"Точно придерживаться этого","pt":"Точно придерживаться этого","de":"Точно придерживаться этого","fr":"Точно придерживаться этого"},"b":{"ru":"Делать по вдохновению","en":"Делать по вдохновению","es":"Делать по вдохновению","pt":"Делать по вдохновению","de":"Делать по вдохновению","fr":"Делать по вдохновению"},"c":{"ru":"Искать свой вариант","en":"Искать свой вариант","es":"Искать свой вариант","pt":"Искать свой вариант","de":"Искать свой вариант","fr":"Искать свой вариант"},"stats":{"a":55,"b":30,"c":15},"analysis":{"ru":"","en":"","es":"","pt":"","de":"","fr":""}},{"question":{"ru":"Что важнее для тебя в кино: сюжет, атмосфера или персонажи?","en":"Что важнее для тебя в кино: сюжет, атмосфера или персонажи?","es":"Что важнее для тебя в кино: сюжет, атмосфера или персонажи?","pt":"Что важнее для тебя в кино: сюжет, атмосфера или персонажи?","de":"Что важнее для тебя в кино: сюжет, атмосфера или персонажи?","fr":"Что важнее для тебя в кино: сюжет, атмосфера или персонажи?"},"a":{"ru":"Говорить сразу","en":"Говорить сразу","es":"Говорить сразу","pt":"Говорить сразу","de":"Говорить сразу","fr":"Говорить сразу"},"b":{"ru":"Наблюдать сначала","en":"Наблюдать сначала","es":"Наблюдать сначала","pt":"Наблюдать сначала","de":"Наблюдать сначала","fr":"Наблюдать сначала"},"c":{"ru":"Вернуться к теме позже","en":"Вернуться к теме позже","es":"Вернуться к теме позже","pt":"Вернуться к теме позже","de":"Вернуться к теме позже","fr":"Вернуться к теме позже"},"stats":{"a":41,"b":41,"c":18},"analysis":{"ru":"","en":"","es":"","pt":"","de":"","fr":""}},{"question":{"ru":"Как ты относишься к финалам, которые оставляют вопросы?","en":"Как ты относишься к финалам, которые оставляют вопросы?","es":"Как ты относишься к финалам, которые оставляют вопросы?","pt":"Как ты относишься к финалам, которые оставляют вопросы?","de":"Как ты относишься к финалам, которые оставляют вопросы?","fr":"Как ты относишься к финалам, которые оставляют вопросы?"},"a":{"ru":"Довериться плану","en":"Довериться плану","es":"Довериться плану","pt":"Довериться плану","de":"Довериться плану","fr":"Довериться плану"},"b":{"ru":"Сравнить несколько путей","en":"Сравнить несколько путей","es":"Сравнить несколько путей","pt":"Сравнить несколько путей","de":"Сравнить несколько путей","fr":"Сравнить несколько путей"},"c":{"ru":"Спросить опытного человека","en":"Спросить опытного человека","es":"Спросить опытного человека","pt":"Спросить опытного человека","de":"Спросить опытного человека","fr":"Спросить опытного человека"},"stats":{"a":48,"b":27,"c":25},"analysis":{"ru":"","en":"","es":"","pt":"","de":"","fr":""}},{"question":{"ru":"Какой фильм ты бы показал человеку, чтобы познакомить его со своим вкусом?","en":"Какой фильм ты бы показал человеку, чтобы познакомить его со своим вкусом?","es":"Какой фильм ты бы показал человеку, чтобы познакомить его со своим вкусом?","pt":"Какой фильм ты бы показал человеку, чтобы познакомить его со своим вкусом?","de":"Какой фильм ты бы показал человеку, чтобы познакомить его со своим вкусом?","fr":"Какой фильм ты бы показал человеку, чтобы познакомить его со своим вкусом?"},"a":{"ru":"Оставить всё как есть","en":"Оставить всё как есть","es":"Оставить всё как есть","pt":"Оставить всё как есть","de":"Оставить всё как есть","fr":"Оставить всё как есть"},"b":{"ru":"Изменить главное","en":"Изменить главное","es":"Изменить главное","pt":"Изменить главное","de":"Изменить главное","fr":"Изменить главное"},"c":{"ru":"Перестроить всё постепенно","en":"Перестроить всё постепенно","es":"Перестроить всё постепенно","pt":"Перестроить всё постепенно","de":"Перестроить всё постепенно","fr":"Перестроить всё постепенно"},"stats":{"a":49,"b":38,"c":13},"analysis":{"ru":"","en":"","es":"","pt":"","de":"","fr":""}},{"question":{"ru":"Какую музыку ты включишь, чтобы быстро изменить настроение?","en":"Какую музыку ты включишь, чтобы быстро изменить настроение?","es":"Какую музыку ты включишь, чтобы быстро изменить настроение?","pt":"Какую музыку ты включишь, чтобы быстро изменить настроение?","de":"Какую музыку ты включишь, чтобы быстро изменить настроение?","fr":"Какую музыку ты включишь, чтобы быстро изменить настроение?"},"a":{"ru":"Сделаю сам","en":"Сделаю сам","es":"Сделаю сам","pt":"Сделаю сам","de":"Сделаю сам","fr":"Сделаю сам"},"b":{"ru":"Посоветуюсь","en":"Посоветуюсь","es":"Посоветуюсь","pt":"Посоветуюсь","de":"Посоветуюсь","fr":"Посоветуюсь"},"c":{"ru":"Дам время подумать","en":"Дам время подумать","es":"Дам время подумать","pt":"Дам время подумать","de":"Дам время подумать","fr":"Дам время подумать"},"stats":{"a":62,"b":24,"c":14},"analysis":{"ru":"","en":"","es":"","pt":"","de":"","fr":""}},{"question":{"ru":"Что тебе важнее в любимой песне?","en":"Что тебе важнее в любимой песне?","es":"Что тебе важнее в любимой песне?","pt":"Что тебе важнее в любимой песне?","de":"Что тебе важнее в любимой песне?","fr":"Что тебе важнее в любимой песне?"},"a":{"ru":"Точно придерживаться этого","en":"Точно придерживаться этого","es":"Точно придерживаться этого","pt":"Точно придерживаться этого","de":"Точно придерживаться этого","fr":"Точно придерживаться этого"},"b":{"ru":"Делать по вдохновению","en":"Делать по вдохновению","es":"Делать по вдохновению","pt":"Делать по вдохновению","de":"Делать по вдохновению","fr":"Делать по вдохновению"},"c":{"ru":"Искать свой вариант","en":"Искать свой вариант","es":"Искать свой вариант","pt":"Искать свой вариант","de":"Искать свой вариант","fr":"Искать свой вариант"},"stats":{"a":42,"b":35,"c":23},"analysis":{"ru":"","en":"","es":"","pt":"","de":"","fr":""}},{"question":{"ru":"Как ты выбираешь новый альбом для прослушивания?","en":"Как ты выбираешь новый альбом для прослушивания?","es":"Как ты выбираешь новый альбом для прослушивания?","pt":"Как ты выбираешь новый альбом для прослушивания?","de":"Как ты выбираешь новый альбом для прослушивания?","fr":"Как ты выбираешь новый альбом для прослушивания?"},"a":{"ru":"Говорить сразу","en":"Говорить сразу","es":"Говорить сразу","pt":"Говорить сразу","de":"Говорить сразу","fr":"Говорить сразу"},"b":{"ru":"Наблюдать сначала","en":"Наблюдать сначала","es":"Наблюдать сначала","pt":"Наблюдать сначала","de":"Наблюдать сначала","fr":"Наблюдать сначала"},"c":{"ru":"Вернуться к теме позже","en":"Вернуться к теме позже","es":"Вернуться к теме позже","pt":"Вернуться к теме позже","de":"Вернуться к теме позже","fr":"Вернуться к теме позже"},"stats":{"a":43,"b":46,"c":11},"analysis":{"ru":"","en":"","es":"","pt":"","de":"","fr":""}},{"question":{"ru":"Какой звук ты бы добавил к идеальному утру?","en":"Какой звук ты бы добавил к идеальному утру?","es":"Какой звук ты бы добавил к идеальному утру?","pt":"Какой звук ты бы добавил к идеальному утру?","de":"Какой звук ты бы добавил к идеальному утру?","fr":"Какой звук ты бы добавил к идеальному утру?"},"a":{"ru":"Довериться плану","en":"Довериться плану","es":"Довериться плану","pt":"Довериться плану","de":"Довериться плану","fr":"Довериться плану"},"b":{"ru":"Сравнить несколько путей","en":"Сравнить несколько путей","es":"Сравнить несколько путей","pt":"Сравнить несколько путей","de":"Сравнить несколько путей","fr":"Сравнить несколько путей"},"c":{"ru":"Спросить опытного человека","en":"Спросить опытного человека","es":"Спросить опытного человека","pt":"Спросить опытного человека","de":"Спросить опытного человека","fr":"Спросить опытного человека"},"stats":{"a":56,"b":32,"c":12},"analysis":{"ru":"","en":"","es":"","pt":"","de":"","fr":""}},{"question":{"ru":"Что ты предпочитаешь на фоне долгой работы?","en":"Что ты предпочитаешь на фоне долгой работы?","es":"Что ты предпочитаешь на фоне долгой работы?","pt":"Что ты предпочитаешь на фоне долгой работы?","de":"Что ты предпочитаешь на фоне долгой работы?","fr":"Что ты предпочитаешь на фоне долгой работы?"},"a":{"ru":"Оставить всё как есть","en":"Оставить всё как есть","es":"Оставить всё как есть","pt":"Оставить всё как есть","de":"Оставить всё как есть","fr":"Оставить всё как есть"},"b":{"ru":"Изменить главное","en":"Изменить главное","es":"Изменить главное","pt":"Изменить главное","de":"Изменить главное","fr":"Изменить главное"},"c":{"ru":"Перестроить всё постепенно","en":"Перестроить всё постепенно","es":"Перестроить всё постепенно","pt":"Перестроить всё постепенно","de":"Перестроить всё постепенно","fr":"Перестроить всё постепенно"},"stats":{"a":36,"b":43,"c":21},"analysis":{"ru":"","en":"","es":"","pt":"","de":"","fr":""}},{"question":{"ru":"Какой городской объект тебе интереснее рассматривать вечером?","en":"Какой городской объект тебе интереснее рассматривать вечером?","es":"Какой городской объект тебе интереснее рассматривать вечером?","pt":"Какой городской объект тебе интереснее рассматривать вечером?","de":"Какой городской объект тебе интереснее рассматривать вечером?","fr":"Какой городской объект тебе интереснее рассматривать вечером?"},"a":{"ru":"Сделаю сам","en":"Сделаю сам","es":"Сделаю сам","pt":"Сделаю сам","de":"Сделаю сам","fr":"Сделаю сам"},"b":{"ru":"Посоветуюсь","en":"Посоветуюсь","es":"Посоветуюсь","pt":"Посоветуюсь","de":"Посоветуюсь","fr":"Посоветуюсь"},"c":{"ru":"Дам время подумать","en":"Дам время подумать","es":"Дам время подумать","pt":"Дам время подумать","de":"Дам время подумать","fr":"Дам время подумать"},"stats":{"a":43,"b":29,"c":28},"analysis":{"ru":"","en":"","es":"","pt":"","de":"","fr":""}},{"question":{"ru":"Что ты замечаешь, когда впервые приезжаешь в новый район?","en":"Что ты замечаешь, когда впервые приезжаешь в новый район?","es":"Что ты замечаешь, когда впервые приезжаешь в новый район?","pt":"Что ты замечаешь, когда впервые приезжаешь в новый район?","de":"Что ты замечаешь, когда впервые приезжаешь в новый район?","fr":"Что ты замечаешь, когда впервые приезжаешь в новый район?"},"a":{"ru":"Точно придерживаться этого","en":"Точно придерживаться этого","es":"Точно придерживаться этого","pt":"Точно придерживаться этого","de":"Точно придерживаться этого","fr":"Точно придерживаться этого"},"b":{"ru":"Делать по вдохновению","en":"Делать по вдохновению","es":"Делать по вдохновению","pt":"Делать по вдохновению","de":"Делать по вдохновению","fr":"Делать по вдохновению"},"c":{"ru":"Искать свой вариант","en":"Искать свой вариант","es":"Искать свой вариант","pt":"Искать свой вариант","de":"Искать свой вариант","fr":"Искать свой вариант"},"stats":{"a":44,"b":40,"c":16},"analysis":{"ru":"","en":"","es":"","pt":"","de":"","fr":""}},{"question":{"ru":"Какое место в городе ты бы выбрал для долгого разговора?","en":"Какое место в городе ты бы выбрал для долгого разговора?","es":"Какое место в городе ты бы выбрал для долгого разговора?","pt":"Какое место в городе ты бы выбрал для долгого разговора?","de":"Какое место в городе ты бы выбрал для долгого разговора?","fr":"Какое место в городе ты бы выбрал для долгого разговора?"},"a":{"ru":"Говорить сразу","en":"Говорить сразу","es":"Говорить сразу","pt":"Говорить сразу","de":"Говорить сразу","fr":"Говорить сразу"},"b":{"ru":"Наблюдать сначала","en":"Наблюдать сначала","es":"Наблюдать сначала","pt":"Наблюдать сначала","de":"Наблюдать сначала","fr":"Наблюдать сначала"},"c":{"ru":"Вернуться к теме позже","en":"Вернуться к теме позже","es":"Вернуться к теме позже","pt":"Вернуться к теме позже","de":"Вернуться к теме позже","fr":"Вернуться к теме позже"},"stats":{"a":57,"b":26,"c":17},"analysis":{"ru":"","en":"","es":"","pt":"","de":"","fr":""}},{"question":{"ru":"Что делает район привлекательным для жизни?","en":"Что делает район привлекательным для жизни?","es":"Что делает район привлекательным для жизни?","pt":"Что делает район привлекательным для жизни?","de":"Что делает район привлекательным для жизни?","fr":"Что делает район привлекательным для жизни?"},"a":{"ru":"Довериться плану","en":"Довериться плану","es":"Довериться плану","pt":"Довериться плану","de":"Довериться плану","fr":"Довериться плану"},"b":{"ru":"Сравнить несколько путей","en":"Сравнить несколько путей","es":"Сравнить несколько путей","pt":"Сравнить несколько путей","de":"Сравнить несколько путей","fr":"Сравнить несколько путей"},"c":{"ru":"Спросить опытного человека","en":"Спросить опытного человека","es":"Спросить опытного человека","pt":"Спросить опытного человека","de":"Спросить опытного человека","fr":"Спросить опытного человека"},"stats":{"a":37,"b":37,"c":26},"analysis":{"ru":"","en":"","es":"","pt":"","de":"","fr":""}},{"question":{"ru":"Какой элемент городской архитектуры тебе нравится больше всего?","en":"Какой элемент городской архитектуры тебе нравится больше всего?","es":"Какой элемент городской архитектуры тебе нравится больше всего?","pt":"Какой элемент городской архитектуры тебе нравится больше всего?","de":"Какой элемент городской архитектуры тебе нравится больше всего?","fr":"Какой элемент городской архитектуры тебе нравится больше всего?"},"a":{"ru":"Оставить всё как есть","en":"Оставить всё как есть","es":"Оставить всё как есть","pt":"Оставить всё как есть","de":"Оставить всё как есть","fr":"Оставить всё как есть"},"b":{"ru":"Изменить главное","en":"Изменить главное","es":"Изменить главное","pt":"Изменить главное","de":"Изменить главное","fr":"Изменить главное"},"c":{"ru":"Перестроить всё постепенно","en":"Перестроить всё постепенно","es":"Перестроить всё постепенно","pt":"Перестроить всё постепенно","de":"Перестроить всё постепенно","fr":"Перестроить всё постепенно"},"stats":{"a":38,"b":48,"c":14},"analysis":{"ru":"","en":"","es":"","pt":"","de":"","fr":""}},{"question":{"ru":"Какое место на природе тебе легче всего представить своим убежищем?","en":"Какое место на природе тебе легче всего представить своим убежищем?","es":"Какое место на природе тебе легче всего представить своим убежищем?","pt":"Какое место на природе тебе легче всего представить своим убежищем?","de":"Какое место на природе тебе легче всего представить своим убежищем?","fr":"Какое место на природе тебе легче всего представить своим убежищем?"},"a":{"ru":"Сделаю сам","en":"Сделаю сам","es":"Сделаю сам","pt":"Сделаю сам","de":"Сделаю сам","fr":"Сделаю сам"},"b":{"ru":"Посоветуюсь","en":"Посоветуюсь","es":"Посоветуюсь","pt":"Посоветуюсь","de":"Посоветуюсь","fr":"Посоветуюсь"},"c":{"ru":"Дам время подумать","en":"Дам время подумать","es":"Дам время подумать","pt":"Дам время подумать","de":"Дам время подумать","fr":"Дам время подумать"},"stats":{"a":51,"b":34,"c":15},"analysis":{"ru":"","en":"","es":"","pt":"","de":"","fr":""}},{"question":{"ru":"Что тебе приятнее делать у воды?","en":"Что тебе приятнее делать у воды?","es":"Что тебе приятнее делать у воды?","pt":"Что тебе приятнее делать у воды?","de":"Что тебе приятнее делать у воды?","fr":"Что тебе приятнее делать у воды?"},"a":{"ru":"Точно придерживаться этого","en":"Точно придерживаться этого","es":"Точно придерживаться этого","pt":"Точно придерживаться этого","de":"Точно придерживаться этого","fr":"Точно придерживаться этого"},"b":{"ru":"Делать по вдохновению","en":"Делать по вдохновению","es":"Делать по вдохновению","pt":"Делать по вдохновению","de":"Делать по вдохновению","fr":"Делать по вдохновению"},"c":{"ru":"Искать свой вариант","en":"Искать свой вариант","es":"Искать свой вариант","pt":"Искать свой вариант","de":"Искать свой вариант","fr":"Искать свой вариант"},"stats":{"a":52,"b":45,"c":3},"analysis":{"ru":"","en":"","es":"","pt":"","de":"","fr":""}},{"question":{"ru":"Какую погоду ты считаешь идеальной для прогулки?","en":"Какую погоду ты считаешь идеальной для прогулки?","es":"Какую погоду ты считаешь идеальной для прогулки?","pt":"Какую погоду ты считаешь идеальной для прогулки?","de":"Какую погоду ты считаешь идеальной для прогулки?","fr":"Какую погоду ты считаешь идеальной для прогулки?"},"a":{"ru":"Говорить сразу","en":"Говорить сразу","es":"Говорить сразу","pt":"Говорить сразу","de":"Говорить сразу","fr":"Говорить сразу"},"b":{"ru":"Наблюдать сначала","en":"Наблюдать сначала","es":"Наблюдать сначала","pt":"Наблюдать сначала","de":"Наблюдать сначала","fr":"Наблюдать сначала"},"c":{"ru":"Вернуться к теме позже","en":"Вернуться к теме позже","es":"Вернуться к теме позже","pt":"Вернуться к теме позже","de":"Вернуться к теме позже","fr":"Вернуться к теме позже"},"stats":{"a":38,"b":31,"c":31},"analysis":{"ru":"","en":"","es":"","pt":"","de":"","fr":""}},{"question":{"ru":"Что сильнее всего притягивает тебя в лесу?","en":"Что сильнее всего притягивает тебя в лесу?","es":"Что сильнее всего притягивает тебя в лесу?","pt":"Что сильнее всего притягивает тебя в лесу?","de":"Что сильнее всего притягивает тебя в лесу?","fr":"Что сильнее всего притягивает тебя в лесу?"},"a":{"ru":"Довериться плану","en":"Довериться плану","es":"Довериться плану","pt":"Довериться плану","de":"Довериться плану","fr":"Довериться плану"},"b":{"ru":"Сравнить несколько путей","en":"Сравнить несколько путей","es":"Сравнить несколько путей","pt":"Сравнить несколько путей","de":"Сравнить несколько путей","fr":"Сравнить несколько путей"},"c":{"ru":"Спросить опытного человека","en":"Спросить опытного человека","es":"Спросить опытного человека","pt":"Спросить опытного человека","de":"Спросить опытного человека","fr":"Спросить опытного человека"},"stats":{"a":45,"b":42,"c":13},"analysis":{"ru":"","en":"","es":"","pt":"","de":"","fr":""}},{"question":{"ru":"Какой природный пейзаж ты бы хотел увидеть лично?","en":"Какой природный пейзаж ты бы хотел увидеть лично?","es":"Какой природный пейзаж ты бы хотел увидеть лично?","pt":"Какой природный пейзаж ты бы хотел увидеть лично?","de":"Какой природный пейзаж ты бы хотел увидеть лично?","fr":"Какой природный пейзаж ты бы хотел увидеть лично?"},"a":{"ru":"Оставить всё как есть","en":"Оставить всё как есть","es":"Оставить всё как есть","pt":"Оставить всё как есть","de":"Оставить всё как есть","fr":"Оставить всё как есть"},"b":{"ru":"Изменить главное","en":"Изменить главное","es":"Изменить главное","pt":"Изменить главное","de":"Изменить главное","fr":"Изменить главное"},"c":{"ru":"Перестроить всё постепенно","en":"Перестроить всё постепенно","es":"Перестроить всё постепенно","pt":"Перестроить всё постепенно","de":"Перестроить всё постепенно","fr":"Перестроить всё постепенно"},"stats":{"a":52,"b":28,"c":20},"analysis":{"ru":"","en":"","es":"","pt":"","de":"","fr":""}},{"question":{"ru":"Как тебе легче всего запоминать новую информацию?","en":"Как тебе легче всего запоминать новую информацию?","es":"Как тебе легче всего запоминать новую информацию?","pt":"Как тебе легче всего запоминать новую информацию?","de":"Как тебе легче всего запоминать новую информацию?","fr":"Как тебе легче всего запоминать новую информацию?"},"a":{"ru":"Сделаю сам","en":"Сделаю сам","es":"Сделаю сам","pt":"Сделаю сам","de":"Сделаю сам","fr":"Сделаю сам"},"b":{"ru":"Посоветуюсь","en":"Посоветуюсь","es":"Посоветуюсь","pt":"Посоветуюсь","de":"Посоветуюсь","fr":"Посоветуюсь"},"c":{"ru":"Дам время подумать","en":"Дам время подумать","es":"Дам время подумать","pt":"Дам время подумать","de":"Дам время подумать","fr":"Дам время подумать"},"stats":{"a":53,"b":39,"c":8},"analysis":{"ru":"","en":"","es":"","pt":"","de":"","fr":""}},{"question":{"ru":"Что ты делаешь, когда тема кажется слишком сложной?","en":"Что ты делаешь, когда тема кажется слишком сложной?","es":"Что ты делаешь, когда тема кажется слишком сложной?","pt":"Что ты делаешь, когда тема кажется слишком сложной?","de":"Что ты делаешь, когда тема кажется слишком сложной?","fr":"Что ты делаешь, когда тема кажется слишком сложной?"},"a":{"ru":"Точно придерживаться этого","en":"Точно придерживаться этого","es":"Точно придерживаться этого","pt":"Точно придерживаться этого","de":"Точно придерживаться этого","fr":"Точно придерживаться этого"},"b":{"ru":"Делать по вдохновению","en":"Делать по вдохновению","es":"Делать по вдохновению","pt":"Делать по вдохновению","de":"Делать по вдохновению","fr":"Делать по вдохновению"},"c":{"ru":"Искать свой вариант","en":"Искать свой вариант","es":"Искать свой вариант","pt":"Искать свой вариант","de":"Искать свой вариант","fr":"Искать свой вариант"},"stats":{"a":39,"b":25,"c":36},"analysis":{"ru":"","en":"","es":"","pt":"","de":"","fr":""}},{"question":{"ru":"Какой новый навык ты бы выбрал для ближайших месяцев?","en":"Какой новый навык ты бы выбрал для ближайших месяцев?","es":"Какой новый навык ты бы выбрал для ближайших месяцев?","pt":"Какой новый навык ты бы выбрал для ближайших месяцев?","de":"Какой новый навык ты бы выбрал для ближайших месяцев?","fr":"Какой новый навык ты бы выбрал для ближайших месяцев?"},"a":{"ru":"Говорить сразу","en":"Говорить сразу","es":"Говорить сразу","pt":"Говорить сразу","de":"Говорить сразу","fr":"Говорить сразу"},"b":{"ru":"Наблюдать сначала","en":"Наблюдать сначала","es":"Наблюдать сначала","pt":"Наблюдать сначала","de":"Наблюдать сначала","fr":"Наблюдать сначала"},"c":{"ru":"Вернуться к теме позже","en":"Вернуться к теме позже","es":"Вернуться к теме позже","pt":"Вернуться к теме позже","de":"Вернуться к теме позже","fr":"Вернуться к теме позже"},"stats":{"a":46,"b":36,"c":18},"analysis":{"ru":"","en":"","es":"","pt":"","de":"","fr":""}},{"question":{"ru":"Что помогает тебе не бросить обучение на середине?","en":"Что помогает тебе не бросить обучение на середине?","es":"Что помогает тебе не бросить обучение на середине?","pt":"Что помогает тебе не бросить обучение на середине?","de":"Что помогает тебе не бросить обучение на середине?","fr":"Что помогает тебе не бросить обучение на середине?"},"a":{"ru":"Довериться плану","en":"Довериться плану","es":"Довериться плану","pt":"Довериться плану","de":"Довериться плану","fr":"Довериться плану"},"b":{"ru":"Сравнить несколько путей","en":"Сравнить несколько путей","es":"Сравнить несколько путей","pt":"Сравнить несколько путей","de":"Сравнить несколько путей","fr":"Сравнить несколько путей"},"c":{"ru":"Спросить опытного человека","en":"Спросить опытного человека","es":"Спросить опытного человека","pt":"Спросить опытного человека","de":"Спросить опытного человека","fr":"Спросить опытного человека"},"stats":{"a":47,"b":47,"c":6},"analysis":{"ru":"","en":"","es":"","pt":"","de":"","fr":""}},{"question":{"ru":"Какой способ объяснения материала тебе понятнее?","en":"Какой способ объяснения материала тебе понятнее?","es":"Какой способ объяснения материала тебе понятнее?","pt":"Какой способ объяснения материала тебе понятнее?","de":"Какой способ объяснения материала тебе понятнее?","fr":"Какой способ объяснения материала тебе понятнее?"},"a":{"ru":"Оставить всё как есть","en":"Оставить всё как есть","es":"Оставить всё как есть","pt":"Оставить всё как есть","de":"Оставить всё как есть","fr":"Оставить всё как есть"},"b":{"ru":"Изменить главное","en":"Изменить главное","es":"Изменить главное","pt":"Изменить главное","de":"Изменить главное","fr":"Изменить главное"},"c":{"ru":"Перестроить всё постепенно","en":"Перестроить всё постепенно","es":"Перестроить всё постепенно","pt":"Перестроить всё постепенно","de":"Перестроить всё постепенно","fr":"Перестроить всё постепенно"},"stats":{"a":54,"b":33,"c":13},"analysis":{"ru":"","en":"","es":"","pt":"","de":"","fr":""}},{"question":{"ru":"Какое устройство ты бы заменил в первую очередь при ограниченном бюджете?","en":"Какое устройство ты бы заменил в первую очередь при ограниченном бюджете?","es":"Какое устройство ты бы заменил в первую очередь при ограниченном бюджете?","pt":"Какое устройство ты бы заменил в первую очередь при ограниченном бюджете?","de":"Какое устройство ты бы заменил в первую очередь при ограниченном бюджете?","fr":"Какое устройство ты бы заменил в первую очередь при ограниченном бюджете?"},"a":{"ru":"Сделаю сам","en":"Сделаю сам","es":"Сделаю сам","pt":"Сделаю сам","de":"Сделаю сам","fr":"Сделаю сам"},"b":{"ru":"Посоветуюсь","en":"Посоветуюсь","es":"Посоветуюсь","pt":"Посоветуюсь","de":"Посоветуюсь","fr":"Посоветуюсь"},"c":{"ru":"Дам время подумать","en":"Дам время подумать","es":"Дам время подумать","pt":"Дам время подумать","de":"Дам время подумать","fr":"Дам время подумать"},"stats":{"a":40,"b":44,"c":16},"analysis":{"ru":"","en":"","es":"","pt":"","de":"","fr":""}},{"question":{"ru":"Что для тебя важнее в новом приложении?","en":"Что для тебя важнее в новом приложении?","es":"Что для тебя важнее в новом приложении?","pt":"Что для тебя важнее в новом приложении?","de":"Что для тебя важнее в новом приложении?","fr":"Что для тебя важнее в новом приложении?"},"a":{"ru":"Точно придерживаться этого","en":"Точно придерживаться этого","es":"Точно придерживаться этого","pt":"Точно придерживаться этого","de":"Точно придерживаться этого","fr":"Точно придерживаться этого"},"b":{"ru":"Делать по вдохновению","en":"Делать по вдохновению","es":"Делать по вдохновению","pt":"Делать по вдохновению","de":"Делать по вдохновению","fr":"Делать по вдохновению"},"c":{"ru":"Искать свой вариант","en":"Искать свой вариант","es":"Искать свой вариант","pt":"Искать свой вариант","de":"Искать свой вариант","fr":"Искать свой вариант"},"stats":{"a":47,"b":30,"c":23},"analysis":{"ru":"","en":"","es":"","pt":"","de":"","fr":""}},{"question":{"ru":"Как ты относишься к автоматизации повседневных дел?","en":"Как ты относишься к автоматизации повседневных дел?","es":"Как ты относишься к автоматизации повседневных дел?","pt":"Как ты относишься к автоматизации повседневных дел?","de":"Как ты относишься к автоматизации повседневных дел?","fr":"Как ты относишься к автоматизации повседневных дел?"},"a":{"ru":"Говорить сразу","en":"Говорить сразу","es":"Говорить сразу","pt":"Говорить сразу","de":"Говорить сразу","fr":"Говорить сразу"},"b":{"ru":"Наблюдать сначала","en":"Наблюдать сначала","es":"Наблюдать сначала","pt":"Наблюдать сначала","de":"Наблюдать сначала","fr":"Наблюдать сначала"},"c":{"ru":"Вернуться к теме позже","en":"Вернуться к теме позже","es":"Вернуться к теме позже","pt":"Вернуться к теме позже","de":"Вернуться к теме позже","fr":"Вернуться к теме позже"},"stats":{"a":48,"b":41,"c":11},"analysis":{"ru":"","en":"","es":"","pt":"","de":"","fr":""}},{"question":{"ru":"Какую цифровую привычку тебе хотелось бы изменить?","en":"Какую цифровую привычку тебе хотелось бы изменить?","es":"Какую цифровую привычку тебе хотелось бы изменить?","pt":"Какую цифровую привычку тебе хотелось бы изменить?","de":"Какую цифровую привычку тебе хотелось бы изменить?","fr":"Какую цифровую привычку тебе хотелось бы изменить?"},"a":{"ru":"Довериться плану","en":"Довериться плану","es":"Довериться плану","pt":"Довериться плану","de":"Довериться плану","fr":"Довериться плану"},"b":{"ru":"Сравнить несколько путей","en":"Сравнить несколько путей","es":"Сравнить несколько путей","pt":"Сравнить несколько путей","de":"Сравнить несколько путей","fr":"Сравнить несколько путей"},"c":{"ru":"Спросить опытного человека","en":"Спросить опытного человека","es":"Спросить опытного человека","pt":"Спросить опытного человека","de":"Спросить опытного человека","fr":"Спросить опытного человека"},"stats":{"a":61,"b":27,"c":12},"analysis":{"ru":"","en":"","es":"","pt":"","de":"","fr":""}},{"question":{"ru":"Что ты проверяешь перед установкой неизвестного приложения?","en":"Что ты проверяешь перед установкой неизвестного приложения?","es":"Что ты проверяешь перед установкой неизвестного приложения?","pt":"Что ты проверяешь перед установкой неизвестного приложения?","de":"Что ты проверяешь перед установкой неизвестного приложения?","fr":"Что ты проверяешь перед установкой неизвестного приложения?"},"a":{"ru":"Оставить всё как есть","en":"Оставить всё как есть","es":"Оставить всё как есть","pt":"Оставить всё как есть","de":"Оставить всё как есть","fr":"Оставить всё как есть"},"b":{"ru":"Изменить главное","en":"Изменить главное","es":"Изменить главное","pt":"Изменить главное","de":"Изменить главное","fr":"Изменить главное"},"c":{"ru":"Перестроить всё постепенно","en":"Перестроить всё постепенно","es":"Перестроить всё постепенно","pt":"Перестроить всё постепенно","de":"Перестроить всё постепенно","fr":"Перестроить всё постепенно"},"stats":{"a":41,"b":38,"c":21},"analysis":{"ru":"","en":"","es":"","pt":"","de":"","fr":""}},{"question":{"ru":"Что помогает тебе понять незнакомого человека?","en":"Что помогает тебе понять незнакомого человека?","es":"Что помогает тебе понять незнакомого человека?","pt":"Что помогает тебе понять незнакомого человека?","de":"Что помогает тебе понять незнакомого человека?","fr":"Что помогает тебе понять незнакомого человека?"},"a":{"ru":"Сделаю сам","en":"Сделаю сам","es":"Сделаю сам","pt":"Сделаю сам","de":"Сделаю сам","fr":"Сделаю сам"},"b":{"ru":"Посоветуюсь","en":"Посоветуюсь","es":"Посоветуюсь","pt":"Посоветуюсь","de":"Посоветуюсь","fr":"Посоветуюсь"},"c":{"ru":"Дам время подумать","en":"Дам время подумать","es":"Дам время подумать","pt":"Дам время подумать","de":"Дам время подумать","fr":"Дам время подумать"},"stats":{"a":48,"b":24,"c":28},"analysis":{"ru":"","en":"","es":"","pt":"","de":"","fr":""}},{"question":{"ru":"Какой разговор ты считаешь действительно интересным?","en":"Какой разговор ты считаешь действительно интересным?","es":"Какой разговор ты считаешь действительно интересным?","pt":"Какой разговор ты считаешь действительно интересным?","de":"Какой разговор ты считаешь действительно интересным?","fr":"Какой разговор ты считаешь действительно интересным?"},"a":{"ru":"Точно придерживаться этого","en":"Точно придерживаться этого","es":"Точно придерживаться этого","pt":"Точно придерживаться этого","de":"Точно придерживаться этого","fr":"Точно придерживаться этого"},"b":{"ru":"Делать по вдохновению","en":"Делать по вдохновению","es":"Делать по вдохновению","pt":"Делать по вдохновению","de":"Делать по вдохновению","fr":"Делать по вдохновению"},"c":{"ru":"Искать свой вариант","en":"Искать свой вариант","es":"Искать свой вариант","pt":"Искать свой вариант","de":"Искать свой вариант","fr":"Искать свой вариант"},"stats":{"a":49,"b":35,"c":16},"analysis":{"ru":"","en":"","es":"","pt":"","de":"","fr":""}},{"question":{"ru":"Что ты предпочитаешь делать, если собеседник сильно волнуется?","en":"Что ты предпочитаешь делать, если собеседник сильно волнуется?","es":"Что ты предпочитаешь делать, если собеседник сильно волнуется?","pt":"Что ты предпочитаешь делать, если собеседник сильно волнуется?","de":"Что ты предпочитаешь делать, если собеседник сильно волнуется?","fr":"Что ты предпочитаешь делать, если собеседник сильно волнуется?"},"a":{"ru":"Говорить сразу","en":"Говорить сразу","es":"Говорить сразу","pt":"Говорить сразу","de":"Говорить сразу","fr":"Говорить сразу"},"b":{"ru":"Наблюдать сначала","en":"Наблюдать сначала","es":"Наблюдать сначала","pt":"Наблюдать сначала","de":"Наблюдать сначала","fr":"Наблюдать сначала"},"c":{"ru":"Вернуться к теме позже","en":"Вернуться к теме позже","es":"Вернуться к теме позже","pt":"Вернуться к теме позже","de":"Вернуться к теме позже","fr":"Вернуться к теме позже"},"stats":{"a":56,"b":46,"c":-2},"analysis":{"ru":"","en":"","es":"","pt":"","de":"","fr":""}},{"question":{"ru":"Как ты относишься к длинным голосовым сообщениям?","en":"Как ты относишься к длинным голосовым сообщениям?","es":"Как ты относишься к длинным голосовым сообщениям?","pt":"Как ты относишься к длинным голосовым сообщениям?","de":"Как ты относишься к длинным голосовым сообщениям?","fr":"Как ты относишься к длинным голосовым сообщениям?"},"a":{"ru":"Довериться плану","en":"Довериться плану","es":"Довериться плану","pt":"Довериться плану","de":"Довериться плану","fr":"Довериться плану"},"b":{"ru":"Сравнить несколько путей","en":"Сравнить несколько путей","es":"Сравнить несколько путей","pt":"Сравнить несколько путей","de":"Сравнить несколько путей","fr":"Сравнить несколько путей"},"c":{"ru":"Спросить опытного человека","en":"Спросить опытного человека","es":"Спросить опытного человека","pt":"Спросить опытного человека","de":"Спросить опытного человека","fr":"Спросить опытного человека"},"stats":{"a":42,"b":32,"c":26},"analysis":{"ru":"","en":"","es":"","pt":"","de":"","fr":""}},{"question":{"ru":"Что тебе проще сказать лично, чем написать?","en":"Что тебе проще сказать лично, чем написать?","es":"Что тебе проще сказать лично, чем написать?","pt":"Что тебе проще сказать лично, чем написать?","de":"Что тебе проще сказать лично, чем написать?","fr":"Что тебе проще сказать лично, чем написать?"},"a":{"ru":"Оставить всё как есть","en":"Оставить всё как есть","es":"Оставить всё как есть","pt":"Оставить всё как есть","de":"Оставить всё как есть","fr":"Оставить всё как есть"},"b":{"ru":"Изменить главное","en":"Изменить главное","es":"Изменить главное","pt":"Изменить главное","de":"Изменить главное","fr":"Изменить главное"},"c":{"ru":"Перестроить всё постепенно","en":"Перестроить всё постепенно","es":"Перестроить всё постепенно","pt":"Перестроить всё постепенно","de":"Перестроить всё постепенно","fr":"Перестроить всё постепенно"},"stats":{"a":43,"b":43,"c":14},"analysis":{"ru":"","en":"","es":"","pt":"","de":"","fr":""}},{"question":{"ru":"Что ты замечаешь в образе человека первым?","en":"Что ты замечаешь в образе человека первым?","es":"Что ты замечаешь в образе человека первым?","pt":"Что ты замечаешь в образе человека первым?","de":"Что ты замечаешь в образе человека первым?","fr":"Что ты замечаешь в образе человека первым?"},"a":{"ru":"Сделаю сам","en":"Сделаю сам","es":"Сделаю сам","pt":"Сделаю сам","de":"Сделаю сам","fr":"Сделаю сам"},"b":{"ru":"Посоветуюсь","en":"Посоветуюсь","es":"Посоветуюсь","pt":"Посоветуюсь","de":"Посоветуюсь","fr":"Посоветуюсь"},"c":{"ru":"Дам время подумать","en":"Дам время подумать","es":"Дам время подумать","pt":"Дам время подумать","de":"Дам время подумать","fr":"Дам время подумать"},"stats":{"a":56,"b":29,"c":15},"analysis":{"ru":"","en":"","es":"","pt":"","de":"","fr":""}},{"question":{"ru":"Какой стиль одежды тебе кажется самым выразительным?","en":"Какой стиль одежды тебе кажется самым выразительным?","es":"Какой стиль одежды тебе кажется самым выразительным?","pt":"Какой стиль одежды тебе кажется самым выразительным?","de":"Какой стиль одежды тебе кажется самым выразительным?","fr":"Какой стиль одежды тебе кажется самым выразительным?"},"a":{"ru":"Точно придерживаться этого","en":"Точно придерживаться этого","es":"Точно придерживаться этого","pt":"Точно придерживаться этого","de":"Точно придерживаться этого","fr":"Точно придерживаться этого"},"b":{"ru":"Делать по вдохновению","en":"Делать по вдохновению","es":"Делать по вдохновению","pt":"Делать по вдохновению","de":"Делать по вдохновению","fr":"Делать по вдохновению"},"c":{"ru":"Искать свой вариант","en":"Искать свой вариант","es":"Искать свой вариант","pt":"Искать свой вариант","de":"Искать свой вариант","fr":"Искать свой вариант"},"stats":{"a":36,"b":40,"c":24},"analysis":{"ru":"","en":"","es":"","pt":"","de":"","fr":""}},{"question":{"ru":"Что для тебя важнее при выборе новой вещи?","en":"Что для тебя важнее при выборе новой вещи?","es":"Что для тебя важнее при выборе новой вещи?","pt":"Что для тебя важнее при выборе новой вещи?","de":"Что для тебя важнее при выборе новой вещи?","fr":"Что для тебя важнее при выборе новой вещи?"},"a":{"ru":"Говорить сразу","en":"Говорить сразу","es":"Говорить сразу","pt":"Говорить сразу","de":"Говорить сразу","fr":"Говорить сразу"},"b":{"ru":"Наблюдать сначала","en":"Наблюдать сначала","es":"Наблюдать сначала","pt":"Наблюдать сначала","de":"Наблюдать сначала","fr":"Наблюдать сначала"},"c":{"ru":"Вернуться к теме позже","en":"Вернуться к теме позже","es":"Вернуться к теме позже","pt":"Вернуться к теме позже","de":"Вернуться к теме позже","fr":"Вернуться к теме позже"},"stats":{"a":43,"b":26,"c":31},"analysis":{"ru":"","en":"","es":"","pt":"","de":"","fr":""}},{"question":{"ru":"Как ты относишься к ярким необычным деталям в одежде?","en":"Как ты относишься к ярким необычным деталям в одежде?","es":"Как ты относишься к ярким необычным деталям в одежде?","pt":"Как ты относишься к ярким необычным деталям в одежде?","de":"Как ты относишься к ярким необычным деталям в одежде?","fr":"Как ты относишься к ярким необычным деталям в одежде?"},"a":{"ru":"Довериться плану","en":"Довериться плану","es":"Довериться плану","pt":"Довериться плану","de":"Довериться плану","fr":"Довериться плану"},"b":{"ru":"Сравнить несколько путей","en":"Сравнить несколько путей","es":"Сравнить несколько путей","pt":"Сравнить несколько путей","de":"Сравнить несколько путей","fr":"Сравнить несколько путей"},"c":{"ru":"Спросить опытного человека","en":"Спросить опытного человека","es":"Спросить опытного человека","pt":"Спросить опытного человека","de":"Спросить опытного человека","fr":"Спросить опытного человека"},"stats":{"a":50,"b":37,"c":13},"analysis":{"ru":"","en":"","es":"","pt":"","de":"","fr":""}},{"question":{"ru":"Какой элемент образа способен полностью изменить впечатление?","en":"Какой элемент образа способен полностью изменить впечатление?","es":"Какой элемент образа способен полностью изменить впечатление?","pt":"Какой элемент образа способен полностью изменить впечатление?","de":"Какой элемент образа способен полностью изменить впечатление?","fr":"Какой элемент образа способен полностью изменить впечатление?"},"a":{"ru":"Оставить всё как есть","en":"Оставить всё как есть","es":"Оставить всё как есть","pt":"Оставить всё как есть","de":"Оставить всё как есть","fr":"Оставить всё как есть"},"b":{"ru":"Изменить главное","en":"Изменить главное","es":"Изменить главное","pt":"Изменить главное","de":"Изменить главное","fr":"Изменить главное"},"c":{"ru":"Перестроить всё постепенно","en":"Перестроить всё постепенно","es":"Перестроить всё постепенно","pt":"Перестроить всё постепенно","de":"Перестроить всё постепенно","fr":"Перестроить всё постепенно"},"stats":{"a":51,"b":48,"c":1},"analysis":{"ru":"","en":"","es":"","pt":"","de":"","fr":""}},{"question":{"ru":"Какой отдых действительно помогает тебе восстановиться?","en":"Какой отдых действительно помогает тебе восстановиться?","es":"Какой отдых действительно помогает тебе восстановиться?","pt":"Какой отдых действительно помогает тебе восстановиться?","de":"Какой отдых действительно помогает тебе восстановиться?","fr":"Какой отдых действительно помогает тебе восстановиться?"},"a":{"ru":"Сделаю сам","en":"Сделаю сам","es":"Сделаю сам","pt":"Сделаю сам","de":"Сделаю сам","fr":"Сделаю сам"},"b":{"ru":"Посоветуюсь","en":"Посоветуюсь","es":"Посоветуюсь","pt":"Посоветуюсь","de":"Посоветуюсь","fr":"Посоветуюсь"},"c":{"ru":"Дам время подумать","en":"Дам время подумать","es":"Дам время подумать","pt":"Дам время подумать","de":"Дам время подумать","fr":"Дам время подумать"},"stats":{"a":37,"b":34,"c":29},"analysis":{"ru":"","en":"","es":"","pt":"","de":"","fr":""}},{"question":{"ru":"Что ты выберешь для вечера после насыщенного дня?","en":"Что ты выберешь для вечера после насыщенного дня?","es":"Что ты выберешь для вечера после насыщенного дня?","pt":"Что ты выберешь для вечера после насыщенного дня?","de":"Что ты выберешь для вечера после насыщенного дня?","fr":"Что ты выберешь для вечера после насыщенного дня?"},"a":{"ru":"Точно придерживаться этого","en":"Точно придерживаться этого","es":"Точно придерживаться этого","pt":"Точно придерживаться этого","de":"Точно придерживаться этого","fr":"Точно придерживаться этого"},"b":{"ru":"Делать по вдохновению","en":"Делать по вдохновению","es":"Делать по вдохновению","pt":"Делать по вдохновению","de":"Делать по вдохновению","fr":"Делать по вдохновению"},"c":{"ru":"Искать свой вариант","en":"Искать свой вариант","es":"Искать свой вариант","pt":"Искать свой вариант","de":"Искать свой вариант","fr":"Искать свой вариант"},"stats":{"a":38,"b":45,"c":17},"analysis":{"ru":"","en":"","es":"","pt":"","de":"","fr":""}},{"question":{"ru":"Какой день недели тебе легче всего посвятить себе?","en":"Какой день недели тебе легче всего посвятить себе?","es":"Какой день недели тебе легче всего посвятить себе?","pt":"Какой день недели тебе легче всего посвятить себе?","de":"Какой день недели тебе легче всего посвятить себе?","fr":"Какой день недели тебе легче всего посвятить себе?"},"a":{"ru":"Говорить сразу","en":"Говорить сразу","es":"Говорить сразу","pt":"Говорить сразу","de":"Говорить сразу","fr":"Говорить сразу"},"b":{"ru":"Наблюдать сначала","en":"Наблюдать сначала","es":"Наблюдать сначала","pt":"Наблюдать сначала","de":"Наблюдать сначала","fr":"Наблюдать сначала"},"c":{"ru":"Вернуться к теме позже","en":"Вернуться к теме позже","es":"Вернуться к теме позже","pt":"Вернуться к теме позже","de":"Вернуться к теме позже","fr":"Вернуться к теме позже"},"stats":{"a":51,"b":31,"c":18},"analysis":{"ru":"","en":"","es":"","pt":"","de":"","fr":""}},{"question":{"ru":"Что тебе сложнее всего отключить во время отдыха?","en":"Что тебе сложнее всего отключить во время отдыха?","es":"Что тебе сложнее всего отключить во время отдыха?","pt":"Что тебе сложнее всего отключить во время отдыха?","de":"Что тебе сложнее всего отключить во время отдыха?","fr":"Что тебе сложнее всего отключить во время отдыха?"},"a":{"ru":"Довериться плану","en":"Довериться плану","es":"Довериться плану","pt":"Довериться плану","de":"Довериться плану","fr":"Довериться плану"},"b":{"ru":"Сравнить несколько путей","en":"Сравнить несколько путей","es":"Сравнить несколько путей","pt":"Сравнить несколько путей","de":"Сравнить несколько путей","fr":"Сравнить несколько путей"},"c":{"ru":"Спросить опытного человека","en":"Спросить опытного человека","es":"Спросить опытного человека","pt":"Спросить опытного человека","de":"Спросить опытного человека","fr":"Спросить опытного человека"},"stats":{"a":52,"b":42,"c":6},"analysis":{"ru":"","en":"","es":"","pt":"","de":"","fr":""}},{"question":{"ru":"Какой вид отдыха тебе нравится пробовать впервые?","en":"Какой вид отдыха тебе нравится пробовать впервые?","es":"Какой вид отдыха тебе нравится пробовать впервые?","pt":"Какой вид отдыха тебе нравится пробовать впервые?","de":"Какой вид отдыха тебе нравится пробовать впервые?","fr":"Какой вид отдыха тебе нравится пробовать впервые?"},"a":{"ru":"Оставить всё как есть","en":"Оставить всё как есть","es":"Оставить всё как есть","pt":"Оставить всё как есть","de":"Оставить всё как есть","fr":"Оставить всё как есть"},"b":{"ru":"Изменить главное","en":"Изменить главное","es":"Изменить главное","pt":"Изменить главное","de":"Изменить главное","fr":"Изменить главное"},"c":{"ru":"Перестроить всё постепенно","en":"Перестроить всё постепенно","es":"Перестроить всё постепенно","pt":"Перестроить всё постепенно","de":"Перестроить всё постепенно","fr":"Перестроить всё постепенно"},"stats":{"a":38,"b":28,"c":34},"analysis":{"ru":"","en":"","es":"","pt":"","de":"","fr":""}},{"question":{"ru":"Какое воспоминание ты бы сохранил на отдельной фотографии?","en":"Какое воспоминание ты бы сохранил на отдельной фотографии?","es":"Какое воспоминание ты бы сохранил на отдельной фотографии?","pt":"Какое воспоминание ты бы сохранил на отдельной фотографии?","de":"Какое воспоминание ты бы сохранил на отдельной фотографии?","fr":"Какое воспоминание ты бы сохранил на отдельной фотографии?"},"a":{"ru":"Сделаю сам","en":"Сделаю сам","es":"Сделаю сам","pt":"Сделаю сам","de":"Сделаю сам","fr":"Сделаю сам"},"b":{"ru":"Посоветуюсь","en":"Посоветуюсь","es":"Посоветуюсь","pt":"Посоветуюсь","de":"Посоветуюсь","fr":"Посоветуюсь"},"c":{"ru":"Дам время подумать","en":"Дам время подумать","es":"Дам время подумать","pt":"Дам время подумать","de":"Дам время подумать","fr":"Дам время подумать"},"stats":{"a":45,"b":39,"c":16},"analysis":{"ru":"","en":"","es":"","pt":"","de":"","fr":""}},{"question":{"ru":"Какой старый предмет способен мгновенно вернуть прошлое?","en":"Какой старый предмет способен мгновенно вернуть прошлое?","es":"Какой старый предмет способен мгновенно вернуть прошлое?","pt":"Какой старый предмет способен мгновенно вернуть прошлое?","de":"Какой старый предмет способен мгновенно вернуть прошлое?","fr":"Какой старый предмет способен мгновенно вернуть прошлое?"},"a":{"ru":"Точно придерживаться этого","en":"Точно придерживаться этого","es":"Точно придерживаться этого","pt":"Точно придерживаться этого","de":"Точно придерживаться этого","fr":"Точно придерживаться этого"},"b":{"ru":"Делать по вдохновению","en":"Делать по вдохновению","es":"Делать по вдохновению","pt":"Делать по вдохновению","de":"Делать по вдохновению","fr":"Делать по вдохновению"},"c":{"ru":"Искать свой вариант","en":"Искать свой вариант","es":"Искать свой вариант","pt":"Искать свой вариант","de":"Искать свой вариант","fr":"Искать свой вариант"},"stats":{"a":52,"b":25,"c":23},"analysis":{"ru":"","en":"","es":"","pt":"","de":"","fr":""}},{"question":{"ru":"Что ты обычно чувствуешь, пересматривая детские снимки?","en":"Что ты обычно чувствуешь, пересматривая детские снимки?","es":"Что ты обычно чувствуешь, пересматривая детские снимки?","pt":"Что ты обычно чувствуешь, пересматривая детские снимки?","de":"Что ты обычно чувствуешь, пересматривая детские снимки?","fr":"Что ты обычно чувствуешь, пересматривая детские снимки?"},"a":{"ru":"Говорить сразу","en":"Говорить сразу","es":"Говорить сразу","pt":"Говорить сразу","de":"Говорить сразу","fr":"Говорить сразу"},"b":{"ru":"Наблюдать сначала","en":"Наблюдать сначала","es":"Наблюдать сначала","pt":"Наблюдать сначала","de":"Наблюдать сначала","fr":"Наблюдать сначала"},"c":{"ru":"Вернуться к теме позже","en":"Вернуться к теме позже","es":"Вернуться к теме позже","pt":"Вернуться к теме позже","de":"Вернуться к теме позже","fr":"Вернуться к теме позже"},"stats":{"a":53,"b":36,"c":11},"analysis":{"ru":"","en":"","es":"","pt":"","de":"","fr":""}},{"question":{"ru":"Какую историю из прошлого ты хотел бы услышать от родственников?","en":"Какую историю из прошлого ты хотел бы услышать от родственников?","es":"Какую историю из прошлого ты хотел бы услышать от родственников?","pt":"Какую историю из прошлого ты хотел бы услышать от родственников?","de":"Какую историю из прошлого ты хотел бы услышать от родственников?","fr":"Какую историю из прошлого ты хотел бы услышать от родственников?"},"a":{"ru":"Довериться плану","en":"Довериться плану","es":"Довериться плану","pt":"Довериться плану","de":"Довериться плану","fr":"Довериться плану"},"b":{"ru":"Сравнить несколько путей","en":"Сравнить несколько путей","es":"Сравнить несколько путей","pt":"Сравнить несколько путей","de":"Сравнить несколько путей","fr":"Сравнить несколько путей"},"c":{"ru":"Спросить опытного человека","en":"Спросить опытного человека","es":"Спросить опытного человека","pt":"Спросить опытного человека","de":"Спросить опытного человека","fr":"Спросить опытного человека"},"stats":{"a":39,"b":47,"c":14},"analysis":{"ru":"","en":"","es":"","pt":"","de":"","fr":""}},{"question":{"ru":"Что для тебя важнее в памятных вещах: предмет или история?","en":"Что для тебя важнее в памятных вещах: предмет или история?","es":"Что для тебя важнее в памятных вещах: предмет или история?","pt":"Что для тебя важнее в памятных вещах: предмет или история?","de":"Что для тебя важнее в памятных вещах: предмет или история?","fr":"Что для тебя важнее в памятных вещах: предмет или история?"},"a":{"ru":"Оставить всё как есть","en":"Оставить всё как есть","es":"Оставить всё как есть","pt":"Оставить всё как есть","de":"Оставить всё как есть","fr":"Оставить всё как есть"},"b":{"ru":"Изменить главное","en":"Изменить главное","es":"Изменить главное","pt":"Изменить главное","de":"Изменить главное","fr":"Изменить главное"},"c":{"ru":"Перестроить всё постепенно","en":"Перестроить всё постепенно","es":"Перестроить всё постепенно","pt":"Перестроить всё постепенно","de":"Перестроить всё постепенно","fr":"Перестроить всё постепенно"},"stats":{"a":46,"b":33,"c":21},"analysis":{"ru":"","en":"","es":"","pt":"","de":"","fr":""}},{"question":{"ru":"Что ты поставишь выше: честность, спокойствие или свободу?","en":"Что ты поставишь выше: честность, спокойствие или свободу?","es":"Что ты поставишь выше: честность, спокойствие или свободу?","pt":"Что ты поставишь выше: честность, спокойствие или свободу?","de":"Что ты поставишь выше: честность, спокойствие или свободу?","fr":"Что ты поставишь выше: честность, спокойствие или свободу?"},"a":{"ru":"Сделаю сам","en":"Сделаю сам","es":"Сделаю сам","pt":"Сделаю сам","de":"Сделаю сам","fr":"Сделаю сам"},"b":{"ru":"Посоветуюсь","en":"Посоветуюсь","es":"Посоветуюсь","pt":"Посоветуюсь","de":"Посоветуюсь","fr":"Посоветуюсь"},"c":{"ru":"Дам время подумать","en":"Дам время подумать","es":"Дам время подумать","pt":"Дам время подумать","de":"Дам время подумать","fr":"Дам время подумать"},"stats":{"a":47,"b":44,"c":9},"analysis":{"ru":"","en":"","es":"","pt":"","de":"","fr":""}},{"question":{"ru":"Какой поступок сильнее всего показывает характер человека?","en":"Какой поступок сильнее всего показывает характер человека?","es":"Какой поступок сильнее всего показывает характер человека?","pt":"Какой поступок сильнее всего показывает характер человека?","de":"Какой поступок сильнее всего показывает характер человека?","fr":"Какой поступок сильнее всего показывает характер человека?"},"a":{"ru":"Точно придерживаться этого","en":"Точно придерживаться этого","es":"Точно придерживаться этого","pt":"Точно придерживаться этого","de":"Точно придерживаться этого","fr":"Точно придерживаться этого"},"b":{"ru":"Делать по вдохновению","en":"Делать по вдохновению","es":"Делать по вдохновению","pt":"Делать по вдохновению","de":"Делать по вдохновению","fr":"Делать по вдохновению"},"c":{"ru":"Искать свой вариант","en":"Искать свой вариант","es":"Искать свой вариант","pt":"Искать свой вариант","de":"Искать свой вариант","fr":"Искать свой вариант"},"stats":{"a":54,"b":30,"c":16},"analysis":{"ru":"","en":"","es":"","pt":"","de":"","fr":""}},{"question":{"ru":"Что труднее изменить в себе: привычку, мнение или обещание?","en":"Что труднее изменить в себе: привычку, мнение или обещание?","es":"Что труднее изменить в себе: привычку, мнение или обещание?","pt":"Что труднее изменить в себе: привычку, мнение или обещание?","de":"Что труднее изменить в себе: привычку, мнение или обещание?","fr":"Что труднее изменить в себе: привычку, мнение или обещание?"},"a":{"ru":"Говорить сразу","en":"Говорить сразу","es":"Говорить сразу","pt":"Говорить сразу","de":"Говорить сразу","fr":"Говорить сразу"},"b":{"ru":"Наблюдать сначала","en":"Наблюдать сначала","es":"Наблюдать сначала","pt":"Наблюдать сначала","de":"Наблюдать сначала","fr":"Наблюдать сначала"},"c":{"ru":"Вернуться к теме позже","en":"Вернуться к теме позже","es":"Вернуться к теме позже","pt":"Вернуться к теме позже","de":"Вернуться к теме позже","fr":"Вернуться к теме позже"},"stats":{"a":40,"b":41,"c":19},"analysis":{"ru":"","en":"","es":"","pt":"","de":"","fr":""}},{"question":{"ru":"Какое качество ты хотел бы усилить в ближайший год?","en":"Какое качество ты хотел бы усилить в ближайший год?","es":"Какое качество ты хотел бы усилить в ближайший год?","pt":"Какое качество ты хотел бы усилить в ближайший год?","de":"Какое качество ты хотел бы усилить в ближайший год?","fr":"Какое качество ты хотел бы усилить в ближайший год?"},"a":{"ru":"Довериться плану","en":"Довериться плану","es":"Довериться плану","pt":"Довериться плану","de":"Довериться плану","fr":"Довериться плану"},"b":{"ru":"Сравнить несколько путей","en":"Сравнить несколько путей","es":"Сравнить несколько путей","pt":"Сравнить несколько путей","de":"Сравнить несколько путей","fr":"Сравнить несколько путей"},"c":{"ru":"Спросить опытного человека","en":"Спросить опытного человека","es":"Спросить опытного человека","pt":"Спросить опытного человека","de":"Спросить опытного человека","fr":"Спросить опытного человека"},"stats":{"a":47,"b":27,"c":26},"analysis":{"ru":"","en":"","es":"","pt":"","de":"","fr":""}},{"question":{"ru":"Что, по-твоему, делает выбор действительно зрелым?","en":"Что, по-твоему, делает выбор действительно зрелым?","es":"Что, по-твоему, делает выбор действительно зрелым?","pt":"Что, по-твоему, делает выбор действительно зрелым?","de":"Что, по-твоему, делает выбор действительно зрелым?","fr":"Что, по-твоему, делает выбор действительно зрелым?"},"a":{"ru":"Оставить всё как есть","en":"Оставить всё как есть","es":"Оставить всё как есть","pt":"Оставить всё как есть","de":"Оставить всё как есть","fr":"Оставить всё как есть"},"b":{"ru":"Изменить главное","en":"Изменить главное","es":"Изменить главное","pt":"Изменить главное","de":"Изменить главное","fr":"Изменить главное"},"c":{"ru":"Перестроить всё постепенно","en":"Перестроить всё постепенно","es":"Перестроить всё постепенно","pt":"Перестроить всё постепенно","de":"Перестроить всё постепенно","fr":"Перестроить всё постепенно"},"stats":{"a":48,"b":38,"c":14},"analysis":{"ru":"","en":"","es":"","pt":"","de":"","fr":""}}];
+
 // Keep the 100-question Chronicles content localized in all six supported languages.
 // The base Chronicles dataset above contains complete ru/en/es/pt/de/fr copies.
 // The fully localized Chronicles dataset remains active; no language-specific overwrite is applied.
 
+FATE_DILEMMAS.length = 0;
+FATE_DILEMMAS.push(...FATE_DILEMMAS_UNIQUE_100);
 const NEXT_BUTTON_TEXTS = [
   { ru: "Шагнуть в неизвестность...", en: "Step into the unknown...", es: "Dar el paso hacia lo desconocido..." },
   { ru: "Продолжить путь...", en: "Continue the path...", es: "Continuar el camino..." },
@@ -7663,6 +6766,16 @@ if (typeof LABYRINTH_RIDDLES !== 'undefined') {
     choices.style.display='none'; result.style.display='block'; const analysis=document.getElementById('fate-analysis'); if(analysis)analysis.innerHTML=fateAnalysis(d,choice);
   };
 
+
+const CHRONICLE_ARCHETYPES_10 = {
+  ru:[['Лидер решений','Ты берёшь ответственность и предпочитаешь влиять на ход событий.'],['Тихий стратег','Ты наблюдаешь, просчитываешь и действуешь без лишнего шума.'],['Чуткий союзник','Ты хорошо замечаешь чувства других и умеешь поддержать.'],['Свободный исследователь','Тебе важно пробовать новое и сохранять собственный путь.'],['Надёжный реалист','Ты ценишь то, что работает в настоящей жизни и даёт результат.'],['Идейный создатель','Тебя притягивают новые замыслы, необычные решения и творчество.'],['Миротворец','Ты чаще ищешь баланс и пытаешься сохранить отношения.'],['Смелый экспериментатор','Ты не боишься менять привычный порядок и проверять себя.'],['Вдумчивый наблюдатель','Ты замечаешь детали и редко делаешь выводы поспешно.'],['Практичный оптимист','Ты ищешь решение, в котором есть и смысл, и возможность двигаться дальше.']],
+  en:[['Decision Leader','You take responsibility and prefer to influence how things unfold.'],['Quiet Strategist','You observe, calculate, and act without unnecessary noise.'],['Attentive Ally','You notice other people’s feelings and know how to support them.'],['Independent Explorer','You value trying new things while keeping your own path.'],['Grounded Realist','You value what works in everyday life and produces results.'],['Idea Maker','New concepts, unusual solutions, and creativity attract you.'],['Peacemaker','You often look for balance and try to protect relationships.'],['Bold Experimenter','You are willing to change the usual order and test yourself.'],['Thoughtful Observer','You notice details and rarely rush to judgment.'],['Practical Optimist','You look for a solution that makes sense and keeps you moving forward.']],
+  es:[['Líder de decisiones','Asumes responsabilidades y prefieres influir en el rumbo de las cosas.'],['Estratega sereno','Observas, calculas y actúas sin hacer ruido innecesario.'],['Aliado atento','Percibes las emociones de otros y sabes apoyar.'],['Explorador independiente','Te gusta probar cosas nuevas sin perder tu propio camino.'],['Realista práctico','Valoras lo que funciona en la vida diaria y da resultados.'],['Creador de ideas','Te atraen las ideas nuevas, las soluciones distintas y la creatividad.'],['Mediador','Sueles buscar equilibrio y proteger las relaciones.'],['Experimentador valiente','No temes cambiar lo habitual y ponerte a prueba.'],['Observador reflexivo','Notas los detalles y rara vez juzgas con prisa.'],['Optimista práctico','Buscas soluciones con sentido que te permitan seguir avanzando.']],
+  pt:[['Líder de decisões','Assumes responsabilidades e preferes influenciar o rumo das coisas.'],['Estratega tranquilo','Observas, calculas e ages sem ruído desnecessário.'],['Aliado atento','Percebes as emoções dos outros e sabes apoiar.'],['Explorador independente','Gostas de experimentar sem perder o teu próprio caminho.'],['Realista prático','Valorizas o que funciona no dia a dia e dá resultados.'],['Criador de ideias','Atraem-te ideias novas, soluções diferentes e criatividade.'],['Mediador','Costumas procurar equilíbrio e proteger as relações.'],['Experimentador corajoso','Não receias mudar o habitual e testar-te.'],['Observador ponderado','Reparas nos detalhes e raramente julgas com pressa.'],['Otimista prático','Procuras soluções com sentido que te façam avançar.']],
+  de:[['Entscheidungsführer','Du übernimmst Verantwortung und gestaltest gern den Verlauf.'],['Ruhiger Stratege','Du beobachtest, planst und handelst ohne unnötiges Aufsehen.'],['Aufmerksamer Verbündeter','Du bemerkst Gefühle anderer und kannst gut unterstützen.'],['Unabhängiger Entdecker','Du probierst Neues und bewahrst dabei deinen eigenen Weg.'],['Praktischer Realist','Du schätzt, was im Alltag funktioniert und Ergebnisse bringt.'],['Ideenentwickler','Neue Gedanken, ungewöhnliche Lösungen und Kreativität reizen dich.'],['Vermittler','Du suchst oft Balance und schützt Beziehungen.'],['Mutiger Experimentierer','Du hast keine Angst, Gewohntes zu verändern und dich zu testen.'],['Bedachter Beobachter','Du achtest auf Details und urteilst selten vorschnell.'],['Praktischer Optimist','Du suchst sinnvolle Lösungen, die dich weiterbringen.']],
+  fr:[['Leader des décisions','Tu assumes tes responsabilités et aimes influencer la suite des choses.'],['Stratège discret','Tu observes, réfléchis et agis sans bruit inutile.'],['Allié attentif','Tu remarques les émotions des autres et sais soutenir.'],['Explorateur indépendant','Tu aimes essayer de nouvelles choses tout en gardant ton propre chemin.'],['Réaliste pratique','Tu apprécies ce qui fonctionne au quotidien et produit des résultats.'],['Créateur d’idées','Les idées nouvelles, les solutions originales et la créativité t’attirent.'],['Médiateur','Tu recherches souvent l’équilibre et protèges les relations.'],['Expérimentateur audacieux','Tu n’hésites pas à changer les habitudes et à te mettre à l’épreuve.'],['Observateur réfléchi','Tu remarques les détails et juges rarement trop vite.'],['Optimiste pratique','Tu cherches des solutions cohérentes qui te permettent d’avancer.']]
+};
+
   // True Destiny: 23 questions and exactly 8 result types; restart works immediately.
   const Q=(q,opts)=>({question:q,options:opts});
   const tr=(ru,en,es,pt,de,fr)=>({ru,en,es,pt,de,fr});
@@ -7937,19 +7050,9 @@ if(typeof LABYRINTH_RIDDLES!=='undefined' && LABYRINTH_RIDDLES.length){
   }
   window.showChronicleResults=function(){
     const overlay=document.getElementById('fate-overlay'); if(!overlay)return;
-    const st=getFateState(), scores={a:0,b:0,c:0};
-    (st.answers||[]).forEach(x=>{if(scores[x.choice]!=null)scores[x.choice]++;});
-    const max=Math.max(scores.a,scores.b,scores.c), dominant=scores.a===max?'a':scores.b===max?'b':'c';
-    const idx={a:0,b:1,c:2}[dominant], arch=archetypes[currentLang]||archetypes.en;
-    const desc={
-      ru:'Твои решения чаще всего тяготеют к этому типу — именно совокупность ответов привела тебя к такому результату.',
-      en:'Your choices most often lean toward this type — the overall combination of your answers led to this result.',
-      es:'Tus decisiones se inclinan sobre todo hacia este tipo: la combinación de tus respuestas te llevó a este resultado.',
-      pt:'As tuas escolhas tendem sobretudo para este tipo — a combinação das tuas respostas levou-te a este resultado.',
-      de:'Deine Entscheidungen tendieren am stärksten zu diesem Typ – die Gesamtheit deiner Antworten hat zu diesem Ergebnis geführt.',
-      fr:'Tes choix correspondent surtout à ce type : l’ensemble de tes réponses t’a conduit à ce résultat.'
-    };
-    overlay.innerHTML=`<button class="overlay-close-x" onclick="closeFateDilemmas()">&times;</button><div class="fate-container fate-final"><div class="fate-final-title">${arch[idx][1]}</div><div class="fate-final-text">${desc[currentLang]||desc.en}</div><div class="final-channel-note">${tgFinal[currentLang]||tgFinal.en}</div><button class="fate-next" onclick="restartFateDilemmas()">${t('restart')}</button></div>`;
+    const st=getFateState(), scores={a:0,b:0,c:0}; (st.answers||[]).forEach(x=>{if(scores[x.choice]!=null)scores[x.choice]++;});
+    const seed=(scores.a*3+scores.b*5+scores.c*7)%10, pack=CHRONICLE_ARCHETYPES_10[currentLang]||CHRONICLE_ARCHETYPES_10.en, arch=pack[seed];
+    overlay.innerHTML=`<button class="overlay-close-x" onclick="closeFateDilemmas()">&times;</button><div class="fate-container fate-final"><div class="fate-final-title">${arch[0]}</div><div class="fate-final-text">${arch[1]}</div><div class="final-channel-note">${tgFinal[currentLang]||tgFinal.en}</div><button class="fate-next" onclick="restartFateDilemmas()">${t('restart')}</button></div>`;
   };
   window.renderFateQuestion=function(index){
     const d=FATE_DILEMMAS[index];
