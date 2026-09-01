@@ -6069,7 +6069,8 @@ function startDestinyQuiz() {
   localStorage.setItem('true_destiny', JSON.stringify({ currentQuestion: 0, scores: { mystic: 0, warrior: 0, sage: 0, trickster: 0, healer: 0, wanderer: 0, guardian: 0 }, completed: false }));
   const overlay = document.getElementById('destiny-overlay');
   overlay.classList.remove('active');
-  setTimeout(() => { overlay.remove(); renderDestinyQuestion(0); }, 400);
+  overlay.remove();
+  renderDestinyQuestion(0);
 }
 
 function renderDestinyQuestion(index) {
@@ -6997,7 +6998,7 @@ if(typeof LABYRINTH_RIDDLES!=='undefined' && LABYRINTH_RIDDLES.length){
 
   function localizeObjectField(obj,index,kind,field){
     if(!obj) return '';
-    return obj[currentLang] || obj.en || obj.ru || '';
+    return obj[currentLang] || obj.en || '';
   }
 
   // Chronicles: every question and every answer is displayed in the selected language.
@@ -7150,8 +7151,8 @@ if(typeof LABYRINTH_RIDDLES!=='undefined' && LABYRINTH_RIDDLES.length){
   // Language icon + label: 0.2mm (~0.76px) higher than the previous position.
   const s=document.createElement('style');
   s.textContent=`
-    .language-setting .settings-item-left{transform:translateY(7.28px)!important;}
-    .legal-card .fate-final-title{padding-top:75.6px!important;margin-top:0!important;}
+    .language-setting .settings-item-left{transform:translateY(6.9px)!important;}
+    .legal-card .fate-final-title{padding-top:0!important;margin-top:0!important;}
   `;
   document.head.appendChild(s);
 
@@ -7191,3 +7192,4 @@ if(typeof LABYRINTH_RIDDLES!=='undefined' && LABYRINTH_RIDDLES.length){
     document.documentElement.classList.add('yd-instant');
   },{once:true});
 })();
+\n\n/* ===== v4.1.11 — requested final precision/performance patch ===== */\n(function(){\n  const style=document.createElement('style');\n  style.textContent=`\n    /* Language icon + label: 0.1mm higher than v4.1.10. */\n    .language-setting .settings-item-left{transform:translateY(6.9px)!important;}\n\n    /* Terms / Privacy: title and legal text are 2cm higher when opened. */\n    .legal-card{padding-top:0!important;}\n    .legal-card .fate-final-title{padding-top:0!important;margin-top:0!important;}\n    .legal-card .legal-text{margin-top:10px!important;}\n\n    /* No artificial waits on interactive game screens. */\n    .fate-overlay,.labyrinth-overlay,.destiny-overlay,.wisdom-overlay,\n    .fate-overlay *,.labyrinth-overlay *,.destiny-overlay *,.wisdom-overlay *{\n      transition-duration:0s!important;animation-duration:0s!important;animation-delay:0s!important;\n    }\n  `;\n  document.head.appendChild(style);\n})();\n
