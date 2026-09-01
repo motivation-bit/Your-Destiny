@@ -7144,3 +7144,50 @@ if(typeof LABYRINTH_RIDDLES!=='undefined' && LABYRINTH_RIDDLES.length){
   `;
   document.head.appendChild(style);
 })();
+
+/* ===== v4.1.10 performance + layout final patch ===== */
+(function(){
+  // Language icon + label: 0.2mm (~0.76px) higher than the previous position.
+  const s=document.createElement('style');
+  s.textContent=`
+    .language-setting .settings-item-left{transform:translateY(7.28px)!important;}
+    .legal-card .fate-final-title{padding-top:75.6px!important;margin-top:0!important;}
+  `;
+  document.head.appendChild(s);
+
+  // Keep all six supported languages selected from the picker and immediately rerender
+  // the currently open screen without any asynchronous translation or loading state.
+  const LANGS=['ru','en','es','pt','de','fr'];
+  const oldSetLanguage=window.setLanguage;
+  window.setLanguage=function(lang){
+    if(!LANGS.includes(lang)) lang='en';
+    currentLang=lang;
+    localStorage.setItem('lang',lang);
+    localStorage.setItem('lang_manual','1');
+    updateLanguageUI();
+    renderThemeColors();
+    updateVipDisplay();
+    closeLanguagePicker();
+    // Re-render the active content immediately so no language-dependent screen is stale.
+    const fate=document.getElementById('fate-overlay');
+    if(fate?.classList.contains('active')){
+      const st=getFateState?.();
+      if(st && st.currentIndex < FATE_DILEMMAS.length) renderFateQuestion(st.currentIndex);
+    }
+    const lab=document.getElementById('labyrinth-overlay');
+    if(lab?.classList.contains('active') && typeof renderLabyrinth==='function') renderLabyrinth();
+    const wisdom=document.querySelector('.wisdom-overlay.active');
+    if(wisdom && typeof showWisdom==='function') showWisdom();
+  };
+
+  // Eliminate the last artificial screen-removal delay when starting the Destiny quiz.
+  window.startDestinyQuiz=function(){
+    localStorage.setItem('true_destiny', JSON.stringify({ currentQuestion:0, scores:{mystic:0,warrior:0,sage:0,trickster:0,healer:0,wanderer:0,guardian:0}, completed:false }));
+    renderDestinyQuestion(0);
+  };
+
+  // No artificial animation delay on interactive game controls.
+  document.addEventListener('DOMContentLoaded',()=>{
+    document.documentElement.classList.add('yd-instant');
+  },{once:true});
+})();

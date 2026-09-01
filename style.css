@@ -2248,3 +2248,20 @@ body.theme-kaleidoscope #app-container::after{background:transparent!important}
 
 /* Reset-progress test control removed from the UI. */
 .reset-test-wrap,.reset-all-btn{display:none!important;}
+
+/* v4.1.10 — instant UI: content is already bundled, so interactions never wait. */
+.yd-instant .fate-overlay,
+.yd-instant .labyrinth-overlay,
+.yd-instant .destiny-overlay,
+.yd-instant .wisdom-overlay,
+.yd-instant .fate-overlay *,
+.yd-instant .labyrinth-overlay *,
+.yd-instant .destiny-overlay *,
+.yd-instant .wisdom-overlay *{
+  transition-duration:0s!important;
+  animation-duration:0s!important;
+  animation-delay:0s!important;
+}
+
+/* Legal title sits lower inside the reading area, while the page itself remains scrollable. */
+.legal-card .fate-final-title{padding-top:75.6px!important;margin-top:0!important;}
