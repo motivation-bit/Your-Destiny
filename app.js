@@ -289,6 +289,18 @@ function showInfoOverlay(title, text) {
 }
 
 // ---------- Инициализация ----------
+
+function forcePortrait(){
+  try {
+    if (screen.orientation && typeof screen.orientation.lock === 'function') {
+      const p=screen.orientation.lock('portrait');
+      if (p && typeof p.catch === 'function') p.catch(()=>{});
+    }
+  } catch(e) {}
+}
+window.addEventListener('orientationchange', forcePortrait, {passive:true});
+window.addEventListener('resize', forcePortrait, {passive:true});
+
 document.addEventListener('DOMContentLoaded', () => {
   initTelegram();
   currentLang = localStorage.getItem('lang_manual') === '1' ? (localStorage.getItem('lang') || detectLanguage()) : detectLanguage();
@@ -7148,7 +7160,7 @@ if(typeof LABYRINTH_RIDDLES!=='undefined' && LABYRINTH_RIDDLES.length){
   const style=document.createElement('style');
   style.textContent=`
     /* Language row: 0.5mm lower than v4.1.7 (6.9px -> 8.8px). */
-    .language-setting .settings-item-left{transform:translateY(8.8px)!important;}
+    .language-setting .settings-item-left{transform:translateY(6.52px)!important;}
 
     /* Remove the decorative ornaments around the Wisdom quote. */
     .wisdom-container::before,.wisdom-container::after{display:none!important;content:none!important;}

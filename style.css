@@ -2269,3 +2269,17 @@ body.theme-kaleidoscope #app-container::after{background:transparent!important}
 /* User-requested legal header/text position: 3cm upward */
 .fate-overlay:has(.legal-card) .legal-card .fate-final-title, .fate-overlay:has(.legal-card) .legal-card .legal-text { position:relative; top:-113.4px; }
 @media (max-height:700px){ .fate-overlay:has(.legal-card) .legal-card .fate-final-title, .fate-overlay:has(.legal-card) .legal-card .legal-text { top:-84px; } }
+
+
+/* Portrait-only application */
+@media (orientation: landscape) {
+  html, body {
+    overflow: hidden !important;
+  }
+  #app-container, #intro-screen, #particles-canvas {
+    width: 100vh !important;
+    height: 100vw !important;
+    max-width: 100vh !important;
+    max-height: 100vw !important;
+  }
+}
