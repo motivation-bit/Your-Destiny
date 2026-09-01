@@ -2264,7 +2264,8 @@ body.theme-kaleidoscope #app-container::after{background:transparent!important}
 }
 
 /* Legal title sits lower inside the reading area, while the page itself remains scrollable. */
-.legal-card .fate-final-title{padding-top:0!important;margin-top:0!important;}
+.legal-card .fate-final-title{padding-top:75.6px!important;margin-top:0!important;}
 
-/* User precision update: language icon + label 0.1mm upward. */
-.language-setting .settings-item-left{transform:translateY(7.662px)!important;}
+/* User-requested legal header/text position: 3cm upward */
+.fate-overlay:has(.legal-card) .legal-card .fate-final-title, .fate-overlay:has(.legal-card) .legal-card .legal-text { position:relative; top:-113.4px; }
+@media (max-height:700px){ .fate-overlay:has(.legal-card) .legal-card .fate-final-title, .fate-overlay:has(.legal-card) .legal-card .legal-text { top:-84px; } }
