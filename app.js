@@ -322,16 +322,17 @@ function initIntro() {
   app.classList.remove('active');
   nav.style.display = 'none';
 
-  // Заставка длится ровно 3 секунды, затем мягко передаёт управление интерфейсу.
+  // Ровно через 3 секунды сразу показываем интерфейс.
+  // Никакого дополнительного ожидания после заставки: интерфейс уже готов к работе.
   window.setTimeout(() => {
-    intro.style.transition = 'opacity 0.55s ease';
+    app.classList.add('active');
+    nav.style.display = 'flex';
+    intro.style.transition = 'opacity 0.15s ease';
     intro.style.opacity = '0';
     window.setTimeout(() => {
       intro.style.display = 'none';
-      app.classList.add('active');
-      nav.style.display = 'flex';
-      initMusic();
-    }, 550);
+    }, 150);
+    initMusic();
   }, 3000);
 }
 
