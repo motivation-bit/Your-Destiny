@@ -7194,3 +7194,101 @@ if(typeof LABYRINTH_RIDDLES!=='undefined' && LABYRINTH_RIDDLES.length){
   },{once:true});
 })();
 \n\n/* ===== v4.1.11 — requested final precision/performance patch ===== */\n(function(){\n  const style=document.createElement('style');\n  style.textContent=`\n    /* Language icon + label: 0.1mm higher than v4.1.10. */\n    .language-setting .settings-item-left{transform:translateY(6.9px)!important;}\n\n    /* Terms / Privacy: title and legal text are 2cm higher when opened. */\n    .legal-card{padding-top:0!important;}\n    .legal-card .fate-final-title{padding-top:0!important;margin-top:0!important;}\n    .legal-card .legal-text{margin-top:10px!important;}\n\n    /* No artificial waits on interactive game screens. */\n    .fate-overlay,.labyrinth-overlay,.destiny-overlay,.wisdom-overlay,\n    .fate-overlay *,.labyrinth-overlay *,.destiny-overlay *,.wisdom-overlay *{\n      transition-duration:0s!important;animation-duration:0s!important;animation-delay:0s!important;\n    }\n  `;\n  document.head.appendChild(style);\n})();\n
+/* ===== v4.1.13 — language-first startup + language-switch preload ===== */
+(function(){
+  const SUPPORTED_LANGS=['ru','en','es','pt','de','fr'];
+  const originalInitIntro=window.initIntro;
+
+  // Touch the selected locale's strings/data during the splash so the first
+  // interactive frame never has to wait for localization work.
+  function preloadLanguage(lang){
+    if(!SUPPORTED_LANGS.includes(lang)) lang='en';
+    try {
+      const seen=new WeakSet();
+      const touch=(value)=>{
+        if(value==null) return;
+        if(typeof value==='string'){ void value.length; return; }
+        if(typeof value!=='object') return;
+        if(seen.has(value)) return;
+        seen.add(value);
+        if(Array.isArray(value)){ for(const item of value) touch(item); }
+        else { for(const key of Object.keys(value)) touch(value[key]); }
+      };
+      // Localized UI strings and known localized game content.
+      touch(T?.[lang]);
+      if(typeof LABYRINTH_RIDDLES!=='undefined') touch(LABYRINTH_RIDDLES);
+      if(typeof FATE_DILEMMAS!=='undefined') touch(FATE_DILEMMAS);
+      if(typeof STORY_SCHEDULE_COPY!=='undefined') touch(STORY_SCHEDULE_COPY?.[lang]);
+      if(typeof RATING_TEXTS!=='undefined') touch(RATING_TEXTS?.[lang]);
+      if(typeof LEGAL_PRIVACY!=='undefined') touch(LEGAL_PRIVACY?.[lang]);
+      if(typeof LEGAL_TERMS!=='undefined') touch(LEGAL_TERMS?.[lang]);
+      // Warm the browser's text/font rendering cache without displaying anything.
+      const warm=document.createElement('div');
+      warm.setAttribute('aria-hidden','true');
+      warm.style.cssText='position:fixed;left:-10000px;top:-10000px;width:1px;height:1px;overflow:hidden;opacity:0;pointer-events:none;';
+      warm.textContent=Object.values(T?.[lang]||{}).filter(v=>typeof v==='string').join(' ');
+      document.body.appendChild(warm);
+      void warm.offsetWidth;
+      warm.remove();
+    } catch(e) { /* localization is embedded; never block startup on preload */ }
+  }
+
+  function showLanguageSplash(lang){
+    const intro=document.getElementById('intro-screen');
+    const app=document.getElementById('app-container');
+    const nav=document.getElementById('bottom-nav');
+    if(!intro || !app || !nav) return;
+
+    preloadLanguage(lang);
+    updateLanguageUI();
+    renderThemeColors();
+    if(typeof updateVipDisplay==='function') updateVipDisplay();
+
+    // The splash is the loading screen for the selected locale.
+    intro.style.display='flex';
+    intro.style.opacity='1';
+    intro.style.transition='none';
+    app.classList.remove('active');
+    nav.style.display='none';
+
+    window.setTimeout(()=>{
+      app.classList.add('active');
+      nav.style.display='flex';
+      intro.style.transition='opacity 0.15s ease';
+      intro.style.opacity='0';
+      window.setTimeout(()=>{ intro.style.display='none'; },150);
+      if(typeof initMusic==='function') initMusic();
+    },3000);
+  }
+
+  // First launch: only the device/Telegram language is selected. A manually
+  // chosen language is retained on subsequent launches.
+  document.addEventListener('DOMContentLoaded',()=>{
+    const manual=localStorage.getItem('lang_manual')==='1';
+    const initial=manual ? (localStorage.getItem('lang')||detectLanguage()) : detectLanguage();
+    currentLang=SUPPORTED_LANGS.includes(initial)?initial:'en';
+    localStorage.setItem('lang',currentLang);
+    preloadLanguage(currentLang);
+  },{once:true});
+
+  window.setLanguage=function(lang){
+    if(!SUPPORTED_LANGS.includes(lang)) lang='en';
+    if(lang===currentLang){
+      document.getElementById('language-picker-panel')?.classList.remove('open');
+      return;
+    }
+    currentLang=lang;
+    localStorage.setItem('lang',lang);
+    localStorage.setItem('lang_manual','1');
+    document.getElementById('language-picker-panel')?.classList.remove('open');
+    showLanguageSplash(lang);
+  };
+
+  // Keep the existing public function available while making the first splash
+  // preload only the locale that will actually be shown.
+  window.initIntro=function(){
+    const lang=SUPPORTED_LANGS.includes(currentLang)?currentLang:'en';
+    preloadLanguage(lang);
+    if(typeof originalInitIntro==='function') originalInitIntro();
+  };
+})();
