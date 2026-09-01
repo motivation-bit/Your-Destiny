@@ -15,3 +15,6 @@ Included:
 
 Telegram channel: https://t.me/YourDestiny_Official
 Author direct: https://t.me/YourDestiny_Official?direct
+
+
+Startup architecture: boot.js owns the 3-second splash release. app.js does not control splash visibility, so runtime module errors cannot leave the app trapped on the splash.
