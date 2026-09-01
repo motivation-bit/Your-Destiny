@@ -290,16 +290,15 @@ function showInfoOverlay(title, text) {
 
 // ---------- Инициализация ----------
 document.addEventListener('DOMContentLoaded', () => {
-  initTelegram();
-  currentLang = localStorage.getItem('lang_manual') === '1' ? (localStorage.getItem('lang') || detectLanguage()) : detectLanguage();
-  localStorage.setItem('lang', currentLang);
-  initParticles();
-  initNavigation();
+  // Запускаем заставку первой: ошибка любого необязательного модуля
+  // больше не сможет заблокировать переход на главный экран.
   initIntro();
-  initMusic();
-  loadSettings();
-  renderThemeColors();
-  updateLanguageUI();
+  try { initTelegram(); } catch(e) { console.error(e); }
+  try { currentLang = localStorage.getItem('lang_manual') === '1' ? (localStorage.getItem('lang') || detectLanguage()) : detectLanguage(); localStorage.setItem('lang', currentLang); } catch(e) {}
+  try { initParticles(); } catch(e) { console.error(e); }
+  try { initNavigation(); } catch(e) { console.error(e); }
+  try { initMusic(); } catch(e) { console.error(e); }
+  try { loadSettings(); renderThemeColors(); updateLanguageUI(); } catch(e) { console.error(e); }
 });
 
 function initTelegram() {
@@ -315,24 +314,20 @@ function initIntro() {
   const intro = document.getElementById('intro-screen');
   const app = document.getElementById('app-container');
   const nav = document.getElementById('bottom-nav');
-  if (!intro || !app || !nav) return;
+  if (!intro || !app) return;
 
   intro.style.display = 'flex';
   intro.style.opacity = '1';
   app.classList.remove('active');
-  nav.style.display = 'none';
+  if (nav) nav.style.display = 'none';
 
-  // Ровно через 3 секунды сразу показываем интерфейс.
-  // Никакого дополнительного ожидания после заставки: интерфейс уже готов к работе.
+  // Гарантированный переход ровно через 3 секунды.
   window.setTimeout(() => {
     app.classList.add('active');
-    nav.style.display = 'flex';
+    if (nav) nav.style.display = 'flex';
     intro.style.transition = 'opacity 0.15s ease';
     intro.style.opacity = '0';
-    window.setTimeout(() => {
-      intro.style.display = 'none';
-    }, 150);
-    initMusic();
+    window.setTimeout(() => { intro.style.display = 'none'; }, 150);
   }, 3000);
 }
 
