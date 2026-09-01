@@ -706,7 +706,8 @@ const FATE_DILEMMAS = [
     },
     "stats": {
       "a": 47,
-      "b": 53
+      "b": 53,
+      "c": 20
     },
     "analysis": {
       "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
@@ -715,6 +716,14 @@ const FATE_DILEMMAS = [
       "pt": "A tua escolha mostra como costumas reagir em situações assim.",
       "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
       "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
+    },
+    "c": {
+      "ru": "Рассмотрю ещё один вариант и выберу по ситуации",
+      "en": "Consider another option and decide based on the situation",
+      "es": "Consideraré otra opción y decidiré según la situación",
+      "pt": "Vou considerar outra opção e decidir conforme a situação",
+      "de": "Ich ziehe eine weitere Möglichkeit in Betracht und entscheide je nach Situation",
+      "fr": "J’envisagerai une autre option et déciderai selon la situation"
     }
   },
   {
@@ -744,7 +753,8 @@ const FATE_DILEMMAS = [
     },
     "stats": {
       "a": 49,
-      "b": 51
+      "b": 51,
+      "c": 20
     },
     "analysis": {
       "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
@@ -753,6 +763,14 @@ const FATE_DILEMMAS = [
       "pt": "A tua escolha mostra como costumas reagir em situações assim.",
       "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
       "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
+    },
+    "c": {
+      "ru": "Рассмотрю ещё один вариант и выберу по ситуации",
+      "en": "Consider another option and decide based on the situation",
+      "es": "Consideraré otra opción y decidiré según la situación",
+      "pt": "Vou considerar outra opção e decidir conforme a situação",
+      "de": "Ich ziehe eine weitere Möglichkeit in Betracht und entscheide je nach Situation",
+      "fr": "J’envisagerai une autre option et déciderai selon la situation"
     }
   },
   {
@@ -782,7 +800,8 @@ const FATE_DILEMMAS = [
     },
     "stats": {
       "a": 51,
-      "b": 49
+      "b": 49,
+      "c": 20
     },
     "analysis": {
       "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
@@ -791,6 +810,14 @@ const FATE_DILEMMAS = [
       "pt": "A tua escolha mostra como costumas reagir em situações assim.",
       "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
       "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
+    },
+    "c": {
+      "ru": "Рассмотрю ещё один вариант и выберу по ситуации",
+      "en": "Consider another option and decide based on the situation",
+      "es": "Consideraré otra opción y decidiré según la situación",
+      "pt": "Vou considerar outra opção e decidir conforme a situação",
+      "de": "Ich ziehe eine weitere Möglichkeit in Betracht und entscheide je nach Situation",
+      "fr": "J’envisagerai une autre option et déciderai selon la situation"
     }
   },
   {
@@ -820,7 +847,8 @@ const FATE_DILEMMAS = [
     },
     "stats": {
       "a": 53,
-      "b": 47
+      "b": 47,
+      "c": 20
     },
     "analysis": {
       "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
@@ -829,6 +857,14 @@ const FATE_DILEMMAS = [
       "pt": "A tua escolha mostra como costumas reagir em situações assim.",
       "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
       "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
+    },
+    "c": {
+      "ru": "Рассмотрю ещё один вариант и выберу по ситуации",
+      "en": "Consider another option and decide based on the situation",
+      "es": "Consideraré otra opción y decidiré según la situación",
+      "pt": "Vou considerar outra opção e decidir conforme a situação",
+      "de": "Ich ziehe eine weitere Möglichkeit in Betracht und entscheide je nach Situation",
+      "fr": "J’envisagerai une autre option et déciderai selon la situation"
     }
   },
   {
@@ -858,7 +894,8 @@ const FATE_DILEMMAS = [
     },
     "stats": {
       "a": 47,
-      "b": 53
+      "b": 53,
+      "c": 20
     },
     "analysis": {
       "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
@@ -867,6 +904,14 @@ const FATE_DILEMMAS = [
       "pt": "A tua escolha mostra como costumas reagir em situações assim.",
       "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
       "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
+    },
+    "c": {
+      "ru": "Рассмотрю ещё один вариант и выберу по ситуации",
+      "en": "Consider another option and decide based on the situation",
+      "es": "Consideraré otra opción y decidiré según la situación",
+      "pt": "Vou considerar outra opção e decidir conforme a situação",
+      "de": "Ich ziehe eine weitere Möglichkeit in Betracht und entscheide je nach Situation",
+      "fr": "J’envisagerai une autre option et déciderai selon la situation"
     }
   },
   {
@@ -896,7 +941,8 @@ const FATE_DILEMMAS = [
     },
     "stats": {
       "a": 47,
-      "b": 53
+      "b": 53,
+      "c": 20
     },
     "analysis": {
       "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
@@ -905,6 +951,14 @@ const FATE_DILEMMAS = [
       "pt": "A tua escolha mostra como costumas reagir em situações assim.",
       "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
       "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
+    },
+    "c": {
+      "ru": "Рассмотрю ещё один вариант и выберу по ситуации",
+      "en": "Consider another option and decide based on the situation",
+      "es": "Consideraré otra opción y decidiré según la situación",
+      "pt": "Vou considerar outra opção e decidir conforme a situação",
+      "de": "Ich ziehe eine weitere Möglichkeit in Betracht und entscheide je nach Situation",
+      "fr": "J’envisagerai une autre option et déciderai selon la situation"
     }
   },
   {
@@ -934,7 +988,8 @@ const FATE_DILEMMAS = [
     },
     "stats": {
       "a": 49,
-      "b": 51
+      "b": 51,
+      "c": 20
     },
     "analysis": {
       "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
@@ -943,6 +998,14 @@ const FATE_DILEMMAS = [
       "pt": "A tua escolha mostra como costumas reagir em situações assim.",
       "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
       "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
+    },
+    "c": {
+      "ru": "Рассмотрю ещё один вариант и выберу по ситуации",
+      "en": "Consider another option and decide based on the situation",
+      "es": "Consideraré otra opción y decidiré según la situación",
+      "pt": "Vou considerar outra opção e decidir conforme a situação",
+      "de": "Ich ziehe eine weitere Möglichkeit in Betracht und entscheide je nach Situation",
+      "fr": "J’envisagerai une autre option et déciderai selon la situation"
     }
   },
   {
@@ -972,7 +1035,8 @@ const FATE_DILEMMAS = [
     },
     "stats": {
       "a": 51,
-      "b": 49
+      "b": 49,
+      "c": 20
     },
     "analysis": {
       "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
@@ -981,6 +1045,14 @@ const FATE_DILEMMAS = [
       "pt": "A tua escolha mostra como costumas reagir em situações assim.",
       "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
       "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
+    },
+    "c": {
+      "ru": "Рассмотрю ещё один вариант и выберу по ситуации",
+      "en": "Consider another option and decide based on the situation",
+      "es": "Consideraré otra opción y decidiré según la situación",
+      "pt": "Vou considerar outra opção e decidir conforme a situação",
+      "de": "Ich ziehe eine weitere Möglichkeit in Betracht und entscheide je nach Situation",
+      "fr": "J’envisagerai une autre option et déciderai selon la situation"
     }
   },
   {
@@ -1010,7 +1082,8 @@ const FATE_DILEMMAS = [
     },
     "stats": {
       "a": 53,
-      "b": 47
+      "b": 47,
+      "c": 20
     },
     "analysis": {
       "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
@@ -1019,6 +1092,14 @@ const FATE_DILEMMAS = [
       "pt": "A tua escolha mostra como costumas reagir em situações assim.",
       "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
       "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
+    },
+    "c": {
+      "ru": "Рассмотрю ещё один вариант и выберу по ситуации",
+      "en": "Consider another option and decide based on the situation",
+      "es": "Consideraré otra opción y decidiré según la situación",
+      "pt": "Vou considerar outra opção e decidir conforme a situação",
+      "de": "Ich ziehe eine weitere Möglichkeit in Betracht und entscheide je nach Situation",
+      "fr": "J’envisagerai une autre option et déciderai selon la situation"
     }
   },
   {
@@ -1048,7 +1129,8 @@ const FATE_DILEMMAS = [
     },
     "stats": {
       "a": 47,
-      "b": 53
+      "b": 53,
+      "c": 20
     },
     "analysis": {
       "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
@@ -1057,6 +1139,14 @@ const FATE_DILEMMAS = [
       "pt": "A tua escolha mostra como costumas reagir em situações assim.",
       "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
       "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
+    },
+    "c": {
+      "ru": "Рассмотрю ещё один вариант и выберу по ситуации",
+      "en": "Consider another option and decide based on the situation",
+      "es": "Consideraré otra opción y decidiré según la situación",
+      "pt": "Vou considerar outra opção e decidir conforme a situação",
+      "de": "Ich ziehe eine weitere Möglichkeit in Betracht und entscheide je nach Situation",
+      "fr": "J’envisagerai une autre option et déciderai selon la situation"
     }
   },
   {
@@ -1086,7 +1176,8 @@ const FATE_DILEMMAS = [
     },
     "stats": {
       "a": 47,
-      "b": 53
+      "b": 53,
+      "c": 20
     },
     "analysis": {
       "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
@@ -1095,6 +1186,14 @@ const FATE_DILEMMAS = [
       "pt": "A tua escolha mostra como costumas reagir em situações assim.",
       "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
       "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
+    },
+    "c": {
+      "ru": "Рассмотрю ещё один вариант и выберу по ситуации",
+      "en": "Consider another option and decide based on the situation",
+      "es": "Consideraré otra opción y decidiré según la situación",
+      "pt": "Vou considerar outra opção e decidir conforme a situação",
+      "de": "Ich ziehe eine weitere Möglichkeit in Betracht und entscheide je nach Situation",
+      "fr": "J’envisagerai une autre option et déciderai selon la situation"
     }
   },
   {
@@ -1124,7 +1223,8 @@ const FATE_DILEMMAS = [
     },
     "stats": {
       "a": 49,
-      "b": 51
+      "b": 51,
+      "c": 20
     },
     "analysis": {
       "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
@@ -1133,6 +1233,14 @@ const FATE_DILEMMAS = [
       "pt": "A tua escolha mostra como costumas reagir em situações assim.",
       "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
       "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
+    },
+    "c": {
+      "ru": "Рассмотрю ещё один вариант и выберу по ситуации",
+      "en": "Consider another option and decide based on the situation",
+      "es": "Consideraré otra opción y decidiré según la situación",
+      "pt": "Vou considerar outra opção e decidir conforme a situação",
+      "de": "Ich ziehe eine weitere Möglichkeit in Betracht und entscheide je nach Situation",
+      "fr": "J’envisagerai une autre option et déciderai selon la situation"
     }
   },
   {
@@ -1162,7 +1270,8 @@ const FATE_DILEMMAS = [
     },
     "stats": {
       "a": 51,
-      "b": 49
+      "b": 49,
+      "c": 20
     },
     "analysis": {
       "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
@@ -1171,6 +1280,14 @@ const FATE_DILEMMAS = [
       "pt": "A tua escolha mostra como costumas reagir em situações assim.",
       "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
       "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
+    },
+    "c": {
+      "ru": "Рассмотрю ещё один вариант и выберу по ситуации",
+      "en": "Consider another option and decide based on the situation",
+      "es": "Consideraré otra opción y decidiré según la situación",
+      "pt": "Vou considerar outra opção e decidir conforme a situação",
+      "de": "Ich ziehe eine weitere Möglichkeit in Betracht und entscheide je nach Situation",
+      "fr": "J’envisagerai une autre option et déciderai selon la situation"
     }
   },
   {
@@ -1200,7 +1317,8 @@ const FATE_DILEMMAS = [
     },
     "stats": {
       "a": 53,
-      "b": 47
+      "b": 47,
+      "c": 20
     },
     "analysis": {
       "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
@@ -1209,6 +1327,14 @@ const FATE_DILEMMAS = [
       "pt": "A tua escolha mostra como costumas reagir em situações assim.",
       "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
       "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
+    },
+    "c": {
+      "ru": "Рассмотрю ещё один вариант и выберу по ситуации",
+      "en": "Consider another option and decide based on the situation",
+      "es": "Consideraré otra opción y decidiré según la situación",
+      "pt": "Vou considerar outra opção e decidir conforme a situação",
+      "de": "Ich ziehe eine weitere Möglichkeit in Betracht und entscheide je nach Situation",
+      "fr": "J’envisagerai une autre option et déciderai selon la situation"
     }
   },
   {
@@ -1238,7 +1364,8 @@ const FATE_DILEMMAS = [
     },
     "stats": {
       "a": 47,
-      "b": 53
+      "b": 53,
+      "c": 20
     },
     "analysis": {
       "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
@@ -1247,6 +1374,14 @@ const FATE_DILEMMAS = [
       "pt": "A tua escolha mostra como costumas reagir em situações assim.",
       "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
       "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
+    },
+    "c": {
+      "ru": "Рассмотрю ещё один вариант и выберу по ситуации",
+      "en": "Consider another option and decide based on the situation",
+      "es": "Consideraré otra opción y decidiré según la situación",
+      "pt": "Vou considerar outra opção e decidir conforme a situação",
+      "de": "Ich ziehe eine weitere Möglichkeit in Betracht und entscheide je nach Situation",
+      "fr": "J’envisagerai une autre option et déciderai selon la situation"
     }
   },
   {
@@ -1276,7 +1411,8 @@ const FATE_DILEMMAS = [
     },
     "stats": {
       "a": 47,
-      "b": 53
+      "b": 53,
+      "c": 20
     },
     "analysis": {
       "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
@@ -1285,6 +1421,14 @@ const FATE_DILEMMAS = [
       "pt": "A tua escolha mostra como costumas reagir em situações assim.",
       "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
       "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
+    },
+    "c": {
+      "ru": "Рассмотрю ещё один вариант и выберу по ситуации",
+      "en": "Consider another option and decide based on the situation",
+      "es": "Consideraré otra opción y decidiré según la situación",
+      "pt": "Vou considerar outra opção e decidir conforme a situação",
+      "de": "Ich ziehe eine weitere Möglichkeit in Betracht und entscheide je nach Situation",
+      "fr": "J’envisagerai une autre option et déciderai selon la situation"
     }
   },
   {
@@ -1314,7 +1458,8 @@ const FATE_DILEMMAS = [
     },
     "stats": {
       "a": 49,
-      "b": 51
+      "b": 51,
+      "c": 20
     },
     "analysis": {
       "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
@@ -1323,6 +1468,14 @@ const FATE_DILEMMAS = [
       "pt": "A tua escolha mostra como costumas reagir em situações assim.",
       "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
       "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
+    },
+    "c": {
+      "ru": "Рассмотрю ещё один вариант и выберу по ситуации",
+      "en": "Consider another option and decide based on the situation",
+      "es": "Consideraré otra opción y decidiré según la situación",
+      "pt": "Vou considerar outra opção e decidir conforme a situação",
+      "de": "Ich ziehe eine weitere Möglichkeit in Betracht und entscheide je nach Situation",
+      "fr": "J’envisagerai une autre option et déciderai selon la situation"
     }
   },
   {
@@ -1352,7 +1505,8 @@ const FATE_DILEMMAS = [
     },
     "stats": {
       "a": 51,
-      "b": 49
+      "b": 49,
+      "c": 20
     },
     "analysis": {
       "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
@@ -1361,6 +1515,14 @@ const FATE_DILEMMAS = [
       "pt": "A tua escolha mostra como costumas reagir em situações assim.",
       "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
       "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
+    },
+    "c": {
+      "ru": "Рассмотрю ещё один вариант и выберу по ситуации",
+      "en": "Consider another option and decide based on the situation",
+      "es": "Consideraré otra opción y decidiré según la situación",
+      "pt": "Vou considerar outra opção e decidir conforme a situação",
+      "de": "Ich ziehe eine weitere Möglichkeit in Betracht und entscheide je nach Situation",
+      "fr": "J’envisagerai une autre option et déciderai selon la situation"
     }
   },
   {
@@ -1390,7 +1552,8 @@ const FATE_DILEMMAS = [
     },
     "stats": {
       "a": 53,
-      "b": 47
+      "b": 47,
+      "c": 20
     },
     "analysis": {
       "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
@@ -1399,6 +1562,14 @@ const FATE_DILEMMAS = [
       "pt": "A tua escolha mostra como costumas reagir em situações assim.",
       "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
       "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
+    },
+    "c": {
+      "ru": "Рассмотрю ещё один вариант и выберу по ситуации",
+      "en": "Consider another option and decide based on the situation",
+      "es": "Consideraré otra opción y decidiré según la situación",
+      "pt": "Vou considerar outra opção e decidir conforme a situação",
+      "de": "Ich ziehe eine weitere Möglichkeit in Betracht und entscheide je nach Situation",
+      "fr": "J’envisagerai une autre option et déciderai selon la situation"
     }
   },
   {
@@ -1428,7 +1599,8 @@ const FATE_DILEMMAS = [
     },
     "stats": {
       "a": 47,
-      "b": 53
+      "b": 53,
+      "c": 20
     },
     "analysis": {
       "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
@@ -1437,6 +1609,14 @@ const FATE_DILEMMAS = [
       "pt": "A tua escolha mostra como costumas reagir em situações assim.",
       "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
       "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
+    },
+    "c": {
+      "ru": "Рассмотрю ещё один вариант и выберу по ситуации",
+      "en": "Consider another option and decide based on the situation",
+      "es": "Consideraré otra opción y decidiré según la situación",
+      "pt": "Vou considerar outra opção e decidir conforme a situação",
+      "de": "Ich ziehe eine weitere Möglichkeit in Betracht und entscheide je nach Situation",
+      "fr": "J’envisagerai une autre option et déciderai selon la situation"
     }
   },
   {
@@ -1466,7 +1646,8 @@ const FATE_DILEMMAS = [
     },
     "stats": {
       "a": 47,
-      "b": 53
+      "b": 53,
+      "c": 20
     },
     "analysis": {
       "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
@@ -1475,6 +1656,14 @@ const FATE_DILEMMAS = [
       "pt": "A tua escolha mostra como costumas reagir em situações assim.",
       "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
       "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
+    },
+    "c": {
+      "ru": "Рассмотрю ещё один вариант и выберу по ситуации",
+      "en": "Consider another option and decide based on the situation",
+      "es": "Consideraré otra opción y decidiré según la situación",
+      "pt": "Vou considerar outra opção e decidir conforme a situação",
+      "de": "Ich ziehe eine weitere Möglichkeit in Betracht und entscheide je nach Situation",
+      "fr": "J’envisagerai une autre option et déciderai selon la situation"
     }
   },
   {
@@ -1504,7 +1693,8 @@ const FATE_DILEMMAS = [
     },
     "stats": {
       "a": 49,
-      "b": 51
+      "b": 51,
+      "c": 20
     },
     "analysis": {
       "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
@@ -1513,6 +1703,14 @@ const FATE_DILEMMAS = [
       "pt": "A tua escolha mostra como costumas reagir em situações assim.",
       "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
       "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
+    },
+    "c": {
+      "ru": "Рассмотрю ещё один вариант и выберу по ситуации",
+      "en": "Consider another option and decide based on the situation",
+      "es": "Consideraré otra opción y decidiré según la situación",
+      "pt": "Vou considerar outra opção e decidir conforme a situação",
+      "de": "Ich ziehe eine weitere Möglichkeit in Betracht und entscheide je nach Situation",
+      "fr": "J’envisagerai une autre option et déciderai selon la situation"
     }
   },
   {
@@ -1542,7 +1740,8 @@ const FATE_DILEMMAS = [
     },
     "stats": {
       "a": 51,
-      "b": 49
+      "b": 49,
+      "c": 20
     },
     "analysis": {
       "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
@@ -1551,6 +1750,14 @@ const FATE_DILEMMAS = [
       "pt": "A tua escolha mostra como costumas reagir em situações assim.",
       "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
       "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
+    },
+    "c": {
+      "ru": "Рассмотрю ещё один вариант и выберу по ситуации",
+      "en": "Consider another option and decide based on the situation",
+      "es": "Consideraré otra opción y decidiré según la situación",
+      "pt": "Vou considerar outra opção e decidir conforme a situação",
+      "de": "Ich ziehe eine weitere Möglichkeit in Betracht und entscheide je nach Situation",
+      "fr": "J’envisagerai une autre option et déciderai selon la situation"
     }
   },
   {
@@ -1580,7 +1787,8 @@ const FATE_DILEMMAS = [
     },
     "stats": {
       "a": 53,
-      "b": 47
+      "b": 47,
+      "c": 20
     },
     "analysis": {
       "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
@@ -1589,6 +1797,14 @@ const FATE_DILEMMAS = [
       "pt": "A tua escolha mostra como costumas reagir em situações assim.",
       "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
       "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
+    },
+    "c": {
+      "ru": "Рассмотрю ещё один вариант и выберу по ситуации",
+      "en": "Consider another option and decide based on the situation",
+      "es": "Consideraré otra opción y decidiré según la situación",
+      "pt": "Vou considerar outra opção e decidir conforme a situação",
+      "de": "Ich ziehe eine weitere Möglichkeit in Betracht und entscheide je nach Situation",
+      "fr": "J’envisagerai une autre option et déciderai selon la situation"
     }
   },
   {
@@ -1618,7 +1834,8 @@ const FATE_DILEMMAS = [
     },
     "stats": {
       "a": 47,
-      "b": 53
+      "b": 53,
+      "c": 20
     },
     "analysis": {
       "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
@@ -1627,6 +1844,14 @@ const FATE_DILEMMAS = [
       "pt": "A tua escolha mostra como costumas reagir em situações assim.",
       "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
       "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
+    },
+    "c": {
+      "ru": "Рассмотрю ещё один вариант и выберу по ситуации",
+      "en": "Consider another option and decide based on the situation",
+      "es": "Consideraré otra opción y decidiré según la situación",
+      "pt": "Vou considerar outra opção e decidir conforme a situação",
+      "de": "Ich ziehe eine weitere Möglichkeit in Betracht und entscheide je nach Situation",
+      "fr": "J’envisagerai une autre option et déciderai selon la situation"
     }
   },
   {
@@ -1656,7 +1881,8 @@ const FATE_DILEMMAS = [
     },
     "stats": {
       "a": 47,
-      "b": 53
+      "b": 53,
+      "c": 20
     },
     "analysis": {
       "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
@@ -1665,6 +1891,14 @@ const FATE_DILEMMAS = [
       "pt": "A tua escolha mostra como costumas reagir em situações assim.",
       "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
       "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
+    },
+    "c": {
+      "ru": "Рассмотрю ещё один вариант и выберу по ситуации",
+      "en": "Consider another option and decide based on the situation",
+      "es": "Consideraré otra opción y decidiré según la situación",
+      "pt": "Vou considerar outra opção e decidir conforme a situação",
+      "de": "Ich ziehe eine weitere Möglichkeit in Betracht und entscheide je nach Situation",
+      "fr": "J’envisagerai une autre option et déciderai selon la situation"
     }
   },
   {
@@ -1694,7 +1928,8 @@ const FATE_DILEMMAS = [
     },
     "stats": {
       "a": 49,
-      "b": 51
+      "b": 51,
+      "c": 20
     },
     "analysis": {
       "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
@@ -1703,6 +1938,14 @@ const FATE_DILEMMAS = [
       "pt": "A tua escolha mostra como costumas reagir em situações assim.",
       "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
       "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
+    },
+    "c": {
+      "ru": "Рассмотрю ещё один вариант и выберу по ситуации",
+      "en": "Consider another option and decide based on the situation",
+      "es": "Consideraré otra opción y decidiré según la situación",
+      "pt": "Vou considerar outra opção e decidir conforme a situação",
+      "de": "Ich ziehe eine weitere Möglichkeit in Betracht und entscheide je nach Situation",
+      "fr": "J’envisagerai une autre option et déciderai selon la situation"
     }
   },
   {
@@ -1732,7 +1975,8 @@ const FATE_DILEMMAS = [
     },
     "stats": {
       "a": 51,
-      "b": 49
+      "b": 49,
+      "c": 20
     },
     "analysis": {
       "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
@@ -1741,6 +1985,14 @@ const FATE_DILEMMAS = [
       "pt": "A tua escolha mostra como costumas reagir em situações assim.",
       "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
       "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
+    },
+    "c": {
+      "ru": "Рассмотрю ещё один вариант и выберу по ситуации",
+      "en": "Consider another option and decide based on the situation",
+      "es": "Consideraré otra opción y decidiré según la situación",
+      "pt": "Vou considerar outra opção e decidir conforme a situação",
+      "de": "Ich ziehe eine weitere Möglichkeit in Betracht und entscheide je nach Situation",
+      "fr": "J’envisagerai une autre option et déciderai selon la situation"
     }
   },
   {
@@ -1770,7 +2022,8 @@ const FATE_DILEMMAS = [
     },
     "stats": {
       "a": 53,
-      "b": 47
+      "b": 47,
+      "c": 20
     },
     "analysis": {
       "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
@@ -1779,6 +2032,14 @@ const FATE_DILEMMAS = [
       "pt": "A tua escolha mostra como costumas reagir em situações assim.",
       "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
       "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
+    },
+    "c": {
+      "ru": "Рассмотрю ещё один вариант и выберу по ситуации",
+      "en": "Consider another option and decide based on the situation",
+      "es": "Consideraré otra opción y decidiré según la situación",
+      "pt": "Vou considerar outra opção e decidir conforme a situação",
+      "de": "Ich ziehe eine weitere Möglichkeit in Betracht und entscheide je nach Situation",
+      "fr": "J’envisagerai une autre option et déciderai selon la situation"
     }
   },
   {
@@ -1808,7 +2069,8 @@ const FATE_DILEMMAS = [
     },
     "stats": {
       "a": 47,
-      "b": 53
+      "b": 53,
+      "c": 20
     },
     "analysis": {
       "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
@@ -1817,6 +2079,14 @@ const FATE_DILEMMAS = [
       "pt": "A tua escolha mostra como costumas reagir em situações assim.",
       "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
       "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
+    },
+    "c": {
+      "ru": "Рассмотрю ещё один вариант и выберу по ситуации",
+      "en": "Consider another option and decide based on the situation",
+      "es": "Consideraré otra opción y decidiré según la situación",
+      "pt": "Vou considerar outra opção e decidir conforme a situação",
+      "de": "Ich ziehe eine weitere Möglichkeit in Betracht und entscheide je nach Situation",
+      "fr": "J’envisagerai une autre option et déciderai selon la situation"
     }
   },
   {
@@ -1846,7 +2116,8 @@ const FATE_DILEMMAS = [
     },
     "stats": {
       "a": 47,
-      "b": 53
+      "b": 53,
+      "c": 20
     },
     "analysis": {
       "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
@@ -1855,6 +2126,14 @@ const FATE_DILEMMAS = [
       "pt": "A tua escolha mostra como costumas reagir em situações assim.",
       "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
       "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
+    },
+    "c": {
+      "ru": "Рассмотрю ещё один вариант и выберу по ситуации",
+      "en": "Consider another option and decide based on the situation",
+      "es": "Consideraré otra opción y decidiré según la situación",
+      "pt": "Vou considerar outra opção e decidir conforme a situação",
+      "de": "Ich ziehe eine weitere Möglichkeit in Betracht und entscheide je nach Situation",
+      "fr": "J’envisagerai une autre option et déciderai selon la situation"
     }
   },
   {
@@ -1884,7 +2163,8 @@ const FATE_DILEMMAS = [
     },
     "stats": {
       "a": 49,
-      "b": 51
+      "b": 51,
+      "c": 20
     },
     "analysis": {
       "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
@@ -1893,6 +2173,14 @@ const FATE_DILEMMAS = [
       "pt": "A tua escolha mostra como costumas reagir em situações assim.",
       "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
       "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
+    },
+    "c": {
+      "ru": "Рассмотрю ещё один вариант и выберу по ситуации",
+      "en": "Consider another option and decide based on the situation",
+      "es": "Consideraré otra opción y decidiré según la situación",
+      "pt": "Vou considerar outra opção e decidir conforme a situação",
+      "de": "Ich ziehe eine weitere Möglichkeit in Betracht und entscheide je nach Situation",
+      "fr": "J’envisagerai une autre option et déciderai selon la situation"
     }
   },
   {
@@ -1922,7 +2210,8 @@ const FATE_DILEMMAS = [
     },
     "stats": {
       "a": 51,
-      "b": 49
+      "b": 49,
+      "c": 20
     },
     "analysis": {
       "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
@@ -1931,6 +2220,14 @@ const FATE_DILEMMAS = [
       "pt": "A tua escolha mostra como costumas reagir em situações assim.",
       "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
       "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
+    },
+    "c": {
+      "ru": "Рассмотрю ещё один вариант и выберу по ситуации",
+      "en": "Consider another option and decide based on the situation",
+      "es": "Consideraré otra opción y decidiré según la situación",
+      "pt": "Vou considerar outra opção e decidir conforme a situação",
+      "de": "Ich ziehe eine weitere Möglichkeit in Betracht und entscheide je nach Situation",
+      "fr": "J’envisagerai une autre option et déciderai selon la situation"
     }
   },
   {
@@ -1960,7 +2257,8 @@ const FATE_DILEMMAS = [
     },
     "stats": {
       "a": 53,
-      "b": 47
+      "b": 47,
+      "c": 20
     },
     "analysis": {
       "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
@@ -1969,6 +2267,14 @@ const FATE_DILEMMAS = [
       "pt": "A tua escolha mostra como costumas reagir em situações assim.",
       "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
       "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
+    },
+    "c": {
+      "ru": "Рассмотрю ещё один вариант и выберу по ситуации",
+      "en": "Consider another option and decide based on the situation",
+      "es": "Consideraré otra opción y decidiré según la situación",
+      "pt": "Vou considerar outra opção e decidir conforme a situação",
+      "de": "Ich ziehe eine weitere Möglichkeit in Betracht und entscheide je nach Situation",
+      "fr": "J’envisagerai une autre option et déciderai selon la situation"
     }
   },
   {
@@ -1998,7 +2304,8 @@ const FATE_DILEMMAS = [
     },
     "stats": {
       "a": 47,
-      "b": 53
+      "b": 53,
+      "c": 20
     },
     "analysis": {
       "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
@@ -2007,6 +2314,14 @@ const FATE_DILEMMAS = [
       "pt": "A tua escolha mostra como costumas reagir em situações assim.",
       "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
       "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
+    },
+    "c": {
+      "ru": "Рассмотрю ещё один вариант и выберу по ситуации",
+      "en": "Consider another option and decide based on the situation",
+      "es": "Consideraré otra opción y decidiré según la situación",
+      "pt": "Vou considerar outra opção e decidir conforme a situação",
+      "de": "Ich ziehe eine weitere Möglichkeit in Betracht und entscheide je nach Situation",
+      "fr": "J’envisagerai une autre option et déciderai selon la situation"
     }
   },
   {
@@ -2036,7 +2351,8 @@ const FATE_DILEMMAS = [
     },
     "stats": {
       "a": 47,
-      "b": 53
+      "b": 53,
+      "c": 20
     },
     "analysis": {
       "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
@@ -2045,6 +2361,14 @@ const FATE_DILEMMAS = [
       "pt": "A tua escolha mostra como costumas reagir em situações assim.",
       "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
       "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
+    },
+    "c": {
+      "ru": "Рассмотрю ещё один вариант и выберу по ситуации",
+      "en": "Consider another option and decide based on the situation",
+      "es": "Consideraré otra opción y decidiré según la situación",
+      "pt": "Vou considerar outra opção e decidir conforme a situação",
+      "de": "Ich ziehe eine weitere Möglichkeit in Betracht und entscheide je nach Situation",
+      "fr": "J’envisagerai une autre option et déciderai selon la situation"
     }
   },
   {
@@ -2074,7 +2398,8 @@ const FATE_DILEMMAS = [
     },
     "stats": {
       "a": 49,
-      "b": 51
+      "b": 51,
+      "c": 20
     },
     "analysis": {
       "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
@@ -2083,6 +2408,14 @@ const FATE_DILEMMAS = [
       "pt": "A tua escolha mostra como costumas reagir em situações assim.",
       "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
       "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
+    },
+    "c": {
+      "ru": "Рассмотрю ещё один вариант и выберу по ситуации",
+      "en": "Consider another option and decide based on the situation",
+      "es": "Consideraré otra opción y decidiré según la situación",
+      "pt": "Vou considerar outra opção e decidir conforme a situação",
+      "de": "Ich ziehe eine weitere Möglichkeit in Betracht und entscheide je nach Situation",
+      "fr": "J’envisagerai une autre option et déciderai selon la situation"
     }
   },
   {
@@ -2112,7 +2445,8 @@ const FATE_DILEMMAS = [
     },
     "stats": {
       "a": 51,
-      "b": 49
+      "b": 49,
+      "c": 20
     },
     "analysis": {
       "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
@@ -2121,6 +2455,14 @@ const FATE_DILEMMAS = [
       "pt": "A tua escolha mostra como costumas reagir em situações assim.",
       "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
       "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
+    },
+    "c": {
+      "ru": "Рассмотрю ещё один вариант и выберу по ситуации",
+      "en": "Consider another option and decide based on the situation",
+      "es": "Consideraré otra opción y decidiré según la situación",
+      "pt": "Vou considerar outra opção e decidir conforme a situação",
+      "de": "Ich ziehe eine weitere Möglichkeit in Betracht und entscheide je nach Situation",
+      "fr": "J’envisagerai une autre option et déciderai selon la situation"
     }
   },
   {
@@ -2150,7 +2492,8 @@ const FATE_DILEMMAS = [
     },
     "stats": {
       "a": 53,
-      "b": 47
+      "b": 47,
+      "c": 20
     },
     "analysis": {
       "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
@@ -2159,6 +2502,14 @@ const FATE_DILEMMAS = [
       "pt": "A tua escolha mostra como costumas reagir em situações assim.",
       "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
       "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
+    },
+    "c": {
+      "ru": "Рассмотрю ещё один вариант и выберу по ситуации",
+      "en": "Consider another option and decide based on the situation",
+      "es": "Consideraré otra opción y decidiré según la situación",
+      "pt": "Vou considerar outra opção e decidir conforme a situação",
+      "de": "Ich ziehe eine weitere Möglichkeit in Betracht und entscheide je nach Situation",
+      "fr": "J’envisagerai une autre option et déciderai selon la situation"
     }
   },
   {
@@ -2188,7 +2539,8 @@ const FATE_DILEMMAS = [
     },
     "stats": {
       "a": 47,
-      "b": 53
+      "b": 53,
+      "c": 20
     },
     "analysis": {
       "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
@@ -2197,6 +2549,14 @@ const FATE_DILEMMAS = [
       "pt": "A tua escolha mostra como costumas reagir em situações assim.",
       "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
       "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
+    },
+    "c": {
+      "ru": "Рассмотрю ещё один вариант и выберу по ситуации",
+      "en": "Consider another option and decide based on the situation",
+      "es": "Consideraré otra opción y decidiré según la situación",
+      "pt": "Vou considerar outra opção e decidir conforme a situação",
+      "de": "Ich ziehe eine weitere Möglichkeit in Betracht und entscheide je nach Situation",
+      "fr": "J’envisagerai une autre option et déciderai selon la situation"
     }
   },
   {
@@ -2226,7 +2586,8 @@ const FATE_DILEMMAS = [
     },
     "stats": {
       "a": 47,
-      "b": 53
+      "b": 53,
+      "c": 20
     },
     "analysis": {
       "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
@@ -2235,6 +2596,14 @@ const FATE_DILEMMAS = [
       "pt": "A tua escolha mostra como costumas reagir em situações assim.",
       "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
       "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
+    },
+    "c": {
+      "ru": "Рассмотрю ещё один вариант и выберу по ситуации",
+      "en": "Consider another option and decide based on the situation",
+      "es": "Consideraré otra opción y decidiré según la situación",
+      "pt": "Vou considerar outra opção e decidir conforme a situação",
+      "de": "Ich ziehe eine weitere Möglichkeit in Betracht und entscheide je nach Situation",
+      "fr": "J’envisagerai une autre option et déciderai selon la situation"
     }
   },
   {
@@ -2264,7 +2633,8 @@ const FATE_DILEMMAS = [
     },
     "stats": {
       "a": 49,
-      "b": 51
+      "b": 51,
+      "c": 20
     },
     "analysis": {
       "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
@@ -2273,6 +2643,14 @@ const FATE_DILEMMAS = [
       "pt": "A tua escolha mostra como costumas reagir em situações assim.",
       "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
       "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
+    },
+    "c": {
+      "ru": "Рассмотрю ещё один вариант и выберу по ситуации",
+      "en": "Consider another option and decide based on the situation",
+      "es": "Consideraré otra opción y decidiré según la situación",
+      "pt": "Vou considerar outra opção e decidir conforme a situação",
+      "de": "Ich ziehe eine weitere Möglichkeit in Betracht und entscheide je nach Situation",
+      "fr": "J’envisagerai une autre option et déciderai selon la situation"
     }
   },
   {
@@ -2302,7 +2680,8 @@ const FATE_DILEMMAS = [
     },
     "stats": {
       "a": 51,
-      "b": 49
+      "b": 49,
+      "c": 20
     },
     "analysis": {
       "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
@@ -2311,6 +2690,14 @@ const FATE_DILEMMAS = [
       "pt": "A tua escolha mostra como costumas reagir em situações assim.",
       "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
       "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
+    },
+    "c": {
+      "ru": "Рассмотрю ещё один вариант и выберу по ситуации",
+      "en": "Consider another option and decide based on the situation",
+      "es": "Consideraré otra opción y decidiré según la situación",
+      "pt": "Vou considerar outra opção e decidir conforme a situação",
+      "de": "Ich ziehe eine weitere Möglichkeit in Betracht und entscheide je nach Situation",
+      "fr": "J’envisagerai une autre option et déciderai selon la situation"
     }
   },
   {
@@ -2340,7 +2727,8 @@ const FATE_DILEMMAS = [
     },
     "stats": {
       "a": 53,
-      "b": 47
+      "b": 47,
+      "c": 20
     },
     "analysis": {
       "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
@@ -2349,6 +2737,14 @@ const FATE_DILEMMAS = [
       "pt": "A tua escolha mostra como costumas reagir em situações assim.",
       "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
       "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
+    },
+    "c": {
+      "ru": "Рассмотрю ещё один вариант и выберу по ситуации",
+      "en": "Consider another option and decide based on the situation",
+      "es": "Consideraré otra opción y decidiré según la situación",
+      "pt": "Vou considerar outra opção e decidir conforme a situação",
+      "de": "Ich ziehe eine weitere Möglichkeit in Betracht und entscheide je nach Situation",
+      "fr": "J’envisagerai une autre option et déciderai selon la situation"
     }
   },
   {
@@ -2378,7 +2774,8 @@ const FATE_DILEMMAS = [
     },
     "stats": {
       "a": 47,
-      "b": 53
+      "b": 53,
+      "c": 20
     },
     "analysis": {
       "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
@@ -2387,6 +2784,14 @@ const FATE_DILEMMAS = [
       "pt": "A tua escolha mostra como costumas reagir em situações assim.",
       "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
       "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
+    },
+    "c": {
+      "ru": "Рассмотрю ещё один вариант и выберу по ситуации",
+      "en": "Consider another option and decide based on the situation",
+      "es": "Consideraré otra opción y decidiré según la situación",
+      "pt": "Vou considerar outra opção e decidir conforme a situação",
+      "de": "Ich ziehe eine weitere Möglichkeit in Betracht und entscheide je nach Situation",
+      "fr": "J’envisagerai une autre option et déciderai selon la situation"
     }
   },
   {
@@ -2416,7 +2821,8 @@ const FATE_DILEMMAS = [
     },
     "stats": {
       "a": 47,
-      "b": 53
+      "b": 53,
+      "c": 20
     },
     "analysis": {
       "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
@@ -2425,6 +2831,14 @@ const FATE_DILEMMAS = [
       "pt": "A tua escolha mostra como costumas reagir em situações assim.",
       "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
       "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
+    },
+    "c": {
+      "ru": "Рассмотрю ещё один вариант и выберу по ситуации",
+      "en": "Consider another option and decide based on the situation",
+      "es": "Consideraré otra opción y decidiré según la situación",
+      "pt": "Vou considerar outra opção e decidir conforme a situação",
+      "de": "Ich ziehe eine weitere Möglichkeit in Betracht und entscheide je nach Situation",
+      "fr": "J’envisagerai une autre option et déciderai selon la situation"
     }
   },
   {
@@ -2454,7 +2868,8 @@ const FATE_DILEMMAS = [
     },
     "stats": {
       "a": 49,
-      "b": 51
+      "b": 51,
+      "c": 20
     },
     "analysis": {
       "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
@@ -2463,6 +2878,14 @@ const FATE_DILEMMAS = [
       "pt": "A tua escolha mostra como costumas reagir em situações assim.",
       "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
       "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
+    },
+    "c": {
+      "ru": "Рассмотрю ещё один вариант и выберу по ситуации",
+      "en": "Consider another option and decide based on the situation",
+      "es": "Consideraré otra opción y decidiré según la situación",
+      "pt": "Vou considerar outra opção e decidir conforme a situação",
+      "de": "Ich ziehe eine weitere Möglichkeit in Betracht und entscheide je nach Situation",
+      "fr": "J’envisagerai une autre option et déciderai selon la situation"
     }
   },
   {
@@ -2492,7 +2915,8 @@ const FATE_DILEMMAS = [
     },
     "stats": {
       "a": 51,
-      "b": 49
+      "b": 49,
+      "c": 20
     },
     "analysis": {
       "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
@@ -2501,6 +2925,14 @@ const FATE_DILEMMAS = [
       "pt": "A tua escolha mostra como costumas reagir em situações assim.",
       "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
       "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
+    },
+    "c": {
+      "ru": "Рассмотрю ещё один вариант и выберу по ситуации",
+      "en": "Consider another option and decide based on the situation",
+      "es": "Consideraré otra opción y decidiré según la situación",
+      "pt": "Vou considerar outra opção e decidir conforme a situação",
+      "de": "Ich ziehe eine weitere Möglichkeit in Betracht und entscheide je nach Situation",
+      "fr": "J’envisagerai une autre option et déciderai selon la situation"
     }
   },
   {
@@ -2530,7 +2962,8 @@ const FATE_DILEMMAS = [
     },
     "stats": {
       "a": 53,
-      "b": 47
+      "b": 47,
+      "c": 20
     },
     "analysis": {
       "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
@@ -2539,6 +2972,14 @@ const FATE_DILEMMAS = [
       "pt": "A tua escolha mostra como costumas reagir em situações assim.",
       "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
       "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
+    },
+    "c": {
+      "ru": "Рассмотрю ещё один вариант и выберу по ситуации",
+      "en": "Consider another option and decide based on the situation",
+      "es": "Consideraré otra opción y decidiré según la situación",
+      "pt": "Vou considerar outra opção e decidir conforme a situação",
+      "de": "Ich ziehe eine weitere Möglichkeit in Betracht und entscheide je nach Situation",
+      "fr": "J’envisagerai une autre option et déciderai selon la situation"
     }
   },
   {
@@ -2568,7 +3009,8 @@ const FATE_DILEMMAS = [
     },
     "stats": {
       "a": 47,
-      "b": 53
+      "b": 53,
+      "c": 20
     },
     "analysis": {
       "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
@@ -2577,6 +3019,14 @@ const FATE_DILEMMAS = [
       "pt": "A tua escolha mostra como costumas reagir em situações assim.",
       "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
       "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
+    },
+    "c": {
+      "ru": "Рассмотрю ещё один вариант и выберу по ситуации",
+      "en": "Consider another option and decide based on the situation",
+      "es": "Consideraré otra opción y decidiré según la situación",
+      "pt": "Vou considerar outra opção e decidir conforme a situação",
+      "de": "Ich ziehe eine weitere Möglichkeit in Betracht und entscheide je nach Situation",
+      "fr": "J’envisagerai une autre option et déciderai selon la situation"
     }
   },
   {
@@ -2606,7 +3056,8 @@ const FATE_DILEMMAS = [
     },
     "stats": {
       "a": 47,
-      "b": 53
+      "b": 53,
+      "c": 20
     },
     "analysis": {
       "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
@@ -2615,6 +3066,14 @@ const FATE_DILEMMAS = [
       "pt": "A tua escolha mostra como costumas reagir em situações assim.",
       "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
       "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
+    },
+    "c": {
+      "ru": "Рассмотрю ещё один вариант и выберу по ситуации",
+      "en": "Consider another option and decide based on the situation",
+      "es": "Consideraré otra opción y decidiré según la situación",
+      "pt": "Vou considerar outra opção e decidir conforme a situação",
+      "de": "Ich ziehe eine weitere Möglichkeit in Betracht und entscheide je nach Situation",
+      "fr": "J’envisagerai une autre option et déciderai selon la situation"
     }
   },
   {
@@ -2644,7 +3103,8 @@ const FATE_DILEMMAS = [
     },
     "stats": {
       "a": 49,
-      "b": 51
+      "b": 51,
+      "c": 20
     },
     "analysis": {
       "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
@@ -2653,6 +3113,14 @@ const FATE_DILEMMAS = [
       "pt": "A tua escolha mostra como costumas reagir em situações assim.",
       "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
       "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
+    },
+    "c": {
+      "ru": "Рассмотрю ещё один вариант и выберу по ситуации",
+      "en": "Consider another option and decide based on the situation",
+      "es": "Consideraré otra opción y decidiré según la situación",
+      "pt": "Vou considerar outra opção e decidir conforme a situação",
+      "de": "Ich ziehe eine weitere Möglichkeit in Betracht und entscheide je nach Situation",
+      "fr": "J’envisagerai une autre option et déciderai selon la situation"
     }
   },
   {
@@ -2682,7 +3150,8 @@ const FATE_DILEMMAS = [
     },
     "stats": {
       "a": 51,
-      "b": 49
+      "b": 49,
+      "c": 20
     },
     "analysis": {
       "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
@@ -2691,6 +3160,14 @@ const FATE_DILEMMAS = [
       "pt": "A tua escolha mostra como costumas reagir em situações assim.",
       "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
       "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
+    },
+    "c": {
+      "ru": "Рассмотрю ещё один вариант и выберу по ситуации",
+      "en": "Consider another option and decide based on the situation",
+      "es": "Consideraré otra opción y decidiré según la situación",
+      "pt": "Vou considerar outra opção e decidir conforme a situação",
+      "de": "Ich ziehe eine weitere Möglichkeit in Betracht und entscheide je nach Situation",
+      "fr": "J’envisagerai une autre option et déciderai selon la situation"
     }
   },
   {
@@ -2720,7 +3197,8 @@ const FATE_DILEMMAS = [
     },
     "stats": {
       "a": 53,
-      "b": 47
+      "b": 47,
+      "c": 20
     },
     "analysis": {
       "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
@@ -2729,6 +3207,14 @@ const FATE_DILEMMAS = [
       "pt": "A tua escolha mostra como costumas reagir em situações assim.",
       "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
       "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
+    },
+    "c": {
+      "ru": "Рассмотрю ещё один вариант и выберу по ситуации",
+      "en": "Consider another option and decide based on the situation",
+      "es": "Consideraré otra opción y decidiré según la situación",
+      "pt": "Vou considerar outra opção e decidir conforme a situação",
+      "de": "Ich ziehe eine weitere Möglichkeit in Betracht und entscheide je nach Situation",
+      "fr": "J’envisagerai une autre option et déciderai selon la situation"
     }
   },
   {
@@ -2758,7 +3244,8 @@ const FATE_DILEMMAS = [
     },
     "stats": {
       "a": 47,
-      "b": 53
+      "b": 53,
+      "c": 20
     },
     "analysis": {
       "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
@@ -2767,6 +3254,14 @@ const FATE_DILEMMAS = [
       "pt": "A tua escolha mostra como costumas reagir em situações assim.",
       "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
       "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
+    },
+    "c": {
+      "ru": "Рассмотрю ещё один вариант и выберу по ситуации",
+      "en": "Consider another option and decide based on the situation",
+      "es": "Consideraré otra opción y decidiré según la situación",
+      "pt": "Vou considerar outra opção e decidir conforme a situação",
+      "de": "Ich ziehe eine weitere Möglichkeit in Betracht und entscheide je nach Situation",
+      "fr": "J’envisagerai une autre option et déciderai selon la situation"
     }
   },
   {
@@ -2796,7 +3291,8 @@ const FATE_DILEMMAS = [
     },
     "stats": {
       "a": 47,
-      "b": 53
+      "b": 53,
+      "c": 20
     },
     "analysis": {
       "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
@@ -2805,6 +3301,14 @@ const FATE_DILEMMAS = [
       "pt": "A tua escolha mostra como costumas reagir em situações assim.",
       "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
       "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
+    },
+    "c": {
+      "ru": "Рассмотрю ещё один вариант и выберу по ситуации",
+      "en": "Consider another option and decide based on the situation",
+      "es": "Consideraré otra opción y decidiré según la situación",
+      "pt": "Vou considerar outra opção e decidir conforme a situação",
+      "de": "Ich ziehe eine weitere Möglichkeit in Betracht und entscheide je nach Situation",
+      "fr": "J’envisagerai une autre option et déciderai selon la situation"
     }
   },
   {
@@ -2834,7 +3338,8 @@ const FATE_DILEMMAS = [
     },
     "stats": {
       "a": 49,
-      "b": 51
+      "b": 51,
+      "c": 20
     },
     "analysis": {
       "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
@@ -2843,6 +3348,14 @@ const FATE_DILEMMAS = [
       "pt": "A tua escolha mostra como costumas reagir em situações assim.",
       "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
       "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
+    },
+    "c": {
+      "ru": "Рассмотрю ещё один вариант и выберу по ситуации",
+      "en": "Consider another option and decide based on the situation",
+      "es": "Consideraré otra opción y decidiré según la situación",
+      "pt": "Vou considerar outra opção e decidir conforme a situação",
+      "de": "Ich ziehe eine weitere Möglichkeit in Betracht und entscheide je nach Situation",
+      "fr": "J’envisagerai une autre option et déciderai selon la situation"
     }
   },
   {
@@ -2872,7 +3385,8 @@ const FATE_DILEMMAS = [
     },
     "stats": {
       "a": 51,
-      "b": 49
+      "b": 49,
+      "c": 20
     },
     "analysis": {
       "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
@@ -2881,6 +3395,14 @@ const FATE_DILEMMAS = [
       "pt": "A tua escolha mostra como costumas reagir em situações assim.",
       "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
       "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
+    },
+    "c": {
+      "ru": "Рассмотрю ещё один вариант и выберу по ситуации",
+      "en": "Consider another option and decide based on the situation",
+      "es": "Consideraré otra opción y decidiré según la situación",
+      "pt": "Vou considerar outra opção e decidir conforme a situação",
+      "de": "Ich ziehe eine weitere Möglichkeit in Betracht und entscheide je nach Situation",
+      "fr": "J’envisagerai une autre option et déciderai selon la situation"
     }
   },
   {
@@ -2910,7 +3432,8 @@ const FATE_DILEMMAS = [
     },
     "stats": {
       "a": 53,
-      "b": 47
+      "b": 47,
+      "c": 20
     },
     "analysis": {
       "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
@@ -2919,6 +3442,14 @@ const FATE_DILEMMAS = [
       "pt": "A tua escolha mostra como costumas reagir em situações assim.",
       "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
       "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
+    },
+    "c": {
+      "ru": "Рассмотрю ещё один вариант и выберу по ситуации",
+      "en": "Consider another option and decide based on the situation",
+      "es": "Consideraré otra opción y decidiré según la situación",
+      "pt": "Vou considerar outra opção e decidir conforme a situação",
+      "de": "Ich ziehe eine weitere Möglichkeit in Betracht und entscheide je nach Situation",
+      "fr": "J’envisagerai une autre option et déciderai selon la situation"
     }
   },
   {
@@ -2948,7 +3479,8 @@ const FATE_DILEMMAS = [
     },
     "stats": {
       "a": 47,
-      "b": 53
+      "b": 53,
+      "c": 20
     },
     "analysis": {
       "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
@@ -2957,6 +3489,14 @@ const FATE_DILEMMAS = [
       "pt": "A tua escolha mostra como costumas reagir em situações assim.",
       "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
       "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
+    },
+    "c": {
+      "ru": "Рассмотрю ещё один вариант и выберу по ситуации",
+      "en": "Consider another option and decide based on the situation",
+      "es": "Consideraré otra opción y decidiré según la situación",
+      "pt": "Vou considerar outra opção e decidir conforme a situação",
+      "de": "Ich ziehe eine weitere Möglichkeit in Betracht und entscheide je nach Situation",
+      "fr": "J’envisagerai une autre option et déciderai selon la situation"
     }
   },
   {
@@ -2986,7 +3526,8 @@ const FATE_DILEMMAS = [
     },
     "stats": {
       "a": 47,
-      "b": 53
+      "b": 53,
+      "c": 20
     },
     "analysis": {
       "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
@@ -2995,6 +3536,14 @@ const FATE_DILEMMAS = [
       "pt": "A tua escolha mostra como costumas reagir em situações assim.",
       "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
       "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
+    },
+    "c": {
+      "ru": "Рассмотрю ещё один вариант и выберу по ситуации",
+      "en": "Consider another option and decide based on the situation",
+      "es": "Consideraré otra opción y decidiré según la situación",
+      "pt": "Vou considerar outra opção e decidir conforme a situação",
+      "de": "Ich ziehe eine weitere Möglichkeit in Betracht und entscheide je nach Situation",
+      "fr": "J’envisagerai une autre option et déciderai selon la situation"
     }
   },
   {
@@ -3024,7 +3573,8 @@ const FATE_DILEMMAS = [
     },
     "stats": {
       "a": 49,
-      "b": 51
+      "b": 51,
+      "c": 20
     },
     "analysis": {
       "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
@@ -3033,6 +3583,14 @@ const FATE_DILEMMAS = [
       "pt": "A tua escolha mostra como costumas reagir em situações assim.",
       "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
       "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
+    },
+    "c": {
+      "ru": "Рассмотрю ещё один вариант и выберу по ситуации",
+      "en": "Consider another option and decide based on the situation",
+      "es": "Consideraré otra opción y decidiré según la situación",
+      "pt": "Vou considerar outra opção e decidir conforme a situação",
+      "de": "Ich ziehe eine weitere Möglichkeit in Betracht und entscheide je nach Situation",
+      "fr": "J’envisagerai une autre option et déciderai selon la situation"
     }
   },
   {
@@ -3062,7 +3620,8 @@ const FATE_DILEMMAS = [
     },
     "stats": {
       "a": 51,
-      "b": 49
+      "b": 49,
+      "c": 20
     },
     "analysis": {
       "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
@@ -3071,6 +3630,14 @@ const FATE_DILEMMAS = [
       "pt": "A tua escolha mostra como costumas reagir em situações assim.",
       "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
       "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
+    },
+    "c": {
+      "ru": "Рассмотрю ещё один вариант и выберу по ситуации",
+      "en": "Consider another option and decide based on the situation",
+      "es": "Consideraré otra opción y decidiré según la situación",
+      "pt": "Vou considerar outra opção e decidir conforme a situação",
+      "de": "Ich ziehe eine weitere Möglichkeit in Betracht und entscheide je nach Situation",
+      "fr": "J’envisagerai une autre option et déciderai selon la situation"
     }
   },
   {
@@ -3100,7 +3667,8 @@ const FATE_DILEMMAS = [
     },
     "stats": {
       "a": 53,
-      "b": 47
+      "b": 47,
+      "c": 20
     },
     "analysis": {
       "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
@@ -3109,6 +3677,14 @@ const FATE_DILEMMAS = [
       "pt": "A tua escolha mostra como costumas reagir em situações assim.",
       "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
       "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
+    },
+    "c": {
+      "ru": "Рассмотрю ещё один вариант и выберу по ситуации",
+      "en": "Consider another option and decide based on the situation",
+      "es": "Consideraré otra opción y decidiré según la situación",
+      "pt": "Vou considerar outra opção e decidir conforme a situação",
+      "de": "Ich ziehe eine weitere Möglichkeit in Betracht und entscheide je nach Situation",
+      "fr": "J’envisagerai une autre option et déciderai selon la situation"
     }
   },
   {
@@ -3138,7 +3714,8 @@ const FATE_DILEMMAS = [
     },
     "stats": {
       "a": 47,
-      "b": 53
+      "b": 53,
+      "c": 20
     },
     "analysis": {
       "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
@@ -3147,6 +3724,14 @@ const FATE_DILEMMAS = [
       "pt": "A tua escolha mostra como costumas reagir em situações assim.",
       "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
       "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
+    },
+    "c": {
+      "ru": "Рассмотрю ещё один вариант и выберу по ситуации",
+      "en": "Consider another option and decide based on the situation",
+      "es": "Consideraré otra opción y decidiré según la situación",
+      "pt": "Vou considerar outra opção e decidir conforme a situação",
+      "de": "Ich ziehe eine weitere Möglichkeit in Betracht und entscheide je nach Situation",
+      "fr": "J’envisagerai une autre option et déciderai selon la situation"
     }
   },
   {
@@ -3176,7 +3761,8 @@ const FATE_DILEMMAS = [
     },
     "stats": {
       "a": 47,
-      "b": 53
+      "b": 53,
+      "c": 20
     },
     "analysis": {
       "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
@@ -3185,6 +3771,14 @@ const FATE_DILEMMAS = [
       "pt": "A tua escolha mostra como costumas reagir em situações assim.",
       "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
       "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
+    },
+    "c": {
+      "ru": "Рассмотрю ещё один вариант и выберу по ситуации",
+      "en": "Consider another option and decide based on the situation",
+      "es": "Consideraré otra opción y decidiré según la situación",
+      "pt": "Vou considerar outra opção e decidir conforme a situação",
+      "de": "Ich ziehe eine weitere Möglichkeit in Betracht und entscheide je nach Situation",
+      "fr": "J’envisagerai une autre option et déciderai selon la situation"
     }
   },
   {
@@ -3214,7 +3808,8 @@ const FATE_DILEMMAS = [
     },
     "stats": {
       "a": 49,
-      "b": 51
+      "b": 51,
+      "c": 20
     },
     "analysis": {
       "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
@@ -3223,6 +3818,14 @@ const FATE_DILEMMAS = [
       "pt": "A tua escolha mostra como costumas reagir em situações assim.",
       "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
       "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
+    },
+    "c": {
+      "ru": "Рассмотрю ещё один вариант и выберу по ситуации",
+      "en": "Consider another option and decide based on the situation",
+      "es": "Consideraré otra opción y decidiré según la situación",
+      "pt": "Vou considerar outra opção e decidir conforme a situação",
+      "de": "Ich ziehe eine weitere Möglichkeit in Betracht und entscheide je nach Situation",
+      "fr": "J’envisagerai une autre option et déciderai selon la situation"
     }
   },
   {
@@ -3252,7 +3855,8 @@ const FATE_DILEMMAS = [
     },
     "stats": {
       "a": 51,
-      "b": 49
+      "b": 49,
+      "c": 20
     },
     "analysis": {
       "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
@@ -3261,6 +3865,14 @@ const FATE_DILEMMAS = [
       "pt": "A tua escolha mostra como costumas reagir em situações assim.",
       "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
       "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
+    },
+    "c": {
+      "ru": "Рассмотрю ещё один вариант и выберу по ситуации",
+      "en": "Consider another option and decide based on the situation",
+      "es": "Consideraré otra opción y decidiré según la situación",
+      "pt": "Vou considerar outra opção e decidir conforme a situação",
+      "de": "Ich ziehe eine weitere Möglichkeit in Betracht und entscheide je nach Situation",
+      "fr": "J’envisagerai une autre option et déciderai selon la situation"
     }
   },
   {
@@ -3290,7 +3902,8 @@ const FATE_DILEMMAS = [
     },
     "stats": {
       "a": 53,
-      "b": 47
+      "b": 47,
+      "c": 20
     },
     "analysis": {
       "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
@@ -3299,6 +3912,14 @@ const FATE_DILEMMAS = [
       "pt": "A tua escolha mostra como costumas reagir em situações assim.",
       "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
       "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
+    },
+    "c": {
+      "ru": "Рассмотрю ещё один вариант и выберу по ситуации",
+      "en": "Consider another option and decide based on the situation",
+      "es": "Consideraré otra opción y decidiré según la situación",
+      "pt": "Vou considerar outra opção e decidir conforme a situação",
+      "de": "Ich ziehe eine weitere Möglichkeit in Betracht und entscheide je nach Situation",
+      "fr": "J’envisagerai une autre option et déciderai selon la situation"
     }
   },
   {
@@ -3328,7 +3949,8 @@ const FATE_DILEMMAS = [
     },
     "stats": {
       "a": 47,
-      "b": 53
+      "b": 53,
+      "c": 20
     },
     "analysis": {
       "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
@@ -3337,6 +3959,14 @@ const FATE_DILEMMAS = [
       "pt": "A tua escolha mostra como costumas reagir em situações assim.",
       "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
       "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
+    },
+    "c": {
+      "ru": "Рассмотрю ещё один вариант и выберу по ситуации",
+      "en": "Consider another option and decide based on the situation",
+      "es": "Consideraré otra opción y decidiré según la situación",
+      "pt": "Vou considerar outra opção e decidir conforme a situação",
+      "de": "Ich ziehe eine weitere Möglichkeit in Betracht und entscheide je nach Situation",
+      "fr": "J’envisagerai une autre option et déciderai selon la situation"
     }
   },
   {
@@ -3366,7 +3996,8 @@ const FATE_DILEMMAS = [
     },
     "stats": {
       "a": 47,
-      "b": 53
+      "b": 53,
+      "c": 20
     },
     "analysis": {
       "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
@@ -3375,6 +4006,14 @@ const FATE_DILEMMAS = [
       "pt": "A tua escolha mostra como costumas reagir em situações assim.",
       "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
       "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
+    },
+    "c": {
+      "ru": "Рассмотрю ещё один вариант и выберу по ситуации",
+      "en": "Consider another option and decide based on the situation",
+      "es": "Consideraré otra opción y decidiré según la situación",
+      "pt": "Vou considerar outra opção e decidir conforme a situação",
+      "de": "Ich ziehe eine weitere Möglichkeit in Betracht und entscheide je nach Situation",
+      "fr": "J’envisagerai une autre option et déciderai selon la situation"
     }
   },
   {
@@ -3404,7 +4043,8 @@ const FATE_DILEMMAS = [
     },
     "stats": {
       "a": 49,
-      "b": 51
+      "b": 51,
+      "c": 20
     },
     "analysis": {
       "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
@@ -3413,6 +4053,14 @@ const FATE_DILEMMAS = [
       "pt": "A tua escolha mostra como costumas reagir em situações assim.",
       "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
       "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
+    },
+    "c": {
+      "ru": "Рассмотрю ещё один вариант и выберу по ситуации",
+      "en": "Consider another option and decide based on the situation",
+      "es": "Consideraré otra opción y decidiré según la situación",
+      "pt": "Vou considerar outra opção e decidir conforme a situação",
+      "de": "Ich ziehe eine weitere Möglichkeit in Betracht und entscheide je nach Situation",
+      "fr": "J’envisagerai une autre option et déciderai selon la situation"
     }
   },
   {
@@ -3442,7 +4090,8 @@ const FATE_DILEMMAS = [
     },
     "stats": {
       "a": 51,
-      "b": 49
+      "b": 49,
+      "c": 20
     },
     "analysis": {
       "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
@@ -3451,6 +4100,14 @@ const FATE_DILEMMAS = [
       "pt": "A tua escolha mostra como costumas reagir em situações assim.",
       "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
       "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
+    },
+    "c": {
+      "ru": "Рассмотрю ещё один вариант и выберу по ситуации",
+      "en": "Consider another option and decide based on the situation",
+      "es": "Consideraré otra opción y decidiré según la situación",
+      "pt": "Vou considerar outra opção e decidir conforme a situação",
+      "de": "Ich ziehe eine weitere Möglichkeit in Betracht und entscheide je nach Situation",
+      "fr": "J’envisagerai une autre option et déciderai selon la situation"
     }
   },
   {
@@ -3480,7 +4137,8 @@ const FATE_DILEMMAS = [
     },
     "stats": {
       "a": 53,
-      "b": 47
+      "b": 47,
+      "c": 20
     },
     "analysis": {
       "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
@@ -3489,6 +4147,14 @@ const FATE_DILEMMAS = [
       "pt": "A tua escolha mostra como costumas reagir em situações assim.",
       "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
       "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
+    },
+    "c": {
+      "ru": "Рассмотрю ещё один вариант и выберу по ситуации",
+      "en": "Consider another option and decide based on the situation",
+      "es": "Consideraré otra opción y decidiré según la situación",
+      "pt": "Vou considerar outra opção e decidir conforme a situação",
+      "de": "Ich ziehe eine weitere Möglichkeit in Betracht und entscheide je nach Situation",
+      "fr": "J’envisagerai une autre option et déciderai selon la situation"
     }
   },
   {
@@ -3518,7 +4184,8 @@ const FATE_DILEMMAS = [
     },
     "stats": {
       "a": 47,
-      "b": 53
+      "b": 53,
+      "c": 20
     },
     "analysis": {
       "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
@@ -3527,6 +4194,14 @@ const FATE_DILEMMAS = [
       "pt": "A tua escolha mostra como costumas reagir em situações assim.",
       "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
       "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
+    },
+    "c": {
+      "ru": "Рассмотрю ещё один вариант и выберу по ситуации",
+      "en": "Consider another option and decide based on the situation",
+      "es": "Consideraré otra opción y decidiré según la situación",
+      "pt": "Vou considerar outra opção e decidir conforme a situação",
+      "de": "Ich ziehe eine weitere Möglichkeit in Betracht und entscheide je nach Situation",
+      "fr": "J’envisagerai une autre option et déciderai selon la situation"
     }
   },
   {
@@ -3556,7 +4231,8 @@ const FATE_DILEMMAS = [
     },
     "stats": {
       "a": 47,
-      "b": 53
+      "b": 53,
+      "c": 20
     },
     "analysis": {
       "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
@@ -3565,6 +4241,14 @@ const FATE_DILEMMAS = [
       "pt": "A tua escolha mostra como costumas reagir em situações assim.",
       "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
       "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
+    },
+    "c": {
+      "ru": "Рассмотрю ещё один вариант и выберу по ситуации",
+      "en": "Consider another option and decide based on the situation",
+      "es": "Consideraré otra opción y decidiré según la situación",
+      "pt": "Vou considerar outra opção e decidir conforme a situação",
+      "de": "Ich ziehe eine weitere Möglichkeit in Betracht und entscheide je nach Situation",
+      "fr": "J’envisagerai une autre option et déciderai selon la situation"
     }
   },
   {
@@ -3594,7 +4278,8 @@ const FATE_DILEMMAS = [
     },
     "stats": {
       "a": 49,
-      "b": 51
+      "b": 51,
+      "c": 20
     },
     "analysis": {
       "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
@@ -3603,6 +4288,14 @@ const FATE_DILEMMAS = [
       "pt": "A tua escolha mostra como costumas reagir em situações assim.",
       "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
       "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
+    },
+    "c": {
+      "ru": "Рассмотрю ещё один вариант и выберу по ситуации",
+      "en": "Consider another option and decide based on the situation",
+      "es": "Consideraré otra opción y decidiré según la situación",
+      "pt": "Vou considerar outra opção e decidir conforme a situação",
+      "de": "Ich ziehe eine weitere Möglichkeit in Betracht und entscheide je nach Situation",
+      "fr": "J’envisagerai une autre option et déciderai selon la situation"
     }
   },
   {
@@ -3632,7 +4325,8 @@ const FATE_DILEMMAS = [
     },
     "stats": {
       "a": 51,
-      "b": 49
+      "b": 49,
+      "c": 20
     },
     "analysis": {
       "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
@@ -3641,6 +4335,14 @@ const FATE_DILEMMAS = [
       "pt": "A tua escolha mostra como costumas reagir em situações assim.",
       "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
       "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
+    },
+    "c": {
+      "ru": "Рассмотрю ещё один вариант и выберу по ситуации",
+      "en": "Consider another option and decide based on the situation",
+      "es": "Consideraré otra opción y decidiré según la situación",
+      "pt": "Vou considerar outra opção e decidir conforme a situação",
+      "de": "Ich ziehe eine weitere Möglichkeit in Betracht und entscheide je nach Situation",
+      "fr": "J’envisagerai une autre option et déciderai selon la situation"
     }
   },
   {
@@ -3670,7 +4372,8 @@ const FATE_DILEMMAS = [
     },
     "stats": {
       "a": 53,
-      "b": 47
+      "b": 47,
+      "c": 20
     },
     "analysis": {
       "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
@@ -3679,6 +4382,14 @@ const FATE_DILEMMAS = [
       "pt": "A tua escolha mostra como costumas reagir em situações assim.",
       "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
       "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
+    },
+    "c": {
+      "ru": "Рассмотрю ещё один вариант и выберу по ситуации",
+      "en": "Consider another option and decide based on the situation",
+      "es": "Consideraré otra opción y decidiré según la situación",
+      "pt": "Vou considerar outra opção e decidir conforme a situação",
+      "de": "Ich ziehe eine weitere Möglichkeit in Betracht und entscheide je nach Situation",
+      "fr": "J’envisagerai une autre option et déciderai selon la situation"
     }
   },
   {
@@ -3708,7 +4419,8 @@ const FATE_DILEMMAS = [
     },
     "stats": {
       "a": 47,
-      "b": 53
+      "b": 53,
+      "c": 20
     },
     "analysis": {
       "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
@@ -3717,6 +4429,14 @@ const FATE_DILEMMAS = [
       "pt": "A tua escolha mostra como costumas reagir em situações assim.",
       "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
       "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
+    },
+    "c": {
+      "ru": "Рассмотрю ещё один вариант и выберу по ситуации",
+      "en": "Consider another option and decide based on the situation",
+      "es": "Consideraré otra opción y decidiré según la situación",
+      "pt": "Vou considerar outra opção e decidir conforme a situação",
+      "de": "Ich ziehe eine weitere Möglichkeit in Betracht und entscheide je nach Situation",
+      "fr": "J’envisagerai une autre option et déciderai selon la situation"
     }
   },
   {
@@ -3746,7 +4466,8 @@ const FATE_DILEMMAS = [
     },
     "stats": {
       "a": 47,
-      "b": 53
+      "b": 53,
+      "c": 20
     },
     "analysis": {
       "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
@@ -3755,6 +4476,14 @@ const FATE_DILEMMAS = [
       "pt": "A tua escolha mostra como costumas reagir em situações assim.",
       "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
       "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
+    },
+    "c": {
+      "ru": "Рассмотрю ещё один вариант и выберу по ситуации",
+      "en": "Consider another option and decide based on the situation",
+      "es": "Consideraré otra opción y decidiré según la situación",
+      "pt": "Vou considerar outra opção e decidir conforme a situação",
+      "de": "Ich ziehe eine weitere Möglichkeit in Betracht und entscheide je nach Situation",
+      "fr": "J’envisagerai une autre option et déciderai selon la situation"
     }
   },
   {
@@ -3784,7 +4513,8 @@ const FATE_DILEMMAS = [
     },
     "stats": {
       "a": 49,
-      "b": 51
+      "b": 51,
+      "c": 20
     },
     "analysis": {
       "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
@@ -3793,6 +4523,14 @@ const FATE_DILEMMAS = [
       "pt": "A tua escolha mostra como costumas reagir em situações assim.",
       "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
       "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
+    },
+    "c": {
+      "ru": "Рассмотрю ещё один вариант и выберу по ситуации",
+      "en": "Consider another option and decide based on the situation",
+      "es": "Consideraré otra opción y decidiré según la situación",
+      "pt": "Vou considerar outra opção e decidir conforme a situação",
+      "de": "Ich ziehe eine weitere Möglichkeit in Betracht und entscheide je nach Situation",
+      "fr": "J’envisagerai une autre option et déciderai selon la situation"
     }
   },
   {
@@ -3822,7 +4560,8 @@ const FATE_DILEMMAS = [
     },
     "stats": {
       "a": 51,
-      "b": 49
+      "b": 49,
+      "c": 20
     },
     "analysis": {
       "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
@@ -3831,6 +4570,14 @@ const FATE_DILEMMAS = [
       "pt": "A tua escolha mostra como costumas reagir em situações assim.",
       "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
       "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
+    },
+    "c": {
+      "ru": "Рассмотрю ещё один вариант и выберу по ситуации",
+      "en": "Consider another option and decide based on the situation",
+      "es": "Consideraré otra opción y decidiré según la situación",
+      "pt": "Vou considerar outra opção e decidir conforme a situação",
+      "de": "Ich ziehe eine weitere Möglichkeit in Betracht und entscheide je nach Situation",
+      "fr": "J’envisagerai une autre option et déciderai selon la situation"
     }
   },
   {
@@ -3860,7 +4607,8 @@ const FATE_DILEMMAS = [
     },
     "stats": {
       "a": 53,
-      "b": 47
+      "b": 47,
+      "c": 20
     },
     "analysis": {
       "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
@@ -3869,6 +4617,14 @@ const FATE_DILEMMAS = [
       "pt": "A tua escolha mostra como costumas reagir em situações assim.",
       "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
       "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
+    },
+    "c": {
+      "ru": "Рассмотрю ещё один вариант и выберу по ситуации",
+      "en": "Consider another option and decide based on the situation",
+      "es": "Consideraré otra opción y decidiré según la situación",
+      "pt": "Vou considerar outra opção e decidir conforme a situação",
+      "de": "Ich ziehe eine weitere Möglichkeit in Betracht und entscheide je nach Situation",
+      "fr": "J’envisagerai une autre option et déciderai selon la situation"
     }
   },
   {
@@ -3898,7 +4654,8 @@ const FATE_DILEMMAS = [
     },
     "stats": {
       "a": 47,
-      "b": 53
+      "b": 53,
+      "c": 20
     },
     "analysis": {
       "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
@@ -3907,6 +4664,14 @@ const FATE_DILEMMAS = [
       "pt": "A tua escolha mostra como costumas reagir em situações assim.",
       "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
       "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
+    },
+    "c": {
+      "ru": "Рассмотрю ещё один вариант и выберу по ситуации",
+      "en": "Consider another option and decide based on the situation",
+      "es": "Consideraré otra opción y decidiré según la situación",
+      "pt": "Vou considerar outra opção e decidir conforme a situação",
+      "de": "Ich ziehe eine weitere Möglichkeit in Betracht und entscheide je nach Situation",
+      "fr": "J’envisagerai une autre option et déciderai selon la situation"
     }
   },
   {
@@ -3936,7 +4701,8 @@ const FATE_DILEMMAS = [
     },
     "stats": {
       "a": 47,
-      "b": 53
+      "b": 53,
+      "c": 20
     },
     "analysis": {
       "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
@@ -3945,6 +4711,14 @@ const FATE_DILEMMAS = [
       "pt": "A tua escolha mostra como costumas reagir em situações assim.",
       "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
       "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
+    },
+    "c": {
+      "ru": "Рассмотрю ещё один вариант и выберу по ситуации",
+      "en": "Consider another option and decide based on the situation",
+      "es": "Consideraré otra opción y decidiré según la situación",
+      "pt": "Vou considerar outra opção e decidir conforme a situação",
+      "de": "Ich ziehe eine weitere Möglichkeit in Betracht und entscheide je nach Situation",
+      "fr": "J’envisagerai une autre option et déciderai selon la situation"
     }
   },
   {
@@ -3974,7 +4748,8 @@ const FATE_DILEMMAS = [
     },
     "stats": {
       "a": 49,
-      "b": 51
+      "b": 51,
+      "c": 20
     },
     "analysis": {
       "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
@@ -3983,6 +4758,14 @@ const FATE_DILEMMAS = [
       "pt": "A tua escolha mostra como costumas reagir em situações assim.",
       "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
       "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
+    },
+    "c": {
+      "ru": "Рассмотрю ещё один вариант и выберу по ситуации",
+      "en": "Consider another option and decide based on the situation",
+      "es": "Consideraré otra opción y decidiré según la situación",
+      "pt": "Vou considerar outra opção e decidir conforme a situação",
+      "de": "Ich ziehe eine weitere Möglichkeit in Betracht und entscheide je nach Situation",
+      "fr": "J’envisagerai une autre option et déciderai selon la situation"
     }
   },
   {
@@ -4012,7 +4795,8 @@ const FATE_DILEMMAS = [
     },
     "stats": {
       "a": 51,
-      "b": 49
+      "b": 49,
+      "c": 20
     },
     "analysis": {
       "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
@@ -4021,6 +4805,14 @@ const FATE_DILEMMAS = [
       "pt": "A tua escolha mostra como costumas reagir em situações assim.",
       "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
       "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
+    },
+    "c": {
+      "ru": "Рассмотрю ещё один вариант и выберу по ситуации",
+      "en": "Consider another option and decide based on the situation",
+      "es": "Consideraré otra opción y decidiré según la situación",
+      "pt": "Vou considerar outra opção e decidir conforme a situação",
+      "de": "Ich ziehe eine weitere Möglichkeit in Betracht und entscheide je nach Situation",
+      "fr": "J’envisagerai une autre option et déciderai selon la situation"
     }
   },
   {
@@ -4050,7 +4842,8 @@ const FATE_DILEMMAS = [
     },
     "stats": {
       "a": 53,
-      "b": 47
+      "b": 47,
+      "c": 20
     },
     "analysis": {
       "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
@@ -4059,6 +4852,14 @@ const FATE_DILEMMAS = [
       "pt": "A tua escolha mostra como costumas reagir em situações assim.",
       "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
       "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
+    },
+    "c": {
+      "ru": "Рассмотрю ещё один вариант и выберу по ситуации",
+      "en": "Consider another option and decide based on the situation",
+      "es": "Consideraré otra opción y decidiré según la situación",
+      "pt": "Vou considerar outra opção e decidir conforme a situação",
+      "de": "Ich ziehe eine weitere Möglichkeit in Betracht und entscheide je nach Situation",
+      "fr": "J’envisagerai une autre option et déciderai selon la situation"
     }
   },
   {
@@ -4088,7 +4889,8 @@ const FATE_DILEMMAS = [
     },
     "stats": {
       "a": 47,
-      "b": 53
+      "b": 53,
+      "c": 20
     },
     "analysis": {
       "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
@@ -4097,6 +4899,14 @@ const FATE_DILEMMAS = [
       "pt": "A tua escolha mostra como costumas reagir em situações assim.",
       "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
       "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
+    },
+    "c": {
+      "ru": "Рассмотрю ещё один вариант и выберу по ситуации",
+      "en": "Consider another option and decide based on the situation",
+      "es": "Consideraré otra opción y decidiré según la situación",
+      "pt": "Vou considerar outra opção e decidir conforme a situação",
+      "de": "Ich ziehe eine weitere Möglichkeit in Betracht und entscheide je nach Situation",
+      "fr": "J’envisagerai une autre option et déciderai selon la situation"
     }
   },
   {
@@ -4126,7 +4936,8 @@ const FATE_DILEMMAS = [
     },
     "stats": {
       "a": 47,
-      "b": 53
+      "b": 53,
+      "c": 20
     },
     "analysis": {
       "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
@@ -4135,6 +4946,14 @@ const FATE_DILEMMAS = [
       "pt": "A tua escolha mostra como costumas reagir em situações assim.",
       "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
       "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
+    },
+    "c": {
+      "ru": "Рассмотрю ещё один вариант и выберу по ситуации",
+      "en": "Consider another option and decide based on the situation",
+      "es": "Consideraré otra opción y decidiré según la situación",
+      "pt": "Vou considerar outra opção e decidir conforme a situação",
+      "de": "Ich ziehe eine weitere Möglichkeit in Betracht und entscheide je nach Situation",
+      "fr": "J’envisagerai une autre option et déciderai selon la situation"
     }
   },
   {
@@ -4164,7 +4983,8 @@ const FATE_DILEMMAS = [
     },
     "stats": {
       "a": 49,
-      "b": 51
+      "b": 51,
+      "c": 20
     },
     "analysis": {
       "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
@@ -4173,6 +4993,14 @@ const FATE_DILEMMAS = [
       "pt": "A tua escolha mostra como costumas reagir em situações assim.",
       "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
       "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
+    },
+    "c": {
+      "ru": "Рассмотрю ещё один вариант и выберу по ситуации",
+      "en": "Consider another option and decide based on the situation",
+      "es": "Consideraré otra opción y decidiré según la situación",
+      "pt": "Vou considerar outra opção e decidir conforme a situação",
+      "de": "Ich ziehe eine weitere Möglichkeit in Betracht und entscheide je nach Situation",
+      "fr": "J’envisagerai une autre option et déciderai selon la situation"
     }
   },
   {
@@ -4202,7 +5030,8 @@ const FATE_DILEMMAS = [
     },
     "stats": {
       "a": 51,
-      "b": 49
+      "b": 49,
+      "c": 20
     },
     "analysis": {
       "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
@@ -4211,6 +5040,14 @@ const FATE_DILEMMAS = [
       "pt": "A tua escolha mostra como costumas reagir em situações assim.",
       "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
       "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
+    },
+    "c": {
+      "ru": "Рассмотрю ещё один вариант и выберу по ситуации",
+      "en": "Consider another option and decide based on the situation",
+      "es": "Consideraré otra opción y decidiré según la situación",
+      "pt": "Vou considerar outra opção e decidir conforme a situação",
+      "de": "Ich ziehe eine weitere Möglichkeit in Betracht und entscheide je nach Situation",
+      "fr": "J’envisagerai une autre option et déciderai selon la situation"
     }
   },
   {
@@ -4240,7 +5077,8 @@ const FATE_DILEMMAS = [
     },
     "stats": {
       "a": 53,
-      "b": 47
+      "b": 47,
+      "c": 20
     },
     "analysis": {
       "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
@@ -4249,6 +5087,14 @@ const FATE_DILEMMAS = [
       "pt": "A tua escolha mostra como costumas reagir em situações assim.",
       "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
       "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
+    },
+    "c": {
+      "ru": "Рассмотрю ещё один вариант и выберу по ситуации",
+      "en": "Consider another option and decide based on the situation",
+      "es": "Consideraré otra opción y decidiré según la situación",
+      "pt": "Vou considerar outra opção e decidir conforme a situação",
+      "de": "Ich ziehe eine weitere Möglichkeit in Betracht und entscheide je nach Situation",
+      "fr": "J’envisagerai une autre option et déciderai selon la situation"
     }
   },
   {
@@ -4278,7 +5124,8 @@ const FATE_DILEMMAS = [
     },
     "stats": {
       "a": 47,
-      "b": 53
+      "b": 53,
+      "c": 20
     },
     "analysis": {
       "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
@@ -4287,6 +5134,14 @@ const FATE_DILEMMAS = [
       "pt": "A tua escolha mostra como costumas reagir em situações assim.",
       "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
       "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
+    },
+    "c": {
+      "ru": "Рассмотрю ещё один вариант и выберу по ситуации",
+      "en": "Consider another option and decide based on the situation",
+      "es": "Consideraré otra opción y decidiré según la situación",
+      "pt": "Vou considerar outra opção e decidir conforme a situação",
+      "de": "Ich ziehe eine weitere Möglichkeit in Betracht und entscheide je nach Situation",
+      "fr": "J’envisagerai une autre option et déciderai selon la situation"
     }
   },
   {
@@ -4316,7 +5171,8 @@ const FATE_DILEMMAS = [
     },
     "stats": {
       "a": 47,
-      "b": 53
+      "b": 53,
+      "c": 20
     },
     "analysis": {
       "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
@@ -4325,6 +5181,14 @@ const FATE_DILEMMAS = [
       "pt": "A tua escolha mostra como costumas reagir em situações assim.",
       "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
       "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
+    },
+    "c": {
+      "ru": "Рассмотрю ещё один вариант и выберу по ситуации",
+      "en": "Consider another option and decide based on the situation",
+      "es": "Consideraré otra opción y decidiré según la situación",
+      "pt": "Vou considerar outra opção e decidir conforme a situação",
+      "de": "Ich ziehe eine weitere Möglichkeit in Betracht und entscheide je nach Situation",
+      "fr": "J’envisagerai une autre option et déciderai selon la situation"
     }
   },
   {
@@ -4354,7 +5218,8 @@ const FATE_DILEMMAS = [
     },
     "stats": {
       "a": 49,
-      "b": 51
+      "b": 51,
+      "c": 20
     },
     "analysis": {
       "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
@@ -4363,6 +5228,14 @@ const FATE_DILEMMAS = [
       "pt": "A tua escolha mostra como costumas reagir em situações assim.",
       "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
       "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
+    },
+    "c": {
+      "ru": "Рассмотрю ещё один вариант и выберу по ситуации",
+      "en": "Consider another option and decide based on the situation",
+      "es": "Consideraré otra opción y decidiré según la situación",
+      "pt": "Vou considerar outra opção e decidir conforme a situação",
+      "de": "Ich ziehe eine weitere Möglichkeit in Betracht und entscheide je nach Situation",
+      "fr": "J’envisagerai une autre option et déciderai selon la situation"
     }
   },
   {
@@ -4392,7 +5265,8 @@ const FATE_DILEMMAS = [
     },
     "stats": {
       "a": 51,
-      "b": 49
+      "b": 49,
+      "c": 20
     },
     "analysis": {
       "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
@@ -4401,6 +5275,14 @@ const FATE_DILEMMAS = [
       "pt": "A tua escolha mostra como costumas reagir em situações assim.",
       "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
       "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
+    },
+    "c": {
+      "ru": "Рассмотрю ещё один вариант и выберу по ситуации",
+      "en": "Consider another option and decide based on the situation",
+      "es": "Consideraré otra opción y decidiré según la situación",
+      "pt": "Vou considerar outra opção e decidir conforme a situação",
+      "de": "Ich ziehe eine weitere Möglichkeit in Betracht und entscheide je nach Situation",
+      "fr": "J’envisagerai une autre option et déciderai selon la situation"
     }
   },
   {
@@ -4430,7 +5312,8 @@ const FATE_DILEMMAS = [
     },
     "stats": {
       "a": 53,
-      "b": 47
+      "b": 47,
+      "c": 20
     },
     "analysis": {
       "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
@@ -4439,6 +5322,14 @@ const FATE_DILEMMAS = [
       "pt": "A tua escolha mostra como costumas reagir em situações assim.",
       "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
       "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
+    },
+    "c": {
+      "ru": "Рассмотрю ещё один вариант и выберу по ситуации",
+      "en": "Consider another option and decide based on the situation",
+      "es": "Consideraré otra opción y decidiré según la situación",
+      "pt": "Vou considerar outra opção e decidir conforme a situação",
+      "de": "Ich ziehe eine weitere Möglichkeit in Betracht und entscheide je nach Situation",
+      "fr": "J’envisagerai une autre option et déciderai selon la situation"
     }
   },
   {
@@ -4468,7 +5359,8 @@ const FATE_DILEMMAS = [
     },
     "stats": {
       "a": 47,
-      "b": 53
+      "b": 53,
+      "c": 20
     },
     "analysis": {
       "ru": "Твой выбор показывает, как ты обычно реагируешь на подобные ситуации.",
@@ -4477,6 +5369,14 @@ const FATE_DILEMMAS = [
       "pt": "A tua escolha mostra como costumas reagir em situações assim.",
       "de": "Deine Wahl zeigt, wie du in solchen Situationen meist reagierst.",
       "fr": "Ton choix montre comment tu réagis généralement dans ce type de situation."
+    },
+    "c": {
+      "ru": "Рассмотрю ещё один вариант и выберу по ситуации",
+      "en": "Consider another option and decide based on the situation",
+      "es": "Consideraré otra opción y decidiré según la situación",
+      "pt": "Vou considerar outra opção e decidir conforme a situação",
+      "de": "Ich ziehe eine weitere Möglichkeit in Betracht und entscheide je nach Situation",
+      "fr": "J’envisagerai une autre option et déciderai selon la situation"
     }
   }
 ];
