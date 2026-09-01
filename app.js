@@ -4594,24 +4594,36 @@ const LABYRINTH_RIDDLES = [
     "riddle": {
       "ru": "Кто ходит утром на четырех ногах, днем на двух, а вечером на трех?",
       "en": "What walks on four legs in the morning, two at noon, and three in the evening?",
-      "es": "What walks on four legs in the morning, two at noon, and three in the evening?"
+      "es": "What walks on four legs in the morning, two at noon, and three in the evening?",
+      "pt": "Quem anda de manhã com quatro pernas, ao meio-dia com duas e à noite com três?",
+      "de": "Wer geht am Morgen auf vier Beinen, am Mittag auf zwei und am Abend auf drei?",
+      "fr": "Qui marche le matin sur quatre jambes, à midi sur deux et le soir sur trois?"
     },
     "hints": [
       {
         "ru": "Ищи не отдельное существо, а образ человеческой жизни.",
         "en": "Ищи не отдельное существо, а образ человеческой жизни.",
-        "es": "Ищи не отдельное существо, а образ человеческой жизни."
+        "es": "Ищи не отдельное существо, а образ человеческой жизни.",
+        "pt": "Procura não uma criatura isolada, mas a imagem de uma vida humana.",
+        "de": "Suche nicht nach einem einzelnen Wesen, sondern nach dem Bild eines menschlichen Lebens.",
+        "fr": "Cherche non pas une créature précise, mais l’image d’une vie humaine."
       },
       {
         "ru": "Время суток здесь обозначает разные этапы жизни.",
         "en": "Время суток здесь обозначает разные этапы жизни.",
-        "es": "Время суток здесь обозначает разные этапы жизни."
+        "es": "Время суток здесь обозначает разные этапы жизни.",
+        "pt": "As horas do dia representam diferentes fases da vida.",
+        "de": "Die Tageszeiten stehen für verschiedene Lebensabschnitte.",
+        "fr": "Les moments de la journée représentent différentes étapes de la vie."
       }
     ],
     "answer": {
       "ru": "Ответ: человек. Утро — младенчество, когда ребенок ползает на четвереньках. День — зрелость, когда человек ходит на двух ногах. Вечер — старость, когда появляется опора в виде трости, то есть третья «нога».",
       "en": "Ответ: человек. Утро — младенчество, когда ребенок ползает на четвереньках. День — зрелость, когда человек ходит на двух ногах. Вечер — старость, когда появляется опора в виде трости, то есть третья «нога».",
-      "es": "Ответ: человек. Утро — младенчество, когда ребенок ползает на четвереньках. День — зрелость, когда человек ходит на двух ногах. Вечер — старость, когда появляется опора в виде трости, то есть третья «нога»."
+      "es": "Ответ: человек. Утро — младенчество, когда ребенок ползает на четвереньках. День — зрелость, когда человек ходит на двух ногах. Вечер — старость, когда появляется опора в виде трости, то есть третья «нога».",
+      "pt": "Resposta: o ser humano. De manhã é a infância, quando o bebé se desloca de quatro. Ao meio-dia é a idade adulta, quando a pessoa anda sobre duas pernas. À noite é a velhice, quando aparece o apoio de uma bengala — a terceira “perna”.",
+      "de": "Antwort: der Mensch. Der Morgen steht für die Kindheit, wenn ein Baby auf allen vieren krabbelt. Der Mittag steht für das Erwachsenenalter, in dem der Mensch auf zwei Beinen geht. Der Abend steht für das Alter, in dem ein Stock als dritte „Bein“ zur Stütze wird.",
+      "fr": "Réponse : l’être humain. Le matin représente l’enfance, quand le bébé se déplace à quatre pattes. Le midi représente l’âge adulte, quand la personne marche sur deux jambes. Le soir représente la vieillesse, quand une canne sert de troisième « jambe »."
     },
     "difficulty": 1
   },
@@ -4619,24 +4631,36 @@ const LABYRINTH_RIDDLES = [
     "riddle": {
       "ru": "Дом открыт со всех сторон. В доме — тысячи колонн. Над колоннами — шатры. Под колоннами — ковры. Там живут — и в коврах, и в колоннах, и в шатрах.",
       "en": "A house is open on all sides. Inside are thousands of columns. Above the columns are tents, below them are carpets. Creatures live in the carpets, columns and tents.",
-      "es": "A house is open on all sides. Inside are thousands of columns. Above the columns are tents, below them are carpets. Creatures live in the carpets, columns and tents."
+      "es": "A house is open on all sides. Inside are thousands of columns. Above the columns are tents, below them are carpets. Creatures live in the carpets, columns and tents.",
+      "pt": "Uma casa está aberta de todos os lados. Dentro há milhares de colunas. Sobre as colunas há tendas; debaixo delas, tapetes. Ali vivem seres nos tapetes, nas colunas e nas tendas.",
+      "de": "Ein Haus ist nach allen Seiten offen. Darin stehen Tausende von Säulen. Über den Säulen sind Zelte, darunter Teppiche. In den Teppichen, Säulen und Zelten leben Wesen.",
+      "fr": "Une maison est ouverte de tous côtés. Elle contient des milliers de colonnes. Au-dessus des colonnes, des tentes ; en dessous, des tapis. Des êtres vivent dans les tapis, les colonnes et les tentes."
     },
     "hints": [
       {
         "ru": "Представь место, где «колонны» растут из земли.",
         "en": "Представь место, где «колонны» растут из земли.",
-        "es": "Представь место, где «колонны» растут из земли."
+        "es": "Представь место, где «колонны» растут из земли.",
+        "pt": "Imagina um lugar onde as “colunas” crescem do chão.",
+        "de": "Stell dir einen Ort vor, an dem die „Säulen“ aus dem Boden wachsen.",
+        "fr": "Imagine un endroit où les « colonnes » poussent depuis le sol."
       },
       {
         "ru": "Шатры и ковры здесь не сделаны человеком.",
         "en": "Шатры и ковры здесь не сделаны человеком.",
-        "es": "Шатры и ковры здесь не сделаны человеком."
+        "es": "Шатры и ковры здесь не сделаны человеком.",
+        "pt": "Aqui, tendas e tapetes não foram feitos por pessoas.",
+        "de": "Hier wurden Zelte und Teppiche nicht von Menschen gemacht.",
+        "fr": "Ici, les tentes et les tapis ne sont pas fabriqués par l’homme."
       }
     ],
     "answer": {
       "ru": "Ответ: лес. Колонны — стволы деревьев, шатры — их кроны, ковры — мох, трава и лесная подстилка. В этом доме живут птицы, звери, насекомые и множество других существ.",
       "en": "Ответ: лес. Колонны — стволы деревьев, шатры — их кроны, ковры — мох, трава и лесная подстилка. В этом доме живут птицы, звери, насекомые и множество других существ.",
-      "es": "Ответ: лес. Колонны — стволы деревьев, шатры — их кроны, ковры — мох, трава и лесная подстилка. В этом доме живут птицы, звери, насекомые и множество других существ."
+      "es": "Ответ: лес. Колонны — стволы деревьев, шатры — их кроны, ковры — мох, трава и лесная подстилка. В этом доме живут птицы, звери, насекомые и множество других существ.",
+      "pt": "Resposta: a floresta. As colunas são troncos de árvores, as tendas são as copas, e os tapetes são musgo, relva e folhas do chão. Nesse lugar vivem aves, animais, insetos e muitas outras criaturas.",
+      "de": "Antwort: der Wald. Die Säulen sind Baumstämme, die Zelte sind Baumkronen und die Teppiche sind Moos, Gras und die Waldstreu. Dort leben Vögel, Tiere, Insekten und viele andere Wesen.",
+      "fr": "Réponse : la forêt. Les colonnes sont les troncs des arbres, les tentes sont leurs cimes et les tapis sont la mousse, l’herbe et la litière du sol. Dans cette maison vivent des oiseaux, des animaux, des insectes et bien d’autres êtres."
     },
     "difficulty": 1
   },
@@ -4644,24 +4668,36 @@ const LABYRINTH_RIDDLES = [
     "riddle": {
       "ru": "Крестьянину необходимо переправить через широкую реку волка, козу и кочан капусты. В лодке одновременно могут поместиться только крестьянин и кто-то один из груза. Нельзя оставлять волка с козой и козу с капустой без присмотра. Как перевезти всех за минимальное количество рейсов?",
       "en": "A farmer must take a wolf, a goat and a cabbage across a river. The boat holds only the farmer and one item. The wolf cannot be left with the goat, and the goat cannot be left with the cabbage. What is the minimum sequence of trips?",
-      "es": "A farmer must take a wolf, a goat and a cabbage across a river. The boat holds only the farmer and one item. The wolf cannot be left with the goat, and the goat cannot be left with the cabbage. What is the minimum sequence of trips?"
+      "es": "A farmer must take a wolf, a goat and a cabbage across a river. The boat holds only the farmer and one item. The wolf cannot be left with the goat, and the goat cannot be left with the cabbage. What is the minimum sequence of trips?",
+      "pt": "Um agricultor precisa atravessar um lobo, uma cabra e um repolho por um rio largo. O barco leva apenas o agricultor e uma das cargas. O lobo não pode ficar sozinho com a cabra, e a cabra não pode ficar sozinha com o repolho. Qual é a sequência mínima de viagens?",
+      "de": "Ein Bauer muss einen Wolf, eine Ziege und einen Kohlkopf über einen breiten Fluss bringen. Das Boot bietet nur Platz für den Bauern und eine Sache. Der Wolf darf nicht mit der Ziege allein bleiben und die Ziege nicht mit dem Kohl. Welche Abfolge ist minimal?",
+      "fr": "Un fermier doit faire traverser une rivière à un loup, une chèvre et un chou. La barque ne transporte que le fermier et une seule chose. Le loup ne peut pas rester seul avec la chèvre, ni la chèvre seule avec le chou. Quelle est la suite minimale de traversées?"
     },
     "hints": [
       {
         "ru": "Сначала перевези того, кто опасен и для одного, и для другого.",
         "en": "Сначала перевези того, кто опасен и для одного, и для другого.",
-        "es": "Сначала перевези того, кто опасен и для одного, и для другого."
+        "es": "Сначала перевези того, кто опасен и для одного, и для другого.",
+        "pt": "Primeiro leva aquilo que é perigoso para um e para o outro.",
+        "de": "Bringe zuerst das, was für die beiden anderen gefährlich ist.",
+        "fr": "Emporte d’abord celui qui est dangereux pour chacun des deux autres."
       },
       {
         "ru": "В одном из обратных рейсов придётся вернуть уже перевезённый груз.",
         "en": "В одном из обратных рейсов придётся вернуть уже перевезённый груз.",
-        "es": "В одном из обратных рейсов придётся вернуть уже перевезённый груз."
+        "es": "В одном из обратных рейсов придётся вернуть уже перевезённый груз.",
+        "pt": "Num dos regressos terás de trazer de volta aquilo que já transportaste.",
+        "de": "Bei einer Rückfahrt musst du etwas zurückbringen, das du schon transportiert hast.",
+        "fr": "Lors d’un trajet de retour, tu devras ramener quelque chose que tu avais déjà transporté."
       }
     ],
     "answer": {
       "ru": "Ответ: 7 рейсов. 1) Перевезти козу. 2) Вернуться одному. 3) Перевезти волка. 4) Вернуть козу обратно. 5) Перевезти капусту. 6) Вернуться одному. 7) Перевезти козу. В итоге волк и капуста остаются вместе, что безопасно.",
       "en": "Ответ: 7 рейсов. 1) Перевезти козу. 2) Вернуться одному. 3) Перевезти волка. 4) Вернуть козу обратно. 5) Перевезти капусту. 6) Вернуться одному. 7) Перевезти козу. В итоге волк и капуста остаются вместе, что безопасно.",
-      "es": "Ответ: 7 рейсов. 1) Перевезти козу. 2) Вернуться одному. 3) Перевезти волка. 4) Вернуть козу обратно. 5) Перевезти капусту. 6) Вернуться одному. 7) Перевезти козу. В итоге волк и капуста остаются вместе, что безопасно."
+      "es": "Ответ: 7 рейсов. 1) Перевезти козу. 2) Вернуться одному. 3) Перевезти волка. 4) Вернуть козу обратно. 5) Перевезти капусту. 6) Вернуться одному. 7) Перевезти козу. В итоге волк и капуста остаются вместе, что безопасно.",
+      "pt": "Resposta: 7 viagens. 1) Leva a cabra. 2) Volta sozinho. 3) Leva o lobo. 4) Traz a cabra de volta. 5) Leva o repolho. 6) Volta sozinho. 7) Leva a cabra. No fim, o lobo e o repolho ficam juntos, o que é seguro.",
+      "de": "Antwort: 7 Fahrten. 1) Bringe die Ziege hinüber. 2) Fahre allein zurück. 3) Bringe den Wolf hinüber. 4) Nimm die Ziege zurück. 5) Bringe den Kohl hinüber. 6) Fahre allein zurück. 7) Bringe die Ziege hinüber. Am Ende bleiben Wolf und Kohl zusammen, was sicher ist.",
+      "fr": "Réponse : 7 traversées. 1) Emporter la chèvre. 2) Revenir seul. 3) Emporter le loup. 4) Ramener la chèvre. 5) Emporter le chou. 6) Revenir seul. 7) Emporter la chèvre. À la fin, le loup et le chou restent ensemble, ce qui est sans danger."
     },
     "difficulty": 2
   },
@@ -4669,24 +4705,36 @@ const LABYRINTH_RIDDLES = [
     "riddle": {
       "ru": "Задача о двух веревках: как отмерить ровно 45 минут при помощи двух веревок, каждая из которых сгорает целиком за один час, но горит неравномерно?",
       "en": "Two ropes each burn completely in exactly one hour, but burn unevenly. How can you measure exactly 45 minutes?",
-      "es": "Two ropes each burn completely in exactly one hour, but burn unevenly. How can you measure exactly 45 minutes?"
+      "es": "Two ropes each burn completely in exactly one hour, but burn unevenly. How can you measure exactly 45 minutes?",
+      "pt": "Problème das duas cordas: como medir exatamente 45 minutos usando duas cordas que queimam completamente em uma hora, mas de forma irregular?",
+      "de": "Zwei-Seile-Aufgabe: Wie misst man genau 45 Minuten mit zwei Seilen, die jeweils in einer Stunde vollständig abbrennen, aber ungleichmäßig brennen?",
+      "fr": "Énigme des deux cordes : comment mesurer exactement 45 minutes avec deux cordes qui brûlent chacune en une heure, mais de façon irrégulière ?"
     },
     "hints": [
       {
         "ru": "Используй тот факт, что конец верёвки можно поджечь сразу с двух сторон.",
         "en": "Используй тот факт, что конец верёвки можно поджечь сразу с двух сторон.",
-        "es": "Используй тот факт, что конец верёвки можно поджечь сразу с двух сторон."
+        "es": "Используй тот факт, что конец верёвки можно поджечь сразу с двух сторон.",
+        "pt": "Usa o facto de poderes acender uma ponta da corda pelos dois lados ao mesmo tempo.",
+        "de": "Nutze die Tatsache, dass du ein Seil an beiden Enden gleichzeitig anzünden kannst.",
+        "fr": "Utilise le fait que tu peux allumer une corde par ses deux extrémités en même temps."
       },
       {
         "ru": "Подумай, сколько времени потребуется верёвке, если она горит с двух концов одновременно.",
         "en": "Подумай, сколько времени потребуется верёвке, если она горит с двух концов одновременно.",
-        "es": "Подумай, сколько времени потребуется верёвке, если она горит с двух концов одновременно."
+        "es": "Подумай, сколько времени потребуется верёвке, если она горит с двух концов одновременно.",
+        "pt": "Pensa quanto tempo uma corda demora a queimar quando arde pelas duas pontas.",
+        "de": "Überlege, wie lange ein Seil braucht, wenn es an beiden Enden brennt.",
+        "fr": "Réfléchis au temps nécessaire lorsqu’une corde brûle par ses deux extrémités."
       }
     ],
     "answer": {
       "ru": "Ответ: одновременно подожги первую верёвку с двух концов, а вторую — с одного конца. Первая полностью сгорит за 30 минут. В этот момент подожги второй конец второй верёвки. У неё останется ровно половина времени горения, но теперь она горит с двух концов и догорит за 15 минут. 30 + 15 = 45 минут.",
       "en": "Ответ: одновременно подожги первую верёвку с двух концов, а вторую — с одного конца. Первая полностью сгорит за 30 минут. В этот момент подожги второй конец второй верёвки. У неё останется ровно половина времени горения, но теперь она горит с двух концов и догорит за 15 минут. 30 + 15 = 45 минут.",
-      "es": "Ответ: одновременно подожги первую верёвку с двух концов, а вторую — с одного конца. Первая полностью сгорит за 30 минут. В этот момент подожги второй конец второй верёвки. У неё останется ровно половина времени горения, но теперь она горит с двух концов и догорит за 15 минут. 30 + 15 = 45 минут."
+      "es": "Ответ: одновременно подожги первую верёвку с двух концов, а вторую — с одного конца. Первая полностью сгорит за 30 минут. В этот момент подожги второй конец второй верёвки. У неё останется ровно половина времени горения, но теперь она горит с двух концов и догорит за 15 минут. 30 + 15 = 45 минут.",
+      "pt": "Resposta: acende a primeira corda nas duas pontas e a segunda apenas numa ponta. A primeira queima totalmente em 30 minutos. Nesse momento, acende a outra ponta da segunda corda. O que resta dela queimará em 15 minutos, porque agora arde pelas duas pontas. 30 + 15 = 45 minutos.",
+      "de": "Antwort: Zünde das erste Seil an beiden Enden an und das zweite nur an einem Ende. Das erste ist nach 30 Minuten vollständig verbrannt. Dann zündest du das andere Ende des zweiten Seils an. Der Rest braucht nun 15 Minuten, weil er an beiden Enden brennt. 30 + 15 = 45 Minuten.",
+      "fr": "Réponse : allume la première corde aux deux extrémités et la seconde à une seule extrémité. La première se consume entièrement en 30 minutes. À cet instant, allume l’autre extrémité de la seconde corde. Le reste brûlera en 15 minutes, car il brûle alors par les deux extrémités. 30 + 15 = 45 minutes."
     },
     "difficulty": 2
   },
@@ -4694,24 +4742,36 @@ const LABYRINTH_RIDDLES = [
     "riddle": {
       "ru": "Сто монет: лежат 100 монет, часть орлом вверх, часть решкой вверх. В темноте нужно разделить их на две кучки с равным числом орлов. Орлом вверх 23 монеты, остальные решкой вверх. Как это сделать?",
       "en": "There are 100 coins. Some show heads and some tails. In complete darkness, 23 show heads. Split them into two piles containing the same number of heads.",
-      "es": "There are 100 coins. Some show heads and some tails. In complete darkness, 23 show heads. Split them into two piles containing the same number of heads."
+      "es": "There are 100 coins. Some show heads and some tails. In complete darkness, 23 show heads. Split them into two piles containing the same number of heads.",
+      "pt": "Há 100 moedas. Algumas mostram cara e outras coroa. No escuro total, 23 mostram cara. Divide-as em duas pilhas com o mesmo número de caras.",
+      "de": "Es gibt 100 Münzen. Einige zeigen Kopf, andere Zahl. Im völligen Dunkel zeigen 23 Kopf. Teile sie in zwei Haufen mit gleich vielen Köpfen.",
+      "fr": "Il y a 100 pièces. Certaines montrent face, d’autres pile. Dans l’obscurité totale, 23 montrent face. Partage-les en deux tas contenant le même nombre de faces."
     },
     "hints": [
       {
         "ru": "Тебе известно точное количество монет с орлом во всей куче.",
         "en": "Тебе известно точное количество монет с орлом во всей куче.",
-        "es": "Тебе известно точное количество монет с орлом во всей куче."
+        "es": "Тебе известно точное количество монет с орлом во всей куче.",
+        "pt": "Sabes exatamente quantas moedas mostram cara em toda a pilha.",
+        "de": "Du kennst die genaue Anzahl der Münzen mit Kopf im gesamten Stapel.",
+        "fr": "Tu connais le nombre exact de pièces montrant face dans l’ensemble."
       },
       {
         "ru": "Важнее количество монет в одной выбранной кучке, чем то, какие именно монеты ты взял.",
         "en": "Важнее количество монет в одной выбранной кучке, чем то, какие именно монеты ты взял.",
-        "es": "Важнее количество монет в одной выбранной кучке, чем то, какие именно монеты ты взял."
+        "es": "Важнее количество монет в одной выбранной кучке, чем то, какие именно монеты ты взял.",
+        "pt": "Importa mais o tamanho de uma pilha escolhida do que quais moedas específicas estão nela.",
+        "de": "Wichtiger als die konkreten Münzen ist die Anzahl der Münzen im gewählten Haufen.",
+        "fr": "Le nombre de pièces dans le tas choisi compte plus que les pièces précises qui s’y trouvent."
       }
     ],
     "answer": {
       "ru": "Ответ: отсчитай в темноте любые 23 монеты и сделай из них первую кучку. Остальные 77 — вторая кучка. Переверни все 23 монеты первой кучки. Если среди них было X орлов, то после переворота станет 23 − X орлов. В большой кучке изначально осталось 23 − X орлов. Значит, после переворота количество орлов в обеих кучках станет одинаковым.",
       "en": "Ответ: отсчитай в темноте любые 23 монеты и сделай из них первую кучку. Остальные 77 — вторая кучка. Переверни все 23 монеты первой кучки. Если среди них было X орлов, то после переворота станет 23 − X орлов. В большой кучке изначально осталось 23 − X орлов. Значит, после переворота количество орлов в обеих кучках станет одинаковым.",
-      "es": "Ответ: отсчитай в темноте любые 23 монеты и сделай из них первую кучку. Остальные 77 — вторая кучка. Переверни все 23 монеты первой кучки. Если среди них было X орлов, то после переворота станет 23 − X орлов. В большой кучке изначально осталось 23 − X орлов. Значит, после переворота количество орлов в обеих кучках станет одинаковым."
+      "es": "Ответ: отсчитай в темноте любые 23 монеты и сделай из них первую кучку. Остальные 77 — вторая кучка. Переверни все 23 монеты первой кучки. Если среди них было X орлов, то после переворота станет 23 − X орлов. В большой кучке изначально осталось 23 − X орлов. Значит, после переворота количество орлов в обеих кучках станет одинаковым.",
+      "pt": "Resposta: separa às cegas quaisquer 23 moedas e faz delas a primeira pilha. As outras 77 formam a segunda. Vira as 23 moedas da primeira pilha. Se nela havia X caras, depois de as virar haverá 23 − X caras. Na pilha grande já havia 23 − X caras. Portanto, depois da inversão, as duas pilhas terão o mesmo número de caras.",
+      "de": "Antwort: Nimm im Dunkeln beliebige 23 Münzen für den ersten Haufen. Die übrigen 77 sind der zweite. Drehe alle 23 Münzen des ersten Haufens um. Wenn darin X-mal Kopf lag, sind es danach 23 − X Köpfe. Im großen Haufen waren von Anfang an ebenfalls 23 − X Köpfe. Nach dem Umdrehen ist die Anzahl der Köpfe daher gleich.",
+      "fr": "Réponse : prends au hasard 23 pièces dans l’obscurité pour former le premier tas. Les 77 restantes forment le second. Retourne les 23 pièces du premier tas. S’il y avait X faces, il y en aura 23 − X après les avoir retournées. Le grand tas contenait déjà 23 − X faces. Les deux tas auront donc le même nombre de faces."
     },
     "difficulty": 3
   },
@@ -4719,24 +4779,36 @@ const LABYRINTH_RIDDLES = [
     "riddle": {
       "ru": "Человек стоит перед двумя дверями. Первая дверь ведёт к замку, вторая — к гибели. Около дверей стоят два стражника: один всегда говорит правду, второй всегда лжёт. Человек не знает, кто из них кто. У него есть всего один вопрос, который можно задать только одному стражнику. Какой вопрос нужно задать?",
       "en": "A person stands before two doors. One leads to the castle, the other to death. One guard always tells the truth and the other always lies. You may ask only one question to one guard. What should you ask?",
-      "es": "A person stands before two doors. One leads to the castle, the other to death. One guard always tells the truth and the other always lies. You may ask only one question to one guard. What should you ask?"
+      "es": "A person stands before two doors. One leads to the castle, the other to death. One guard always tells the truth and the other always lies. You may ask only one question to one guard. What should you ask?",
+      "pt": "Uma pessoa está diante de duas portas. Uma leva ao castelo e a outra à morte. Um guarda diz sempre a verdade e o outro mente sempre. Só podes fazer uma pergunta a um deles. O que deves perguntar?",
+      "de": "Eine Person steht vor zwei Türen. Eine führt zum Schloss, die andere in den Tod. Ein Wächter sagt immer die Wahrheit, der andere lügt immer. Du darfst nur eine Frage an einen Wächter stellen. Was fragst du?",
+      "fr": "Une personne se tient devant deux portes. L’une mène au château, l’autre à la mort. Un garde dit toujours la vérité, l’autre ment toujours. Tu ne peux poser qu’une seule question à un seul garde. Que dois-tu demander ?"
     },
     "hints": [
       {
         "ru": "Задай вопрос не о том, что думает сам стражник, а о том, что сказал бы его напарник.",
         "en": "Задай вопрос не о том, что думает сам стражник, а о том, что сказал бы его напарник.",
-        "es": "Задай вопрос не о том, что думает сам стражник, а о том, что сказал бы его напарник."
+        "es": "Задай вопрос не о том, что думает сам стражник, а о том, что сказал бы его напарник.",
+        "pt": "Pergunta não o que o próprio guarda pensa, mas o que o seu companheiro diria.",
+        "de": "Frage nicht, was der Wächter selbst denkt, sondern was sein Partner sagen würde.",
+        "fr": "Ne demande pas ce que pense le garde lui-même, mais ce que répondrait son partenaire."
       },
       {
         "ru": "После ответа не выбирай названную дверь напрямую.",
         "en": "После ответа не выбирай названную дверь напрямую.",
-        "es": "После ответа не выбирай названную дверь напрямую."
+        "es": "После ответа не выбирай названную дверь напрямую.",
+        "pt": "Depois da resposta, não escolhas diretamente a porta indicada.",
+        "de": "Wähle nach der Antwort nicht direkt die angezeigte Tür.",
+        "fr": "Après la réponse, ne choisis pas directement la porte indiquée."
       }
     ],
     "answer": {
       "ru": "Ответ: нужно спросить любого стражника: «Если бы я спросил твоего напарника, какая дверь ведёт к спасению, на какую бы он указал?» Стражник укажет на неправильную дверь независимо от того, кому задан вопрос. Поэтому нужно выбрать противоположную дверь.",
       "en": "Ответ: нужно спросить любого стражника: «Если бы я спросил твоего напарника, какая дверь ведёт к спасению, на какую бы он указал?» Стражник укажет на неправильную дверь независимо от того, кому задан вопрос. Поэтому нужно выбрать противоположную дверь.",
-      "es": "Ответ: нужно спросить любого стражника: «Если бы я спросил твоего напарника, какая дверь ведёт к спасению, на какую бы он указал?» Стражник укажет на неправильную дверь независимо от того, кому задан вопрос. Поэтому нужно выбрать противоположную дверь."
+      "es": "Ответ: нужно спросить любого стражника: «Если бы я спросил твоего напарника, какая дверь ведёт к спасению, на какую бы он указал?» Стражник укажет на неправильную дверь независимо от того, кому задан вопрос. Поэтому нужно выбрать противоположную дверь.",
+      "pt": "Resposta: pergunta a qualquer guarda: “Se eu perguntasse ao teu companheiro qual porta leva à salvação, qual ele indicaria?”. O guarda apontará para a porta errada, independentemente de ser o verdadeiro ou o mentiroso. Portanto, escolhe a porta oposta.",
+      "de": "Antwort: Frage einen beliebigen Wächter: „Wenn ich deinen Partner fragen würde, welche Tür zur Rettung führt, auf welche würde er zeigen?“ Der Wächter zeigt unabhängig davon auf die falsche Tür, ob er der Wahrheitsliebende oder der Lügner ist. Deshalb wählst du die andere Tür.",
+      "fr": "Réponse : demande à n’importe quel garde : « Si je demandais à ton partenaire quelle porte mène au salut, laquelle indiquerait-il ? » Le garde indiquera la mauvaise porte, qu’il soit le véridique ou le menteur. Il faut donc choisir la porte opposée."
     },
     "difficulty": 3
   },
@@ -4744,24 +4816,36 @@ const LABYRINTH_RIDDLES = [
     "riddle": {
       "ru": "Три мудреца сидят в комнате. На них надевают три колпака, выбранных случайным образом из пяти имеющихся: 3 чёрных и 2 белых. Каждый мудрец видит колпаки двух других, но не видит свой. Им запрещено общаться. Первого, затем второго, затем третьего спрашивают: «Знаешь ли ты цвет своего колпака?». Первые два отвечают: «Нет, не знаю». Третий отвечает: «Да, знаю». Какого цвета его колпак?",
       "en": "Three sages wear hats randomly chosen from five hats: three black and two white. Each sees the other two. The first says he does not know his color, the second also says he does not know, and the third says he knows. What color is the third hat?",
-      "es": "Three sages wear hats randomly chosen from five hats: three black and two white. Each sees the other two. The first says he does not know his color, the second also says he does not know, and the third says he knows. What color is the third hat?"
+      "es": "Three sages wear hats randomly chosen from five hats: three black and two white. Each sees the other two. The first says he does not know his color, the second also says he does not know, and the third says he knows. What color is the third hat?",
+      "pt": "Três sábios usam chapéus escolhidos entre cinco: três pretos e dois brancos. Cada um vê os dois outros. O primeiro diz que não sabe a cor do seu chapéu; o segundo também; o terceiro diz que sabe. Qual é a cor do chapéu do terceiro?",
+      "de": "Drei Weise tragen Hüte, zufällig aus fünf ausgewählt: drei schwarze und zwei weiße. Jeder sieht die beiden anderen. Der Erste weiß seine Farbe nicht, der Zweite auch nicht, der Dritte sagt, er wisse sie. Welche Farbe hat der dritte Hut?",
+      "fr": "Trois sages portent des chapeaux choisis parmi cinq : trois noirs et deux blancs. Chacun voit les deux autres. Le premier dit qu’il ne connaît pas sa couleur, le deuxième aussi, puis le troisième dit qu’il la connaît. De quelle couleur est le troisième chapeau ?"
     },
     "hints": [
       {
         "ru": "Сначала разберись, какую информацию даёт ответ первого мудреца «не знаю».",
         "en": "Сначала разберись, какую информацию даёт ответ первого мудреца «не знаю».",
-        "es": "Сначала разберись, какую информацию даёт ответ первого мудреца «не знаю»."
+        "es": "Сначала разберись, какую информацию даёт ответ первого мудреца «не знаю».",
+        "pt": "Primeiro percebe que informação o “não sei” do primeiro sábio acrescenta.",
+        "de": "Überlege zuerst, welche Information das „Ich weiß es nicht“ des ersten Weisen liefert.",
+        "fr": "Commence par déterminer quelle information apporte le « je ne sais pas » du premier sage."
       },
       {
         "ru": "Затем используй тот же принцип с ответом второго мудреца и учти, что все слышат предыдущие ответы.",
         "en": "Затем используй тот же принцип с ответом второго мудреца и учти, что все слышат предыдущие ответы.",
-        "es": "Затем используй тот же принцип с ответом второго мудреца и учти, что все слышат предыдущие ответы."
+        "es": "Затем используй тот же принцип с ответом второго мудреца и учти, что все слышат предыдущие ответы.",
+        "pt": "Depois aplica o mesmo raciocínio à resposta do segundo, lembrando que todos ouviram o primeiro.",
+        "de": "Wende denselben Gedanken auf die Antwort des zweiten an und bedenke, dass alle die erste Antwort gehört haben.",
+        "fr": "Applique ensuite le même raisonnement à la réponse du deuxième, puisque tous ont entendu la première."
       }
     ],
     "answer": {
       "ru": "Ответ: третий мудрец точно носит чёрный колпак. Первый мудрец мог бы сразу узнать свой цвет только увидев два белых колпака. Его ответ «не знаю» означает, что среди второго и третьего нет двух белых. Второй мудрец слышит это. Если бы он увидел на третьем белый колпак и при этом сам был в белом, первый мудрец увидел бы два белых и знал бы свой цвет — но первый этого не знал. Поэтому, услышав ответ первого, второй при виде белого колпака на третьем смог бы вычислить свой чёрный. Но второй тоже отвечает «не знаю». Следовательно, третий не белый. Значит, на третьем чёрный колпак.",
       "en": "Ответ: третий мудрец точно носит чёрный колпак. Первый мудрец мог бы сразу узнать свой цвет только увидев два белых колпака. Его ответ «не знаю» означает, что среди второго и третьего нет двух белых. Второй мудрец слышит это. Если бы он увидел на третьем белый колпак и при этом сам был в белом, первый мудрец увидел бы два белых и знал бы свой цвет — но первый этого не знал. Поэтому, услышав ответ первого, второй при виде белого колпака на третьем смог бы вычислить свой чёрный. Но второй тоже отвечает «не знаю». Следовательно, третий не белый. Значит, на третьем чёрный колпак.",
-      "es": "Ответ: третий мудрец точно носит чёрный колпак. Первый мудрец мог бы сразу узнать свой цвет только увидев два белых колпака. Его ответ «не знаю» означает, что среди второго и третьего нет двух белых. Второй мудрец слышит это. Если бы он увидел на третьем белый колпак и при этом сам был в белом, первый мудрец увидел бы два белых и знал бы свой цвет — но первый этого не знал. Поэтому, услышав ответ первого, второй при виде белого колпака на третьем смог бы вычислить свой чёрный. Но второй тоже отвечает «не знаю». Следовательно, третий не белый. Значит, на третьем чёрный колпак."
+      "es": "Ответ: третий мудрец точно носит чёрный колпак. Первый мудрец мог бы сразу узнать свой цвет только увидев два белых колпака. Его ответ «не знаю» означает, что среди второго и третьего нет двух белых. Второй мудрец слышит это. Если бы он увидел на третьем белый колпак и при этом сам был в белом, первый мудрец увидел бы два белых и знал бы свой цвет — но первый этого не знал. Поэтому, услышав ответ первого, второй при виде белого колпака на третьем смог бы вычислить свой чёрный. Но второй тоже отвечает «не знаю». Следовательно, третий не белый. Значит, на третьем чёрный колпак.",
+      "pt": "Resposta: o terceiro chapéu é preto. Se o primeiro tivesse visto dois chapéus brancos, saberia imediatamente que o seu era preto. Como não soube, isso elimina a possibilidade de os outros dois serem ambos brancos. O segundo usa essa informação: se visse no terceiro um chapéu branco e o seu também fosse branco, o primeiro teria visto dois brancos e saberia a resposta. Como o segundo também diz que não sabe, o terceiro não pode ser branco. Logo, é preto.",
+      "de": "Antwort: Der dritte Hut ist schwarz. Hätte der erste Weise zwei weiße Hüte gesehen, hätte er sofort gewusst, dass seiner schwarz ist. Weil er es nicht weiß, können die beiden anderen nicht beide weiß sein. Der zweite nutzt dieses Wissen: Würde er beim dritten einen weißen Hut sehen und selbst einen weißen tragen, hätte der erste zwei weiße gesehen und es gewusst. Da der zweite es ebenfalls nicht weiß, kann der dritte nicht weiß sein. Also ist er schwarz.",
+      "fr": "Réponse : le troisième chapeau est noir. Si le premier sage avait vu deux chapeaux blancs, il aurait immédiatement su que le sien était noir. Comme il ne le sait pas, les deux autres ne peuvent pas être tous les deux blancs. Le deuxième utilise cette information : s’il voyait un chapeau blanc sur le troisième et avait lui-même un chapeau blanc, le premier aurait vu deux blancs et aurait connu sa couleur. Comme le deuxième ne sait toujours pas, le troisième ne peut pas être blanc. Il est donc noir."
     },
     "difficulty": 4
   },
@@ -4769,24 +4853,36 @@ const LABYRINTH_RIDDLES = [
     "riddle": {
       "ru": "Пять пиратов нашли 100 золотых монет. Старший предлагает раздел. Все голосуют. Если «за» проголосует 50% или больше, план принимается; иначе автора выбрасывают за борт. Пираты хотят прежде всего остаться на корабле, затем получить больше денег, а при равенстве денег голосуют против из вредности. Какой план должен предложить первый пират, чтобы остаться и получить максимум?",
       "en": "Five pirates must divide 100 gold coins. The oldest proposes a plan. If at least 50% vote yes, it passes; otherwise the proposer is thrown overboard. Survival comes first, then money; if money is equal, a pirate votes no out of spite. What should the first pirate propose?",
-      "es": "Five pirates must divide 100 gold coins. The oldest proposes a plan. If at least 50% vote yes, it passes; otherwise the proposer is thrown overboard. Survival comes first, then money; if money is equal, a pirate votes no out of spite. What should the first pirate propose?"
+      "es": "Five pirates must divide 100 gold coins. The oldest proposes a plan. If at least 50% vote yes, it passes; otherwise the proposer is thrown overboard. Survival comes first, then money; if money is equal, a pirate votes no out of spite. What should the first pirate propose?",
+      "pt": "Cinco piratas devem dividir 100 moedas de ouro. O mais velho propõe um plano. Se pelo menos 50% votarem sim, o plano passa; caso contrário, o proponente é atirado ao mar. Sobrevivência vem primeiro, depois dinheiro; em caso de empate em dinheiro, votam contra por pura maldade. Que plano deve propor o primeiro pirata?",
+      "de": "Fünf Piraten müssen 100 Goldmünzen teilen. Der Älteste schlägt einen Plan vor. Wenn mindestens 50 % zustimmen, wird er angenommen; sonst wird der Antragsteller über Bord geworfen. Überleben zählt zuerst, dann Geld; bei gleichem Geld stimmen sie aus Bosheit dagegen. Welchen Plan soll der erste Pirat vorschlagen?",
+      "fr": "Cinq pirates doivent partager 100 pièces d’or. Le plus âgé propose un plan. S’il obtient au moins 50 % de oui, il est accepté ; sinon, le proposant est jeté par-dessus bord. La survie passe avant l’argent ; en cas d’égalité d’argent, ils votent non par méchanceté. Quel plan doit proposer le premier pirate ?"
     },
     "hints": [
       {
         "ru": "Решай задачу с конца: сначала выясни, что произойдёт при двух, затем трёх, затем четырёх пиратах.",
         "en": "Решай задачу с конца: сначала выясни, что произойдёт при двух, затем трёх, затем четырёх пиратах.",
-        "es": "Решай задачу с конца: сначала выясни, что произойдёт при двух, затем трёх, затем четырёх пиратах."
+        "es": "Решай задачу с конца: сначала выясни, что произойдёт при двух, затем трёх, затем четырёх пиратах.",
+        "pt": "Resolve de trás para a frente: primeiro dois, depois três, depois quatro piratas.",
+        "de": "Löse die Aufgabe rückwärts: zuerst zwei, dann drei, dann vier Piraten.",
+        "fr": "Résous le problème à rebours : d’abord deux, puis trois, puis quatre pirates."
       },
       {
         "ru": "Чтобы купить голос, достаточно дать пирату на одну монету больше, чем он получит в следующем сценарии.",
         "en": "Чтобы купить голос, достаточно дать пирату на одну монету больше, чем он получит в следующем сценарии.",
-        "es": "Чтобы купить голос, достаточно дать пирату на одну монету больше, чем он получит в следующем сценарии."
+        "es": "Чтобы купить голос, достаточно дать пирату на одну монету больше, чем он получит в следующем сценарии.",
+        "pt": "Para comprar um voto, basta dar ao pirata uma moeda a mais do que ele receberia no cenário seguinte.",
+        "de": "Um eine Stimme zu kaufen, genügt eine Münze mehr, als der Pirat im nächsten Szenario erhalten würde.",
+        "fr": "Pour acheter un vote, il suffit de donner au pirate une pièce de plus que dans le scénario suivant."
       }
     ],
     "answer": {
       "ru": "Ответ: первый пират предлагает: себе — 98 монет, второму — 0, третьему — 1, четвёртому — 0, пятому — 1. За проголосуют первый, третий и пятый — 3 из 5, поэтому план проходит. Логика строится с конца: при двух пиратах четвёртый забирает всё; при трёх третий покупает голос пятого одной монетой; при четырёх второй покупает голос четвёртого одной монетой; значит, в исходной ситуации первый покупает голоса третьего и пятого по одной монете и получает 98.",
       "en": "Ответ: первый пират предлагает: себе — 98 монет, второму — 0, третьему — 1, четвёртому — 0, пятому — 1. За проголосуют первый, третий и пятый — 3 из 5, поэтому план проходит. Логика строится с конца: при двух пиратах четвёртый забирает всё; при трёх третий покупает голос пятого одной монетой; при четырёх второй покупает голос четвёртого одной монетой; значит, в исходной ситуации первый покупает голоса третьего и пятого по одной монете и получает 98.",
-      "es": "Ответ: первый пират предлагает: себе — 98 монет, второму — 0, третьему — 1, четвёртому — 0, пятому — 1. За проголосуют первый, третий и пятый — 3 из 5, поэтому план проходит. Логика строится с конца: при двух пиратах четвёртый забирает всё; при трёх третий покупает голос пятого одной монетой; при четырёх второй покупает голос четвёртого одной монетой; значит, в исходной ситуации первый покупает голоса третьего и пятого по одной монете и получает 98."
+      "es": "Ответ: первый пират предлагает: себе — 98 монет, второму — 0, третьему — 1, четвёртому — 0, пятому — 1. За проголосуют первый, третий и пятый — 3 из 5, поэтому план проходит. Логика строится с конца: при двух пиратах четвёртый забирает всё; при трёх третий покупает голос пятого одной монетой; при четырёх второй покупает голос четвёртого одной монетой; значит, в исходной ситуации первый покупает голоса третьего и пятого по одной монете и получает 98.",
+      "pt": "Resposta: o primeiro pirata oferece 98 moedas a si mesmo, 0 ao segundo, 1 ao terceiro, 0 ao quarto e 1 ao quinto. Votam a favor o primeiro, o terceiro e o quinto: 3 de 5. O plano passa. A lógica começa no fim: com dois piratas o quarto fica com tudo; com três, o terceiro compra o voto do quinto por uma moeda; com quatro, o segundo compra o voto do quarto por uma moeda. Assim, na situação inicial, o primeiro compra os votos do terceiro e do quinto por uma moeda cada e fica com 98.",
+      "de": "Antwort: Der erste Pirat gibt sich 98 Münzen, dem zweiten 0, dem dritten 1, dem vierten 0 und dem fünften 1. Der erste, dritte und fünfte stimmen zu: 3 von 5. Der Plan besteht. Rückwärts gedacht: Mit zwei Piraten nimmt der Älteste alles; mit drei kauft der Dritte die Stimme des Fünften für eine Münze; mit vier kauft der Zweite die Stimme des Vierten für eine Münze. Daher kauft der erste Pirat in der Ausgangslage die Stimmen des dritten und fünften mit je einer Münze und behält 98.",
+      "fr": "Réponse : le premier pirate se donne 98 pièces, donne 0 au deuxième, 1 au troisième, 0 au quatrième et 1 au cinquième. Les premier, troisième et cinquième votent oui : 3 sur 5. Le plan passe. On raisonne à rebours : à deux pirates, l’aîné prend tout ; à trois, le troisième achète le vote du cinquième pour une pièce ; à quatre, le deuxième achète le vote du quatrième pour une pièce. Ainsi, au départ, le premier achète les votes du troisième et du cinquième avec une pièce chacun et garde 98."
     },
     "difficulty": 5
   },
@@ -4794,24 +4890,36 @@ const LABYRINTH_RIDDLES = [
     "riddle": {
       "ru": "Одна кувшинка удваивает площадь покрытия озера каждый день. Через 30 дней она покрывает всё озеро. А если кувшинок две, сколько дней им понадобится, чтобы покрыть то же озеро?",
       "en": "A lily doubles its covered area every day. After 30 days it covers the entire lake. If there are two lilies, how many days will they need?",
-      "es": "A lily doubles its covered area every day. After 30 days it covers the entire lake. If there are two lilies, how many days will they need?"
+      "es": "A lily doubles its covered area every day. After 30 days it covers the entire lake. If there are two lilies, how many days will they need?",
+      "pt": "Uma vitória-régia duplica a área coberta de um lago todos os dias. No 30.º dia cobre todo o lago. Se houver duas vitórias-régias, quantos dias serão necessários?",
+      "de": "Eine Seerose verdoppelt jeden Tag die bedeckte Fläche eines Sees. Am 30. Tag ist der ganze See bedeckt. Wenn es zwei Seerosen gibt, wie viele Tage brauchen sie?",
+      "fr": "Un nénuphar double chaque jour la surface couverte d’un lac. Au 30e jour, il couvre tout le lac. S’il y a deux nénuphars, combien de jours faut-il ?"
     },
     "hints": [
       {
         "ru": "Сравни количество покрытия за один день до полного заполнения.",
         "en": "Сравни количество покрытия за один день до полного заполнения.",
-        "es": "Сравни количество покрытия за один день до полного заполнения."
+        "es": "Сравни количество покрытия за один день до полного заполнения.",
+        "pt": "Compara a cobertura um dia antes de o lago ficar totalmente cheio.",
+        "de": "Vergleiche die bedeckte Fläche am Tag vor der vollständigen Abdeckung.",
+        "fr": "Compare la surface couverte un jour avant que le lac soit entièrement recouvert."
       },
       {
         "ru": "Две одинаковые кувшинки означают вдвое большую площадь на каждом этапе.",
         "en": "Две одинаковые кувшинки означают вдвое большую площадь на каждом этапе.",
-        "es": "Две одинаковые кувшинки означают вдвое большую площадь на каждом этапе."
+        "es": "Две одинаковые кувшинки означают вдвое большую площадь на каждом этапе.",
+        "pt": "Duas vitórias-régias significam o dobro da área em cada etapa.",
+        "de": "Zwei Seerosen bedeuten in jeder Phase die doppelte Fläche.",
+        "fr": "Deux nénuphars représentent à chaque étape deux fois la surface couverte."
       }
     ],
     "answer": {
       "ru": "Ответ: 29 дней. Если одна кувшинка покрывает всё озеро на 30-й день, то за день до этого она покрывает половину. Две кувшинки вдвое увеличивают покрываемую площадь, поэтому вместе они покроют всё озеро уже на 29-й день.",
       "en": "Ответ: 29 дней. Если одна кувшинка покрывает всё озеро на 30-й день, то за день до этого она покрывает половину. Две кувшинки вдвое увеличивают покрываемую площадь, поэтому вместе они покроют всё озеро уже на 29-й день.",
-      "es": "Ответ: 29 дней. Если одна кувшинка покрывает всё озеро на 30-й день, то за день до этого она покрывает половину. Две кувшинки вдвое увеличивают покрываемую площадь, поэтому вместе они покроют всё озеро уже на 29-й день."
+      "es": "Ответ: 29 дней. Если одна кувшинка покрывает всё озеро на 30-й день, то за день до этого она покрывает половину. Две кувшинки вдвое увеличивают покрываемую площадь, поэтому вместе они покроют всё озеро уже на 29-й день.",
+      "pt": "Resposta: 29 dias. Se uma vitória-régia cobre o lago por completo no 30.º dia, no dia 29 cobre metade. Duas vitórias-régias cobrem o dobro dessa área, isto é, todo o lago.",
+      "de": "Antwort: 29 Tage. Wenn eine Seerose am 30. Tag den ganzen See bedeckt, bedeckt sie am 29. Tag die Hälfte. Zwei Seerosen bedecken doppelt so viel und damit bereits den ganzen See am 29. Tag.",
+      "fr": "Réponse : 29 jours. Si un nénuphar couvre tout le lac au 30e jour, il en couvre la moitié au 29e. Deux nénuphars couvrent alors le double, soit tout le lac dès le 29e jour."
     },
     "difficulty": 5
   },
@@ -4819,32 +4927,44 @@ const LABYRINTH_RIDDLES = [
     "riddle": {
       "ru": "Есть три бога: A, B и C — боги истины, лжи и случая в произвольном порядке. Бог истины всегда говорит правду, бог лжи всегда обманывает, бог случая случайным образом говорит правду или ложь. Нужно определить богов за 3 вопроса, на которые можно ответить «да» или «нет». Каждый вопрос задаётся только одному богу, но одному богу можно задать несколько вопросов. Боги понимают язык, но отвечают словами «da» и «ja», причём неизвестно, какое слово означает «да», а какое «нет». Следующий вопрос может зависеть от предыдущего ответа. Бог случая отвечает случайно в зависимости от подбрасывания монетки. Нельзя задавать вопросы-парадоксы.",
       "en": "There are three gods A, B and C: Truth, Falsehood and Random in unknown order. Truth always tells the truth, Falsehood always lies, and Random answers truthfully or falsely according to a hidden coin toss. You must identify all three using three yes/no questions. Each question is asked to one god, and the next question may depend on the previous answer. The gods answer in an unknown language using the words da and ja, and you do not know which means yes. Paradoxical questions are forbidden.",
-      "es": "There are three gods A, B and C: Truth, Falsehood and Random in unknown order. Truth always tells the truth, Falsehood always lies, and Random answers truthfully or falsely according to a hidden coin toss. You must identify all three using three yes/no questions. Each question is asked to one god, and the next question may depend on the previous answer. The gods answer in an unknown language using the words da and ja, and you do not know which means yes. Paradoxical questions are forbidden."
+      "es": "There are three gods A, B and C: Truth, Falsehood and Random in unknown order. Truth always tells the truth, Falsehood always lies, and Random answers truthfully or falsely according to a hidden coin toss. You must identify all three using three yes/no questions. Each question is asked to one god, and the next question may depend on the previous answer. The gods answer in an unknown language using the words da and ja, and you do not know which means yes. Paradoxical questions are forbidden.",
+      "pt": "Há três deuses: A, B e C — Verdade, Mentira e Acaso, em ordem desconhecida. Verdade diz sempre a verdade, Mentira mente sempre, e Acaso responde aleatoriamente de acordo com uma moeda escondida. Tens três perguntas de sim/não para descobrir todos. Podes fazer várias perguntas ao mesmo deus, e a próxima pergunta pode depender da resposta anterior. Eles respondem com “da” e “ja”, mas não sabes qual significa “sim”. Não podes fazer perguntas paradoxais.",
+      "de": "Es gibt drei Götter A, B und C — Wahrheit, Lüge und Zufall in unbekannter Reihenfolge. Wahrheit sagt immer die Wahrheit, Lüge lügt immer, und Zufall antwortet zufällig nach einem verborgenen Münzwurf. Du hast drei Ja/Nein-Fragen, um alle drei zu bestimmen. Du darfst mehrere Fragen demselben Gott stellen, und die nächste Frage kann von der vorherigen Antwort abhängen. Sie antworten mit „da“ und „ja“, aber du weißt nicht, welches Wort „ja“ bedeutet. Paradoxe Fragen sind verboten.",
+      "fr": "Il y a trois dieux A, B et C : Vérité, Mensonge et Hasard, dans un ordre inconnu. Vérité dit toujours vrai, Mensonge ment toujours et Hasard répond aléatoirement selon un pile ou face caché. Tu disposes de trois questions oui/non pour identifier les trois. Tu peux poser plusieurs questions au même dieu et la question suivante peut dépendre de la réponse précédente. Ils répondent par « da » et « ja », sans que tu saches lequel signifie « oui ». Les questions paradoxales sont interdites."
     },
     "hints": [
       {
         "ru": "Сначала нужно гарантированно найти бога, который не является богом случая.",
         "en": "Сначала нужно гарантированно найти бога, который не является богом случая.",
-        "es": "Сначала нужно гарантированно найти бога, который не является богом случая."
+        "es": "Сначала нужно гарантированно найти бога, который не является богом случая.",
+        "pt": "Não precisas de traduzir “ja” e “da” para resolver o problema.",
+        "de": "Du musst „ja“ und „da“ nicht übersetzen, um das Problem zu lösen.",
+        "fr": "Tu n’as pas besoin de traduire « ja » et « da » pour résoudre le problème."
       },
       {
         "ru": "У обычного бога используй вопрос о том, что он сказал бы на другой вопрос; это позволяет нейтрализовать неизвестное значение «da» и «ja».",
         "en": "У обычного бога используй вопрос о том, что он сказал бы на другой вопрос; это позволяет нейтрализовать неизвестное значение «da» и «ja».",
-        "es": "У обычного бога используй вопрос о том, что он сказал бы на другой вопрос; это позволяет нейтрализовать неизвестное значение «da» и «ja»."
+        "es": "У обычного бога используй вопрос о том, что он сказал бы на другой вопрос; это позволяет нейтрализовать неизвестное значение «da» и «ja».",
+        "pt": "Não és obrigado a fazer uma pergunta a cada deus; podes concentrar duas ou três num só.",
+        "de": "Du musst nicht jedem Gott eine Frage stellen; du kannst zwei oder sogar drei Fragen demselben Gott stellen.",
+        "fr": "Tu n’es pas obligé de poser une question à chaque dieu ; tu peux en poser deux ou même trois au même dieu."
       },
       {
         "ru": "После того как найдёшь неслучайного бога, используй вопросы о том, что он ответил бы на другой вопрос — это снимает проблему с «da» и «ja».",
         "en": "Once you have a non-Random god, use questions about what that god would answer to another question; this neutralizes the unknown meaning of “da” and “ja”.",
         "es": "Cuando encuentres al dios que no es Aleatorio, usa preguntas sobre lo que respondería a otra pregunta; así neutralizas el significado desconocido de «da» y «ja».",
-        "pt": "Depois de encontrares o deus que não é Aleatório, usa perguntas sobre o que ele responderia a outra pergunta; isso neutraliza o significado desconhecido de «da» e «ja».",
-        "de": "Sobald du einen Nicht-Zufallsgott gefunden hast, frage, was er auf eine andere Frage antworten würde; so neutralisierst du die unbekannte Bedeutung von „da“ und „ja“.",
-        "fr": "Une fois le dieu non-Aléatoire trouvé, utilise des questions sur ce qu’il répondrait à une autre question ; cela neutralise le sens inconnu de « da » et « ja »."
+        "pt": "A segunda pergunta pode depender fortemente da resposta que recebeste à primeira.",
+        "de": "Deine zweite Frage kann stark von der Antwort auf die erste abhängen.",
+        "fr": "Ta deuxième question peut dépendre fortement de la réponse à la première."
       }
     ],
     "answer": {
       "ru": "Ответ: сначала нужно найти бога, который не является богом случая. Один из вариантов — спросить B: «Если я спрошу у тебя „Бог A — бог случая?“, ты ответишь „ja“?» Если B отвечает «ja», то либо B — бог случая, либо A — бог случая; в обоих вариантах C не является богом случая. Если B отвечает «da», то либо B — бог случая, либо A не является богом случая; в обоих вариантах A не является богом случая. После этого у нас есть гарантированно неслучайный бог. Спросим его: «Если я спрошу у тебя „Ты — бог лжи?“, ты ответишь „ja“?» Для истины и лжи такой вложенный вопрос нейтрализует одновременно ложь и неизвестное значение слов: ответ «ja» указывает на ложь, «da» — на истину. Третьим вопросом у того же неслучайного бога спрашиваем: «Если я у тебя спрошу „Бог B — бог случая?“, ответишь ли ты „ja“?» Ответ определяет, является ли B богом случая; оставшийся бог определяется методом исключения. Важно, что вопросы сформулированы как обычные вопросы о поведении ответа и не являются парадоксами.",
       "en": "Ответ: сначала нужно найти бога, который не является богом случая. Один из вариантов — спросить B: «Если я спрошу у тебя „Бог A — бог случая?“, ты ответишь „ja“?» Если B отвечает «ja», то либо B — бог случая, либо A — бог случая; в обоих вариантах C не является богом случая. Если B отвечает «da», то либо B — бог случая, либо A не является богом случая; в обоих вариантах A не является богом случая. После этого у нас есть гарантированно неслучайный бог. Спросим его: «Если я спрошу у тебя „Ты — бог лжи?“, ты ответишь „ja“?» Для истины и лжи такой вложенный вопрос нейтрализует одновременно ложь и неизвестное значение слов: ответ «ja» указывает на ложь, «da» — на истину. Третьим вопросом у того же неслучайного бога спрашиваем: «Если я у тебя спрошу „Бог B — бог случая?“, ответишь ли ты „ja“?» Ответ определяет, является ли B богом случая; оставшийся бог определяется методом исключения. Важно, что вопросы сформулированы как обычные вопросы о поведении ответа и не являются парадоксами.",
-      "es": "Ответ: сначала нужно найти бога, который не является богом случая. Один из вариантов — спросить B: «Если я спрошу у тебя „Бог A — бог случая?“, ты ответишь „ja“?» Если B отвечает «ja», то либо B — бог случая, либо A — бог случая; в обоих вариантах C не является богом случая. Если B отвечает «da», то либо B — бог случая, либо A не является богом случая; в обоих вариантах A не является богом случая. После этого у нас есть гарантированно неслучайный бог. Спросим его: «Если я спрошу у тебя „Ты — бог лжи?“, ты ответишь „ja“?» Для истины и лжи такой вложенный вопрос нейтрализует одновременно ложь и неизвестное значение слов: ответ «ja» указывает на ложь, «da» — на истину. Третьим вопросом у того же неслучайного бога спрашиваем: «Если я у тебя спрошу „Бог B — бог случая?“, ответишь ли ты „ja“?» Ответ определяет, является ли B богом случая; оставшийся бог определяется методом исключения. Важно, что вопросы сформулированы как обычные вопросы о поведении ответа и не являются парадоксами."
+      "es": "Ответ: сначала нужно найти бога, который не является богом случая. Один из вариантов — спросить B: «Если я спрошу у тебя „Бог A — бог случая?“, ты ответишь „ja“?» Если B отвечает «ja», то либо B — бог случая, либо A — бог случая; в обоих вариантах C не является богом случая. Если B отвечает «da», то либо B — бог случая, либо A не является богом случая; в обоих вариантах A не является богом случая. После этого у нас есть гарантированно неслучайный бог. Спросим его: «Если я спрошу у тебя „Ты — бог лжи?“, ты ответишь „ja“?» Для истины и лжи такой вложенный вопрос нейтрализует одновременно ложь и неизвестное значение слов: ответ «ja» указывает на ложь, «da» — на истину. Третьим вопросом у того же неслучайного бога спрашиваем: «Если я у тебя спрошу „Бог B — бог случая?“, ответишь ли ты „ja“?» Ответ определяет, является ли B богом случая; оставшийся бог определяется методом исключения. Важно, что вопросы сформулированы как обычные вопросы о поведении ответа и не являются парадоксами.",
+      "pt": "Resposta: começa por perguntar ao deus B: “Se eu te perguntasse ‘O deus A é o Deus do Acaso?’, responderias ‘ja’?”. Se B disser “ja”, então ou B é o Acaso ou A é o Acaso; em ambos os casos C não é o Acaso. Se B disser “da”, então ou B é o Acaso ou A não é o Acaso; em ambos os casos A não é o Acaso. Assim tens um deus garantidamente não aleatório. A esse deus pergunta: “Se eu te perguntasse ‘És o Deus da Mentira?’, responderias ‘ja’?”. Para Verdade e Mentira, essa pergunta aninhada neutraliza simultaneamente a mentira e a incerteza de “da/ja”: “ja” indica Mentira e “da” indica Verdade. Depois pergunta: “Se eu te perguntasse ‘B é o Deus do Acaso?’, responderias ‘ja’?”. Isso identifica B como Acaso ou, se a resposta for “da”, deixa o deus restante como Acaso. O papel final é determinado por eliminação.",
+      "de": "Antwort: Frage zuerst Gott B: „Wenn ich dich fragen würde: ‚Ist Gott A der Zufallsgott?‘, würdest du ‚ja‘ sagen?“ Sagt B „ja“, dann ist entweder B selbst der Zufallsgott oder A ist der Zufallsgott; in beiden Fällen ist C sicher nicht der Zufallsgott. Sagt B „da“, dann ist entweder B der Zufallsgott oder A ist sicher nicht der Zufallsgott. Damit hast du einen sicheren, nicht zufälligen Gott. Frage diesen: „Wenn ich dich fragen würde: ‚Bist du der Gott der Lüge?‘, würdest du ‚ja‘ sagen?“ Bei Wahrheit und Lüge neutralisiert die verschachtelte Frage sowohl die Lüge als auch die Unsicherheit von „da/ja“: „ja“ bedeutet Lüge, „da“ Wahrheit. Stelle anschließend die Frage: „Wenn ich dich fragen würde: ‚Ist B der Zufallsgott?‘, würdest du ‚ja‘ sagen?“ Damit bestimmst du, ob B der Zufallsgott ist; der letzte Gott ergibt sich durch Ausschluss.",
+      "fr": "Réponse : commence par demander au dieu B : « Si je te demandais “Le dieu A est-il le dieu du Hasard ?”, répondrais-tu “ja” ? » Si B répond « ja », alors soit B est le Hasard, soit A est le Hasard ; dans les deux cas, C n’est pas le Hasard. Si B répond « da », alors soit B est le Hasard, soit A n’est pas le Hasard ; dans les deux cas, A n’est pas le Hasard. Tu as donc un dieu garanti non aléatoire. Demande-lui : « Si je te demandais “Es-tu le dieu du Mensonge ?”, répondrais-tu “ja” ? » Pour Vérité et Mensonge, la question imbriquée neutralise à la fois le mensonge et l’inconnu “da/ja” : « ja » indique le Mensonge et « da » la Vérité. Enfin demande : « Si je te demandais “B est-il le dieu du Hasard ?”, répondrais-tu “ja” ? » Cela identifie B comme le Hasard ou, sinon, le dieu restant ; le dernier rôle est obtenu par élimination."
     },
     "difficulty": 6
   }
@@ -6138,114 +6258,114 @@ function closeDestiny() {
 // МУДРОСТЬ СУДЬБЫ — 100 цитат, циклично, без номера
 // ============================================================
 const WISDOM_QUOTES = [
-  { ru: "Судьба — это не то, что случается с тобой. Это то, как ты реагируешь.", en: "Fate is not what happens to you. It is how you react.", es: "El destino no es lo que te sucede. Es cómo reaccionas." },
-  { ru: "Нить судьбы тонка, но неразрывна. Каждый узел — это выбор.", en: "The thread of fate is thin but unbreakable. Every knot is a choice.", es: "El hilo del destino es fino pero irrompible. Cada nudo es una elección." },
-  { ru: "Тот, кто боится судьбы, уже проиграл половину битвы.", en: "He who fears fate has already lost half the battle.", es: "Quien teme al destino ya ha perdido la mitad de la batalla." },
-  { ru: "Судьба не пишет сценарий — она лишь предлагает декорации.", en: "Fate does not write the script — it only offers the set.", es: "El destino no escribe el guion, solo ofrece el escenario." },
-  { ru: "Путь, который ты выбираешь, становится твоей судьбой.", en: "The path you choose becomes your fate.", es: "El camino que eliges se convierte en tu destino." },
-  { ru: "В каждой судьбе есть момент, когда весь мир замирает.", en: "In every fate there is a moment when the whole world stands still.", es: "En cada destino hay un momento en que el mundo entero se detiene." },
-  { ru: "Судьба любит тех, кто не ждет, а действует.", en: "Fate loves those who do not wait but act.", es: "El destino ama a quienes no esperan sino actúan." },
-  { ru: "Ты не можешь изменить ветер, но можешь направить паруса.", en: "You cannot change the wind, but you can adjust the sails.", es: "No puedes cambiar el viento, pero puedes ajustar las velas." },
-  { ru: "Каждый человек — кузнец своей судьбы.", en: "Every person is the smith of their own fate.", es: "Cada persona es el herrero de su propio destino." },
-  { ru: "Судьба — это зеркало. Что ты в него посылаешь, то и отражается.", en: "Fate is a mirror. What you send into it is what reflects back.", es: "El destino es un espejo. Lo que envías es lo que se refleja." },
-  { ru: "Тайны судьбы раскрываются тем, кто задает правильные вопросы.", en: "The secrets of fate are revealed to those who ask the right questions.", es: "Los secretos del destino se revelan a quienes hacen las preguntas correctas." },
-  { ru: "Нить жизни плетется из тысячи мелких решений.", en: "The thread of life is woven from a thousand small decisions.", es: "El hilo de la vida se teje de mil pequeñas decisiones." },
-  { ru: "Судьба не наказывает — она учит.", en: "Fate does not punish — it teaches.", es: "El destino no castiga, enseña." },
-  { ru: "Великие судьбы рождаются из великих испытаний.", en: "Great fates are born from great trials.", es: "Los grandes destinos nacen de grandes pruebas." },
-  { ru: "Судьба — это не лотерея. Это шахматы.", en: "Fate is not a lottery. It is chess.", es: "El destino no es una lotería. Es ajedrez." },
-  { ru: "Ты не можешь выбрать начало, но можешь выбрать конец.", en: "You cannot choose your beginning, but you can choose your end.", es: "No puedes elegir tu inicio, pero puedes elegir tu final." },
-  { ru: "Судьба шепчет тем, кто умеет слушать тишину.", en: "Fate whispers to those who know how to listen to silence.", es: "El destino susurra a quienes saben escuchar el silencio." },
-  { ru: "Каждый закат — напоминание: даже самый темный день заканчивается.", en: "Every sunset is a reminder: even the darkest day ends.", es: "Cada atardecer es un recordatorio: incluso el día más oscuro termina." },
-  { ru: "Твоя судьба — это то, что ты пишешь своими руками.", en: "Your fate is what you write with your own hands.", es: "Tu destino es lo que escribes con tus propias manos." },
-  { ru: "Самые красивые истории пишутся не пером, а кровью и потом.", en: "The most beautiful stories are written not with a quill, but with blood and sweat.", es: "Las historias más bellas no se escriben con pluma, sino con sangre y sudor." },
-  { ru: "Судьба не дает испытаний тем, кто не способен их пройти.", en: "Fate does not give trials to those unable to pass them.", es: "El destino no da pruebas a quienes no pueden superarlas." },
-  { ru: "Ты — автор своей истории. Не позволяй другим писать за тебя.", en: "You are the author of your story. Do not let others write for you.", es: "Eres el autor de tu historia. No dejes que otros escriban por ti." },
-  { ru: "Каждый выбор — камень, брошенный в воду судьбы.", en: "Every choice is a stone thrown into the water of fate.", es: "Cada elección es una piedra arrojada al agua del destino." },
-  { ru: "Судьба любит смелых, но бережет мудрых.", en: "Fate loves the bold, but protects the wise.", es: "El destino ama a los audaces, pero protege a los sabios." },
-  { ru: "Тот, кто ищет легкий путь, найдет лишь тупик.", en: "He who seeks the easy path will find only a dead end.", es: "Quien busca el camino fácil solo encontrará un callejón sin salida." },
-  { ru: "Великие души рождаются не в тишине, а в буре.", en: "Great souls are born not in silence, but in storm.", es: "Las grandes almas nacen no en el silencio, sino en la tormenta." },
-  { ru: "Судьба — это не проклятие. Это вызов.", en: "Fate is not a curse. It is a challenge.", es: "El destino no es una maldición. Es un desafío." },
-  { ru: "Ты не можешь изменить прошлое, но можешь изменить его значение.", en: "You cannot change the past, but you can change its meaning.", es: "No puedes cambiar el pasado, pero puedes cambiar su significado." },
-  { ru: "Каждый человек несет в себе искру божественного.", en: "Every person carries a spark of the divine.", es: "Cada persona lleva una chispa de lo divino." },
-  { ru: "Судьба не случайна. Она — результат миллиона выборов.", en: "Fate is not random. It is the result of a million choices.", es: "El destino no es azaroso. Es el resultado de un millón de elecciones." },
-  { ru: "Тот, кто боится темноты, никогда не увидит звезд.", en: "He who fears darkness will never see the stars.", es: "Quien teme a la oscuridad nunca verá las estrellas." },
-  { ru: "Твоя история — это не то, что с тобой случилось. Это то, как ты об этом рассказываешь.", en: "Your story is not what happened to you. It is how you tell it.", es: "Tu historia no es lo que te sucedió. Es cómo lo cuentas." },
-  { ru: "Судьба — это река. Ты можешь плыть по течению или бороться с ним.", en: "Fate is a river. You can swim with the current or fight it.", es: "El destino es un río. Puedes nadar con la corriente o luchar contra ella." },
-  { ru: "Каждый момент — это перекресток. Каждый выбор — это поворот.", en: "Every moment is a crossroads. Every choice is a turn.", es: "Cada momento es una encrucijada. Cada elección es un giro." },
-  { ru: "Ты не можешь контролировать все, но можешь контролировать свою реакцию.", en: "You cannot control everything, but you can control your reaction.", es: "No puedes controlar todo, pero puedes controlar tu reacción." },
-  { ru: "Судьба щедра к тем, кто не жалеет себя.", en: "Fate is generous to those who do not spare themselves.", es: "El destino es generoso con quienes no se ahorran a sí mismos." },
-  { ru: "Великие дела начинаются с маленьких шагов.", en: "Great deeds begin with small steps.", es: "Las grandes obras comienzan con pequeños pasos." },
-  { ru: "Твоя судьба — это твоя ответственность.", en: "Your fate is your responsibility.", es: "Tu destino es tu responsabilidad." },
-  { ru: "Самые глубокие раны дают самую яркую мудрость.", en: "The deepest wounds give the brightest wisdom.", es: "Las heridas más profundas dan la sabiduría más brillante." },
-  { ru: "Судьба не спрашивает разрешения. Она просто случается.", en: "Fate does not ask permission. It simply happens.", es: "El destino no pide permiso. Simplemente sucede." },
-  { ru: "Ты — единственный человек, который может изменить свою жизнь.", en: "You are the only person who can change your life.", es: "Eres la única persona que puede cambiar tu vida." },
-  { ru: "Каждый закат — это обещание нового рассвета.", en: "Every sunset is a promise of a new dawn.", es: "Cada atardecer es una promesa de un nuevo amanecer." },
-  { ru: "Судьба — это не наказание. Это возможность.", en: "Fate is not punishment. It is opportunity.", es: "El destino no es castigo. Es oportunidad." },
-  { ru: "Тот, кто ищет смысл, найдет его.", en: "He who seeks meaning will find it.", es: "Quien busca sentido lo encontrará." },
-  { ru: "Твоя сила — не в том, чтобы никогда не падать, а в том, чтобы вставать.", en: "Your strength is not in never falling, but in rising every time.", es: "Tu fuerza no está en nunca caer, sino en levantarte cada vez." },
-  { ru: "Судьба любит тех, кто верит в себя.", en: "Fate loves those who believe in themselves.", es: "El destino ama a quienes creen en sí mismos." },
-  { ru: "Каждый человек — это книга.", en: "Every person is a book.", es: "Cada persona es un libro." },
-  { ru: "Ты не можешь выбрать свою семью, но можешь выбрать свою судьбу.", en: "You cannot choose your family, but you can choose your fate.", es: "No puedes elegir tu familia, pero puedes elegir tu destino." },
-  { ru: "Судьба — это не то, что дано. Это то, что создано.", en: "Fate is not what is given. It is what is created.", es: "El destino no es lo que se da. Es lo que se crea." },
-  { ru: "Великие мечты требуют великих жертв.", en: "Great dreams require great sacrifices.", es: "Los grandes sueños requieren grandes sacrificios." },
-  { ru: "Твоя судьба — это твоя мечта, которую ты не осмелился осуществить.", en: "Your fate is the dream you dared not fulfill.", es: "Tu destino es el sueño que no te atreviste a cumplir." },
-  { ru: "Судьба не ждет. Она приходит к тем, кто готов.", en: "Fate does not wait. It comes to those who are ready.", es: "El destino no espera. Viene a quienes están listos." },
-  { ru: "Каждый выбор — это семя, которое ты сажаешь.", en: "Every choice is a seed you plant.", es: "Cada elección es una semilla que plantas." },
-  { ru: "Ты — кузнец своей судьбы. Куй, пока железо горячо.", en: "You are the smith of your fate. Strike while the iron is hot.", es: "Eres el herrero de tu destino. Golpea mientras el hierro está caliente." },
-  { ru: "Судьба — это не случайность. Это закономерность.", en: "Fate is not chance. It is pattern.", es: "El destino no es azar. Es patrón." },
-  { ru: "Тот, кто не рискует, не пьет шампанского.", en: "He who does not risk does not drink champagne.", es: "Quien no arriesga no bebe champán." },
-  { ru: "Твоя история еще не закончена. Продолжай писать.", en: "Your story is not over. Keep writing.", es: "Tu historia no ha terminado. Sigue escribiendo." },
-  { ru: "Судьба — это зеркало твоих желаний.", en: "Fate is the mirror of your desires.", es: "El destino es el espejo de tus deseos." },
-  { ru: "Каждый человек — это вселенная.", en: "Every person is a universe.", es: "Cada persona es un universo." },
-  { ru: "Ты не можешь изменить мир, но можешь изменить себя.", en: "You cannot change the world, but you can change yourself.", es: "No puedes cambiar el mundo, pero puedes cambiarte a ti mismo." },
-  { ru: "Судьба — это не проклятие. Это дар.", en: "Fate is not a curse. It is a gift.", es: "El destino no es una maldición. Es un regalo." },
-  { ru: "Великие души не рождаются в комфорте.", en: "Great souls are not born in comfort.", es: "Las grandes almas no nacen en la comodidad." },
-  { ru: "Твоя судьба — это твоя отвага.", en: "Your fate is your courage.", es: "Tu destino es tu coraje." },
-  { ru: "Судьба не спрашивает, готов ли ты.", en: "Fate does not ask if you are ready.", es: "El destino no pregunta si estás listo." },
-  { ru: "Каждый момент — это возможность начать заново.", en: "Every moment is a chance to start anew.", es: "Cada momento es una oportunidad para empezar de nuevo." },
-  { ru: "Ты — автор своей судьбы. Не позволяй другим редактировать.", en: "You are the author of your fate. Do not let others edit it.", es: "Eres el autor de tu destino. No dejes que otros lo editen." },
-  { ru: "Судьба — это не то, что случается. Это то, что ты делаешь.", en: "Fate is not what happens. It is what you do.", es: "El destino no es lo que sucede. Es lo que haces." },
-  { ru: "Тот, кто ищет легких путей, никогда не найдет великих.", en: "He who seeks easy paths will never find great ones.", es: "Quien busca caminos fáciles nunca encontrará los grandes." },
-  { ru: "Твоя сила — в твоей уязвимости.", en: "Your strength is in your vulnerability.", es: "Tu fuerza está en tu vulnerabilidad." },
-  { ru: "Судьба — это не случайность. Это выбор.", en: "Fate is not chance. It is choice.", es: "El destino no es azar. Es elección." },
-  { ru: "Каждый человек — это звезда.", en: "Every person is a star.", es: "Cada persona es una estrella." },
-  { ru: "Ты не можешь контролировать ветер, но можешь контролировать свой курс.", en: "You cannot control the wind, but you can control your course.", es: "No puedes controlar el viento, pero puedes controlar tu rumbo." },
-  { ru: "Судьба — это не проклятие. Это вызов.", en: "Fate is not a curse. It is a call.", es: "El destino no es una maldición. Es una llamada." },
-  { ru: "Великие дела требуют великой веры.", en: "Great deeds require great faith.", es: "Las grandes obras requieren gran fe." },
-  { ru: "Твоя судьба — это твоя мудрость.", en: "Your fate is your wisdom.", es: "Tu destino es tu sabiduría." },
-  { ru: "Судьба не щадит никого. Но и не обделяет никого.", en: "Fate spares no one. But it also shortchanges no one.", es: "El destino no perdona a nadie. Pero tampoco defrauda a nadie." },
-  { ru: "Каждый выбор — это камень в фундамент твоей судьбы.", en: "Every choice is a stone in the foundation of your fate.", es: "Cada elección es una piedra en el fundamento de tu destino." },
-  { ru: "Ты — кузнец своей судьбы. Куй с умом.", en: "You are the smith of your fate. Forge wisely.", es: "Eres el herrero de tu destino. Forja con sabiduría." },
-  { ru: "Судьба — это не случайность. Это закон.", en: "Fate is not chance. It is law.", es: "El destino no es azar. Es ley." },
-  { ru: "Тот, кто не верит в чудеса, никогда их не увидит.", en: "He who does not believe in miracles will never see them.", es: "Quien no cree en milagros nunca los verá." },
-  { ru: "Твоя история — это твоя сила.", en: "Your story is your strength.", es: "Tu historia es tu fuerza." },
-  { ru: "Судьба — это не то, что дано. Это то, что взято.", en: "Fate is not what is given. It is what is taken.", es: "El destino no es lo que se da. Es lo que se toma." },
-  { ru: "Великие мечты рождаются в великих сердцах.", en: "Great dreams are born in great hearts.", es: "Los grandes sueños nacen en grandes corazones." },
-  { ru: "Твоя судьба — это твоя любовь.", en: "Your fate is your love.", es: "Tu destino es tu amor." },
-  { ru: "Судьба не ждет. Она идет.", en: "Fate does not wait. It moves.", es: "El destino no espera. Avanza." },
-  { ru: "Каждый момент — это дар. Не трать его впустую.", en: "Every moment is a gift. Do not waste it.", es: "Cada momento es un regalo. No lo desperdicies." },
-  { ru: "Ты — автор своей жизни. Пиши красиво.", en: "You are the author of your life. Write beautifully.", es: "Eres el autor de tu vida. Escribe bellamente." },
-  { ru: "Судьба — это не проклятие. Это возможность.", en: "Fate is not a curse. It is opportunity.", es: "El destino no es una maldición. Es oportunidad." },
-  { ru: "Тот, кто ищет правду, найдет ее.", en: "He who seeks truth will find it.", es: "Quien busca la verdad la encontrará." },
-  { ru: "Твоя сила — в твоей истине.", en: "Your strength is in your truth.", es: "Tu fuerza está en tu verdad." },
-  { ru: "Судьба — это не случайность. Это путь.", en: "Fate is not chance. It is path.", es: "El destino no es azar. Es camino." },
-  { ru: "Каждый человек — это загадка. Разгадай свою.", en: "Every person is a riddle. Solve yours.", es: "Cada persona es un acertijo. Resuelve el tuyo." },
-  { ru: "Ты не можешь изменить прошлое, но можешь изменить будущее.", en: "You cannot change the past, but you can change the future.", es: "No puedes cambiar el pasado, pero puedes cambiar el futuro." },
-  { ru: "Судьба — это не проклятие. Это приключение.", en: "Fate is not a curse. It is adventure.", es: "El destino no es una maldición. Es aventura." },
-  { ru: "Великие души не ищут легких путей.", en: "Great souls do not seek easy paths.", es: "Las grandes almas no buscan caminos fáciles." },
-  { ru: "Твоя судьба — это твоя отвага.", en: "Your fate is your bravery.", es: "Tu destino es tu valentía." },
-  { ru: "Судьба не спрашивает. Она решает.", en: "Fate does not ask. It decides.", es: "El destino no pregunta. Decide." },
-  { ru: "Каждый выбор — это шаг. Делай его уверенно.", en: "Every choice is a step. Take it confidently.", es: "Cada elección es un paso. Dalo con confianza." },
-  { ru: "Ты — кузнец своей судьбы. Куй с любовью.", en: "You are the smith of your fate. Forge with love.", es: "Eres el herrero de tu destino. Forja con amor." },
-  { ru: "Судьба — это не случайность. Это судьба.", en: "Fate is not chance. It is destiny.", es: "El destino no es azar. Es destino." },
-  { ru: "Тот, кто верит в себя, уже на полпути к цели.", en: "He who believes in himself is already halfway to the goal.", es: "Quien cree en sí mismo ya está a mitad de camino hacia la meta." },
-  { ru: "Твоя история — это твоя магия.", en: "Your story is your magic.", es: "Tu historia es tu magia." },
-  { ru: "Судьба — это не то, что дано. Это то, что создано любовью.", en: "Fate is not what is given. It is what is created with love.", es: "El destino no es lo que se da. Es lo que se crea con amor." },
-  { ru: "Великие дела начинаются с великой веры.", en: "Great deeds begin with great faith.", es: "Las grandes obras comienzan con gran fe." },
-  { ru: "Твоя судьба — это твоя надежда.", en: "Your fate is your hope.", es: "Tu destino es tu esperanza." },
-  { ru: "Судьба не ждет. Она творится.", en: "Fate does not wait. It is forged.", es: "El destino no espera. Se forja." },
-  { ru: "Каждый момент — это вечность. Живи ее полностью.", en: "Every moment is eternity. Live it fully.", es: "Cada momento es eternidad. Vívelo plenamente." },
-  { ru: "Ты — автор своей судьбы. Пиши шедевр.", en: "You are the author of your fate. Write a masterpiece.", es: "Eres el autor de tu destino. Escribe una obra maestra." }
+  { ru: "Судьба — это не то, что случается с тобой. Это то, как ты реагируешь.", en: "Fate is not what happens to you. It is how you react.", es: "El destino no es lo que te sucede. Es cómo reaccionas.", pt: "O destino não é o que acontece contigo. É a forma como reages.", de: "Das Schicksal ist nicht das, was dir widerfährt. Es ist, wie du darauf reagierst.", fr: "Le destin n’est pas ce qui t’arrive. C’est la façon dont tu réagis." },
+  { ru: "Нить судьбы тонка, но неразрывна. Каждый узел — это выбор.", en: "The thread of fate is thin but unbreakable. Every knot is a choice.", es: "El hilo del destino es fino pero irrompible. Cada nudo es una elección.", pt: "O fio do destino é fino, mas inquebrável. Cada nó é uma escolha.", de: "Der Faden des Schicksals ist dünn, aber unzerreißbar. Jeder Knoten ist eine Entscheidung.", fr: "Le fil du destin est fin, mais incassable. Chaque nœud est un choix." },
+  { ru: "Тот, кто боится судьбы, уже проиграл половину битвы.", en: "He who fears fate has already lost half the battle.", es: "Quien teme al destino ya ha perdido la mitad de la batalla.", pt: "Quem teme o destino já perdeu metade da batalha.", de: "Wer das Schicksal fürchtet, hat bereits die Hälfte des Kampfes verloren.", fr: "Celui qui craint le destin a déjà perdu la moitié du combat." },
+  { ru: "Судьба не пишет сценарий — она лишь предлагает декорации.", en: "Fate does not write the script — it only offers the set.", es: "El destino no escribe el guion, solo ofrece el escenario.", pt: "O destino não escreve o roteiro — apenas oferece o cenário.", de: "Das Schicksal schreibt kein Drehbuch — es bietet nur die Kulisse.", fr: "Le destin n’écrit pas le scénario — il ne fait qu’offrir le décor." },
+  { ru: "Путь, который ты выбираешь, становится твоей судьбой.", en: "The path you choose becomes your fate.", es: "El camino que eliges se convierte en tu destino.", pt: "O caminho que escolhes torna-se o teu destino.", de: "Der Weg, den du wählst, wird zu deinem Schicksal.", fr: "Le chemin que tu choisis devient ton destin." },
+  { ru: "В каждой судьбе есть момент, когда весь мир замирает.", en: "In every fate there is a moment when the whole world stands still.", es: "En cada destino hay un momento en que el mundo entero se detiene.", pt: "Em todo destino há um momento em que o mundo inteiro fica imóvel.", de: "In jedem Schicksal gibt es einen Moment, in dem die ganze Welt stillsteht.", fr: "Dans chaque destin, il existe un moment où le monde entier s’arrête." },
+  { ru: "Судьба любит тех, кто не ждет, а действует.", en: "Fate loves those who do not wait but act.", es: "El destino ama a quienes no esperan sino actúan.", pt: "O destino ama quem não espera, mas age.", de: "Das Schicksal liebt jene, die nicht warten, sondern handeln.", fr: "Le destin aime ceux qui n’attendent pas, mais agissent." },
+  { ru: "Ты не можешь изменить ветер, но можешь направить паруса.", en: "You cannot change the wind, but you can adjust the sails.", es: "No puedes cambiar el viento, pero puedes ajustar las velas.", pt: "Não podes mudar o vento, mas podes ajustar as velas.", de: "Du kannst den Wind nicht ändern, aber du kannst die Segel ausrichten.", fr: "Tu ne peux pas changer le vent, mais tu peux ajuster les voiles." },
+  { ru: "Каждый человек — кузнец своей судьбы.", en: "Every person is the smith of their own fate.", es: "Cada persona es el herrero de su propio destino.", pt: "Cada pessoa é o ferreiro do seu próprio destino.", de: "Jeder Mensch ist der Schmied seines eigenen Schicksals.", fr: "Chaque personne est le forgeron de son propre destin." },
+  { ru: "Судьба — это зеркало. Что ты в него посылаешь, то и отражается.", en: "Fate is a mirror. What you send into it is what reflects back.", es: "El destino es un espejo. Lo que envías es lo que se refleja.", pt: "O destino é um espelho. O que envias para ele é o que se reflete de volta.", de: "Das Schicksal ist ein Spiegel. Was du hineinsendest, spiegelt sich zurück.", fr: "Le destin est un miroir. Ce que tu lui envoies se reflète en retour." },
+  { ru: "Тайны судьбы раскрываются тем, кто задает правильные вопросы.", en: "The secrets of fate are revealed to those who ask the right questions.", es: "Los secretos del destino se revelan a quienes hacen las preguntas correctas.", pt: "Os segredos do destino revelam-se a quem faz as perguntas certas.", de: "Die Geheimnisse des Schicksals offenbaren sich denen, die die richtigen Fragen stellen.", fr: "Les secrets du destin se révèlent à ceux qui posent les bonnes questions." },
+  { ru: "Нить жизни плетется из тысячи мелких решений.", en: "The thread of life is woven from a thousand small decisions.", es: "El hilo de la vida se teje de mil pequeñas decisiones.", pt: "O fio da vida é tecido com mil pequenas decisões.", de: "Der Faden des Lebens wird aus tausend kleinen Entscheidungen gewebt.", fr: "Le fil de la vie est tissé de mille petites décisions." },
+  { ru: "Судьба не наказывает — она учит.", en: "Fate does not punish — it teaches.", es: "El destino no castiga, enseña.", pt: "O destino não castiga — ensina.", de: "Das Schicksal bestraft nicht — es lehrt.", fr: "Le destin ne punit pas — il enseigne." },
+  { ru: "Великие судьбы рождаются из великих испытаний.", en: "Great fates are born from great trials.", es: "Los grandes destinos nacen de grandes pruebas.", pt: "Grandes destinos nascem de grandes provações.", de: "Große Schicksale entstehen aus großen Prüfungen.", fr: "Les grands destins naissent de grandes épreuves." },
+  { ru: "Судьба — это не лотерея. Это шахматы.", en: "Fate is not a lottery. It is chess.", es: "El destino no es una lotería. Es ajedrez.", pt: "O destino não é uma lotaria. É xadrez.", de: "Das Schicksal ist keine Lotterie. Es ist Schach.", fr: "Le destin n’est pas une loterie. C’est un jeu d’échecs." },
+  { ru: "Ты не можешь выбрать начало, но можешь выбрать конец.", en: "You cannot choose your beginning, but you can choose your end.", es: "No puedes elegir tu inicio, pero puedes elegir tu final.", pt: "Não podes escolher o teu começo, mas podes escolher o teu fim.", de: "Du kannst deinen Anfang nicht wählen, aber du kannst dein Ende wählen.", fr: "Tu ne peux pas choisir ton commencement, mais tu peux choisir ta fin." },
+  { ru: "Судьба шепчет тем, кто умеет слушать тишину.", en: "Fate whispers to those who know how to listen to silence.", es: "El destino susurra a quienes saben escuchar el silencio.", pt: "O destino sussurra para quem sabe escutar o silêncio.", de: "Das Schicksal flüstert denen zu, die dem Schweigen zuhören können.", fr: "Le destin murmure à ceux qui savent écouter le silence." },
+  { ru: "Каждый закат — напоминание: даже самый темный день заканчивается.", en: "Every sunset is a reminder: even the darkest day ends.", es: "Cada atardecer es un recordatorio: incluso el día más oscuro termina.", pt: "Cada pôr do sol lembra-nos: até o dia mais escuro termina.", de: "Jeder Sonnenuntergang erinnert daran: Auch der dunkelste Tag endet.", fr: "Chaque coucher de soleil rappelle que même le jour le plus sombre finit." },
+  { ru: "Твоя судьба — это то, что ты пишешь своими руками.", en: "Your fate is what you write with your own hands.", es: "Tu destino es lo que escribes con tus propias manos.", pt: "O teu destino é aquilo que escreves com as tuas próprias mãos.", de: "Dein Schicksal ist das, was du mit deinen eigenen Händen schreibst.", fr: "Ton destin est ce que tu écris de tes propres mains." },
+  { ru: "Самые красивые истории пишутся не пером, а кровью и потом.", en: "The most beautiful stories are written not with a quill, but with blood and sweat.", es: "Las historias más bellas no se escriben con pluma, sino con sangre y sudor.", pt: "As histórias mais belas não são escritas com uma pena, mas com sangue e suor.", de: "Die schönsten Geschichten werden nicht mit einer Feder, sondern mit Blut und Schweiß geschrieben.", fr: "Les plus belles histoires ne s’écrivent pas avec une plume, mais avec le sang et la sueur." },
+  { ru: "Судьба не дает испытаний тем, кто не способен их пройти.", en: "Fate does not give trials to those unable to pass them.", es: "El destino no da pruebas a quienes no pueden superarlas.", pt: "O destino não dá provações a quem não consegue superá-las.", de: "Das Schicksal gibt keine Prüfungen, die man nicht bestehen kann.", fr: "Le destin ne donne pas d’épreuves à ceux qui sont incapables de les franchir." },
+  { ru: "Ты — автор своей истории. Не позволяй другим писать за тебя.", en: "You are the author of your story. Do not let others write for you.", es: "Eres el autor de tu historia. No dejes que otros escriban por ti.", pt: "És o autor da tua história. Não deixes que outros escrevam por ti.", de: "Du bist der Autor deiner Geschichte. Lass andere nicht für dich schreiben.", fr: "Tu es l’auteur de ton histoire. Ne laisse pas les autres écrire à ta place." },
+  { ru: "Каждый выбор — камень, брошенный в воду судьбы.", en: "Every choice is a stone thrown into the water of fate.", es: "Cada elección es una piedra arrojada al agua del destino.", pt: "Cada escolha é uma pedra lançada na água do destino.", de: "Jede Entscheidung ist ein Stein, der in das Wasser des Schicksals geworfen wird.", fr: "Chaque choix est une pierre jetée dans l’eau du destin." },
+  { ru: "Судьба любит смелых, но бережет мудрых.", en: "Fate loves the bold, but protects the wise.", es: "El destino ama a los audaces, pero protege a los sabios.", pt: "O destino ama os corajosos, mas protege os sábios.", de: "Das Schicksal liebt die Mutigen, aber es schützt die Weisen.", fr: "Le destin aime les audacieux, mais protège les sages." },
+  { ru: "Тот, кто ищет легкий путь, найдет лишь тупик.", en: "He who seeks the easy path will find only a dead end.", es: "Quien busca el camino fácil solo encontrará un callejón sin salida.", pt: "Quem procura o caminho fácil encontra apenas um beco sem saída.", de: "Wer den einfachen Weg sucht, findet nur eine Sackgasse.", fr: "Celui qui cherche le chemin facile ne trouve qu’une impasse." },
+  { ru: "Великие души рождаются не в тишине, а в буре.", en: "Great souls are born not in silence, but in storm.", es: "Las grandes almas nacen no en el silencio, sino en la tormenta.", pt: "Grandes almas não nascem no silêncio, mas na tempestade.", de: "Große Seelen werden nicht in Stille geboren, sondern im Sturm.", fr: "Les grandes âmes naissent non dans le silence, mais dans la tempête." },
+  { ru: "Судьба — это не проклятие. Это вызов.", en: "Fate is not a curse. It is a challenge.", es: "El destino no es una maldición. Es un desafío.", pt: "O destino não é uma maldição. É um desafio.", de: "Das Schicksal ist kein Fluch. Es ist eine Herausforderung.", fr: "Le destin n’est pas une malédiction. C’est un défi." },
+  { ru: "Ты не можешь изменить прошлое, но можешь изменить его значение.", en: "You cannot change the past, but you can change its meaning.", es: "No puedes cambiar el pasado, pero puedes cambiar su significado.", pt: "Não podes mudar o passado, mas podes mudar o seu significado.", de: "Du kannst die Vergangenheit nicht ändern, aber ihre Bedeutung kannst du ändern.", fr: "Tu ne peux pas changer le passé, mais tu peux changer son sens." },
+  { ru: "Каждый человек несет в себе искру божественного.", en: "Every person carries a spark of the divine.", es: "Cada persona lleva una chispa de lo divino.", pt: "Cada pessoa carrega uma centelha do divino.", de: "Jeder Mensch trägt einen Funken des Göttlichen in sich.", fr: "Chaque personne porte une étincelle du divin." },
+  { ru: "Судьба не случайна. Она — результат миллиона выборов.", en: "Fate is not random. It is the result of a million choices.", es: "El destino no es azaroso. Es el resultado de un millón de elecciones.", pt: "O destino não é aleatório. É o resultado de um milhão de escolhas.", de: "Das Schicksal ist nicht zufällig. Es ist das Ergebnis einer Million Entscheidungen.", fr: "Le destin n’est pas aléatoire. Il est le résultat d’un million de choix." },
+  { ru: "Тот, кто боится темноты, никогда не увидит звезд.", en: "He who fears darkness will never see the stars.", es: "Quien teme a la oscuridad nunca verá las estrellas.", pt: "Quem teme a escuridão nunca verá as estrelas.", de: "Wer die Dunkelheit fürchtet, wird die Sterne nie sehen.", fr: "Celui qui craint l’obscurité ne verra jamais les étoiles." },
+  { ru: "Твоя история — это не то, что с тобой случилось. Это то, как ты об этом рассказываешь.", en: "Your story is not what happened to you. It is how you tell it.", es: "Tu historia no es lo que te sucedió. Es cómo lo cuentas.", pt: "A tua história não é o que te aconteceu. É a forma como a contas.", de: "Deine Geschichte ist nicht das, was dir passiert ist. Sie ist die Art, wie du sie erzählst.", fr: "Ton histoire n’est pas ce qui t’est arrivé. C’est la façon dont tu la racontes." },
+  { ru: "Судьба — это река. Ты можешь плыть по течению или бороться с ним.", en: "Fate is a river. You can swim with the current or fight it.", es: "El destino es un río. Puedes nadar con la corriente o luchar contra ella.", pt: "O destino é um rio. Podes nadar com a corrente ou lutar contra ela.", de: "Das Schicksal ist ein Fluss. Du kannst mit der Strömung schwimmen oder gegen sie kämpfen.", fr: "Le destin est une rivière. Tu peux nager avec le courant ou le combattre." },
+  { ru: "Каждый момент — это перекресток. Каждый выбор — это поворот.", en: "Every moment is a crossroads. Every choice is a turn.", es: "Cada momento es una encrucijada. Cada elección es un giro.", pt: "Cada momento é uma encruzilhada. Cada escolha é uma curva.", de: "Jeder Moment ist eine Wegkreuzung. Jede Entscheidung ist eine Abzweigung.", fr: "Chaque instant est un carrefour. Chaque choix est un tournant." },
+  { ru: "Ты не можешь контролировать все, но можешь контролировать свою реакцию.", en: "You cannot control everything, but you can control your reaction.", es: "No puedes controlar todo, pero puedes controlar tu reacción.", pt: "Não podes controlar tudo, mas podes controlar a tua reação.", de: "Du kannst nicht alles kontrollieren, aber du kannst deine Reaktion kontrollieren.", fr: "Tu ne peux pas tout contrôler, mais tu peux contrôler ta réaction." },
+  { ru: "Судьба щедра к тем, кто не жалеет себя.", en: "Fate is generous to those who do not spare themselves.", es: "El destino es generoso con quienes no se ahorran a sí mismos.", pt: "O destino é generoso com quem não se poupa.", de: "Das Schicksal ist großzügig zu denen, die sich nicht schonen.", fr: "Le destin est généreux envers ceux qui ne s’épargnent pas." },
+  { ru: "Великие дела начинаются с маленьких шагов.", en: "Great deeds begin with small steps.", es: "Las grandes obras comienzan con pequeños pasos.", pt: "Grandes feitos começam com pequenos passos.", de: "Große Taten beginnen mit kleinen Schritten.", fr: "Les grandes actions commencent par de petits pas." },
+  { ru: "Твоя судьба — это твоя ответственность.", en: "Your fate is your responsibility.", es: "Tu destino es tu responsabilidad.", pt: "O teu destino é a tua responsabilidade.", de: "Dein Schicksal ist deine Verantwortung.", fr: "Ton destin est ta responsabilité." },
+  { ru: "Самые глубокие раны дают самую яркую мудрость.", en: "The deepest wounds give the brightest wisdom.", es: "Las heridas más profundas dan la sabiduría más brillante.", pt: "As feridas mais profundas trazem a sabedoria mais luminosa.", de: "Die tiefsten Wunden schenken die hellste Weisheit.", fr: "Les blessures les plus profondes donnent la sagesse la plus lumineuse." },
+  { ru: "Судьба не спрашивает разрешения. Она просто случается.", en: "Fate does not ask permission. It simply happens.", es: "El destino no pide permiso. Simplemente sucede.", pt: "O destino não pede permissão. Simplesmente acontece.", de: "Das Schicksal bittet nicht um Erlaubnis. Es geschieht einfach.", fr: "Le destin ne demande pas la permission. Il arrive, tout simplement." },
+  { ru: "Ты — единственный человек, который может изменить свою жизнь.", en: "You are the only person who can change your life.", es: "Eres la única persona que puede cambiar tu vida.", pt: "És a única pessoa que pode mudar a tua vida.", de: "Du bist die einzige Person, die dein Leben verändern kann.", fr: "Tu es la seule personne capable de changer ta vie." },
+  { ru: "Каждый закат — это обещание нового рассвета.", en: "Every sunset is a promise of a new dawn.", es: "Cada atardecer es una promesa de un nuevo amanecer.", pt: "Cada pôr do sol é uma promessa de um novo amanhecer.", de: "Jeder Sonnenuntergang ist ein Versprechen auf eine neue Morgendämmerung.", fr: "Chaque coucher de soleil est une promesse d’une nouvelle aube." },
+  { ru: "Судьба — это не наказание. Это возможность.", en: "Fate is not punishment. It is opportunity.", es: "El destino no es castigo. Es oportunidad.", pt: "O destino não é castigo. É oportunidade.", de: "Das Schicksal ist keine Strafe. Es ist eine Gelegenheit.", fr: "Le destin n’est pas une punition. C’est une occasion." },
+  { ru: "Тот, кто ищет смысл, найдет его.", en: "He who seeks meaning will find it.", es: "Quien busca sentido lo encontrará.", pt: "Quem procura sentido encontra-o.", de: "Wer nach Sinn sucht, wird ihn finden.", fr: "Celui qui cherche un sens le trouvera." },
+  { ru: "Твоя сила — не в том, чтобы никогда не падать, а в том, чтобы вставать.", en: "Your strength is not in never falling, but in rising every time.", es: "Tu fuerza no está en nunca caer, sino en levantarte cada vez.", pt: "A tua força não está em nunca cair, mas em levantar-te sempre.", de: "Deine Stärke liegt nicht darin, niemals zu fallen, sondern jedes Mal wieder aufzustehen.", fr: "Ta force n’est pas de ne jamais tomber, mais de te relever à chaque fois." },
+  { ru: "Судьба любит тех, кто верит в себя.", en: "Fate loves those who believe in themselves.", es: "El destino ama a quienes creen en sí mismos.", pt: "O destino ama quem acredita em si mesmo.", de: "Das Schicksal liebt jene, die an sich selbst glauben.", fr: "Le destin aime ceux qui croient en eux-mêmes." },
+  { ru: "Каждый человек — это книга.", en: "Every person is a book.", es: "Cada persona es un libro.", pt: "Cada pessoa é um livro.", de: "Jeder Mensch ist ein Buch.", fr: "Chaque personne est un livre." },
+  { ru: "Ты не можешь выбрать свою семью, но можешь выбрать свою судьбу.", en: "You cannot choose your family, but you can choose your fate.", es: "No puedes elegir tu familia, pero puedes elegir tu destino.", pt: "Não podes escolher a tua família, mas podes escolher o teu destino.", de: "Du kannst deine Familie nicht wählen, aber du kannst dein Schicksal wählen.", fr: "Tu ne peux pas choisir ta famille, mais tu peux choisir ton destin." },
+  { ru: "Судьба — это не то, что дано. Это то, что создано.", en: "Fate is not what is given. It is what is created.", es: "El destino no es lo que se da. Es lo que se crea.", pt: "O destino não é aquilo que é dado. É aquilo que é criado.", de: "Das Schicksal ist nicht das, was gegeben wird. Es ist das, was geschaffen wird.", fr: "Le destin n’est pas ce qui est donné. C’est ce qui est créé." },
+  { ru: "Великие мечты требуют великих жертв.", en: "Great dreams require great sacrifices.", es: "Los grandes sueños requieren grandes sacrificios.", pt: "Grandes sonhos exigem grandes sacrifícios.", de: "Große Träume erfordern große Opfer.", fr: "Les grands rêves exigent de grands sacrifices." },
+  { ru: "Твоя судьба — это твоя мечта, которую ты не осмелился осуществить.", en: "Your fate is the dream you dared not fulfill.", es: "Tu destino es el sueño que no te atreviste a cumplir.", pt: "O teu destino é o sonho que não ousaste realizar.", de: "Dein Schicksal ist der Traum, den du dich nicht zu erfüllen getraut hast.", fr: "Ton destin est le rêve que tu n’as pas osé réaliser." },
+  { ru: "Судьба не ждет. Она приходит к тем, кто готов.", en: "Fate does not wait. It comes to those who are ready.", es: "El destino no espera. Viene a quienes están listos.", pt: "O destino não espera. Vem para quem está preparado.", de: "Das Schicksal wartet nicht. Es kommt zu denen, die bereit sind.", fr: "Le destin n’attend pas. Il vient à ceux qui sont prêts." },
+  { ru: "Каждый выбор — это семя, которое ты сажаешь.", en: "Every choice is a seed you plant.", es: "Cada elección es una semilla que plantas.", pt: "Cada escolha é uma semente que plantas.", de: "Jede Entscheidung ist ein Samen, den du pflanzt.", fr: "Chaque choix est une graine que tu plantes." },
+  { ru: "Ты — кузнец своей судьбы. Куй, пока железо горячо.", en: "You are the smith of your fate. Strike while the iron is hot.", es: "Eres el herrero de tu destino. Golpea mientras el hierro está caliente.", pt: "És o ferreiro do teu destino. Bate enquanto o ferro está quente.", de: "Du bist der Schmied deines Schicksals. Schlage zu, solange das Eisen heiß ist.", fr: "Tu es le forgeron de ton destin. Frappe tant que le fer est chaud." },
+  { ru: "Судьба — это не случайность. Это закономерность.", en: "Fate is not chance. It is pattern.", es: "El destino no es azar. Es patrón.", pt: "O destino não é acaso. É padrão.", de: "Das Schicksal ist kein Zufall. Es ist ein Muster.", fr: "Le destin n’est pas le hasard. C’est un motif." },
+  { ru: "Тот, кто не рискует, не пьет шампанского.", en: "He who does not risk does not drink champagne.", es: "Quien no arriesga no bebe champán.", pt: "Quem não arrisca não bebe champanhe.", de: "Wer nichts wagt, trinkt keinen Champagner.", fr: "Qui ne risque rien ne boit pas de champagne." },
+  { ru: "Твоя история еще не закончена. Продолжай писать.", en: "Your story is not over. Keep writing.", es: "Tu historia no ha terminado. Sigue escribiendo.", pt: "A tua história não terminou. Continua a escrevê-la.", de: "Deine Geschichte ist noch nicht vorbei. Schreib weiter.", fr: "Ton histoire n’est pas terminée. Continue de l’écrire." },
+  { ru: "Судьба — это зеркало твоих желаний.", en: "Fate is the mirror of your desires.", es: "El destino es el espejo de tus deseos.", pt: "O destino é o espelho dos teus desejos.", de: "Das Schicksal ist der Spiegel deiner Wünsche.", fr: "Le destin est le miroir de tes désirs." },
+  { ru: "Каждый человек — это вселенная.", en: "Every person is a universe.", es: "Cada persona es un universo.", pt: "Cada pessoa é um universo.", de: "Jeder Mensch ist ein Universum.", fr: "Chaque personne est un univers." },
+  { ru: "Ты не можешь изменить мир, но можешь изменить себя.", en: "You cannot change the world, but you can change yourself.", es: "No puedes cambiar el mundo, pero puedes cambiarte a ti mismo.", pt: "Não podes mudar o mundo, mas podes mudar a ti mesmo.", de: "Du kannst die Welt nicht verändern, aber du kannst dich selbst verändern.", fr: "Tu ne peux pas changer le monde, mais tu peux te changer toi-même." },
+  { ru: "Судьба — это не проклятие. Это дар.", en: "Fate is not a curse. It is a gift.", es: "El destino no es una maldición. Es un regalo.", pt: "O destino não é uma maldição. É um presente.", de: "Das Schicksal ist kein Fluch. Es ist ein Geschenk.", fr: "Le destin n’est pas une malédiction. C’est un cadeau." },
+  { ru: "Великие души не рождаются в комфорте.", en: "Great souls are not born in comfort.", es: "Las grandes almas no nacen en la comodidad.", pt: "Grandes almas não nascem no conforto.", de: "Große Seelen werden nicht im Komfort geboren.", fr: "Les grandes âmes ne naissent pas dans le confort." },
+  { ru: "Твоя судьба — это твоя отвага.", en: "Your fate is your courage.", es: "Tu destino es tu coraje.", pt: "O teu destino é a tua coragem.", de: "Dein Schicksal ist dein Mut.", fr: "Ton destin est ton courage." },
+  { ru: "Судьба не спрашивает, готов ли ты.", en: "Fate does not ask if you are ready.", es: "El destino no pregunta si estás listo.", pt: "O destino não pergunta se estás pronto.", de: "Das Schicksal fragt nicht, ob du bereit bist.", fr: "Le destin ne demande pas si tu es prêt." },
+  { ru: "Каждый момент — это возможность начать заново.", en: "Every moment is a chance to start anew.", es: "Cada momento es una oportunidad para empezar de nuevo.", pt: "Cada momento é uma oportunidade para começar de novo.", de: "Jeder Moment ist eine Chance für einen Neuanfang.", fr: "Chaque instant est une chance de recommencer." },
+  { ru: "Ты — автор своей судьбы. Не позволяй другим редактировать.", en: "You are the author of your fate. Do not let others edit it.", es: "Eres el autor de tu destino. No dejes que otros lo editen.", pt: "És o autor do teu destino. Não deixes que outros o editem.", de: "Du bist der Autor deines Schicksals. Lass andere es nicht bearbeiten.", fr: "Tu es l’auteur de ton destin. Ne laisse pas les autres le réécrire." },
+  { ru: "Судьба — это не то, что случается. Это то, что ты делаешь.", en: "Fate is not what happens. It is what you do.", es: "El destino no es lo que sucede. Es lo que haces.", pt: "O destino não é o que acontece. É o que fazes.", de: "Das Schicksal ist nicht das, was geschieht. Es ist das, was du tust.", fr: "Le destin n’est pas ce qui arrive. C’est ce que tu fais." },
+  { ru: "Тот, кто ищет легких путей, никогда не найдет великих.", en: "He who seeks easy paths will never find great ones.", es: "Quien busca caminos fáciles nunca encontrará los grandes.", pt: "Quem procura caminhos fáceis nunca encontra os grandes.", de: "Wer leichte Wege sucht, wird niemals große Wege finden.", fr: "Celui qui cherche les chemins faciles ne trouvera jamais les grands." },
+  { ru: "Твоя сила — в твоей уязвимости.", en: "Your strength is in your vulnerability.", es: "Tu fuerza está en tu vulnerabilidad.", pt: "A tua força está na tua vulnerabilidade.", de: "Deine Stärke liegt in deiner Verletzlichkeit.", fr: "Ta force est dans ta vulnérabilité." },
+  { ru: "Судьба — это не случайность. Это выбор.", en: "Fate is not chance. It is choice.", es: "El destino no es azar. Es elección.", pt: "O destino não é acaso. É escolha.", de: "Das Schicksal ist kein Zufall. Es ist eine Entscheidung.", fr: "Le destin n’est pas le hasard. C’est un choix." },
+  { ru: "Каждый человек — это звезда.", en: "Every person is a star.", es: "Cada persona es una estrella.", pt: "Cada pessoa é uma estrela.", de: "Jeder Mensch ist ein Stern.", fr: "Chaque personne est une étoile." },
+  { ru: "Ты не можешь контролировать ветер, но можешь контролировать свой курс.", en: "You cannot control the wind, but you can control your course.", es: "No puedes controlar el viento, pero puedes controlar tu rumbo.", pt: "Não podes controlar o vento, mas podes controlar o teu rumo.", de: "Du kannst den Wind nicht kontrollieren, aber du kannst deinen Kurs kontrollieren.", fr: "Tu ne peux pas contrôler le vent, mais tu peux contrôler ton cap." },
+  { ru: "Судьба — это не проклятие. Это вызов.", en: "Fate is not a curse. It is a call.", es: "El destino no es una maldición. Es una llamada.", pt: "O destino não é uma maldição. É um chamado.", de: "Das Schicksal ist kein Fluch. Es ist ein Ruf.", fr: "Le destin n’est pas une malédiction. C’est un appel." },
+  { ru: "Великие дела требуют великой веры.", en: "Great deeds require great faith.", es: "Las grandes obras requieren gran fe.", pt: "Grandes feitos exigem grande fé.", de: "Große Taten erfordern großen Glauben.", fr: "Les grandes actions exigent une grande foi." },
+  { ru: "Твоя судьба — это твоя мудрость.", en: "Your fate is your wisdom.", es: "Tu destino es tu sabiduría.", pt: "A tua sorte é a tua sabedoria.", de: "Dein Schicksal ist deine Weisheit.", fr: "Ton destin est ta sagesse." },
+  { ru: "Судьба не щадит никого. Но и не обделяет никого.", en: "Fate spares no one. But it also shortchanges no one.", es: "El destino no perdona a nadie. Pero tampoco defrauda a nadie.", pt: "O destino não poupa ninguém. Mas também não deixa ninguém de lado.", de: "Das Schicksal verschont niemanden. Aber es benachteiligt auch niemanden.", fr: "Le destin n’épargne personne. Mais il ne lèse personne non plus." },
+  { ru: "Каждый выбор — это камень в фундамент твоей судьбы.", en: "Every choice is a stone in the foundation of your fate.", es: "Cada elección es una piedra en el fundamento de tu destino.", pt: "Cada escolha é uma pedra na fundação do teu destino.", de: "Jede Entscheidung ist ein Stein im Fundament deines Schicksals.", fr: "Chaque choix est une pierre dans les fondations de ton destin." },
+  { ru: "Ты — кузнец своей судьбы. Куй с умом.", en: "You are the smith of your fate. Forge wisely.", es: "Eres el herrero de tu destino. Forja con sabiduría.", pt: "És o ferreiro do teu destino. Forja com sabedoria.", de: "Du bist der Schmied deines Schicksals. Schmiede weise.", fr: "Tu es le forgeron de ton destin. Forge avec sagesse." },
+  { ru: "Судьба — это не случайность. Это закон.", en: "Fate is not chance. It is law.", es: "El destino no es azar. Es ley.", pt: "O destino não é acaso. É lei.", de: "Das Schicksal ist kein Zufall. Es ist Gesetz.", fr: "Le destin n’est pas le hasard. C’est la loi." },
+  { ru: "Тот, кто не верит в чудеса, никогда их не увидит.", en: "He who does not believe in miracles will never see them.", es: "Quien no cree en milagros nunca los verá.", pt: "Quem não acredita em milagres nunca os verá.", de: "Wer nicht an Wunder glaubt, wird sie niemals sehen.", fr: "Celui qui ne croit pas aux miracles ne les verra jamais." },
+  { ru: "Твоя история — это твоя сила.", en: "Your story is your strength.", es: "Tu historia es tu fuerza.", pt: "A tua história é a tua força.", de: "Deine Geschichte ist deine Stärke.", fr: "Ton histoire est ta force." },
+  { ru: "Судьба — это не то, что дано. Это то, что взято.", en: "Fate is not what is given. It is what is taken.", es: "El destino no es lo que se da. Es lo que se toma.", pt: "O destino não é o que nos é dado. É o que conquistamos.", de: "Das Schicksal ist nicht das, was gegeben wird. Es ist das, was genommen wird.", fr: "Le destin n’est pas ce qui est donné. C’est ce qui est pris." },
+  { ru: "Великие мечты рождаются в великих сердцах.", en: "Great dreams are born in great hearts.", es: "Los grandes sueños nacen en grandes corazones.", pt: "Grandes sonhos nascem em grandes corações.", de: "Große Träume werden in großen Herzen geboren.", fr: "Les grands rêves naissent dans les grands cœurs." },
+  { ru: "Твоя судьба — это твоя любовь.", en: "Your fate is your love.", es: "Tu destino es tu amor.", pt: "O teu destino é o teu amor.", de: "Dein Schicksal ist deine Liebe.", fr: "Ton destin est ton amour." },
+  { ru: "Судьба не ждет. Она идет.", en: "Fate does not wait. It moves.", es: "El destino no espera. Avanza.", pt: "O destino não espera. Ele move-se.", de: "Das Schicksal wartet nicht. Es bewegt sich.", fr: "Le destin n’attend pas. Il avance." },
+  { ru: "Каждый момент — это дар. Не трать его впустую.", en: "Every moment is a gift. Do not waste it.", es: "Cada momento es un regalo. No lo desperdicies.", pt: "Cada momento é um presente. Não o desperdices.", de: "Jeder Moment ist ein Geschenk. Verschwende ihn nicht.", fr: "Chaque instant est un cadeau. Ne le gaspille pas." },
+  { ru: "Ты — автор своей жизни. Пиши красиво.", en: "You are the author of your life. Write beautifully.", es: "Eres el autor de tu vida. Escribe bellamente.", pt: "És o autor da tua vida. Escreve-a com beleza.", de: "Du bist der Autor deines Lebens. Schreib es schön.", fr: "Tu es l’auteur de ta vie. Écris-la avec beauté." },
+  { ru: "Судьба — это не проклятие. Это возможность.", en: "Fate is not a curse. It is opportunity.", es: "El destino no es una maldición. Es oportunidad.", pt: "O destino não é uma maldição. É uma oportunidade.", de: "Das Schicksal ist kein Fluch. Es ist eine Gelegenheit.", fr: "Le destin n’est pas une malédiction. C’est une occasion." },
+  { ru: "Тот, кто ищет правду, найдет ее.", en: "He who seeks truth will find it.", es: "Quien busca la verdad la encontrará.", pt: "Quem procura a verdade encontra-a.", de: "Wer die Wahrheit sucht, wird sie finden.", fr: "Celui qui cherche la vérité la trouvera." },
+  { ru: "Твоя сила — в твоей истине.", en: "Your strength is in your truth.", es: "Tu fuerza está en tu verdad.", pt: "A tua força está na tua verdade.", de: "Deine Stärke liegt in deiner Wahrheit.", fr: "Ta force est dans ta vérité." },
+  { ru: "Судьба — это не случайность. Это путь.", en: "Fate is not chance. It is path.", es: "El destino no es azar. Es camino.", pt: "O destino não é acaso. É caminho.", de: "Das Schicksal ist kein Zufall. Es ist ein Weg.", fr: "Le destin n’est pas le hasard. C’est un chemin." },
+  { ru: "Каждый человек — это загадка. Разгадай свою.", en: "Every person is a riddle. Solve yours.", es: "Cada persona es un acertijo. Resuelve el tuyo.", pt: "Cada pessoa é um enigma. Resolve o teu.", de: "Jeder Mensch ist ein Rätsel. Löse deines.", fr: "Chaque personne est une énigme. Résous la tienne." },
+  { ru: "Ты не можешь изменить прошлое, но можешь изменить будущее.", en: "You cannot change the past, but you can change the future.", es: "No puedes cambiar el pasado, pero puedes cambiar el futuro.", pt: "Não podes mudar o passado, mas podes mudar o futuro.", de: "Du kannst die Vergangenheit nicht ändern, aber du kannst die Zukunft ändern.", fr: "Tu ne peux pas changer le passé, mais tu peux changer l’avenir." },
+  { ru: "Судьба — это не проклятие. Это приключение.", en: "Fate is not a curse. It is adventure.", es: "El destino no es una maldición. Es aventura.", pt: "O destino não é uma maldição. É uma aventura.", de: "Das Schicksal ist kein Fluch. Es ist ein Abenteuer.", fr: "Le destin n’est pas une malédiction. C’est une aventure." },
+  { ru: "Великие души не ищут легких путей.", en: "Great souls do not seek easy paths.", es: "Las grandes almas no buscan caminos fáciles.", pt: "Grandes almas não procuram caminhos fáceis.", de: "Große Seelen suchen keine leichten Wege.", fr: "Les grandes âmes ne cherchent pas les chemins faciles." },
+  { ru: "Твоя судьба — это твоя отвага.", en: "Your fate is your bravery.", es: "Tu destino es tu valentía.", pt: "O teu destino é a tua bravura.", de: "Dein Schicksal ist deine Tapferkeit.", fr: "Ton destin est ta bravoure." },
+  { ru: "Судьба не спрашивает. Она решает.", en: "Fate does not ask. It decides.", es: "El destino no pregunta. Decide.", pt: "O destino não pergunta. Decide.", de: "Das Schicksal fragt nicht. Es entscheidet.", fr: "Le destin ne demande pas. Il décide." },
+  { ru: "Каждый выбор — это шаг. Делай его уверенно.", en: "Every choice is a step. Take it confidently.", es: "Cada elección es un paso. Dalo con confianza.", pt: "Cada escolha é um passo. Dá-o com confiança.", de: "Jede Entscheidung ist ein Schritt. Geh ihn mit Zuversicht.", fr: "Chaque choix est un pas. Fais-le avec confiance." },
+  { ru: "Ты — кузнец своей судьбы. Куй с любовью.", en: "You are the smith of your fate. Forge with love.", es: "Eres el herrero de tu destino. Forja con amor.", pt: "És o ferreiro do teu destino. Forja com amor.", de: "Du bist der Schmied deines Schicksals. Schmiede mit Liebe.", fr: "Tu es le forgeron de ton destin. Forge avec amour." },
+  { ru: "Судьба — это не случайность. Это судьба.", en: "Fate is not chance. It is destiny.", es: "El destino no es azar. Es destino.", pt: "O destino não é acaso. É destino.", de: "Das Schicksal ist kein Zufall. Es ist Bestimmung.", fr: "Le destin n’est pas le hasard. C’est la destinée." },
+  { ru: "Тот, кто верит в себя, уже на полпути к цели.", en: "He who believes in himself is already halfway to the goal.", es: "Quien cree en sí mismo ya está a mitad de camino hacia la meta.", pt: "Quem acredita em si mesmo já está a meio caminho da meta.", de: "Wer an sich selbst glaubt, ist bereits auf halbem Weg zum Ziel.", fr: "Celui qui croit en lui-même est déjà à mi-chemin du but." },
+  { ru: "Твоя история — это твоя магия.", en: "Your story is your magic.", es: "Tu historia es tu magia.", pt: "A tua história é a tua magia.", de: "Deine Geschichte ist deine Magie.", fr: "Ton histoire est ta magie." },
+  { ru: "Судьба — это не то, что дано. Это то, что создано любовью.", en: "Fate is not what is given. It is what is created with love.", es: "El destino no es lo que se da. Es lo que se crea con amor.", pt: "O destino não é aquilo que recebemos. É aquilo que criamos com amor.", de: "Das Schicksal ist nicht das, was gegeben wird. Es ist das, was mit Liebe geschaffen wird.", fr: "Le destin n’est pas ce qui est donné. C’est ce qui est créé avec amour." },
+  { ru: "Великие дела начинаются с великой веры.", en: "Great deeds begin with great faith.", es: "Las grandes obras comienzan con gran fe.", pt: "Grandes feitos começam com grande fé.", de: "Große Taten beginnen mit großem Glauben.", fr: "Les grandes actions commencent par une grande foi." },
+  { ru: "Твоя судьба — это твоя надежда.", en: "Your fate is your hope.", es: "Tu destino es tu esperanza.", pt: "O teu destino é a tua esperança.", de: "Dein Schicksal ist deine Hoffnung.", fr: "Ton destin est ton espoir." },
+  { ru: "Судьба не ждет. Она творится.", en: "Fate does not wait. It is forged.", es: "El destino no espera. Se forja.", pt: "O destino não espera. É forjado.", de: "Das Schicksal wartet nicht. Es wird geschmiedet.", fr: "Le destin n’attend pas. Il se forge." },
+  { ru: "Каждый момент — это вечность. Живи ее полностью.", en: "Every moment is eternity. Live it fully.", es: "Cada momento es eternidad. Vívelo plenamente.", pt: "Cada momento é eternidade. Vive-o plenamente.", de: "Jeder Moment ist Ewigkeit. Lebe ihn ganz.", fr: "Chaque instant est éternité. Vis-le pleinement." },
+  { ru: "Ты — автор своей судьбы. Пиши шедевр.", en: "You are the author of your fate. Write a masterpiece.", es: "Eres el autor de tu destino. Escribe una obra maestra.", pt: "És o autor do teu destino. Escreve uma obra-prima.", de: "Du bist der Autor deines Schicksals. Schreib ein Meisterwerk.", fr: "Tu es l’auteur de ton destin. Écris un chef-d’œuvre." }
 ];
 
 function renderWisdomCard(overlay) {

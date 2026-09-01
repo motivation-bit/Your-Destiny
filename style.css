@@ -2276,3 +2276,7 @@ body.theme-kaleidoscope #app-container::after{background:transparent!important}
 
 /* Landscape is allowed */
 html, body { transform: none; }
+
+/* v4.1.23 micro-adjustments */
+.settings-language-row .settings-icon, .settings-language-row .settings-label { transform: translateY(-0.1mm); }
+.legal-overlay .fate-final-title, .legal-overlay .legal-body { transform: translateY(-30mm); }
