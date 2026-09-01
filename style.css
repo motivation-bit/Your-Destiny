@@ -2264,4 +2264,7 @@ body.theme-kaleidoscope #app-container::after{background:transparent!important}
 }
 
 /* Legal title sits lower inside the reading area, while the page itself remains scrollable. */
-.legal-card .fate-final-title{padding-top:75.6px!important;margin-top:0!important;}
+.legal-card .fate-final-title{padding-top:0!important;margin-top:0!important;}
+
+/* User precision update: language icon + label 0.1mm upward. */
+.language-setting .settings-item-left{transform:translateY(7.662px)!important;}

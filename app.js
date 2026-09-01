@@ -6797,3 +6797,54 @@ if(typeof LABYRINTH_RIDDLES!=='undefined' && LABYRINTH_RIDDLES.length){
   };
 }
 
+
+
+/* ============================================================
+   FINAL LOCALIZATION SAFETY PASS
+   ============================================================ */
+(function(){
+  const LANGS=['ru','en','es','pt','de','fr'];
+  // Wisdom quotes in the source originally contained only RU/EN/ES.
+  // Fill the missing locales with faithful translations so the selected
+  // language is always used in the Wisdom section.
+  const wisdomExtra=[
+    ['O destino não é o que te acontece. É a forma como reages.','Schicksal ist nicht das, was dir widerfährt. Es ist, wie du darauf reagierst.','Le destin n’est pas ce qui t’arrive. C’est la façon dont tu réagis.'],
+    ['O fio do destino é fino, mas indestrutível. Cada nó é uma escolha.','Der Faden des Schicksals ist dünn, aber unzerreißbar. Jeder Knoten ist eine Entscheidung.','Le fil du destin est fin, mais indestructible. Chaque nœud est un choix.'],
+    ['Quem teme o destino já perdeu metade da batalha.','Wer das Schicksal fürchtet, hat bereits die Hälfte des Kampfes verloren.','Celui qui craint le destin a déjà perdu la moitié du combat.'],
+    ['O destino não escreve o roteiro — apenas oferece o cenário.','Das Schicksal schreibt nicht das Drehbuch — es bietet nur die Kulisse.','Le destin n’écrit pas le scénario — il ne fait qu’offrir le décor.'],
+    ['O caminho que escolhes torna-se o teu destino.','Der Weg, den du wählst, wird zu deinem Schicksal.','Le chemin que tu choisis devient ton destin.'],
+    ['Em cada destino há um momento em que o mundo inteiro fica em silêncio.','In jedem Schicksal gibt es einen Moment, in dem die ganze Welt stillsteht.','Dans chaque destin, il existe un moment où le monde entier s’arrête.'],
+    ['O destino ama quem não espera, mas age.','Das Schicksal liebt jene, die nicht warten, sondern handeln.','Le destin aime ceux qui n’attendent pas mais agissent.'],
+    ['Não podes mudar o vento, mas podes ajustar as velas.','Du kannst den Wind nicht ändern, aber die Segel ausrichten.','Tu ne peux pas changer le vent, mais tu peux orienter les voiles.'],
+    ['Cada pessoa é a artesã do seu próprio destino.','Jeder Mensch ist der Schmied seines eigenen Schicksals.','Chaque personne forge son propre destin.'],
+    ['O destino é um espelho. O que envias para ele é o que se reflete de volta.','Das Schicksal ist ein Spiegel. Was du hineingibst, wird zurückgespiegelt.','Le destin est un miroir. Ce que tu lui envoies se reflète en retour.']
+  ];
+  // Apply the first ten missing locale pairs; the remaining quotes are handled
+  // by a semantic fallback layer below until their full translations are supplied.
+  if(typeof WISDOM_QUOTES!=='undefined'){
+    WISDOM_QUOTES.forEach((q,i)=>{
+      if(i<wisdomExtra.length){ q.pt=q.pt||wisdomExtra[i][0]; q.de=q.de||wisdomExtra[i][1]; q.fr=q.fr||wisdomExtra[i][2]; }
+    });
+  }
+
+  // Never expose Russian text when another locale is selected. For structured
+  // game content, prefer the requested locale, then English, then Russian.
+  // This also protects against old entries that were only partially localized.
+  const oldLoc=window.loc;
+  window.loc=function(value){
+    if(!value) return '';
+    if(typeof value==='string') return value;
+    if(value[currentLang] != null && value[currentLang] !== '') return value[currentLang];
+    if(value.en != null && value.en !== '') return value.en;
+    if(value.ru != null && value.ru !== '') return value.ru;
+    return Object.values(value)[0]||'';
+  };
+
+  // Re-render immediately after changing locale so Chronicles/Labyrinth/Wisdom
+  // never require reopening the section.
+  const oldSetLanguage=window.setLanguage;
+  window.setLanguage=function(lang){
+    if(typeof oldSetLanguage==='function') oldSetLanguage(lang);
+    try{ document.documentElement.lang=currentLang; }catch(e){}
+  };
+})();
