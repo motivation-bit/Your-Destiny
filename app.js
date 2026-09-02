@@ -7461,3 +7461,184 @@ if(typeof LABYRINTH_RIDDLES!=='undefined' && LABYRINTH_RIDDLES.length){
   if(document.readyState==='loading') document.addEventListener('DOMContentLoaded',()=>harden(document),{once:true}); else harden(document);
   new MutationObserver(muts=>muts.forEach(m=>m.addedNodes.forEach(n=>{if(n.nodeType===1)harden(n);}))).observe(document.documentElement,{childList:true,subtree:true});
 })();
+/* v4.1.32 — Robust Chronicles engine: 100/100 counter + 10 endings + reliable buttons */
+(function(){
+  const LANGS=['ru','en','es','pt','de','fr'];
+  const L = (obj) => (obj && (obj[currentLang] || obj.ru || obj.en)) || '';
+  const FINAL_INTRO={
+    ru:'100 из 100! Ты прошёл все дилеммы. Посмотрим, какой из 10 типов решений ближе всего к твоему стилю поведения.',
+    en:'100 out of 100! You completed every dilemma. Let’s see which of 10 decision styles is closest to how you tend to act.',
+    es:'¡100 de 100! Has completado todos los dilemas. Veamos cuál de los 10 estilos de decisión se acerca más a tu forma de actuar.',
+    pt:'100 de 100! Concluíste todos os dilemas. Vamos ver qual dos 10 estilos de decisão mais se aproxima da tua forma de agir.',
+    de:'100 von 100! Du hast alle Dilemmata abgeschlossen. Sehen wir uns an, welcher von 10 Entscheidungsstilen deiner Art zu handeln am nächsten kommt.',
+    fr:'100 sur 100 ! Tu as terminé tous les dilemmes. Voyons lequel des 10 styles de décision correspond le mieux à ta façon d’agir.'
+  };
+  const SHOW={ru:'Показать результаты',en:'Show results',es:'Ver resultados',pt:'Ver resultados',de:'Ergebnisse anzeigen',fr:'Voir les résultats'};
+  const RESTART={ru:'Пройти заново',en:'Start again',es:'Empezar de nuevo',pt:'Recomeçar',de:'Neu beginnen',fr:'Recommencer'};
+  const CLOSE={ru:'Закрыть',en:'Close',es:'Cerrar',pt:'Fechar',de:'Schließen',fr:'Fermer'};
+  const CHANNEL={ru:'Заглядывайте в наш Telegram-канал — там уже есть похожие задачи.',en:'Visit our Telegram channel — you will find similar challenges there.',es:'Visita nuestro canal de Telegram: allí encontrarás retos parecidos.',pt:'Visita o nosso canal do Telegram — lá encontrarás desafios semelhantes.',de:'Besuche unseren Telegram-Kanal — dort findest du ähnliche Aufgaben.',fr:'Rejoins notre canal Telegram — tu y trouveras des défis similaires.'};
+  const ENDINGS = {
+    ru:[
+      ['Лидер решений','Ты не любишь оставаться в стороне, когда ситуация требует действия. Обычно ты готов взять ответственность и первым двинуть события вперёд.'],
+      ['Тихий стратег','Ты предпочитаешь сначала оценить обстановку, заметить детали и только потом действовать. Твоя сила — спокойствие и расчёт.'],
+      ['Чуткий союзник','Для тебя важны люди и их чувства. Ты умеешь учитывать чужую сторону и искать решение, после которого отношения не разрушены.'],
+      ['Свободный исследователь','Ты охотно пробуешь новые пути и не любишь жить только по привычному сценарию. Для тебя выбор — это возможность открыть что-то новое.'],
+      ['Надёжный реалист','Ты смотришь на ситуацию практично: что реально сделать сейчас и какой вариант даст рабочий результат.'],
+      ['Идейный создатель','Ты часто видишь нестандартный выход там, где другие выбирают самый очевидный. Новые идеи и необычные решения тебе действительно близки.'],
+      ['Миротворец','Ты стараешься не раздувать конфликт и ищешь способ сохранить баланс между своими интересами и интересами других.'],
+      ['Смелый экспериментатор','Когда привычный способ не работает, ты готов рискнуть и попробовать другой. Тебя не пугают изменения, если они дают шанс на результат.'],
+      ['Вдумчивый наблюдатель','Ты редко делаешь выводы сгоряча. Тебе важно увидеть детали, понять мотивы людей и только после этого принимать решение.'],
+      ['Практичный оптимист','Ты стараешься увидеть решение, которое и реалистично, и оставляет пространство для хорошего исхода.']
+    ],
+    en:[
+      ['Decision Leader','You dislike standing aside when a situation calls for action. You are usually ready to take responsibility and move things forward.'],
+      ['Quiet Strategist','You prefer to assess the situation, notice details, and act afterward. Your strength is calm calculation.'],
+      ['Attentive Ally','People and their feelings matter to you. You can consider another person’s side while protecting the relationship.'],
+      ['Independent Explorer','You like trying new paths and dislike living by a fixed script. For you, a choice is also a chance to discover something new.'],
+      ['Grounded Realist','You look at situations practically: what can really be done now and which option is most workable.'],
+      ['Idea Maker','You often notice an unconventional way out where others choose the obvious path. New ideas and unusual solutions suit you.'],
+      ['Peacemaker','You try not to escalate conflict and look for a balance between your interests and other people’s interests.'],
+      ['Bold Experimenter','When the usual approach fails, you are willing to take a chance and try another. Change does not scare you when it can lead somewhere.'],
+      ['Thoughtful Observer','You rarely judge in a rush. You want to see details, understand motives, and only then decide.'],
+      ['Practical Optimist','You look for a solution that is realistic while still leaving room for a positive outcome.']
+    ]
+  };
+  ENDINGS.es=ENDINGS.en.map((x,i)=>[
+    ['Líder de decisiones','No te gusta quedarte al margen cuando una situación exige actuar. Sueles estar dispuesto a asumir responsabilidad y mover las cosas hacia delante.'],
+    ['Estratega silencioso','Prefieres valorar la situación, observar los detalles y actuar después. Tu fortaleza es la calma y el cálculo.'],
+    ['Aliado atento','Las personas y sus sentimientos son importantes para ti. Sabes tener en cuenta la otra parte sin destruir la relación.'],
+    ['Explorador independiente','Te gusta probar caminos nuevos y no vivir siguiendo un guion fijo. Para ti, elegir también significa descubrir.'],
+    ['Realista con los pies en la tierra','Miras las situaciones de forma práctica: qué se puede hacer ahora y qué opción funciona de verdad.'],
+    ['Creador de ideas','Sueles ver salidas poco habituales donde otros eligen lo evidente. Las ideas nuevas te atraen.'],
+    ['Mediador','Intentas no agrandar los conflictos y buscas equilibrio entre tus intereses y los de los demás.'],
+    ['Experimentador valiente','Cuando lo habitual falla, estás dispuesto a arriesgar y probar otra cosa.'],
+    ['Observador reflexivo','Rara vez juzgas con prisa. Quieres entender los detalles y los motivos antes de decidir.'],
+    ['Optimista práctico','Buscas una solución realista que aún deje espacio para un buen resultado.']
+  ][i]);
+  ENDINGS.pt=ENDINGS.en.map((x,i)=>[
+    ['Líder de decisões','Não gostas de ficar de fora quando uma situação exige ação. Normalmente estás disposto a assumir responsabilidade e fazer as coisas avançarem.'],
+    ['Estrategista discreto','Preferes avaliar a situação, reparar nos detalhes e só depois agir. A tua força é a calma e o cálculo.'],
+    ['Aliado atento','As pessoas e os seus sentimentos são importantes para ti. Sabes considerar o outro lado sem destruir a relação.'],
+    ['Explorador independente','Gostas de experimentar novos caminhos e não de viver preso a um guião. Para ti, escolher também é descobrir.'],
+    ['Realista pragmático','Olhas para a situação de forma prática: o que é possível fazer agora e qual opção funciona melhor.'],
+    ['Criador de ideias','Muitas vezes encontras uma saída fora do comum onde outros escolhem o óbvio. Gostas de novas ideias.'],
+    ['Pacificador','Tentas não aumentar os conflitos e procuras equilíbrio entre os teus interesses e os dos outros.'],
+    ['Experimentador ousado','Quando o método habitual falha, estás disposto a arriscar e tentar outro.'],
+    ['Observador ponderado','Raramente julgas com pressa. Queres perceber detalhes e motivos antes de decidir.'],
+    ['Otimista prático','Procuras uma solução realista que ainda deixe espaço para um resultado positivo.']
+  ][i]);
+  ENDINGS.de=ENDINGS.en.map((x,i)=>[
+    ['Entscheidungsführer','Du bleibst nicht gern passiv, wenn eine Situation Handeln verlangt. Meist bist du bereit, Verantwortung zu übernehmen und Dinge voranzubringen.'],
+    ['Stiller Stratege','Du bewertest lieber erst die Lage, bemerkst Details und handelst dann. Deine Stärke sind Ruhe und Berechnung.'],
+    ['Aufmerksamer Verbündeter','Menschen und ihre Gefühle sind dir wichtig. Du kannst die andere Seite berücksichtigen, ohne die Beziehung zu beschädigen.'],
+    ['Unabhängiger Entdecker','Du probierst gern neue Wege aus und folgst nicht gern einem festen Skript. Eine Entscheidung ist für dich auch eine Chance, Neues zu entdecken.'],
+    ['Bodenständiger Realist','Du betrachtest Situationen praktisch: Was ist jetzt machbar und welche Option funktioniert wirklich?'],
+    ['Ideengeber','Du siehst oft einen ungewöhnlichen Ausweg, wo andere den offensichtlichen wählen. Neue Ideen liegen dir.'],
+    ['Friedensstifter','Du versuchst Konflikte nicht eskalieren zu lassen und suchst ein Gleichgewicht zwischen deinen und den Interessen anderer.'],
+    ['Mutiger Experimentierer','Wenn der übliche Weg nicht funktioniert, bist du bereit, etwas zu riskieren und einen anderen zu versuchen.'],
+    ['Bedachter Beobachter','Du urteilst selten vorschnell. Du willst Details und Motive verstehen, bevor du entscheidest.'],
+    ['Praktischer Optimist','Du suchst eine realistische Lösung, die trotzdem Raum für ein gutes Ergebnis lässt.']
+  ][i]);
+  ENDINGS.fr=ENDINGS.en.map((x,i)=>[
+    ['Leader des décisions','Tu n’aimes pas rester en retrait lorsqu’une situation exige d’agir. Tu es généralement prêt à prendre tes responsabilités et à faire avancer les choses.'],
+    ['Stratège discret','Tu préfères évaluer la situation, remarquer les détails, puis agir. Ta force est le calme et le calcul.'],
+    ['Allié attentif','Les personnes et leurs émotions comptent pour toi. Tu sais prendre en compte l’autre côté sans abîmer la relation.'],
+    ['Explorateur indépendant','Tu aimes essayer de nouvelles voies et tu n’aimes pas vivre selon un scénario fixe. Pour toi, choisir, c’est aussi découvrir.'],
+    ['Réaliste pragmatique','Tu regardes la situation de façon concrète : que peut-on faire maintenant et quelle option fonctionne vraiment ?'],
+    ['Créateur d’idées','Tu vois souvent une sortie originale là où d’autres choisissent l’évidence. Les idées nouvelles t’attirent.'],
+    ['Médiateur','Tu cherches à ne pas aggraver les conflits et à préserver un équilibre entre tes intérêts et ceux des autres.'],
+    ['Expérimentateur audacieux','Quand la méthode habituelle échoue, tu es prêt à prendre un risque et à essayer autre chose.'],
+    ['Observateur réfléchi','Tu juges rarement dans la précipitation. Tu veux comprendre les détails et les motivations avant de décider.'],
+    ['Optimiste pragmatique','Tu recherches une solution réaliste qui laisse encore une place à une issue positive.']
+  ][i]);
+
+  function getState(){
+    const fresh={currentIndex:0,answers:[]};
+    try{
+      const raw=localStorage.getItem('fate_dilemmas');
+      if(!raw) return fresh;
+      const st=JSON.parse(raw);
+      if(!st || typeof st!=='object') return fresh;
+      st.currentIndex=Math.max(0,Math.min(FATE_DILEMMAS.length,Number(st.currentIndex)||0));
+      st.answers=Array.isArray(st.answers)?st.answers:[];
+      return st;
+    }catch(_){ return fresh; }
+  }
+  function saveState(st){ localStorage.setItem('fate_dilemmas',JSON.stringify(st)); }
+  function ensureOverlay(){
+    let o=document.getElementById('fate-overlay');
+    if(!o){o=document.createElement('div');o.id='fate-overlay';document.body.appendChild(o);}
+    o.className='fate-overlay active';
+    o.style.pointerEvents='auto';
+    return o;
+  }
+  function stats(){
+    const st=getState(), s={a:0,b:0,c:0};
+    for(const x of st.answers) if(x && s[x.choice]!=null) s[x.choice]++;
+    return s;
+  }
+  function endingIndex(s){
+    return (s.a*11 + s.b*17 + s.c*23 + 97) % 10;
+  }
+  function render(index){
+    if(!Array.isArray(FATE_DILEMMAS)||!FATE_DILEMMAS[index]) return final();
+    const d=FATE_DILEMMAS[index], o=ensureOverlay();
+    o.innerHTML='';
+    const close=document.createElement('button');
+    close.type='button'; close.className='overlay-close-x'; close.setAttribute('aria-label',CLOSE[currentLang]||CLOSE.en); close.textContent='×';
+    close.addEventListener('click',closeFate);
+    const box=document.createElement('div'); box.className='fate-container';
+    const counter=document.createElement('div'); counter.className='fate-counter'; counter.textContent=(index+1)+' / '+FATE_DILEMMAS.length;
+    const q=document.createElement('div'); q.className='fate-question'; q.textContent=L(d.question);
+    const choices=document.createElement('div'); choices.className='fate-choices'; choices.id='fate-choices';
+    ['a','b','c'].forEach(ch=>{
+      const b=document.createElement('button'); b.type='button'; b.className='fate-btn'; b.dataset.choice=ch; b.textContent=L(d[ch]);
+      b.addEventListener('click',()=>answer(index,ch),{once:true});
+      choices.appendChild(b);
+    });
+    box.append(counter,q,choices); o.append(close,box);
+  }
+  function answer(index,choice){
+    const d=FATE_DILEMMAS[index]; if(!d || !['a','b','c'].includes(choice)) return;
+    const st=getState();
+    st.answers=st.answers.filter(x=>x && x.index!==index);
+    st.answers.push({index,choice});
+    st.currentIndex=Math.min(FATE_DILEMMAS.length,index+1);
+    saveState(st);
+    if(st.currentIndex>=FATE_DILEMMAS.length) final(); else render(st.currentIndex);
+  }
+  function final(){
+    const o=ensureOverlay(), intro=FINAL_INTRO[currentLang]||FINAL_INTRO.en;
+    o.innerHTML='';
+    const close=document.createElement('button'); close.type='button'; close.className='overlay-close-x'; close.textContent='×'; close.setAttribute('aria-label',CLOSE[currentLang]||CLOSE.en); close.addEventListener('click',closeFate);
+    const box=document.createElement('div'); box.className='fate-container fate-final';
+    const title=document.createElement('div'); title.className='fate-final-title'; title.textContent=intro;
+    const btn=document.createElement('button'); btn.type='button'; btn.id='fate-show-results'; btn.className='fate-next'; btn.textContent=SHOW[currentLang]||SHOW.en;
+    btn.addEventListener('click',showResults);
+    const note=document.createElement('div'); note.className='final-channel-note'; note.textContent=CHANNEL[currentLang]||CHANNEL.en;
+    box.append(title,btn,note); o.append(close,box);
+  }
+  function showResults(){
+    const o=ensureOverlay(), s=stats(), i=endingIndex(s);
+    const pack=ENDINGS[currentLang]||ENDINGS.en, e=pack[i]||pack[0];
+    o.innerHTML='';
+    const close=document.createElement('button'); close.type='button'; close.className='overlay-close-x'; close.textContent='×'; close.setAttribute('aria-label',CLOSE[currentLang]||CLOSE.en); close.addEventListener('click',closeFate);
+    const box=document.createElement('div'); box.className='fate-container fate-final';
+    const badge=document.createElement('div'); badge.className='fate-counter'; badge.textContent='10 '+(currentLang==='ru'?'вариантов концовки':currentLang==='en'?'possible endings':currentLang==='es'?'finales':currentLang==='pt'?'finais':currentLang==='de'?'mögliche Enden':'fins possibles');
+    const title=document.createElement('div'); title.className='fate-final-title'; title.textContent=e[0];
+    const text=document.createElement('div'); text.className='fate-final-text'; text.textContent=e[1];
+    const note=document.createElement('div'); note.className='final-channel-note'; note.textContent=CHANNEL[currentLang]||CHANNEL.en;
+    const restart=document.createElement('button'); restart.type='button'; restart.className='fate-next'; restart.textContent=RESTART[currentLang]||RESTART.en; restart.addEventListener('click',restartFate);
+    box.append(badge,title,text,note,restart); o.append(close,box);
+  }
+  function restartFate(){ saveState({currentIndex:0,answers:[]}); render(0); }
+  function closeFate(){ const o=document.getElementById('fate-overlay'); if(o) o.remove(); }
+
+  window.openFateDilemmas=function(){ const st=getState(); if(st.currentIndex>=FATE_DILEMMAS.length) final(); else render(st.currentIndex); };
+  window.renderFateQuestion=render;
+  window.answerFate=answer;
+  window.showChronicleResults=showResults;
+  window.restartFateDilemmas=restartFate;
+  window.closeFateDilemmas=closeFate;
+  window.nextFateQuestion=function(){ const st=getState(); if(st.currentIndex>=FATE_DILEMMAS.length) final(); else render(st.currentIndex); };
+})();
