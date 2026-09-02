@@ -17,3 +17,6 @@ Telegram channel: https://t.me/YourDestiny_Official
 Author direct: https://t.me/YourDestiny_Official?direct
 
 Chronicles localization: 100 questions with full ru/en/es/pt/de/fr question and answer text.
+
+
+Version 4.1.30: Chronicles uses situational dilemmas with action-oriented choices; completed runs open a working results screen; interactive controls are hardened for dynamic screens.
