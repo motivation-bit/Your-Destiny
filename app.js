@@ -7043,14 +7043,34 @@ if(typeof LABYRINTH_RIDDLES!=='undefined' && LABYRINTH_RIDDLES.length){
     const max=Math.max(scores.a,scores.b,scores.c), dominant=scores.a===max?'a':scores.b===max?'b':'c';
     const idx={a:0,b:1,c:2}[dominant];
     const arch=archetypes[currentLang]||archetypes.en;
-    overlay.innerHTML=`<button class="overlay-close-x" onclick="closeFateDilemmas()">&times;</button><div class="fate-container fate-final"><div class="fate-final-title">${chroniclesFinal[currentLang]||chroniclesFinal.en}</div><button class="fate-next" onclick="showChronicleResults()">${showResultsText[currentLang]||showResultsText.en}</button><div class="final-channel-note">${tgFinal[currentLang]||tgFinal.en}</div></div>`;
+    overlay.innerHTML=`<button class="overlay-close-x" onclick="closeFateDilemmas()">&times;</button><div class="fate-container fate-final"><div class="fate-final-title">${chroniclesFinal[currentLang]||chroniclesFinal.en}</div><button type="button" id="fate-show-results" class="fate-next">${showResultsText[currentLang]||showResultsText.en}</button><div class="final-channel-note">${tgFinal[currentLang]||tgFinal.en}</div></div>`;
     overlay.dataset.dominant=arch[idx][1];
+    const resultBtn=document.getElementById('fate-show-results');
+    if(resultBtn) resultBtn.addEventListener('click',()=>window.showChronicleResults(),{once:true});
   }
   window.showChronicleResults=function(){
-    const overlay=document.getElementById('fate-overlay'); if(!overlay)return;
-    const st=getFateState(), scores={a:0,b:0,c:0}; (st.answers||[]).forEach(x=>{if(scores[x.choice]!=null)scores[x.choice]++;});
-    const seed=(scores.a*3+scores.b*5+scores.c*7)%10, pack=CHRONICLE_ARCHETYPES_10[currentLang]||CHRONICLE_ARCHETYPES_10.en, arch=pack[seed];
-    overlay.innerHTML=`<button class="overlay-close-x" onclick="closeFateDilemmas()">&times;</button><div class="fate-container fate-final"><div class="fate-final-title">${arch[0]}</div><div class="fate-final-text">${arch[1]}</div><div class="final-channel-note">${tgFinal[currentLang]||tgFinal.en}</div><button class="fate-next" onclick="restartFateDilemmas()">${t('restart')}</button></div>`;
+    try{
+      const overlay=document.getElementById('fate-overlay');
+      if(!overlay)return;
+      const st=getFateState();
+      const scores={a:0,b:0,c:0};
+      (Array.isArray(st.answers)?st.answers:[]).forEach(x=>{if(x && scores[x.choice]!=null)scores[x.choice]++;});
+      const seed=(scores.a*3+scores.b*5+scores.c*7)%10;
+      const pack=(typeof CHRONICLE_ARCHETYPES_10!=='undefined' && (CHRONICLE_ARCHETYPES_10[currentLang]||CHRONICLE_ARCHETYPES_10.en)) || [['Your Destiny','Your choices reveal the way you tend to approach life.']];
+      const arch=pack[seed]||pack[0];
+      const channelText=(tgFinal&& (tgFinal[currentLang]||tgFinal.en)) || '';
+      const restartText=(typeof t==='function' ? t('restart') : 'Restart');
+      overlay.className='fate-overlay active';
+      overlay.innerHTML=`<button type="button" class="overlay-close-x" onclick="window.closeFateDilemmas ? window.closeFateDilemmas() : document.getElementById('fate-overlay')?.remove()">&times;</button><div class="fate-container fate-final"><div class="fate-final-title">${arch[0]||''}</div><div class="fate-final-text">${arch[1]||''}</div><div class="final-channel-note">${channelText}</div><button type="button" id="fate-restart-result" class="fate-next">${restartText}</button></div>`;
+      const restartBtn=document.getElementById('fate-restart-result');
+      if(restartBtn) restartBtn.addEventListener('click',()=>window.restartFateDilemmas?.(),{once:true});
+    }catch(err){
+      console.error('Chronicles results error:',err);
+      const overlay=document.getElementById('fate-overlay');
+      if(overlay){
+        overlay.innerHTML=`<div class="fate-container fate-final"><div class="fate-final-title">${currentLang==='ru'?'Результат готов':'Results are ready'}</div><button type="button" class="fate-next" onclick="window.restartFateDilemmas?.()">${currentLang==='ru'?'Начать заново':'Restart'}</button></div>`;
+      }
+    }
   };
   window.renderFateQuestion=function(index){
     const d=FATE_DILEMMAS[index];
@@ -7337,4 +7357,24 @@ if(typeof LABYRINTH_RIDDLES!=='undefined' && LABYRINTH_RIDDLES.length){
   document.addEventListener('DOMContentLoaded',()=>{
     document.documentElement.classList.add('yd-instant');
   },{once:true});
+})();
+
+
+/* ===== v4.1.29 — interaction reliability pass ===== */
+(function(){
+  // Every button is a real button: no accidental form submission and no inherited click blocking.
+  function normalizeButtons(root){
+    (root||document).querySelectorAll?.('button').forEach(btn=>{
+      if(!btn.hasAttribute('type')) btn.type='button';
+      btn.style.pointerEvents='auto';
+      if(btn.disabled) btn.removeAttribute('disabled');
+    });
+  }
+  if(document.readyState==='loading') document.addEventListener('DOMContentLoaded',()=>normalizeButtons(document),{once:true});
+  else normalizeButtons(document);
+  new MutationObserver(muts=>muts.forEach(m=>m.addedNodes.forEach(n=>{if(n.nodeType===1)normalizeButtons(n);}))).observe(document.documentElement,{childList:true,subtree:true});
+  document.addEventListener('click',e=>{
+    const btn=e.target?.closest?.('button');
+    if(btn && !btn.disabled) btn.style.pointerEvents='auto';
+  },true);
 })();
