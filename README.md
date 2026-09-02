@@ -15,3 +15,5 @@ Included:
 
 Telegram channel: https://t.me/YourDestiny_Official
 Author direct: https://t.me/YourDestiny_Official?direct
+
+Chronicles localization: 100 questions with full ru/en/es/pt/de/fr question and answer text.
