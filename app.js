@@ -214,7 +214,7 @@ const RATING_TEXTS = {
 };
 
 
-function t(key) { const v=T[currentLang]?.[key]; return v!=null && String(v).trim()!=='' ? v : key; }
+function t(key) { return (T[currentLang] && T[currentLang][key]) || T.en[key] || key; }
 function loc(value) { return value && (value[currentLang] ?? value.en ?? value.ru ?? Object.values(value)[0]) || ''; }
 const DATE_LOCALES = { ru:'ru-RU', en:'en-GB', es:'es-ES', pt:'pt-PT', de:'de-DE', fr:'fr-FR' };
 const CHANNEL_URL = 'https://t.me/YourDestiny_Official';
@@ -484,10 +484,6 @@ function updateLanguageUI() {
   const themeName = document.getElementById('theme-name');
   if (th && themeName) themeName.textContent = loc(th.name);
   initFirstVisit();
-  // Refresh any open localized overlay immediately after changing language.
-  try { if (document.getElementById('fate-overlay') && typeof renderFateQuestion === 'function') { const st=JSON.parse(localStorage.getItem('fate_dilemmas')||'{\"currentIndex\":0,\"answers\":[]}'); if(st.currentIndex < FATE_DILEMMAS.length) renderFateQuestion(st.currentIndex); } } catch(e) {}
-  try { if (document.getElementById('labyrinth-overlay') && typeof renderLabyrinthRiddle === 'function') renderLabyrinthRiddle(); } catch(e) {}
-  try { if (document.getElementById('destiny-overlay')) { const st=JSON.parse(localStorage.getItem('true_destiny')||'null'); if(st && !st.completed && typeof renderDestinyQuestion === 'function') renderDestinyQuestion(st.currentQuestion||0); } } catch(e) {}
 }
 
 function isVip() {
@@ -6942,9 +6938,10 @@ if(typeof LABYRINTH_RIDDLES!=='undefined' && LABYRINTH_RIDDLES.length){
   const LANGS=['ru','en','es','pt','de','fr'];
   function fillLocales(value){
     if(!value || typeof value!=='object' || Array.isArray(value)) return;
-    // Do not copy one language into another. Missing translations stay explicit
-    // so the selected language can never silently become English.
-    if('ru' in value || 'en' in value || 'es' in value || 'pt' in value || 'de' in value || 'fr' in value){ return; }
+    if('ru' in value || 'en' in value || 'es' in value || 'pt' in value || 'de' in value || 'fr' in value){
+      const source=value.en ?? value.ru ?? value.es ?? '';
+      for(const lang of LANGS) if(value[lang]==null || String(value[lang]).trim()==='') value[lang]=source;
+    }
     for(const v of Object.values(value)) fillLocales(v);
   }
   function normalizeCollections(){
@@ -7469,13 +7466,14 @@ if(typeof LABYRINTH_RIDDLES!=='undefined' && LABYRINTH_RIDDLES.length){
 (function(){
   const LANGS=['ru','en','es','pt','de','fr'];
   const UI={
-    ru:{counter:n=>`Вопрос ${n} из 100`,loading:'Загрузка…',retry:'Повторить',show:'Показать результаты',restart:'Пройти заново',close:'Закрыть',badge:'Результат — 1 из 10 вариантов концовки'},
-    en:{counter:n=>`Question ${n} of 100`,loading:'Loading…',retry:'Retry',show:'Show results',restart:'Start again',close:'Close',badge:'Result — 1 of 10 possible endings'},
-    es:{counter:n=>`Pregunta ${n} de 100`,loading:'Cargando…',retry:'Reintentar',show:'Ver resultados',restart:'Empezar de nuevo',close:'Cerrar',badge:'Resultado — 1 de 10 finales posibles'},
-    pt:{counter:n=>`Pergunta ${n} de 100`,loading:'A carregar…',retry:'Tentar novamente',show:'Ver resultados',restart:'Recomeçar',close:'Fechar',badge:'Resultado — 1 de 10 finais possíveis'},
-    de:{counter:n=>`Frage ${n} von 100`,loading:'Wird geladen…',retry:'Erneut versuchen',show:'Ergebnisse anzeigen',restart:'Neu beginnen',close:'Schließen',badge:'Ergebnis — 1 von 10 möglichen Enden'},
-    fr:{counter:n=>`Question ${n} sur 100`,loading:'Chargement…',retry:'Réessayer',show:'Voir les résultats',restart:'Recommencer',close:'Fermer',badge:'Résultat — 1 des 10 fins possibles'}
+    ru:{counter:n=>`Вопрос ${n} из 100`,loading:'Загрузка…',retry:'Повторить',show:'Показать результаты',restart:'Пройти заново',close:'Закрыть'},
+    en:{counter:n=>`Question ${n} of 100`,loading:'Loading…',retry:'Retry',show:'Show results',restart:'Start again',close:'Close'},
+    es:{counter:n=>`Pregunta ${n} de 100`,loading:'Cargando…',retry:'Reintentar',show:'Ver resultados',restart:'Empezar de nuevo',close:'Cerrar'},
+    pt:{counter:n=>`Pergunta ${n} de 100`,loading:'A carregar…',retry:'Tentar novamente',show:'Ver resultados',restart:'Recomeçar',close:'Fechar'},
+    de:{counter:n=>`Frage ${n} von 100`,loading:'Wird geladen…',retry:'Erneut versuchen',show:'Ergebnisse anzeigen',restart:'Neu beginnen',close:'Schließen'},
+    fr:{counter:n=>`Question ${n} sur 100`,loading:'Chargement…',retry:'Réessayer',show:'Voir les résultats',restart:'Recommencer',close:'Fermer'}
   };
+  const RESULT_HEADING={ru:'Твоя судьба',en:'Your destiny',es:'Tu destino',pt:'O teu destino',de:'Dein Schicksal',fr:'Ton destin'};
   const FINAL_INTRO_SAFE={ru:'100 из 100! Ты прошёл все дилеммы.',en:'100 out of 100! You completed every dilemma.',es:'¡100 de 100! Has completado todos los dilemas.',pt:'100 de 100! Concluíste todos os dilemas.',de:'100 von 100! Du hast alle Dilemmata abgeschlossen.',fr:'100 sur 100 ! Tu as terminé tous les dilemmes.'};
   const CHANNEL_SAFE={ru:'Загляните в наш Telegram-канал — там есть похожие задачи.',en:'Visit our Telegram channel — you will find similar challenges there.',es:'Visita nuestro canal de Telegram: allí encontrarás retos parecidos.',pt:'Visita o nosso canal do Telegram — lá encontrarás desafios semelhantes.',de:'Besuche unseren Telegram-Kanal — dort findest du ähnliche Aufgaben.',fr:'Rejoins notre canal Telegram — tu y trouveras des défis similaires.'};
   const cacheKey='your_destiny_chronicles_i18n_v133';
@@ -7563,11 +7561,10 @@ if(typeof LABYRINTH_RIDDLES!=='undefined' && LABYRINTH_RIDDLES.length){
     const o=overlay(), arr=endings(), e=arr[endingIndex()]||arr[0];o.innerHTML='';
     const c=document.createElement('button');c.type='button';c.className='overlay-close-x';c.textContent='×';c.setAttribute('aria-label',(UI[currentLang]||UI.en).close);c.addEventListener('click',close);
     const box=document.createElement('div');box.className='fate-container fate-final';
-    const badge=document.createElement('div');badge.className='fate-counter';badge.textContent=(UI[currentLang]||UI.en).badge;
     const title=document.createElement('div');title.className='fate-final-title';title.textContent=e?.[0]||'';
     const body=document.createElement('div');body.className='fate-final-text';body.textContent=e?.[1]||'';
     const restart=button((UI[currentLang]||UI.en).restart,()=>{writeState({currentIndex:0,answers:[]});render(0);});
-    box.append(badge,title,body,restart);o.append(c,box);
+    box.append(title,body,restart);o.append(c,box);
   }
   window.openFateDilemmas=()=>{const st=readState();st.currentIndex>=100?showFinal():render(st.currentIndex);};
   window.renderFateQuestion=render;
