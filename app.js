@@ -7558,13 +7558,19 @@ if(typeof LABYRINTH_RIDDLES!=='undefined' && LABYRINTH_RIDDLES.length){
     box.append(title,b,note);o.append(c,box);
   }
   function showResults(){
-    const o=overlay(), arr=endings(), e=arr[endingIndex()]||arr[0];o.innerHTML='';
-    const c=document.createElement('button');c.type='button';c.className='overlay-close-x';c.textContent='×';c.setAttribute('aria-label',(UI[currentLang]||UI.en).close);c.addEventListener('click',close);
-    const box=document.createElement('div');box.className='fate-container fate-final';
-    const title=document.createElement('div');title.className='fate-final-title';title.textContent=e?.[0]||'';
-    const body=document.createElement('div');body.className='fate-final-text';body.textContent=e?.[1]||'';
+    const o=overlay(); o.innerHTML='';
+    const c=document.createElement('button'); c.type='button'; c.className='overlay-close-x'; c.textContent='×'; c.setAttribute('aria-label',(UI[currentLang]||UI.en).close); c.addEventListener('click',close);
+    const box=document.createElement('div'); box.className='fate-container fate-final';
+    const title=document.createElement('div'); title.className='fate-final-title'; title.textContent=(currentLang==='ru'?'Готово!':currentLang==='en'?'Completed!':currentLang==='es'?'¡Listo!':currentLang==='pt'?'Concluído!':currentLang==='de'?'Geschafft!':'Terminé !');
+    const body=document.createElement('div'); body.className='fate-final-text';
+    const texts={ru:'Ты прошёл все 100 дилемм.',en:'You completed all 100 dilemmas.',es:'Has completado las 100 dilemas.',pt:'Concluíste os 100 dilemas.',de:'Du hast alle 100 Dilemmata abgeschlossen.',fr:'Tu as terminé les 100 dilemmes.'};
+    body.textContent=texts[currentLang]||texts.en;
+    const note=document.createElement('div'); note.className='final-channel-note'; note.textContent=CHANNEL_SAFE[currentLang]||CHANNEL_SAFE.en;
+    const actions=document.createElement('div'); actions.className='final-actions';
     const restart=button((UI[currentLang]||UI.en).restart,()=>{writeState({currentIndex:0,answers:[]});render(0);});
-    box.append(title,body,restart);o.append(c,box);
+    restart.classList.add('fate-restart-final');
+    const channel=document.createElement('a'); channel.className='fate-channel-btn'; channel.href='https://t.me/YourDestiny_Official'; channel.target='_blank'; channel.rel='noopener noreferrer'; channel.textContent=({ru:'Telegram-канал',en:'Telegram channel',es:'Canal de Telegram',pt:'Canal do Telegram',de:'Telegram-Kanal',fr:'Canal Telegram'})[currentLang]||'Telegram channel';
+    actions.append(restart,channel); box.append(title,body,note,actions); o.append(c,box);
   }
   window.openFateDilemmas=()=>{const st=readState();st.currentIndex>=100?showFinal():render(st.currentIndex);};
   window.renderFateQuestion=render;
@@ -7586,59 +7592,4 @@ if(typeof LABYRINTH_RIDDLES!=='undefined' && LABYRINTH_RIDDLES.length){
     currentLang=value;
     window.dispatchEvent(new CustomEvent('languageChanged',{detail:{lang:value}}));
   };
-})();
-
-/* ===== v4.1.36 — Chronicles final identity result ===== */
-(function(){
-  const LANGS=['ru','en','es','pt','de','fr'];
-  const TELEGRAM_LABEL={
-    ru:'Больше дилемм в Telegram',
-    en:'More dilemmas on Telegram',
-    es:'Más dilemas en Telegram',
-    pt:'Mais dilemas no Telegram',
-    de:'Mehr Dilemmata auf Telegram',
-    fr:'Plus de dilemmes sur Telegram'
-  };
-  const RESTART={ru:'Пройти заново',en:'Start again',es:'Empezar de nuevo',pt:'Recomeçar',de:'Neu beginnen',fr:'Recommencer'};
-  const CHANNEL_URL='https://t.me/YourDestiny_Official';
-  function safeLang(){return LANGS.includes(currentLang)?currentLang:'en';}
-  function scorePack(){
-    const s={a:0,b:0,c:0};
-    try{
-      const st=JSON.parse(localStorage.getItem('fate_dilemmas')||'{}');
-      (Array.isArray(st.answers)?st.answers:[]).forEach(x=>{if(x&&s[x.choice]!=null)s[x.choice]++;});
-    }catch(_){ }
-    return s;
-  }
-  function ending(){
-    const s=scorePack();
-    const idx=(s.a*11+s.b*17+s.c*23+97)%10;
-    const lang=safeLang();
-    const pack=(typeof CHRONICLE_ARCHETYPES_10!=='undefined' && (CHRONICLE_ARCHETYPES_10[lang]||CHRONICLE_ARCHETYPES_10.en));
-    return Array.isArray(pack)&&pack[idx] ? pack[idx] : (pack&&pack[0]||['Your Destiny','Your choices reveal your way of approaching life.']);
-  }
-  function close(){const o=document.getElementById('fate-overlay');if(o)o.remove();}
-  window.showChronicleResults=function(){
-    const lang=safeLang();
-    const e=ending();
-    let o=document.getElementById('fate-overlay');
-    if(!o){o=document.createElement('div');o.id='fate-overlay';document.body.appendChild(o);}
-    o.className='fate-overlay active';
-    o.style.pointerEvents='auto';
-    const closeBtn=document.createElement('button');
-    closeBtn.type='button'; closeBtn.className='overlay-close-x'; closeBtn.textContent='×'; closeBtn.setAttribute('aria-label',lang==='ru'?'Закрыть':'Close'); closeBtn.addEventListener('click',close);
-    const box=document.createElement('div'); box.className='fate-container fate-final';
-    const title=document.createElement('div'); title.className='fate-final-title'; title.textContent=e[0]||'';
-    const body=document.createElement('div'); body.className='fate-final-text'; body.textContent=e[1]||'';
-    const actions=document.createElement('div'); actions.className='final-actions';
-    const tg=document.createElement('a'); tg.className='fate-channel-btn'; tg.href=CHANNEL_URL; tg.target='_blank'; tg.rel='noopener noreferrer'; tg.textContent=TELEGRAM_LABEL[lang];
-    const restart=document.createElement('button'); restart.type='button'; restart.className='fate-next'; restart.textContent=RESTART[lang];
-    restart.addEventListener('click',()=>{try{localStorage.setItem('fate_dilemmas',JSON.stringify({currentIndex:0,answers:[]}));}catch(_){} renderRestart();});
-    actions.append(tg,restart);
-    box.append(title,body,actions); o.replaceChildren(closeBtn,box);
-  };
-  function renderRestart(){
-    if(typeof window.renderFateQuestion==='function') window.renderFateQuestion(0);
-  }
-  window.__chronicleResultLabel=TELEGRAM_LABEL;
 })();
