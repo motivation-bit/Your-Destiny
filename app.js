@@ -7587,3 +7587,58 @@ if(typeof LABYRINTH_RIDDLES!=='undefined' && LABYRINTH_RIDDLES.length){
     window.dispatchEvent(new CustomEvent('languageChanged',{detail:{lang:value}}));
   };
 })();
+
+/* ===== v4.1.36 — Chronicles final identity result ===== */
+(function(){
+  const LANGS=['ru','en','es','pt','de','fr'];
+  const TELEGRAM_LABEL={
+    ru:'Больше дилемм в Telegram',
+    en:'More dilemmas on Telegram',
+    es:'Más dilemas en Telegram',
+    pt:'Mais dilemas no Telegram',
+    de:'Mehr Dilemmata auf Telegram',
+    fr:'Plus de dilemmes sur Telegram'
+  };
+  const RESTART={ru:'Пройти заново',en:'Start again',es:'Empezar de nuevo',pt:'Recomeçar',de:'Neu beginnen',fr:'Recommencer'};
+  const CHANNEL_URL='https://t.me/YourDestiny_Official';
+  function safeLang(){return LANGS.includes(currentLang)?currentLang:'en';}
+  function scorePack(){
+    const s={a:0,b:0,c:0};
+    try{
+      const st=JSON.parse(localStorage.getItem('fate_dilemmas')||'{}');
+      (Array.isArray(st.answers)?st.answers:[]).forEach(x=>{if(x&&s[x.choice]!=null)s[x.choice]++;});
+    }catch(_){ }
+    return s;
+  }
+  function ending(){
+    const s=scorePack();
+    const idx=(s.a*11+s.b*17+s.c*23+97)%10;
+    const lang=safeLang();
+    const pack=(typeof CHRONICLE_ARCHETYPES_10!=='undefined' && (CHRONICLE_ARCHETYPES_10[lang]||CHRONICLE_ARCHETYPES_10.en));
+    return Array.isArray(pack)&&pack[idx] ? pack[idx] : (pack&&pack[0]||['Your Destiny','Your choices reveal your way of approaching life.']);
+  }
+  function close(){const o=document.getElementById('fate-overlay');if(o)o.remove();}
+  window.showChronicleResults=function(){
+    const lang=safeLang();
+    const e=ending();
+    let o=document.getElementById('fate-overlay');
+    if(!o){o=document.createElement('div');o.id='fate-overlay';document.body.appendChild(o);}
+    o.className='fate-overlay active';
+    o.style.pointerEvents='auto';
+    const closeBtn=document.createElement('button');
+    closeBtn.type='button'; closeBtn.className='overlay-close-x'; closeBtn.textContent='×'; closeBtn.setAttribute('aria-label',lang==='ru'?'Закрыть':'Close'); closeBtn.addEventListener('click',close);
+    const box=document.createElement('div'); box.className='fate-container fate-final';
+    const title=document.createElement('div'); title.className='fate-final-title'; title.textContent=e[0]||'';
+    const body=document.createElement('div'); body.className='fate-final-text'; body.textContent=e[1]||'';
+    const actions=document.createElement('div'); actions.className='final-actions';
+    const tg=document.createElement('a'); tg.className='fate-channel-btn'; tg.href=CHANNEL_URL; tg.target='_blank'; tg.rel='noopener noreferrer'; tg.textContent=TELEGRAM_LABEL[lang];
+    const restart=document.createElement('button'); restart.type='button'; restart.className='fate-next'; restart.textContent=RESTART[lang];
+    restart.addEventListener('click',()=>{try{localStorage.setItem('fate_dilemmas',JSON.stringify({currentIndex:0,answers:[]}));}catch(_){} renderRestart();});
+    actions.append(tg,restart);
+    box.append(title,body,actions); o.replaceChildren(closeBtn,box);
+  };
+  function renderRestart(){
+    if(typeof window.renderFateQuestion==='function') window.renderFateQuestion(0);
+  }
+  window.__chronicleResultLabel=TELEGRAM_LABEL;
+})();
